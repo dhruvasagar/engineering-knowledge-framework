@@ -258,6 +258,40 @@ The foundational documents that define the framework itself.
 |---------------------------+--------------------------------------------------------|
 | [[file:./prompts/security-ai-workflows.org][AI Workflows for Security]] | Prompt patterns for vulnerability ID, threat modeling. |
 
+** Engineering Quality
+
+*** Handbooks
+
+| Document | Description |
+|----------+-------------|
+| [[file:./handbooks/quality/README.org][Engineering Quality Handbook]] | Principles, quality gates, metrics, code review standards. |
+
+*** Glossaries
+
+| Document | Description |
+|----------+-------------|
+| [[file:./glossary/quality/README.org][Engineering Quality Glossary]] | Terminology (change failure rate, MTTR, technical debt, etc.). |
+
+*** Guides
+
+| Document | Description |
+|----------+-------------|
+| [[file:./guides/quality/code-review-standards.org][Code Review Standards]] | Standards for review velocity, what to review, severity labels. |
+| [[file:./guides/quality/quality-metrics.org][Quality Metrics]] | Code quality and process metrics, implementation, pitfalls. |
+| [[file:./guides/quality/technical-debt-management.org][Technical Debt Management]] | Classification, assessment, management process. |
+
+*** Learning Paths
+
+| Document | Description |
+|----------+-------------|
+| [[file:./learning-paths/quality/README.org][Engineering Quality Learning Paths]] | Beginner/intermediate/advanced tracks. |
+
+*** References
+
+| Document | Description |
+|----------+-------------|
+| [[file:./references/quality/README.org][Engineering Quality References]] | Quick lookup: gates, metrics targets, severity labels. |
+
 ** AI Engineering
 
 *** Handbooks

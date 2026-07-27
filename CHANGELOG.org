@@ -155,6 +155,16 @@
 - Added =learning-paths/ai/README.org=: Three-tier learning path (beginner, intermediate, advanced) for AI-assisted engineering.
 - Added =references/ai/README.org=: Quick-reference material for AI workflow patterns, context categories, failure modes and prompt patterns.
 
+** Engineering Quality Capability (Phase 3)
+
+- Added =handbooks/quality/README.org=: Engineering Quality Handbook covering quality principles, quality gates (pre-commit, PR, deploy, release), quality metrics (DORA, code quality), code review standards, technical debt management and quality culture.
+- Added =glossary/quality/README.org=: Quality terminology (change failure rate, defect escape rate, MTTR, quality gate, technical debt).
+- Added =guides/quality/code-review-standards.org=: Code review standards covering review velocity, what to review (design, correctness, maintainability, testing), review quality and severity labels.
+- Added =guides/quality/quality-metrics.org=: Quality metrics guide covering code quality metrics (complexity, duplication, coverage), process metrics (deployment frequency, change failure rate, MTTR), implementation steps and common pitfalls.
+- Added =guides/quality/technical-debt-management.org=: Technical debt management guide covering classification (strategic vs accidental), assessment, management process, tracking approaches and prevention.
+- Added =learning-paths/quality/README.org=: Three-tier learning path for engineering quality.
+- Added =references/quality/README.org=: Quick-reference material for quality gates, metrics targets, severity labels and debt classification.
+
 ** Rails Engineering Capability (Phase 3)
 
 - Added =handbooks/rails/README.org=: Rails Engineering Handbook covering Rails philosophy, MVC principles, code organization, standards (models, migrations, routes, API), testing strategy, patterns (service objects, form objects, query objects, policy objects), anti-patterns and AI integration.

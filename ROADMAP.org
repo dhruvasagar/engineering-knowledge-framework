@@ -176,14 +176,14 @@ Engineering Fundamentals and Architecture capabilities as templates.
 
 - Rails Engineering: Complete capability with all 9 document types.
 - Security Engineering: Complete capability with all 9 document types.
-- AI Engineering: Handbook, glossary, guides (prompt engineering, context engineering, AI safety), checklist (AI usage), learning paths, references and AI workflows complete.
+- AI Engineering: Complete capability with all 9 document types.
+- Engineering Quality: Handbook, glossary, guides (code review standards, quality metrics, technical debt management), learning paths, references and AI workflows complete.
 
 ** Ready for Development
 
 Handbook stubs exist for these capabilities:
 
 - Accessibility (=handbooks/accessibility/=)
-- Engineering Quality (=handbooks/quality/=)
 
 ** Future Capabilities
 
