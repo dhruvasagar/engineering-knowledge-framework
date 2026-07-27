@@ -45,15 +45,15 @@ Engineering knowledge should scale with both people and AI.
 
 The framework is built around several core principles.
 
-| Principle | Description |
-|------------+------------------------------------------------------------|
-| Knowledge over Documentation | Capture understanding, not just information |
-| Principles over Tools | Prefer timeless engineering principles over technologies |
-| Explain Why | Document reasoning, not just procedures |
-| Modular Knowledge | Compose knowledge from focused, reusable documents |
-| Capability-driven | Organize around engineering capabilities |
-| AI-native | Treat AI as a first-class consumer of knowledge |
-| Continuous Improvement | Evolve knowledge through organizational learning |
+| Principle                    | Description                                              |
+|------------------------------+----------------------------------------------------------|
+| Knowledge over Documentation | Capture understanding, not just information              |
+| Principles over Tools        | Prefer timeless engineering principles over technologies |
+| Explain Why                  | Document reasoning, not just procedures                  |
+| Modular Knowledge            | Compose knowledge from focused, reusable documents       |
+| Capability-driven            | Organize around engineering capabilities                 |
+| AI-native                    | Treat AI as a first-class consumer of knowledge          |
+| Continuous Improvement       | Evolve knowledge through organizational learning         |
 
 These principles guide every aspect of the repository.
 

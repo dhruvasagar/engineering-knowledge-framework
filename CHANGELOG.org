@@ -293,3 +293,32 @@
 - Near-term Priorities consolidated: 9 completed items marked [x], remaining
   5 priorities reorganised (learning path exercises, AI agentic workflows,
   validation tooling, knowledge graph tooling, community engagement).
+
+* 0.6.0 (2026-07-27)
+
+** Phase 4 AI Content Completed
+
+- Added =guides/ai/agentic-workflows.org=: Patterns for multi-step AI-assisted
+  engineering workflows (draft-and-refine, analyse-and-recommend,
+  explore-and-discover, constrain-and-generate).
+- Added =guides/ai/collaboration-patterns.org=: Five collaboration patterns
+  (AI as research assistant, scribe, reviewer, pair programmer, tutor).
+- Added =guides/ai/human-review-strategies.org=: Five review strategies
+  (read-through, test-driven, decomposition, comparison, walkaway) with
+  risk-based depth guidance and common AI failure modes.
+- Added =guides/ai/evaluation-frameworks.org=: Four evaluation methods
+  (automated, structured review, comparative, longitudinal) with
+  task-specific criteria and scoring rubric.
+- Added =playbooks/ai/verification-workflows.org=: Systematic verification
+  workflow with classification, automated checks, structured review,
+  remediation and approval gates.
+- Added =guides/ai/knowledge-extraction.org=: Workflow for capturing
+  knowledge from experience, code, incidents and discussions into
+  framework documents using AI assistance.
+
+** Roadmap Updated
+
+- Phase 4 Status updated to Substantially Complete.
+- Phase 4 Next Steps replaced with Completed (added) listing all six
+  new documents.
+- Near-term Priorities: AI agentic workflows item marked [x].

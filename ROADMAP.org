@@ -348,13 +348,14 @@ the engineering lifecycle.
 
 ** Status
 
-[x] **Solid Foundation** — The AI Engineering capability is fully built
-    out across all nine document types, including AI-specific playbooks,
-    templates and meta-AI workflows. Domain-specific AI workflows exist
-    for Engineering, Architecture, Rails, Security, Quality and
-    Accessibility. Remaining work focuses on agentic workflows,
-    evaluation frameworks and deeper integration across all
-    capabilities.
+[x] **Substantially Complete** — The AI Engineering capability is fully
+    built out across all nine document types. All six cross-cutting AI
+    topics (agentic workflows, collaboration patterns, human review
+    strategies, evaluation frameworks, verification workflows, knowledge
+    extraction) have been developed as guides and playbooks. Domain-
+    specific AI workflows exist for Engineering, Architecture, Rails,
+    Security, Quality and Accessibility. Remaining work focuses on
+    deeper integration across capabilities and long-term evaluation.
 
 ** Objectives
 
@@ -389,16 +390,14 @@ the engineering lifecycle.
 - [x] =prompts/accessibility-ai-workflows.org=: AI workflows for accessibility engineering.
 - [x] =prompts/README.org=: Index of all AI workflow documents.
 
-** Next Steps
+** Completed (added)
 
-Remaining topics to develop:
-
-- Agentic Workflows: Patterns for multi-step AI-assisted engineering workflows.
-- AI Collaboration Patterns: How engineers and AI should interact in different contexts.
-- Human Review Strategies: When and how to review AI output effectively.
-- AI Evaluation: Frameworks for measuring AI output quality and reliability.
-- Verification Workflows: Systematic verification of AI-generated code, architecture and documentation.
-- Knowledge Extraction: Using AI to extract and structure engineering knowledge.
+- [x] =guides/ai/agentic-workflows.org=: Patterns for multi-step AI-assisted engineering workflows.
+- [x] =guides/ai/collaboration-patterns.org=: How engineers and AI interact in different contexts.
+- [x] =guides/ai/human-review-strategies.org=: When and how to review AI output effectively.
+- [x] =guides/ai/evaluation-frameworks.org=: Frameworks for measuring AI output quality and reliability.
+- [x] =playbooks/ai/verification-workflows.org=: Systematic verification of AI-generated code, architecture and documentation.
+- [x] =guides/ai/knowledge-extraction.org=: Using AI to extract and structure engineering knowledge.
 
 ** Long-term Goal
 
@@ -748,7 +747,7 @@ Current priorities are:
 8. [x] Develop Accessibility Engineering capability (Phase 3).
 9. [x] Establish RFC and ADR processes for framework evolution (see [[file:./adr/][adr/]] directory and [[file:./templates/adr/README.org][ADR template]]).
 10. [ ] Add practical exercises and assessments to learning paths (Phase 5).
-11. [ ] Develop AI agentic workflows and evaluation frameworks (Phase 4).
+11. [x] Develop AI agentic workflows and evaluation frameworks (Phase 4).
 12. [ ] Build initial validation tooling — link validation, style validation, glossary validation (Phase 6).
 13. [ ] Build knowledge graph generation tooling (Phase 6).
 14. [ ] Explore community engagement and contribution workflows (Phase 8).
