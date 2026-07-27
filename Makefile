@@ -19,7 +19,7 @@ site:
 serve:
 	@echo "🌐 Starting dev server..."
 	@python3 tools/prepare-site-content.py
-	cd site && zola serve --port 1111 --base-url http://localhost:1111/
+	cd site && zola serve --port 1111
 
 clean:
 	@echo "🧹 Cleaning..."
