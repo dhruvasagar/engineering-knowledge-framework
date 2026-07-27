@@ -1,0 +1,146 @@
+#+TITLE: Security Learning Paths
+#+AUTHOR: Engineering
+#+DATE: 2026-07-27
+#+DESCRIPTION: Structured learning progression for security engineering
+#+STARTUP: overview indent
+
+* Purpose
+
+These learning paths provide a structured progression through security
+engineering, from understanding basic threats to designing secure
+architectures.
+
+* Beginner Path
+
+** Objective
+
+Understand common threats, follow secure coding practices and
+participate in security reviews.
+
+** Prerequisites
+
+- Basic understanding of web applications and networking.
+
+** Topics
+
+1. **Security Principles**
+   - Defense in depth, least privilege, secure by default.
+   - Reference: [[file:../../handbooks/security/README.org][Security Engineering Handbook]]
+
+2. **Common Web Vulnerabilities**
+   - OWASP Top 10 overview.
+   - SQL injection, XSS, CSRF, IDOR.
+   - Reference: [[file:../../guides/security/web-vulnerabilities.org][Web Vulnerabilities Guide]]
+
+3. **Secure Coding Practices**
+   - Input validation, authentication, output encoding.
+   - Reference: [[file:../../guides/security/secure-coding.org][Secure Coding Guide]]
+
+4. **Using Security Tools**
+   - Running SAST scanners (Brakeman, RuboCop).
+   - Running dependency scanners (bundler-audit).
+   - Reference: [[file:../../guides/security/dependency-security.org][Dependency Security Guide]]
+
+5. **Participating in Security Reviews**
+   - What to look for as a reviewer.
+   - Basic threat identification.
+   - Reference: [[file:../../playbooks/security-review/README.org][Security Review Playbook]]
+
+** Assessment
+
+Demonstrate by: Identifying vulnerabilities in a code review.
+Running security tools and interpreting results correctly.
+
+* Intermediate Path
+
+** Objective
+
+Conduct security reviews, perform threat modeling and implement
+security controls.
+
+** Prerequisites
+
+- Completed Beginner Path or equivalent experience.
+
+** Topics
+
+1. **Threat Modeling**
+   - STRIDE framework.
+   - Identifying trust boundaries.
+   - Reference: [[file:../../handbooks/security/README.org][Security Engineering Handbook]]
+
+2. **Authentication and Authorization**
+   - Implementing secure authentication.
+   - Role-based and attribute-based access control.
+   - Reference: [[file:../../guides/rails/authentication-authorization.org][Authentication and Authorization Guide]]
+
+3. **Security Testing**
+   - SAST, DAST, and manual testing.
+   - Writing security test cases.
+   - Reference: [[file:../../playbooks/security-review/README.org][Security Review Playbook]]
+
+4. **Dependency Management**
+   - Vulnerability response workflow.
+   - Dependency evaluation and selection.
+   - Reference: [[file:../../guides/security/dependency-security.org][Dependency Security Guide]]
+
+5. **Security Configuration**
+   - Security headers (CSP, HSTS).
+   - Secure deployment configuration.
+   - Reference: [[file:../../handbooks/security/README.org][Security Engineering Handbook]]
+
+** Assessment
+
+Demonstrate by: Leading a security review. Performing threat modeling
+for a new feature. Implementing security controls in an application.
+
+* Advanced Path
+
+** Objective
+
+Design secure architectures, establish security standards and
+respond to security incidents.
+
+** Prerequisites
+
+- Completed Intermediate Path or equivalent experience.
+
+** Topics
+
+1. **Secure Architecture Design**
+   - Architecture-level threat modeling.
+   - Zero trust architecture.
+   - Security patterns and anti-patterns.
+
+2. **Incident Response**
+   - Detection, containment, eradication, recovery.
+   - Post-incident analysis.
+   - Reference: [[file:../../playbooks/incident-response/README.org][Incident Response Playbook]]
+
+3. **Security Standards and Compliance**
+   - Defining security standards for an organization.
+   - Compliance frameworks (SOC 2, ISO 27001).
+   - Security audit preparation.
+
+4. **Cryptography**
+   - Applied cryptography for engineers.
+   - Key management.
+   - TLS and certificate management.
+
+5. **Security Mentoring**
+   - Conducting security training.
+   - Reviewing for security mindset, not just vulnerabilities.
+
+** Assessment
+
+Demonstrate by: Designing a secure system architecture. Establishing
+security standards for a team. Mentoring others in security practices.
+
+* Related Documents
+
+- [[file:../../handbooks/security/README.org][Security Engineering Handbook]]
+- [[file:../../glossary/security/README.org][Security Glossary]]
+- [[file:../../playbooks/security-review/README.org][Security Review Playbook]]
+- [[file:../../guides/security/secure-coding.org][Secure Coding Guide]]
+- [[file:../../guides/security/web-vulnerabilities.org][Web Vulnerabilities Guide]]
+- [[file:../../guides/security/dependency-security.org][Dependency Security Guide]]

@@ -131,6 +131,19 @@
 
 * 0.3.0 (2026-07-27)
 
+** Security Engineering Capability (Phase 3)
+
+- Added =handbooks/security/README.org=: Security Engineering Handbook covering security principles (defense in depth, least privilege, secure by default, fail securely), threat modeling (STRIDE), secure development lifecycle, common vulnerabilities, security standards and AI integration.
+- Added =glossary/security/README.org=: Security terminology (CSRF, defense in depth, IDOR, least privilege, SAST, secure by default, SQL injection, threat modeling, XSS).
+- Added =guides/security/secure-coding.org=: Secure coding practices covering input validation, authentication, authorization, output encoding, error handling and cryptography.
+- Added =guides/security/web-vulnerabilities.org=: OWASP Top 10 (2021) with explanations and mitigations for each category, plus Rails-specific vulnerabilities.
+- Added =guides/security/dependency-security.org=: Dependency security management covering vulnerability scanning, dependency selection criteria, vulnerability response workflow, license compliance and hygiene.
+- Added =playbooks/security-review/README.org=: Security review workflow with scoping, threat modeling (STRIDE), code/configuration review, dependency review, finding documentation and remediation.
+- Added =checklists/security-review.org=: General security review checklist covering authentication, authorization, input validation, output protection, data protection, dependencies, logging and infrastructure.
+- Added =learning-paths/security/README.org=: Three-tier learning path (beginner, intermediate, advanced) for security engineering.
+- Added =references/security/README.org=: Quick-reference material for OWASP Top 10, STRIDE, security tools, response timeline and security headers.
+- Added =prompts/security-ai-workflows.org=: Prompt patterns for vulnerability identification, threat modeling, configuration review and incident analysis.
+
 ** Rails Engineering Capability (Phase 3)
 
 - Added =handbooks/rails/README.org=: Rails Engineering Handbook covering Rails philosophy, MVC principles, code organization, standards (models, migrations, routes, API), testing strategy, patterns (service objects, form objects, query objects, policy objects), anti-patterns and AI integration.
