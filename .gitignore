@@ -1,8 +1,14 @@
-# Generated site content
+# Generated Hugo content (org files copied for build)
 site/content/
 
-# Generated site output
+# Generated Hugo output
 site/public/
+
+# Hugo resources cache
+site/resources/
+
+# Hugo build lock
+site/.hugo_build.lock
 
 # Generated knowledge graph output
 tools/output/

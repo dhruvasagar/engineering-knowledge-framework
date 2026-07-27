@@ -1,4 +1,4 @@
-.PHONY: validate lint graph site serve all help
+.PHONY: validate lint graph site serve all clean help
 
 validate:
 	@echo "🔍 Running all validators..."
@@ -11,14 +11,18 @@ graph:
 	@python3 tools/build-knowledge-graph.py --format all
 
 site:
-	@echo "🌐 Building website..."
-	@python3 tools/org-to-md.py
-	cd site && zola build
+	@echo "🌐 Building website with Hugo..."
+	@python3 tools/prepare-hugo-content.py
+	cd site && hugo
 	@echo "✅ Site built in site/public/"
 
 serve:
-	@echo "🌐 Starting dev server..."
-	cd site && zola serve --port 1111
+	@echo "🌐 Starting Hugo dev server..."
+	cd site && hugo server --port 1111 -D
+
+clean:
+	@echo "🧹 Cleaning..."
+	rm -rf site/content site/public site/resources
 
 all: validate graph site
 
@@ -28,7 +32,8 @@ help:
 	@echo "Usage:"
 	@echo "  make validate    Run all validators"
 	@echo "  make graph       Build knowledge graph (JSON + DOT)"
-	@echo "  make site        Build the Zola static site"
-	@echo "  make serve       Build and serve the site locally"
+	@echo "  make site        Build the Hugo static site"
+	@echo "  make serve       Preview site at http://localhost:1111"
+	@echo "  make clean       Remove generated content and output"
 	@echo "  make all         Run validate + graph + site"
 	@echo "  make help        Show this help"
