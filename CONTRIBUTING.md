@@ -369,7 +369,7 @@ engineering knowledge available to the community.
 
 # Keeping the Index in Sync
 
-[TOC.md](./table-of-contents/) is the central navigation index for the repository.
+[TOC.md](./TOC/) is the central navigation index for the repository.
 
 When adding a new document:
 
@@ -390,7 +390,7 @@ When moving or renaming a document:
 
 # Related Documents
 
-- [Table of Contents](./table-of-contents/)
+- [Table of Contents](./TOC/)
 - [Repository Overview](../README/)
 - [CLAUDE.md](./CLAUDE.md)
 - [Strategy](./STRATEGY/)
