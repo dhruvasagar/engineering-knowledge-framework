@@ -205,7 +205,7 @@ Human review remains mandatory.
 
 ## Navigation and Discovery
 
-The repository uses [TOC.md](./TOC/) as the central navigation index.
+The repository uses [TOC.md](./TOC.md) as the central navigation index.
 It provides two views:
 
 * **From Top to Bottom**: Complete inventory of all documents
@@ -225,7 +225,7 @@ When writing or editing documents:
   Never use =*= for bullets — in Markdown, =*= creates a headline,
   not a list item.
 - Do not skip headline levels (e.g., =*= to =***= without =**=).
-- Follow the formatting rules in [STYLE_GUIDE.md](./style-guide/).
+- Follow the formatting rules in [STYLE_GUIDE.md](./style-guide.md).
 
 ## Context Engineering
 
