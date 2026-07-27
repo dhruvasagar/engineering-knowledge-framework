@@ -288,6 +288,21 @@ If you are new to the repository, begin with the governance documents.
 These documents explain the philosophy, organization and contribution
 model of the framework.
 
+* Navigating the Repository
+
+Once you understand the philosophy, use the [[file:./TOC.org][Table of Contents]]
+to explore the repository by capability or by topic.
+
+The TOC provides two complementary views:
+
+- **From Top to Bottom**: Every document organized by capability
+  (Engineering, Architecture, Rails, Security) and document type.
+- **Cross-Cutting Topics**: Documents grouped by topic (Testing,
+  Security, API Design, Performance, etc.) across capabilities.
+
+Each capability handbook also includes a **Capability Map** section
+listing all documents within that capability.
+
 * Current Focus
 
 The current priorities are:

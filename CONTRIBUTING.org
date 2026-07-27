@@ -367,8 +367,30 @@ Whether you improve a sentence, contribute a handbook, create a new
 capability or build tooling, you are helping improve the collective
 engineering knowledge available to the community.
 
+* Keeping the Index in Sync
+
+[[file:./TOC.org][TOC.org]] is the central navigation index for the repository.
+
+When adding a new document:
+
+1. Add it to the relevant capability section in TOC.org's "From Top
+   to Bottom" inventory.
+2. If the document addresses a cross-cutting topic, add it to the
+   relevant topic index in TOC.org's "Cross-Cutting Topics" section.
+3. Update the handbook's **Capability Map** for the relevant
+   capability.
+4. Add a README.org entry if the document is in a directory that
+   has one.
+
+When moving or renaming a document:
+
+1. Update all links in TOC.org, the handbook capability map, and
+   directory READMEs.
+2. Update cross-references in related documents.
+
 * Related Documents
 
+- [[file:./TOC.org][Table of Contents]]
 - [[file:../README.org][Repository Overview]]
 - [[file:./CLAUDE.md][CLAUDE.md]]
 - [[file:./STRATEGY.org][Strategy]]

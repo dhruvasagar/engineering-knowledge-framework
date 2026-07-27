@@ -507,6 +507,9 @@ Before committing a document, verify:
 * [ ] Duplicate knowledge has been avoided.
 * [ ] Examples are technically accurate.
 * [ ] The document follows repository conventions.
+* [ ] TOC.org is updated if this is a new or renamed document.
+* [ ] Handbook capability map is updated if this is a new or renamed
+      document.
 
 - AI Readability Checklist
 

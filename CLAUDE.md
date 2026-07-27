@@ -203,6 +203,22 @@ Human review remains mandatory.
 
 ---
 
+## Navigation and Discovery
+
+The repository uses [[file:./TOC.org][TOC.org]] as the central navigation index.
+It provides two views:
+
+* **From Top to Bottom**: Complete inventory of all documents
+  organized by capability, then by document type.
+* **Cross-Cutting Topics**: Topic-based indexes (Testing, Security,
+  API Design, etc.) that gather documents across capabilities.
+
+Every handbook also includes a **Capability Map** section listing
+all documents in that capability.
+
+**When adding or moving documents, update TOC.org and the
+relevant handbook's Capability Map.**
+
 ## Context Engineering
 
 Documents should maximize AI effectiveness by providing:
