@@ -44,17 +44,11 @@ A phase is considered complete when:
 
 ** Current Phase
 
-The project has completed **Phase 1** (Foundation) and **Phase 2**
-(Foundation Capabilities). **Phase 3** (Engineering Capabilities) is in
-progress:
-
-- Rails Engineering: **Complete** (all 9 document types).
-- Security Engineering: **Nearly complete** (missing templates).
-- AI Engineering: **Partially complete** (missing playbooks, templates,
-  AI workflows).
-- Engineering Quality: **Partially complete** (missing playbooks,
-  checklists, templates, AI workflows).
-- Accessibility: **Not started** (all 9 document types to build).
+The project has completed **Phase 1** (Foundation), **Phase 2**
+(Foundation Capabilities) and **Phase 3** (Engineering Capabilities).
+All five Phase 3 capabilities — Rails Engineering, Security Engineering,
+AI Engineering, Engineering Quality and Accessibility Engineering — are
+now built out with all nine document types covered.
 
 Cross-cutting work continues in AI integration (Phase 4) and the
 Learning Framework (Phase 5). Initial tooling work (Phase 6) is the
@@ -202,11 +196,12 @@ Engineering Fundamentals and Architecture capabilities as templates.
 
 ** Status
 
-[ ] **In Progress** — Rails Engineering is complete across all 9
-    document types. Security, AI Engineering, and Engineering Quality
-    have substantial content but are missing several document types.
-    Accessibility has not been started. See the capability breakdown
-    below for specific gaps.
+[x] **Complete** — All five engineering capabilities are built out
+    across all nine document types (handbook, glossary, guides,
+    playbooks, checklists, templates, learning paths, references, AI
+    workflows). Phase 3 transition criteria are satisfied. These
+    capabilities now form the reusable knowledge foundation for future
+    engineering disciplines.
 
 ** Objectives
 
@@ -229,99 +224,79 @@ Engineering Fundamentals and Architecture capabilities as templates.
 - [x] =references/rails/README.org=: Quick-reference material.
 - [x] =prompts/rails-ai-workflows.org=: AI workflows for Rails development.
 
-*** [~] Security Engineering — 1 gap: templates
+*** [x] Rails Engineering — Complete (all 9 document types)
 
-Present:
+- [x] =handbooks/rails/README.org=: Rails Engineering Handbook.
+- [x] =glossary/rails/README.org=: Rails-specific terminology.
+- [x] =guides/rails/= (8 guides): service-objects, testing, audit-guide,
+  project-standards, active-record, api-development, background-jobs,
+  authentication-authorization.
+- [x] =playbooks/rails/= (3): upgrade, deployment, README.
+- [x] =checklists/rails/= (4): pull-request, security-review, deployment, README.
+- [x] =templates/rails/= (5): service-object, form-object, query-object,
+  policy-object, README.
+- [x] =learning-paths/rails/README.org=: Three-tier learning path.
+- [x] =references/rails/README.org=: Quick-reference material.
+- [x] =prompts/rails-ai-workflows.org=: AI workflows for Rails development.
+
+*** [x] Security Engineering — Complete (all 9 document types)
 
 - [x] =handbooks/security/README.org=: Security Engineering Handbook.
 - [x] =glossary/security/README.org=: Security terminology.
-- [x] =guides/security/secure-coding.org=, =web-vulnerabilities.org=, =dependency-security.org= (3 guides + README).
+- [x] =guides/security/= (3 + README): secure-coding, web-vulnerabilities,
+  dependency-security.
 - [x] =playbooks/security-review/README.org=: Security review workflow.
 - [x] =checklists/security-review.org=: General security review checklist.
+- [x] =templates/security/= (3): threat-model, security-review-report, README.
 - [x] =learning-paths/security/README.org=: Three-tier learning path.
 - [x] =references/security/README.org=: Quick-reference material.
 - [x] =prompts/security-ai-workflows.org=: AI workflows for security.
 
-Missing:
-
-- [ ] **Templates**: Security-specific templates (e.g., threat model template,
-  security review report, security test plan). See the Rails templates
-  (=templates/rails/=) for a reference pattern.
-
-*** [~] AI Engineering — 3 gaps: playbooks, templates, AI workflows
-
-Present:
+*** [x] AI Engineering — Complete (all 9 document types)
 
 - [x] =handbooks/ai/README.org=: AI Engineering Handbook.
 - [x] =glossary/ai/README.org=: AI terminology.
-- [x] =guides/ai/prompt-engineering.org=, =context-engineering.org=, =ai-safety.org= (3 guides).
+- [x] =guides/ai/= (3): prompt-engineering, context-engineering, ai-safety.
+- [x] =playbooks/ai/= (4): ai-assisted-code-review,
+  ai-assisted-architecture-review, ai-pair-programming, README.
 - [x] =checklists/ai-usage.org=: AI usage verification checklist.
+- [x] =templates/ai/= (4): context-pack, prompt-template,
+  ai-review-response, README.
 - [x] =learning-paths/ai/README.org=: Three-tier learning path.
 - [x] =references/ai/README.org=: Quick-reference material.
+- [x] =prompts/ai-ai-workflows.org=: AI workflows for AI engineering.
 
-Missing:
-
-- [ ] **Playbooks**: AI-assisted workflow playbooks (e.g., AI-assisted code
-  review process, AI-assisted architecture review, AI pair programming
-  workflow) at =playbooks/ai/=.
-- [ ] **Templates**: AI-specific templates (e.g., context engineering template,
-  prompt template, AI review response template) at =templates/ai/=.
-- [ ] **AI Workflows**: Meta-AI workflows for the AI Engineering capability
-  itself (how AI can assist with AI engineering tasks) at
-  =prompts/ai-ai-workflows.org=.
-
-*** [~] Engineering Quality — 4 gaps: playbooks, checklists, templates, AI workflows
-
-Present:
+*** [x] Engineering Quality — Complete (all 9 document types)
 
 - [x] =handbooks/quality/README.org=: Engineering Quality Handbook.
 - [x] =glossary/quality/README.org=: Quality terminology.
-- [x] =guides/quality/code-review-standards.org=, =quality-metrics.org=, =technical-debt-management.org= (3 guides).
+- [x] =guides/quality/= (3): code-review-standards, quality-metrics,
+  technical-debt-management.
+- [x] =playbooks/quality/= (4): quality-review, tech-debt-remediation,
+  release-quality-gate, README.
+- [x] =checklists/quality/= (4): quality-gate, release-readiness,
+  tech-debt-triage, README.
+- [x] =templates/quality/= (4): quality-report, tech-debt-register,
+  quality-dashboard, README.
 - [x] =learning-paths/quality/README.org=: Three-tier learning path.
 - [x] =references/quality/README.org=: Quick-reference material.
+- [x] =prompts/quality-ai-workflows.org=: AI workflows for quality.
 
-Missing:
+*** [x] Accessibility Engineering — Complete (all 9 document types)
 
-- [ ] **Playbooks**: Quality workflow playbooks (e.g., quality review process,
-  technical debt remediation workflow, release quality gate) at
-  =playbooks/quality/=.
-- [ ] **Checklists**: Quality-specific checklists (e.g., quality gate checklist,
-  release readiness checklist, technical debt triage checklist) at
-  =checklists/quality/=.
-- [ ] **Templates**: Quality-specific templates (e.g., quality report template,
-  technical debt register, quality metrics dashboard) at =templates/quality/=.
-- [ ] **AI Workflows**: AI workflows for quality (e.g., quality review with AI,
-  technical debt analysis with AI, test coverage assessment) at
-  =prompts/quality-ai-workflows.org=.
-
-*** [ ] Accessibility — not started (all 9 document types missing)
-
-Empty stub directories exist at =handbooks/accessibility/= and
-=glossary/accessibility/=. The entire capability needs to be built:
-
-- [ ] **Handbook** (=handbooks/accessibility/README.org=): Accessibility Engineering
-  Handbook covering principles (WCAG, inclusive design, assistive
-  technology), standards, testing methodology and AI integration.
-- [ ] **Glossary** (=glossary/accessibility/README.org=): Accessibility terminology
-  (WCAG, ARIA, screen reader, keyboard navigation, colour contrast, etc.).
-- [ ] **Guides** (=guides/accessibility/=): Multiple guides covering accessibility
-  testing, semantic HTML, ARIA patterns, inclusive design, accessibility
-  in CI/CD.
-- [ ] **Playbooks** (=playbooks/accessibility-review/README.org=): Accessibility
-  review workflow with evaluation criteria, tools and reporting.
-- [ ] **Checklists** (=checklists/accessibility/=): Accessibility audit checklist,
-  PR accessibility checklist, WCAG compliance checklist.
-- [ ] **Templates** (=templates/accessibility/=): Accessibility report template,
-  VPAT template, accessibility statement template.
-- [ ] **Learning Paths** (=learning-paths/accessibility/README.org=): Three-tier
-  learning path (beginner, intermediate, advanced).
-- [ ] **References** (=references/accessibility/README.org=): Quick-reference
-  material — WCAG levels, ARIA roles, testing tools, keyboard shortcuts.
-- [ ] **AI Workflows** (=prompts/accessibility-ai-workflows.org=): AI workflows for
-  accessibility auditing, remediation and testing.
-
-See the Engineering Fundamentals capability as a template for structure
-and conventions.
+- [x] =handbooks/accessibility/README.org=: Accessibility Engineering Handbook.
+- [x] =glossary/accessibility/README.org=: Accessibility terminology.
+- [x] =guides/accessibility/= (6 + README): semantic-html,
+  keyboard-accessibility, accessible-forms, aria-patterns,
+  colour-and-contrast, screen-reader-testing.
+- [x] =playbooks/accessibility-review/README.org=: Accessibility review workflow.
+- [x] =checklists/accessibility/= (4): wcag-audit, pr-review,
+  design-review, README.
+- [x] =templates/accessibility/= (3): accessibility-report,
+  accessibility-statement, README.
+- [x] =learning-paths/accessibility/README.org=: Three-tier learning path.
+- [x] =references/accessibility/README.org=: Quick-reference material.
+- [x] =prompts/accessibility-ai-workflows.org=: AI workflows for accessibility.
 
 
 
@@ -362,6 +337,9 @@ build all capabilities simultaneously.
 - AI workflows are most useful when they reference specific guides and patterns within the same capability.
 - Security and Quality capabilities benefited from tight cross-referencing with Rails (e.g., Rails security checklist).
 - Building capabilities in parallel (Rails, Security, AI, Quality) was more efficient than sequential builds.
+- Accessibility demonstrated that a complete capability can be built efficiently by following the established template.
+- Filling document-type gaps later (Security templates, AI playbooks) is possible but less efficient than building them
+  alongside the initial content.
 
 * Phase 4 — AI Engineering Framework
 
@@ -370,12 +348,13 @@ the engineering lifecycle.
 
 ** Status
 
-[x] **Substantial Foundation Laid** — The AI Engineering capability
-    (handbook, glossary, guides, checklists, learning paths,
-    references) is complete. Domain-specific AI workflows exist for
-    Engineering, Architecture, Rails and Security. Remaining work
-    focuses on agentic workflows, evaluation frameworks and deeper
-    integration across all capabilities.
+[x] **Solid Foundation** — The AI Engineering capability is fully built
+    out across all nine document types, including AI-specific playbooks,
+    templates and meta-AI workflows. Domain-specific AI workflows exist
+    for Engineering, Architecture, Rails, Security, Quality and
+    Accessibility. Remaining work focuses on agentic workflows,
+    evaluation frameworks and deeper integration across all
+    capabilities.
 
 ** Objectives
 
@@ -399,6 +378,15 @@ the engineering lifecycle.
 - [x] =prompts/architecture-ai-workflows.org=: AI workflows for trade-off analysis, ADR drafting, pattern selection.
 - [x] =prompts/rails-ai-workflows.org=: AI workflows for Rails model generation, API development, testing.
 - [x] =prompts/security-ai-workflows.org=: AI workflows for vulnerability identification, threat modeling.
+- [x] =playbooks/ai/ai-assisted-code-review.org=: AI-assisted code review workflow.
+- [x] =playbooks/ai/ai-assisted-architecture-review.org=: AI-assisted architecture review workflow.
+- [x] =playbooks/ai/ai-pair-programming.org=: AI pair programming workflow.
+- [x] =templates/ai/context-pack.org=: Context pack template for AI assistants.
+- [x] =templates/ai/prompt-template.org=: Standard prompt structure template.
+- [x] =templates/ai/ai-review-response.org=: AI review findings documentation template.
+- [x] =prompts/ai-ai-workflows.org=: AI workflows for AI engineering.
+- [x] =prompts/quality-ai-workflows.org=: AI workflows for quality engineering.
+- [x] =prompts/accessibility-ai-workflows.org=: AI workflows for accessibility engineering.
 - [x] =prompts/README.org=: Index of all AI workflow documents.
 
 ** Next Steps
@@ -757,15 +745,13 @@ Current priorities are:
 5. [x] Develop Security Engineering capability (Phase 3).
 6. [x] Develop AI Engineering capability (Phase 3/4).
 7. [x] Develop Engineering Quality capability (Phase 3).
-8. [x] Establish RFC and ADR processes for framework evolution (see [[file:./adr/][adr/]] directory and [[file:./templates/adr/README.org][ADR template]]).
-9. [ ] Complete Security Engineering capability (add templates).
-10. [ ] Complete AI Engineering capability (add playbooks, templates, AI workflows).
-11. [ ] Complete Engineering Quality capability (add playbooks, checklists, templates, AI workflows).
-12. [ ] Build the Accessibility Engineering capability (all 9 document types).
-13. [ ] Add practical exercises and assessments to learning paths (Phase 5).
-14. [ ] Develop AI agentic workflows and evaluation frameworks (Phase 4).
-15. [ ] Build initial validation tooling — link validation, style validation, glossary validation (Phase 6).
-16. [ ] Build knowledge graph generation tooling (Phase 6).
+8. [x] Develop Accessibility Engineering capability (Phase 3).
+9. [x] Establish RFC and ADR processes for framework evolution (see [[file:./adr/][adr/]] directory and [[file:./templates/adr/README.org][ADR template]]).
+10. [ ] Add practical exercises and assessments to learning paths (Phase 5).
+11. [ ] Develop AI agentic workflows and evaluation frameworks (Phase 4).
+12. [ ] Build initial validation tooling — link validation, style validation, glossary validation (Phase 6).
+13. [ ] Build knowledge graph generation tooling (Phase 6).
+14. [ ] Explore community engagement and contribution workflows (Phase 8).
 
 These initiatives build on the completed foundation. See [[file:./CHANGELOG.org][CHANGELOG]] for
 completed milestones.

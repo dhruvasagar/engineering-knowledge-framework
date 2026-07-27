@@ -215,17 +215,17 @@ Learning Paths connect all of the above.
 
 Responsibilities:
 
-| Artifact | Responsibility |
-|-----------+---------------------------------------------------|
-| Handbook | Principles, philosophy and standards |
-| Guide | Deep explanation of a focused topic |
-| Playbook | Repeatable operational workflow |
-| Checklist | Verification and quality gates |
-| Template | Reusable starting point |
-| Reference | Quick factual lookup |
-| Glossary | Canonical terminology |
+| Artifact      | Responsibility                           |
+|---------------+------------------------------------------|
+| Handbook      | Principles, philosophy and standards     |
+| Guide         | Deep explanation of a focused topic      |
+| Playbook      | Repeatable operational workflow          |
+| Checklist     | Verification and quality gates           |
+| Template      | Reusable starting point                  |
+| Reference     | Quick factual lookup                     |
+| Glossary      | Canonical terminology                    |
 | Learning Path | Structured progression through knowledge |
-| Example | Practical implementation |
+| Example       | Practical implementation                 |
 
 Each artifact type is documented in
 [[file:./DOCUMENT_TYPES.org][Document Types]].

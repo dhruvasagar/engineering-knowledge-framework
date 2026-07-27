@@ -281,3 +281,15 @@
 - Added =learning-paths/accessibility/README.org=: Three-tier learning path.
 - Added =references/accessibility/README.org=: Quick-reference material.
 - Added =prompts/accessibility-ai-workflows.org=: AI workflows for accessibility.
+
+** Roadmap Updated
+
+- Phase 3 status changed from In Progress to Complete.
+- Current Phase updated to reflect Phase 3 completion.
+- Phase 3 capability breakdowns updated: all five capabilities now marked
+  [x] Complete with full document-type inventories.
+- Phase 4 (AI Engineering Framework) updated with newly created AI playbooks,
+  templates and domain AI workflows in the Completed section.
+- Near-term Priorities consolidated: 9 completed items marked [x], remaining
+  5 priorities reorganised (learning path exercises, AI agentic workflows,
+  validation tooling, knowledge graph tooling, community engagement).
