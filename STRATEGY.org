@@ -127,14 +127,14 @@ AI is a first-class consumer of this repository.
 
 Knowledge should be structured so that it is equally useful for:
 
-* Engineers.
-* AI assistants.
-* Coding agents.
-* Search systems.
-* Knowledge graphs.
-* Future engineering tools.
+- Engineers.
+- AI assistants.
+- Coding agents.
+- Search systems.
+- Knowledge graphs.
+- Future engineering tools.
 
-- Strategic Objectives
+* Strategic Objectives
 
 The framework aims to help organizations:
 
@@ -149,11 +149,11 @@ than remaining isolated within individual teams.
 
 Provide practical guidance that helps engineers:
 
-* Build better software.
-* Make better architectural decisions.
-* Reduce technical debt.
-* Improve maintainability.
-* Increase software quality.
+- Build better software.
+- Make better architectural decisions.
+- Reduce technical debt.
+- Improve maintainability.
+- Increase software quality.
 
 ** Accelerate learning
 
@@ -207,10 +207,10 @@ framework.
 
 Examples include:
 
-* Strategy
-* Style Guide
-* Document Types
-* Contribution Guidelines
+- Strategy
+- Style Guide
+- Document Types
+- Contribution Guidelines
 
 ** Knowledge Architecture
 
@@ -218,10 +218,10 @@ Defines how engineering knowledge is organized and related.
 
 Examples include:
 
-* Capability model
-* Glossaries
-* Repository organization
-* Cross-reference conventions
+- Capability model
+- Glossaries
+- Repository organization
+- Cross-reference conventions
 
 ** Engineering Capabilities
 
@@ -229,15 +229,15 @@ Each capability represents a coherent engineering discipline.
 
 A capability typically contains:
 
-* Handbook
-* Guides
-* Playbooks
-* Checklists
-* Templates
-* References
-* Learning Paths
-* Glossary
-* AI Workflows
+- Handbook
+- Guides
+- Playbooks
+- Checklists
+- Templates
+- References
+- Learning Paths
+- Glossary
+- AI Workflows
 
 Capabilities should be independent, composable and continuously
 evolving.
@@ -248,12 +248,12 @@ Defines how AI participates throughout the engineering lifecycle.
 
 Examples include:
 
-* Context engineering
-* Agentic workflows
-* AI-assisted reviews
-* Documentation generation
-* Knowledge extraction
-* Verification workflows
+- Context engineering
+- Agentic workflows
+- AI-assisted reviews
+- Documentation generation
+- Knowledge extraction
+- Verification workflows
 
 ** Learning Framework
 
@@ -261,10 +261,10 @@ Provides structured progression for developing engineering competency.
 
 Examples include:
 
-* Learning paths
-* Reading sequences
-* Exercises
-* Assessments
+- Learning paths
+- Reading sequences
+- Exercises
+- Assessments
 
 ** Tooling
 
@@ -272,26 +272,26 @@ Supports automation throughout the framework.
 
 Examples include:
 
-* Templates
-* Repository generators
-* Style validation
-* Link validation
-* Knowledge indexing
-* Search
-* AI context generation
+- Templates
+- Repository generators
+- Style validation
+- Link validation
+- Knowledge indexing
+- Search
+- AI context generation
 
 - Success Metrics
 
 The framework succeeds when it helps organizations:
 
-* Preserve engineering knowledge.
-* Reduce repeated engineering mistakes.
-* Improve software quality.
-* Improve engineering consistency.
-* Accelerate onboarding.
-* Improve engineering decision making.
-* Enable effective AI collaboration.
-* Continuously improve engineering practices.
+- Preserve engineering knowledge.
+- Reduce repeated engineering mistakes.
+- Improve software quality.
+- Improve engineering consistency.
+- Accelerate onboarding.
+- Improve engineering decision making.
+- Enable effective AI collaboration.
+- Continuously improve engineering practices.
 
 Success should be measured by engineering outcomes rather than document
 count.
@@ -302,11 +302,11 @@ The framework is intended to be community-driven.
 
 Contributors are encouraged to:
 
-* Improve existing knowledge before creating new documents.
-* Capture lessons learned from real engineering experience.
-* Share engineering practices that have demonstrated value.
-* Explain trade-offs rather than presenting absolute rules.
-* Build reusable knowledge rather than project-specific documentation.
+- Improve existing knowledge before creating new documents.
+- Capture lessons learned from real engineering experience.
+- Share engineering practices that have demonstrated value.
+- Explain trade-offs rather than presenting absolute rules.
+- Build reusable knowledge rather than project-specific documentation.
 
 The framework should benefit from diverse engineering experience while
 maintaining consistent structure and quality.
@@ -315,12 +315,12 @@ maintaining consistent structure and quality.
 
 The Engineering Knowledge Framework aims to become:
 
-* A reusable framework for engineering organizations.
-* A reference architecture for engineering knowledge systems.
-* A foundation for AI-assisted engineering.
-* A repository of high-quality engineering capabilities.
-* A platform for preserving institutional knowledge.
-* A community-driven engineering resource.
+- A reusable framework for engineering organizations.
+- A reference architecture for engineering knowledge systems.
+- A foundation for AI-assisted engineering.
+- A repository of high-quality engineering capabilities.
+- A platform for preserving institutional knowledge.
+- A community-driven engineering resource.
 
 Organizations should be able to adopt the framework, extend it with
 their own capabilities and contribute improvements back to the broader
@@ -332,15 +332,15 @@ Over time, the framework is expected to expand beyond documentation.
 
 Potential areas include:
 
-* Repository generators.
-* Validation tools.
-* Knowledge graphs.
-* AI context packaging.
-* Static site generation.
-* Search and discovery.
-* MCP integrations.
-* Engineering analytics.
-* Capability maturity assessments.
+- Repository generators.
+- Validation tools.
+- Knowledge graphs.
+- AI context packaging.
+- Static site generation.
+- Search and discovery.
+- MCP integrations.
+- Engineering analytics.
+- Capability maturity assessments.
 
 These tools should reinforce the framework's mission without replacing
 its primary focus on high-quality engineering knowledge.

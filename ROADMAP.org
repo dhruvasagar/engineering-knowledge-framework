@@ -44,16 +44,26 @@ A phase is considered complete when:
 
 ** Current Phase
 
-The project is currently in **Phase 2** (Foundation Capabilities), with
-cross-cutting work in AI integration (Phase 4) and templates (Phase 6).
+The project has completed **Phase 1** (Foundation), **Phase 2** (Foundation
+Capabilities), and substantially delivered **Phase 3** (Engineering
+Capabilities). The Rails, Security, AI Engineering, and Engineering
+Quality capabilities are built out with most document types covered.
 
-Phase 1 (Foundation) was completed with the initial repository
-structure and governance documents. See the [[file:./CHANGELOG.org][CHANGELOG]] for the
-detailed deliverable list.
+Cross-cutting work continues in AI integration (Phase 4) and the
+Learning Framework (Phase 5). Initial tooling work (Phase 6) is the
+next major undertaking.
+
+See the [[file:./CHANGELOG.org][CHANGELOG]] for the detailed deliverable list.
 
 * Phase 1 — Foundation
 
 Establish the governance and architectural foundations of the framework.
+
+** Status
+
+[x] **Complete** — All governance documents, repository structure,
+    document taxonomy, and capability stubs are in place. Phase 1
+    transition criteria are satisfied.
 
 ** Objectives
 
@@ -86,6 +96,12 @@ Establish the governance and architectural foundations of the framework.
 - Contributors can understand how the framework is organized.
 - AI assistants can navigate the repository effectively.
 
+** Lessons Learned
+
+- Capability stubs provided clear scaffolding for later content.
+- Org-mode with consistent heading levels improved AI parsability.
+- Separating governance from content prevented architectural drift.
+
 * Phase 2 — Foundation Capabilities
 
 Develop foundational engineering capabilities that establish patterns
@@ -95,6 +111,12 @@ Engineering Fundamentals and Software Architecture are the initial
 foundation capabilities. They are chosen because engineering principles
 apply across all capabilities and architecture concepts are referenced
 by every engineering discipline.
+
+** Status
+
+[x] **Complete** — All deliverables published, validated, and reviewed.
+    Phase 2 transition criteria are satisfied. These capabilities now
+    serve as reusable templates for Phase 3.
 
 ** Objectives
 
@@ -160,10 +182,23 @@ Software Architecture that:
 - AI assistants can use the capabilities effectively.
 - Provides clear vocabulary and principles that downstream capabilities will reference.
 
+** Lessons Learned
+
+- The capability template (handbook → glossary → guides → playbooks → checklists → templates → learning paths → references → AI workflows) proved effective and was reused in Phase 3.
+- Cross-referencing between Engineering Fundamentals and Architecture established conventions that later capabilities followed.
+- AI workflows should be included from the start, not added after capability completion.
+
 * Phase 3 — Engineering Capabilities
 
 Expand the framework to additional engineering disciplines using the
 Engineering Fundamentals and Architecture capabilities as templates.
+
+** Status
+
+[x] **Substantially Complete** — Four engineering capabilities (Rails,
+    Security, AI Engineering, Engineering Quality) have been built out
+    with most document types covered. The Accessibility capability stub
+    remains to be developed.
 
 ** Objectives
 
@@ -172,18 +207,85 @@ Engineering Fundamentals and Architecture capabilities as templates.
 - Establish cross-referencing patterns between capabilities.
 - Grow the repository's knowledge graph.
 
-** In Progress
+** Completed
 
-- Rails Engineering: Complete capability with all 9 document types.
-- Security Engineering: Complete capability with all 9 document types.
-- AI Engineering: Complete capability with all 9 document types.
-- Engineering Quality: Handbook, glossary, guides (code review standards, quality metrics, technical debt management), learning paths, references and AI workflows complete.
+*** [x] Rails Engineering
+
+A complete Rails Engineering capability covering all nine document
+types:
+
+- [x] =handbooks/rails/README.org=: Rails Engineering Handbook covering philosophy, MVC principles, code organization, testing strategy, patterns and anti-patterns.
+- [x] =glossary/rails/README.org=: Rails-specific terminology (ActiveRecord, concern, controller, form object, migration, model, presenter, query object, service object, view).
+- [x] =guides/rails/service-objects.org=: When and how to use service objects.
+- [x] =guides/rails/testing.org=: Rails-specific testing strategy.
+- [x] =guides/rails/audit-guide.org=: Systematic code quality, performance and security auditing.
+- [x] =guides/rails/project-standards.org=: Mandatory tooling and CI/CD baseline.
+- [x] =guides/rails/active-record.org=: ActiveRecord patterns and query optimization.
+- [x] =guides/rails/api-development.org=: API development with Rails.
+- [x] =guides/rails/background-jobs.org=: Background job patterns and framework selection.
+- [x] =guides/rails/authentication-authorization.org=: Authentication and authorization patterns.
+- [x] =playbooks/rails/upgrade.org=: Rails version upgrade workflow.
+- [x] =playbooks/rails/deployment.org=: Safe deployment with zero-downtime patterns.
+- [x] =checklists/rails/pull-request.org=: PR checklist for authors and reviewers.
+- [x] =checklists/rails/security-review.org=: Rails-specific security verification.
+- [x] =checklists/rails/deployment.org=: Pre/post-deployment verification.
+- [x] =templates/rails/service-object.org=: Reusable service object template.
+- [x] =templates/rails/form-object.org=: Reusable form object template.
+- [x] =templates/rails/query-object.org=: Reusable query object template.
+- [x] =templates/rails/policy-object.org=: Reusable authorization policy template.
+- [x] =learning-paths/rails/README.org=: Three-tier learning path.
+- [x] =references/rails/README.org=: Quick-reference material.
+- [x] =prompts/rails-ai-workflows.org=: AI workflows for Rails development.
+
+*** [x] Security Engineering
+
+A comprehensive Security Engineering capability:
+
+- [x] =handbooks/security/README.org=: Security Engineering Handbook covering principles, threat modeling (STRIDE), SDLC and standards.
+- [x] =glossary/security/README.org=: Security terminology (CSRF, defense in depth, IDOR, least privilege, SAST, SQL injection, threat modeling, XSS).
+- [x] =guides/security/secure-coding.org=: Secure coding practices.
+- [x] =guides/security/web-vulnerabilities.org=: OWASP Top 10 with mitigations.
+- [x] =guides/security/dependency-security.org=: Dependency security management.
+- [x] =playbooks/security-review/README.org=: Security review workflow with STRIDE.
+- [x] =checklists/security-review.org=: General security review checklist.
+- [x] =learning-paths/security/README.org=: Three-tier learning path.
+- [x] =references/security/README.org=: Quick-reference material.
+- [x] =prompts/security-ai-workflows.org=: AI workflows for security analysis.
+
+*** [x] AI Engineering
+
+A complete AI Engineering capability covering AI-assisted engineering
+practices:
+
+- [x] =handbooks/ai/README.org=: AI Engineering Handbook covering principles, context engineering, workflow patterns and verification.
+- [x] =glossary/ai/README.org=: AI terminology (context engineering, hallucination, prompt engineering, verification).
+- [x] =guides/ai/prompt-engineering.org=: Prompt engineering principles, patterns and anti-patterns.
+- [x] =guides/ai/context-engineering.org=: Context engineering categories and templates.
+- [x] =guides/ai/ai-safety.org=: AI safety practices and human oversight.
+- [x] =checklists/ai-usage.org=: Verification checklist for AI-generated output.
+- [x] =learning-paths/ai/README.org=: Three-tier learning path.
+- [x] =references/ai/README.org=: Quick-reference material.
+
+*** [x] Engineering Quality
+
+A focused Engineering Quality capability:
+
+- [x] =handbooks/quality/README.org=: Engineering Quality Handbook covering quality gates, metrics and culture.
+- [x] =glossary/quality/README.org=: Quality terminology (change failure rate, MTTR, technical debt).
+- [x] =guides/quality/code-review-standards.org=: Code review velocity and quality standards.
+- [x] =guides/quality/quality-metrics.org=: Code quality and process metrics.
+- [x] =guides/quality/technical-debt-management.org=: Technical debt classification and management.
+- [x] =learning-paths/quality/README.org=: Three-tier learning path.
+- [x] =references/quality/README.org=: Quick-reference material.
 
 ** Ready for Development
 
-Handbook stubs exist for these capabilities:
+Capability stubs exist for these capabilities:
 
-- Accessibility (=handbooks/accessibility/=)
+- Accessibility: Empty stub directory at =handbooks/accessibility/=. Handbook,
+  glossary, guide, playbook, checklist and other document types all need
+  to be developed. See the Engineering Fundamentals capability as a
+  template.
 
 ** Future Capabilities
 
@@ -208,17 +310,34 @@ Each capability should:
 
 1. Define its scope and boundaries.
 2. Identify related capabilities and cross-references.
-3. Build incrementally: handbook → glossary → guides → playbooks → checklists → templates → learning paths.
+3. Build incrementally: handbook → glossary → guides → playbooks → checklists → templates → learning paths → references → AI workflows.
 4. Include AI workflows alongside traditional documentation.
 5. Pass style and link validation before release.
 
 Priority should follow organizational need rather than attempting to
 build all capabilities simultaneously.
 
+** Lessons Learned
+
+- The capability template scaled well from 2 to 6 capabilities.
+- Rails capability demonstrated that technology-specific capabilities need more guides than cross-cutting ones.
+- AI workflows are most useful when they reference specific guides and patterns within the same capability.
+- Security and Quality capabilities benefited from tight cross-referencing with Rails (e.g., Rails security checklist).
+- Building capabilities in parallel (Rails, Security, AI, Quality) was more efficient than sequential builds.
+
 * Phase 4 — AI Engineering Framework
 
 Develop AI-native engineering practices that integrate AI throughout
 the engineering lifecycle.
+
+** Status
+
+[x] **Substantial Foundation Laid** — The AI Engineering capability
+    (handbook, glossary, guides, checklists, learning paths,
+    references) is complete. Domain-specific AI workflows exist for
+    Engineering, Architecture, Rails and Security. Remaining work
+    focuses on agentic workflows, evaluation frameworks and deeper
+    integration across all capabilities.
 
 ** Objectives
 
@@ -226,23 +345,34 @@ the engineering lifecycle.
 - Define AI collaboration patterns.
 - Create review and verification workflows.
 - Provide practical guidance for AI-assisted engineering.
+- Build AI evaluation and verification frameworks.
 
-** Topics
+** Completed
 
-- Context Engineering
-- Prompt Engineering
-- Agentic Workflows
-- Code Review
-- Architecture Review
-- Documentation Generation
-- Test Generation
-- Security Analysis
-- Accessibility Assessment
-- Knowledge Extraction
-- Verification Workflows
-- AI Collaboration Patterns
-- Human Review Strategies
-- AI Evaluation
+- [x] =handbooks/ai/README.org=: AI Engineering Handbook — principles, context engineering, workflow patterns, verification.
+- [x] =glossary/ai/README.org=: AI terminology.
+- [x] =guides/ai/prompt-engineering.org=: Prompt engineering principles and patterns.
+- [x] =guides/ai/context-engineering.org=: Context engineering with categories and templates.
+- [x] =guides/ai/ai-safety.org=: AI safety practices and human oversight.
+- [x] =checklists/ai-usage.org=: Verification checklist for AI-generated output.
+- [x] =learning-paths/ai/README.org=: Three-tier learning path.
+- [x] =references/ai/README.org=: Quick-reference material.
+- [x] =prompts/engineering-ai-workflows.org=: AI workflows for code review, design exploration, refactoring.
+- [x] =prompts/architecture-ai-workflows.org=: AI workflows for trade-off analysis, ADR drafting, pattern selection.
+- [x] =prompts/rails-ai-workflows.org=: AI workflows for Rails model generation, API development, testing.
+- [x] =prompts/security-ai-workflows.org=: AI workflows for vulnerability identification, threat modeling.
+- [x] =prompts/README.org=: Index of all AI workflow documents.
+
+** Next Steps
+
+Remaining topics to develop:
+
+- Agentic Workflows: Patterns for multi-step AI-assisted engineering workflows.
+- AI Collaboration Patterns: How engineers and AI should interact in different contexts.
+- Human Review Strategies: When and how to review AI output effectively.
+- AI Evaluation: Frameworks for measuring AI output quality and reliability.
+- Verification Workflows: Systematic verification of AI-generated code, architecture and documentation.
+- Knowledge Extraction: Using AI to extract and structure engineering knowledge.
 
 ** Long-term Goal
 
@@ -254,25 +384,45 @@ capability.
 
 Build structured learning experiences for every capability.
 
+** Status
+
+[x] **In Progress** — Beginner, intermediate and advanced learning
+    paths exist for Engineering, Architecture, Rails, Security, AI
+    Engineering, and Engineering Quality. The next step is to add
+    practical exercises, suggested projects and competency assessments
+    to each learning path.
+
 ** Objectives
 
 Develop standardized learning paths that support progressive skill
 development.
 
-** Deliverables
+** Completed
+
+- [x] =learning-paths/engineering/README.org=: Three-tier learning path for Engineering Fundamentals.
+- [x] =learning-paths/architecture/README.org=: Three-tier learning path for Software Architecture.
+- [x] =learning-paths/rails/README.org=: Three-tier learning path for Rails Engineering.
+- [x] =learning-paths/security/README.org=: Three-tier learning path for Security Engineering.
+- [x] =learning-paths/ai/README.org=: Three-tier learning path for AI Engineering.
+- [x] =learning-paths/quality/README.org=: Three-tier learning path for Engineering Quality.
+
+** Next Steps
 
 Each capability should eventually include:
 
-- Beginner Learning Path
-- Intermediate Learning Path
-- Advanced Learning Path
-- Practical Exercises
-- Suggested Projects
-- Reading Lists
-- Competency Assessments
+- [ ] Practical exercises aligned with learning path levels.
+- [ ] Suggested projects for portfolio building.
+- [ ] Reading lists with curated resources.
+- [ ] Competency assessments to validate skill progression.
+- [ ] Cross-capability learning sequences (e.g., Engineering → Architecture → Rails).
 
 The framework should support both self-paced learning and organizational
 training.
+
+** Lessons Learned
+
+- Three-tier structure (beginner, intermediate, advanced) works well but needs concrete exercises to be actionable.
+- Learning paths are more useful when they reference specific guides and playbooks within the capability.
 
 * Phase 6 — Framework Tooling
 
@@ -423,16 +573,22 @@ Document count is *not* a success metric.
 
 Current priorities are:
 
-1. Build Engineering Fundamentals capability (Phase 2a).
-2. Build Software Architecture capability (Phase 2b).
-3. Create reusable document templates for all document types.
-4. Develop the AI Engineering capability (Phase 4).
-5. Build initial validation tooling (Phase 6).
-6. [x] Establish RFC and ADR processes for framework evolution (see [[file:./adr/][adr/]] directory and [[file:./templates/adr/README.org][ADR template]]).
+1. [x] Build Engineering Fundamentals capability (Phase 2a).
+2. [x] Build Software Architecture capability (Phase 2b).
+3. [x] Create reusable document templates for all document types.
+4. [x] Develop Rails Engineering capability (Phase 3).
+5. [x] Develop Security Engineering capability (Phase 3).
+6. [x] Develop AI Engineering capability (Phase 3/4).
+7. [x] Develop Engineering Quality capability (Phase 3).
+8. [x] Establish RFC and ADR processes for framework evolution (see [[file:./adr/][adr/]] directory and [[file:./templates/adr/README.org][ADR template]]).
+9. [ ] Build the Accessibility Engineering capability.
+10. [ ] Add practical exercises and assessments to learning paths (Phase 5).
+11. [ ] Develop AI agentic workflows and evaluation frameworks (Phase 4).
+12. [ ] Build initial validation tooling — link validation, style validation, glossary validation (Phase 6).
+13. [ ] Build knowledge graph generation tooling (Phase 6).
 
-These initiatives establish the foundation for all future work.
-
-See [[file:./CHANGELOG.org][CHANGELOG]] for completed milestones.
+These initiatives build on the completed foundation. See [[file:./CHANGELOG.org][CHANGELOG]] for
+completed milestones.
 
 * Future Evolution
 

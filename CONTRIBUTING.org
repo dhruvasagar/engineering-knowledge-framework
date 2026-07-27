@@ -43,12 +43,12 @@ Improve the framework itself.
 
 Examples include:
 
-* Repository architecture
-* Strategy
-* Writing standards
-* Style guide
-* Document taxonomy
-* Governance processes
+- Repository architecture
+- Strategy
+- Writing standards
+- Style guide
+- Document taxonomy
+- Governance processes
 
 ** Engineering Capabilities
 
@@ -56,13 +56,13 @@ Develop or improve engineering capabilities.
 
 Examples include:
 
-* Rails Engineering
-* Security Engineering
-* Software Architecture
-* Accessibility
-* AI Engineering
-* Testing
-* Platform Engineering
+- Rails Engineering
+- Security Engineering
+- Software Architecture
+- Accessibility
+- AI Engineering
+- Testing
+- Platform Engineering
 
 ** Knowledge Artifacts
 
@@ -70,15 +70,15 @@ Create or improve reusable knowledge.
 
 Examples include:
 
-* Handbooks
-* Guides
-* Playbooks
-* Checklists
-* Templates
-* References
-* Learning Paths
-* Examples
-* Glossaries
+- Handbooks
+- Guides
+- Playbooks
+- Checklists
+- Templates
+- References
+- Learning Paths
+- Examples
+- Glossaries
 
 ** AI Workflows
 
@@ -86,12 +86,12 @@ Improve AI-assisted engineering.
 
 Examples include:
 
-* Prompt libraries
-* Context engineering
-* Agentic workflows
-* Verification workflows
-* AI review patterns
-* Knowledge extraction
+- Prompt libraries
+- Context engineering
+- Agentic workflows
+- Verification workflows
+- AI review patterns
+- Knowledge extraction
 
 ** Tooling
 
@@ -99,12 +99,12 @@ Build tools that improve the framework.
 
 Examples include:
 
-* Repository generators
-* Validation tools
-* Search
-* Knowledge graph generation
-* Documentation linting
-* AI context generation
+- Repository generators
+- Validation tools
+- Search
+- Knowledge graph generation
+- Documentation linting
+- AI context generation
 
 - Before Contributing
 
@@ -144,10 +144,10 @@ Do not simply describe what should be done.
 
 Explain:
 
-* Why.
-* Trade-offs.
-* Alternatives.
-* Decision criteria.
+- Why.
+- Trade-offs.
+- Alternatives.
+- Decision criteria.
 
 Reasoning has a longer lifespan than implementation details.
 
@@ -168,11 +168,11 @@ Other documents should reference it rather than repeat it.
 
 Documents should be:
 
-* Easy to read.
-* Easy to search.
-* Easy to navigate.
-* Easy for AI to retrieve.
-* Easy to maintain.
+- Easy to read.
+- Easy to search.
+- Easy to navigate.
+- Easy for AI to retrieve.
+- Easy to maintain.
 
 - Contribution Workflow
 
@@ -235,15 +235,15 @@ New capabilities should represent coherent engineering disciplines.
 
 A capability should eventually contain:
 
-* Handbook
-* Guides
-* Playbooks
-* Checklists
-* Templates
-* References
-* Glossary
-* Learning Paths
-* Examples
+- Handbook
+- Guides
+- Playbooks
+- Checklists
+- Templates
+- References
+- Glossary
+- Learning Paths
+- Examples
 
 New capabilities should follow the repository architecture and document
 taxonomy.
@@ -255,13 +255,13 @@ All contributions must follow the
 
 In particular:
 
-* Write in British English.
-* Use consistent terminology.
-* Prefer active voice.
-* Explain concepts clearly.
-* Avoid unnecessary jargon.
-* Use meaningful headings.
-* Cross-reference related knowledge.
+- Write in British English.
+- Use consistent terminology.
+- Prefer active voice.
+- Explain concepts clearly.
+- Avoid unnecessary jargon.
+- Use meaningful headings.
+- Cross-reference related knowledge.
 
 - AI-Assisted Contributions
 
@@ -269,16 +269,16 @@ AI is encouraged throughout the authoring process.
 
 Recommended uses include:
 
-* Brainstorming.
-* Research assistance.
-* Draft generation.
-* Editing.
-* Structural improvements.
-* Cross-reference suggestions.
-* Gap analysis.
-* Example generation.
-* Diagram generation.
-* Review preparation.
+- Brainstorming.
+- Research assistance.
+- Draft generation.
+- Editing.
+- Structural improvements.
+- Cross-reference suggestions.
+- Gap analysis.
+- Example generation.
+- Diagram generation.
+- Review preparation.
 
 AI should accelerate engineering work rather than replace engineering
 judgement.
@@ -289,13 +289,13 @@ Every contribution should undergo human review.
 
 Reviewers should verify:
 
-* Technical accuracy.
-* Engineering quality.
-* Alignment with framework philosophy.
-* Appropriate document type.
-* Correct cross-references.
-* Writing quality.
-* AI-generated content accuracy.
+- Technical accuracy.
+- Engineering quality.
+- Alignment with framework philosophy.
+- Appropriate document type.
+- Correct cross-references.
+- Writing quality.
+- AI-generated content accuracy.
 
 Human reviewers remain responsible for the final content.
 
@@ -320,11 +320,11 @@ Changes to governance documents should be considered carefully.
 
 Examples include:
 
-* Repository architecture.
-* Document taxonomy.
-* Capability model.
-* Writing standards.
-* Framework philosophy.
+- Repository architecture.
+- Document taxonomy.
+- Capability model.
+- Writing standards.
+- Framework philosophy.
 
 These changes affect the entire repository and should prioritize
 long-term stability over short-term convenience.
@@ -335,12 +335,12 @@ The framework values constructive collaboration.
 
 Contributors are expected to:
 
-* Be respectful.
-* Assume good intent.
-* Provide constructive feedback.
-* Welcome differing engineering perspectives.
-* Support proposals with reasoning and practical experience.
-* Be willing to revise ideas based on discussion.
+- Be respectful.
+- Assume good intent.
+- Provide constructive feedback.
+- Welcome differing engineering perspectives.
+- Support proposals with reasoning and practical experience.
+- Be willing to revise ideas based on discussion.
 
 Engineering is collaborative, and so is engineering knowledge.
 

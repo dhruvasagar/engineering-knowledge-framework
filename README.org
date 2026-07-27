@@ -67,11 +67,11 @@ Defines how engineering knowledge is created and maintained.
 
 Examples include:
 
-* Repository philosophy
-* Writing standards
-* Contribution guidelines
-* Knowledge architecture
-* Document taxonomy
+- Repository philosophy
+- Writing standards
+- Contribution guidelines
+- Knowledge architecture
+- Document taxonomy
 
 ** Engineering Capabilities
 
@@ -80,24 +80,24 @@ knowledge required to understand and execute that discipline.
 
 A capability typically contains:
 
-* Handbook
-* Guides
-* Playbooks
-* Checklists
-* Templates
-* References
-* Glossary
-* Learning Paths
-* AI Workflows
+- Handbook
+- Guides
+- Playbooks
+- Checklists
+- Templates
+- References
+- Glossary
+- Learning Paths
+- AI Workflows
 
 Examples include:
 
-* Rails Engineering
-* Software Architecture
-* Security Engineering
-* Testing
-* Accessibility
-* Platform Engineering
+- Rails Engineering
+- Software Architecture
+- Security Engineering
+- Testing
+- Accessibility
+- Platform Engineering
 
 ** AI Framework
 
@@ -106,15 +106,15 @@ simply a documentation generator.
 
 AI is integrated throughout the engineering lifecycle, including:
 
-* Context engineering
-* Architecture reviews
-* Code reviews
-* Documentation generation
-* Test generation
-* Security analysis
-* Accessibility assessment
-* Refactoring
-* Knowledge extraction
+- Context engineering
+- Architecture reviews
+- Code reviews
+- Documentation generation
+- Test generation
+- Security analysis
+- Accessibility assessment
+- Refactoring
+- Knowledge extraction
 
 Human engineering judgement remains the final authority.
 
@@ -124,11 +124,11 @@ Engineering knowledge should enable continuous learning.
 
 Capabilities may include:
 
-* Learning paths
-* Recommended reading
-* Exercises
-* Competency progression
-* Practical examples
+- Learning paths
+- Recommended reading
+- Exercises
+- Competency progression
+- Practical examples
 
 ** Tooling
 
@@ -136,14 +136,14 @@ The framework is designed to support automation.
 
 Examples include:
 
-* Repository generators
-* Templates
-* Linters
-* Link validation
-* Style validation
-* Knowledge graph generation
-* AI context generation
-* Search and indexing
+- Repository generators
+- Templates
+- Linters
+- Link validation
+- Style validation
+- Knowledge graph generation
+- AI context generation
+- Search and indexing
 
 - Repository Organization
 
@@ -247,12 +247,12 @@ The Engineering Knowledge Framework is designed for both humans and AI.
 
 Documents should therefore:
 
-* Explain reasoning.
-* Use consistent terminology.
-* Cross-reference related knowledge.
-* Separate principles from implementation details.
-* Be modular and reusable.
-* Be easy to navigate programmatically.
+- Explain reasoning.
+- Use consistent terminology.
+- Cross-reference related knowledge.
+- Separate principles from implementation details.
+- Be modular and reusable.
+- Be easy to navigate programmatically.
 
 Well-structured knowledge enables AI systems to provide more accurate,
 consistent and context-aware assistance.
@@ -261,15 +261,15 @@ consistent and context-aware assistance.
 
 The framework is intended for:
 
-* Software Engineers
-* Senior Engineers
-* Staff Engineers
-* Architects
-* Engineering Managers
-* Technical Leads
-* Platform Engineers
-* Quality Engineers
-* Open-source contributors
+- Software Engineers
+- Senior Engineers
+- Staff Engineers
+- Architects
+- Engineering Managers
+- Technical Leads
+- Platform Engineers
+- Quality Engineers
+- Open-source contributors
 
 Organizations may adopt the framework in its entirety or adapt
 individual components to meet their own needs.
@@ -307,11 +307,11 @@ listing all documents within that capability.
 
 The current priorities are:
 
-* Establish the governance framework.
-* Build the foundational engineering capabilities.
-* Develop Rails Engineering as the reference capability.
-* Develop AI Engineering practices.
-* Create reusable templates and tooling.
+- Establish the governance framework.
+- Build the foundational engineering capabilities.
+- Develop Rails Engineering as the reference capability.
+- Develop AI Engineering practices.
+- Create reusable templates and tooling.
 
 Progress is tracked in:
 
@@ -321,11 +321,11 @@ Progress is tracked in:
 
 The Engineering Knowledge Framework aims to become:
 
-* A reusable framework for engineering organizations.
-* A reference implementation for engineering knowledge management.
-* A foundation for AI-assisted engineering.
-* A community-driven collection of engineering best practices.
-* An open ecosystem for continuously evolving engineering knowledge.
+- A reusable framework for engineering organizations.
+- A reference implementation for engineering knowledge management.
+- A foundation for AI-assisted engineering.
+- A community-driven collection of engineering best practices.
+- An open ecosystem for continuously evolving engineering knowledge.
 
 The framework is intended to be adopted, extended and improved by the
 engineering community.

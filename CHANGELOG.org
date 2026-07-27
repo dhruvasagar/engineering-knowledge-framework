@@ -189,3 +189,22 @@
 - Added =templates/rails/form-object.org=: Reusable form object template with ActiveModel integration.
 - Added =templates/rails/query-object.org=: Reusable query object template with composable scope chaining.
 - Added =templates/rails/policy-object.org=: Reusable authorization policy template with Pundit conventions.
+
+* 0.4.0 (2026-07-27)
+
+** Roadmap Updated
+
+- Updated Phase 1 (Foundation) to mark as complete with lessons learned.
+- Updated Phase 2 (Foundation Capabilities) to mark as complete with lessons learned.
+- Updated Phase 3 (Engineering Capabilities): Rails, Security, AI Engineering,
+  and Engineering Quality capabilities are now marked complete with detailed
+  deliverable breakdowns. Accessibility remains a stub for future development.
+- Updated Phase 4 (AI Engineering Framework): Existing AI handbook, glossary,
+  guides, checklists, learning paths, references and four domain AI workflow
+  documents are now listed as completed deliverables. Next steps identified.
+- Updated Phase 5 (Learning Framework): Existing learning paths are listed as
+  completed. Next steps for practical exercises, projects and assessments added.
+- Updated Current Phase section to reflect Phase 2 completion and Phase 3
+  substantial delivery.
+- Updated Near-term Priorities with completed items marked [x] and new items
+  for Accessibility, learning path exercises, AI agentic workflows and tooling.

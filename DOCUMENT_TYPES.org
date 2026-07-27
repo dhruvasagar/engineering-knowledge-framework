@@ -41,13 +41,13 @@ A capability represents an engineering discipline or area of expertise.
 
 Examples include:
 
-* Rails Engineering
-* Software Architecture
-* Security Engineering
-* Accessibility
-* Testing
-* Platform Engineering
-* AI Engineering
+- Rails Engineering
+- Software Architecture
+- Security Engineering
+- Accessibility
+- Testing
+- Platform Engineering
+- AI Engineering
 
 Each capability owns a collection of knowledge artifacts.
 
@@ -99,10 +99,10 @@ Capabilities are intentionally technology-agnostic.
 
 Examples include:
 
-* Rails Engineering
-* Rust Engineering
-* Site Reliability Engineering
-* Security Engineering
+- Rails Engineering
+- Rust Engineering
+- Site Reliability Engineering
+- Security Engineering
 
 - Handbook
 
@@ -115,28 +115,28 @@ It explains *why* engineers should work in a particular way.
 
 ** Characteristics
 
-* Timeless.
-* Opinionated.
-* Standards-focused.
-* Technology-independent where possible.
-* Stable over time.
+- Timeless.
+- Opinionated.
+- Standards-focused.
+- Technology-independent where possible.
+- Stable over time.
 
 ** Typical Sections
 
-* Purpose
-* Principles
-* Standards
-* Best Practices
-* Anti-patterns
-* Decision Frameworks
-* AI Integration
-* References
+- Purpose
+- Principles
+- Standards
+- Best Practices
+- Anti-patterns
+- Decision Frameworks
+- AI Integration
+- References
 
 ** Examples
 
-* Rails Engineering Handbook
-* Security Engineering Handbook
-* Architecture Handbook
+- Rails Engineering Handbook
+- Security Engineering Handbook
+- Architecture Handbook
 
 - Guide
 
@@ -148,28 +148,28 @@ Guides teach understanding rather than operational procedures.
 
 ** Characteristics
 
-* Focused.
-* Educational.
-* Conceptual.
-* Rich with examples.
-* May reference multiple handbooks.
+- Focused.
+- Educational.
+- Conceptual.
+- Rich with examples.
+- May reference multiple handbooks.
 
 ** Typical Sections
 
-* Purpose
-* Background
-* Concepts
-* Best Practices
-* Common Mistakes
-* Examples
-* Related Guides
+- Purpose
+- Background
+- Concepts
+- Best Practices
+- Common Mistakes
+- Examples
+- Related Guides
 
 ** Examples
 
-* Service Objects
-* Turbo Frames
-* Dependency Injection
-* Event Sourcing
+- Service Objects
+- Turbo Frames
+- Dependency Injection
+- Event Sourcing
 
 - Playbook
 
@@ -181,29 +181,29 @@ It explains how to perform an engineering activity consistently.
 
 ** Characteristics
 
-* Procedural.
-* Sequential.
-* Action-oriented.
-* Repeatable.
-* Operational.
+- Procedural.
+- Sequential.
+- Action-oriented.
+- Repeatable.
+- Operational.
 
 ** Typical Sections
 
-* Objective
-* Inputs
-* Prerequisites
-* Workflow
-* Checklists
-* Escalation Points
-* AI Workflow
-* Expected Outputs
+- Objective
+- Inputs
+- Prerequisites
+- Workflow
+- Checklists
+- Escalation Points
+- AI Workflow
+- Expected Outputs
 
 ** Examples
 
-* Code Review Playbook
-* Production Deployment Playbook
-* Incident Response Playbook
-* Architecture Review Playbook
+- Code Review Playbook
+- Production Deployment Playbook
+- Incident Response Playbook
+- Architecture Review Playbook
 
 - Checklist
 
@@ -215,17 +215,17 @@ It minimizes mistakes and encourages consistency.
 
 ** Characteristics
 
-* Short.
-* Actionable.
-* Verifiable.
-* Used repeatedly.
+- Short.
+- Actionable.
+- Verifiable.
+- Used repeatedly.
 
 ** Examples
 
-* Pull Request Checklist
-* Accessibility Checklist
-* Security Checklist
-* Project Kickoff Checklist
+- Pull Request Checklist
+- Accessibility Checklist
+- Security Checklist
+- Project Kickoff Checklist
 
 - Template
 
@@ -238,10 +238,10 @@ They standardize structure rather than content.
 
 ** Examples
 
-* ADR Template
-* RFC Template
-* Incident Report Template
-* Retrospective Template
+- ADR Template
+- RFC Template
+- Incident Report Template
+- Retrospective Template
 
 - Reference
 
@@ -253,17 +253,17 @@ They are intended for lookup rather than learning.
 
 ** Characteristics
 
-* Concise.
-* Precise.
-* Searchable.
-* Frequently consulted.
+- Concise.
+- Precise.
+- Searchable.
+- Frequently consulted.
 
 ** Examples
 
-* Ruby Style Reference
-* Rails Generator Reference
-* Git Commands
-* HTTP Status Codes
+- Ruby Style Reference
+- Rails Generator Reference
+- Git Commands
+- HTTP Status Codes
 
 - Glossary
 
@@ -289,13 +289,13 @@ They help engineers develop competency over time.
 
 ** Typical Structure
 
-* Fundamentals
-* Core Topics
-* Intermediate Topics
-* Advanced Topics
-* Practical Exercises
-* Suggested Reading
-* Capstone Projects
+- Fundamentals
+- Core Topics
+- Intermediate Topics
+- Advanced Topics
+- Practical Exercises
+- Suggested Reading
+- Capstone Projects
 
 Learning Paths should reference all other document types.
 
@@ -309,11 +309,11 @@ They bridge the gap between theory and implementation.
 
 Examples should illustrate:
 
-* Best practices.
-* Anti-patterns.
-* Before/after comparisons.
-* Complete implementations.
-* Real-world scenarios.
+- Best practices.
+- Anti-patterns.
+- Before/after comparisons.
+- Complete implementations.
+- Real-world scenarios.
 
 - Relationships Between Document Types
 
@@ -374,11 +374,11 @@ engineering.
 
 Smaller, focused documents:
 
-* Improve retrieval.
-* Reduce ambiguity.
-* Improve context quality.
-* Simplify reasoning.
-* Reduce maintenance.
+- Improve retrieval.
+- Reduce ambiguity.
+- Improve context quality.
+- Simplify reasoning.
+- Reduce maintenance.
 
 AI should consume many small documents rather than one large document.
 
@@ -427,10 +427,10 @@ engineering knowledge.
 
 New document types should be introduced only when:
 
-* Existing document types cannot adequately represent the knowledge.
-* The responsibility is clearly distinct.
-* The new type can be reused across multiple capabilities.
-* It strengthens rather than complicates the framework.
+- Existing document types cannot adequately represent the knowledge.
+- The responsibility is clearly distinct.
+- The new type can be reused across multiple capabilities.
+- It strengthens rather than complicates the framework.
 
 Document proliferation should be avoided.
 

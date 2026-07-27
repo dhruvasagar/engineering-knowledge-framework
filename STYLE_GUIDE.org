@@ -89,9 +89,9 @@ Every document should begin with:
 
 Optional metadata may include:
 
-* ~#+TODO~
-* ~#+OPTIONS~
-* ~#+PROPERTY~
+- ~#+TODO~
+- ~#+OPTIONS~
+- ~#+PROPERTY~
 
 Metadata should accurately describe the document.
 
@@ -141,16 +141,16 @@ Avoid vague titles.
 
 Good:
 
-* Service Object Lifecycle
-* Dependency Injection
-* Pull Request Review Workflow
+- Service Object Lifecycle
+- Dependency Injection
+- Pull Request Review Workflow
 
 Avoid:
 
-* Lifecycle
-* Details
-* Notes
-* Miscellaneous
+- Lifecycle
+- Details
+- Notes
+- Miscellaneous
 
 A heading should remain meaningful when viewed independently in search
 results or a table of contents.
@@ -167,17 +167,17 @@ Assume competence.
 
 Use:
 
-* Active voice.
-* Direct language.
-* Declarative statements.
-* Technical precision.
+- Active voice.
+- Direct language.
+- Declarative statements.
+- Technical precision.
 
 Avoid:
 
-* Marketing language.
-* Excessive adjectives.
-* Unnecessary humour.
-* Hedging.
+- Marketing language.
+- Excessive adjectives.
+- Unnecessary humour.
+- Hedging.
 
 Good:
 
@@ -223,10 +223,10 @@ Readers may encounter only part of a document.
 
 Whenever practical:
 
-* Define important concepts.
-* Avoid "as mentioned above".
-* Avoid "the previous section".
-* Prefer explicit links.
+- Define important concepts.
+- Avoid "as mentioned above".
+- Avoid "the previous section".
+- Prefer explicit links.
 
 Good:
 
@@ -243,24 +243,24 @@ change frequently.
 
 Good:
 
-* Controllers should remain thin.
-* Prefer composition over inheritance.
-* Minimize coupling.
+- Controllers should remain thin.
+- Prefer composition over inheritance.
+- Minimize coupling.
 
 Avoid:
 
-* Rails 8.0.1 introduces...
-* Ruby 3.4 changes...
-* Current IDE behaviour...
+- Rails 8.0.1 introduces...
+- Ruby 3.4 changes...
+- Current IDE behaviour...
 
 Version-specific information belongs in references rather than
 handbooks.
 
 Explain:
 
-* Why.
-* Trade-offs.
-* Decision criteria.
+- Why.
+- Trade-offs.
+- Decision criteria.
 
 These age far more gracefully than implementation details.
 
@@ -272,9 +272,9 @@ Other documents should reference that source rather than duplicate it.
 
 Examples:
 
-* Coding standards belong in the Handbook.
-* Operational procedures belong in Playbooks.
-* Definitions belong in the Glossary.
+- Coding standards belong in the Handbook.
+- Operational procedures belong in Playbooks.
+- Definitions belong in the Glossary.
 
 Duplication increases maintenance effort and causes knowledge to drift.
 
@@ -303,8 +303,8 @@ than a collection of isolated documents.
 
 Documents should both:
 
-* Reference related knowledge.
-* Be referenced by related knowledge.
+- Reference related knowledge.
+- Be referenced by related knowledge.
 
 Example:
 
@@ -387,11 +387,11 @@ Use Org tables for structured information.
 
 Tables are appropriate for:
 
-* Comparisons.
-* Decision matrices.
-* Standards.
-* Capability summaries.
-* Configuration matrices.
+- Comparisons.
+- Decision matrices.
+- Standards.
+- Capability summaries.
+- Configuration matrices.
 
 Avoid using tables for layout.
 
@@ -459,16 +459,16 @@ applications.
 
 Examples should be:
 
-* Realistic.
-* Minimal.
-* Correct.
-* Easy to understand.
+- Realistic.
+- Minimal.
+- Correct.
+- Easy to understand.
 
 When appropriate, include:
 
-* Good examples.
-* Bad examples.
-* Before/after comparisons.
+- Good examples.
+- Bad examples.
+- Before/after comparisons.
 
 Examples are often the fastest way to teach engineering concepts.
 
@@ -490,10 +490,10 @@ Avoid introducing multiple names for the same concept.
 
 Prefer:
 
-* Pull Request
-* Repository
-* Capability
-* Knowledge Artifact
+- Pull Request
+- Repository
+- Capability
+- Knowledge Artifact
 
 Avoid unnecessary synonyms.
 
@@ -503,20 +503,20 @@ Documents should optimize retrieval quality.
 
 Prefer:
 
-* Explicit language.
-* Meaningful headings.
-* Small focused sections.
-* Defined terminology.
-* Logical progression.
-* Internal links.
-* Single responsibility.
+- Explicit language.
+- Meaningful headings.
+- Small focused sections.
+- Defined terminology.
+- Logical progression.
+- Internal links.
+- Single responsibility.
 
 Avoid:
 
-* Large monolithic documents.
-* Ambiguous wording.
-* Duplicate explanations.
-* Excessively deep heading hierarchies.
+- Large monolithic documents.
+- Ambiguous wording.
+- Duplicate explanations.
+- Excessively deep heading hierarchies.
 
 Good documentation naturally improves AI performance.
 
@@ -564,10 +564,10 @@ Additionally verify:
 
 - References
 
-* [[file:./CLAUDE.md][CLAUDE.md]]
-* [[file:./STRATEGY.org][Strategy]]
-* [[file:./ARCHITECTURE.org][Architecture]]
-* [[file:./DOCUMENT_TYPES.org][Document Types]]
-* [[file:./CONTRIBUTING.org][Contributing]]
-* [[file:../README.org][Repository Overview]]
-* [[https://orgmode.org/manual/Markup.html][Org-mode Markup Reference]]
+- [[file:./CLAUDE.md][CLAUDE.md]]
+- [[file:./STRATEGY.org][Strategy]]
+- [[file:./ARCHITECTURE.org][Architecture]]
+- [[file:./DOCUMENT_TYPES.org][Document Types]]
+- [[file:./CONTRIBUTING.org][Contributing]]
+- [[file:../README.org][Repository Overview]]
+- [[https://orgmode.org/manual/Markup.html][Org-mode Markup Reference]]

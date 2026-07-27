@@ -70,19 +70,19 @@ Engineering principles evolve much more slowly.
 
 Whenever possible, document:
 
-* Principles.
-* Decision frameworks.
-* Trade-offs.
-* Mental models.
-* Patterns.
-* Engineering judgement.
+- Principles.
+- Decision frameworks.
+- Trade-offs.
+- Mental models.
+- Patterns.
+- Engineering judgement.
 
 Avoid writing documents that are tightly coupled to:
 
-* Framework versions.
-* Tool versions.
-* Vendor products.
-* Temporary organizational structures.
+- Framework versions.
+- Tool versions.
+- Vendor products.
+- Temporary organizational structures.
 
 Implementation-specific details belong in references, examples and
 playbooks—not handbooks.
@@ -99,12 +99,12 @@ The most valuable engineering knowledge explains *why*.
 
 When introducing a recommendation, explain:
 
-* The problem it solves.
-* Why it exists.
-* Alternatives.
-* Trade-offs.
-* Failure modes.
-* When it should not be used.
+- The problem it solves.
+- Why it exists.
+- Alternatives.
+- Trade-offs.
+- Failure modes.
+- When it should not be used.
 
 Reasoning survives technological change.
 
@@ -189,11 +189,11 @@ Never maintain the same explanation in multiple places.
 
 Benefits include:
 
-* Reduced maintenance.
-* Better consistency.
-* Easier review.
-* Better AI retrieval.
-* Fewer contradictions.
+- Reduced maintenance.
+- Better consistency.
+- Easier review.
+- Better AI retrieval.
+- Fewer contradictions.
 
 Duplication is technical debt.
 
@@ -221,10 +221,10 @@ Documents should remain understandable when read independently.
 
 This is particularly important for:
 
-* Search.
-* AI retrieval.
-* Knowledge graphs.
-* Future repository organization.
+- Search.
+- AI retrieval.
+- Knowledge graphs.
+- Future repository organization.
 
 Avoid:
 
@@ -248,10 +248,10 @@ Every document should strengthen the connections between ideas.
 
 When introducing a concept, ask:
 
-* Where is this defined?
-* What depends on it?
-* What should readers learn next?
-* What complements this knowledge?
+- Where is this defined?
+- What depends on it?
+- What should readers learn next?
+- What complements this knowledge?
 
 Prefer links over repetition.
 
@@ -261,18 +261,18 @@ Knowledge should form a graph rather than a hierarchy.
 
 The framework serves two audiences:
 
-* Engineers.
-* AI systems.
+- Engineers.
+- AI systems.
 
 Fortunately, both benefit from the same characteristics:
 
-* Clear language.
-* Explicit terminology.
-* Consistent structure.
-* Logical progression.
-* Meaningful headings.
-* Small focused documents.
-* Strong cross-linking.
+- Clear language.
+- Explicit terminology.
+- Consistent structure.
+- Logical progression.
+- Meaningful headings.
+- Small focused documents.
+- Strong cross-linking.
 
 Good engineering writing is naturally AI-friendly.
 
@@ -283,12 +283,12 @@ memorize.
 
 Prefer:
 
-* Principles.
-* Heuristics.
-* Decision trees.
-* Trade-offs.
-* Failure analysis.
-* Patterns.
+- Principles.
+- Heuristics.
+- Decision trees.
+- Trade-offs.
+- Failure analysis.
+- Patterns.
 
 Avoid documenting only procedures.
 
@@ -300,10 +300,10 @@ Mental models endure.
 
 Whenever possible, demonstrate:
 
-* Good examples.
-* Bad examples.
-* Common mistakes.
-* Better alternatives.
+- Good examples.
+- Bad examples.
+- Common mistakes.
+- Better alternatives.
 
 Engineers often learn faster through comparison than explanation.
 
@@ -315,12 +315,12 @@ Every document can be improved.
 
 Contributors should feel comfortable:
 
-* Refining wording.
-* Improving examples.
-* Clarifying explanations.
-* Improving structure.
-* Adding references.
-* Simplifying concepts.
+- Refining wording.
+- Improving examples.
+- Clarifying explanations.
+- Improving structure.
+- Adding references.
+- Simplifying concepts.
 
 Continuous refinement produces better knowledge than infrequent
 rewrites.
@@ -331,12 +331,12 @@ Projects generate valuable engineering knowledge.
 
 Examples include:
 
-* Incidents.
-* Retrospectives.
-* Architectural decisions.
-* Production failures.
-* Successful patterns.
-* Lessons learned.
+- Incidents.
+- Retrospectives.
+- Architectural decisions.
+- Production failures.
+- Successful patterns.
+- Lessons learned.
 
 These should become reusable engineering knowledge rather than remaining
 project-specific artifacts.
@@ -362,11 +362,11 @@ Good engineering writing respects the reader's time.
 
 Prefer:
 
-* Concise explanations.
-* Clear organization.
-* Meaningful headings.
-* Direct language.
-* Practical examples.
+- Concise explanations.
+- Clear organization.
+- Meaningful headings.
+- Direct language.
+- Practical examples.
 
 Avoid unnecessary complexity.
 

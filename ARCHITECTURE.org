@@ -65,11 +65,11 @@ Knowledge should be composed from many focused documents.
 
 Smaller documents are:
 
-* Easier to maintain.
-* Easier to review.
-* Easier to discover.
-* Easier for AI systems to consume.
-* Easier to reuse.
+- Easier to maintain.
+- Easier to review.
+- Easier to discover.
+- Easier for AI systems to consume.
+- Easier to reuse.
 
 ** Explicit relationships
 
@@ -108,21 +108,21 @@ The Governance layer defines the framework itself.
 
 It answers questions such as:
 
-* Why does the framework exist?
-* How should knowledge be written?
-* How is the repository organized?
-* What standards should contributors follow?
+- Why does the framework exist?
+- How should knowledge be written?
+- How is the repository organized?
+- What standards should contributors follow?
 
 Typical documents include:
 
-* README
-* CLAUDE.md
-* STRATEGY
-* ROADMAP
-* STYLE_GUIDE
-* DOCUMENT_TYPES
-* CONTRIBUTING
-* ARCHITECTURE
+- README
+- CLAUDE.md
+- STRATEGY
+- ROADMAP
+- STYLE_GUIDE
+- DOCUMENT_TYPES
+- CONTRIBUTING
+- ARCHITECTURE
 
 Governance documents evolve slowly and provide long-term stability.
 
@@ -133,12 +133,12 @@ organized.
 
 Responsibilities include:
 
-* Capability model.
-* Document taxonomy.
-* Cross-referencing.
-* Repository organization.
-* Glossaries.
-* Metadata conventions.
+- Capability model.
+- Document taxonomy.
+- Cross-referencing.
+- Repository organization.
+- Glossaries.
+- Metadata conventions.
 
 Knowledge architecture should remain independent of any specific
 engineering discipline.
@@ -151,13 +151,13 @@ A capability represents a complete engineering discipline.
 
 Examples include:
 
-* Rails Engineering
-* Software Architecture
-* Security Engineering
-* Testing
-* Accessibility
-* Platform Engineering
-* AI Engineering
+- Rails Engineering
+- Software Architecture
+- Security Engineering
+- Testing
+- Accessibility
+- Platform Engineering
+- AI Engineering
 
 Each capability should be self-contained.
 
@@ -346,14 +346,14 @@ Knowledge should be structured for effective AI consumption.
 
 Documents should:
 
-* Have a single responsibility.
-* Follow consistent structure.
-* Explain reasoning.
-* Define terminology.
-* Use meaningful headings.
-* Link related knowledge.
-* Avoid unnecessary duplication.
-* Prefer principles over implementation details.
+- Have a single responsibility.
+- Follow consistent structure.
+- Explain reasoning.
+- Define terminology.
+- Use meaningful headings.
+- Link related knowledge.
+- Avoid unnecessary duplication.
+- Prefer principles over implementation details.
 
 These characteristics improve both human readability and AI reasoning.
 
@@ -414,12 +414,12 @@ Future tooling should understand this organization automatically.
 
 The framework intentionally avoids:
 
-* Monolithic documentation.
-* Technology-specific organization.
-* Duplicate knowledge.
-* Deep directory hierarchies.
-* Project-specific assumptions.
-* Vendor lock-in.
+- Monolithic documentation.
+- Technology-specific organization.
+- Duplicate knowledge.
+- Deep directory hierarchies.
+- Project-specific assumptions.
+- Vendor lock-in.
 
 Knowledge should remain reusable across organizations.
 
@@ -427,14 +427,14 @@ Knowledge should remain reusable across organizations.
 
 When evolving the framework, prefer decisions that:
 
-* Increase modularity.
-* Improve discoverability.
-* Reduce duplication.
-* Encourage reuse.
-* Improve AI collaboration.
-* Preserve timeless knowledge.
-* Scale naturally as the repository grows.
-* Keep the framework approachable for new contributors.
+- Increase modularity.
+- Improve discoverability.
+- Reduce duplication.
+- Encourage reuse.
+- Improve AI collaboration.
+- Preserve timeless knowledge.
+- Scale naturally as the repository grows.
+- Keep the framework approachable for new contributors.
 
 - Evolution Strategy
 
