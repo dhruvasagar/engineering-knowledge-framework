@@ -20,7 +20,7 @@ This strategy should evolve slowly. It defines the enduring direction of
 the project rather than its short-term priorities.
 
 Implementation plans, milestones and active work are tracked separately
-in [ROADMAP.org](./ROADMAP/).
+in [ROADMAP.md](./ROADMAP/).
 
 # Mission
 

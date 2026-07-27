@@ -57,7 +57,7 @@ The foundational documents that define the framework itself.
 |--------------------+--------------------------------------------------------|
 | [CLAUDE.md](./CLAUDE.md) | AI-specific project instructions for coding agents. |
 | --- | --- |
-| [README.org](./README/) | Repository overview, mission, vision and philosophy. |
+| [README.md](./README/) | Repository overview, mission, vision and philosophy. |
 | [Strategy](./STRATEGY/) | Long-term vision and guiding strategy. |
 | [Roadmap](./ROADMAP/) | Strategic roadmap and phase progression. |
 | [Architecture](./ARCHITECTURE/) | Repository architecture and knowledge organization. |
@@ -66,7 +66,7 @@ The foundational documents that define the framework itself.
 | [Writing Principles](./WRITING_PRINCIPLES/) | Philosophy behind effective engineering documentation. |
 | [Contributing](./CONTRIBUTING/) | Contribution guidelines and workflows. |
 | [Changelog](./CHANGELOG/) | Version history of the framework. |
-| [TOC.org](./table-of-contents/) | This document — table of contents and indexes. |
+| [TOC.md](./table-of-contents/) | This document — table of contents and indexes. |
 
 ## Engineering Fundamentals
 

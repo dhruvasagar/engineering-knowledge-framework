@@ -479,7 +479,7 @@ Initial tooling focused on correctness and consistency:
 - [ ] Glossary validation: Ensure all glossary entries have required fields and cross-references.
 - [ ] Bullet syntax linting: Detect =* = used as bullet instead of headline.
 - [ ] Metadata validation: Verify required `#+TITLE`, `#+DESCRIPTION`, `#+DATE` headers.
-- [ ] TOC validation: Ensure TOC.org entries match actual file inventory.
+- [ ] TOC validation: Ensure TOC.md entries match actual file inventory.
 
 ### Phase 6b — Generator Tooling
 
@@ -582,7 +582,7 @@ Grow an active open-source community around the framework.
 
 [ ] ***Not Started*** — Community growth depends on having stable
     documentation and tooling that others can build on. The
-    CONTRIBUTING.org document establishes initial contribution
+    CONTRIBUTING.md document establishes initial contribution
     guidelines. GitHub Issues and Discussions are enabled.
 
 ## Objectives
@@ -599,7 +599,7 @@ Grow an active open-source community around the framework.
 
 ### Onboarding
 
-- [ ] `CONTRIBUTING.org`: Already published (see [./CONTRIBUTING.org](./CONTRIBUTING/)).
+- [ ] `CONTRIBUTING.org`: Already published (see [./CONTRIBUTING.md](./CONTRIBUTING/)).
 - [ ] Good first issue labels for new contributors.
 - [ ] Contributor onboarding guide with step-by-step walkthrough.
 - [ ] Community expectations and code of conduct.

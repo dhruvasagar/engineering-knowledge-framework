@@ -25,17 +25,22 @@ reStructuredText, and LaTeX.
 
 # Decision
 
-Use ***Org-mode*** (plain text with `.org` extension) as the primary
+Use ***Markdown*** (plain text with `.md` extension) as the primary
 document format for all framework documents.
 
-Org-mode provides:
+Markdown provides:
 
-- Structured headings with native folding and navigation.
-- Rich tables with column alignment and formulas.
-- Inline code blocks with language annotation.
-- Native hyperlink syntax for cross-references.
-- Metadata via `#+KEY: VALUE` directives.
-- Property drawers for structured data.
+- Simple, widely-supported syntax.
+- Native support in GitHub, Zola, and most development tools.
+- Structured headings for document outline.
+- Code blocks with language annotation.
+- Hyperlink syntax for cross-references.
+- Metadata via front matter (`+++`).
+
+> **Note:** The framework originally used Org-mode (see archived
+> `.org-backup/` directory). The decision to migrate to Markdown
+> was made for broader tool compatibility and lower barrier to
+> contribution.
 - Export to HTML, PDF, and other formats.
 - Mature tooling ecosystem (Emacs, editors, parsers).
 

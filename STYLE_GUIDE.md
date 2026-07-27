@@ -66,12 +66,10 @@ Prefer principles over implementation details.
 
 | Convention | Example | Rule |
 | --- | --- | --- |
-|------------+--------------------------------------------+------------------------------------|
-| Lowercase | `handbook*rails*README.org` | No capital letters |
-| --- | --- | --- |
-| Hyphen-separated | `service-objects.org` | Use hyphens, never spaces |
-| Directory README | `handbook*rails*README.org` | Each directory has a README |
-| Org-mode | `README.org` | All primary documents use `.org` |
+| Lowercase | `guides/engineering/code-organization.md` | No capital letters |
+| Hyphen-separated | `service-objects.md` | Use hyphens, never spaces |
+| Markdown | `README.md` | All documents use `.md` extension |
+| Directory README | `handbooks/engineering/README.md` | Each directory has a README |
 
 Choose descriptive names.
 
@@ -346,10 +344,9 @@ Avoid deeply nested lists.
 
 ## Bullet Format
 
-Use =-= for bullet list items, not =**=.
-
-In Org-mode, =**= at the start of a line creates a **headline**, not a
-bullet. Using =**= instead of =-= causes structural issues:
+Use =-= for bullet list items, not =**=. In Markdown, =**= at the start
+of a line creates a **headline**, not a bullet. Using =**= instead of
+=-= causes structural issues:
 
 - Short =**= items become orphaned Level-1 headlines rather than
   list entries.
@@ -548,7 +545,7 @@ Before committing a document, verify:
 - [ ] The document follows repository conventions.
 - [ ] Lists use =-= for bullets, not =**= (which creates headlines).
 - [ ] Headline levels do not skip (e.g., =**= to `****` without `***`).
-- [ ] TOC.org is updated if this is a new or renamed document.
+- [ ] TOC.md is updated if this is a new or renamed document.
 - [ ] Handbook capability map is updated if this is a new or renamed
       document.
 
@@ -573,4 +570,4 @@ Additionally verify:
 - [Document Types](./DOCUMENT_TYPES/)
 - [Contributing](./CONTRIBUTING/)
 - [Repository Overview](../README/)
-- [[https:/*orgmode.org*manual*Markup.html][Org-mode Markup Reference]]
+- [[https:*www.markdownguide.org*][Markdown Guide]]
