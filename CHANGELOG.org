@@ -128,3 +128,17 @@
 
 - Added =prompts/engineering-ai-workflows.org=: Prompt patterns and workflows for AI-assisted code review, design exploration, refactoring, documentation generation and problem diagnosis.
 - Added =prompts/architecture-ai-workflows.org=: Prompt patterns and workflows for AI-assisted trade-off analysis, ADR drafting, pattern selection, architecture review preparation and system design exploration.
+
+* 0.3.0 (2026-07-27)
+
+** Rails Engineering Capability (Phase 3)
+
+- Added =handbooks/rails/README.org=: Rails Engineering Handbook covering Rails philosophy, MVC principles, code organization, standards (models, migrations, routes, API), testing strategy, patterns (service objects, form objects, query objects, policy objects), anti-patterns and AI integration.
+- Added =glossary/rails/README.org=: Rails-specific terminology (ActiveRecord, concern, controller, form object, migration, model, presenter, query object, service object, view).
+- Added =guides/rails/service-objects.org=: When and how to use service objects with structure, patterns, testing and anti-patterns.
+- Added =guides/rails/testing.org=: Rails-specific testing strategy covering test distribution, model specs, request specs, system specs, factory patterns and what to avoid.
+- Added =playbooks/rails/upgrade.org=: Step-by-step Rails upgrade workflow with compatibility assessment, gem updates, testing, configuration changes, deployment and rollback plan.
+- Added =checklists/rails/pull-request.org=: Rails PR checklist for authors and reviewers covering code quality, testing, security, documentation and migration safety.
+- Added =references/rails/README.org=: Quick-reference material including Rails conventions, common generators, testing commands, key gems and HTTP status codes.
+- Added =learning-paths/rails/README.org=: Three-tier learning path (beginner, intermediate, advanced) with topics, projects and assessment criteria.
+- Added =prompts/rails-ai-workflows.org=: Prompt patterns for AI-assisted model generation, API development, testing, debugging and refactoring in Rails.

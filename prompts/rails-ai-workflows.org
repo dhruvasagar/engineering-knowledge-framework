@@ -1,0 +1,196 @@
+#+TITLE: AI Workflows for Rails
+#+AUTHOR: Engineering
+#+DATE: 2026-07-27
+#+DESCRIPTION: Prompt patterns and AI workflows for Rails development
+#+STARTUP: overview indent
+
+* Purpose
+
+AI assistants can accelerate Rails development when used effectively.
+
+This document provides prompt patterns and workflows for using AI
+assistants in common Rails development tasks: model generation, API
+development, testing, debugging and refactoring.
+
+* Workflows
+
+** Model and Migration Generation
+
+**** Purpose
+
+Use AI to generate models and migrations from descriptions.
+
+**** Prompt Pattern
+
+#+BEGIN_EXAMPLE
+Generate a Rails model and migration for:
+
+Model: Product
+Fields:
+- name: string (required)
+- sku: string (required, unique)
+- description: text (optional)
+- price: decimal (precision: 10, scale: 2)
+- category: references (Category)
+- active: boolean (default: true)
+
+Validations:
+- name must be present.
+- sku must be present and unique.
+- price must be greater than 0.
+
+Associations:
+- belongs_to :category
+- has_many :order_items
+
+Also generate the factory and model spec.
+#+END_EXAMPLE
+
+** API Endpoint Development
+
+**** Purpose
+
+Use AI to generate API endpoints with request specs.
+
+**** Prompt Pattern
+
+#+BEGIN_EXAMPLE
+Generate a Rails API controller and routes for:
+
+Resource: Products (API::V1::ProductsController)
+Actions: index, show, create, update, destroy
+
+Requirements:
+- index supports pagination (page, per_page).
+- index supports filtering by category_id.
+- show returns a single product with category name included.
+- create requires authentication.
+- Responses use JSON format with the following structure:
+  { data: { id:, type:, attributes: {} }, errors: [] }
+
+Also generate the request specs.
+#+END_EXAMPLE
+
+** Test Generation
+
+**** Purpose
+
+Use AI to generate tests for existing code.
+
+**** Prompt Pattern
+
+#+BEGIN_EXAMPLE
+Write RSpec tests for this Rails service object:
+
+```ruby
+class InviteUser
+  def initialize(team:, email:, inviter:)
+    @team = team
+    @email = email
+    @inviter = inviter
+  end
+
+  def call
+    user = User.find_or_create_by!(email: @email)
+    membership = @team.memberships.create!(user: user, inviter: @inviter)
+    UserMailer.invitation(membership).deliver_later
+    membership
+  rescue ActiveRecord::RecordInvalid => e
+    raise InvitationError, e.message
+  end
+end
+```
+
+Include tests for:
+- Successful invitation.
+- Duplicate email handling.
+- Invalid team.
+- Mailer delivery.
+#+END_EXAMPLE
+
+** Debugging
+
+**** Purpose
+
+Use AI to diagnose Rails errors.
+
+**** Prompt Pattern
+
+#+BEGIN_EXAMPLE
+I am getting this error in my Rails application:
+
+[error message and stack trace]
+
+Code context:
+```ruby
+[relevant code]
+```
+
+Rails version: [version]
+Ruby version: [version]
+
+What is the most likely cause and how should I fix it?
+#+END_EXAMPLE
+
+** Refactoring
+
+**** Purpose
+
+Use AI to suggest Rails-specific refactorings.
+
+**** Prompt Pattern
+
+#+BEGIN_EXAMPLE
+Help me refactor this Rails controller:
+
+```ruby
+class OrdersController < ApplicationController
+  def create
+    @order = Order.new(order_params)
+    @order.user = current_user
+    @order.status = "pending"
+
+    if @order.save
+      InventoryService.deduct_stock(@order)
+      PaymentService.charge(@order)
+      OrderMailer.confirmation(@order).deliver_later
+      redirect_to @order, notice: "Order created."
+    else
+      render :new, status: :unprocessable_entity
+    end
+  end
+end
+```
+
+Goals:
+- Extract business logic into a service object.
+- Keep error handling consistent.
+- Improve testability.
+#+END_EXAMPLE
+
+* Anti-patterns
+
+** Rails-Specific Blind Spots
+
+AI may suggest patterns that are not idiomatic Rails or that ignore
+Rails conventions. Always verify that AI suggestions follow Rails
+conventions.
+
+** Over-Abstraction
+
+AI may suggest extracting classes and modules where a simpler Rails
+approach would suffice. Prefer Rails conventions unless there is a
+clear reason to deviate.
+
+** Ignoring Performance
+
+AI-generated queries may introduce N+1 problems or inefficient
+queries. Always review generated database access code.
+
+* Related Documents
+
+- [[file:../../handbooks/rails/README.org][Rails Engineering Handbook]]
+- [[file:../../guides/rails/service-objects.org][Service Objects Guide]]
+- [[file:../../guides/rails/testing.org][Testing Rails Applications Guide]]
+- [[file:../../playbooks/rails/upgrade.org][Rails Upgrade Playbook]]
+- [[file:../../prompts/engineering-ai-workflows.org][AI Workflows for Engineering]]

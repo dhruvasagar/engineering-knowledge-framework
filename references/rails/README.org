@@ -1,0 +1,112 @@
+#+TITLE: Rails References
+#+AUTHOR: Engineering
+#+DATE: 2026-07-27
+#+DESCRIPTION: Quick-reference material for Rails development
+#+STARTUP: overview indent
+
+* Purpose
+
+Quick-reference material for Rails development.
+
+These references are intended for lookup rather than learning. For
+in-depth explanations, see the referenced guides and handbooks.
+
+* Rails Conventions
+
+| Concept       | Convention                        | Example              |
++---------------+-----------------------------------+----------------------+
+| Model         | Singular, CamelCase               | =UserAccount=        |
++---------------+-----------------------------------+----------------------+
+| Table         | Plural, snake_case                | =user_accounts=      |
++---------------+-----------------------------------+----------------------+
+| Controller    | Plural, CamelCase with Controller | =UserAccountsController= |
++---------------+-----------------------------------+----------------------+
+| Route         | Resourceful, snake_case           | =resources :users=   |
++---------------+-----------------------------------+----------------------+
+| Migration     | Descriptive snake_case            | =add_email_to_users= |
++---------------+-----------------------------------+----------------------+
+| Service       | Named after operation             | =RegisterUser=       |
++---------------+-----------------------------------+----------------------+
+
+* Common Generators
+
+| Command                                               | Creates                       |
++-------------------------------------------------------+-------------------------------+
+| =rails generate model User email:string=             | Model, migration, factory     |
++-------------------------------------------------------+-------------------------------+
+| =rails generate controller Api::V1::Users=           | Controller, routes, specs     |
++-------------------------------------------------------+-------------------------------+
+| =rails generate migration add_email_to_users=        | Migration file                |
++-------------------------------------------------------+-------------------------------+
+| =rails generate resource Product name:string=        | Model, controller, routes,    |
+|                                                       | migration, factory            |
++-------------------------------------------------------+-------------------------------+
+
+* Testing Commands
+
+| Command                                             | Purpose                      |
++-----------------------------------------------------+------------------------------+
+| =bundle exec rspec=                                 | Run full test suite.         |
++-----------------------------------------------------+------------------------------+
+| =bundle exec rspec spec/models/=                    | Run model specs.             |
++-----------------------------------------------------+------------------------------+
+| =bundle exec rspec spec/requests/=                  | Run request specs.           |
++-----------------------------------------------------+------------------------------+
+| =bundle exec rspec spec/system/=                    | Run system specs.            |
++-----------------------------------------------------+------------------------------+
+| =bundle exec rspec spec/models/user_spec.rb:5=      | Run a single test by line.   |
++-----------------------------------------------------+------------------------------+
+
+* Key Gems
+
+| Gem              | Purpose                                 |
++------------------+-----------------------------------------+
+| Devise           | Authentication                          |
++------------------+-----------------------------------------+
+| Pundit           | Authorization                           |
++------------------+-----------------------------------------+
+| RSpec-Rails      | Testing framework                       |
++------------------+-----------------------------------------+
+| FactoryBot       | Test data factories                     |
++------------------+-----------------------------------------+
+| Sidekiq          | Background job processing               |
++------------------+-----------------------------------------+
+| Bullet           | N+1 query detection                    |
++------------------+-----------------------------------------+
+| RuboCop          | Style linting                           |
++------------------+-----------------------------------------+
+| Rack::Attack     | Rate limiting                           |
+
+* Rails Error Codes
+
+| HTTP Code | Rails Helper                   | When to Use                     |
++-----------+--------------------------------+---------------------------------+
+| 200       | =:ok=                          | Successful GET request.         |
++-----------+--------------------------------+---------------------------------+
+| 201       | =:created=                     | Successful POST (resource       |
+|           |                                | created).                       |
++-----------+--------------------------------+---------------------------------+
+| 204       | =:no_content=                  | Successful DELETE or PUT with   |
+|           |                                | no response body.               |
++-----------+--------------------------------+---------------------------------+
+| 400       | =:bad_request=                 | Malformed request parameters.   |
++-----------+--------------------------------+---------------------------------+
+| 401       | =:unauthorized=                | Authentication required.        |
++-----------+--------------------------------+---------------------------------+
+| 403       | =:forbidden=                   | Authenticated but not           |
+|           |                                | authorized.                     |
++-----------+--------------------------------+---------------------------------+
+| 404       | =:not_found=                   | Resource does not exist.        |
++-----------+--------------------------------+---------------------------------+
+| 422       | =:unprocessable_entity=        | Validation failure.             |
++-----------+--------------------------------+---------------------------------+
+| 429       | =:too_many_requests=           | Rate limit exceeded.            |
++-----------+--------------------------------+---------------------------------+
+
+* Related Documents
+
+- [[file:../../handbooks/rails/README.org][Rails Engineering Handbook]]
+- [[file:../../glossary/rails/README.org][Rails Glossary]]
+- [[file:../../guides/rails/service-objects.org][Service Objects Guide]]
+- [[file:../../guides/rails/testing.org][Testing Rails Applications Guide]]
+- [[file:../../references/architecture/README.org][Architecture References]]

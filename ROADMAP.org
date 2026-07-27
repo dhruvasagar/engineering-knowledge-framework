@@ -172,11 +172,14 @@ Engineering Fundamentals and Architecture capabilities as templates.
 - Establish cross-referencing patterns between capabilities.
 - Grow the repository's knowledge graph.
 
+** In Progress
+
+- Rails Engineering: Handbook, glossary, guides (service objects, testing), playbook (upgrade), checklist (PR review), learning paths, references and AI workflows complete.
+
 ** Ready for Development
 
-Handbook stubs already exist for these capabilities:
+Handbook stubs exist for these capabilities:
 
-- Rails Engineering (=handbooks/rails/=)
 - Security Engineering (=handbooks/security/=)
 - Accessibility (=handbooks/accessibility/=)
 - Engineering Quality (=handbooks/quality/=)
