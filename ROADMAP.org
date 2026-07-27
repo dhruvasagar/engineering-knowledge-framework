@@ -174,7 +174,7 @@ Engineering Fundamentals and Architecture capabilities as templates.
 
 ** In Progress
 
-- Rails Engineering: Handbook, glossary, guides (service objects, testing), playbook (upgrade), checklist (PR review), learning paths, references and AI workflows complete.
+- Rails Engineering: Handbook, glossary, guides (service objects, testing, audit guide), playbook (upgrade), checklist (PR review), learning paths, references and AI workflows complete.
 
 ** Ready for Development
 

@@ -142,3 +142,4 @@
 - Added =references/rails/README.org=: Quick-reference material including Rails conventions, common generators, testing commands, key gems and HTTP status codes.
 - Added =learning-paths/rails/README.org=: Three-tier learning path (beginner, intermediate, advanced) with topics, projects and assessment criteria.
 - Added =prompts/rails-ai-workflows.org=: Prompt patterns for AI-assisted model generation, API development, testing, debugging and refactoring in Rails.
+- Added =guides/rails/audit-guide.org=: Comprehensive guide to Rails code quality tools (RuboCop, Brakeman, bundler-audit, Reek, rails_best_practices, Bullet, Fasterer), audit pipeline setup (pre-commit, CI, scheduled, release gate), tool configuration, audit frequency, result prioritization, Rails-specific audit areas and quality standard establishment.

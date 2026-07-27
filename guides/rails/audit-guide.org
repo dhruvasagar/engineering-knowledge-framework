@@ -1,0 +1,372 @@
+#+TITLE: Ruby on Rails Audit Guide
+#+AUTHOR: Engineering
+#+DATE: 2026-07-27
+#+DESCRIPTION: Tools and practices for auditing and improving Rails code quality
+#+STARTUP: overview indent
+
+* Purpose
+
+Rails applications accumulate technical debt, security vulnerabilities
+and code quality issues over time.
+
+Regular audits using automated tools help teams maintain a healthy
+codebase by surfacing issues before they become problems.
+
+This guide covers the essential tools and practices for auditing Rails
+applications, establishing quality standards and maintaining code
+quality over time.
+
+* Background
+
+Code quality in Rails projects degrades through:
+
+- Dependency drift: gems fall out of date, introducing security
+  vulnerabilities and compatibility issues.
+- Style drift: code written by different engineers diverges in style
+  and structure.
+- Performance degradation: N+1 queries, inefficient algorithms and
+  missing indexes accumulate.
+- Test erosion: test coverage drops, tests become flaky or slow.
+
+Automated audit tools catch these issues consistently and
+dispassionately, freeing human code reviews to focus on design and
+correctness.
+
+* Audit Tools Overview
+
+| Tool              | Category            | Purpose                               |
++-------------------+---------------------+---------------------------------------+
+| RuboCop           | Style & Linting     | Enforces Ruby and Rails style         |
+|                   |                     | conventions.                          |
++-------------------+---------------------+---------------------------------------+
+| Brakeman          | Security            | Static analysis for security          |
+|                   |                     | vulnerabilities.                      |
++-------------------+---------------------+---------------------------------------+
+| bundler-audit     | Security            | Scans Gemfile.lock for known          |
+|                   |                     | vulnerabilities.                      |
++-------------------+---------------------+---------------------------------------+
+| Reek              | Code Smells         | Detects code smells in Ruby code.     |
++-------------------+---------------------+---------------------------------------+
+| StandardRB        | Style & Linting     | Opinionated Ruby style based on       |
+|                   |                     | standard conventions.                 |
++-------------------+---------------------+---------------------------------------+
+| rails_best_practices| Best Practices    | Identifies Rails-specific anti-       |
+|                   |                     | patterns.                             |
++-------------------+---------------------+---------------------------------------+
+| SimpleCov         | Coverage            | Measures test code coverage.          |
++-------------------+---------------------+---------------------------------------+
+| Bullet            | Performance         | Detects N+1 queries and unused        |
+|                   |                     | eager loading.                        |
++-------------------+---------------------+---------------------------------------+
+| Fasterer          | Performance         | Suggests performance improvements.    |
++-------------------+---------------------+---------------------------------------+
+| Rack::MiniProfiler| Performance         | In-browser performance profiling.     |
++-------------------+---------------------+---------------------------------------+
+| RuboCop-RSpec     | Testing             | Enforces RSpec style conventions.     |
++-------------------+---------------------+---------------------------------------+
+| RuboCop-Rails     | Rails-specific      | Enforces Rails best practices via     |
+|                   |                     | RuboCop.                              |
++-------------------+---------------------+---------------------------------------+
+
+* Setting Up an Audit Pipeline
+
+A robust audit pipeline runs tools at multiple stages:
+
+#+BEGIN_EXAMPLE
+Pre-commit (local)
+  ↓
+CI (per branch)
+  ↓
+Scheduled (daily/weekly)
+  ↓
+Release gate
+#+END_EXAMPLE
+
+** Pre-commit
+
+Run fast tools locally before committing to catch issues early.
+
+Configure using a tool like =lefthook= or =overcommit=:
+
+#+BEGIN_EXAMPLE
+# lefthook.yml
+pre-commit:
+  parallel: true
+  commands:
+    rubocop:
+      run: bundle exec rubocop --force-exclusion {staged_files}
+    brakeman:
+      run: bundle exec brakeman --no-pager --quiet
+    fasterer:
+      run: bundle exec fasterer
+#+END_EXAMPLE
+
+** CI Pipeline
+
+Run a comprehensive suite in CI on every push.
+
+#+BEGIN_EXAMPLE
+# .github/workflows/audit.yml
+name: Code Audit
+on: [push]
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ruby/setup-ruby@v1
+      - run: bundle install
+      - run: bundle exec rubocop
+      - run: bundle exec brakeman --no-pager --quiet
+      - run: bundle exec bundler-audit check --update
+      - run: bundle exec rails_best_practices .
+      - run: bundle exec reek .
+      - run: bundle exec rspec
+      - run: bundle exec rubocop-rspec
+#+END_EXAMPLE
+
+** Scheduled Audits
+
+Run slower or more comprehensive audits on a schedule.
+
+- Weekly: Full dependency audit (=bundler-audit=).
+- Weekly: Security audit (=brakeman=) with full report.
+- Monthly: Comprehensive code quality review.
+- Per release: Full audit pass before tagging a release.
+
+* Tool Configuration
+
+** RuboCop
+
+RuboCop is the standard Ruby linter. Every Rails project should use it.
+
+Minimal configuration:
+
+#+BEGIN_EXAMPLE
+# .rubocop.yml
+inherit_gem:
+  rubocop-rails: config/default.yml
+  rubocop-rspec: config/default.yml
+
+AllCops:
+  NewCops: enable
+  TargetRubyVersion: 3.3
+  Exclude:
+    - db/schema.rb
+    - node_modules/**/*
+    - vendor/**/*
+#+END_EXAMPLE
+
+Key considerations:
+
+- Start with the defaults and adjust only when there is a clear team
+  agreement to deviate.
+- Keep configuration in version control.
+- Run RuboCop in CI with =--fail-level=convention=.
+- Use =--auto-gen-config= to gradually adopt stricter rules.
+
+** Brakeman
+
+Brakeman performs static analysis for security vulnerabilities.
+
+Run it with:
+
+#+BEGIN_EXAMPLE
+bundle exec brakeman --no-pager --quiet --output brakeman_report.json
+#+END_EXAMPLE
+
+Integrate into CI with a quality gate:
+
+#+BEGIN_EXAMPLE
+bundle exec brakeman --no-pager --quiet --ensure-latest || exit 1
+#+END_EXAMPLE
+
+** bundler-audit
+
+Scans =Gemfile.lock= for gems with known vulnerabilities.
+
+Run in CI:
+
+#+BEGIN_EXAMPLE
+bundle exec bundler-audit check --update
+#+END_EXAMPLE
+
+** Reek
+
+Detects code smells: duplicated logic, feature envy, long methods, etc.
+
+#+BEGIN_EXAMPLE
+# .reek.yml
+detectors:
+  IrresponsibleModule:
+    enabled: false
+  UtilityFunction:
+    enabled: false
+exclude_paths:
+  - db/migrate
+  - spec
+#+END_EXAMPLE
+
+** rails_best_practices
+
+Checks for Rails-specific anti-patterns.
+
+#+BEGIN_EXAMPLE
+# config/rails_best_practices.yml
+default_path: "."
+exclude:
+  - db/schema.rb
+only: []
+always_add_doc: false
+#+END_EXAMPLE
+
+* Audit Frequency
+
+| Audit Type         | Frequency | Tool(s)                | Who Runs           |
++--------------------+-----------+------------------------+--------------------+
+| Pre-commit         | Every     | RuboCop, Fasterer      | Developer (local)  |
+|                    | commit    |                        |                    |
++--------------------+-----------+------------------------+--------------------+
+| CI audit           | Every     | RuboCop, Brakeman,     | CI pipeline        |
+|                    | push      | bundler-audit,         |                    |
+|                    |           | rails_best_practices,  |                    |
+|                    |           | Reek, tests            |                    |
++--------------------+-----------+------------------------+--------------------+
+| Security audit     | Weekly    | Brakeman, bundler-audit| Scheduled job      |
++--------------------+-----------+------------------------+--------------------+
+| Dependency review  | Weekly    | Dependabot,            | Scheduled job      |
+|                    |           | bundler-audit          |                    |
++--------------------+-----------+------------------------+--------------------+
+| Full quality audit | Monthly   | All tools + manual     | Team               |
+|                    |           | review                 |                    |
++--------------------+-----------+------------------------+--------------------+
+| Pre-release audit  | Per       | All tools + manual     | Release manager    |
+|                    | release   | review                 |                    |
++--------------------+-----------+------------------------+--------------------+
+
+* Interpreting Audit Results
+
+** Prioritization
+
+Not all audit findings require immediate action.
+
+Use this framework to prioritise:
+
+| Priority | Criteria                                      | Action                              |
++----------+-----------------------------------------------+-------------------------------------+
+| Critical | Security vulnerability in production           | Fix immediately. Deploy out of      |
+|          | dependencies.                                  | cycle if needed.                    |
++----------+-----------------------------------------------+-------------------------------------+
+| High     | Security warnings, data exposure, severe       | Fix within the current sprint.      |
+|          | performance issues.                            |                                     |
++----------+-----------------------------------------------+-------------------------------------+
+| Medium   | Code smells, style violations, inadequate      | Schedule in a future sprint.        |
+|          | coverage.                                      |                                     |
++----------+-----------------------------------------------+-------------------------------------+
+| Low      | Cosmetic issues, minor style preferences.      | Fix opportunistically.              |
++----------+-----------------------------------------------+-------------------------------------+
+
+** False Positives
+
+Every audit tool produces false positives.
+
+- Document known false positives in a =.rubocop_todo.yml= or equivalent.
+- Review and prune the false positive list periodically.
+- When ignoring a finding, document why.
+
+** Trend Tracking
+
+Track audit results over time to measure trends.
+
+Questions to ask:
+
+- Is the number of RuboCop offences increasing or decreasing?
+- Are there recurring security vulnerabilities in our dependencies?
+- Is test coverage improving or declining?
+- Are code smells concentrated in specific areas?
+
+* Rails-Specific Audit Areas
+
+** Gem Audit
+
+Regularly review the gem list for:
+
+- Unused gems (=bundler doctor=).
+- Gems with no recent updates (abandoned).
+- Gems with known alternatives that are more actively maintained.
+- Gems pinned to an old major version.
+
+** Migration Audit
+
+Review recent migrations for:
+
+- Long-running migrations that could cause downtime.
+- Missing indexes on foreign keys.
+- Irreversible migrations without a =down= method.
+- Backfilling data in migrations (should be in Rake tasks).
+
+** Route Audit
+
+Review =config/routes.rb= for:
+
+- Unused routes.
+- Routes with unnecessary nesting.
+- Routes exposing admin or internal functionality publicly.
+
+** Configuration Audit
+
+Review environment configuration for:
+
+- Hard-coded secrets or API keys.
+- Differences between development and production configuration.
+- Disabled security features in production.
+
+* Establishing Quality Standards
+
+** Choosing a Baseline
+
+Start by running the full audit suite on the current codebase.
+
+- Generate a baseline report.
+- Set a target for improvement over the next quarter.
+- Configure tools to fail CI only on new offences, not existing ones.
+
+** Configuring Tools for Your Team
+
+- Start with RuboCop defaults and add Rails and RSpec extensions.
+- Agree as a team on deviations from defaults.
+- Document the reasoning for each deviation.
+- Revisit configuration quarterly.
+
+** Enforcement
+
+- Run fast audits in CI on every push.
+- Block merges that introduce critical or high-priority issues.
+- Allow medium and low issues to be addressed outside the merge
+  workflow.
+
+* AI Integration
+
+AI assistants can help with code quality audits by:
+
+- Reviewing RuboCop offences and suggesting fixes.
+- Identifying the root cause of Brakeman warnings.
+- Generating migration safety reviews.
+- Suggesting test improvements based on coverage gaps.
+- Reviewing Gemfile for outdated or insecure dependencies.
+
+When asking AI for audit assistance, provide:
+
+- The audit tool output.
+- The relevant code context.
+- The project's coding conventions.
+- Specific areas of concern.
+
+* Related Documents
+
+- [[file:../../handbooks/rails/README.org][Rails Engineering Handbook]]
+- [[file:../../handbooks/engineering/README.org][Engineering Fundamentals Handbook]]
+- [[file:../../guides/rails/testing.org][Testing Rails Applications Guide]]
+- [[file:../../playbooks/rails/upgrade.org][Rails Upgrade Playbook]]
+- [[file:../../checklists/rails/pull-request.org][Rails Pull Request Checklist]]
+- [[file:../../glossary/rails/README.org][Rails Glossary]]
