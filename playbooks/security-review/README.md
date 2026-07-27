@@ -1,0 +1,150 @@
++++
+title = "Security Review Playbook"
+description = "Repeatable workflow for conducting security reviews"
++++
+
+
+# Objective
+
+Ensure that systems, features and changes meet security standards
+before being deployed to production.
+
+# Inputs
+
+- System or feature design documentation.
+- Architecture diagrams and data flow.
+- Threat model (if available).
+- Relevant compliance requirements.
+
+# Prerequisites
+
+- [ ] System architecture is documented.
+- [ ] Data flows are mapped (what data, where it goes, who accesses it).
+- [ ] Authentication and authorization design is documented.
+- [ ] External integrations are identified.
+- [ ] Security requirements from compliance are defined.
+
+# Workflow
+
+## Step 1: Scoping
+
+Determine the review scope:
+
+| Review Type | Triggers | Duration |
+| --- | --- | --- |
+|----------------+-------------------------------------------------+-------------|
+| Full security | New system, major architecture change, new | 2-4 hours |
+| --- | --- | --- |
+| review | external integration, compliance requirement. |  |
+|----------------+-------------------------------------------------+-------------|
+| Lightweight | Feature change, dependency update, minor | 30-60 |
+| --- | --- | --- |
+| review | configuration change. | minutes |
+|----------------+-------------------------------------------------+-------------|
+| CI scan | Every pull request. | Automated |
+| --- | --- | --- |
+|----------------+-------------------------------------------------+-------------|
+
+## Step 2: Threat Modeling
+
+Apply the STRIDE framework to identify threats:
+
+| Threat | Questions to Ask |
+| --- | --- |
+|----------------------+------------------------------------------------|
+| Spoofing | How is identity verified? Could an attacker |
+| --- | --- |
+|  | impersonate a user or system? |
+|----------------------+------------------------------------------------|
+| Tampering | Can data be modified in transit or at rest |
+| --- | --- |
+|  | without detection? |
+|----------------------+------------------------------------------------|
+| Repudiation | Are actions logged with sufficient detail to |
+| --- | --- |
+|  | prove who did what? |
+|----------------------+------------------------------------------------|
+| Information | Is sensitive data exposed in responses, logs, |
+| --- | --- |
+| Disclosure | or error messages? |
+|----------------------+------------------------------------------------|
+| Denial of Service | What happens under high load? Are there |
+| --- | --- |
+|  | rate limits? |
+|----------------------+------------------------------------------------|
+| Elevation of | Can a normal user gain admin privileges? |
+| --- | --- |
+| Privilege |  |
+|----------------------+------------------------------------------------|
+
+## Step 3: Code and Configuration Review
+
+Review for common vulnerabilities:
+
+- [ ] Input validation on all external entry points.
+- [ ] Authentication on all protected endpoints.
+- [ ] Authorization on every resource access.
+- [ ] No hard-coded secrets or credentials.
+- [ ] Encryption for sensitive data in transit and at rest.
+- [ ] Safe session management.
+- [ ] Proper error handling (no information leakage).
+- [ ] Security headers are configured (CSP, HSTS, X-Frame-Options).
+
+## Step 4: Dependency Review
+
+- [ ] Run `bundler-audit` or equivalent for known vulnerabilities.
+- [ ] Review new dependencies for maintenance status and security track
+      record.
+- [ ] Check for unused or abandoned dependencies.
+
+## Step 5: Document Findings
+
+Record each finding with:
+
+- Severity (critical, high, medium, low).
+- Description of the issue.
+- Location or evidence.
+- Recommended remediation.
+- Owner and timeline.
+
+## Step 6: Remediation and Verification
+
+- Critical and high findings must be fixed before deployment.
+- Medium findings should be scheduled in the current sprint.
+- Low findings should be tracked and addressed opportunistically.
+- Verification that fixes address the finding.
+
+# Checklist
+
+- [ ] Threat model completed.
+- [ ] Authentication verified.
+- [ ] Authorization verified on every resource.
+- [ ] Input validation on all entry points.
+- [ ] No sensitive data in logs or error messages.
+- [ ] Security headers configured.
+- [ ] Dependencies scanned for vulnerabilities.
+- [ ] Encryption for sensitive data.
+- [ ] Session management is secure.
+- [ ] Findings documented with severity and remediation.
+
+# AI Workflow
+
+AI can assist with security reviews by:
+
+- Scanning code for common vulnerability patterns.
+- Reviewing security configuration against best practices.
+- Identifying missing security controls in design documents.
+- Generating security test cases.
+
+AI limitations:
+
+- AI may miss context-specific security concerns.
+- AI cannot evaluate compliance with organizational policies.
+- All AI findings must be validated by a human security reviewer.
+
+# Related Documents
+
+- [Security Engineering Handbook](../../handbooks/security/README/)
+- [Security Glossary](../../glossary/security/README/)
+- [Engineering Fundamentals Handbook](../../handbooks/engineering/README/)
+- [Rails Security Review Checklist](../../checklists/rails/security-review/)

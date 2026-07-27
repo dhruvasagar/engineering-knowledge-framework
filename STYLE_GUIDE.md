@@ -1,0 +1,576 @@
++++
+title = "Style Guide"
+description = "Writing, formatting and documentation standards for the Engineering Knowledge Framework"
++++
+
+
+# Purpose
+
+This document defines the writing and formatting standards for the
+Engineering Knowledge Framework.
+
+Consistency makes engineering knowledge easier to read, maintain,
+discover and evolve.
+
+The style guide exists to ensure every document feels like it was written
+by a single author, regardless of how many contributors participate.
+
+This document focuses on **how** knowledge should be written.
+
+The philosophy behind the framework is documented in
+[CLAUDE.md](./CLAUDE.md) and
+[Strategy](./STRATEGY/).
+
+# AI-First Writing
+
+The Engineering Knowledge Framework is designed to be consumed by both
+humans and AI systems.
+
+Good engineering documentation naturally serves both audiences.
+
+Documents should therefore maximize:
+
+- Human readability.
+- Machine readability.
+- Semantic clarity.
+- Searchability.
+- Discoverability.
+- Long-term maintainability.
+
+AI-friendly writing does not mean writing differently for humans.
+
+Instead, it means writing with sufficient structure, explicitness and
+consistency that both humans and AI systems can accurately interpret the
+knowledge.
+
+# Writing Principles
+
+Every document should strive to be:
+
+- Timeless.
+- Modular.
+- Explicit.
+- Reusable.
+- Well connected.
+- Easy to navigate.
+- Easy to review.
+- Easy to maintain.
+
+Prefer clarity over cleverness.
+
+Prefer simplicity over completeness.
+
+Prefer principles over implementation details.
+
+# File Naming
+
+| Convention | Example | Rule |
+| --- | --- | --- |
+|------------+--------------------------------------------+------------------------------------|
+| Lowercase | `handbook*rails*README.org` | No capital letters |
+| --- | --- | --- |
+| Hyphen-separated | `service-objects.org` | Use hyphens, never spaces |
+| Directory README | `handbook*rails*README.org` | Each directory has a README |
+| Org-mode | `README.org` | All primary documents use `.org` |
+
+Choose descriptive names.
+
+Avoid abbreviations unless they are universally understood.
+
+# Document Metadata
+
+Every document should begin with:
+
+```org
+```
+
+Optional metadata may include:
+
+- `#+TODO`
+- `#+OPTIONS`
+- `#+PROPERTY`
+
+Metadata should accurately describe the document.
+
+# Document Structure
+
+Documents should follow a logical progression.
+
+General guidance:
+
+1. Purpose
+2. Background
+3. Principles
+4. Main Content
+5. Examples
+6. References
+
+Specific document structures are defined in
+[Document Types](./DOCUMENT_TYPES/).
+
+# Single Responsibility
+
+Every document should answer one primary question.
+
+Examples:
+
+| Question | Document Type |
+| --- | --- |
+|-----------+----------------|
+| Why? | Handbook |
+| --- | --- |
+| How does it work? | Guide |
+| How do I perform it? | Playbook |
+| Did I finish everything? | Checklist |
+| Where do I start? | Template |
+| What does this mean? | Glossary |
+| What should I learn next? | Learning Path |
+
+If a document attempts to answer several unrelated questions, split it
+into multiple documents.
+
+Smaller documents are easier to maintain and significantly improve AI
+retrieval.
+
+# Headings
+
+Use descriptive headings.
+
+Avoid vague titles.
+
+Good:
+
+- Service Object Lifecycle
+- Dependency Injection
+- Pull Request Review Workflow
+
+Avoid:
+
+- Lifecycle
+- Details
+- Notes
+- Miscellaneous
+
+A heading should remain meaningful when viewed independently in search
+results or a table of contents.
+
+Do not skip heading levels.
+
+Prefer three heading levels or fewer whenever practical.
+
+# Voice and Tone
+
+Write for experienced engineers.
+
+Assume competence.
+
+Use:
+
+- Active voice.
+- Direct language.
+- Declarative statements.
+- Technical precision.
+
+Avoid:
+
+- Marketing language.
+- Excessive adjectives.
+- Unnecessary humour.
+- Hedging.
+
+Good:
+
+#+BEGIN_QUOTE
+Controllers should remain thin.
+#+END_QUOTE
+
+Avoid:
+
+#+BEGIN_QUOTE
+Controllers might perhaps benefit from being relatively small.
+#+END_QUOTE
+
+# Semantic Writing
+
+Write so that each paragraph remains understandable in isolation.
+
+Avoid ambiguous references.
+
+Good:
+
+#+BEGIN_QUOTE
+The Rails application loads configuration during initialization.
+#+END_QUOTE
+
+Avoid:
+
+#+BEGIN_QUOTE
+It loads configuration.
+#+END_QUOTE
+
+Prefer explicit nouns over pronouns when ambiguity is possible.
+
+State assumptions explicitly.
+
+Do not rely on surrounding context.
+
+# Context Independence
+
+Engineering documents are often consumed through search or AI retrieval.
+
+Readers may encounter only part of a document.
+
+Whenever practical:
+
+- Define important concepts.
+- Avoid "as mentioned above".
+- Avoid "the previous section".
+- Prefer explicit links.
+
+Good:
+
+#+BEGIN_QUOTE
+See the
+[Rails Engineering Handbook](./handbooks/rails/README/)
+for architectural principles.
+#+END_QUOTE
+
+# Timeless Writing
+
+Prefer knowledge that remains valuable over implementation details that
+change frequently.
+
+Good:
+
+- Controllers should remain thin.
+- Prefer composition over inheritance.
+- Minimize coupling.
+
+Avoid:
+
+- Rails 8.0.1 introduces...
+- Ruby 3.4 changes...
+- Current IDE behaviour...
+
+Version-specific information belongs in references rather than
+handbooks.
+
+Explain:
+
+- Why.
+- Trade-offs.
+- Decision criteria.
+
+These age far more gracefully than implementation details.
+
+# Canonical Sources
+
+Every engineering concept should have a single authoritative source.
+
+Other documents should reference that source rather than duplicate it.
+
+Examples:
+
+- Coding standards belong in the Handbook.
+- Operational procedures belong in Playbooks.
+- Definitions belong in the Glossary.
+
+Duplication increases maintenance effort and causes knowledge to drift.
+
+# Links
+
+Prefer explicit links.
+
+Every significant concept should be connected to related knowledge.
+
+Good:
+
+```org
+[Code Review Playbook](./playbooks/code-review/README/)
+```
+
+Avoid:
+
+#+BEGIN_QUOTE
+See the code review documentation.
+#+END_QUOTE
+
+# Knowledge Graph
+
+The repository should evolve into a connected knowledge graph rather
+than a collection of isolated documents.
+
+Documents should both:
+
+- Reference related knowledge.
+- Be referenced by related knowledge.
+
+Example:
+
+```
+
+Rails Handbook
+
+↓
+
+Service Objects Guide
+
+↓
+
+Code Review Playbook
+
+↓
+
+Pull Request Checklist
+
+↓
+
+PR Template
+
+```
+
+Navigation should emphasize relationships rather than directory
+structure.
+
+# Lists
+
+Use unordered lists for collections.
+
+Use ordered lists for sequences.
+
+Use definition lists when introducing terminology.
+
+Keep nesting shallow.
+
+Avoid deeply nested lists.
+
+## Bullet Format
+
+Use =-= for bullet list items, not =**=.
+
+In Org-mode, =**= at the start of a line creates a **headline**, not a
+bullet. Using =**= instead of =-= causes structural issues:
+
+- Short =**= items become orphaned Level-1 headlines rather than
+  list entries.
+- They do not nest properly under parent sections.
+- They break document outline and navigation.
+
+Correct:
+
+: - Item one.
+: - Item two.
+:   - Nested sub-item.
+
+Incorrect:
+
+: * Item one.
+: * Item two.
+
+## Checklist Format
+
+Use =-= [ ]= for checklist items, not =*= [ ]=.
+
+Correct:
+
+: - [ ] Task to complete.
+: - [x] Completed task.
+
+Incorrect:
+
+: * [ ] Task to complete.
+
+# Tables
+
+Use Org tables for structured information.
+
+Tables are appropriate for:
+
+- Comparisons.
+- Decision matrices.
+- Standards.
+- Capability summaries.
+- Configuration matrices.
+
+Avoid using tables for layout.
+
+## Format
+
+Every table must follow this structure:
+
+| Header 1 | Header 2 | Header 3 |   ← Header row: | at edges, | between cells
+|----------+----------+----------|   ← Separator:  | at edges, + between columns
+| Cell 1   | Cell 2   | Cell 3   |   ← Data rows:  | at edges, | between cells
+
+Rules:
+
+- Every row starts and ends with =|=.
+- The header separator (hline) uses =| at both edges and =+ between
+  columns, e.g., `|-------+-------|`. It must not use =+ at the
+  edges or =| between columns in place of =+.
+- All rows in a table must have the same number of columns.
+- A blank line ends the table.
+
+## Correct Examples
+
+Two-column table:
+
+| Principle | Description |
+| --- | --- |
+|-----------------+-------------------------------------|
+| Keep it simple | Prefer simple over clever designs. |
+| --- | --- |
+| Single purpose | One responsibility per module. |
+
+Three-column table with multi-line cells:
+
+| Type | Speed | Notes |
+| --- | --- | --- |
+|--------+-------+------------------------------------|
+| Unit | Fast | Isolated, single behaviour. |
+| --- | --- | --- |
+| E2E | Slow | Full stack, critical journeys |
+|  |  | only. |
+
+## Common Mistakes
+
+- Using =+ at the start or end of the separator row instead of =|.
+  Correct: `|-------+-------`|. Wrong: `+-------+-------`+.
+- Using =| between columns in the separator row instead of =+.
+  Correct: `|-------+-------`|. Wrong: `|-------|-------|`.
+- Missing the separator row between header and data.
+- Inconsistent column counts across rows.
+
+# Code Blocks
+
+Always specify the language.
+
+Example:
+
+```ruby
+class User < ApplicationRecord
+has_many :posts
+end
+```
+
+Prefer small examples.
+
+Examples should demonstrate principles rather than complete
+applications.
+
+# Examples
+
+Examples should be:
+
+- Realistic.
+- Minimal.
+- Correct.
+- Easy to understand.
+
+When appropriate, include:
+
+- Good examples.
+- Bad examples.
+- Before*after comparisons.
+
+Examples are often the fastest way to teach engineering concepts.
+
+# Cross References
+
+Prefer links over repeated explanations.
+
+If knowledge already exists elsewhere, reference it.
+
+Every document should contribute to the repository's knowledge graph.
+
+# Terminology
+
+Use terminology consistently.
+
+Define new terminology in the appropriate glossary.
+
+Avoid introducing multiple names for the same concept.
+
+Prefer:
+
+- Pull Request
+- Repository
+- Capability
+- Knowledge Artifact
+
+Avoid unnecessary synonyms.
+
+# AI Readability
+
+Documents should optimize retrieval quality.
+
+Prefer:
+
+- Explicit language.
+- Meaningful headings.
+- Small focused sections.
+- Defined terminology.
+- Logical progression.
+- Internal links.
+- Single responsibility.
+
+Avoid:
+
+- Large monolithic documents.
+- Ambiguous wording.
+- Duplicate explanations.
+- Excessively deep heading hierarchies.
+
+Good documentation naturally improves AI performance.
+
+# Continuous Evolution
+
+Engineering knowledge evolves.
+
+Improve existing documents before creating new ones whenever practical.
+
+Documentation refactoring is encouraged.
+
+Repository quality is more important than document count.
+
+# Validation Checklist
+
+Before committing a document, verify:
+
+- [ ] Metadata is complete.
+- [ ] The correct document type was used.
+- [ ] The document has a single responsibility.
+- [ ] Headings are meaningful.
+- [ ] Terminology is consistent.
+- [ ] Internal links are valid.
+- [ ] Duplicate knowledge has been avoided.
+- [ ] Examples are technically accurate.
+- [ ] The document follows repository conventions.
+- [ ] Lists use =-= for bullets, not =**= (which creates headlines).
+- [ ] Headline levels do not skip (e.g., =**= to `****` without `***`).
+- [ ] TOC.org is updated if this is a new or renamed document.
+- [ ] Handbook capability map is updated if this is a new or renamed
+      document.
+
+- AI Readability Checklist
+
+Additionally verify:
+
+- [ ] The document can be understood independently.
+- [ ] Important concepts are explicitly named.
+- [ ] Assumptions are explained.
+- [ ] Related documents are linked.
+- [ ] Canonical sources are referenced.
+- [ ] The document is modular.
+- [ ] Sections are concise.
+- [ ] AI-generated content has been reviewed by a human.
+
+- References
+
+- [CLAUDE.md](./CLAUDE.md)
+- [Strategy](./STRATEGY/)
+- [Architecture](./ARCHITECTURE/)
+- [Document Types](./DOCUMENT_TYPES/)
+- [Contributing](./CONTRIBUTING/)
+- [Repository Overview](../README/)
+- [[https:/*orgmode.org*manual*Markup.html][Org-mode Markup Reference]]

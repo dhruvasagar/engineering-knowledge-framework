@@ -1,0 +1,57 @@
++++
+title = "Quality Gate Checklist"
+description = "Verification before accepting changes"
++++
+
+
+# Purpose
+
+Verify that changes meet minimum quality standards before being merged
+or deployed. This checklist should be used as part of the CI/CD pipeline
+and code review process.
+
+# Code Quality
+
+- [ ] Code follows project coding standards and style conventions.
+- [ ] No new linter warnings or errors introduced.
+- [ ] Cyclomatic complexity has not increased significantly.
+- [ ] Code duplication has not increased.
+- [ ] Dead code or commented-out code has been removed.
+- [ ] No TODO or FIXME comments without issue references.
+
+# Testing
+
+- [ ] New code has corresponding tests.
+- [ ] All existing tests still pass.
+- [ ] Test coverage has not decreased below the project threshold.
+- [ ] No flaky tests introduced.
+- [ ] Edge cases are tested (boundary conditions, error paths).
+- [ ] Test output is deterministic.
+
+# Security
+
+- [ ] No new security vulnerabilities introduced.
+- [ ] Input validation is present for all user inputs.
+- [ ] Authentication and authorisation checks are in place.
+- [ ] Secrets and credentials are not hardcoded.
+- [ ] Dependencies have been scanned for vulnerabilities.
+
+# Performance
+
+- [ ] No obvious performance regressions (N+1 queries, missing indexes).
+- [ ] Database queries are efficient and indexed.
+- [ ] Caching is used where appropriate.
+
+# Maintainability
+
+- [ ] Code is readable and well-structured.
+- [ ] Public APIs and interfaces are documented.
+- [ ] Complex logic includes explanatory comments.
+- [ ] Error messages are clear and actionable.
+- [ ] Logging is appropriate for debugging.
+
+# Related Documents
+
+- [Engineering Quality Handbook](../../handbooks/quality/README/)
+- [Release Quality Gate Playbook](../../playbooks/quality/release-quality-gate/)
+- [Quality References](../../references/quality/README/)

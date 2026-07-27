@@ -1,0 +1,280 @@
++++
+title = "Architectural Patterns"
+description = "A guide to common architectural patterns and when to apply them"
++++
+
+
+# Purpose
+
+Architectural patterns provide proven, reusable solutions to common
+structural problems in software systems.
+
+Understanding these patterns enables engineers to recognize recurring
+problems, apply known solutions, and communicate architectural
+decisions using a shared vocabulary.
+
+This guide explains the most common architectural patterns, their
+trade-offs, and the conditions under which each should be considered.
+
+# Background
+
+Architecture is the set of design decisions that are costly to change.
+
+Architectural patterns are not prescriptions. They are tools.
+Each pattern optimizes for different outcomes and introduces different
+constraints. Choosing a pattern means accepting its trade-offs.
+
+The patterns described in this guide are technology-independent.
+They can be implemented in any language, framework or infrastructure.
+
+# How to Choose a Pattern
+
+Choosing an architectural pattern requires understanding the problem
+context:
+
+- What are the primary quality attributes (performance, scalability,
+  maintainability, evolvability)?
+- What is the team's experience and organizational structure?
+- What is the expected evolution of the system?
+- What constraints exist (regulation, legacy, budget)?
+
+No single pattern is universally superior. The best pattern is the one
+that best aligns the architecture with the business goals.
+
+# Pattern Catalogue
+
+## Layered Architecture
+
+### Description
+
+Organize the system into horizontal layers, each with a specific
+responsibility. Each layer depends only on the layer directly beneath
+it.
+
+```
+  Presentation
+       ↓
+   Application
+       ↓
+     Domain
+       ↓
+ Infrastructure
+```
+
+#### When to Use
+
+- The system has clear separation of concerns that maps well to layers.
+- The team is organized around technical skills (frontend, backend,
+  database).
+- The system is relatively stable in structure.
+
+#### When to Avoid
+
+- Layers become leaky abstractions (presentation code reaches into
+  infrastructure).
+- Performance requirements demand bypassing layers.
+- The domain is complex and cross-cutting.
+
+#### Trade-offs
+
+| Pro | Con |
+| --- | --- |
+|---------------------------------------+----------------------------------------|
+| Simple and widely understood | Can lead to monolithic deployments |
+| --- | --- |
+| Clear separation of concerns | Layer bypass undermines the pattern |
+| Easy to get started | Tendency toward code duplication |
+| Good for small to medium systems | Does not scale well organizationally |
+
+## Hexagonal Architecture (Ports and Adapters)
+
+### Description
+
+Isolate core business logic from external concerns through ports
+(interfaces) and adapters (implementations).
+
+The core domain has no dependency on databases, APIs, UIs, or any other
+external system. All external communication flows through adapters that
+implement ports defined by the core.
+
+```
+  [Web Adapter] → [Port] → [Core Domain] ← [Port] ← [Database Adapter]
+  [CLI Adapter]  → [Port] →              ← [Port] ← [Message Queue Adapter]
+```
+
+#### When to Use
+
+- The domain is complex and central to the business.
+- The system integrates with multiple external systems.
+- Testability of business logic is a priority.
+
+#### When to Avoid
+
+- The system is simple and unlikely to change.
+- The overhead of indirection exceeds its benefit.
+- The team is unfamiliar with the pattern.
+
+#### Trade-offs
+
+| Pro | Con |
+| --- | --- |
+|---------------------------------------+----------------------------------------|
+| Domain is highly testable | Increased indirection and complexity |
+| --- | --- |
+| External systems are swappable | More interfaces to maintain |
+| Business logic is framework-free | Can be over-engineering for simple apps |
+| Strong separation of concerns | Requires discipline to maintain |
+
+## Event-Driven Architecture
+
+### Description
+
+Components communicate through events rather than direct calls.
+
+Producers emit events without knowing which consumers will handle them.
+Consumers subscribe to events without knowing which producers emitted
+them. This creates loose coupling between components.
+
+```
+  [Order Service] ──→ (OrderPlaced) ──→ [Inventory Service]
+                         │
+                         ├──→ [Notification Service]
+                         └──→ [Analytics Service]
+```
+
+#### When to Use
+
+- Loose coupling between components is essential.
+- Workflows are asynchronous or long-running.
+- Multiple consumers need to react to the same event.
+
+#### When to Avoid
+
+- Workflow visibility and debugging are priorities.
+- Event ordering and consistency are difficult to guarantee.
+- The team lacks experience with event-driven systems.
+
+#### Trade-offs
+
+| Pro | Con |
+| --- | --- |
+|---------------------------------------+----------------------------------------|
+| Strong decoupling between services | Eventual consistency is complex |
+| --- | --- |
+| Highly scalable and extensible        | Debugging is harder than request*response
+| Real-time processing capability | Event schema evolution is challenging |
+| --- | --- |
+| Good for heterogeneous systems | Requires robust monitoring |
+
+## Microservices Architecture
+
+### Description
+
+Compose the system from independently deployable services, each owning
+its own data and domain. Services communicate through well-defined APIs
+(generally HTTP or messaging).
+
+```
+  [API Gateway]
+     ├── [Order Service] ─→ [Order DB]
+     ├── [Inventory Service] ─→ [Inventory DB]
+     ├── [Payment Service] ─→ [Payment DB]
+     └── [Notification Service]
+```
+
+#### When to Use
+
+- Teams are aligned around bounded contexts (Conway's Law).
+- Independent scaling and deployment are required.
+- The system is large enough to justify operational overhead.
+
+#### When to Avoid
+
+- The system is small or early in its lifecycle.
+- The team lacks operational maturity.
+- Network complexity and data consistency are concerns.
+
+#### Trade-offs
+
+| Pro | Con |
+| --- | --- |
+|---------------------------------------+----------------------------------------|
+| Independent deployability | Operational complexity |
+| --- | --- |
+| Team autonomy | Data consistency challenges |
+| Technology heterogeneity | Network overhead and latency |
+| Independent scaling | Testing across services is harder |
+
+## CQRS (Command Query Responsibility Segregation)
+
+### Description
+
+Separate read and write operations into different models. Commands
+handle state changes. Queries handle data retrieval.
+
+The separation allows each model to be optimized independently.
+
+#### When to Use
+
+- Read and write workloads have different characteristics.
+- The domain has complex business logic on the write side and complex
+  queries on the read side.
+- Performance requirements demand different data models for reads and
+  writes.
+
+#### When to Avoid
+
+- The system has simple CRUD operations with balanced read*write
+  patterns.
+- The added complexity of maintaining two models is not justified.
+
+#### Trade-offs
+
+| Pro | Con |
+| --- | --- |
+|---------------------------------------+----------------------------------------|
+| Optimized read and write models | Increased complexity |
+| --- | --- |
+| Independent scaling of reads*writes | Eventual consistency between models |
+| Better performance for each workload | More code to maintain |
+
+# Pattern Composition
+
+Architectural patterns are not mutually exclusive.
+
+Common compositions include:
+
+- Hexagonal + CQRS: Hexagonal architecture provides the structural
+  organization; CQRS optimizes read and write paths.
+- Event-Driven + Microservices: Microservices communicate through
+  events to achieve loose coupling.
+- Layered + Hexagonal: Use layered architecture within each hexagon
+  (port*adapter boundary) to organize internal structure.
+
+Compose patterns only when the combination clearly addresses a specific
+problem. Every added pattern increases complexity.
+
+# AI Integration
+
+AI assistants can help with architectural patterns by:
+
+- Recommending patterns based on system requirements and constraints.
+- Analyzing existing architecture and identifying pattern mismatches.
+- Generating pattern comparison matrices for decision making.
+- Drafting architectural documentation that follows pattern conventions.
+- Identifying anti-patterns in current system structure.
+
+When asking AI for architectural pattern advice, provide:
+
+- System goals and constraints.
+- Quality attribute requirements.
+- Current architecture and pain points.
+- Team structure and experience.
+- Technology constraints and preferences.
+
+# Related Documents
+
+- [Software Architecture Handbook](../../handbooks/architecture/README/)
+- [Engineering Fundamentals Handbook](../../handbooks/engineering/README/)
+- [Architecture Glossary](../../glossary/architecture/README/)
+- [Architecture Review Playbook](../../playbooks/architecture-review/README/)

@@ -54,7 +54,7 @@ CAPABILITY_MAP = {
 
 
 def collect_org_files():
-    """Collect all .org files."""
+    """Collect all .md files."""
     org_files = []
     for root, dirs, files in os.walk(REPO_ROOT):
         if '.git' in root.split(os.sep):
@@ -62,7 +62,7 @@ def collect_org_files():
         if 'tools' in root.split(os.sep):
             continue
         for f in files:
-            if f.endswith('.org'):
+            if f.endswith('.md'):
                 org_files.append(Path(root) / f)
     return org_files
 
@@ -88,7 +88,7 @@ def classify_file(filepath):
             break
 
     # Root-level files are governance
-    if len(parts) == 1 and parts[0].endswith('.org'):
+    if len(parts) == 1 and parts[0].endswith('.md'):
         capability = 'Governance'
         doc_type = 'governance'
 

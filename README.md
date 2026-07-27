@@ -1,0 +1,368 @@
++++
+title = "Engineering Knowledge Framework"
+description = "An open-source framework for building AI-native engineering knowledge systems"
++++
+
+
+Engineering Knowledge Framework is an open-source framework for building
+AI-native engineering knowledge systems.
+
+It provides a structured foundation for capturing, organizing,
+maintaining, evolving and applying engineering knowledge in a way that
+benefits both engineers and AI systems.
+
+This project is not simply a documentation repository.
+
+It is a framework for engineering knowledge.
+
+# Vision
+
+Engineering organizations accumulate valuable knowledge every day through
+projects, successes, failures, architectural decisions and operational
+experience.
+
+Unfortunately, much of this knowledge remains fragmented, undocumented,
+or is lost as teams evolve.
+
+The Engineering Knowledge Framework exists to transform that experience
+into reusable organizational knowledge.
+
+Our long-term vision is to establish an open standard for engineering
+knowledge management that enables organizations to:
+
+- Capture institutional knowledge.
+- Improve engineering decision making.
+- Standardize engineering practices.
+- Accelerate onboarding.
+- Reduce repeated mistakes.
+- Build engineering capabilities.
+- Integrate AI throughout the engineering lifecycle.
+- Continuously improve through organizational learning.
+
+Engineering knowledge should scale with both people and AI.
+
+# Philosophy
+
+The framework is built around several core principles.
+
+| Principle | Description |
+| --- | --- |
+|------------------------------+----------------------------------------------------------|
+| Knowledge over Documentation | Capture understanding, not just information |
+| --- | --- |
+| Principles over Tools | Prefer timeless engineering principles over technologies |
+| Explain Why | Document reasoning, not just procedures |
+| Modular Knowledge | Compose knowledge from focused, reusable documents |
+| Capability-driven | Organize around engineering capabilities |
+| AI-native | Treat AI as a first-class consumer of knowledge |
+| Continuous Improvement | Evolve knowledge through organizational learning |
+
+These principles guide every aspect of the repository.
+
+# What the Framework Provides
+
+The framework consists of several complementary components.
+
+## Governance
+
+Defines how engineering knowledge is created and maintained.
+
+Examples include:
+
+- Repository philosophy
+- Writing standards
+- Contribution guidelines
+- Knowledge architecture
+- Document taxonomy
+
+## Engineering Capabilities
+
+Each engineering discipline is represented as a capability containing all
+knowledge required to understand and execute that discipline.
+
+A capability typically contains:
+
+- Handbook
+- Guides
+- Playbooks
+- Checklists
+- Templates
+- References
+- Glossary
+- Learning Paths
+- AI Workflows
+
+Examples include:
+
+- Rails Engineering
+- Software Architecture
+- Security Engineering
+- Testing
+- Accessibility
+- Platform Engineering
+
+## AI Framework
+
+The framework treats AI as an engineering collaborator rather than
+simply a documentation generator.
+
+AI is integrated throughout the engineering lifecycle, including:
+
+- Context engineering
+- Architecture reviews
+- Code reviews
+- Documentation generation
+- Test generation
+- Security analysis
+- Accessibility assessment
+- Refactoring
+- Knowledge extraction
+
+Human engineering judgement remains the final authority.
+
+## Learning Framework
+
+Engineering knowledge should enable continuous learning.
+
+Capabilities may include:
+
+- Learning paths
+- Recommended reading
+- Exercises
+- Competency progression
+- Practical examples
+
+## Tooling
+
+The framework is designed to support automation.
+
+Examples include:
+
+- Repository generators
+- Templates
+- Linters
+- Link validation
+- Style validation
+- Knowledge graph generation
+- AI context generation
+- Search and indexing
+
+- Repository Organization
+
+The repository is organized into several major areas.
+
+```
+
+governance/
+Repository philosophy, standards and guidance
+
+glossary/
+Canonical engineering terminology
+
+handbook/
+Engineering principles and standards
+
+guides/
+Focused explanations of engineering topics
+
+playbooks/
+Repeatable engineering workflows
+
+checklists/
+Verification and quality gates
+
+templates/
+Reusable engineering artifacts
+
+references/
+Quick reference material
+
+learning-paths/
+Structured learning journeys
+
+assets/
+Shared diagrams, images and supporting resources
+
+```
+
+Each document type has a clearly defined purpose.
+
+See:
+
+[Document Types](./DOCUMENT_TYPES/)
+
+for more information.
+
+# Knowledge Lifecycle
+
+Engineering knowledge evolves continuously.
+
+```
+
+Experience
+
+↓
+
+Capture
+
+↓
+
+Review
+
+↓
+
+Refine
+
+↓
+
+Organize
+
+↓
+
+Publish
+
+↓
+
+Apply
+
+↓
+
+Learn
+
+↓
+
+Improve
+
+↓
+
+Repeat
+
+```
+
+This framework exists to support every stage of that lifecycle.
+
+# AI-Native Knowledge
+
+Traditional documentation is written solely for humans.
+
+The Engineering Knowledge Framework is designed for both humans and AI.
+
+Documents should therefore:
+
+- Explain reasoning.
+- Use consistent terminology.
+- Cross-reference related knowledge.
+- Separate principles from implementation details.
+- Be modular and reusable.
+- Be easy to navigate programmatically.
+
+Well-structured knowledge enables AI systems to provide more accurate,
+consistent and context-aware assistance.
+
+# Intended Audience
+
+The framework is intended for:
+
+- Software Engineers
+- Senior Engineers
+- Staff Engineers
+- Architects
+- Engineering Managers
+- Technical Leads
+- Platform Engineers
+- Quality Engineers
+- Open-source contributors
+
+Organizations may adopt the framework in its entirety or adapt
+individual components to meet their own needs.
+
+# Getting Started
+
+If you are new to the repository, begin with the governance documents.
+
+1. [CLAUDE.md](./CLAUDE.md)
+2. [Strategy](./STRATEGY/)
+3. [Roadmap](./ROADMAP/)
+4. [Document Types](./DOCUMENT_TYPES/)
+5. [Style Guide](./STYLE_GUIDE/)
+6. [Contributing](./CONTRIBUTING/)
+
+These documents explain the philosophy, organization and contribution
+model of the framework.
+
+# Navigating the Repository
+
+Once you understand the philosophy, use the [Table of Contents](./table-of-contents/)
+to explore the repository by capability or by topic.
+
+The TOC provides two complementary views:
+
+- ***From Top to Bottom***: Every document organized by capability
+  (Engineering, Architecture, Rails, Security) and document type.
+- ***Cross-Cutting Topics***: Documents grouped by topic (Testing,
+  Security, API Design, Performance, etc.) across capabilities.
+
+Each capability handbook also includes a ***Capability Map*** section
+listing all documents within that capability.
+
+# Current Focus
+
+The current priorities are:
+
+- Establish the governance framework.
+- Build the foundational engineering capabilities.
+- Develop Rails Engineering as the reference capability.
+- Develop AI Engineering practices.
+- Create reusable templates and tooling.
+
+Progress is tracked in:
+
+[Roadmap](./ROADMAP/)
+
+# Long-term Goals
+
+The Engineering Knowledge Framework aims to become:
+
+- A reusable framework for engineering organizations.
+- A reference implementation for engineering knowledge management.
+- A foundation for AI-assisted engineering.
+- A community-driven collection of engineering best practices.
+- An open ecosystem for continuously evolving engineering knowledge.
+
+The framework is intended to be adopted, extended and improved by the
+engineering community.
+
+# Contributing
+
+Contributions are welcome.
+
+Before contributing:
+
+1. Read the governance documents.
+2. Understand the document taxonomy.
+3. Follow the Style Guide.
+4. Improve existing knowledge before creating new documents.
+5. Keep documentation timeless, modular and well connected.
+
+See:
+
+[Contributing](./CONTRIBUTING/)
+
+for the complete contribution workflow.
+
+# License
+
+This repository is open source.
+
+Unless otherwise specified, contributions are licensed under the
+repository's license.
+
+# Related Documents
+
+- [CLAUDE.md](./CLAUDE.md)
+- [Strategy](./STRATEGY/)
+- [Roadmap](./ROADMAP/)
+- [Document Types](./DOCUMENT_TYPES/)
+- [Style Guide](./STYLE_GUIDE/)
+- [Contributing](./CONTRIBUTING/)
+- [Glossary](./glossary/README/)

@@ -25,13 +25,13 @@ ENTRY_PATTERN = re.compile(r'\*\*\s+([A-Za-z][A-Za-z\s\-]+?)\n\n((?:(?!\*\*|\n\*
 
 
 def collect_glossary_files():
-    """Collect all glossary README.org files."""
+    """Collect all glossary README.md files."""
     glossary_files = []
     for root, dirs, files in os.walk(GLOSSARY_DIR):
         if '.git' in root.split(os.sep):
             continue
         for f in files:
-            if f.endswith('.org'):
+            if f.endswith('.md'):
                 glossary_files.append(Path(root) / f)
     return glossary_files
 
@@ -95,7 +95,7 @@ def validate_glossaries():
         rel_path = filepath.relative_to(REPO_ROOT)
 
         # Skip root glossary README (it is an index, not a term glossary)
-        if str(rel_path) == 'glossary/README.org':
+        if str(rel_path) == 'glossary/README.md':
             continue
 
         entries = parse_glossary_entries(filepath)

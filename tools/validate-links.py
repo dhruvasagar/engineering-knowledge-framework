@@ -2,7 +2,7 @@
 """
 Link Validator — Verify all [[file:...][...]] cross-references resolve.
 
-Scans all .org files in the repository and checks that every
+Scans all .md files in the repository and checks that every
 [[file:...][...]] link points to an existing file relative to the
 repository root or the document's location.
 
@@ -20,19 +20,19 @@ REPO_ROOT = Path(__file__).resolve().parent.parent
 LINK_PATTERN = re.compile(r'\[\[file:([^\]]+)\]\[([^\]]*)\]\]')
 IGNORE_PATTERNS = [
     re.compile(r'^https?://'),
-    re.compile(r'^\.\./README\.org$'),  # Cross-repo links
+    re.compile(r'^\.\./README\.md$'),  # Cross-repo links
 ]
 
 
 def collect_org_files():
-    """Collect all .org files in the repository."""
+    """Collect all .md files in the repository."""
     org_files = []
     for root, dirs, files in os.walk(REPO_ROOT):
         # Skip .git directory
         if '.git' in root.split(os.sep):
             continue
         for f in files:
-            if f.endswith('.org'):
+            if f.endswith('.md'):
                 org_files.append(Path(root) / f)
     return org_files
 
@@ -99,7 +99,7 @@ def main():
     print(f"   Scanning {REPO_ROOT}...\n")
 
     org_files = collect_org_files()
-    print(f"   Found {len(org_files)} .org files")
+    print(f"   Found {len(org_files)} .md files")
 
     errors, link_count = validate_links(org_files)
     print(f"   Checked {link_count} cross-references\n")

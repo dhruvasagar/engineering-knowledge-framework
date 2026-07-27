@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 """
-Style Validator — Check documents against STYLE_GUIDE.org rules.
+Style Validator — Check documents against STYLE_GUIDE.md rules.
 
 Validates:
 - All required metadata headers present (#+TITLE, #+AUTHOR, #+DATE, #+DESCRIPTION)
 - No skipped heading levels
 - No * used as bullet markers (should be -)
-- File naming conventions (.org extension, lowercase-with-dashes)
+- File naming conventions (.md extension, lowercase-with-dashes)
 
 Usage:
     python3 tools/validate-style.py
@@ -26,13 +26,13 @@ BULLET_PATTERN = re.compile(r'^\s*\*\s+[A-Za-z]')
 
 
 def collect_org_files():
-    """Collect all .org files excluding .git."""
+    """Collect all .md files excluding .git."""
     org_files = []
     for root, dirs, files in os.walk(REPO_ROOT):
         if '.git' in root.split(os.sep):
             continue
         for f in files:
-            if f.endswith('.org'):
+            if f.endswith('.md'):
                 org_files.append(Path(root) / f)
     return org_files
 
@@ -106,7 +106,7 @@ def validate_bullets(filepath):
 def validate_filename(filepath):
     """Check file naming conventions."""
     rel_path = filepath.relative_to(REPO_ROOT)
-    name = filepath.stem  # Without .org
+    name = filepath.stem  # Without .md
     errors = []
 
     # Skip files with README or index in name (conventional)

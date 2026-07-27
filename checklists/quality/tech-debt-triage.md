@@ -1,0 +1,85 @@
++++
+title = "Technical Debt Triage Checklist"
+description = "Classification and prioritisation of technical debt"
++++
+
+
+# Purpose
+
+Quickly classify and prioritise technical debt items for remediation
+planning. Use this checklist when triaging newly discovered debt or
+reviewing existing debt inventories.
+
+# Identification
+
+- [ ] Debt item has a clear description and location.
+- [ ] The impact on development velocity is understood.
+- [ ] The risk of defects or incidents is assessed.
+- [ ] The affected components or modules are identified.
+- [ ] Related debt items are grouped.
+
+# Classification
+
+## Type
+
+- [ ] ***Strategic***: Intentional shortcut, documented rationale.
+- [ ] ***Accidental***: Unintended quality degradation, no rationale.
+- [ ] ***Prudent***: Known, tracked and has a remediation plan.
+- [ ] ***Reckless***: Unknown, untracked, no remediation plan.
+
+## Category
+
+- [ ] Code quality (complexity, duplication, style violations).
+- [ ] Test coverage (missing tests, flaky tests, slow tests).
+- [ ] Architecture (coupling, missing abstractions, layering violations).
+- [ ] Infrastructure (manual processes, missing automation).
+- [ ] Documentation (missing or outdated docs).
+- [ ] Security (known vulnerabilities, missing security controls).
+
+# Prioritisation
+
+## Impact Assessment (1-5)
+
+- [ ] Development velocity impact: [1-5]
+- [ ] Defect or incident risk: [1-5]
+- [ ] Team productivity impact: [1-5]
+- [ ] User-facing impact: [1-5]
+
+## Effort Estimate
+
+- [ ] Remediation effort (story points or ideal hours):
+- [ ] Dependencies on other work:
+- [ ] Risk of remediation (could fixing this break something?):
+
+## Priority
+
+| Score | Priority | Action |
+| --- | --- | --- |
++-------+----------+-----------------------------------------+
+| 15-20 | Critical | Remediate immediately. |
+| --- | --- | --- |
+| 10-14 | High | Schedule within next sprint. |
+| 5-9 | Medium | Schedule within next quarter. |
+| 1-4 | Low | Track and reassess periodically. |
+
+# Remediation Planning
+
+- [ ] Root cause identified (for accidental debt).
+- [ ] Remediation approach defined (refactor, rewrite, retire).
+- [ ] Breaking changes identified and migration planned.
+- [ ] Tests written to prevent regression.
+- [ ] Team notified and rationale communicated.
+
+# Tracking
+
+- [ ] Debt item recorded in the issue tracker.
+- [ ] Priority label applied.
+- [ ] Owner assigned.
+- [ ] Target date set.
+- [ ] Linked to related ADRs or documents.
+
+# Related Documents
+
+- [Technical Debt Management](../../guides/quality/technical-debt-management/)
+- [Tech Debt Assessment Checklist](../../checklists/tech-debt-assessment/)
+- [Technical Debt Remediation Playbook](../../playbooks/quality/tech-debt-remediation/)

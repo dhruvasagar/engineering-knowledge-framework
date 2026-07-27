@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """
-One-time Org to Markdown Converter — Converts all .org files to .md in-place.
+One-time Org to Markdown Converter — Converts all .md files to .md in-place.
 
-- Converts [[file:path.org][desc]] → [desc](path.md) for inter-file links
+- Converts [[file:path.md][desc]] → [desc](path.md) for inter-file links
 - Converts all org markup to markdown
-- Removes .org files after successful conversion
+- Removes .md files after successful conversion
 
 Usage:
     python3 tools/org-to-md.py
@@ -33,7 +33,7 @@ ORG_META = re.compile(r'^#\+[A-Z_]+:.*\n?', re.MULTILINE)
 ORG_STARTUP = re.compile(r'^#\+STARTUP:.*\n?', re.MULTILINE)
 
 SKIP_DIRS = {'.git', 'site', 'tools', 'assets', '__pycache__'}
-BACKUP_DIR = REPO_ROOT / '.org-backup'
+BACKUP_DIR = REPO_ROOT / '.md-backup'
 
 
 def convert_inline(text):
@@ -46,14 +46,18 @@ def convert_inline(text):
 
 
 def convert_links(content):
-    """Convert [[file:path.org][desc]] → [desc](path.md)."""
+    """Convert [[file:path.md][desc]] → [desc](path.md)."""
     def replace(m):
         target = m.group(1)
-        desc = m.group(2) or target
+        try:
+            desc = m.group(2)
+        except IndexError:
+            desc = None
+        if desc is None:
+            desc = target
         desc = convert_inline(desc)
-        # Strip .org extension → .md
-        if target.endswith('.org'):
-            # Strip .org extension → directory path for Zola
+        # Strip .md extension → directory path for Zola
+        if target.endswith('.md'):
             target = target[:-4] + '/'
         elif target.endswith('/'):
             pass  # Already a directory path
@@ -64,15 +68,14 @@ def convert_links(content):
     def save(m):
         idx = len(placeholders)
         key = f'⛓{idx}⛓'
-        placeholders[key] = m.group(0)
+        placeholders[key] = (m.group(0), m.re)  # Store match + pattern
         return key
 
     content = LINK_ORG.sub(save, content)
     content = LINK_ORG_SIMPLE.sub(save, content)
     content = convert_inline(content)
-    for key, org_link in placeholders.items():
-        md_link = LINK_ORG.sub(replace, org_link)
-        md_link = LINK_ORG_SIMPLE.sub(replace, md_link)
+    for key, (org_link, pattern) in placeholders.items():
+        md_link = pattern.sub(replace, org_link)
         content = content.replace(key, md_link)
     return content
 
@@ -149,7 +152,7 @@ def convert_code_blocks(content):
 
 
 def convert_org_file(filepath):
-    """Convert a single .org file to .md content."""
+    """Convert a single .md file to .md content."""
     content = filepath.read_text(encoding='utf-8')
 
     # Extract title/description
@@ -193,7 +196,7 @@ def backup_org(filepath):
 
 
 def convert_repo():
-    """Convert all .org files in the repository to .md in-place."""
+    """Convert all .md files in the repository to .md in-place."""
     converted = 0
     errors = 0
     backups = 0
@@ -204,7 +207,7 @@ def convert_repo():
             continue
 
         for f in sorted(files):
-            if not f.endswith('.org'):
+            if not f.endswith('.md'):
                 continue
 
             src = Path(root) / f
@@ -221,7 +224,7 @@ def convert_repo():
                 md_content = convert_org_file(src)
                 md_path = src.with_suffix('.md')
                 md_path.write_text(md_content, encoding='utf-8')
-                src.unlink()  # Remove .org file
+                src.unlink()  # Remove .md file
                 converted += 1
                 print(f"  ✓ {src.relative_to(REPO_ROOT)} → {md_path.name}")
             except Exception as e:
@@ -232,7 +235,7 @@ def convert_repo():
 
 
 def main():
-    print("🔄 Converting all .org files to .md in-place...\n")
+    print("🔄 Converting all .md files to .md in-place...\n")
     print(f"   Backup directory: {BACKUP_DIR}\n")
 
     converted, errors, backups = convert_repo()
@@ -243,8 +246,8 @@ def main():
         print(f"   Errors: {errors}")
     if BACKUP_DIR.exists():
         print(f"   Backup: {BACKUP_DIR} (delete after verifying)")
-    print("\n✅ Done! .org files replaced with .md. Backups saved to .org-backup/")
-    print("   Run: rm -rf .org-backup  (after verifying everything works)")
+    print("\n✅ Done! .md files replaced with .md. Backups saved to .md-backup/")
+    print("   Run: rm -rf .md-backup  (after verifying everything works)")
 
 
 if __name__ == '__main__':
