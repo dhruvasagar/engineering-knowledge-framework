@@ -1,0 +1,26 @@
+#+TITLE: Engineering Quality Templates
+#+AUTHOR: Engineering
+#+DATE: 2026-07-27
+#+DESCRIPTION: Reusable templates for engineering quality activities
+#+STARTUP: overview indent
+
+* Purpose
+
+This directory contains reusable templates for quality-related
+engineering activities. These templates standardise quality reporting,
+technical debt tracking and quality metrics dashboards.
+
+* Templates
+
+| Template                                               | Description                                   |
++--------------------------------------------------------+-----------------------------------------------+
+| [[file:./quality-report.org][Quality Report Template]]      | Standard format for quality review reports.   |
+| [[file:./tech-debt-register.org][Technical Debt Register]]     | Track and monitor technical debt items.       |
+| [[file:./quality-dashboard.org][Quality Metrics Dashboard]]   | Template for tracking quality metrics.        |
+
+* Related Documents
+
+- [[file:../../handbooks/quality/README.org][Engineering Quality Handbook]]
+- [[file:../../guides/quality/quality-metrics.org][Quality Metrics]]
+- [[file:../../playbooks/quality/quality-review.org][Quality Review Playbook]]
+- [[file:../../references/quality/README.org][Quality References]]

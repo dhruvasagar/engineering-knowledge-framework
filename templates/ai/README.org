@@ -1,0 +1,33 @@
+#+TITLE: AI Engineering Templates
+#+AUTHOR: Engineering
+#+DATE: 2026-07-27
+#+DESCRIPTION: Reusable templates for AI-assisted engineering workflows
+#+STARTUP: overview indent
+
+* Purpose
+
+This directory contains reusable templates for AI engineering activities.
+These templates standardise context engineering, prompt design and AI
+review processes.
+
+* Templates
+
+| Template                                               | Description                                   |
++--------------------------------------------------------+-----------------------------------------------+
+| [[file:./context-pack.org][Context Pack Template]]           | Structure for assembling AI context packs.    |
+| [[file:./prompt-template.org][Prompt Template]]                | Standard prompt structure for engineering AI. |
+| [[file:./ai-review-response.org][AI Review Response Template]]    | Format for documenting AI review findings.    |
+
+* Usage
+
+Each template should be copied and customised for the specific task.
+Refer to the [[file:../../guides/ai/context-engineering.org][Context Engineering guide]] and [[file:../../guides/ai/prompt-engineering.org][Prompt Engineering guide]] for
+detailed guidance.
+
+* Related Documents
+
+- [[file:../../handbooks/ai/README.org][AI Engineering Handbook]]
+- [[file:../../guides/ai/context-engineering.org][Context Engineering]]
+- [[file:../../guides/ai/prompt-engineering.org][Prompt Engineering]]
+- [[file:../../checklists/ai-usage.org][AI Usage Checklist]]
+- [[file:../../references/ai/README.org][AI References]]

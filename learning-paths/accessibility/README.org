@@ -1,0 +1,145 @@
+#+TITLE: Accessibility Learning Paths
+#+AUTHOR: Engineering
+#+DATE: 2026-07-27
+#+DESCRIPTION: Progressive learning paths for accessibility engineering
+#+STARTUP: overview indent
+
+* Purpose
+
+These learning paths provide a structured progression for developing
+accessibility engineering skills.
+
+* Beginner Path
+
+For engineers new to accessibility.
+
+** Topics
+
+1. **Accessibility Fundamentals**
+   - What is digital accessibility?
+   - Who benefits from accessible software?
+   - The business case for accessibility.
+   - Overview of WCAG principles (POUR).
+   - Read: [[file:../../handbooks/accessibility/README.org][Accessibility Engineering Handbook]].
+
+2. **Semantic HTML**
+   - Why semantic HTML matters for accessibility.
+   - Common HTML elements and their accessible uses.
+   - Heading hierarchy and document structure.
+   - Read: [[file:../../guides/accessibility/semantic-html.org][Semantic HTML]].
+
+3. **Keyboard Accessibility**
+   - Why keyboard accessibility matters.
+   - Standard keyboard interactions.
+   - Focus management basics.
+   - Read: [[file:../../guides/accessibility/keyboard-accessibility.org][Keyboard Accessibility]].
+
+4. **Colour and Contrast**
+   - Understanding contrast ratios.
+   - Meeting WCAG contrast requirements.
+   - Colour blindness considerations.
+   - Read: [[file:../../guides/accessibility/colour-and-contrast.org][Colour and Contrast]].
+
+5. **Accessible Forms**
+   - Labelling inputs correctly.
+   - Error handling for accessibility.
+   - Accessible form structure.
+   - Read: [[file:../../guides/accessibility/accessible-forms.org][Accessible Forms]].
+
+** Suggested Projects
+
+- Add alt text to images in an existing project.
+- Run an automated accessibility scan and fix all issues.
+- Implement keyboard navigation for a custom component.
+
+** Assessment
+
+- Can you explain the four WCAG principles (POUR)?
+- Can you audit a simple page for basic accessibility issues?
+
+* Intermediate Path
+
+For engineers who understand the basics and want to go deeper.
+
+** Topics
+
+1. **ARIA**
+   - When to use ARIA (and when not to).
+   - Common ARIA patterns (tabs, dialogs, alerts).
+   - ARIA states and properties.
+   - Read: [[file:../../guides/accessibility/aria-patterns.org][ARIA Patterns]].
+
+2. **Screen Reader Testing**
+   - Testing with VoiceOver and NVDA.
+   - Navigating by headings, landmarks and links.
+   - Testing dynamic content.
+   - Read: [[file:../../guides/accessibility/screen-reader-testing.org][Screen Reader Testing]].
+
+3. **Accessibility Review**
+   - Conducting accessibility audits.
+   - Severity classification.
+   - Writing accessibility findings.
+   - Read: [[file:../../playbooks/accessibility-review/README.org][Accessibility Review Playbook]].
+
+4. **WCAG Deep Dive**
+   - Understanding WCAG success criteria.
+   - Level A vs AA vs AAA.
+   - Common failure patterns.
+   - Read: [[file:../../checklists/accessibility/wcag-audit.org][WCAG Audit Checklist]].
+
+** Suggested Projects
+
+- Conduct a full accessibility audit of a small project.
+- Implement a custom accessible widget (dialog, tabs, carousel).
+- Write an accessibility report for a component.
+
+** Assessment
+
+- Can you use a screen reader to test a page?
+- Can you identify and fix common ARIA mistakes?
+
+* Advanced Path
+
+For engineers who want to lead accessibility engineering.
+
+** Topics
+
+1. **Accessibility in CI/CD**
+   - Automating accessibility checks.
+   - Quality gates for accessibility.
+   - Accessibility regression prevention.
+
+2. **Advanced Patterns**
+   - Accessible data tables.
+   - Drag-and-drop accessibility.
+   - Single-page app routing and focus management.
+   - Internationalisation and accessibility.
+
+3. **Organisational Accessibility**
+   - Building an accessibility practice.
+   - Training and mentoring.
+   - Accessibility in procurement.
+   - Legal and regulatory landscape.
+
+4. **Emerging Technologies**
+   - Accessibility in mobile apps.
+   - Accessibility in design systems.
+   - AI and accessibility.
+   - Future WCAG developments.
+
+** Suggested Projects
+
+- Set up CI accessibility checks for a project.
+- Create an accessibility component library.
+- Lead an accessibility training session.
+
+** Assessment
+
+- Can you set up a complete accessibility testing pipeline?
+- Can you guide a team in building an accessibility practice?
+
+* Related Documents
+
+- [[file:../../handbooks/accessibility/README.org][Accessibility Engineering Handbook]]
+- [[file:../../references/accessibility/README.org][Accessibility References]]
+- [[file:../../glossary/accessibility/README.org][Accessibility Glossary]]

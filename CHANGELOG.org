@@ -208,3 +208,76 @@
   substantial delivery.
 - Updated Near-term Priorities with completed items marked [x] and new items
   for Accessibility, learning path exercises, AI agentic workflows and tooling.
+
+** Roadmap Phases 6-9 Expanded
+
+- Phase 6 (Framework Tooling): Added Status, detailed deliverables across
+  three sub-phases (validation, generators, knowledge graph), development
+  approach and lessons learned.
+- Phase 7 (Platform): Added Status, deliverables for static site, knowledge
+  graph UI, AI integration and platform features, with development approach.
+- Phase 8 (Community): Added Status, deliverables for onboarding, review,
+  and engagement, with development approach.
+- Phase 9 (Open Standard): Added Status, deliverables for specification,
+  ecosystem and governance, with long-term development approach.
+
+* 0.5.0 (2026-07-27)
+
+** Phase 3 Gaps Filled
+
+*** Security Engineering — Templates Added
+
+- Added =templates/security/README.org=: Security templates index.
+- Added =templates/security/threat-model.org=: Structured threat model template using STRIDE.
+- Added =templates/security/security-review-report.org=: Findings report template.
+
+*** AI Engineering — Playbooks, Templates, AI Workflows Added
+
+- Added =playbooks/ai/README.org=: AI engineering playbooks index.
+- Added =playbooks/ai/ai-assisted-code-review.org=: AI-assisted code review workflow.
+- Added =playbooks/ai/ai-assisted-architecture-review.org=: AI-assisted architecture review workflow.
+- Added =playbooks/ai/ai-pair-programming.org=: AI pair programming workflow.
+- Added =templates/ai/README.org=: AI templates index.
+- Added =templates/ai/context-pack.org=: Context pack template.
+- Added =templates/ai/prompt-template.org=: Standard prompt structure template.
+- Added =templates/ai/ai-review-response.org=: AI review findings template.
+- Added =prompts/ai-ai-workflows.org=: AI workflows for AI engineering.
+
+*** Engineering Quality — Playbooks, Checklists, Templates, AI Workflows Added
+
+- Added =playbooks/quality/README.org=: Quality playbooks index.
+- Added =playbooks/quality/quality-review.org=: Quality review process playbook.
+- Added =playbooks/quality/tech-debt-remediation.org=: Technical debt remediation playbook.
+- Added =playbooks/quality/release-quality-gate.org=: Release quality gate playbook.
+- Added =checklists/quality/README.org=: Quality checklists index.
+- Added =checklists/quality/quality-gate.org=: Quality gate checklist.
+- Added =checklists/quality/release-readiness.org=: Release readiness checklist.
+- Added =checklists/quality/tech-debt-triage.org=: Tech debt triage checklist.
+- Added =templates/quality/README.org=: Quality templates index.
+- Added =templates/quality/quality-report.org=: Quality report template.
+- Added =templates/quality/tech-debt-register.org=: Tech debt register template.
+- Added =templates/quality/quality-dashboard.org=: Quality dashboard template.
+- Added =prompts/quality-ai-workflows.org=: AI workflows for quality engineering.
+
+*** Accessibility Engineering — Complete Capability Added
+
+- Added =handbooks/accessibility/README.org=: Accessibility Engineering Handbook.
+- Added =glossary/accessibility/README.org=: Accessibility terminology glossary.
+- Added =guides/accessibility/README.org=: Accessibility guides index.
+- Added =guides/accessibility/semantic-html.org=: Semantic HTML guide.
+- Added =guides/accessibility/keyboard-accessibility.org=: Keyboard accessibility guide.
+- Added =guides/accessibility/accessible-forms.org=: Accessible forms guide.
+- Added =guides/accessibility/aria-patterns.org=: ARIA patterns guide.
+- Added =guides/accessibility/colour-and-contrast.org=: Colour and contrast guide.
+- Added =guides/accessibility/screen-reader-testing.org=: Screen reader testing guide.
+- Added =playbooks/accessibility-review/README.org=: Accessibility review playbook.
+- Added =checklists/accessibility/README.org=: Accessibility checklists index.
+- Added =checklists/accessibility/wcag-audit.org=: WCAG audit checklist.
+- Added =checklists/accessibility/pr-review.org=: PR accessibility checklist.
+- Added =checklists/accessibility/design-review.org=: Design review checklist.
+- Added =templates/accessibility/README.org=: Accessibility templates index.
+- Added =templates/accessibility/accessibility-report.org=: Audit report template.
+- Added =templates/accessibility/accessibility-statement.org=: Accessibility statement template.
+- Added =learning-paths/accessibility/README.org=: Three-tier learning path.
+- Added =references/accessibility/README.org=: Quick-reference material.
+- Added =prompts/accessibility-ai-workflows.org=: AI workflows for accessibility.

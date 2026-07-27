@@ -1,0 +1,26 @@
+#+TITLE: Engineering Quality Checklists
+#+AUTHOR: Engineering
+#+DATE: 2026-07-27
+#+DESCRIPTION: Verification checklists for engineering quality activities
+#+STARTUP: overview indent
+
+* Purpose
+
+This directory contains checklists for quality-related engineering
+activities. These checklists verify that quality standards are met
+at key points in the development lifecycle.
+
+* Checklists
+
+| Checklist                                              | Description                                    |
++--------------------------------------------------------+------------------------------------------------+
+| [[file:./quality-gate.org][Quality Gate Checklist]]      | Verification before accepting changes.         |
+| [[file:./release-readiness.org][Release Readiness Checklist]] | Verification before production release.        |
+| [[file:./tech-debt-triage.org][Technical Debt Triage]]      | Classification and prioritisation of debt.     |
+
+* Related Documents
+
+- [[file:../../handbooks/quality/README.org][Engineering Quality Handbook]]
+- [[file:../../guides/quality/quality-metrics.org][Quality Metrics]]
+- [[file:../../guides/quality/code-review-standards.org][Code Review Standards]]
+- [[file:../../playbooks/quality/quality-review.org][Quality Review Playbook]]

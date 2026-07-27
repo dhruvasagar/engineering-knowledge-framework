@@ -44,10 +44,17 @@ A phase is considered complete when:
 
 ** Current Phase
 
-The project has completed **Phase 1** (Foundation), **Phase 2** (Foundation
-Capabilities), and substantially delivered **Phase 3** (Engineering
-Capabilities). The Rails, Security, AI Engineering, and Engineering
-Quality capabilities are built out with most document types covered.
+The project has completed **Phase 1** (Foundation) and **Phase 2**
+(Foundation Capabilities). **Phase 3** (Engineering Capabilities) is in
+progress:
+
+- Rails Engineering: **Complete** (all 9 document types).
+- Security Engineering: **Nearly complete** (missing templates).
+- AI Engineering: **Partially complete** (missing playbooks, templates,
+  AI workflows).
+- Engineering Quality: **Partially complete** (missing playbooks,
+  checklists, templates, AI workflows).
+- Accessibility: **Not started** (all 9 document types to build).
 
 Cross-cutting work continues in AI integration (Phase 4) and the
 Learning Framework (Phase 5). Initial tooling work (Phase 6) is the
@@ -195,10 +202,11 @@ Engineering Fundamentals and Architecture capabilities as templates.
 
 ** Status
 
-[x] **Substantially Complete** — Four engineering capabilities (Rails,
-    Security, AI Engineering, Engineering Quality) have been built out
-    with most document types covered. The Accessibility capability stub
-    remains to be developed.
+[ ] **In Progress** — Rails Engineering is complete across all 9
+    document types. Security, AI Engineering, and Engineering Quality
+    have substantial content but are missing several document types.
+    Accessibility has not been started. See the capability breakdown
+    below for specific gaps.
 
 ** Objectives
 
@@ -207,85 +215,115 @@ Engineering Fundamentals and Architecture capabilities as templates.
 - Establish cross-referencing patterns between capabilities.
 - Grow the repository's knowledge graph.
 
-** Completed
+** Capability Breakdown
 
-*** [x] Rails Engineering
+*** [x] Rails Engineering — Complete (all 9 document types)
 
-A complete Rails Engineering capability covering all nine document
-types:
-
-- [x] =handbooks/rails/README.org=: Rails Engineering Handbook covering philosophy, MVC principles, code organization, testing strategy, patterns and anti-patterns.
-- [x] =glossary/rails/README.org=: Rails-specific terminology (ActiveRecord, concern, controller, form object, migration, model, presenter, query object, service object, view).
-- [x] =guides/rails/service-objects.org=: When and how to use service objects.
-- [x] =guides/rails/testing.org=: Rails-specific testing strategy.
-- [x] =guides/rails/audit-guide.org=: Systematic code quality, performance and security auditing.
-- [x] =guides/rails/project-standards.org=: Mandatory tooling and CI/CD baseline.
-- [x] =guides/rails/active-record.org=: ActiveRecord patterns and query optimization.
-- [x] =guides/rails/api-development.org=: API development with Rails.
-- [x] =guides/rails/background-jobs.org=: Background job patterns and framework selection.
-- [x] =guides/rails/authentication-authorization.org=: Authentication and authorization patterns.
-- [x] =playbooks/rails/upgrade.org=: Rails version upgrade workflow.
-- [x] =playbooks/rails/deployment.org=: Safe deployment with zero-downtime patterns.
-- [x] =checklists/rails/pull-request.org=: PR checklist for authors and reviewers.
-- [x] =checklists/rails/security-review.org=: Rails-specific security verification.
-- [x] =checklists/rails/deployment.org=: Pre/post-deployment verification.
-- [x] =templates/rails/service-object.org=: Reusable service object template.
-- [x] =templates/rails/form-object.org=: Reusable form object template.
-- [x] =templates/rails/query-object.org=: Reusable query object template.
-- [x] =templates/rails/policy-object.org=: Reusable authorization policy template.
+- [x] =handbooks/rails/README.org=: Rails Engineering Handbook.
+- [x] =glossary/rails/README.org=: Rails-specific terminology.
+- [x] =guides/rails/service-objects.org=, =testing.org=, =audit-guide.org=, =project-standards.org=, =active-record.org=, =api-development.org=, =background-jobs.org=, =authentication-authorization.org= (8 guides).
+- [x] =playbooks/rails/upgrade.org=, =deployment.org=, =README.org= (3 playbooks).
+- [x] =checklists/rails/pull-request.org=, =security-review.org=, =deployment.org=, =README.org= (4 checklists).
+- [x] =templates/rails/service-object.org=, =form-object.org=, =query-object.org=, =policy-object.org=, =README.org= (5 templates).
 - [x] =learning-paths/rails/README.org=: Three-tier learning path.
 - [x] =references/rails/README.org=: Quick-reference material.
 - [x] =prompts/rails-ai-workflows.org=: AI workflows for Rails development.
 
-*** [x] Security Engineering
+*** [~] Security Engineering — 1 gap: templates
 
-A comprehensive Security Engineering capability:
+Present:
 
-- [x] =handbooks/security/README.org=: Security Engineering Handbook covering principles, threat modeling (STRIDE), SDLC and standards.
-- [x] =glossary/security/README.org=: Security terminology (CSRF, defense in depth, IDOR, least privilege, SAST, SQL injection, threat modeling, XSS).
-- [x] =guides/security/secure-coding.org=: Secure coding practices.
-- [x] =guides/security/web-vulnerabilities.org=: OWASP Top 10 with mitigations.
-- [x] =guides/security/dependency-security.org=: Dependency security management.
-- [x] =playbooks/security-review/README.org=: Security review workflow with STRIDE.
+- [x] =handbooks/security/README.org=: Security Engineering Handbook.
+- [x] =glossary/security/README.org=: Security terminology.
+- [x] =guides/security/secure-coding.org=, =web-vulnerabilities.org=, =dependency-security.org= (3 guides + README).
+- [x] =playbooks/security-review/README.org=: Security review workflow.
 - [x] =checklists/security-review.org=: General security review checklist.
 - [x] =learning-paths/security/README.org=: Three-tier learning path.
 - [x] =references/security/README.org=: Quick-reference material.
-- [x] =prompts/security-ai-workflows.org=: AI workflows for security analysis.
+- [x] =prompts/security-ai-workflows.org=: AI workflows for security.
 
-*** [x] AI Engineering
+Missing:
 
-A complete AI Engineering capability covering AI-assisted engineering
-practices:
+- [ ] **Templates**: Security-specific templates (e.g., threat model template,
+  security review report, security test plan). See the Rails templates
+  (=templates/rails/=) for a reference pattern.
 
-- [x] =handbooks/ai/README.org=: AI Engineering Handbook covering principles, context engineering, workflow patterns and verification.
-- [x] =glossary/ai/README.org=: AI terminology (context engineering, hallucination, prompt engineering, verification).
-- [x] =guides/ai/prompt-engineering.org=: Prompt engineering principles, patterns and anti-patterns.
-- [x] =guides/ai/context-engineering.org=: Context engineering categories and templates.
-- [x] =guides/ai/ai-safety.org=: AI safety practices and human oversight.
-- [x] =checklists/ai-usage.org=: Verification checklist for AI-generated output.
+*** [~] AI Engineering — 3 gaps: playbooks, templates, AI workflows
+
+Present:
+
+- [x] =handbooks/ai/README.org=: AI Engineering Handbook.
+- [x] =glossary/ai/README.org=: AI terminology.
+- [x] =guides/ai/prompt-engineering.org=, =context-engineering.org=, =ai-safety.org= (3 guides).
+- [x] =checklists/ai-usage.org=: AI usage verification checklist.
 - [x] =learning-paths/ai/README.org=: Three-tier learning path.
 - [x] =references/ai/README.org=: Quick-reference material.
 
-*** [x] Engineering Quality
+Missing:
 
-A focused Engineering Quality capability:
+- [ ] **Playbooks**: AI-assisted workflow playbooks (e.g., AI-assisted code
+  review process, AI-assisted architecture review, AI pair programming
+  workflow) at =playbooks/ai/=.
+- [ ] **Templates**: AI-specific templates (e.g., context engineering template,
+  prompt template, AI review response template) at =templates/ai/=.
+- [ ] **AI Workflows**: Meta-AI workflows for the AI Engineering capability
+  itself (how AI can assist with AI engineering tasks) at
+  =prompts/ai-ai-workflows.org=.
 
-- [x] =handbooks/quality/README.org=: Engineering Quality Handbook covering quality gates, metrics and culture.
-- [x] =glossary/quality/README.org=: Quality terminology (change failure rate, MTTR, technical debt).
-- [x] =guides/quality/code-review-standards.org=: Code review velocity and quality standards.
-- [x] =guides/quality/quality-metrics.org=: Code quality and process metrics.
-- [x] =guides/quality/technical-debt-management.org=: Technical debt classification and management.
+*** [~] Engineering Quality — 4 gaps: playbooks, checklists, templates, AI workflows
+
+Present:
+
+- [x] =handbooks/quality/README.org=: Engineering Quality Handbook.
+- [x] =glossary/quality/README.org=: Quality terminology.
+- [x] =guides/quality/code-review-standards.org=, =quality-metrics.org=, =technical-debt-management.org= (3 guides).
 - [x] =learning-paths/quality/README.org=: Three-tier learning path.
 - [x] =references/quality/README.org=: Quick-reference material.
 
-** Ready for Development
+Missing:
 
-Capability stubs exist for these capabilities:
+- [ ] **Playbooks**: Quality workflow playbooks (e.g., quality review process,
+  technical debt remediation workflow, release quality gate) at
+  =playbooks/quality/=.
+- [ ] **Checklists**: Quality-specific checklists (e.g., quality gate checklist,
+  release readiness checklist, technical debt triage checklist) at
+  =checklists/quality/=.
+- [ ] **Templates**: Quality-specific templates (e.g., quality report template,
+  technical debt register, quality metrics dashboard) at =templates/quality/=.
+- [ ] **AI Workflows**: AI workflows for quality (e.g., quality review with AI,
+  technical debt analysis with AI, test coverage assessment) at
+  =prompts/quality-ai-workflows.org=.
 
-- Accessibility: Empty stub directory at =handbooks/accessibility/=. Handbook,
-  glossary, guide, playbook, checklist and other document types all need
-  to be developed. See the Engineering Fundamentals capability as a
-  template.
+*** [ ] Accessibility — not started (all 9 document types missing)
+
+Empty stub directories exist at =handbooks/accessibility/= and
+=glossary/accessibility/=. The entire capability needs to be built:
+
+- [ ] **Handbook** (=handbooks/accessibility/README.org=): Accessibility Engineering
+  Handbook covering principles (WCAG, inclusive design, assistive
+  technology), standards, testing methodology and AI integration.
+- [ ] **Glossary** (=glossary/accessibility/README.org=): Accessibility terminology
+  (WCAG, ARIA, screen reader, keyboard navigation, colour contrast, etc.).
+- [ ] **Guides** (=guides/accessibility/=): Multiple guides covering accessibility
+  testing, semantic HTML, ARIA patterns, inclusive design, accessibility
+  in CI/CD.
+- [ ] **Playbooks** (=playbooks/accessibility-review/README.org=): Accessibility
+  review workflow with evaluation criteria, tools and reporting.
+- [ ] **Checklists** (=checklists/accessibility/=): Accessibility audit checklist,
+  PR accessibility checklist, WCAG compliance checklist.
+- [ ] **Templates** (=templates/accessibility/=): Accessibility report template,
+  VPAT template, accessibility statement template.
+- [ ] **Learning Paths** (=learning-paths/accessibility/README.org=): Three-tier
+  learning path (beginner, intermediate, advanced).
+- [ ] **References** (=references/accessibility/README.org=): Quick-reference
+  material — WCAG levels, ARIA roles, testing tools, keyboard shortcuts.
+- [ ] **AI Workflows** (=prompts/accessibility-ai-workflows.org=): AI workflows for
+  accessibility auditing, remediation and testing.
+
+See the Engineering Fundamentals capability as a template for structure
+and conventions.
+
+
 
 ** Future Capabilities
 
@@ -428,67 +466,179 @@ training.
 
 Develop tooling that improves authoring, validation and discovery.
 
+** Status
+
+[ ] **Not Started** — No tooling has been built yet. This is the next
+    major undertaking after current documentation work stabilises.
+    The prompts directory ([[file:./prompts/README.org][index]]) and glossary/README provide
+    initial structure for understanding validation requirements.
+
 ** Objectives
 
 - Automate repetitive documentation tasks.
 - Enforce style and structural consistency.
 - Improve knowledge discovery and navigation.
-- Support AI context packaging.
+- Support AI context packaging for coding agents.
+- Provide quality gates for contributions.
 
-** Potential Tooling
+** Deliverables
 
-- Repository generators
-- Capability generators
-- Handbook generators
-- Playbook generators
-- Link validation
-- Style validation
-- Glossary validation
-- Knowledge linting
-- Cross-reference validation
-- Metadata validation
-- Search indexing
-- Knowledge graph generation
-- AI context packaging
+*** Phase 6a — Validation Tooling (Priority)
+
+Initial tooling focused on correctness and consistency:
+
+- [ ] Link validation: Verify all =[[file:...][...]]= cross-references resolve to existing files.
+- [ ] Style validation: Check documents against =STYLE_GUIDE.org= rules (heading levels, metadata, list syntax).
+- [ ] Glossary validation: Ensure all glossary entries have required fields and cross-references.
+- [ ] Bullet syntax linting: Detect =* = used as bullet instead of headline.
+- [ ] Metadata validation: Verify required =#+TITLE=, =#+DESCRIPTION=, =#+DATE= headers.
+- [ ] TOC validation: Ensure TOC.org entries match actual file inventory.
+
+*** Phase 6b — Generator Tooling
+
+Tooling for scaffolding new capabilities and documents:
+
+- [ ] Capability generator: Scaffold a new capability (handbook, glossary, guide stubs, learning path).
+- [ ] Document type generators: Create new handbook, guide, playbook, checklist, reference stubs with correct metadata.
+- [ ] Playbook generator: Scaffold playbooks with workflow sections.
+- [ ] Learning path generator: Scaffold three-tier learning paths.
+
+*** Phase 6c — Knowledge Graph Tooling
+
+Tooling for discovery and navigation:
+
+- [ ] Cross-reference extraction: Parse all documents and extract =[[file:...][...]]= links.
+- [ ] Knowledge graph generation: Produce a machine-readable graph of document relationships.
+- [ ] AI context packaging: Generate condensed context packs for AI assistants from selected documents.
+- [ ] Search indexing: Build search index across all documents.
+- [ ] Capability completeness report: Report which document types each capability has and is missing.
+
+** Development Approach
+
+1. Build validation tooling first — it establishes quality gates that all
+   other work must pass.
+2. Use existing documents as test fixtures for validation rules.
+3. Generators should produce templates that pass validation by default.
+4. Knowledge graph tooling depends on consistent metadata and
+   cross-references, so it comes after validation.
+5. All tooling should run locally (CLI) and in CI.
+6. Prefer standalone scripts over framework dependencies.
 
 Tooling should automate repetitive work while preserving editorial
 quality.
 
+** Lessons Learned
+
+- No tooling exists yet to capture lessons from.
+- The prompts index and glossary README can inform initial validation
+  requirements.
+
 * Phase 7 — Platform
 
 Expand the framework into a complete engineering knowledge platform.
+
+** Status
+
+[ ] **Not Started** — Platform work depends on Phase 6 tooling being
+    in place. The knowledge graph and validation infrastructure must
+    exist before a platform can consume them.
 
 ** Objectives
 
 - Improve discoverability of engineering knowledge.
 - Provide interactive and visual access to the knowledge graph.
 - Integrate with AI assistants and development workflows.
+- Enable non-technical stakeholders to benefit from the knowledge.
 
-** Potential Capabilities
+** Deliverables
 
-- Static website
-- Full-text search
-- Knowledge graph visualization
-- Interactive learning paths
-- AI assistant integration
-- MCP server
-- Documentation analytics
-- Versioned releases
-- Community portal
+*** Phase 7a — Static Site
+
+- [ ] Static site generator integration (e.g., Hugo, Org-mode export).
+- [ ] Full-text search across all documents.
+- [ ] Navigation by capability and document type.
+- [ ] Cross-cutting topic indexes.
+- [ ] Responsive design for desktop and mobile.
+
+*** Phase 7b — Knowledge Graph UI
+
+- [ ] Interactive graph visualization of document relationships.
+- [ ] Drill-down from capability to individual documents.
+- [ ] Search with graph context (show related documents).
+
+*** Phase 7c — AI Integration
+
+- [ ] MCP server exposing framework knowledge to AI assistants.
+- [ ] AI context packaging API.
+- [ ] Automatic context injection for coding agents.
+
+*** Phase 7d — Platform Features
+
+- [ ] Interactive learning paths with progress tracking.
+- [ ] Documentation analytics (coverage, freshness, gaps).
+- [ ] Versioned releases with changelog integration.
+- [ ] Community portal for discussion and proposals.
+
+** Development Approach
+
+1. Static site should be the first platform deliverable — it provides
+   immediate value and surfaces rendering issues.
+2. Knowledge graph UI depends on Phase 6c (graph generation).
+3. AI integration should use the knowledge graph as its data source.
+4. Community portal is last — it requires critical mass of users.
 
 * Phase 8 — Community
 
 Grow an active open-source community around the framework.
 
+** Status
+
+[ ] **Not Started** — Community growth depends on having stable
+    documentation and tooling that others can build on. The
+    CONTRIBUTING.org document establishes initial contribution
+    guidelines. GitHub Issues and Discussions are enabled.
+
 ** Objectives
 
 - Encourage community contributions.
 - Establish review processes.
-- Publish contribution guidelines.
 - Create mentoring resources.
 - Develop maintainership practices.
 - Foster engineering discussions.
 - Share lessons learned from real-world adoption.
+- Build a diverse contributor base.
+
+** Deliverables
+
+*** Onboarding
+
+- [ ] =CONTRIBUTING.org=: Already published (see [[file:./CONTRIBUTING.org]]).
+- [ ] Good first issue labels for new contributors.
+- [ ] Contributor onboarding guide with step-by-step walkthrough.
+- [ ] Community expectations and code of conduct.
+
+*** Review and Quality
+
+- [ ] PR review checklist for community contributions.
+- [ ] Maintainer decision-making framework.
+- [ ] Release process and versioning policy.
+- [ ] Advisory board for strategic direction.
+
+*** Engagement
+
+- [ ] Community discussion forum (GitHub Discussions).
+- [ ] Monthly community calls or async updates.
+- [ ] Case studies and adoption stories.
+- [ ] Community-contributed capabilities.
+
+** Development Approach
+
+1. Start with clear contribution guidelines and low-friction PR processes.
+2. Use good-first-issue labels to lower the barrier to entry.
+3. Build maintainer capacity before scaling contributor base.
+4. Community contributions should follow the same quality standards as
+   core contributions.
+5. Recognise and celebrate community contributions.
 
 The framework should evolve through practical engineering experience
 rather than theoretical completeness.
@@ -498,6 +648,12 @@ rather than theoretical completeness.
 Establish the Engineering Knowledge Framework as an open standard for
 engineering knowledge management.
 
+** Status
+
+[ ] **Future** — This phase depends on community adoption and
+    real-world validation. The framework must prove itself across
+    multiple organizations before standardisation is meaningful.
+
 ** Objectives
 
 - Define an interoperable specification for engineering knowledge.
@@ -505,15 +661,36 @@ engineering knowledge management.
 - Allow organizations to adopt the framework while maintaining
   compatibility with the broader ecosystem.
 
-** Future Initiatives
+** Deliverables
 
-- Engineering Knowledge Specification (EKS)
-- Standardized metadata
-- Capability specifications
-- Document interoperability
-- Repository validation tools
-- Reference implementations
-- Third-party tooling ecosystem
+*** Specification
+
+- [ ] Engineering Knowledge Specification (EKS): Define the formal specification.
+- [ ] Standardized metadata schema for all document types.
+- [ ] Capability specification format.
+- [ ] Document interoperability contracts.
+
+*** Ecosystem
+
+- [ ] Reference implementation of the specification.
+- [ ] Repository validation tools for specification compliance.
+- [ ] Third-party tooling SDK.
+- [ ] Community-contributed integrations.
+
+*** Governance
+
+- [ ] Specification versioning and evolution process.
+- [ ] Conformance testing framework.
+- [ ] Advisory board representing adopters.
+
+** Development Approach
+
+1. Standardisation should follow adoption, not precede it.
+2. Extract the specification from the reference implementation.
+3. Keep the specification minimal — define only what must be
+   interoperable.
+4. Version the specification independently of the framework content.
+5. Provide migration guides for breaking changes.
 
 * Cross-cutting Initiatives
 
@@ -581,11 +758,14 @@ Current priorities are:
 6. [x] Develop AI Engineering capability (Phase 3/4).
 7. [x] Develop Engineering Quality capability (Phase 3).
 8. [x] Establish RFC and ADR processes for framework evolution (see [[file:./adr/][adr/]] directory and [[file:./templates/adr/README.org][ADR template]]).
-9. [ ] Build the Accessibility Engineering capability.
-10. [ ] Add practical exercises and assessments to learning paths (Phase 5).
-11. [ ] Develop AI agentic workflows and evaluation frameworks (Phase 4).
-12. [ ] Build initial validation tooling — link validation, style validation, glossary validation (Phase 6).
-13. [ ] Build knowledge graph generation tooling (Phase 6).
+9. [ ] Complete Security Engineering capability (add templates).
+10. [ ] Complete AI Engineering capability (add playbooks, templates, AI workflows).
+11. [ ] Complete Engineering Quality capability (add playbooks, checklists, templates, AI workflows).
+12. [ ] Build the Accessibility Engineering capability (all 9 document types).
+13. [ ] Add practical exercises and assessments to learning paths (Phase 5).
+14. [ ] Develop AI agentic workflows and evaluation frameworks (Phase 4).
+15. [ ] Build initial validation tooling — link validation, style validation, glossary validation (Phase 6).
+16. [ ] Build knowledge graph generation tooling (Phase 6).
 
 These initiatives build on the completed foundation. See [[file:./CHANGELOG.org][CHANGELOG]] for
 completed milestones.
