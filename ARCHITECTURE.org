@@ -20,14 +20,14 @@ document explains *how* the framework is designed.
 
 The architecture of the framework is guided by several goals.
 
-* Simple to understand.
-* Easy to extend.
-* Easy to navigate.
-* Modular.
-* AI-friendly.
-* Technology agnostic.
-* Timeless.
-* Suitable for organizations of any size.
+- Simple to understand.
+- Easy to extend.
+- Easy to navigate.
+- Modular.
+- AI-friendly.
+- Technology agnostic.
+- Timeless.
+- Suitable for organizations of any size.
 
 The architecture should continue to scale as the repository grows from
 dozens of documents to thousands.
@@ -327,16 +327,16 @@ Knowledge should support AI throughout the engineering lifecycle.
 
 AI responsibilities include:
 
-* Research.
-* Draft generation.
-* Code review.
-* Architecture review.
-* Test generation.
-* Documentation review.
-* Knowledge extraction.
-* Gap analysis.
-* Cross-reference suggestions.
-* Learning-path generation.
+- Research.
+- Draft generation.
+- Code review.
+- Architecture review.
+- Test generation.
+- Documentation review.
+- Knowledge extraction.
+- Gap analysis.
+- Cross-reference suggestions.
+- Learning-path generation.
 
 Human review remains mandatory.
 
@@ -483,16 +483,16 @@ continue to grow.
 
 A successful Engineering Knowledge Framework should be:
 
-* Modular.
-* Discoverable.
-* Extensible.
-* AI-native.
-* Community-driven.
-* Easy to contribute to.
-* Easy to adopt.
-* Easy to customize.
-* Timeless.
-* Sustainable.
+- Modular.
+- Discoverable.
+- Extensible.
+- AI-native.
+- Community-driven.
+- Easy to contribute to.
+- Easy to adopt.
+- Easy to customize.
+- Timeless.
+- Sustainable.
 
 Organizations should be able to adopt only the capabilities they need
 without modifying the framework itself.

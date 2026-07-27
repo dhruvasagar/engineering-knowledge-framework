@@ -23,12 +23,12 @@ knowledge.
 
 Every contribution should strive to:
 
-* Improve engineering understanding.
-* Preserve institutional knowledge.
-* Increase reuse.
-* Improve engineering quality.
-* Reduce future maintenance.
-* Help both engineers and AI systems make better decisions.
+- Improve engineering understanding.
+- Preserve institutional knowledge.
+- Increase reuse.
+- Improve engineering quality.
+- Reduce future maintenance.
+- Help both engineers and AI systems make better decisions.
 
 The goal is not simply to create more documents, but to build a better
 framework for engineering knowledge.
@@ -303,16 +303,16 @@ Human reviewers remain responsible for the final content.
 
 Before submitting a contribution, verify:
 
-* [ ] The correct document type was used.
-* [ ] The document has a single responsibility.
-* [ ] Existing knowledge was reused where appropriate.
-* [ ] Internal links are valid.
-* [ ] Terminology is consistent.
-* [ ] Examples are technically accurate.
-* [ ] AI-generated content has been reviewed.
-* [ ] Formatting follows the Style Guide.
-* [ ] Metadata is complete.
-* [ ] The document contributes lasting value.
+- [ ] The correct document type was used.
+- [ ] The document has a single responsibility.
+- [ ] Existing knowledge was reused where appropriate.
+- [ ] Internal links are valid.
+- [ ] Terminology is consistent.
+- [ ] Examples are technically accurate.
+- [ ] AI-generated content has been reviewed.
+- [ ] Formatting follows the Style Guide.
+- [ ] Metadata is complete.
+- [ ] The document contributes lasting value.
 
 - Proposing Framework Changes
 

@@ -30,14 +30,14 @@ into reusable organizational knowledge.
 Our long-term vision is to establish an open standard for engineering
 knowledge management that enables organizations to:
 
-* Capture institutional knowledge.
-* Improve engineering decision making.
-* Standardize engineering practices.
-* Accelerate onboarding.
-* Reduce repeated mistakes.
-* Build engineering capabilities.
-* Integrate AI throughout the engineering lifecycle.
-* Continuously improve through organizational learning.
+- Capture institutional knowledge.
+- Improve engineering decision making.
+- Standardize engineering practices.
+- Accelerate onboarding.
+- Reduce repeated mistakes.
+- Build engineering capabilities.
+- Integrate AI throughout the engineering lifecycle.
+- Continuously improve through organizational learning.
 
 Engineering knowledge should scale with both people and AI.
 

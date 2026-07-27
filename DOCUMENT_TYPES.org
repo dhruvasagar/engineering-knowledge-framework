@@ -23,12 +23,12 @@ This document defines the canonical document taxonomy of the framework.
 
 The framework is based on several principles.
 
-* Knowledge is modular.
-* Every document has a single responsibility.
-* Documents should compose naturally.
-* Knowledge should be reusable.
-* Knowledge should be easy for both humans and AI to navigate.
-* Prefer linking over duplication.
+- Knowledge is modular.
+- Every document has a single responsibility.
+- Documents should compose naturally.
+- Knowledge should be reusable.
+- Knowledge should be easy for both humans and AI to navigate.
+- Prefer linking over duplication.
 
 The goal is not to minimize the number of documents, but to maximize the
 clarity, maintainability and reuse of engineering knowledge.

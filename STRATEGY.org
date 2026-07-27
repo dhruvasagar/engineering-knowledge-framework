@@ -41,13 +41,13 @@ knowledge.
 Engineering organizations continuously generate valuable knowledge
 through:
 
-* Designing systems.
-* Building software.
-* Solving production incidents.
-* Reviewing code.
-* Performing architectural reviews.
-* Learning from project successes and failures.
-* Improving engineering practices.
+- Designing systems.
+- Building software.
+- Solving production incidents.
+- Reviewing code.
+- Performing architectural reviews.
+- Learning from project successes and failures.
+- Improving engineering practices.
 
 Much of this knowledge is temporary, fragmented or eventually lost.
 
@@ -77,10 +77,10 @@ Engineering principles change more slowly than technologies.
 
 Whenever possible, document:
 
-* Why something works.
-* When it should be used.
-* Trade-offs.
-* Decision criteria.
+- Why something works.
+- When it should be used.
+- Trade-offs.
+- Decision criteria.
 
 Implementation details belong in guides and references.
 
@@ -89,11 +89,11 @@ Implementation details belong in guides and references.
 The framework should prioritize knowledge that remains valuable despite
 changes in:
 
-* Programming languages.
-* Frameworks.
-* Tools.
-* Vendors.
-* Organizational structures.
+- Programming languages.
+- Frameworks.
+- Tools.
+- Vendors.
+- Organizational structures.
 
 Timeless knowledge compounds in value over time.
 
@@ -104,20 +104,20 @@ single-responsibility documents.
 
 Small documents are:
 
-* Easier to review.
-* Easier to update.
-* Easier for AI to consume.
-* Easier to reuse.
-* Easier to maintain.
+- Easier to review.
+- Easier to update.
+- Easier for AI to consume.
+- Easier to reuse.
+- Easier to maintain.
 
 ** Explain reasoning
 
 Engineering decisions should explain:
 
-* Why.
-* Alternatives considered.
-* Trade-offs.
-* Consequences.
+- Why.
+- Alternatives considered.
+- Trade-offs.
+- Consequences.
 
 Reasoning is often more valuable than the decision itself.
 

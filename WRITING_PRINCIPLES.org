@@ -49,16 +49,16 @@ Always optimize for knowledge rather than information.
 
 Information answers:
 
-* What happened?
-* What exists?
+- What happened?
+- What exists?
 
 Knowledge answers:
 
-* Why?
-* When?
-* How?
-* What are the trade-offs?
-* What should I do?
+- Why?
+- When?
+- How?
+- What are the trade-offs?
+- What should I do?
 
 Documents should prioritize understanding over completeness.
 
@@ -207,9 +207,9 @@ State important assumptions explicitly.
 
 Avoid:
 
-* "It"
-* "This"
-* "That approach"
+- "It"
+- "This"
+- "That approach"
 
 Prefer explicit nouns.
 

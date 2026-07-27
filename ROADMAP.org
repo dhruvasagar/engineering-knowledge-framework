@@ -18,11 +18,11 @@ The roadmap should evolve continuously as the project matures.
 
 Roadmap priorities should always support the framework's mission:
 
-* Build reusable engineering knowledge.
-* Capture institutional learning.
-* Enable effective collaboration between engineers and AI.
-* Prefer timeless knowledge over transient implementation details.
-* Improve engineering practice rather than simply increasing documentation.
+- Build reusable engineering knowledge.
+- Capture institutional learning.
+- Enable effective collaboration between engineers and AI.
+- Prefer timeless knowledge over transient implementation details.
+- Improve engineering practice rather than simply increasing documentation.
 
 Priority should always be given to work that strengthens the framework
 itself before expanding its content.

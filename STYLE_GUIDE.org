@@ -30,12 +30,12 @@ Good engineering documentation naturally serves both audiences.
 
 Documents should therefore maximize:
 
-* Human readability.
-* Machine readability.
-* Semantic clarity.
-* Searchability.
-* Discoverability.
-* Long-term maintainability.
+- Human readability.
+- Machine readability.
+- Semantic clarity.
+- Searchability.
+- Discoverability.
+- Long-term maintainability.
 
 AI-friendly writing does not mean writing differently for humans.
 
@@ -47,14 +47,14 @@ knowledge.
 
 Every document should strive to be:
 
-* Timeless.
-* Modular.
-* Explicit.
-* Reusable.
-* Well connected.
-* Easy to navigate.
-* Easy to review.
-* Easy to maintain.
+- Timeless.
+- Modular.
+- Explicit.
+- Reusable.
+- Well connected.
+- Easy to navigate.
+- Easy to review.
+- Easy to maintain.
 
 Prefer clarity over cleverness.
 
@@ -498,31 +498,31 @@ Repository quality is more important than document count.
 
 Before committing a document, verify:
 
-* [ ] Metadata is complete.
-* [ ] The correct document type was used.
-* [ ] The document has a single responsibility.
-* [ ] Headings are meaningful.
-* [ ] Terminology is consistent.
-* [ ] Internal links are valid.
-* [ ] Duplicate knowledge has been avoided.
-* [ ] Examples are technically accurate.
-* [ ] The document follows repository conventions.
-* [ ] TOC.org is updated if this is a new or renamed document.
-* [ ] Handbook capability map is updated if this is a new or renamed
+- [ ] Metadata is complete.
+- [ ] The correct document type was used.
+- [ ] The document has a single responsibility.
+- [ ] Headings are meaningful.
+- [ ] Terminology is consistent.
+- [ ] Internal links are valid.
+- [ ] Duplicate knowledge has been avoided.
+- [ ] Examples are technically accurate.
+- [ ] The document follows repository conventions.
+- [ ] TOC.org is updated if this is a new or renamed document.
+- [ ] Handbook capability map is updated if this is a new or renamed
       document.
 
 - AI Readability Checklist
 
 Additionally verify:
 
-* [ ] The document can be understood independently.
-* [ ] Important concepts are explicitly named.
-* [ ] Assumptions are explained.
-* [ ] Related documents are linked.
-* [ ] Canonical sources are referenced.
-* [ ] The document is modular.
-* [ ] Sections are concise.
-* [ ] AI-generated content has been reviewed by a human.
+- [ ] The document can be understood independently.
+- [ ] Important concepts are explicitly named.
+- [ ] Assumptions are explained.
+- [ ] Related documents are linked.
+- [ ] Canonical sources are referenced.
+- [ ] The document is modular.
+- [ ] Sections are concise.
+- [ ] AI-generated content has been reviewed by a human.
 
 - References
 
