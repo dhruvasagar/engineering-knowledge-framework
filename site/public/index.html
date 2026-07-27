@@ -1,43 +1,393 @@
-<html>
-    <head>
-        <title>Zola</title>
-    </head>
-    <body>
-        <div class="container">
-            <h1>Welcome to Zola!</h1>
-            <p>
-                You're seeing this page because we couldn't find a template to render.
-            </p>
-            <p>
-                To modify this page, create a <b>index.html</b> file in the templates directory or
-                <a href="https://www.getzola.org/documentation/themes/installing-and-using-themes/" target="_blank">install a theme</a>.
-                <br>
-                You can find what variables are available in this template in the <a href="https:&#x2F;&#x2F;www.getzola.org&#x2F;documentation&#x2F;templates&#x2F;pages-sections&#x2F;#section-variables" target="_blank">documentation</a>.
-            </p>
-        </div>
-        <footer>
-            <a href="https://www.getzola.org/documentation/getting-started/cli-usage/" target="_blank">Get started with Zola</a>
-        </footer>
-        <style>
-            html {
-                line-height: 1.5;
-            }
-            h1 {
-                margin-bottom: 2rem;
-            }
-            .container {
-                font-family: "sans-serif";
-                text-align: center;
-                margin-top: 20vh;
-                padding: 2rem;
-                background: #e9e9e9;
-            }
-            footer {
-                position: fixed;
-                width: 100%;
-                bottom: 1rem;
-                text-align: center;
-            }
-        </style>
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="An open framework for capturing, organizing and applying engineering knowledge">
+  <title>Engineering Knowledge Framework</title>
+  <link rel="stylesheet" href="https://dhruvasagar.github.io/engineering-knowledge-framework/style.css">
+  
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a href="https:&#x2F;&#x2F;dhruvasagar.github.io&#x2F;engineering-knowledge-framework" class="logo">Engineering Knowledge Framework</a>
+      <nav class="site-nav">
+        <a href="https:&#x2F;&#x2F;dhruvasagar.github.io&#x2F;engineering-knowledge-framework">Home</a>
+        <a href="https://github.com/dhruvasagar/engineering-knowledge-framework">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    
+<h1>Engineering Knowledge Framework</h1>
+
+<p class="description">An open-source framework for building AI-native engineering knowledge systems</p>
+
+
+<div class="content">
+  <p>Engineering Knowledge Framework is an open-source framework for building
+AI-native engineering knowledge systems.</p>
+<p>It provides a structured foundation for capturing, organizing,
+maintaining, evolving and applying engineering knowledge in a way that
+benefits both engineers and AI systems.</p>
+<p>This project is not simply a documentation repository.</p>
+<p>It is a framework for engineering knowledge.</p>
+<h1 id="vision">Vision</h1>
+<p>Engineering organizations accumulate valuable knowledge every day through
+projects, successes, failures, architectural decisions and operational
+experience.</p>
+<p>Unfortunately, much of this knowledge remains fragmented, undocumented,
+or is lost as teams evolve.</p>
+<p>The Engineering Knowledge Framework exists to transform that experience
+into reusable organizational knowledge.</p>
+<p>Our long-term vision is to establish an open standard for engineering
+knowledge management that enables organizations to:</p>
+<ul>
+<li>Capture institutional knowledge.</li>
+<li>Improve engineering decision making.</li>
+<li>Standardize engineering practices.</li>
+<li>Accelerate onboarding.</li>
+<li>Reduce repeated mistakes.</li>
+<li>Build engineering capabilities.</li>
+<li>Integrate AI throughout the engineering lifecycle.</li>
+<li>Continuously improve through organizational learning.</li>
+</ul>
+<p>Engineering knowledge should scale with both people and AI.</p>
+<h1 id="philosophy">Philosophy</h1>
+<p>The framework is built around several core principles.</p>
+<table><thead><tr><th>Principle</th><th>Description</th></tr></thead><tbody>
+<tr><td>Knowledge over Documentation</td><td>Capture understanding, not just information</td></tr>
+<tr><td>Principles over Tools</td><td>Prefer timeless engineering principles over technologies</td></tr>
+<tr><td>Explain Why</td><td>Document reasoning, not just procedures</td></tr>
+<tr><td>Modular Knowledge</td><td>Compose knowledge from focused, reusable documents</td></tr>
+<tr><td>Capability-driven</td><td>Organize around engineering capabilities</td></tr>
+<tr><td>AI-native</td><td>Treat AI as a first-class consumer of knowledge</td></tr>
+<tr><td>Continuous Improvement</td><td>Evolve knowledge through organizational learning</td></tr>
+</tbody></table>
+<p>These principles guide every aspect of the repository.</p>
+<h1 id="what-the-framework-provides">What the Framework Provides</h1>
+<p>The framework consists of several complementary components.</p>
+<h2 id="governance">Governance</h2>
+<p>Defines how engineering knowledge is created and maintained.</p>
+<p>Examples include:</p>
+<ul>
+<li>Repository philosophy</li>
+<li>Writing standards</li>
+<li>Contribution guidelines</li>
+<li>Knowledge architecture</li>
+<li>Document taxonomy</li>
+</ul>
+<h2 id="engineering-capabilities">Engineering Capabilities</h2>
+<p>Each engineering discipline is represented as a capability containing all
+knowledge required to understand and execute that discipline.</p>
+<p>A capability typically contains:</p>
+<ul>
+<li>Handbook</li>
+<li>Guides</li>
+<li>Playbooks</li>
+<li>Checklists</li>
+<li>Templates</li>
+<li>References</li>
+<li>Glossary</li>
+<li>Learning Paths</li>
+<li>AI Workflows</li>
+</ul>
+<p>Examples include:</p>
+<ul>
+<li>Rails Engineering</li>
+<li>Software Architecture</li>
+<li>Security Engineering</li>
+<li>Testing</li>
+<li>Accessibility</li>
+<li>Platform Engineering</li>
+</ul>
+<h2 id="ai-framework">AI Framework</h2>
+<p>The framework treats AI as an engineering collaborator rather than
+simply a documentation generator.</p>
+<p>AI is integrated throughout the engineering lifecycle, including:</p>
+<ul>
+<li>Context engineering</li>
+<li>Architecture reviews</li>
+<li>Code reviews</li>
+<li>Documentation generation</li>
+<li>Test generation</li>
+<li>Security analysis</li>
+<li>Accessibility assessment</li>
+<li>Refactoring</li>
+<li>Knowledge extraction</li>
+</ul>
+<p>Human engineering judgement remains the final authority.</p>
+<h2 id="learning-framework">Learning Framework</h2>
+<p>Engineering knowledge should enable continuous learning.</p>
+<p>Capabilities may include:</p>
+<ul>
+<li>Learning paths</li>
+<li>Recommended reading</li>
+<li>Exercises</li>
+<li>Competency progression</li>
+<li>Practical examples</li>
+</ul>
+<h2 id="tooling">Tooling</h2>
+<p>The framework is designed to support automation.</p>
+<p>Examples include:</p>
+<ul>
+<li>
+<p>Repository generators</p>
+</li>
+<li>
+<p>Templates</p>
+</li>
+<li>
+<p>Linters</p>
+</li>
+<li>
+<p>Link validation</p>
+</li>
+<li>
+<p>Style validation</p>
+</li>
+<li>
+<p>Knowledge graph generation</p>
+</li>
+<li>
+<p>AI context generation</p>
+</li>
+<li>
+<p>Search and indexing</p>
+</li>
+<li>
+<p>Repository Organization</p>
+</li>
+</ul>
+<p>The repository is organized into several major areas.</p>
+<pre><code>
+governance/
+Repository philosophy, standards and guidance
+
+glossary/
+Canonical engineering terminology
+
+handbook/
+Engineering principles and standards
+
+guides/
+Focused explanations of engineering topics
+
+playbooks/
+Repeatable engineering workflows
+
+checklists/
+Verification and quality gates
+
+templates/
+Reusable engineering artifacts
+
+references/
+Quick reference material
+
+learning-paths/
+Structured learning journeys
+
+assets/
+Shared diagrams, images and supporting resources
+
+</code></pre>
+<p>Each document type has a clearly defined purpose.</p>
+<p>See:</p>
+<p><a href="https://dhruvasagar.github.io/engineering-knowledge-framework/.*DOCUMENT_TYPES*">Document Types</a></p>
+<p>for more information.</p>
+<h1 id="knowledge-lifecycle">Knowledge Lifecycle</h1>
+<p>Engineering knowledge evolves continuously.</p>
+<pre><code>
+Experience
+
+↓
+
+Capture
+
+↓
+
+Review
+
+↓
+
+Refine
+
+↓
+
+Organize
+
+↓
+
+Publish
+
+↓
+
+Apply
+
+↓
+
+Learn
+
+↓
+
+Improve
+
+↓
+
+Repeat
+
+</code></pre>
+<p>This framework exists to support every stage of that lifecycle.</p>
+<h1 id="ai-native-knowledge">AI-Native Knowledge</h1>
+<p>Traditional documentation is written solely for humans.</p>
+<p>The Engineering Knowledge Framework is designed for both humans and AI.</p>
+<p>Documents should therefore:</p>
+<ul>
+<li>Explain reasoning.</li>
+<li>Use consistent terminology.</li>
+<li>Cross-reference related knowledge.</li>
+<li>Separate principles from implementation details.</li>
+<li>Be modular and reusable.</li>
+<li>Be easy to navigate programmatically.</li>
+</ul>
+<p>Well-structured knowledge enables AI systems to provide more accurate,
+consistent and context-aware assistance.</p>
+<h1 id="intended-audience">Intended Audience</h1>
+<p>The framework is intended for:</p>
+<ul>
+<li>Software Engineers</li>
+<li>Senior Engineers</li>
+<li>Staff Engineers</li>
+<li>Architects</li>
+<li>Engineering Managers</li>
+<li>Technical Leads</li>
+<li>Platform Engineers</li>
+<li>Quality Engineers</li>
+<li>Open-source contributors</li>
+</ul>
+<p>Organizations may adopt the framework in its entirety or adapt
+individual components to meet their own needs.</p>
+<h1 id="getting-started">Getting Started</h1>
+<p>If you are new to the repository, begin with the governance documents.</p>
+<ol>
+<li><a href="https://dhruvasagar.github.io/engineering-knowledge-framework/.*CLAUDE.md">CLAUDE.md</a></li>
+<li><a href="https://dhruvasagar.github.io/engineering-knowledge-framework/.*STRATEGY*">Strategy</a></li>
+<li><a href="https://dhruvasagar.github.io/engineering-knowledge-framework/.*ROADMAP*">Roadmap</a></li>
+<li><a href="https://dhruvasagar.github.io/engineering-knowledge-framework/.*DOCUMENT_TYPES*">Document Types</a></li>
+<li><a href="https://dhruvasagar.github.io/engineering-knowledge-framework/.*STYLE_GUIDE*">Style Guide</a></li>
+<li><a href="https://dhruvasagar.github.io/engineering-knowledge-framework/.*CONTRIBUTING*">Contributing</a></li>
+</ol>
+<p>These documents explain the philosophy, organization and contribution
+model of the framework.</p>
+<h1 id="navigating-the-repository">Navigating the Repository</h1>
+<p>Once you understand the philosophy, use the <a href="https://dhruvasagar.github.io/engineering-knowledge-framework/.*TOC*">Table of Contents</a>
+to explore the repository by capability or by topic.</p>
+<p>The TOC provides two complementary views:</p>
+<ul>
+<li><em><strong>From Top to Bottom</strong></em>: Every document organized by capability
+(Engineering, Architecture, Rails, Security) and document type.</li>
+<li><em><strong>Cross-Cutting Topics</strong></em>: Documents grouped by topic (Testing,
+Security, API Design, Performance, etc.) across capabilities.</li>
+</ul>
+<p>Each capability handbook also includes a <em><strong>Capability Map</strong></em> section
+listing all documents within that capability.</p>
+<h1 id="current-focus">Current Focus</h1>
+<p>The current priorities are:</p>
+<ul>
+<li>Establish the governance framework.</li>
+<li>Build the foundational engineering capabilities.</li>
+<li>Develop Rails Engineering as the reference capability.</li>
+<li>Develop AI Engineering practices.</li>
+<li>Create reusable templates and tooling.</li>
+</ul>
+<p>Progress is tracked in:</p>
+<p><a href="https://dhruvasagar.github.io/engineering-knowledge-framework/.*ROADMAP*">Roadmap</a></p>
+<h1 id="long-term-goals">Long-term Goals</h1>
+<p>The Engineering Knowledge Framework aims to become:</p>
+<ul>
+<li>A reusable framework for engineering organizations.</li>
+<li>A reference implementation for engineering knowledge management.</li>
+<li>A foundation for AI-assisted engineering.</li>
+<li>A community-driven collection of engineering best practices.</li>
+<li>An open ecosystem for continuously evolving engineering knowledge.</li>
+</ul>
+<p>The framework is intended to be adopted, extended and improved by the
+engineering community.</p>
+<h1 id="contributing">Contributing</h1>
+<p>Contributions are welcome.</p>
+<p>Before contributing:</p>
+<ol>
+<li>Read the governance documents.</li>
+<li>Understand the document taxonomy.</li>
+<li>Follow the Style Guide.</li>
+<li>Improve existing knowledge before creating new documents.</li>
+<li>Keep documentation timeless, modular and well connected.</li>
+</ol>
+<p>See:</p>
+<p><a href="https://dhruvasagar.github.io/engineering-knowledge-framework/.*CONTRIBUTING*">Contributing</a></p>
+<p>for the complete contribution workflow.</p>
+<h1 id="license">License</h1>
+<p>This repository is open source.</p>
+<p>Unless otherwise specified, contributions are licensed under the
+repository's license.</p>
+<h1 id="related-documents">Related Documents</h1>
+<ul>
+<li><a href="https://dhruvasagar.github.io/engineering-knowledge-framework/.*CLAUDE.md">CLAUDE.md</a></li>
+<li><a href="https://dhruvasagar.github.io/engineering-knowledge-framework/.*STRATEGY*">Strategy</a></li>
+<li><a href="https://dhruvasagar.github.io/engineering-knowledge-framework/.*ROADMAP*">Roadmap</a></li>
+<li><a href="https://dhruvasagar.github.io/engineering-knowledge-framework/.*DOCUMENT_TYPES*">Document Types</a></li>
+<li><a href="https://dhruvasagar.github.io/engineering-knowledge-framework/.*STYLE_GUIDE*">Style Guide</a></li>
+<li><a href="https://dhruvasagar.github.io/engineering-knowledge-framework/.*CONTRIBUTING*">Contributing</a></li>
+<li><a href="https://dhruvasagar.github.io/engineering-knowledge-framework/.*glossary*README/">Glossary</a></li>
+</ul>
+
+</div>
+
+<h2>Engineering Capabilities</h2>
+<div class="capability-grid">
+  <div class="capability-card">
+    <h3><a href="https://dhruvasagar.github.io/engineering-knowledge-framework/handbooks/engineering">Engineering Fundamentals</a></h3>
+  </div>
+  <div class="capability-card">
+    <h3><a href="https://dhruvasagar.github.io/engineering-knowledge-framework/handbooks/architecture">Software Architecture</a></h3>
+  </div>
+  <div class="capability-card">
+    <h3><a href="https://dhruvasagar.github.io/engineering-knowledge-framework/handbooks/rails">Rails Engineering</a></h3>
+  </div>
+  <div class="capability-card">
+    <h3><a href="https://dhruvasagar.github.io/engineering-knowledge-framework/handbooks/security">Security Engineering</a></h3>
+  </div>
+  <div class="capability-card">
+    <h3><a href="https://dhruvasagar.github.io/engineering-knowledge-framework/handbooks/ai">AI Engineering</a></h3>
+  </div>
+  <div class="capability-card">
+    <h3><a href="https://dhruvasagar.github.io/engineering-knowledge-framework/handbooks/quality">Engineering Quality</a></h3>
+  </div>
+  <div class="capability-card">
+    <h3><a href="https://dhruvasagar.github.io/engineering-knowledge-framework/handbooks/accessibility">Accessibility Engineering</a></h3>
+  </div>
+</div>
+
+<h2>Governance</h2>
+<ul>
+  <li><a href="https://dhruvasagar.github.io/engineering-knowledge-framework/strategy">Strategy</a></li>
+  <li><a href="https://dhruvasagar.github.io/engineering-knowledge-framework/roadmap">Roadmap</a></li>
+  <li><a href="https://dhruvasagar.github.io/engineering-knowledge-framework/architecture">Architecture</a></li>
+  <li><a href="https://dhruvasagar.github.io/engineering-knowledge-framework/document-types">Document Types</a></li>
+  <li><a href="https://dhruvasagar.github.io/engineering-knowledge-framework/style-guide">Style Guide</a></li>
+  <li><a href="https://dhruvasagar.github.io/engineering-knowledge-framework/writing-principles">Writing Principles</a></li>
+  <li><a href="https://dhruvasagar.github.io/engineering-knowledge-framework/contributing">Contributing</a></li>
+</ul>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Engineering Knowledge Framework — Building AI-native engineering knowledge systems</p>
+    </div>
+  </footer>
+</body>
 </html>

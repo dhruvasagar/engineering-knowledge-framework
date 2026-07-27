@@ -139,6 +139,41 @@ h1:first-child { margin-top: 0; }
   text-align: center;
 }
 
+/* Capability grid */
+.capability-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+  margin: 1rem 0 2rem;
+}
+
+.capability-card {
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.25rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.capability-card:hover {
+  border-color: var(--primary);
+  box-shadow: 0 2px 8px rgba(37, 99, 235, 0.1);
+}
+
+.capability-card h3 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.capability-card h3 a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.capability-card h3 a:hover {
+  color: var(--primary);
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   body { font-size: 15px; }
