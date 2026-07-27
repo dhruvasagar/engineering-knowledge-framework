@@ -28,17 +28,16 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Set up Hugo
-        uses: peaceiris/actions-hugo@v3
+      - name: Set up Zola
+        uses: taiki-e/install-action@v2
         with:
-          hugo-version: '0.163.0'
-          extended: true
+          tool: zola@0.22.1
       - name: Build knowledge graph
         run: make graph
-      - name: Prepare Hugo content
-        run: python3 tools/prepare-hugo-content.py
+      - name: Prepare site content
+        run: python3 tools/prepare-site-content.py
       - name: Build site
-        run: cd site && hugo
+        run: cd site && zola build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
