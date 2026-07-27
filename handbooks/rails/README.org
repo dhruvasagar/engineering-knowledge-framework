@@ -312,6 +312,82 @@ When using AI for Rails development, provide:
 
 See the [[file:../../handbooks/ai/README.org][AI Engineering Handbook]] for general AI workflow guidance.
 
+* Capability Map
+
+This handbook is the entry point for the Rails Engineering capability.
+The following documents form the complete capability:
+
+** Handbooks
+
+- [[file:./README.org][Rails Engineering Handbook]] — This document. Principles, standards,
+  and philosophy for Rails development.
+
+** Glossaries
+
+- [[file:../../glossary/rails/README.org][Rails Glossary]] — Canonical Rails terminology (ActiveRecord,
+  controller, service object, view, etc.).
+
+** Guides
+
+- [[file:../../guides/rails/service-objects.org][Service Objects]] — When and how to use service objects,
+  structure, patterns and testing.
+- [[file:../../guides/rails/testing.org][Testing Rails Applications]] — Test distribution, model/request/
+  system specs, factory patterns.
+- [[file:../../guides/rails/audit-guide.org][Rails Audit Guide]] — Systematic code quality, performance,
+  database and security auditing.
+- [[file:../../guides/rails/project-standards.org][Rails Project Standards]] — Mandatory tooling baseline and
+  CI/CD configuration for every Rails project.
+- [[file:../../guides/rails/active-record.org][ActiveRecord Patterns and Query Optimization]] — Scopes, query
+  optimization, N+1 prevention, indexing.
+- [[file:../../guides/rails/api-development.org][API Development with Rails]] — API-only setup, serialization,
+  versioning, authentication and testing.
+- [[file:../../guides/rails/background-jobs.org][Background Jobs]] — Framework selection (Sidekiq, GoodJob,
+  SolidQueue), job design, error handling, monitoring.
+- [[file:../../guides/rails/authentication-authorization.org][Authentication and Authorization]] — Devise setup, Pundit
+  policies, role-based authorization.
+
+** Playbooks
+
+- [[file:../../playbooks/rails/upgrade.org][Rails Upgrade Playbook]] — Step-by-step Rails version upgrade
+  workflow with rollback plan.
+- [[file:../../playbooks/rails/deployment.org][Rails Deployment Playbook]] — Safe deployment with database
+  migration safety, zero-downtime patterns.
+
+** Checklists
+
+- [[file:../../checklists/rails/pull-request.org][Rails Pull Request Checklist]] — Code quality, testing,
+  security and migration safety for every PR.
+- [[file:../../checklists/rails/security-review.org][Rails Security Review Checklist]] — Authentication,
+  authorization, data protection and dependency verification.
+- [[file:../../checklists/rails/deployment.org][Rails Deployment Checklist]] — Pre-deployment, migration
+  safety and post-deployment verification.
+
+** Templates
+
+- [[file:../../templates/rails/service-object.org][Service Object Template]] — Reusable service object with
+  result object pattern.
+- [[file:../../templates/rails/form-object.org][Form Object Template]] — Form object with ActiveModel
+  integration.
+- [[file:../../templates/rails/query-object.org][Query Object Template]] — Composable query object with scope
+  chaining.
+- [[file:../../templates/rails/policy-object.org][Policy Object Template]] — Authorization policy with Pundit
+  conventions.
+
+** Learning Paths
+
+- [[file:../../learning-paths/rails/README.org][Rails Learning Paths]] — Beginner, intermediate and advanced
+  tracks with topics, projects and assessment.
+
+** References
+
+- [[file:../../references/rails/README.org][Rails References]] — Quick lookup: conventions, generators,
+  test commands, gems, HTTP codes.
+
+** AI Workflows
+
+- [[file:../../prompts/rails-ai-workflows.org][AI Workflows for Rails]] — Prompt patterns for model
+  generation, API development, testing and debugging.
+
 * Related Documents
 
 - [[file:../../handbooks/engineering/README.org][Engineering Fundamentals Handbook]]

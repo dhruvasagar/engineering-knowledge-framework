@@ -359,6 +359,49 @@ Tables are appropriate for:
 
 Avoid using tables for layout.
 
+** Format
+
+Every table must follow this structure:
+
+| Header 1 | Header 2 | Header 3 |   ← Header row: | at edges, | between cells
+|----------+----------+----------|   ← Separator:  | at edges, + between columns
+| Cell 1   | Cell 2   | Cell 3   |   ← Data rows:  | at edges, | between cells
+
+Rules:
+
+- Every row starts and ends with =|=.
+- The header separator (hline) uses =| at both edges and =+ between
+  columns, e.g., =|-------+-------|=. It must not use =+ at the
+  edges or =| between columns in place of =+.
+- All rows in a table must have the same number of columns.
+- A blank line ends the table.
+
+** Correct Examples
+
+Two-column table:
+
+| Principle       | Description                         |
+|-----------------+-------------------------------------|
+| Keep it simple  | Prefer simple over clever designs.  |
+| Single purpose  | One responsibility per module.      |
+
+Three-column table with multi-line cells:
+
+| Type   | Speed | Notes                              |
+|--------+-------+------------------------------------|
+| Unit   | Fast  | Isolated, single behaviour.        |
+| E2E    | Slow  | Full stack, critical journeys      |
+|        |       | only.                              |
+
+** Common Mistakes
+
+- Using =+ at the start or end of the separator row instead of =|.
+  Correct: =|-------+-------=|. Wrong: =+-------+-------=+.
+- Using =| between columns in the separator row instead of =+.
+  Correct: =|-------+-------=|. Wrong: =|-------|-------|=.
+- Missing the separator row between header and data.
+- Inconsistent column counts across rows.
+
 * Code Blocks
 
 Always specify the language.

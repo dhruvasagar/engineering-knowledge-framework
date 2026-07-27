@@ -272,6 +272,58 @@ When using AI for security work, provide:
 - Existing security controls and policies.
 - Specific security concerns or threat models.
 
+* Capability Map
+
+This handbook is the entry point for the Security Engineering
+capability. The following documents form the complete capability:
+
+** Handbooks
+
+- [[file:./README.org][Security Engineering Handbook]] — This document. Principles,
+  threat modeling, secure development lifecycle and standards.
+
+** Glossaries
+
+- [[file:../../glossary/security/README.org][Security Glossary]] — Canonical security terminology (CSRF,
+  defense in depth, SAST, STRIDE, XSS, etc.).
+
+** Guides
+
+- [[file:../../guides/security/secure-coding.org][Secure Coding Practices]] — Input validation, authentication,
+  authorization, output encoding, error handling, cryptography.
+- [[file:../../guides/security/web-vulnerabilities.org][Web Application Vulnerabilities]] — OWASP Top 10 (2021)
+  with explanations and mitigations for each category.
+- [[file:../../guides/security/dependency-security.org][Dependency Security]] — Vulnerability scanning, dependency
+  selection, vulnerability response, license compliance.
+
+** Playbooks
+
+- [[file:../../playbooks/security-review/README.org][Security Review Playbook]] — Security review workflow with
+  scoping, threat modeling (STRIDE) and remediation.
+
+** Checklists
+
+- [[file:../../checklists/security-review.org][Security Review Checklist]] — General security verification
+  for any project.
+- [[file:../../checklists/rails/security-review.org][Rails Security Review Checklist]] — Rails-specific security
+  verification.
+
+** Learning Paths
+
+- [[file:../../learning-paths/security/README.org][Security Learning Paths]] — Beginner, intermediate and
+  advanced tracks for security engineering.
+
+** References
+
+- [[file:../../references/security/README.org][Security References]] — Quick lookup: OWASP Top 10, STRIDE,
+  tools, response timeline, security headers.
+
+** AI Workflows
+
+- [[file:../../prompts/security-ai-workflows.org][AI Workflows for Security]] — Prompt patterns for
+  vulnerability identification, threat modeling, configuration
+  review and incident analysis.
+
 * Related Documents
 
 - [[file:../../glossary/security/README.org][Security Glossary]]

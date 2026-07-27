@@ -1,0 +1,37 @@
+#+TITLE: Engineering Guides
+#+AUTHOR: Engineering
+#+DATE: 2026-07-27
+#+DESCRIPTION: Index of engineering fundamentals guides
+#+STARTUP: overview indent
+
+* Purpose
+
+This directory contains guides for engineering fundamentals.
+
+Guides explain *how* focused engineering concepts work. They build on
+the principles in the [[file:../../handbooks/engineering/README.org][Engineering Fundamentals Handbook]].
+
+* Guides
+
+| Guide                                                         | Description                              |
++--------------------------------------------------------------+------------------------------------------+
+| [[file:./code-organization.org][Code Organization]]            | Principles and patterns for structuring  |
+|                                                              | code: feature-based packaging, module    |
+|                                                              | boundaries, dependency flow.             |
++--------------------------------------------------------------+------------------------------------------+
+| [[file:./error-handling.org][Error Handling]]                  | Principles for handling errors:          |
+|                                                              | recoverable vs unrecoverable, patterns,  |
+|                                                              | logging anti-patterns.                   |
++--------------------------------------------------------------+------------------------------------------+
+| [[file:./testing-strategies.org][Testing Strategies]]            | Test pyramid, what to test, test doubles,|
+|                                                              | anti-patterns for sustainable testing.   |
++--------------------------------------------------------------+------------------------------------------+
+| [[file:./logging.org][Logging]]                               | Structured logging standards, log levels,|
+|                                                              | context fields and anti-patterns.        |
++--------------------------------------------------------------+------------------------------------------+
+
+* Related Documents
+
+- [[file:../../handbooks/engineering/README.org][Engineering Fundamentals Handbook]]
+- [[file:../../references/engineering/README.org][Engineering References]]
+- [[file:../../glossary/engineering/README.org][Engineering Glossary]]

@@ -1,0 +1,44 @@
+#+TITLE: Checklists
+#+AUTHOR: Engineering
+#+DATE: 2026-07-27
+#+DESCRIPTION: Index of operational checklists
+#+STARTUP: overview indent
+
+* Purpose
+
+This directory contains verification checklists for common engineering
+tasks.
+
+Checklists ensure that important steps are not missed during recurring
+operations. Each checklist focuses on a specific activity.
+
+* Checklists
+
+| Checklist                                                      | Description                               |
++---------------------------------------------------------------+-------------------------------------------+
+| [[file:./architecture-review.org][Architecture Review]]           | Pre-review, during-review and post-review |
+|                                                               | verification for architecture reviews.    |
++---------------------------------------------------------------+-------------------------------------------+
+| [[file:./design-decision.org][Design Decision]]                   | Before, during and after verification for |
+|                                                               | making and documenting design decisions.  |
++---------------------------------------------------------------+-------------------------------------------+
+| [[file:./tech-debt-assessment.org][Technical Debt Assessment]]     | Identification, classification, tracking  |
+|                                                               | and remediation planning for tech debt.   |
++---------------------------------------------------------------+-------------------------------------------+
+| [[file:./security-review.org][Security Review]]                   | Authentication, authorization, input      |
+|                                                               | validation, output protection, data       |
+|                                                               | protection, dependencies and logging.     |
++---------------------------------------------------------------+-------------------------------------------+
+
+* Capability-Specific Checklists
+
+| Directory                                                    | Purpose                    |
++-------------------------------------------------------------+----------------------------+
+| [[file:../checklists/rails/README.org][Rails Checklists]]      | Rails-specific checklists. |
++-------------------------------------------------------------+----------------------------+
+
+* Related Documents
+
+- [[file:../handbooks/engineering/README.org][Engineering Fundamentals Handbook]]
+- [[file:../playbooks/code-review/README.org][Code Review Playbook]]
+- [[file:../playbooks/architecture-review/README.org][Architecture Review Playbook]]

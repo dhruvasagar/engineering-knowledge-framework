@@ -1,0 +1,44 @@
+#+TITLE: Rails Guides
+#+AUTHOR: Engineering
+#+DATE: 2026-07-27
+#+DESCRIPTION: Index of Rails guides
+#+STARTUP: overview indent
+
+* Purpose
+
+This directory contains guides for Rails development topics.
+
+Guides explain *how* focused concepts work. They build on the
+principles in the [[file:../../handbooks/rails/README.org][Rails Engineering Handbook]].
+
+* Guides
+
+| Guide                                                                  | Description                               |
++------------------------------------------------------------------------+-------------------------------------------+
+| [[file:./service-objects.org][Service Objects]]                       | When and how to use service objects.      |
++------------------------------------------------------------------------+-------------------------------------------+
+| [[file:./testing.org][Testing Rails Applications]]                 | Test distribution, model/request/system   |
+|                                                                        | specs, factory patterns.                  |
++------------------------------------------------------------------------+-------------------------------------------+
+| [[file:./audit-guide.org][Rails Audit Guide]]                       | Systematic code quality, performance,     |
+|                                                                        | database and security auditing.           |
++------------------------------------------------------------------------+-------------------------------------------+
+| [[file:./project-standards.org][Rails Project Standards]]              | Mandatory tooling and CI/CD baseline      |
+|                                                                        | for every Rails project.                  |
++------------------------------------------------------------------------+-------------------------------------------+
+| [[file:./active-record.org][ActiveRecord Patterns]]                   | Scopes, query optimization, N+1           |
+|                                                                        | prevention, indexing.                     |
++------------------------------------------------------------------------+-------------------------------------------+
+| [[file:./api-development.org][API Development with Rails]]         | API-only setup, serialization, versioning.|
++------------------------------------------------------------------------+-------------------------------------------+
+| [[file:./background-jobs.org][Background Jobs]]                       | Framework selection, job design, error    |
+|                                                                        | handling, monitoring.                     |
++------------------------------------------------------------------------+-------------------------------------------+
+| [[file:./authentication-authorization.org][Authentication and Auth.]]| Devise, Pundit, roles, anti-patterns.     |
++------------------------------------------------------------------------+-------------------------------------------+
+
+* Related Documents
+
+- [[file:../../handbooks/rails/README.org][Rails Engineering Handbook]]
+- [[file:../../playbooks/rails/README.org][Rails Playbooks]]
+- [[file:../../templates/rails/README.org][Rails Templates]]

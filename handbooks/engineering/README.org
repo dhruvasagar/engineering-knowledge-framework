@@ -390,6 +390,47 @@ AI systems are more effective when provided with:
 See the [[file:../../handbooks/ai/README.org][AI Engineering Handbook]] for detailed guidance on AI
 workflows and context engineering.
 
+* Capability Map
+
+This handbook is the entry point for the Engineering Fundamentals
+capability. The following documents form the complete capability:
+
+** Handbooks
+
+- [[file:./README.org][Engineering Fundamentals Handbook]] — This document. Core
+  engineering principles, quality philosophy and decision frameworks.
+
+** Glossaries
+
+- [[file:../../glossary/engineering/README.org][Engineering Glossary]] — Foundational terminology (abstraction,
+  cohesion, coupling, encapsulation, separation of concerns, etc.).
+
+** Guides
+
+- [[file:../../guides/engineering/code-organization.org][Code Organization]] — Feature-based packaging, module
+  boundaries, dependency flow, anti-patterns.
+- [[file:../../guides/engineering/error-handling.org][Error Handling]] — Recoverable vs unrecoverable errors,
+  patterns, logging standards, anti-patterns.
+- [[file:../../guides/engineering/testing-strategies.org][Testing Strategies]] — Test pyramid, what to test, test
+  doubles, sustainable testing practices.
+- [[file:../../guides/engineering/logging.org][Logging]] — Structured logging standards, log levels,
+  context fields, anti-patterns.
+
+** Learning Paths
+
+- [[file:../../learning-paths/engineering/README.org][Engineering Learning Paths]] — Beginner, intermediate and
+  advanced tracks for engineering fundamentals.
+
+** References
+
+- [[file:../../references/engineering/README.org][Engineering References]] — Quick lookup: design principles,
+  patterns, testing, logging, error handling.
+
+** AI Workflows
+
+- [[file:../../prompts/engineering-ai-workflows.org][AI Workflows for Engineering]] — Prompt patterns for code
+  review, design exploration, refactoring, documentation.
+
 * Related Documents
 
 - [[file:../../glossary/engineering/README.org][Engineering Glossary]]

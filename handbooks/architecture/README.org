@@ -335,6 +335,63 @@ When using AI for architectural work, provide:
 
 See the [[file:../../handbooks/ai/README.org][AI Engineering Handbook]] for detailed AI workflow guidance.
 
+* Capability Map
+
+This handbook is the entry point for the Software Architecture
+capability. The following documents form the complete capability:
+
+** Handbooks
+
+- [[file:./README.org][Software Architecture Handbook]] — This document. Principles,
+  patterns, decision frameworks and documentation standards.
+
+** Glossaries
+
+- [[file:../../glossary/architecture/README.org][Architecture Glossary]] — Terminology (ADR, C4, DDD, hexagonal
+  architecture, quality attributes, trade-offs).
+
+** Guides
+
+- [[file:../../guides/architecture/adr-writing-guide.org][ADR Writing Guide]] — When and how to write ADRs, lifecycle,
+  characteristics of good ADRs, common mistakes.
+- [[file:../../guides/architecture/architectural-patterns.org][Architectural Patterns]] — Pattern catalogue with trade-offs
+  and selection guidance.
+- [[file:../../guides/architecture/api-design.org][API Design]] — RESTful conventions, versioning, status codes,
+  error formats.
+- [[file:../../guides/architecture/system-modeling.org][System Modeling]] — C4 model levels, event modeling
+  techniques and workshop format.
+
+** Playbooks
+
+- [[file:../../playbooks/architecture-review/README.org][Architecture Review Playbook]] — Review workflow with
+  scope, team assembly, evaluation criteria.
+
+** Checklists
+
+- [[file:../../checklists/architecture-review.org][Architecture Review Checklist]] — Pre, during and
+  post-review verification.
+
+** Templates
+
+- [[file:../../templates/adr/README.org][ADR Template]] — Standard format for Architecture Decision
+  Records.
+- [[file:../../templates/rfc/README.org][RFC Template]] — Format for major architectural proposals.
+
+** Learning Paths
+
+- [[file:../../learning-paths/architecture/README.org][Architecture Learning Paths]] — Beginner, intermediate and
+  advanced tracks for software architecture.
+
+** References
+
+- [[file:../../references/architecture/README.org][Architecture References]] — Quick lookup: C4 model, pattern
+  comparison, HTTP codes, quality attributes, ADR lifecycle.
+
+** AI Workflows
+
+- [[file:../../prompts/architecture-ai-workflows.org][AI Workflows for Architecture]] — Prompt patterns for
+  trade-off analysis, ADR drafting, pattern selection and review.
+
 * Related Documents
 
 - [[file:../../glossary/architecture/README.org][Architecture Glossary]]
