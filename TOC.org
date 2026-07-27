@@ -252,6 +252,13 @@ The foundational documents that define the framework itself.
 |---------------------+-----------------------------------------------------|
 | [[file:./references/security/README.org][Security References]] | Quick lookup: OWASP Top 10, STRIDE, tools, headers. |
 
+*** Templates
+
+| Document                           | Description                                           |
+|------------------------------------+-------------------------------------------------------|
+| [[file:./templates/security/threat-model.org][Threat Model Template]]        | Structured threat model document using STRIDE.        |
+| [[file:./templates/security/security-review-report.org][Security Review Report]]       | Findings report for security review outcomes.          |
+
 *** AI Workflows
 
 | Document                  | Description                                            |
@@ -280,6 +287,30 @@ The foundational documents that define the framework itself.
 | [[file:./guides/quality/quality-metrics.org][Quality Metrics]]           | Code quality and process metrics, implementation, pitfalls.     |
 | [[file:./guides/quality/technical-debt-management.org][Technical Debt Management]] | Classification, assessment, management process.                 |
 
+*** Playbooks
+
+| Document                                   | Description                                          |
+|--------------------------------------------+------------------------------------------------------|
+| [[file:./playbooks/quality/quality-review.org][Quality Review Playbook]]          | Systematic quality assessment and reporting.         |
+| [[file:./playbooks/quality/tech-debt-remediation.org][Technical Debt Remediation]]      | Workflow for managing and reducing technical debt.   |
+| [[file:./playbooks/quality/release-quality-gate.org][Release Quality Gate]]            | Quality verification before production release.     |
+
+*** Checklists
+
+| Document                                | Description                                             |
+|-----------------------------------------+---------------------------------------------------------|
+| [[file:./checklists/quality/quality-gate.org][Quality Gate Checklist]]         | Verification before accepting changes.                  |
+| [[file:./checklists/quality/release-readiness.org][Release Readiness Checklist]]  | Verification before production release.                 |
+| [[file:./checklists/quality/tech-debt-triage.org][Technical Debt Triage]]        | Classification and prioritisation of technical debt.    |
+
+*** Templates
+
+| Document                              | Description                                              |
+|---------------------------------------+----------------------------------------------------------|
+| [[file:./templates/quality/quality-report.org][Quality Report Template]]     | Standard format for quality review reports.              |
+| [[file:./templates/quality/tech-debt-register.org][Technical Debt Register]]      | Track and monitor technical debt items.                  |
+| [[file:./templates/quality/quality-dashboard.org][Quality Dashboard Template]]  | Template for tracking quality metrics.                   |
+
 *** Learning Paths
 
 | Document                           | Description                            |
@@ -291,6 +322,12 @@ The foundational documents that define the framework itself.
 | Document                       | Description                                            |
 |--------------------------------+--------------------------------------------------------|
 | [[file:./references/quality/README.org][Engineering Quality References]] | Quick lookup: gates, metrics targets, severity labels. |
+
+*** AI Workflows
+
+| Document                       | Description                                            |
+|--------------------------------+--------------------------------------------------------|
+| [[file:./prompts/quality-ai-workflows.org][AI Workflows for Quality]] | Prompt patterns for quality review, debt analysis, testing. |
 
 ** AI Engineering
 
@@ -313,12 +350,34 @@ The foundational documents that define the framework itself.
 | [[file:./guides/ai/prompt-engineering.org][Prompt Engineering]]         | Principles, patterns (persona, format, constraint, verification) and anti-patterns. |
 | [[file:./guides/ai/context-engineering.org][Context Engineering]]        | Context categories, templates for code, review and design.                          |
 | [[file:./guides/ai/ai-safety.org][AI Safety and Verification]] | Human oversight, high-risk use cases, prohibited uses, verification practices.      |
+| [[file:./guides/ai/agentic-workflows.org][Agentic Workflows]]           | Multi-step AI-assisted engineering workflow patterns.                               |
+| [[file:./guides/ai/collaboration-patterns.org][AI Collaboration Patterns]]  | How engineers and AI should interact in different contexts.                         |
+| [[file:./guides/ai/human-review-strategies.org][Human Review Strategies]]     | When and how to review AI output effectively.                                       |
+| [[file:./guides/ai/evaluation-frameworks.org][AI Evaluation Frameworks]]     | Frameworks for measuring AI output quality and reliability.                         |
+| [[file:./guides/ai/knowledge-extraction.org][Knowledge Extraction]]        | Using AI to extract and structure engineering knowledge.                            |
+
+*** Playbooks
+
+| Document                        | Description                                              |
+|---------------------------------+----------------------------------------------------------|
+| [[file:./playbooks/ai/ai-assisted-code-review.org][AI-Assisted Code Review]]       | Workflow for reviewing code with AI assistance.          |
+| [[file:./playbooks/ai/ai-assisted-architecture-review.org][AI-Assisted Architecture Review]]| Workflow for architecture review with AI assistance.     |
+| [[file:./playbooks/ai/ai-pair-programming.org][AI Pair Programming]]           | Workflow for collaborative coding with AI.               |
+| [[file:./playbooks/ai/verification-workflows.org][Verification Workflows]]        | Systematic verification of AI-generated output.          |
 
 *** Checklists
 
 | Document           | Description                                                          |
 |--------------------+----------------------------------------------------------------------|
 | [[file:./checklists/ai-usage.org][AI Usage Checklist]] | Verification checklist for AI-generated code, docs and architecture. |
+
+*** Templates
+
+| Document                        | Description                                              |
+|---------------------------------+----------------------------------------------------------|
+| [[file:./templates/ai/context-pack.org][Context Pack Template]]          | Structure for assembling AI context packs.               |
+| [[file:./templates/ai/prompt-template.org][Prompt Template]]                | Standard prompt structure for engineering AI.            |
+| [[file:./templates/ai/ai-review-response.org][AI Review Response Template]]    | Format for documenting AI review findings.               |
 
 *** Learning Paths
 
@@ -331,6 +390,76 @@ The foundational documents that define the framework itself.
 | Document                  | Description                                                         |
 |---------------------------+---------------------------------------------------------------------|
 | [[file:./references/ai/README.org][AI Engineering References]] | Quick lookup: workflow patterns, context categories, failure modes. |
+
+*** AI Workflows
+
+| Document                        | Description                                              |
+|---------------------------------+----------------------------------------------------------|
+| [[file:./prompts/ai-ai-workflows.org][AI Workflows for AI Engineering]]  | Prompt patterns for AI-assisted AI engineering tasks.    |
+
+** Accessibility Engineering
+
+*** Handbooks
+
+| Document                                  | Description                                           |
+|-------------------------------------------+-------------------------------------------------------|
+| [[file:./handbooks/accessibility/README.org][Accessibility Engineering Handbook]] | Principles, WCAG standards, testing, AI integration.  |
+
+*** Glossaries
+
+| Document                | Description                                            |
+|-------------------------+--------------------------------------------------------|
+| [[file:./glossary/accessibility/README.org][Accessibility Glossary]] | Terminology (WCAG, ARIA, screen reader, colour contrast). |
+
+*** Guides
+
+| Document                               | Description                                          |
+|----------------------------------------+------------------------------------------------------|
+| [[file:./guides/accessibility/semantic-html.org][Semantic HTML]]              | Using HTML elements for their intended purpose.      |
+| [[file:./guides/accessibility/keyboard-accessibility.org][Keyboard Accessibility]]    | Ensuring full keyboard operability.                  |
+| [[file:./guides/accessibility/accessible-forms.org][Accessible Forms]]           | Building forms that work for everyone.               |
+| [[file:./guides/accessibility/aria-patterns.org][ARIA Patterns]]              | Using ARIA correctly for custom widgets.             |
+| [[file:./guides/accessibility/colour-and-contrast.org][Colour and Contrast]]       | Meeting colour contrast requirements.                |
+| [[file:./guides/accessibility/screen-reader-testing.org][Screen Reader Testing]]    | Testing with assistive technologies.                 |
+
+*** Playbooks
+
+| Document                                  | Description                                           |
+|-------------------------------------------+-------------------------------------------------------|
+| [[file:./playbooks/accessibility-review/README.org][Accessibility Review Playbook]] | Workflow for reviewing digital accessibility.          |
+
+*** Checklists
+
+| Document                                  | Description                                           |
+|-------------------------------------------+-------------------------------------------------------|
+| [[file:./checklists/accessibility/wcag-audit.org][WCAG Audit Checklist]]       | Comprehensive WCAG compliance audit.                  |
+| [[file:./checklists/accessibility/pr-review.org][PR Accessibility Checklist]] | Quick accessibility checks for every pull request.    |
+| [[file:./checklists/accessibility/design-review.org][Design Review Checklist]]   | Accessibility checks during the design phase.         |
+
+*** Templates
+
+| Document                                        | Description                                    |
++-------------------------------------------------+------------------------------------------------+
+| [[file:./templates/accessibility/accessibility-report.org][Accessibility Report]]    | Standard format for accessibility audit findings.|
+| [[file:./templates/accessibility/accessibility-statement.org][Accessibility Statement]] | Public-facing accessibility statement.          |
+
+*** Learning Paths
+
+| Document                                  | Description                                           |
+|-------------------------------------------+-------------------------------------------------------|
+| [[file:./learning-paths/accessibility/README.org][Accessibility Learning Paths]] | Beginner/intermediate/advanced tracks.                |
+
+*** References
+
+| Document                                  | Description                                           |
+|-------------------------------------------+-------------------------------------------------------|
+| [[file:./references/accessibility/README.org][Accessibility References]] | Quick lookup: WCAG levels, contrast ratios, ARIA landmarks. |
+
+*** AI Workflows
+
+| Document                                  | Description                                           |
+|-------------------------------------------+-------------------------------------------------------|
+| [[file:./prompts/accessibility-ai-workflows.org][AI Workflows for Accessibility]] | Prompt patterns for auditing, remediation and testing.|
 
 * Cross-Cutting Topics
 
@@ -402,6 +531,25 @@ The following indexes gather documents across capabilities by topic.
 | Rails       | [[file:./checklists/rails/deployment.org][Rails Deployment Checklist]] | Checklist | Pre/post-deploy verification.      |
 | Engineering | [[file:./checklists/tech-debt-assessment.org][Tech Debt Assessment]]       | Checklist | Debt identification and tracking.  |
 
+** Quality
+
+| Capability | Document                         | Type      | Description                           |
+|------------+----------------------------------+-----------+---------------------------------------|
+| Quality    | [[file:./handbooks/quality/README.org][Engineering Quality Handbook]]     | Handbook  | Quality principles, gates, metrics.   |
+| Quality    | [[file:./guides/quality/code-review-standards.org][Code Review Standards]]              | Guide     | Review velocity, what to review.      |
+| Quality    | [[file:./guides/quality/quality-metrics.org][Quality Metrics]]                    | Guide     | Code quality and process metrics.     |
+| Quality    | [[file:./guides/quality/technical-debt-management.org][Technical Debt Management]]            | Guide     | Debt classification and management.   |
+| Quality    | [[file:./playbooks/quality/quality-review.org][Quality Review Playbook]]             | Playbook  | Systematic quality assessment.        |
+| Quality    | [[file:./playbooks/quality/tech-debt-remediation.org][Technical Debt Remediation]]           | Playbook  | Managing and reducing technical debt. |
+| Quality    | [[file:./playbooks/quality/release-quality-gate.org][Release Quality Gate]]                | Playbook  | Quality verification before release.  |
+| Quality    | [[file:./checklists/quality/quality-gate.org][Quality Gate Checklist]]              | Checklist | Verification before accepting changes.| 
+| Quality    | [[file:./checklists/quality/release-readiness.org][Release Readiness Checklist]]          | Checklist | Verification before production release.|
+| Quality    | [[file:./checklists/quality/tech-debt-triage.org][Technical Debt Triage]]               | Checklist | Classification and prioritisation.    |
+| Quality    | [[file:./templates/quality/quality-report.org][Quality Report Template]]              | Template  | Standard quality review report format.|
+| Quality    | [[file:./templates/quality/tech-debt-register.org][Technical Debt Register]]              | Template  | Track and monitor technical debt.     |
+| Quality    | [[file:./templates/quality/quality-dashboard.org][Quality Dashboard Template]]           | Template  | Track quality metrics over time.      |
+| Quality    | [[file:./prompts/quality-ai-workflows.org][AI Workflows for Quality]]             | AI Work   | Prompt patterns for quality review.   |
+
 ** AI and Engineering
 
 | Capability     | Document                      | Type      | Description                             |
@@ -412,7 +560,19 @@ The following indexes gather documents across capabilities by topic.
 |                |                               |           | design.                                 |
 |                | [[file:./guides/ai/context-engineering.org][Context Engineering]]           | Guide     | Providing effective context to AI.      |
 |                | [[file:./guides/ai/ai-safety.org][AI Safety and Verification]]    | Guide     | Safe and responsible AI use practices.  |
+|                | [[file:./guides/ai/agentic-workflows.org][Agentic Workflows]]             | Guide     | Multi-step AI-assisted workflows.       |
+|                | [[file:./guides/ai/collaboration-patterns.org][AI Collaboration Patterns]]    | Guide     | Engineer-AI interaction models.         |
+|                | [[file:./guides/ai/human-review-strategies.org][Human Review Strategies]]      | Guide     | Reviewing AI output effectively.        |
+|                | [[file:./guides/ai/evaluation-frameworks.org][AI Evaluation Frameworks]]     | Guide     | Measuring AI output quality.            |
+|                | [[file:./guides/ai/knowledge-extraction.org][Knowledge Extraction]]         | Guide     | Extracting knowledge with AI.           |
+|                | [[file:./playbooks/ai/ai-assisted-code-review.org][AI-Assisted Code Review]]      | Playbook  | AI-assisted code review workflow.       |
+|                | [[file:./playbooks/ai/ai-assisted-architecture-review.org][AI-Assisted Architecture Review]]| Playbook  | AI-assisted architecture review.        |
+|                | [[file:./playbooks/ai/ai-pair-programming.org][AI Pair Programming]]          | Playbook  | Collaborative coding with AI.           |
+|                | [[file:./playbooks/ai/verification-workflows.org][Verification Workflows]]       | Playbook  | Systematic AI output verification.      |
 |                | [[file:./checklists/ai-usage.org][AI Usage Checklist]]            | Checklist | Verification for AI-generated output.   |
+|                | [[file:./templates/ai/context-pack.org][Context Pack Template]]         | Template  | Structure for AI context packs.         |
+|                | [[file:./templates/ai/prompt-template.org][Prompt Template]]               | Template  | Standard prompt structure.              |
+|                | [[file:./references/ai/README.org][AI Engineering References]]     | Reference | Workflow patterns, failure modes.       |
 |----------------+-------------------------------+-----------+-----------------------------------------|
 | Engineering    | [[file:./prompts/engineering-ai-workflows.org][AI Workflows for Engineering]]  | AI Work   | Prompt patterns for code review, design |
 |                |                               |           | exploration, refactoring.               |
@@ -426,6 +586,11 @@ The following indexes gather documents across capabilities by topic.
 | Security       | [[file:./prompts/security-ai-workflows.org][AI Workflows for Security]]     | AI Work   | Prompt patterns for vulnerability ID,   |
 |                |                               |           | threat modeling.                        |
 |----------------+-------------------------------+-----------+-----------------------------------------|
+| Quality        | [[file:./prompts/quality-ai-workflows.org][AI Workflows for Quality]]      | AI Work   | Prompt patterns for quality review.     |
+|----------------+-------------------------------+-----------+-----------------------------------------|
+| Accessibility  | [[file:./prompts/accessibility-ai-workflows.org][AI Workflows for Accessibility]]| AI Work   | Prompt patterns for accessibility.      |
+|----------------+-------------------------------+-----------+-----------------------------------------|
+| AI Engineering | [[file:./prompts/ai-ai-workflows.org][AI Workflows for AI Engineering]]| AI Work   | Prompt patterns for AI engineering.     |
 
 * Related Documents
 
