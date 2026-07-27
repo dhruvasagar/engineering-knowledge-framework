@@ -83,27 +83,27 @@ The author presents:
 Reviewers evaluate the proposal against:
 
 | Criterion                        | Questions                                                    |
-+----------------------------------+--------------------------------------------------------------+
+|----------------------------------+--------------------------------------------------------------|
 | Problem alignment                | Does the proposal solve the stated problem? Is the problem   |
 |                                  | correctly understood?                                        |
-+----------------------------------+--------------------------------------------------------------+
+|----------------------------------+--------------------------------------------------------------|
 | Principle alignment              | Is the proposal consistent with engineering and architecture |
 |                                  | principles? Does it follow separation of concerns,            |
 |                                  | encapsulation and dependency management?                     |
-+----------------------------------+--------------------------------------------------------------+
+|----------------------------------+--------------------------------------------------------------|
 | Quality attributes               | Are the relevant quality attributes addressed (performance,  |
 |                                  | scalability, security, maintainability, evolvability)?       |
 |                                  | Are trade-offs explicitly acknowledged?                      |
-+----------------------------------+--------------------------------------------------------------+
+|----------------------------------+--------------------------------------------------------------|
 | Alternatives                     | Were meaningful alternatives considered? Is the chosen       |
 |                                  | approach justified relative to the alternatives?             |
-+----------------------------------+--------------------------------------------------------------+
+|----------------------------------+--------------------------------------------------------------|
 | Consequences                     | Are the consequences (both positive and negative) fully      |
 |                                  | understood? Are there hidden dependencies or risks?          |
-+----------------------------------+--------------------------------------------------------------+
+|----------------------------------+--------------------------------------------------------------|
 | Documentation                    | Is the decision adequately documented? Can a future engineer |
 |                                  | understand the reasoning?                                    |
-+----------------------------------+--------------------------------------------------------------+
+|----------------------------------+--------------------------------------------------------------|
 
 **** Decision and Next Steps (10-15 minutes)
 

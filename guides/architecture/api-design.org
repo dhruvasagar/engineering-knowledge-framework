@@ -104,7 +104,7 @@ relationships, but limit to one level of nesting.
 Use standard HTTP status codes consistently.
 
 | Code | Meaning           | When to Use                                |
-+------+-------------------+--------------------------------------------+
+|------+-------------------+--------------------------------------------|
 | 200  | OK                | Successful GET, PUT, PATCH.                |
 | 201  | Created           | Successful POST (include Location header). |
 | 204  | No Content        | Successful DELETE.                         |

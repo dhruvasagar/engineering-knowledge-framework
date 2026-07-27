@@ -104,17 +104,17 @@ If authorization is not explicitly granted, it should be denied.
 Encode output according to the context where it will be used:
 
 | Context      | Encoding                  |
-+--------------+---------------------------+
+|--------------+---------------------------|
 | HTML body    | HTML entity encode.       |
-+--------------+---------------------------+
+|--------------+---------------------------|
 | HTML attribute| HTML attribute encode.   |
-+--------------+---------------------------+
+|--------------+---------------------------|
 | JavaScript   | JavaScript escape.        |
-+--------------+---------------------------+
+|--------------+---------------------------|
 | URL          | URL encoding.              |
-+--------------+---------------------------+
+|--------------+---------------------------|
 | SQL          | Parameterized queries.    |
-+--------------+---------------------------+
+|--------------+---------------------------|
 
 Frameworks like Rails handle most output encoding automatically. Be
 careful when bypassing it with =.html_safe= or =raw=.
