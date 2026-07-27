@@ -1,0 +1,335 @@
+#+TITLE: Table of Contents
+#+AUTHOR: Engineering
+#+DATE: 2026-07-27
+#+DESCRIPTION: Complete index of the Engineering Knowledge Framework
+#+STARTUP: overview indent
+
+* How to Use This TOC
+
+This document provides two complementary views of the repository:
+
+- **From Top to Bottom**: Complete inventory organized by capability
+  and document type — for when you know which capability you need.
+- **Cross-Cutting Topics**: Topic-based indexes that gather documents
+  across capabilities — for when you know what you need but not
+  where it lives.
+
+* From Top to Bottom
+
+** Governance
+
+The foundational documents that define the framework itself.
+
+| Document | Description |
+|----------+-------------|
+| [[file:./CLAUDE.md][CLAUDE.md]] | AI-specific project instructions for coding agents. |
+| [[file:./README.org][README.org]] | Repository overview, mission, vision and philosophy. |
+| [[file:./STRATEGY.org][Strategy]] | Long-term vision and guiding strategy. |
+| [[file:./ROADMAP.org][Roadmap]] | Strategic roadmap and phase progression. |
+| [[file:./ARCHITECTURE.org][Architecture]] | Repository architecture and knowledge organization. |
+| [[file:./DOCUMENT_TYPES.org][Document Types]] | Canonical document taxonomy. |
+| [[file:./STYLE_GUIDE.org][Style Guide]] | Writing, formatting and documentation standards. |
+| [[file:./WRITING_PRINCIPLES.org][Writing Principles]] | Philosophy behind effective engineering documentation. |
+| [[file:./CONTRIBUTING.org][Contributing]] | Contribution guidelines and workflows. |
+| [[file:./CHANGELOG.org][Changelog]] | Version history of the framework. |
+| [[file:./TOC.org][TOC.org]] | This document — table of contents and indexes. |
+
+** Engineering Fundamentals
+
+*** Handbooks
+
+| Document | Description |
+|----------+-------------|
+| [[file:./handbooks/engineering/README.org][Engineering Fundamentals Handbook]] | Core principles, quality philosophy, decision frameworks. |
+
+*** Glossaries
+
+| Document | Description |
+|----------+-------------|
+| [[file:./glossary/engineering/README.org][Engineering Glossary]] | Foundational terminology (abstraction, coupling, cohesion, etc.). |
+
+*** Guides
+
+| Document | Description |
+|----------+-------------|
+| [[file:./guides/engineering/code-organization.org][Code Organization]] | Feature-based packaging, module boundaries, anti-patterns. |
+| [[file:./guides/engineering/error-handling.org][Error Handling]] | Recoverable vs unrecoverable errors, patterns, logging. |
+| [[file:./guides/engineering/testing-strategies.org][Testing Strategies]] | Test pyramid, what to test, test doubles, anti-patterns. |
+| [[file:./guides/engineering/logging.org][Logging]] | Structured logging, log levels, context fields, anti-patterns. |
+
+*** Learning Paths
+
+| Document | Description |
+|----------+-------------|
+| [[file:./learning-paths/engineering/README.org][Engineering Learning Paths]] | Beginner/intermediate/advanced tracks. |
+
+*** References
+
+| Document | Description |
+|----------+-------------|
+| [[file:./references/engineering/README.org][Engineering References]] | Quick lookup: principles, patterns, testing, logging. |
+
+*** AI Workflows
+
+| Document | Description |
+|----------+-------------|
+| [[file:./prompts/engineering-ai-workflows.org][AI Workflows for Engineering]] | Prompt patterns for code review, refactoring, diagnosis. |
+
+** Software Architecture
+
+*** Handbooks
+
+| Document | Description |
+|----------+-------------|
+| [[file:./handbooks/architecture/README.org][Software Architecture Handbook]] | Principles, patterns, decision frameworks, ADRs. |
+
+*** Glossaries
+
+| Document | Description |
+|----------+-------------|
+| [[file:./glossary/architecture/README.org][Architecture Glossary]] | Terminology (ADR, C4, DDD, hexagonal, trade-offs). |
+
+*** Guides
+
+| Document | Description |
+|----------+-------------|
+| [[file:./guides/architecture/adr-writing-guide.org][ADR Writing Guide]] | When and how to write Architecture Decision Records. |
+| [[file:./guides/architecture/architectural-patterns.org][Architectural Patterns]] | Pattern catalogue with trade-offs and selection guidance. |
+| [[file:./guides/architecture/api-design.org][API Design]] | RESTful conventions, versioning, error formats. |
+| [[file:./guides/architecture/system-modeling.org][System Modeling]] | C4 model levels, event modeling techniques. |
+
+*** Playbooks
+
+| Document | Description |
+|----------+-------------|
+| [[file:./playbooks/architecture-review/README.org][Architecture Review Playbook]] | Review workflow, team assembly, evaluation criteria. |
+
+*** Checklists
+
+| Document | Description |
+|----------+-------------|
+| [[file:./checklists/architecture-review.org][Architecture Review Checklist]] | Pre, during and post-review verification. |
+| [[file:./checklists/design-decision.org][Design Decision Checklist]] | Before, during and after design decision verification. |
+
+*** Templates
+
+| Document | Description |
+|----------+-------------|
+| [[file:./templates/adr/README.org][ADR Template]] | Standard format for Architecture Decision Records. |
+| [[file:./templates/rfc/README.org][RFC Template]] | Format for major architectural proposals. |
+
+*** Learning Paths
+
+| Document | Description |
+|----------+-------------|
+| [[file:./learning-paths/architecture/README.org][Architecture Learning Paths]] | Beginner/intermediate/advanced tracks. |
+
+*** References
+
+| Document | Description |
+|----------+-------------|
+| [[file:./references/architecture/README.org][Architecture References]] | Quick lookup: C4, pattern comparison, HTTP codes. |
+
+*** AI Workflows
+
+| Document | Description |
+|----------+-------------|
+| [[file:./prompts/architecture-ai-workflows.org][AI Workflows for Architecture]] | Prompt patterns for trade-off analysis, ADR drafting. |
+
+** Rails Engineering
+
+*** Handbooks
+
+| Document | Description |
+|----------+-------------|
+| [[file:./handbooks/rails/README.org][Rails Engineering Handbook]] | Principles, standards, patterns, decision frameworks. |
+
+*** Glossaries
+
+| Document | Description |
+|----------+-------------|
+| [[file:./glossary/rails/README.org][Rails Glossary]] | Terminology (ActiveRecord, controller, service object, etc.). |
+
+*** Guides
+
+| Document | Description |
+|----------+-------------|
+| [[file:./guides/rails/service-objects.org][Service Objects]] | When and how to use service objects, patterns, testing. |
+| [[file:./guides/rails/testing.org][Testing Rails Applications]] | Test distribution, model/request/system specs. |
+| [[file:./guides/rails/audit-guide.org][Rails Audit Guide]] | Systematic code quality, performance and security auditing. |
+| [[file:./guides/rails/project-standards.org][Rails Project Standards]] | Mandatory tooling and CI/CD baseline for every project. |
+| [[file:./guides/rails/active-record.org][ActiveRecord Patterns]] | Scopes, query optimization, N+1 prevention, indexing. |
+| [[file:./guides/rails/api-development.org][API Development with Rails]] | API-only setup, serialization, versioning, auth. |
+| [[file:./guides/rails/background-jobs.org][Background Jobs]] | Framework selection, job design, error handling, monitoring. |
+| [[file:./guides/rails/authentication-authorization.org][Authentication and Authorization]] | Devise, Pundit, roles, anti-patterns. |
+
+*** Playbooks
+
+| Document | Description |
+|----------+-------------|
+| [[file:./playbooks/rails/upgrade.org][Rails Upgrade Playbook]] | Step-by-step version upgrade with rollback plan. |
+| [[file:./playbooks/rails/deployment.org][Rails Deployment Playbook]] | Safe deployment with migration safety, zero-downtime. |
+
+*** Checklists
+
+| Document | Description |
+|----------+-------------|
+| [[file:./checklists/rails/pull-request.org][Rails Pull Request Checklist]] | Code quality, testing, security, migration safety. |
+| [[file:./checklists/rails/security-review.org][Rails Security Review Checklist]] | Auth, data protection, dependency, infrastructure. |
+| [[file:./checklists/rails/deployment.org][Rails Deployment Checklist]] | Pre-deploy, migration safety, post-deploy verification. |
+
+*** Templates
+
+| Document | Description |
+|----------+-------------|
+| [[file:./templates/rails/service-object.org][Service Object Template]] | Reusable pattern with result object. |
+| [[file:./templates/rails/form-object.org][Form Object Template]] | ActiveModel integration for complex forms. |
+| [[file:./templates/rails/query-object.org][Query Object Template]] | Composable scope chaining. |
+| [[file:./templates/rails/policy-object.org][Policy Object Template]] | Authorization with Pundit conventions. |
+
+*** Learning Paths
+
+| Document | Description |
+|----------+-------------|
+| [[file:./learning-paths/rails/README.org][Rails Learning Paths]] | Beginner/intermediate/advanced tracks. |
+
+*** References
+
+| Document | Description |
+|----------+-------------|
+| [[file:./references/rails/README.org][Rails References]] | Quick lookup: conventions, generators, gems, HTTP codes. |
+
+*** AI Workflows
+
+| Document | Description |
+|----------+-------------|
+| [[file:./prompts/rails-ai-workflows.org][AI Workflows for Rails]] | Prompt patterns for model gen, API dev, testing. |
+
+** Security Engineering
+
+*** Handbooks
+
+| Document | Description |
+|----------+-------------|
+| [[file:./handbooks/security/README.org][Security Engineering Handbook]] | Principles, threat modeling, SDLC, standards. |
+
+*** Glossaries
+
+| Document | Description |
+|----------+-------------|
+| [[file:./glossary/security/README.org][Security Glossary]] | Terminology (CSRF, defense in depth, SAST, XSS, etc.). |
+
+*** Guides
+
+| Document | Description |
+|----------+-------------|
+| [[file:./guides/security/secure-coding.org][Secure Coding Practices]] | Input validation, auth, output encoding, crypto. |
+| [[file:./guides/security/web-vulnerabilities.org][Web Application Vulnerabilities]] | OWASP Top 10 with explanations and mitigations. |
+| [[file:./guides/security/dependency-security.org][Dependency Security]] | Vulnerability scanning, selection, response, licensing. |
+
+*** Playbooks
+
+| Document | Description |
+|----------+-------------|
+| [[file:./playbooks/security-review/README.org][Security Review Playbook]] | Review workflow, STRIDE threat modeling, remediation. |
+
+*** Checklists
+
+| Document | Description |
+|----------+-------------|
+| [[file:./checklists/security-review.org][Security Review Checklist]] | General security verification for any project. |
+| [[file:./checklists/rails/security-review.org][Rails Security Review Checklist]] | Rails-specific security verification. |
+
+*** Learning Paths
+
+| Document | Description |
+|----------+-------------|
+| [[file:./learning-paths/security/README.org][Security Learning Paths]] | Beginner/intermediate/advanced tracks. |
+
+*** References
+
+| Document | Description |
+|----------+-------------|
+| [[file:./references/security/README.org][Security References]] | Quick lookup: OWASP Top 10, STRIDE, tools, headers. |
+
+*** AI Workflows
+
+| Document | Description |
+|----------+-------------|
+| [[file:./prompts/security-ai-workflows.org][AI Workflows for Security]] | Prompt patterns for vulnerability ID, threat modeling. |
+
+* Cross-Cutting Topics
+
+The following indexes gather documents across capabilities by topic.
+
+** Testing
+
+| Capability | Document | Type | Description |
+|------------+----------+------+-------------|
+| Engineering | [[file:./guides/engineering/testing-strategies.org][Testing Strategies]] | Guide | Test pyramid, what to test, test doubles. |
+| Rails | [[file:./guides/rails/testing.org][Testing Rails Applications]] | Guide | Model/request/system specs, factory patterns. |
+| Rails | [[file:./checklists/rails/pull-request.org][Rails Pull Request Checklist]] | Checklist | Testing verification for every PR. |
+| Architecture | [[file:./playbooks/architecture-review/README.org][Architecture Review Playbook]] | Playbook | Review criteria includes testability. |
+
+** API Design and Development
+
+| Capability | Document | Type | Description |
+|------------+----------+------+-------------|
+| Architecture | [[file:./guides/architecture/api-design.org][API Design]] | Guide | RESTful conventions, versioning, status codes. |
+| Rails | [[file:./guides/rails/api-development.org][API Development with Rails]] | Guide | Rails-specific API setup, serialization, auth. |
+| Rails | [[file:./handbooks/rails/README.org][Rails Engineering Handbook]] | Handbook | API standards and conventions section. |
+
+** Error Handling
+
+| Capability | Document | Type | Description |
+|------------+----------+------+-------------|
+| Engineering | [[file:./guides/engineering/error-handling.org][Error Handling]] | Guide | Principles, patterns, logging, anti-patterns. |
+| Engineering | [[file:./guides/engineering/logging.org][Logging]] | Guide | Structured logging, log levels, context. |
+| Rails | [[file:./guides/rails/service-objects.org][Service Objects]] | Guide | Error handling in service objects. |
+| Rails | [[file:./handbooks/rails/README.org][Rails Engineering Handbook]] | Handbook | Error handling standards. |
+
+** Performance
+
+| Capability | Document | Type | Description |
+|------------+----------+------+-------------|
+| Rails | [[file:./guides/rails/audit-guide.org][Rails Audit Guide]] | Guide | Performance profiling, N+1 detection, APM. |
+| Rails | [[file:./guides/rails/active-record.org][ActiveRecord Patterns]] | Guide | Query optimization, N+1 prevention, indexing. |
+| Rails | [[file:./guides/rails/background-jobs.org][Background Jobs]] | Guide | Job performance, queue monitoring. |
+
+** Security
+
+| Capability | Document | Type | Description |
+|------------+----------+------+-------------|
+| Security | [[file:./handbooks/security/README.org][Security Engineering Handbook]] | Handbook | Principles, threat modeling, SDLC. |
+| Security | [[file:./guides/security/secure-coding.org][Secure Coding Practices]] | Guide | Input validation, auth, crypto. |
+| Security | [[file:./guides/security/web-vulnerabilities.org][Web Vulnerabilities]] | Guide | OWASP Top 10 with mitigations. |
+| Security | [[file:./guides/security/dependency-security.org][Dependency Security]] | Guide | Vulnerability scanning, response. |
+| Security | [[file:./playbooks/security-review/README.org][Security Review Playbook]] | Playbook | Threat modeling, review workflow. |
+| Security | [[file:./checklists/security-review.org][Security Review Checklist]] | Checklist | General security verification. |
+| Rails | [[file:./checklists/rails/security-review.org][Rails Security Review Checklist]] | Checklist | Rails-specific security checks. |
+| Rails | [[file:./guides/rails/audit-guide.org][Rails Audit Guide]] | Guide | Security auditing section. |
+
+** Architecture Decisions
+
+| Capability | Document | Type | Description |
+|------------+----------+------+-------------|
+| Architecture | [[file:./handbooks/architecture/README.org][Architecture Handbook]] | Handbook | Decision frameworks, ADR standards. |
+| Architecture | [[file:./guides/architecture/adr-writing-guide.org][ADR Writing Guide]] | Guide | When and how to write ADRs. |
+| Architecture | [[file:./templates/adr/README.org][ADR Template]] | Template | Standard ADR format. |
+| Architecture | [[file:./templates/rfc/README.org][RFC Template]] | Template | Major proposal format. |
+| Architecture | [[file:./checklists/design-decision.org][Design Decision Checklist]] | Checklist | Before/during/after decision verification. |
+
+** Project Setup and Standards
+
+| Capability | Document | Type | Description |
+|------------+----------+------+-------------|
+| Rails | [[file:./guides/rails/project-standards.org][Rails Project Standards]] | Guide | Mandatory tooling, CI/CD baseline. |
+| Rails | [[file:./playbooks/rails/deployment.org][Rails Deployment Playbook]] | Playbook | Safe deployment with migrations. |
+| Rails | [[file:./checklists/rails/deployment.org][Rails Deployment Checklist]] | Checklist | Pre/post-deploy verification. |
+| Engineering | [[file:./checklists/tech-debt-assessment.org][Tech Debt Assessment]] | Checklist | Debt identification and tracking. |
+
+* Related Documents
+
+- [[file:./README.org][Repository Overview]]
+- [[file:./ROADMAP.org][Roadmap]]
+- [[file:./STYLE_GUIDE.org][Style Guide]]
