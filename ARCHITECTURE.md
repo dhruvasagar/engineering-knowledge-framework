@@ -13,7 +13,7 @@ It explains how the framework is organized, how knowledge is structured,
 how the various document types relate to one another, and how the
 framework evolves over time.
 
-Unlike the [Strategy](./STRATEGY/), which explains **why** the framework exists, this
+Unlike the [Strategy](./strategy/), which explains **why** the framework exists, this
 document explains **how** the framework is designed.
 
 # Design Goals
@@ -230,7 +230,7 @@ Responsibilities:
 | Example | Practical implementation |
 
 Each artifact type is documented in
-[Document Types](./DOCUMENT_TYPES/).
+[Document Types](./document-types/).
 
 # Knowledge Graph
 
@@ -503,9 +503,9 @@ without modifying the framework itself.
 
 - [Repository Overview](../README/)
 - [CLAUDE](./CLAUDE.md)
-- [Strategy](./STRATEGY/)
-- [Roadmap](./ROADMAP/)
-- [Document Types](./DOCUMENT_TYPES/)
-- [Style Guide](./STYLE_GUIDE/)
-- [Contributing](./CONTRIBUTING/)
+- [Strategy](./strategy/)
+- [Roadmap](./roadmap/)
+- [Document Types](./document-types/)
+- [Style Guide](./style-guide/)
+- [Contributing](./contributing/)
 - [Glossary](./glossary/README/)

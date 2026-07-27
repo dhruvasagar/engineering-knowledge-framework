@@ -188,5 +188,5 @@ Foundational engineering terms are defined in the
 - [Software Architecture Handbook](../../handbooks/architecture/README/)
 - [Engineering Glossary](../engineering/README/)
 - [ADR Template](../../templates/adr/README/)
-- [Style Guide](../../STYLE_GUIDE/)
+- [Style Guide](../../style-guide/)
 - [Glossary Overview](../README/)

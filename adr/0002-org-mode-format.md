@@ -92,4 +92,4 @@ familiar to engineers outside that ecosystem.
 # References
 
 - [Software Architecture Handbook](../handbooks/architecture/README/)
-- [Style Guide](../STYLE_GUIDE/)
+- [Style Guide](../style-guide/)

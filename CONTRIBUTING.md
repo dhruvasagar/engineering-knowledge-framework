@@ -112,10 +112,10 @@ Before creating new content:
 
 1. Read the repository [README](../README/).
 2. Read [CLAUDE.md](./CLAUDE.md).
-3. Understand the [Strategy](./STRATEGY/).
-4. Review the [Architecture](./ARCHITECTURE/).
-5. Read the [Style Guide](./STYLE_GUIDE/).
-6. Understand the [Document Types](./DOCUMENT_TYPES/).
+3. Understand the [Strategy](./strategy/).
+4. Review the [Architecture](./architecture/).
+5. Read the [Style Guide](./style-guide/).
+6. Understand the [Document Types](./document-types/).
 
 Contributors should understand the framework before extending it.
 
@@ -251,7 +251,7 @@ taxonomy.
 # Writing Guidelines
 
 All contributions must follow the
-[Style Guide](./STYLE_GUIDE/).
+[Style Guide](./style-guide/).
 
 In particular:
 
@@ -393,8 +393,8 @@ When moving or renaming a document:
 - [Table of Contents](./TOC/)
 - [Repository Overview](../README/)
 - [CLAUDE.md](./CLAUDE.md)
-- [Strategy](./STRATEGY/)
-- [Architecture](./ARCHITECTURE/)
-- [Document Types](./DOCUMENT_TYPES/)
-- [Style Guide](./STYLE_GUIDE/)
-- [Roadmap](./ROADMAP/)
+- [Strategy](./strategy/)
+- [Architecture](./architecture/)
+- [Document Types](./document-types/)
+- [Style Guide](./style-guide/)
+- [Roadmap](./roadmap/)

@@ -440,10 +440,10 @@ Document proliferation should be avoided.
 
 # Related Documents
 
-- [Architecture](./ARCHITECTURE/)
-- [Strategy](./STRATEGY/)
-- [Roadmap](./ROADMAP/)
-- [Style Guide](./STYLE_GUIDE/)
-- [Contributing](./CONTRIBUTING/)
+- [Architecture](./architecture/)
+- [Strategy](./strategy/)
+- [Roadmap](./roadmap/)
+- [Style Guide](./style-guide/)
+- [Contributing](./contributing/)
 - [Repository Overview](../README/)
 - [Glossary](./glossary/README/)

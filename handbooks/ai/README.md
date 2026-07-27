@@ -253,4 +253,4 @@ AI-generated tests must be reviewed for correctness and completeness.
 - [AI Workflows for Rails](../../prompts/rails-ai-workflows/)
 - [AI Workflows for Security](../../prompts/security-ai-workflows/)
 - [Engineering Fundamentals Handbook](../../handbooks/engineering/README/)
-- [Style Guide](../../STYLE_GUIDE/)
+- [Style Guide](../../style-guide/)

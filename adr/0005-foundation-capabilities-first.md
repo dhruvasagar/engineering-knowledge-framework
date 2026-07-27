@@ -91,7 +91,7 @@ one capability to completion teaches lessons that apply to all others.
 
 # References
 
-- [Roadmap](../ROADMAP/)
+- [Roadmap](../roadmap/)
 - [Engineering Fundamentals Handbook](../handbooks/engineering/README/)
 - [Software Architecture Handbook](../handbooks/architecture/README/)
 - [ADR-0001: Capability Model for Knowledge Organization](../adr/0001-capability-model/)

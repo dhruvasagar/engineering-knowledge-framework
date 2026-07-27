@@ -404,5 +404,5 @@ capability. The following documents form the complete capability:
 - [Engineering Fundamentals Handbook](../../handbooks/engineering/README/)
 - [Architecture Review Playbook](../../playbooks/architecture-review/README/)
 - [ADR Template](../../templates/adr/README/)
-- [Style Guide](../../STYLE_GUIDE/)
-- [Document Types](../../DOCUMENT_TYPES/)
+- [Style Guide](../../style-guide/)
+- [Document Types](../../document-types/)

@@ -20,7 +20,7 @@ This strategy should evolve slowly. It defines the enduring direction of
 the project rather than its short-term priorities.
 
 Implementation plans, milestones and active work are tracked separately
-in [ROADMAP.md](./ROADMAP/).
+in [ROADMAP.md](./roadmap/).
 
 # Mission
 
@@ -373,8 +373,8 @@ engineer and every AI system—today and in the future.
 # Related Documents
 
 - [CLAUDE.md](./CLAUDE.md)
-- [Roadmap](./ROADMAP/)
-- [Document Types](./DOCUMENT_TYPES/)
-- [Style Guide](./STYLE_GUIDE/)
-- [Contributing](./CONTRIBUTING/)
+- [Roadmap](./roadmap/)
+- [Document Types](./document-types/)
+- [Style Guide](./style-guide/)
+- [Contributing](./contributing/)
 - [Repository Overview](../README/)

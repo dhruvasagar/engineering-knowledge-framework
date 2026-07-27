@@ -58,14 +58,14 @@ The foundational documents that define the framework itself.
 | [CLAUDE.md](./CLAUDE.md) | AI-specific project instructions for coding agents. |
 | --- | --- |
 | [README.md](./README/) | Repository overview, mission, vision and philosophy. |
-| [Strategy](./STRATEGY/) | Long-term vision and guiding strategy. |
-| [Roadmap](./ROADMAP/) | Strategic roadmap and phase progression. |
-| [Architecture](./ARCHITECTURE/) | Repository architecture and knowledge organization. |
-| [Document Types](./DOCUMENT_TYPES/) | Canonical document taxonomy. |
-| [Style Guide](./STYLE_GUIDE/) | Writing, formatting and documentation standards. |
-| [Writing Principles](./WRITING_PRINCIPLES/) | Philosophy behind effective engineering documentation. |
-| [Contributing](./CONTRIBUTING/) | Contribution guidelines and workflows. |
-| [Changelog](./CHANGELOG/) | Version history of the framework. |
+| [Strategy](./strategy/) | Long-term vision and guiding strategy. |
+| [Roadmap](./roadmap/) | Strategic roadmap and phase progression. |
+| [Architecture](./architecture/) | Repository architecture and knowledge organization. |
+| [Document Types](./document-types/) | Canonical document taxonomy. |
+| [Style Guide](./style-guide/) | Writing, formatting and documentation standards. |
+| [Writing Principles](./writing-principles/) | Philosophy behind effective engineering documentation. |
+| [Contributing](./contributing/) | Contribution guidelines and workflows. |
+| [Changelog](./changelog/) | Version history of the framework. |
 | [TOC.md](./TOC/) | This document — table of contents and indexes. |
 
 ## Engineering Fundamentals
@@ -789,5 +789,5 @@ The following indexes gather documents across capabilities by topic.
 # Related Documents
 
 - [Repository Overview](./README/)
-- [Roadmap](./ROADMAP/)
-- [Style Guide](./STYLE_GUIDE/)
+- [Roadmap](./roadmap/)
+- [Style Guide](./style-guide/)

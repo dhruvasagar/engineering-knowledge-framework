@@ -101,5 +101,5 @@ becomes difficult to navigate.
 
 # References
 
-- [Document Types](../DOCUMENT_TYPES/)
+- [Document Types](../document-types/)
 - [Engineering Fundamentals Handbook](../handbooks/engineering/README/)

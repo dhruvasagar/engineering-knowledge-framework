@@ -172,6 +172,6 @@ glossary (e.g., [Architecture Glossary](../architecture/README/), [Rails Glossar
 # Related Documents
 
 - [Engineering Fundamentals Handbook](../../handbooks/engineering/README/)
-- [Style Guide](../../STYLE_GUIDE/)
-- [Writing Principles](../../WRITING_PRINCIPLES/)
+- [Style Guide](../../style-guide/)
+- [Writing Principles](../../writing-principles/)
 - [Glossary Overview](../README/)

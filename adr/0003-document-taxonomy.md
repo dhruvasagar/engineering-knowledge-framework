@@ -106,5 +106,5 @@ gap emerges.
 
 # References
 
-- [Document Types](../DOCUMENT_TYPES/)
+- [Document Types](../document-types/)
 - [Engineering Fundamentals Handbook](../handbooks/engineering/README/)

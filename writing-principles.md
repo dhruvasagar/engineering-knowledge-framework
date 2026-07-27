@@ -9,7 +9,7 @@ description = "Principles for creating high-quality, timeless engineering knowle
 This document defines the principles that guide how engineering
 knowledge should be written within the Engineering Knowledge Framework.
 
-Unlike the [Style Guide](./STYLE_GUIDE/), which defines formatting and writing
+Unlike the [Style Guide](./style-guide/), which defines formatting and writing
 conventions, this document explains the philosophy behind effective
 engineering documentation.
 
@@ -441,9 +441,9 @@ timeless engineering knowledge that benefits both humans and AI.
 # Related Documents
 
 - [CLAUDE.md](./CLAUDE.md)
-- [Strategy](./STRATEGY/)
-- [Architecture](./ARCHITECTURE/)
-- [Style Guide](./STYLE_GUIDE/)
-- [Document Types](./DOCUMENT_TYPES/)
-- [Contributing](./CONTRIBUTING/)
+- [Strategy](./strategy/)
+- [Architecture](./architecture/)
+- [Style Guide](./style-guide/)
+- [Document Types](./document-types/)
+- [Contributing](./contributing/)
 - [Repository Overview](../README/)

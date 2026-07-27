@@ -102,5 +102,5 @@ knowledge framework.
 - [Glossary Overview](../glossary/README/)
 - [Engineering Glossary](../glossary/engineering/README/)
 - [Architecture Glossary](../glossary/architecture/README/)
-- [Document Types](../DOCUMENT_TYPES/)
+- [Document Types](../document-types/)
 - [ADR-0001: Capability Model for Knowledge Organization](../adr/0001-capability-model/)

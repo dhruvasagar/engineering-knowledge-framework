@@ -88,5 +88,5 @@ naturally produces good AI documentation.
 # References
 
 - [Engineering Fundamentals Handbook](../handbooks/engineering/README/)
-- [Writing Principles](../WRITING_PRINCIPLES/)
-- [Style Guide](../STYLE_GUIDE/)
+- [Writing Principles](../writing-principles/)
+- [Style Guide](../style-guide/)

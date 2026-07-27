@@ -189,7 +189,7 @@ Each document type has a clearly defined purpose.
 
 See:
 
-[Document Types](./DOCUMENT_TYPES/)
+[Document Types](./document-types/)
 
 for more information.
 
@@ -281,11 +281,11 @@ individual components to meet their own needs.
 If you are new to the repository, begin with the governance documents.
 
 1. [CLAUDE.md](./CLAUDE.md)
-2. [Strategy](./STRATEGY/)
-3. [Roadmap](./ROADMAP/)
-4. [Document Types](./DOCUMENT_TYPES/)
-5. [Style Guide](./STYLE_GUIDE/)
-6. [Contributing](./CONTRIBUTING/)
+2. [Strategy](./strategy/)
+3. [Roadmap](./roadmap/)
+4. [Document Types](./document-types/)
+5. [Style Guide](./style-guide/)
+6. [Contributing](./contributing/)
 
 These documents explain the philosophy, organization and contribution
 model of the framework.
@@ -317,7 +317,7 @@ The current priorities are:
 
 Progress is tracked in:
 
-[Roadmap](./ROADMAP/)
+[Roadmap](./roadmap/)
 
 # Long-term Goals
 
@@ -346,7 +346,7 @@ Before contributing:
 
 See:
 
-[Contributing](./CONTRIBUTING/)
+[Contributing](./contributing/)
 
 for the complete contribution workflow.
 
@@ -360,9 +360,9 @@ repository's license.
 # Related Documents
 
 - [CLAUDE.md](./CLAUDE.md)
-- [Strategy](./STRATEGY/)
-- [Roadmap](./ROADMAP/)
-- [Document Types](./DOCUMENT_TYPES/)
-- [Style Guide](./STYLE_GUIDE/)
-- [Contributing](./CONTRIBUTING/)
+- [Strategy](./strategy/)
+- [Roadmap](./roadmap/)
+- [Document Types](./document-types/)
+- [Style Guide](./style-guide/)
+- [Contributing](./contributing/)
 - [Glossary](./glossary/README/)

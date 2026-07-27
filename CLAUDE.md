@@ -225,7 +225,7 @@ When writing or editing documents:
   Never use =*= for bullets — in Markdown, =*= creates a headline,
   not a list item.
 - Do not skip headline levels (e.g., =*= to =***= without =**=).
-- Follow the formatting rules in [STYLE_GUIDE.md](./STYLE_GUIDE/).
+- Follow the formatting rules in [STYLE_GUIDE.md](./style-guide/).
 
 ## Context Engineering
 

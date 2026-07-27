@@ -19,7 +19,7 @@ This document focuses on **how** knowledge should be written.
 
 The philosophy behind the framework is documented in
 [CLAUDE.md](./CLAUDE.md) and
-[Strategy](./STRATEGY/).
+[Strategy](./strategy/).
 
 # AI-First Writing
 
@@ -104,7 +104,7 @@ General guidance:
 6. References
 
 Specific document structures are defined in
-[Document Types](./DOCUMENT_TYPES/).
+[Document Types](./document-types/).
 
 # Single Responsibility
 
@@ -565,9 +565,9 @@ Additionally verify:
 - References
 
 - [CLAUDE.md](./CLAUDE.md)
-- [Strategy](./STRATEGY/)
-- [Architecture](./ARCHITECTURE/)
-- [Document Types](./DOCUMENT_TYPES/)
-- [Contributing](./CONTRIBUTING/)
+- [Strategy](./strategy/)
+- [Architecture](./architecture/)
+- [Document Types](./document-types/)
+- [Contributing](./contributing/)
 - [Repository Overview](../README/)
 - [[https:*www.markdownguide.org*][Markdown Guide]]

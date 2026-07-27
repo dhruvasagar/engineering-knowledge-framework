@@ -98,6 +98,6 @@ Handbooks should explain concepts in depth.
 
 # Related Documents
 
-- [Document Types](../DOCUMENT_TYPES/)
-- [Style Guide](../STYLE_GUIDE/)
-- [Contributing](../CONTRIBUTING/)
+- [Document Types](../document-types/)
+- [Style Guide](../style-guide/)
+- [Contributing](../contributing/)

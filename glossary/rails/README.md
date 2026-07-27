@@ -164,5 +164,5 @@ repository. Foundational engineering terms are defined in the
 - [Rails Engineering Handbook](../../handbooks/rails/README/)
 - [Engineering Glossary](../engineering/README/)
 - [Architecture Glossary](../architecture/README/)
-- [Style Guide](../../STYLE_GUIDE/)
+- [Style Guide](../../style-guide/)
 - [Glossary Overview](../README/)

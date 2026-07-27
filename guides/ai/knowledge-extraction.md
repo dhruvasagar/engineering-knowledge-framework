@@ -216,5 +216,5 @@ Source:
 - [Agentic Workflows — Explore-and-Discover pattern](./agentic-workflows/)
 - [AI Evaluation Frameworks](./evaluation-frameworks/)
 - [AI Engineering Handbook](../../handbooks/ai/README/)
-- [Style Guide](../../STYLE_GUIDE/)
-- [Document Types](../../DOCUMENT_TYPES/)
+- [Style Guide](../../style-guide/)
+- [Document Types](../../document-types/)

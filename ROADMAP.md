@@ -9,7 +9,7 @@ description = "Strategic roadmap for the Engineering Knowledge Framework"
 This roadmap describes the planned evolution of the Engineering
 Knowledge Framework.
 
-Unlike the [Strategy](./STRATEGY/), which defines the long-term vision, this document
+Unlike the [Strategy](./strategy/), which defines the long-term vision, this document
 captures the major initiatives required to realize that vision.
 
 The roadmap should evolve continuously as the project matures.
@@ -54,7 +54,7 @@ Cross-cutting work continues in AI integration (Phase 4) and the
 Learning Framework (Phase 5). Initial tooling work (Phase 6) is the
 next major undertaking.
 
-See the [CHANGELOG](./CHANGELOG/) for the detailed deliverable list.
+See the [CHANGELOG](./changelog/) for the detailed deliverable list.
 
 # Phase 1 — Foundation
 
@@ -177,7 +177,7 @@ Software Architecture that:
 
 - Demonstrates every supported document type from `DOCUMENT_TYPES.org`.
 - Engineering Fundamentals and Architecture documents are internally consistent and cross-reference each other effectively.
-- Every document follows the [Style Guide](./STYLE_GUIDE/) and [Writing Principles](./WRITING_PRINCIPLES/).
+- Every document follows the [Style Guide](./style-guide/) and [Writing Principles](./writing-principles/).
 - Documents form a connected knowledge network with rich cross-references.
 - Serves as a repeatable template for future capabilities.
 - AI assistants can use the capabilities effectively.
@@ -599,7 +599,7 @@ Grow an active open-source community around the framework.
 
 ### Onboarding
 
-- [ ] `CONTRIBUTING.org`: Already published (see [./CONTRIBUTING.md](./CONTRIBUTING/)).
+- [ ] `CONTRIBUTING.org`: Already published (see [./CONTRIBUTING.md](./contributing/)).
 - [ ] Good first issue labels for new contributors.
 - [ ] Contributor onboarding guide with step-by-step walkthrough.
 - [ ] Community expectations and code of conduct.
@@ -752,7 +752,7 @@ Current priorities are:
 13. [ ] Build knowledge graph generation tooling (Phase 6).
 14. [ ] Explore community engagement and contribution workflows (Phase 8).
 
-These initiatives build on the completed foundation. See [CHANGELOG](./CHANGELOG/) for
+These initiatives build on the completed foundation. See [CHANGELOG](./changelog/) for
 completed milestones.
 
 # Future Evolution
@@ -773,11 +773,11 @@ mission.
 
 # Related Documents
 
-- [Strategy](./STRATEGY/)
+- [Strategy](./strategy/)
 - [CLAUDE.md](./CLAUDE.md)
-- [Document Types](./DOCUMENT_TYPES/)
-- [Style Guide](./STYLE_GUIDE/)
-- [Contributing](./CONTRIBUTING/)
-- [Changelog](./CHANGELOG/)
-- [Architecture](./ARCHITECTURE/)
+- [Document Types](./document-types/)
+- [Style Guide](./style-guide/)
+- [Contributing](./contributing/)
+- [Changelog](./changelog/)
+- [Architecture](./architecture/)
 - [Repository Overview](../README/)
