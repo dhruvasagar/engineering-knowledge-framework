@@ -1,0 +1,12 @@
+# Generated site content
+site/content/
+
+# Generated site output
+site/public/
+
+# Generated knowledge graph output
+tools/output/
+
+# Python cache
+__pycache__/
+*.pyc

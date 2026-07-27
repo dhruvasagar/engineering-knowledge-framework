@@ -16,9 +16,8 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Run validators
-        run: |
-          python3 tools/validate-all.py --quiet
+      - name: Run all validators
+        run: make validate
 
   build-site:
     needs: validate
@@ -33,9 +32,13 @@ jobs:
         uses: taiki-e/install-action@v2
         with:
           tool: zola@0.22.1
-      - name: Convert org to md
+      - name: Build knowledge graph
+        run: make graph
+      - name: Clean stale content
+        run: rm -rf site/content
+      - name: Convert org to markdown
         run: python3 tools/org-to-md.py
-      - name: Build site
+      - name: Build static site
         run: cd site && zola build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
