@@ -442,4 +442,4 @@ Document proliferation should be avoided.
 - [[file:./STYLE_GUIDE.org][Style Guide]]
 - [[file:./CONTRIBUTING.org][Contributing]]
 - [[file:../README.org][Repository Overview]]
-- [[file:../glossary/README.org][Glossary]]
+- [[file:./glossary/README.org][Glossary]]

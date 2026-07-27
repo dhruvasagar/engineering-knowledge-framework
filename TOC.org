@@ -14,6 +14,36 @@ This document provides two complementary views of the repository:
   across capabilities — for when you know what you need but not
   where it lives.
 
+
+
+** Directory Indexes
+
+Index documents for capability directories (references overviews of each directory's contents).
+
+| Document | Description |
+|----------+-------------|
+| [[file:./checklists/README.org][Checklists Index]] | Overview of checklist directories. |
+| [[file:./checklists/accessibility/README.org][Accessibility Checklists Index]] | Overview of accessibility checklists. |
+| [[file:./checklists/quality/README.org][Quality Checklists Index]] | Overview of quality checklists. |
+| [[file:./checklists/rails/README.org][Rails Checklists Index]] | Overview of Rails checklists. |
+| [[file:./glossary/README.org][Glossary Index]] | Glossary organization and writing guidelines. |
+| [[file:./guides/accessibility/README.org][Accessibility Guides Index]] | Overview of accessibility guides. |
+| [[file:./guides/architecture/README.org][Architecture Guides Index]] | Overview of architecture guides. |
+| [[file:./guides/engineering/README.org][Engineering Guides Index]] | Overview of engineering guides. |
+| [[file:./guides/rails/README.org][Rails Guides Index]] | Overview of Rails guides. |
+| [[file:./guides/security/README.org][Security Guides Index]] | Overview of security guides. |
+| [[file:./playbooks/ai/README.org][AI Playbooks Index]] | Overview of AI playbooks. |
+| [[file:./playbooks/code-review/README.org][Code Review Playbook]] | Code review workflow. |
+| [[file:./playbooks/quality/README.org][Quality Playbooks Index]] | Overview of quality playbooks. |
+| [[file:./playbooks/rails/README.org][Rails Playbooks Index]] | Overview of Rails playbooks. |
+| [[file:./prompts/README.org][AI Workflows Index]] | Index of all AI workflow documents. |
+| [[file:./templates/accessibility/README.org][Accessibility Templates Index]] | Overview of accessibility templates. |
+| [[file:./templates/ai/README.org][AI Templates Index]] | Overview of AI templates. |
+| [[file:./templates/quality/README.org][Quality Templates Index]] | Overview of quality templates. |
+| [[file:./templates/rails/README.org][Rails Templates Index]] | Overview of Rails templates. |
+| [[file:./templates/security/README.org][Security Templates Index]] | Overview of security templates. |
+
+
 * From Top to Bottom
 
 ** Governance
@@ -521,6 +551,18 @@ The following indexes gather documents across capabilities by topic.
 | Architecture | [[file:./templates/adr/README.org][ADR Template]]              | Template  | Standard ADR format.                       |
 | Architecture | [[file:./templates/rfc/README.org][RFC Template]]              | Template  | Major proposal format.                     |
 | Architecture | [[file:./checklists/design-decision.org][Design Decision Checklist]] | Checklist | Before/during/after decision verification. |
+
+** Architecture Decision Records
+
+| Document | Description |
+|----------+-------------|
+| [[file:./adr/0001-capability-model.org][ADR 0001: Capability Model]] | Knowledge organization around capabilities. |
+| [[file:./adr/0002-org-mode-format.org][ADR 0002: Org-Mode Format]] | Org-mode as primary document format. |
+| [[file:./adr/0003-document-taxonomy.org][ADR 0003: Document Taxonomy]] | Nine document types with single responsibility. |
+| [[file:./adr/0004-ai-native-knowledge-design.org][ADR 0004: AI-Native Knowledge Design]] | AI as first-class knowledge consumer. |
+| [[file:./adr/0005-foundation-capabilities-first.org][ADR 0005: Foundation Capabilities First]] | Build fundamentals before technology capabilities. |
+| [[file:./adr/0006-per-capability-glossaries.org][ADR 0006: Per-Capability Glossaries]] | Glossaries organized by capability. |
+
 
 ** Project Setup and Standards
 

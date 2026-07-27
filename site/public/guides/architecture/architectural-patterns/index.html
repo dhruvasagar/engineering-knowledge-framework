@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="An open framework for capturing, organizing and applying engineering knowledge">
+  <title>Engineering Knowledge Framework</title>
+  <link rel="stylesheet" href="https://dhruvasagar.github.io/engineering-knowledge-framework/style.css">
+  
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a href="https:&#x2F;&#x2F;dhruvasagar.github.io&#x2F;engineering-knowledge-framework" class="logo">Engineering Knowledge Framework</a>
+      <nav class="site-nav">
+        <a href="https:&#x2F;&#x2F;dhruvasagar.github.io&#x2F;engineering-knowledge-framework">Home</a>
+        <a href="https://github.com/dhruvasagar/engineering-knowledge-framework">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    
+<h1>Architectural Patterns</h1>
+
+<p class="description">A guide to common architectural patterns and when to apply them</p>
+
+<div class="content">
+  <h1 id="purpose">Purpose</h1>
+<p>Architectural patterns provide proven, reusable solutions to common
+structural problems in software systems.</p>
+<p>Understanding these patterns enables engineers to recognize recurring
+problems, apply known solutions, and communicate architectural
+decisions using a shared vocabulary.</p>
+<p>This guide explains the most common architectural patterns, their
+trade-offs, and the conditions under which each should be considered.</p>
+<h1 id="background">Background</h1>
+<p>Architecture is the set of design decisions that are costly to change.</p>
+<p>Architectural patterns are not prescriptions. They are tools.
+Each pattern optimizes for different outcomes and introduces different
+constraints. Choosing a pattern means accepting its trade-offs.</p>
+<p>The patterns described in this guide are technology-independent.
+They can be implemented in any language, framework or infrastructure.</p>
+<h1 id="how-to-choose-a-pattern">How to Choose a Pattern</h1>
+<p>Choosing an architectural pattern requires understanding the problem
+context:</p>
+<ul>
+<li>What are the primary quality attributes (performance, scalability,
+maintainability, evolvability)?</li>
+<li>What is the team's experience and organizational structure?</li>
+<li>What is the expected evolution of the system?</li>
+<li>What constraints exist (regulation, legacy, budget)?</li>
+</ul>
+<p>No single pattern is universally superior. The best pattern is the one
+that best aligns the architecture with the business goals.</p>
+<h1 id="pattern-catalogue">Pattern Catalogue</h1>
+<h2 id="layered-architecture">Layered Architecture</h2>
+<h3 id="description">Description</h3>
+<p>Organize the system into horizontal layers, each with a specific
+responsibility. Each layer depends only on the layer directly beneath
+it.</p>
+<pre><code>  Presentation
+       ↓
+   Application
+       ↓
+     Domain
+       ↓
+ Infrastructure
+</code></pre>
+<h4 id="when-to-use">When to Use</h4>
+<ul>
+<li>The system has clear separation of concerns that maps well to layers.</li>
+<li>The team is organized around technical skills (frontend, backend,
+database).</li>
+<li>The system is relatively stable in structure.</li>
+</ul>
+<h4 id="when-to-avoid">When to Avoid</h4>
+<ul>
+<li>Layers become leaky abstractions (presentation code reaches into
+infrastructure).</li>
+<li>Performance requirements demand bypassing layers.</li>
+<li>The domain is complex and cross-cutting.</li>
+</ul>
+<h4 id="trade-offs">Trade-offs</h4>
+<table><thead><tr><th>Pro</th><th>Con</th></tr></thead><tbody>
+<tr><td>Simple and widely understood</td><td>Can lead to monolithic deployments</td></tr>
+<tr><td>Clear separation of concerns</td><td>Layer bypass undermines the pattern</td></tr>
+<tr><td>Easy to get started</td><td>Tendency toward code duplication</td></tr>
+<tr><td>Good for small to medium systems</td><td>Does not scale well organizationally</td></tr>
+</tbody></table>
+<h2 id="hexagonal-architecture-ports-and-adapters">Hexagonal Architecture (Ports and Adapters)</h2>
+<h3 id="description-1">Description</h3>
+<p>Isolate core business logic from external concerns through ports
+(interfaces) and adapters (implementations).</p>
+<p>The core domain has no dependency on databases, APIs, UIs, or any other
+external system. All external communication flows through adapters that
+implement ports defined by the core.</p>
+<pre><code>  [Web Adapter] → [Port] → [Core Domain] ← [Port] ← [Database Adapter]
+  [CLI Adapter]  → [Port] →              ← [Port] ← [Message Queue Adapter]
+</code></pre>
+<h4 id="when-to-use-1">When to Use</h4>
+<ul>
+<li>The domain is complex and central to the business.</li>
+<li>The system integrates with multiple external systems.</li>
+<li>Testability of business logic is a priority.</li>
+</ul>
+<h4 id="when-to-avoid-1">When to Avoid</h4>
+<ul>
+<li>The system is simple and unlikely to change.</li>
+<li>The overhead of indirection exceeds its benefit.</li>
+<li>The team is unfamiliar with the pattern.</li>
+</ul>
+<h4 id="trade-offs-1">Trade-offs</h4>
+<table><thead><tr><th>Pro</th><th>Con</th></tr></thead><tbody>
+<tr><td>Domain is highly testable</td><td>Increased indirection and complexity</td></tr>
+<tr><td>External systems are swappable</td><td>More interfaces to maintain</td></tr>
+<tr><td>Business logic is framework-free</td><td>Can be over-engineering for simple apps</td></tr>
+<tr><td>Strong separation of concerns</td><td>Requires discipline to maintain</td></tr>
+</tbody></table>
+<h2 id="event-driven-architecture">Event-Driven Architecture</h2>
+<h3 id="description-2">Description</h3>
+<p>Components communicate through events rather than direct calls.</p>
+<p>Producers emit events without knowing which consumers will handle them.
+Consumers subscribe to events without knowing which producers emitted
+them. This creates loose coupling between components.</p>
+<pre><code>  [Order Service] ──→ (OrderPlaced) ──→ [Inventory Service]
+                         │
+                         ├──→ [Notification Service]
+                         └──→ [Analytics Service]
+</code></pre>
+<h4 id="when-to-use-2">When to Use</h4>
+<ul>
+<li>Loose coupling between components is essential.</li>
+<li>Workflows are asynchronous or long-running.</li>
+<li>Multiple consumers need to react to the same event.</li>
+</ul>
+<h4 id="when-to-avoid-2">When to Avoid</h4>
+<ul>
+<li>Workflow visibility and debugging are priorities.</li>
+<li>Event ordering and consistency are difficult to guarantee.</li>
+<li>The team lacks experience with event-driven systems.</li>
+</ul>
+<h4 id="trade-offs-2">Trade-offs</h4>
+<table><thead><tr><th>Pro</th><th>Con</th></tr></thead><tbody>
+<tr><td>Strong decoupling between services</td><td>Eventual consistency is complex</td></tr>
+<tr><td>Highly scalable and extensible</td><td>Debugging is harder than request*response</td></tr>
+<tr><td>Real-time processing capability</td><td>Event schema evolution is challenging</td></tr>
+<tr><td>---</td><td>---</td></tr>
+<tr><td>Good for heterogeneous systems</td><td>Requires robust monitoring</td></tr>
+</tbody></table>
+<h2 id="microservices-architecture">Microservices Architecture</h2>
+<h3 id="description-3">Description</h3>
+<p>Compose the system from independently deployable services, each owning
+its own data and domain. Services communicate through well-defined APIs
+(generally HTTP or messaging).</p>
+<pre><code>  [API Gateway]
+     ├── [Order Service] ─→ [Order DB]
+     ├── [Inventory Service] ─→ [Inventory DB]
+     ├── [Payment Service] ─→ [Payment DB]
+     └── [Notification Service]
+</code></pre>
+<h4 id="when-to-use-3">When to Use</h4>
+<ul>
+<li>Teams are aligned around bounded contexts (Conway's Law).</li>
+<li>Independent scaling and deployment are required.</li>
+<li>The system is large enough to justify operational overhead.</li>
+</ul>
+<h4 id="when-to-avoid-3">When to Avoid</h4>
+<ul>
+<li>The system is small or early in its lifecycle.</li>
+<li>The team lacks operational maturity.</li>
+<li>Network complexity and data consistency are concerns.</li>
+</ul>
+<h4 id="trade-offs-3">Trade-offs</h4>
+<table><thead><tr><th>Pro</th><th>Con</th></tr></thead><tbody>
+<tr><td>Independent deployability</td><td>Operational complexity</td></tr>
+<tr><td>Team autonomy</td><td>Data consistency challenges</td></tr>
+<tr><td>Technology heterogeneity</td><td>Network overhead and latency</td></tr>
+<tr><td>Independent scaling</td><td>Testing across services is harder</td></tr>
+</tbody></table>
+<h2 id="cqrs-command-query-responsibility-segregation">CQRS (Command Query Responsibility Segregation)</h2>
+<h3 id="description-4">Description</h3>
+<p>Separate read and write operations into different models. Commands
+handle state changes. Queries handle data retrieval.</p>
+<p>The separation allows each model to be optimized independently.</p>
+<h4 id="when-to-use-4">When to Use</h4>
+<ul>
+<li>Read and write workloads have different characteristics.</li>
+<li>The domain has complex business logic on the write side and complex
+queries on the read side.</li>
+<li>Performance requirements demand different data models for reads and
+writes.</li>
+</ul>
+<h4 id="when-to-avoid-4">When to Avoid</h4>
+<ul>
+<li>The system has simple CRUD operations with balanced read*write
+patterns.</li>
+<li>The added complexity of maintaining two models is not justified.</li>
+</ul>
+<h4 id="trade-offs-4">Trade-offs</h4>
+<table><thead><tr><th>Pro</th><th>Con</th></tr></thead><tbody>
+<tr><td>Optimized read and write models</td><td>Increased complexity</td></tr>
+<tr><td>Independent scaling of reads*writes</td><td>Eventual consistency between models</td></tr>
+<tr><td>Better performance for each workload</td><td>More code to maintain</td></tr>
+</tbody></table>
+<h1 id="pattern-composition">Pattern Composition</h1>
+<p>Architectural patterns are not mutually exclusive.</p>
+<p>Common compositions include:</p>
+<ul>
+<li>Hexagonal + CQRS: Hexagonal architecture provides the structural
+organization; CQRS optimizes read and write paths.</li>
+<li>Event-Driven + Microservices: Microservices communicate through
+events to achieve loose coupling.</li>
+<li>Layered + Hexagonal: Use layered architecture within each hexagon
+(port*adapter boundary) to organize internal structure.</li>
+</ul>
+<p>Compose patterns only when the combination clearly addresses a specific
+problem. Every added pattern increases complexity.</p>
+<h1 id="ai-integration">AI Integration</h1>
+<p>AI assistants can help with architectural patterns by:</p>
+<ul>
+<li>Recommending patterns based on system requirements and constraints.</li>
+<li>Analyzing existing architecture and identifying pattern mismatches.</li>
+<li>Generating pattern comparison matrices for decision making.</li>
+<li>Drafting architectural documentation that follows pattern conventions.</li>
+<li>Identifying anti-patterns in current system structure.</li>
+</ul>
+<p>When asking AI for architectural pattern advice, provide:</p>
+<ul>
+<li>System goals and constraints.</li>
+<li>Quality attribute requirements.</li>
+<li>Current architecture and pain points.</li>
+<li>Team structure and experience.</li>
+<li>Technology constraints and preferences.</li>
+</ul>
+<h1 id="related-documents">Related Documents</h1>
+<ul>
+<li><a href="../..*handbooks*architecture*README*">Software Architecture Handbook</a></li>
+<li><a href="../..*handbooks*engineering*README*">Engineering Fundamentals Handbook</a></li>
+<li><a href="../..*glossary*architecture*README*">Architecture Glossary</a></li>
+<li><a href="../..*playbooks*architecture-review*README*">Architecture Review Playbook</a></li>
+</ul>
+
+</div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Engineering Knowledge Framework — Building AI-native engineering knowledge systems</p>
+    </div>
+  </footer>
+</body>
+</html>

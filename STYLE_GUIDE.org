@@ -232,7 +232,7 @@ Good:
 
 #+BEGIN_QUOTE
 See the
-[[file:../handbook/rails/README.org][Rails Engineering Handbook]]
+[[file:./handbooks/rails/README.org][Rails Engineering Handbook]]
 for architectural principles.
 #+END_QUOTE
 
@@ -287,7 +287,7 @@ Every significant concept should be connected to related knowledge.
 Good:
 
 #+BEGIN_SRC org
-[[file:../playbooks/code-review.org][Code Review Playbook]]
+[[file:./playbooks/code-review/README.org][Code Review Playbook]]
 #+END_SRC
 
 Avoid:

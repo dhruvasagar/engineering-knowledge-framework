@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="An open framework for capturing, organizing and applying engineering knowledge">
+  <title>Engineering Knowledge Framework</title>
+  <link rel="stylesheet" href="https://dhruvasagar.github.io/engineering-knowledge-framework/style.css">
+  
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a href="https:&#x2F;&#x2F;dhruvasagar.github.io&#x2F;engineering-knowledge-framework" class="logo">Engineering Knowledge Framework</a>
+      <nav class="site-nav">
+        <a href="https:&#x2F;&#x2F;dhruvasagar.github.io&#x2F;engineering-knowledge-framework">Home</a>
+        <a href="https://github.com/dhruvasagar/engineering-knowledge-framework">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    
+<h1>Architecture Glossary</h1>
+
+<p class="description">Software architecture terminology used throughout the Engineering Knowledge Framework</p>
+
+
+<div class="content">
+  <h1 id="purpose">Purpose</h1>
+<p>This glossary defines the software architecture terminology used
+throughout the Engineering Knowledge Framework.</p>
+<p>Architecture terms defined here are authoritative across the entire
+repository.</p>
+<p>Foundational engineering terms are defined in the
+<a href="..*engineering*README*">Engineering Glossary</a>.</p>
+<h1 id="glossary">Glossary</h1>
+<h2 id="architecture-decision-record-adr">Architecture Decision Record (ADR)</h2>
+<table><thead><tr><th>Property</th><th>Value</th></tr></thead><tbody>
+<tr><td>Definition</td><td>A short document that captures an architectural decision,</td></tr>
+<tr><td></td><td>its context, alternatives considered and consequences.</td></tr>
+<tr><td>Context</td><td>ADRs provide a historical record of why the system is</td></tr>
+<tr><td></td><td>the way it is. They enable future engineers to</td></tr>
+<tr><td></td><td>understand past reasoning and avoid repeating mistakes.</td></tr>
+<tr><td>Related</td><td>[[#rfc][RFC]], [[#decision-log][Decision Log]]</td></tr>
+<tr><td>References</td><td><a href="..*..*handbooks*architecture*README*">Software Architecture Handbook</a></td></tr>
+</tbody></table>
+<h2 id="bounded-context">Bounded Context</h2>
+<table><thead><tr><th>Property</th><th>Value</th></tr></thead><tbody>
+<tr><td>Definition</td><td>A logical boundary within which a particular domain</td></tr>
+<tr><td></td><td>model applies, with its own ubiquitous language and</td></tr>
+<tr><td></td><td>internal consistency.</td></tr>
+<tr><td>Context</td><td>Bounded contexts are a core concept in Domain-Driven</td></tr>
+<tr><td></td><td>Design. They define the boundaries of microservices,</td></tr>
+<tr><td></td><td>modules and team ownership.</td></tr>
+<tr><td>Related</td><td>[[#domain-driven-design][Domain-Driven Design]]</td></tr>
+<tr><td>References</td><td><a href="../..*handbooks*architecture*README*">Software Architecture Handbook</a></td></tr>
+</tbody></table>
+<h2 id="c4-model">C4 Model</h2>
+<table><thead><tr><th>Property</th><th>Value</th></tr></thead><tbody>
+<tr><td>Definition</td><td>A hierarchical approach to visualizing software</td></tr>
+<tr><td></td><td>architecture at four levels: System Context, Container,</td></tr>
+<tr><td></td><td>Component and Code.</td></tr>
+<tr><td>Context</td><td>The C4 model provides a structured way to communicate</td></tr>
+<tr><td></td><td>architecture to different audiences, from stakeholders</td></tr>
+<tr><td></td><td>to developers.</td></tr>
+<tr><td>Related</td><td>[[#architecture-decision-record-adr][ADR]]</td></tr>
+<tr><td>References</td><td><a href="../..*handbooks*architecture*README*">Software Architecture Handbook</a></td></tr>
+</tbody></table>
+<h2 id="decision-log">Decision Log</h2>
+<table><thead><tr><th>Property</th><th>Value</th></tr></thead><tbody>
+<tr><td>Definition</td><td>A chronological index of all architectural decisions</td></tr>
+<tr><td></td><td>made for a system, with links to the corresponding ADRs.</td></tr>
+<tr><td>Context</td><td>The decision log provides a single entry point for</td></tr>
+<tr><td></td><td>understanding the architectural history of a system.</td></tr>
+<tr><td>Related</td><td>[[#architecture-decision-record-adr][ADR]], [[#rfc][RFC]]</td></tr>
+<tr><td>References</td><td><a href="../..*handbooks*architecture*README*">Software Architecture Handbook</a></td></tr>
+</tbody></table>
+<h2 id="domain-driven-design-ddd">Domain-Driven Design (DDD)</h2>
+<table><thead><tr><th>Property</th><th>Value</th></tr></thead><tbody>
+<tr><td>Definition</td><td>An approach to software development that emphasizes</td></tr>
+<tr><td></td><td>modeling the domain and its logic using a shared</td></tr>
+<tr><td></td><td>ubiquitous language between domain experts and</td></tr>
+<tr><td></td><td>engineers.</td></tr>
+<tr><td>Context</td><td>DDD provides patterns for handling complex domain</td></tr>
+<tr><td></td><td>logic, including entities, value objects, aggregates,</td></tr>
+<tr><td></td><td>repositories and domain events.</td></tr>
+<tr><td>Related</td><td>[[#bounded-context][Bounded Context]], [[#event-storming][Event Storming]]</td></tr>
+<tr><td>References</td><td><a href="../..*handbooks*architecture*README*">Software Architecture Handbook</a></td></tr>
+</tbody></table>
+<h2 id="event-storming">Event Storming</h2>
+<table><thead><tr><th>Property</th><th>Value</th></tr></thead><tbody>
+<tr><td>Definition</td><td>A collaborative modelling technique for exploring</td></tr>
+<tr><td></td><td>complex business domains through events, commands and</td></tr>
+<tr><td></td><td>aggregates.</td></tr>
+<tr><td>Context</td><td>Event storming brings domain experts and engineers</td></tr>
+<tr><td></td><td>together to build a shared understanding of the domain.</td></tr>
+<tr><td></td><td>It is particularly useful for designing event-driven</td></tr>
+<tr><td></td><td>systems.</td></tr>
+<tr><td>Related</td><td>[[#domain-driven-design][Domain-Driven Design]], [[#bounded-context][Bounded Context]]</td></tr>
+<tr><td>References</td><td><a href="../..*handbooks*architecture*README*">Software Architecture Handbook</a></td></tr>
+</tbody></table>
+<h2 id="hexagonal-architecture">Hexagonal Architecture</h2>
+<table><thead><tr><th>Property</th><th>Value</th></tr></thead><tbody>
+<tr><td>Definition</td><td>An architectural pattern that isolates core business</td></tr>
+<tr><td></td><td>logic from external concerns through ports (interfaces)</td></tr>
+<tr><td></td><td>and adapters (implementations).</td></tr>
+<tr><td>Context</td><td>Also known as Ports and Adapters. The core domain has</td></tr>
+<tr><td></td><td>no dependency on databases, APIs, UIs or other external</td></tr>
+<tr><td></td><td>systems, improving testability and evolvability.</td></tr>
+<tr><td>Related</td><td>[[#layered-architecture][Layered Architecture]]</td></tr>
+<tr><td>References</td><td><a href="../..*handbooks*architecture*README*">Software Architecture Handbook</a></td></tr>
+</tbody></table>
+<h2 id="layered-architecture">Layered Architecture</h2>
+<table><thead><tr><th>Property</th><th>Value</th></tr></thead><tbody>
+<tr><td>Definition</td><td>An architectural pattern that organizes the system into</td></tr>
+<tr><td></td><td>horizontal layers (presentation, application, domain,</td></tr>
+<tr><td></td><td>infrastructure), each with a specific responsibility.</td></tr>
+<tr><td>Context</td><td>Each layer depends only on the layer directly beneath</td></tr>
+<tr><td></td><td>it. This is the most widely understood architectural</td></tr>
+<tr><td></td><td>pattern but can lead to leaky abstractions.</td></tr>
+<tr><td>Related</td><td>[[#hexagonal-architecture][Hexagonal Architecture]]</td></tr>
+<tr><td>References</td><td><a href="../..*handbooks*architecture*README*">Software Architecture Handbook</a></td></tr>
+</tbody></table>
+<h2 id="quality-attribute">Quality Attribute</h2>
+<table><thead><tr><th>Property</th><th>Value</th></tr></thead><tbody>
+<tr><td>Definition</td><td>A measurable or testable property of a system that</td></tr>
+<tr><td></td><td>indicates how well it satisfies stakeholder concerns</td></tr>
+<tr><td></td><td>beyond functional requirements.</td></tr>
+<tr><td>Context</td><td>Common quality attributes include performance,</td></tr>
+<tr><td></td><td>scalability, availability, security, maintainability,</td></tr>
+<tr><td></td><td>evolvability, operability and testability. Every</td></tr>
+<tr><td></td><td>architectural decision involves trade-offs between</td></tr>
+<tr><td></td><td>quality attributes.</td></tr>
+<tr><td>Related</td><td>[[#architecture-decision-record-adr][ADR]], [[#trade-off][Trade-off]]</td></tr>
+<tr><td>References</td><td><a href="../..*handbooks*architecture*README*">Software Architecture Handbook</a></td></tr>
+</tbody></table>
+<h2 id="rfc-request-for-comments">RFC (Request for Comments)</h2>
+<table><thead><tr><th>Property</th><th>Value</th></tr></thead><tbody>
+<tr><td>Definition</td><td>A proposal document for a significant architectural</td></tr>
+<tr><td></td><td>change that invites review and discussion before a</td></tr>
+<tr><td></td><td>decision is made.</td></tr>
+<tr><td>Context</td><td>RFCs are used for changes that have broad impact,</td></tr>
+<tr><td></td><td>involve significant trade-offs or affect multiple</td></tr>
+<tr><td></td><td>teams. They precede ADRs, which capture the final</td></tr>
+<tr><td></td><td>decision.</td></tr>
+<tr><td>Related</td><td>[[#architecture-decision-record-adr][ADR]], [[#decision-log][Decision Log]]</td></tr>
+<tr><td>References</td><td><a href="../..*handbooks*architecture*README*">Software Architecture Handbook</a></td></tr>
+</tbody></table>
+<h2 id="trade-off">Trade-off</h2>
+<table><thead><tr><th>Property</th><th>Value</th></tr></thead><tbody>
+<tr><td>Definition</td><td>The recognition that improving one quality attribute or</td></tr>
+<tr><td></td><td>characteristic of a system inevitably impacts another.</td></tr>
+<tr><td>Context</td><td>Architecture is the art of managing trade-offs. Every</td></tr>
+<tr><td></td><td>decision optimises for some outcomes at the expense of</td></tr>
+<tr><td></td><td>others. Good architecture makes trade-offs explicit.</td></tr>
+<tr><td>Related</td><td>[[#quality-attribute][Quality Attribute]], [[#architecture-decision-record-adr][ADR]]</td></tr>
+<tr><td>References</td><td><a href="../..*handbooks*architecture*README*">Software Architecture Handbook</a></td></tr>
+</tbody></table>
+<h1 id="related-documents">Related Documents</h1>
+<ul>
+<li><a href="../..*handbooks*architecture*README*">Software Architecture Handbook</a></li>
+<li><a href="..*engineering*README*">Engineering Glossary</a></li>
+<li><a href="..*..*templates*adr*README*">ADR Template</a></li>
+<li><a href="../..*STYLE_GUIDE*">Style Guide</a></li>
+<li><a href="..*README*">Glossary Overview</a></li>
+</ul>
+
+</div>
+
+
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Engineering Knowledge Framework — Building AI-native engineering knowledge systems</p>
+    </div>
+  </footer>
+</body>
+</html>

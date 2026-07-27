@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="An open framework for capturing, organizing and applying engineering knowledge">
+  <title>Engineering Knowledge Framework</title>
+  <link rel="stylesheet" href="https://dhruvasagar.github.io/engineering-knowledge-framework/style.css">
+  
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a href="https:&#x2F;&#x2F;dhruvasagar.github.io&#x2F;engineering-knowledge-framework" class="logo">Engineering Knowledge Framework</a>
+      <nav class="site-nav">
+        <a href="https:&#x2F;&#x2F;dhruvasagar.github.io&#x2F;engineering-knowledge-framework">Home</a>
+        <a href="https://github.com/dhruvasagar/engineering-knowledge-framework">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    
+<h1>Release Quality Gate Playbook</h1>
+
+<p class="description">Quality verification before release</p>
+
+<div class="content">
+  <h1 id="objective">Objective</h1>
+<p>Ensure every release meets defined quality standards before reaching
+production. Quality gates provide automated and manual checks that
+protect users and infrastructure.</p>
+<h1 id="inputs">Inputs</h1>
+<ul>
+<li>Release candidate version.</li>
+<li>CI*CD pipeline results.</li>
+<li>Test coverage and health reports.</li>
+<li>Security scan results.</li>
+<li>Performance benchmark results.</li>
+</ul>
+<h1 id="prerequisites">Prerequisites</h1>
+<ul>
+<li>CI*CD pipeline configured with quality gates (see <a href="../..*guides*rails*project-standards*">Project Standards</a>).</li>
+<li>Quality metrics baselines established (see <a href="../..*guides*quality*quality-metrics*">Quality Metrics</a>).</li>
+<li><a href="../..*checklists*quality*release-readiness*">Release Readiness Checklist</a> available.</li>
+</ul>
+<h1 id="workflow">Workflow</h1>
+<h2 id="step-1-automated-gates">Step 1: Automated Gates</h2>
+<p>Before human review, the CI*CD pipeline must pass these automated gates:</p>
+<p>| Gate | Threshold |
++----------------------+--------------------------------------------------+</p>
+<table><thead><tr><th>Test pass rate</th><th>100% — no skipped, failed or flaky tests.</th></tr></thead><tbody>
+<tr><td>Test coverage</td><td>&gt;= 80% line coverage (project baseline).</td></tr>
+<tr><td>Linting</td><td>No errors, warnings reviewed.</td></tr>
+<tr><td>Security scan</td><td>No critical or high vulnerabilities.</td></tr>
+<tr><td>Dependency audit</td><td>No vulnerable or deprecated dependencies.</td></tr>
+<tr><td>Performance check</td><td>No regression beyond 5% on critical paths.</td></tr>
+</tbody></table>
+<h2 id="step-2-manual-review-gates">Step 2: Manual Review Gates</h2>
+<p>Automated gates passed? Proceed to manual review:</p>
+<ol>
+<li><em><strong>Code review completeness</strong></em>: All PRs merged into the release are reviewed.</li>
+<li><em><strong>Changelog accuracy</strong></em>: Changelog entries are complete and accurate.</li>
+<li><em><strong>API compatibility</strong></em>: No breaking changes without documented migration.</li>
+<li><em><strong>Database migration safety</strong></em>: Migrations have rollback plans.</li>
+<li><em><strong>Feature flags</strong></em>: New features are behind flags if not fully ready.</li>
+</ol>
+<h2 id="step-3-go-no-go-decision">Step 3: Go*No-Go Decision</h2>
+<p>Based on gate results, decide:</p>
+<ul>
+<li><em><strong>Go</strong></em>: All gates pass. Release proceeds.</li>
+<li><em><strong>Go with exceptions</strong></em>: Non-critical gates fail, exceptions documented
+and approved.</li>
+<li><em><strong>No-Go</strong></em>: Critical gates fail. Release is blocked until resolved.</li>
+</ul>
+<h2 id="step-4-release">Step 4: Release</h2>
+<ol>
+<li>Tag the release candidate.</li>
+<li>Deploy to staging and verify.</li>
+<li>Run smoke tests in staging.</li>
+<li>Deploy to production following the deployment playbook.</li>
+<li>Monitor for incidents during the cooldown period.</li>
+</ol>
+<h2 id="step-5-post-release">Step 5: Post-Release</h2>
+<ol>
+<li>Verify all services are healthy.</li>
+<li>Check error rates and performance metrics.</li>
+<li>Document any release issues for the retrospective.</li>
+<li>Close the release checklist.</li>
+</ol>
+<h1 id="quality-gate-summary">Quality Gate Summary</h1>
+<p>| Gate | Automated | Manual | Blocking |
++--------------------+-----------+--------+----------+</p>
+<table><thead><tr><th>Tests pass</th><th>✅</th><th></th><th>✅</th></tr></thead><tbody>
+<tr><td>Coverage threshold</td><td>✅</td><td></td><td>✅</td></tr>
+<tr><td>Linting</td><td>✅</td><td></td><td>✅</td></tr>
+<tr><td>Security scan</td><td>✅</td><td></td><td>✅</td></tr>
+<tr><td>Dependency audit</td><td>✅</td><td></td><td>✅</td></tr>
+<tr><td>Performance</td><td>✅</td><td></td><td>⚠️</td></tr>
+<tr><td>Code review</td><td></td><td>✅</td><td>✅</td></tr>
+<tr><td>Changelog</td><td></td><td>✅</td><td>✅</td></tr>
+<tr><td>API compat</td><td></td><td>✅</td><td>⚠️</td></tr>
+<tr><td>Migration safety</td><td></td><td>✅</td><td>✅</td></tr>
+<tr><td>Feature flags</td><td></td><td>✅</td><td>⚠️</td></tr>
+</tbody></table>
+<h1 id="checklist">Checklist</h1>
+<ul>
+<li><input disabled="" type="checkbox"/>
+All automated gates pass.</li>
+<li><input disabled="" type="checkbox"/>
+Code reviews complete.</li>
+<li><input disabled="" type="checkbox"/>
+Changelog verified.</li>
+<li><input disabled="" type="checkbox"/>
+API compatibility checked.</li>
+<li><input disabled="" type="checkbox"/>
+Migrations reviewed.</li>
+<li><input disabled="" type="checkbox"/>
+Feature flags configured.</li>
+<li><input disabled="" type="checkbox"/>
+Go*No-Go decision documented.</li>
+<li><input disabled="" type="checkbox"/>
+Staging deployment verified.</li>
+<li><input disabled="" type="checkbox"/>
+Production deployment completed.</li>
+<li><input disabled="" type="checkbox"/>
+Post-release monitoring active.</li>
+</ul>
+<h1 id="escalation-points">Escalation Points</h1>
+<ul>
+<li>Blocking gate failure: fix before release or obtain exception approval.</li>
+<li>Performance regression &gt; 5%: investigate before release.</li>
+<li>Security vulnerability discovered: follow <a href="..*..*guides*security*dependency-security*">Dependency Security</a> response.</li>
+</ul>
+<h1 id="expected-outputs">Expected Outputs</h1>
+<ul>
+<li>Release decision documented with rationale.</li>
+<li>Quality gate results archived.</li>
+<li>Release deployed to production.</li>
+<li>Post-release monitoring active for cooldown period.</li>
+</ul>
+<h1 id="related-documents">Related Documents</h1>
+<ul>
+<li><a href="../..*guides*quality*quality-metrics*">Quality Metrics</a></li>
+<li><a href="../..*guides*rails*project-standards*">Rails Project Standards</a></li>
+<li><a href="../..*checklists*rails*deployment*">Rails Deployment Checklist</a></li>
+<li><a href="../..*playbooks*rails*deployment*">Rails Deployment Playbook</a></li>
+</ul>
+
+</div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Engineering Knowledge Framework — Building AI-native engineering knowledge systems</p>
+    </div>
+  </footer>
+</body>
+</html>

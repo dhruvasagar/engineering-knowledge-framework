@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="An open framework for capturing, organizing and applying engineering knowledge">
+  <title>Engineering Knowledge Framework</title>
+  <link rel="stylesheet" href="https://dhruvasagar.github.io/engineering-knowledge-framework/style.css">
+  
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a href="https:&#x2F;&#x2F;dhruvasagar.github.io&#x2F;engineering-knowledge-framework" class="logo">Engineering Knowledge Framework</a>
+      <nav class="site-nav">
+        <a href="https:&#x2F;&#x2F;dhruvasagar.github.io&#x2F;engineering-knowledge-framework">Home</a>
+        <a href="https://github.com/dhruvasagar/engineering-knowledge-framework">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    
+<h1>Engineering Fundamentals Handbook</h1>
+
+<p class="description">Enduring principles, standards and decision frameworks for software engineering</p>
+
+
+<div class="content">
+  <h1 id="purpose">Purpose</h1>
+<p>Engineering is the disciplined application of knowledge to build and
+maintain software systems.</p>
+<p>This handbook defines the enduring principles, standards and decision
+frameworks that guide engineering work within this organization.</p>
+<p>Unlike technology-specific guides, this document focuses on fundamentals
+that remain valuable regardless of programming language, framework or
+tooling choices.</p>
+<p>Its primary objective is to improve engineering judgement.</p>
+<p>Engineers who understand these principles can make better decisions,
+produce higher quality software and collaborate more effectively with
+both humans and AI.</p>
+<h1 id="scope">Scope</h1>
+<p>This handbook covers:</p>
+<ul>
+<li>Core engineering principles.</li>
+<li>Code organization and design.</li>
+<li>Quality and testing philosophy.</li>
+<li>Technical debt management.</li>
+<li>Engineering decision frameworks.</li>
+<li>AI integration principles.</li>
+</ul>
+<p>Technology-specific guidance belongs in capability-specific handbooks
+(e.g., Rails Engineering, Software Architecture).</p>
+<h1 id="principles">Principles</h1>
+<h2 id="separation-of-concerns">Separation of Concerns</h2>
+<p>Every module, class, function or component should have a single, clearly
+defined responsibility.</p>
+<p>Code that attempts to do many things simultaneously is harder to
+understand, harder to test and harder to change.</p>
+<p>Applying separation of concerns means:</p>
+<ul>
+<li>Organising code by what it does rather than what it is.</li>
+<li>Extracting distinct responsibilities into separate modules.</li>
+<li>Ensuring each layer or component has a clear boundary.</li>
+<li>Keeping coupling loose and cohesion high.</li>
+</ul>
+<p>See the <a href="../..*glossary*engineering*README*">Engineering Glossary</a> for definitions of coupling and cohesion.</p>
+<h2 id="encapsulation">Encapsulation</h2>
+<p>Components should hide their internal implementation details behind a
+stable interface.</p>
+<p>Encapsulation enables change by ensuring that internal refactoring does
+not affect consumers.</p>
+<p>Well-encapsulated code:</p>
+<ul>
+<li>Exposes only what is necessary.</li>
+<li>Protects internal invariants.</li>
+<li>Can be changed without external impact.</li>
+<li>Is easier to reason about.</li>
+</ul>
+<h2 id="composition-over-inheritance">Composition over Inheritance</h2>
+<p>Prefer composing behaviours from small, focused units over building deep
+inheritance hierarchies.</p>
+<p>Composition is more flexible, easier to test and less likely to produce
+fragile code.</p>
+<p>Inheritance is appropriate when:</p>
+<ul>
+<li>There is a genuine is-a relationship.</li>
+<li>The hierarchy is shallow (typically one or two levels).</li>
+<li>Behaviour is extended rather than overridden.</li>
+</ul>
+<p>When in doubt, prefer composition.</p>
+<h2 id="dependency-inversion">Dependency Inversion</h2>
+<p>High-level modules should not depend on low-level modules.</p>
+<p>Both should depend on abstractions.</p>
+<p>This principle enables:</p>
+<ul>
+<li>Swappable implementations.</li>
+<li>Easier testing through mocking or stubbing.</li>
+<li>Reduced coupling between layers.</li>
+<li>Evolution of implementations without affecting consumers.</li>
+</ul>
+<p>Apply dependency inversion at architectural boundaries.</p>
+<h2 id="explicit-dependencies">Explicit Dependencies</h2>
+<p>Components should declare their dependencies explicitly rather than
+obtaining them implicitly.</p>
+<p>Explicit dependencies:</p>
+<ul>
+<li>Make the component's requirements visible.</li>
+<li>Simplify testing.</li>
+<li>Reduce hidden coupling.</li>
+<li>Improve readability.</li>
+</ul>
+<p>Prefer dependency injection, constructor injection or service locators
+over global state or static access.</p>
+<h2 id="consistency">Consistency</h2>
+<p>Consistent code is easier to read, review and maintain.</p>
+<p>Consistency applies to:</p>
+<ul>
+<li>Naming conventions.</li>
+<li>Code structure.</li>
+<li>Error handling patterns.</li>
+<li>Logging conventions.</li>
+<li>Testing approaches.</li>
+</ul>
+<p>Follow the conventions established in the capability-specific handbooks.
+When no convention exists, establish one rather than introducing a new
+style.</p>
+<h2 id="defend-against-complexity">Defend against Complexity</h2>
+<p>Software complexity is the primary driver of long-term cost.</p>
+<p>Complexity manifests as:</p>
+<ul>
+<li>Code that is hard to understand.</li>
+<li>Systems that are hard to change.</li>
+<li>Interactions that are hard to predict.</li>
+<li>Dependencies that are hard to manage.</li>
+</ul>
+<p>Defend against complexity by:</p>
+<ul>
+<li>Preferring simple designs over clever ones.</li>
+<li>Decomposing large systems into small, independent modules.</li>
+<li>Establishing clear boundaries between components.</li>
+<li>Regularly refactoring toward simpler structures.</li>
+<li>Saying no to unnecessary features.</li>
+</ul>
+<p>Simplicity is not simplicity of implementation.</p>
+<p>It is simplicity of understanding.</p>
+<h2 id="prefer-clarity-over-cleverness">Prefer Clarity over Cleverness</h2>
+<p>Code is read far more often than it is written.</p>
+<p>Optimise for the reader.</p>
+<p>Clear code:</p>
+<ul>
+<li>Uses descriptive names.</li>
+<li>Expresses intent directly.</li>
+<li>Avoids unnecessary abstraction.</li>
+<li>Favours obvious solutions over clever ones.</li>
+</ul>
+<p>If code is difficult to understand, it is difficult to maintain.</p>
+<h1 id="code-organization">Code Organization</h1>
+<h2 id="module-boundaries">Module Boundaries</h2>
+<p>Organise code into modules with clear responsibilities.</p>
+<p>Each module should:</p>
+<ul>
+<li>Have one primary purpose.</li>
+<li>Expose a well-defined interface.</li>
+<li>Minimise knowledge of other modules.</li>
+<li>Be independently testable.</li>
+</ul>
+<h2 id="layer-separation">Layer Separation</h2>
+<p>Separate code into logical layers.</p>
+<p>Common layers include:</p>
+<ul>
+<li>Presentation: Handles user interaction.</li>
+<li>Application: Orchestrates business operations.</li>
+<li>Domain: Contains business logic.</li>
+<li>Infrastructure: Manages technical concerns.</li>
+</ul>
+<p>Each layer should depend only on the layer beneath it.</p>
+<h2 id="package-by-feature">Package by Feature</h2>
+<p>Organise code by feature rather than by layer.</p>
+<p>Feature-based organisation:</p>
+<ul>
+<li>Groups related code together.</li>
+<li>Makes features self-contained.</li>
+<li>Simplifies navigation.</li>
+<li>Enables independent evolution.</li>
+</ul>
+<h1 id="engineering-standards">Engineering Standards</h1>
+<h2 id="naming">Naming</h2>
+<p>Names should reveal intent.</p>
+<p>Good names:</p>
+<ul>
+<li>Describe what something does.</li>
+<li>Use the vocabulary of the domain.</li>
+<li>Are specific rather than generic.</li>
+<li>Avoid abbreviations unless universally understood.</li>
+</ul>
+<table><thead><tr><th>Good</th><th>Avoid</th></tr></thead><tbody>
+<tr><td><code>UserRegistrationService</code></td><td><code>UserService</code></td></tr>
+<tr><td><code>send_password_reset_email</code></td><td><code>handle_email</code></td></tr>
+<tr><td><code>calculate_total_revenue</code></td><td><code>calc</code></td></tr>
+</tbody></table>
+<h2 id="error-handling">Error Handling</h2>
+<p>Errors are a normal part of software operation.</p>
+<p>Engineers should:</p>
+<ul>
+<li>Handle errors at the appropriate level of abstraction.</li>
+<li>Never silently swallow exceptions.</li>
+<li>Provide meaningful error messages.</li>
+<li>Distinguish between recoverable and unrecoverable errors.</li>
+<li>Log errors with sufficient context for diagnosis.</li>
+</ul>
+<h2 id="logging">Logging</h2>
+<p>Logging should support operations.</p>
+<p>Effective logging:</p>
+<ul>
+<li>Uses structured formats.</li>
+<li>Includes relevant context.</li>
+<li>Distinguishes severity levels.</li>
+<li>Avoids logging sensitive information.</li>
+<li>Follows consistent conventions.</li>
+</ul>
+<h2 id="testing">Testing</h2>
+<p>Every capability should define its testing standards.</p>
+<p>Common principles include:</p>
+<ul>
+<li>Test behaviour, not implementation.</li>
+<li>Write tests that are readable and maintainable.</li>
+<li>Prefer fast, reliable tests over comprehensive slow ones.</li>
+<li>Follow the test pyramid: many unit tests, fewer integration tests,
+fewest end-to-end tests.</li>
+</ul>
+<p>See the <a href="../..*playbooks*code-review*README*">Code Review Playbook</a> for testing review standards.</p>
+<h1 id="quality-philosophy">Quality Philosophy</h1>
+<h2 id="define-done">Define Done</h2>
+<p>Every engineering task should have a clear definition of done.</p>
+<p>A task is complete when:</p>
+<ul>
+<li>The change is implemented.</li>
+<li>Tests are written and passing.</li>
+<li>Code has been reviewed.</li>
+<li>Documentation has been updated.</li>
+<li>The change is deployed to production.</li>
+</ul>
+<h2 id="technical-debt">Technical Debt</h2>
+<p>Technical debt is the gap between the current state of the code and the
+desired state.</p>
+<p>Some technical debt is strategic: taken intentionally to achieve a
+business outcome with a plan to repay.</p>
+<p>Some technical debt is accidental: accumulated through neglect,
+inadequate design or insufficient testing.</p>
+<p>Engineers should:</p>
+<ul>
+<li>Track technical debt explicitly.</li>
+<li>Distinguish strategic from accidental debt.</li>
+<li>Regularly allocate time for debt reduction.</li>
+<li>Document the reasoning behind intentional debt.</li>
+</ul>
+<h2 id="refactoring">Refactoring</h2>
+<p>Refactoring is the disciplined practice of improving code structure
+without changing behaviour.</p>
+<p>Refactoring should:</p>
+<ul>
+<li>Be driven by clear goals.</li>
+<li>Be supported by tests.</li>
+<li>Be done incrementally.</li>
+<li>Be reviewed as carefully as new code.</li>
+</ul>
+<p>Regular refactoring prevents gradual decay.</p>
+<h1 id="decision-frameworks">Decision Frameworks</h1>
+<h2 id="when-to-introduce-abstraction">When to Introduce Abstraction</h2>
+<p>Ask these questions before introducing a new abstraction:</p>
+<ol>
+<li>Does the abstraction simplify the code?</li>
+<li>Is the abstraction likely to be reused?</li>
+<li>Can we demonstrate at least three concrete use cases?</li>
+<li>Does the abstraction hide genuine complexity?</li>
+</ol>
+<p>If the answer to most questions is no, defer the abstraction.</p>
+<h2 id="when-to-accept-technical-debt">When to Accept Technical Debt</h2>
+<p>Technical debt may be acceptable when:</p>
+<ul>
+<li>The cost of delay exceeds the cost of repayment.</li>
+<li>The debt is explicitly tracked and scheduled.</li>
+<li>The team understands the trade-offs.</li>
+<li>The decision is documented for future engineers.</li>
+</ul>
+<p>Technical debt is never acceptable when:</p>
+<ul>
+<li>It compromises security.</li>
+<li>It introduces production risk.</li>
+<li>It blocks future work.</li>
+<li>It is invisible to the team.</li>
+</ul>
+<h2 id="when-to-rewrite">When to Rewrite</h2>
+<p>Rewriting a system carries significant risk.</p>
+<p>Consider a rewrite only when:</p>
+<ul>
+<li>The existing system cannot evolve to meet requirements.</li>
+<li>The cost of maintenance exceeds the cost of replacement.</li>
+<li>The team understands the existing domain and failure modes.</li>
+<li>Incremental improvement has been ruled out.</li>
+</ul>
+<p>Prefer incremental improvement over wholesale replacement.</p>
+<h1 id="ai-integration">AI Integration</h1>
+<h2 id="ai-as-collaborator">AI as Collaborator</h2>
+<p>AI systems should be treated as engineering collaborators.</p>
+<p>They can assist with:</p>
+<ul>
+<li>Research and exploration.</li>
+<li>Drafting and outlining.</li>
+<li>Code generation.</li>
+<li>Review and analysis.</li>
+<li>Refactoring suggestions.</li>
+<li>Documentation generation.</li>
+</ul>
+<h2 id="human-responsibility">Human Responsibility</h2>
+<p>Human engineers remain responsible for all engineering decisions.</p>
+<p>AI-generated code, designs or documentation must be reviewed by a human
+before acceptance.</p>
+<p>AI can accelerate engineering work, but it cannot replace engineering
+judgement.</p>
+<h2 id="context-for-ai">Context for AI</h2>
+<p>AI systems are more effective when provided with:</p>
+<ul>
+<li>Clear scope and constraints.</li>
+<li>Relevant context documents.</li>
+<li>Defined terminology.</li>
+<li>Explicit success criteria.</li>
+<li>Examples of desired output.</li>
+</ul>
+<p>See the <a href="../..*handbooks*ai*README*">AI Engineering Handbook</a> for detailed guidance on AI
+workflows and context engineering.</p>
+<h1 id="capability-map">Capability Map</h1>
+<p>This handbook is the entry point for the Engineering Fundamentals
+capability. The following documents form the complete capability:</p>
+<h2 id="handbooks">Handbooks</h2>
+<ul>
+<li><a href="https://dhruvasagar.github.io/engineering-knowledge-framework/handbooks/engineering/.*README*">Engineering Fundamentals Handbook</a> — This document. Core
+engineering principles, quality philosophy and decision frameworks.</li>
+</ul>
+<h2 id="glossaries">Glossaries</h2>
+<ul>
+<li><a href="../..*glossary*engineering*README*">Engineering Glossary</a> — Foundational terminology (abstraction,
+cohesion, coupling, encapsulation, separation of concerns, etc.).</li>
+</ul>
+<h2 id="guides">Guides</h2>
+<ul>
+<li><a href="../..*guides*engineering*code-organization*">Code Organization</a> — Feature-based packaging, module
+boundaries, dependency flow, anti-patterns.</li>
+<li><a href="../..*guides*engineering*error-handling*">Error Handling</a> — Recoverable vs unrecoverable errors,
+patterns, logging standards, anti-patterns.</li>
+<li><a href="../..*guides*engineering*testing-strategies*">Testing Strategies</a> — Test pyramid, what to test, test
+doubles, sustainable testing practices.</li>
+<li><a href="../..*guides*engineering*logging*">Logging</a> — Structured logging standards, log levels,
+context fields, anti-patterns.</li>
+</ul>
+<h2 id="learning-paths">Learning Paths</h2>
+<ul>
+<li><a href="../..*learning-paths*engineering*README*">Engineering Learning Paths</a> — Beginner, intermediate and
+advanced tracks for engineering fundamentals.</li>
+</ul>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="../..*references*engineering*README*">Engineering References</a> — Quick lookup: design principles,
+patterns, testing, logging, error handling.</li>
+</ul>
+<h2 id="ai-workflows">AI Workflows</h2>
+<ul>
+<li><a href="../..*prompts*engineering-ai-workflows*">AI Workflows for Engineering</a> — Prompt patterns for code
+review, design exploration, refactoring, documentation.</li>
+</ul>
+<h1 id="related-documents">Related Documents</h1>
+<ul>
+<li><a href="..*..*glossary*engineering*README*">Engineering Glossary</a></li>
+<li><a href="../..*handbooks*architecture*README*">Software Architecture Handbook</a></li>
+<li><a href="../..*playbooks*code-review*README*">Code Review Playbook</a></li>
+<li><a href="../..*STYLE_GUIDE*">Style Guide</a></li>
+<li><a href="../..*WRITING_PRINCIPLES*">Writing Principles</a></li>
+<li><a href="../..*DOCUMENT_TYPES*">Document Types</a></li>
+</ul>
+
+</div>
+
+
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Engineering Knowledge Framework — Building AI-native engineering knowledge systems</p>
+    </div>
+  </footer>
+</body>
+</html>

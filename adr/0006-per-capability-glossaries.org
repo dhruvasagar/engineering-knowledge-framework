@@ -1,6 +1,7 @@
 #+TITLE: ADR-0006: Per-Capability Glossaries
 #+AUTHOR: Engineering
 #+DATE: 2026-07-27
+#+DESCRIPTION: Decision to organize glossaries by capability with a shared root glossary
 #+STARTUP: overview indent
 
 :PROPERTIES:

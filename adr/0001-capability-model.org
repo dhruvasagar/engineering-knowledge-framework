@@ -1,6 +1,7 @@
 #+TITLE: ADR-0001: Capability Model for Knowledge Organization
 #+AUTHOR: Engineering
 #+DATE: 2026-07-27
+#+DESCRIPTION: Decision to organize knowledge around Engineering Capabilities
 #+STARTUP: overview indent
 
 :PROPERTIES:

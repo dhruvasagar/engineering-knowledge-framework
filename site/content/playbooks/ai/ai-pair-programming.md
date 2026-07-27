@@ -1,0 +1,103 @@
++++
+title = "AI Pair Programming Playbook"
+description = "Workflow for collaborative coding with AI"
++++
+
+
+# Objective
+
+Use AI as a collaborative programming partner to improve productivity,
+explore solutions and catch issues early. The engineer remains the
+driver — AI augments, not replaces, engineering judgement.
+
+# Inputs
+
+- Task description or user story.
+- Existing codebase context.
+- Relevant standards and patterns.
+
+# Prerequisites
+
+- AI assistant configured with project context.
+- Familiarity with prompting patterns (see [Prompt Engineering](../..*guides*ai*prompt-engineering*)).
+- Understanding of when AI is useful and when it is not.
+
+# Workflow
+
+## Step 1: Define the Task
+
+1. Break the task into small, well-defined steps.
+2. Identify which steps benefit from AI assistance and which require
+   human judgement (design decisions, complex logic, security review).
+3. Collect relevant code context for each step.
+
+## Step 2: Explore with AI
+
+Use AI to explore solutions before writing code:
+
+- "What approaches exist for implementing X?"
+- "What are the trade-offs between approach A and B?"
+- "Are there relevant patterns in the codebase I should follow?"
+
+## Step 3: Generate with AI
+
+For well-understood tasks:
+
+1. Write a clear prompt describing what to build.
+2. Include context: relevant files, conventions, inputs*outputs.
+3. Review the generated code critically.
+4. Iterate: refine the prompt based on the output.
+
+## Step 4: Verify and Refine
+
+1. Run generated code through existing tests.
+2. Review for correctness, security and style.
+3. Refactor AI-generated code to match project standards.
+4. Write tests for the new code (with or without AI assistance).
+
+## Step 5: Reflect
+
+1. Document what worked well with AI and what didn't.
+2. Update prompts and context for future sessions.
+3. Share effective prompt patterns with the team.
+
+# When to Use AI
+
+| Good for AI | Better for human |
++----------------------------------------------+----------------------------------------------+
+| Boilerplate code generation | Design decisions and trade-offs |
+| --- | --- |
+| Test case generation | Security-critical code |
+| Code explanation and documentation | Complex business logic |
+| Refactoring and migration | Code review and verification |
+| Pattern application (service objects, etc.) | Architectural decisions |
+| Debugging assistance | Performance-critical code |
+
+# Checklist
+
+- [ ] Task broken into small steps.
+- [ ] Context collected for each step.
+- [ ] AI output reviewed critically.
+- [ ] Generated code tested.
+- [ ] Code matches project standards.
+- [ ] Effective prompts saved for reuse.
+
+# Anti-patterns
+
+- ***Blind acceptance***: Never use AI output without review.
+- ***Context starvation***: AI needs relevant context to produce good results.
+- ***Over-reliance***: Use AI where it adds value, not for every line of code.
+- ***Prompt reuse without adaptation***: Each task needs a tailored prompt.
+
+# Expected Outputs
+
+- Working code that passes tests and meets standards.
+- Documented prompt patterns for future use.
+- Updated understanding of when AI adds value.
+
+# Related Documents
+
+- [Prompt Engineering](..*..*guides*ai*prompt-engineering*)
+- [Context Engineering](../..*guides*ai*context-engineering*)
+- [AI Safety and Verification](../..*guides*ai*ai-safety*)
+- [AI Usage Checklist](../..*checklists*ai-usage/)

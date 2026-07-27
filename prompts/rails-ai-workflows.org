@@ -189,8 +189,8 @@ queries. Always review generated database access code.
 
 * Related Documents
 
-- [[file:../../handbooks/rails/README.org][Rails Engineering Handbook]]
-- [[file:../../guides/rails/service-objects.org][Service Objects Guide]]
-- [[file:../../guides/rails/testing.org][Testing Rails Applications Guide]]
-- [[file:../../playbooks/rails/upgrade.org][Rails Upgrade Playbook]]
-- [[file:../../prompts/engineering-ai-workflows.org][AI Workflows for Engineering]]
+- [[file:../handbooks/rails/README.org][Rails Engineering Handbook]]
+- [[file:../guides/rails/service-objects.org][Service Objects Guide]]
+- [[file:../guides/rails/testing.org][Testing Rails Applications Guide]]
+- [[file:../playbooks/rails/upgrade.org][Rails Upgrade Playbook]]
+- [[file:../prompts/engineering-ai-workflows.org][AI Workflows for Engineering]]

@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="An open framework for capturing, organizing and applying engineering knowledge">
+  <title>Engineering Knowledge Framework</title>
+  <link rel="stylesheet" href="https://dhruvasagar.github.io/engineering-knowledge-framework/style.css">
+  
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a href="https:&#x2F;&#x2F;dhruvasagar.github.io&#x2F;engineering-knowledge-framework" class="logo">Engineering Knowledge Framework</a>
+      <nav class="site-nav">
+        <a href="https:&#x2F;&#x2F;dhruvasagar.github.io&#x2F;engineering-knowledge-framework">Home</a>
+        <a href="https://github.com/dhruvasagar/engineering-knowledge-framework">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    
+<h1>Rails Project Standards</h1>
+
+<p class="description">Mandatory tooling and CI&#x2F;CD configuration baseline for every Rails project</p>
+
+<div class="content">
+  <h1 id="purpose">Purpose</h1>
+<p>Every Rails project should start with a consistent baseline of code
+quality tools, testing standards and CI*CD configuration.</p>
+<p>This document defines the mandatory tooling and practices that every
+Rails project in this organization must adopt. It ensures consistency
+across projects, reduces onboarding friction and prevents common
+issues from reaching production.</p>
+<p>Unlike the <a href="https://dhruvasagar.github.io/engineering-knowledge-framework/guides/rails/project-standards/.*audit-guide/">Rails Audit Guide</a>, which describes how to perform a
+periodic audit, this document defines the standards that should be in
+place from project inception and enforced continuously.</p>
+<h1 id="scope">Scope</h1>
+<p>This standard applies to all Rails projects within the organization,
+including:</p>
+<ul>
+<li>Greenfield applications.</li>
+<li>Existing applications being brought under management.</li>
+<li>Internal tools and services.</li>
+<li>API-only Rails applications.</li>
+</ul>
+<p>Exceptions require written approval from the engineering lead.</p>
+<h1 id="mandatory-tooling">Mandatory Tooling</h1>
+<p>Every Rails project MUST include the following tools.</p>
+<h2 id="style-and-correctness-rubocop">Style and Correctness — RuboCop</h2>
+<p>Purpose: Enforce consistent Ruby style and catch common errors.</p>
+<p>Mandatory gems:</p>
+<pre><code>group :development, :test do
+  gem &quot;rubocop&quot;, require: false
+  gem &quot;rubocop-rails&quot;, require: false
+  gem &quot;rubocop-rspec&quot;, require: false
+  gem &quot;rubocop-performance&quot;, require: false
+end
+</code></pre>
+<p>Configuration requirements:</p>
+<ul>
+<li>Inherit from rubocop-rails and rubocop-rspec defaults.</li>
+<li>Enable <code>NewCops</code> to adopt new rules as they are released.</li>
+<li>Keep configuration in version control at <code>.rubocop.yml</code>.</li>
+<li>Run in CI with <code>--fail-level</code>convention=.</li>
+</ul>
+<h2 id="security-brakeman">Security — Brakeman</h2>
+<p>Purpose: Static analysis for security vulnerabilities.</p>
+<p>Mandatory gem:</p>
+<pre><code>group :development, :test do
+  gem &quot;brakeman&quot;, require: false
+end
+</code></pre>
+<p>CI requirement:</p>
+<ul>
+<li>Run <code>bundle exec brakeman --no-pager --quiet --ensure-latest</code> in CI.</li>
+<li>Fail the build on any new warning.</li>
+</ul>
+<h2 id="dependency-vulnerabilities-bundler-audit">Dependency Vulnerabilities — bundler-audit</h2>
+<p>Purpose: Scan Gemfile.lock for known vulnerabilities.</p>
+<p>Mandatory gem:</p>
+<pre><code>group :development, :test do
+  gem &quot;bundler-audit&quot;, require: false
+end
+</code></pre>
+<p>CI requirement:</p>
+<ul>
+<li>Run <code>bundle exec bundler-audit check --update</code> in CI.</li>
+<li>Fail the build on any critical or high-severity advisory.</li>
+</ul>
+<h2 id="n-1-detection-bullet">N+1 Detection — Bullet</h2>
+<p>Purpose: Detect N+1 queries and unused eager loading in development and
+test.</p>
+<p>Mandatory gem:</p>
+<pre><code>group :development, :test do
+  gem &quot;bullet&quot;, require: false
+end
+</code></pre>
+<p>Configuration requirements:</p>
+<ul>
+<li>Enable in development and test environments.</li>
+<li>Configure to raise errors in test.</li>
+<li>Configure to log warnings in development.</li>
+</ul>
+<h2 id="performance-profiling-rack-miniprofiler">Performance Profiling — Rack::MiniProfiler</h2>
+<p>Purpose: In-browser performance profiling for development.</p>
+<p>Mandatory gem:</p>
+<pre><code>group :development do
+  gem &quot;rack-mini-profiler&quot;, require: false
+end
+</code></pre>
+<p>Configuration requirements:</p>
+<ul>
+<li>Enabled in development only.</li>
+<li>Never enabled in production.</li>
+</ul>
+<h2 id="code-coverage-simplecov">Code Coverage — SimpleCov</h2>
+<p>Purpose: Measure test coverage and enforce minimum thresholds.</p>
+<p>Mandatory gem:</p>
+<pre><code>group :test do
+  gem &quot;simplecov&quot;, require: false
+end
+</code></pre>
+<p>Configuration requirements:</p>
+<ul>
+<li>Generate coverage report on every CI run.</li>
+<li>Enforce minimum coverage threshold (&gt;= 90% for new projects).</li>
+<li>Fail CI build if coverage drops below threshold.</li>
+</ul>
+<h2 id="recommended-tooling">Recommended Tooling</h2>
+<p>The following tools are strongly recommended but not mandatory:</p>
+<table><thead><tr><th>Tool</th><th>Purpose</th><th>When to Add</th></tr></thead><tbody>
+<tr><td>Reek</td><td>Code smell detection</td><td>Existing codebases with significant</td></tr>
+<tr><td></td><td></td><td>technical debt.</td></tr>
+<tr><td>rails_best_practices</td><td>Rails-specific anti-pattern detection</td><td>Teams new to Rails conventions.</td></tr>
+<tr><td>Flog / Flay</td><td>Complexity and duplication tracking</td><td>Projects with complex domain logic.</td></tr>
+<tr><td>standardrb</td><td>Opinionated zero-config Ruby style</td><td>Teams that prefer no RuboCop config.</td></tr>
+<tr><td>strong_migrations</td><td>Safe migration enforcement</td><td>Projects with production databases.</td></tr>
+<tr><td>LicenseFinder</td><td>License compliance</td><td>Projects with third-party</td></tr>
+<tr><td></td><td></td><td>distribution.</td></tr>
+<tr><td>Mutant</td><td>Mutation testing</td><td>Critical domain logic that demands</td></tr>
+<tr><td></td><td></td><td>high test quality.</td></tr>
+</tbody></table>
+<h1 id="ci-cd-baseline">CI*CD Baseline</h1>
+<p>Every Rails project MUST have a CI pipeline that runs on every push.</p>
+<h2 id="minimum-ci-pipeline">Minimum CI Pipeline</h2>
+<pre><code># .github*workflows*ci.yml
+name: CI
+on: [push]
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions*checkout@v4
+      - uses: ruby*setup-ruby@v1
+        with:
+          bundler-cache: true
+      - run: bundle exec rubocop
+      - run: bundle exec brakeman --no-pager --quiet --ensure-latest
+      - run: bundle exec bundler-audit check --update
+
+  test:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:16
+        env:
+          POSTGRES_PASSWORD: postgres
+        options: &gt;-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+    steps:
+      - uses: actions*checkout@v4
+      - uses: ruby*setup-ruby@v1
+        with:
+          bundler-cache: true
+      - run: bundle exec rails db:create db:migrate
+      - run: bundle exec rspec
+      - run: bundle exec rails db:seed  # if applicable
+</code></pre>
+<h2 id="quality-gates">Quality Gates</h2>
+<p>The CI pipeline MUST block merges when:</p>
+<ul>
+<li>RuboCop reports any convention-level offence.</li>
+<li>Brakeman reports any warning.</li>
+<li>bundler-audit reports any advisory.</li>
+<li>Test suite has any failure.</li>
+<li>Code coverage drops below the project's threshold.</li>
+</ul>
+<h2 id="scheduled-audits">Scheduled Audits</h2>
+<p>In addition to per-push CI, schedule these weekly:</p>
+<ul>
+<li><code>bundler-audit</code> full scan (<code>--update</code>).</li>
+<li><code>brakeman</code> full report output.</li>
+</ul>
+<h1 id="project-bootstrap">Project Bootstrap</h1>
+<p>Every new Rails project MUST be initialized with the mandatory tooling
+from this document.</p>
+<h2 id="default-gemfile-template">Default Gemfile Template</h2>
+<pre><code>source &quot;https:/*rubygems.org&quot;
+
+ruby &quot;`&gt; 3.3&quot;
+
+gem &quot;rails&quot;, &quot;`&gt; 7.1&quot;
+gem &quot;pg&quot;
+gem &quot;puma&quot;
+
+# Authentication and authorization
+gem &quot;devise&quot;
+gem &quot;pundit&quot;
+
+group :development, :test do
+  gem &quot;rspec-rails&quot;
+  gem &quot;factory_bot_rails&quot;
+  gem &quot;rubocop&quot;, require: false
+  gem &quot;rubocop-rails&quot;, require: false
+  gem &quot;rubocop-rspec&quot;, require: false
+  gem &quot;rubocop-performance&quot;, require: false
+  gem &quot;brakeman&quot;, require: false
+  gem &quot;bundler-audit&quot;, require: false
+  gem &quot;bullet&quot;
+end
+
+group :development do
+  gem &quot;rack-mini-profiler&quot;, require: false
+end
+
+group :test do
+  gem &quot;simplecov&quot;, require: false
+end
+</code></pre>
+<h2 id="bootstrap-script">Bootstrap Script</h2>
+<p>When creating a new project, run:</p>
+<pre><code>rails new my_app --database=postgresql --skip-test
+cd my_app
+
+# Add testing framework
+bundle add rspec-rails --group &quot;development, test&quot;
+rails generate rspec:install
+
+# Add mandatory tooling
+bundle add rubocop --group &quot;development, test&quot; --require false
+bundle add rubocop-rails --group &quot;development, test&quot; --require false
+bundle add rubocop-rspec --group &quot;development, test&quot; --require false
+bundle add rubocop-performance --group &quot;development, test&quot; --require false
+bundle add brakeman --group &quot;development, test&quot; --require false
+bundle add bundler-audit --group &quot;development, test&quot; --require false
+bundle add bullet --group &quot;development, test&quot;
+bundle add rack-mini-profiler --group &quot;development&quot; --require false
+bundle add simplecov --group &quot;test&quot; --require false
+
+# Set up pre-commit hooks (optional but recommended)
+# See .hooks section below
+</code></pre>
+<h1 id="pre-commit-hooks">Pre-Commit Hooks</h1>
+<p>While not mandatory, pre-commit hooks catch issues before they reach
+CI. Every project SHOULD configure them.</p>
+<h2 id="using-lefthook">Using Lefthook</h2>
+<pre><code># lefthook.yml
+pre-commit:
+  parallel: true
+  commands:
+    rubocop:
+      run: bundle exec rubocop --force-exclusion {staged_files}
+    brakeman:
+      run: bundle exec brakeman --no-pager --quiet
+</code></pre>
+<h2 id="using-overcommit">Using Overcommit</h2>
+<pre><code># .overcommit.yml
+PreCommit:
+  RuboCop:
+    enabled: true
+    command: [&quot;bundle&quot;, &quot;exec&quot;, &quot;rubocop&quot;, &quot;--force-exclusion&quot;]
+  Brakeman:
+    enabled: true
+    command: [&quot;bundle&quot;, &quot;exec&quot;, &quot;brakeman&quot;, &quot;--no-pager&quot;, &quot;--quiet&quot;]
+</code></pre>
+<h1 id="exceptions-and-escalation">Exceptions and Escalation</h1>
+<h2 id="requesting-an-exception">Requesting an Exception</h2>
+<p>A project may request an exception from a mandatory requirement by:</p>
+<ol>
+<li>Documenting the reason in the project's README or a decision record.</li>
+<li>Obtaining written approval from the engineering lead.</li>
+<li>Setting a review date to reassess the exception.</li>
+</ol>
+<h2 id="reasons-that-may-justify-an-exception">Reasons That May Justify an Exception</h2>
+<ul>
+<li>The tool is incompatible with the project's technology stack.</li>
+<li>The project is in maintenance mode with a defined end-of-life.</li>
+<li>The project is a prototype explicitly designated as non-production.</li>
+</ul>
+<h2 id="reasons-that-do-not-justify-an-exception">Reasons That Do NOT Justify an Exception</h2>
+<ul>
+<li>"We don't have time to set it up."</li>
+<li>"The codebase won't pass the checks."</li>
+<li>"We've never used it before."</li>
+</ul>
+<h1 id="compliance-verification">Compliance Verification</h1>
+<h2 id="for-new-projects">For New Projects</h2>
+<p>The project bootstrap MUST include all mandatory tools before the first
+production deployment. This is verified during the architecture review.</p>
+<h2 id="for-existing-projects">For Existing Projects</h2>
+<p>Existing projects MUST add the mandatory tooling within one quarter of
+this standard being adopted. A transition plan SHOULD be documented if
+immediate compliance is not feasible.</p>
+<h2 id="periodic-review">Periodic Review</h2>
+<p>This standard SHOULD be reviewed quarterly to:</p>
+<ul>
+<li>Add new tools that have become industry standard.</li>
+<li>Remove tools that are no longer valuable.</li>
+<li>Adjust thresholds based on experience.</li>
+</ul>
+<h1 id="related-documents">Related Documents</h1>
+<ul>
+<li><a href="https://dhruvasagar.github.io/engineering-knowledge-framework/guides/rails/project-standards/.*audit-guide*">Rails Audit Guide</a></li>
+<li><a href="../..*handbooks*rails*README*">Rails Engineering Handbook</a></li>
+<li><a href="../..*guides*rails*testing*">Testing Rails Applications Guide</a></li>
+<li><a href="../..*playbooks*rails*upgrade*">Rails Upgrade Playbook</a></li>
+<li><a href="../..*checklists*rails*pull-request*">Rails Pull Request Checklist</a></li>
+<li><a href="../..*handbooks*engineering*README*">Engineering Fundamentals Handbook</a></li>
+</ul>
+
+</div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Engineering Knowledge Framework — Building AI-native engineering knowledge systems</p>
+    </div>
+  </footer>
+</body>
+</html>

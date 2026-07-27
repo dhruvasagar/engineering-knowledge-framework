@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="{% block description %}{{ config.description }}{% endblock description %}">
+  <title>{% block title %}{{ config.title }}{% endblock title %}</title>
+  <link rel="stylesheet" href="{{ get_url(path='style.css', trailing_slash=false) }}">
+  {% block extra_head %}{% endblock extra_head %}
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a href="{{ config.base_url }}" class="logo">{{ config.title }}</a>
+      <nav class="site-nav">
+        <a href="{{ config.base_url }}">Home</a>
+        <a href="https://github.com/dhruvasagar/engineering-knowledge-framework">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    {% block content %}{% endblock content %}
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>{{ config.title }} — {{ config.extra.site_tagline }}</p>
+    </div>
+  </footer>
+</body>
+</html>

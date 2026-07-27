@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="An open framework for capturing, organizing and applying engineering knowledge">
+  <title>Engineering Knowledge Framework</title>
+  <link rel="stylesheet" href="https://dhruvasagar.github.io/engineering-knowledge-framework/style.css">
+  
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a href="https:&#x2F;&#x2F;dhruvasagar.github.io&#x2F;engineering-knowledge-framework" class="logo">Engineering Knowledge Framework</a>
+      <nav class="site-nav">
+        <a href="https:&#x2F;&#x2F;dhruvasagar.github.io&#x2F;engineering-knowledge-framework">Home</a>
+        <a href="https://github.com/dhruvasagar/engineering-knowledge-framework">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    
+<h1>Release Readiness Checklist</h1>
+
+<p class="description">Verification before production release</p>
+
+<div class="content">
+  <h1 id="purpose">Purpose</h1>
+<p>Verify that the system is ready for production release. This checklist
+should be completed before every production deployment.</p>
+<h1 id="code-and-configuration">Code and Configuration</h1>
+<ul>
+<li><input disabled="" type="checkbox"/>
+All code changes are reviewed and approved.</li>
+<li><input disabled="" type="checkbox"/>
+Feature flags are configured correctly.</li>
+<li><input disabled="" type="checkbox"/>
+Configuration changes are reviewed and applied.</li>
+<li><input disabled="" type="checkbox"/>
+Database migrations are reviewed and have rollback plans.</li>
+<li><input disabled="" type="checkbox"/>
+No debug or development-only code in the release.</li>
+</ul>
+<h1 id="testing">Testing</h1>
+<ul>
+<li><input disabled="" type="checkbox"/>
+All automated tests pass.</li>
+<li><input disabled="" type="checkbox"/>
+Test coverage meets the project threshold.</li>
+<li><input disabled="" type="checkbox"/>
+Manual smoke tests pass in staging.</li>
+<li><input disabled="" type="checkbox"/>
+Integration tests pass.</li>
+<li><input disabled="" type="checkbox"/>
+Performance benchmarks show no regression.</li>
+</ul>
+<h1 id="security">Security</h1>
+<ul>
+<li><input disabled="" type="checkbox"/>
+Security scan passes with no critical or high findings.</li>
+<li><input disabled="" type="checkbox"/>
+Dependency audit shows no vulnerable dependencies.</li>
+<li><input disabled="" type="checkbox"/>
+Secrets rotation completed if needed.</li>
+<li><input disabled="" type="checkbox"/>
+Access controls are reviewed.</li>
+</ul>
+<h1 id="deployment">Deployment</h1>
+<ul>
+<li><input disabled="" type="checkbox"/>
+Deployment playbook is up to date.</li>
+<li><input disabled="" type="checkbox"/>
+Rollback plan is documented and tested.</li>
+<li><input disabled="" type="checkbox"/>
+Deployment window is scheduled.</li>
+<li><input disabled="" type="checkbox"/>
+Release announcement is prepared.</li>
+<li><input disabled="" type="checkbox"/>
+Monitoring and alerting are configured for the release.</li>
+</ul>
+<h1 id="documentation">Documentation</h1>
+<ul>
+<li><input disabled="" type="checkbox"/>
+Changelog is updated with release notes.</li>
+<li><input disabled="" type="checkbox"/>
+API changes are documented.</li>
+<li><input disabled="" type="checkbox"/>
+Migration guide is prepared for breaking changes.</li>
+<li><input disabled="" type="checkbox"/>
+Runbook is updated if operational procedures changed.</li>
+</ul>
+<h1 id="post-release">Post-Release</h1>
+<ul>
+<li><input disabled="" type="checkbox"/>
+Health checks pass after deployment.</li>
+<li><input disabled="" type="checkbox"/>
+Error rates are normal.</li>
+<li><input disabled="" type="checkbox"/>
+Performance metrics are normal.</li>
+<li><input disabled="" type="checkbox"/>
+Monitoring dashboards are reviewed.</li>
+<li><input disabled="" type="checkbox"/>
+Release is announced to stakeholders.</li>
+</ul>
+<h1 id="related-documents">Related Documents</h1>
+<ul>
+<li><a href="../..*playbooks*quality*release-quality-gate*">Release Quality Gate Playbook</a></li>
+<li><a href="../..*playbooks*rails*deployment*">Rails Deployment Playbook</a></li>
+<li><a href="../..*checklists*rails*deployment*">Rails Deployment Checklist</a></li>
+</ul>
+
+</div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Engineering Knowledge Framework — Building AI-native engineering knowledge systems</p>
+    </div>
+  </footer>
+</body>
+</html>

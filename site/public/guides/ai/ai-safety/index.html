@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="An open framework for capturing, organizing and applying engineering knowledge">
+  <title>Engineering Knowledge Framework</title>
+  <link rel="stylesheet" href="https://dhruvasagar.github.io/engineering-knowledge-framework/style.css">
+  
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a href="https:&#x2F;&#x2F;dhruvasagar.github.io&#x2F;engineering-knowledge-framework" class="logo">Engineering Knowledge Framework</a>
+      <nav class="site-nav">
+        <a href="https:&#x2F;&#x2F;dhruvasagar.github.io&#x2F;engineering-knowledge-framework">Home</a>
+        <a href="https://github.com/dhruvasagar/engineering-knowledge-framework">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    
+<h1>AI Safety and Verification</h1>
+
+<p class="description">Practices for safe and responsible use of AI in engineering</p>
+
+<div class="content">
+  <h1 id="purpose">Purpose</h1>
+<p>AI systems are powerful tools, but they introduce risks: incorrect
+output, security vulnerabilities, biased suggestions and over-reliance.</p>
+<p>This guide defines the practices for using AI safely and responsibly in
+engineering work.</p>
+<h1 id="principles">Principles</h1>
+<h2 id="human-oversight-is-mandatory">Human Oversight is Mandatory</h2>
+<p>Every AI-generated output that affects production systems, customer
+data or engineering decisions must be reviewed by a human.</p>
+<p>No AI output is accepted without verification.</p>
+<h2 id="know-the-limitations">Know the Limitations</h2>
+<p>AI systems have known limitations:</p>
+<ul>
+<li>They hallucinate: they generate confident-sounding but incorrect
+information.</li>
+<li>They have limited context windows: they lose track of earlier
+information in long sessions.</li>
+<li>They reflect training data: they may suggest outdated or insecure
+patterns.</li>
+<li>They cannot reason about novel situations: they generalise from
+past examples, they do not understand.</li>
+</ul>
+<h2 id="never-trust-always-verify">Never Trust, Always Verify</h2>
+<p>AI is a source of suggestions, not a source of truth.</p>
+<p>Verify AI output against:</p>
+<ul>
+<li>Authoritative documentation.</li>
+<li>Test results.</li>
+<li>Security scanning tools.</li>
+<li>Engineering judgement.</li>
+</ul>
+<h1 id="high-risk-use-cases">High-Risk Use Cases</h1>
+<p>Some use cases carry higher risk and require additional safeguards.</p>
+<h2 id="production-code">Production Code</h2>
+<p>AI-generated production code requires:</p>
+<ul>
+<li>Human code review by a peer.</li>
+<li>Automated test coverage.</li>
+<li>Security scanning (Brakeman, bundler-audit).</li>
+<li>Staged deployment with monitoring.</li>
+</ul>
+<h2 id="security-sensitive-code">Security-Sensitive Code</h2>
+<p>AI-generated code that handles authentication, authorization,
+encryption or sensitive data requires:</p>
+<ul>
+<li>Security review by a security engineer.</li>
+<li>Penetration testing if the code is customer-facing.</li>
+<li>Compliance review if regulated data is involved.</li>
+</ul>
+<h2 id="architectural-decisions">Architectural Decisions</h2>
+<p>AI-influenced architectural decisions require:</p>
+<ul>
+<li>Documentation of the AI's recommendation and the human rationale.</li>
+<li>Architecture review by a qualified architect.</li>
+<li>ADR documenting the decision, alternatives and trade-offs.</li>
+</ul>
+<h1 id="prohibited-use-cases">Prohibited Use Cases</h1>
+<p>The following uses of AI are prohibited:</p>
+<ul>
+<li>Generating code that will be deployed without human review.</li>
+<li>Generating security-sensitive code without security review.</li>
+<li>Making architectural decisions without human evaluation.</li>
+<li>Generating customer-facing content without editorial review.</li>
+<li>Using AI to bypass security, compliance or quality processes.</li>
+</ul>
+<h1 id="verification-practices">Verification Practices</h1>
+<h2 id="for-code">For Code</h2>
+<ul>
+<li>Compile the code and verify no errors.</li>
+<li>Run the existing test suite.</li>
+<li>Write and run new tests for AI-generated code.</li>
+<li>Run security scanners (SAST, dependency audit).</li>
+<li>Review by a peer.</li>
+</ul>
+<h2 id="for-documentation">For Documentation</h2>
+<ul>
+<li>Verify facts against authoritative sources.</li>
+<li>Check terminology against the relevant glossary.</li>
+<li>Verify links are valid.</li>
+<li>Review for tone and appropriateness.</li>
+</ul>
+<h2 id="for-architecture">For Architecture</h2>
+<ul>
+<li>Evaluate against the relevant principles (handbook).</li>
+<li>Verify trade-offs are documented correctly.</li>
+<li>Check consistency with existing architectural decisions.</li>
+<li>Review by an architect.</li>
+</ul>
+<h1 id="over-reliance-prevention">Over-Reliance Prevention</h1>
+<h2 id="signs-of-over-reliance">Signs of Over-Reliance</h2>
+<ul>
+<li>AI-generated code is accepted without understanding.</li>
+<li>AI suggestions are preferred over team discussion.</li>
+<li>Engineering judgement is deferred to AI.</li>
+<li>AI is used for tasks that require domain expertise.</li>
+</ul>
+<h2 id="prevention-practices">Prevention Practices</h2>
+<ul>
+<li>Use AI as a collaborator, not a decision-maker.</li>
+<li>Always understand code before accepting it.</li>
+<li>Discuss AI suggestions with the team before adopting.</li>
+<li>Regularly audit AI usage patterns.</li>
+</ul>
+<h1 id="related-documents">Related Documents</h1>
+<ul>
+<li><a href="../..*handbooks*ai*README*">AI Engineering Handbook</a></li>
+<li><a href="../..*guides*ai*prompt-engineering*">Prompt Engineering Guide</a></li>
+<li><a href="../..*playbooks*code-review*README*">Code Review Playbook</a></li>
+<li><a href="../..*playbooks*architecture-review*README*">Architecture Review Playbook</a></li>
+<li><a href="../..*handbooks*security*README*">Security Engineering Handbook</a></li>
+</ul>
+
+</div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Engineering Knowledge Framework — Building AI-native engineering knowledge systems</p>
+    </div>
+  </footer>
+</body>
+</html>

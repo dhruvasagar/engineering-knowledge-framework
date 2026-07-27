@@ -106,5 +106,5 @@ Provide landmark regions to enable quick navigation:
 * Related Documents
 
 - [[file:./aria-patterns.org][ARIA Patterns]]
-- [[file:../accessibility-keyboard.org][Keyboard Accessibility]]
+- [[file:./keyboard-accessibility.org][Keyboard Accessibility]]
 - [[file:../../glossary/accessibility/README.org][Accessibility Glossary]]

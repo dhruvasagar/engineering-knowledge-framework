@@ -1,0 +1,7 @@
+[theme]
+name = "engineering-knowledge"
+description = "Minimal theme for the Engineering Knowledge Framework"
+author = "Engineering Knowledge Framework"
+license = "MIT"
+
+[extra]

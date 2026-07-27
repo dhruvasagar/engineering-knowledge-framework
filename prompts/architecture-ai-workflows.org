@@ -269,9 +269,9 @@ principle of minimising accidental complexity.
 
 * Related Documents
 
-- [[file:../../handbooks/architecture/README.org][Software Architecture Handbook]]
-- [[file:../../guides/architecture/adr-writing-guide.org][ADR Writing Guide]]
-- [[file:../../guides/architecture/architectural-patterns.org][Architectural Patterns Guide]]
-- [[file:../../playbooks/architecture-review/README.org][Architecture Review Playbook]]
-- [[file:../../templates/adr/README.org][ADR Template]]
-- [[file:../../handbooks/ai/README.org][AI Engineering Handbook]]
+- [[file:../handbooks/architecture/README.org][Software Architecture Handbook]]
+- [[file:../guides/architecture/adr-writing-guide.org][ADR Writing Guide]]
+- [[file:../guides/architecture/architectural-patterns.org][Architectural Patterns Guide]]
+- [[file:../playbooks/architecture-review/README.org][Architecture Review Playbook]]
+- [[file:../templates/adr/README.org][ADR Template]]
+- [[file:../handbooks/ai/README.org][AI Engineering Handbook]]

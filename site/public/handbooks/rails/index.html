@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="An open framework for capturing, organizing and applying engineering knowledge">
+  <title>Engineering Knowledge Framework</title>
+  <link rel="stylesheet" href="https://dhruvasagar.github.io/engineering-knowledge-framework/style.css">
+  
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a href="https:&#x2F;&#x2F;dhruvasagar.github.io&#x2F;engineering-knowledge-framework" class="logo">Engineering Knowledge Framework</a>
+      <nav class="site-nav">
+        <a href="https:&#x2F;&#x2F;dhruvasagar.github.io&#x2F;engineering-knowledge-framework">Home</a>
+        <a href="https://github.com/dhruvasagar/engineering-knowledge-framework">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    
+<h1>Rails Engineering Handbook</h1>
+
+<p class="description">Principles, standards and patterns for building Rails applications</p>
+
+
+<div class="content">
+  <h1 id="purpose">Purpose</h1>
+<p>Ruby on Rails is a web application framework that emphasizes convention
+over configuration, developer productivity and elegant code.</p>
+<p>This handbook defines the principles, standards and patterns for
+building Rails applications within this organization.</p>
+<p>It builds upon the <a href="../..*handbooks*engineering*README*">Engineering Fundamentals Handbook</a> and
+<a href="../..*handbooks*architecture*README*">Software Architecture Handbook</a>, applying their principles to the Rails
+context.</p>
+<h1 id="scope">Scope</h1>
+<p>This handbook covers:</p>
+<ul>
+<li>Rails philosophy and core principles.</li>
+<li>Application structure and code organization.</li>
+<li>Models, views, controllers and service layer conventions.</li>
+<li>Testing strategy for Rails applications.</li>
+<li>Common patterns and anti-patterns.</li>
+<li>Decision frameworks for Rails-specific choices.</li>
+<li>AI integration in Rails development.</li>
+</ul>
+<p>This document focuses on enduring Rails principles rather than
+version-specific features. For version-specific guidance, see the
+<a href="../..*references*rails*README*">Rails References</a>.</p>
+<h1 id="rails-philosophy">Rails Philosophy</h1>
+<h2 id="convention-over-configuration">Convention over Configuration</h2>
+<p>Rails provides sensible defaults for every aspect of application
+structure, naming and behaviour.</p>
+<p>Engineers should follow Rails conventions unless there is a clear,
+documented reason to deviate. Conventions reduce decision fatigue, make
+code predictable and enable developers to move between projects quickly.</p>
+<h2 id="don-t-repeat-yourself-dry">Don't Repeat Yourself (DRY)</h2>
+<p>Every piece of knowledge should have a single, unambiguous
+representation within the system.</p>
+<p>Duplication increases maintenance cost and creates opportunities for
+inconsistency. When modifying behaviour, every duplicated location must
+be updated — a process that is error-prone and容易遗漏.</p>
+<h2 id="mvc-architecture">MVC Architecture</h2>
+<p>Rails follows the Model-View-Controller architectural pattern.</p>
+<table><thead><tr><th>Layer</th><th>Responsibility</th></tr></thead><tbody>
+<tr><td>Model</td><td>Business logic, data validation, persistence.</td></tr>
+<tr><td>View</td><td>Presentation logic, user interface rendering.</td></tr>
+<tr><td>Controller</td><td>Request handling, parameter parsing, response generation.</td></tr>
+</tbody></table>
+<p>Controllers should be thin. Models should capture domain logic. Views
+should contain minimal logic.</p>
+<h1 id="principles">Principles</h1>
+<h2 id="thin-controllers">Thin Controllers</h2>
+<p>Controllers should only orchestrate: parse parameters, invoke business
+logic, and render responses.</p>
+<p>Business logic belongs in models, service objects or other domain
+classes — not in controllers.</p>
+<p>A controller action should typically be three to five lines.</p>
+<h2 id="fat-models-but-not-too-fat">Fat Models, but Not Too Fat</h2>
+<p>Models naturally become the default home for business logic.</p>
+<p>However, when a model exceeds a reasonable size, extract cohesive
+groups of behaviour into separate classes: service objects,
+value objects, policy objects or form objects.</p>
+<p>A model that grows beyond a few hundred lines is a signal that
+responsibilities should be extracted.</p>
+<h2 id="keep-the-view-dumb">Keep the View Dumb</h2>
+<p>Views should contain minimal logic.</p>
+<p>Logic in views is hard to test, hard to maintain and easy to overlook
+during refactoring.</p>
+<p>Use presenters, decorators or view objects for presentation logic.
+Use helpers sparingly and only for view-level formatting.</p>
+<h2 id="prefer-service-objects-for-complex-operations">Prefer Service Objects for Complex Operations</h2>
+<p>When an operation involves multiple models, external services or
+complex orchestration, extract it into a service object.</p>
+<p>A service object:</p>
+<ul>
+<li>Has a single responsibility (one public method).</li>
+<li>Is named after the operation it performs.</li>
+<li>Is easy to test in isolation.</li>
+<li>Can be reused across controllers, jobs and Rake tasks.</li>
+</ul>
+<h2 id="database-as-a-detail">Database as a Detail</h2>
+<p>Rails' ActiveRecord pattern makes the database feel like an invisible
+part of the application.</p>
+<p>Resist this abstraction. Design database schema deliberately.
+Understand query performance. Use migrations to evolve schema
+incrementally.</p>
+<h1 id="code-organization">Code Organization</h1>
+<h2 id="application-structure">Application Structure</h2>
+<p>Follow Rails defaults for the standard directories. Custom code
+belongs in <code>app*</code> with clear naming.</p>
+<pre><code>app*
+  controllers/
+  models/
+  views/
+  services/       # Service objects
+  forms/          # Form objects
+  policies/       # Authorization policies
+  presenters/     # View presentation logic
+  serializers/    # JSON serialization
+  values/         # Value objects
+  queries/        # Query objects
+</code></pre>
+<h2 id="naming-conventions">Naming Conventions</h2>
+<p>Follow Rails naming conventions consistently.</p>
+<table><thead><tr><th>Concept</th><th>Convention</th><th>Example</th></tr></thead><tbody>
+<tr><td>Model</td><td>Singular, CamelCase</td><td><code>UserAccount</code></td></tr>
+<tr><td>Table</td><td>Plural, snake_case</td><td><code>user_accounts</code></td></tr>
+<tr><td>Controller</td><td>Plural, CamelCase with Controller</td><td><code>UserAccountsController</code></td></tr>
+<tr><td>Service</td><td>Named after operation</td><td><code>RegisterUser</code></td></tr>
+<tr><td>Migration</td><td>Descriptive snake_case</td><td><code>add_email_to_users</code></td></tr>
+</tbody></table>
+<h1 id="standards">Standards</h1>
+<h2 id="models">Models</h2>
+<ul>
+<li>Use validations to enforce data integrity.</li>
+<li>Use ActiveRecord callbacks sparingly. Prefer explicit service objects
+for side effects.</li>
+<li>Define scopes for common queries.</li>
+<li>Keep associations explicit and well-named.</li>
+</ul>
+<h2 id="migrations">Migrations</h2>
+<ul>
+<li>Each migration should change one logical thing.</li>
+<li>Never edit a migration that has been merged.</li>
+<li>Use reversible migrations whenever possible.</li>
+<li>Write a <code>down</code> method for every migration that could be rolled back.</li>
+</ul>
+<h2 id="routes">Routes</h2>
+<ul>
+<li>Use resourceful routes (<code>resources</code>) by default.</li>
+<li>Limit nesting to one level deep.</li>
+<li>Use <code>member</code> and <code>collection</code> blocks sparingly.</li>
+<li>Keep <code>routes.rb</code> organized and commented.</li>
+</ul>
+<h2 id="api-development">API Development</h2>
+<ul>
+<li>Use namespaced controllers for API endpoints (<code>Api::V1::</code>).</li>
+<li>Use serializers or jbuilder for response formatting.</li>
+<li>Version APIs explicitly in the URL path.</li>
+<li>Follow the API design standards in the
+<a href="../..*guides*architecture*api-design*">API Design Guide</a>.</li>
+</ul>
+<h1 id="testing">Testing</h1>
+<h2 id="testing-philosophy">Testing Philosophy</h2>
+<ul>
+<li>Test behaviour, not implementation.</li>
+<li>Prefer request specs over controller specs.</li>
+<li>Use factory patterns for test data.</li>
+<li>Keep tests fast and reliable.</li>
+</ul>
+<h2 id="test-distribution">Test Distribution</h2>
+<p>Follow the testing principles in the
+<a href="../..*guides*engineering*testing-strategies*">Testing Strategies Guide</a>.</p>
+<p>For Rails specifically:</p>
+<table><thead><tr><th>Test Type</th><th>What to Test</th><th>Speed</th></tr></thead><tbody>
+<tr><td>Model specs</td><td>Validations, associations, scopes.</td><td>Fast</td></tr>
+<tr><td>Request specs</td><td>Controller behaviour, status codes,</td><td>Moderate</td></tr>
+<tr><td></td><td>response format.</td><td></td></tr>
+<tr><td>Feature specs</td><td>Critical user journeys.</td><td>Slow</td></tr>
+<tr><td>Unit tests</td><td>Service objects, form objects,</td><td>Fast</td></tr>
+<tr><td></td><td>presenters.</td><td></td></tr>
+</tbody></table>
+<h1 id="patterns">Patterns</h1>
+<h2 id="service-objects">Service Objects</h2>
+<p>Use service objects to encapsulate complex operations.</p>
+<pre><code>class RegisterUser
+  def initialize(params)
+    @params = params
+  end
+
+  def call
+    # Business logic here
+  end
+end
+</code></pre>
+<h2 id="form-objects">Form Objects</h2>
+<p>Use form objects to encapsulate form validation and data processing for
+complex forms that do not map directly to a single model.</p>
+<h2 id="query-objects">Query Objects</h2>
+<p>Use query objects to encapsulate complex database queries that do not
+belong in a model scope.</p>
+<h2 id="policy-objects">Policy Objects</h2>
+<p>Use policy objects to encapsulate authorization logic.</p>
+<h1 id="anti-patterns">Anti-patterns</h1>
+<h2 id="fat-controllers">Fat Controllers</h2>
+<p>Controllers that exceed five to ten lines per action indicate that
+business logic needs to be extracted.</p>
+<h2 id="callback-overuse">Callback Overuse</h2>
+<p>ActiveRecord callbacks (<code>after_save</code>, <code>before_update</code>) create implicit
+dependencies that make code hard to reason about and test.</p>
+<p>Prefer explicit service objects over callbacks for side effects.</p>
+<h2 id="magic-strings">Magic Strings</h2>
+<p>Hard-coded values, status strings and configuration constants embedded
+in business logic should be extracted into constants, enums or
+configuration classes.</p>
+<h2 id="skipping-tests">Skipping Tests</h2>
+<p>Every non-trivial feature or fix should include tests.</p>
+<p>Skipping tests creates technical debt that accumulates through
+unexpected regressions and reduced confidence in changes.</p>
+<h1 id="decision-frameworks">Decision Frameworks</h1>
+<h2 id="when-to-use-a-service-object">When to Use a Service Object</h2>
+<p>Use a service object when:</p>
+<ul>
+<li>The operation involves multiple models.</li>
+<li>The operation calls external services or APIs.</li>
+<li>The operation has complex error handling.</li>
+<li>The operation is invoked from multiple entry points (controller,
+job, Rake task).</li>
+</ul>
+<h2 id="when-to-introduce-a-gem">When to Introduce a Gem</h2>
+<p>Before adding a gem, ask:</p>
+<ol>
+<li>What problem does this gem solve?</li>
+<li>Could we solve it with a simple class?</li>
+<li>Is the gem well-maintained and documented?</li>
+<li>Does the gem add unnecessary complexity?</li>
+<li>Is the gem compatible with our Rails version?</li>
+</ol>
+<p>Prefer a simple custom implementation over a heavyweight gem for small
+concerns.</p>
+<h1 id="ai-integration">AI Integration</h1>
+<p>AI assistants can assist with Rails development through:</p>
+<ul>
+<li>Generating models, migrations and controllers from descriptions.</li>
+<li>Writing tests for existing code.</li>
+<li>Suggesting refactoring opportunities.</li>
+<li>Reviewing Rails code for convention compliance.</li>
+<li>Debugging errors with Rails-specific knowledge.</li>
+</ul>
+<p>When using AI for Rails development, provide:</p>
+<ul>
+<li>The Rails version and Ruby version.</li>
+<li>Relevant models, routes and schema.</li>
+<li>The specific problem or task.</li>
+<li>Existing conventions or patterns to follow.</li>
+</ul>
+<p>See the <a href="../..*handbooks*ai*README*">AI Engineering Handbook</a> for general AI workflow guidance.</p>
+<h1 id="capability-map">Capability Map</h1>
+<p>This handbook is the entry point for the Rails Engineering capability.
+The following documents form the complete capability:</p>
+<h2 id="handbooks">Handbooks</h2>
+<ul>
+<li><a href="https://dhruvasagar.github.io/engineering-knowledge-framework/handbooks/rails/.*README*">Rails Engineering Handbook</a> — This document. Principles, standards,
+and philosophy for Rails development.</li>
+</ul>
+<h2 id="glossaries">Glossaries</h2>
+<ul>
+<li><a href="../..*glossary*rails*README*">Rails Glossary</a> — Canonical Rails terminology (ActiveRecord,
+controller, service object, view, etc.).</li>
+</ul>
+<h2 id="guides">Guides</h2>
+<ul>
+<li><a href="../..*guides*rails*service-objects*">Service Objects</a> — When and how to use service objects,
+structure, patterns and testing.</li>
+<li><a href="../..*guides*rails*testing*">Testing Rails Applications</a> — Test distribution, model<em>request</em>
+system specs, factory patterns.</li>
+<li><a href="../..*guides*rails*audit-guide*">Rails Audit Guide</a> — Systematic code quality, performance,
+database and security auditing.</li>
+<li><a href="../..*guides*rails*project-standards*">Rails Project Standards</a> — Mandatory tooling baseline and
+CI*CD configuration for every Rails project.</li>
+<li><a href="..*..*guides*rails*active-record*">ActiveRecord Patterns and Query Optimization</a> — Scopes, query
+optimization, N+1 prevention, indexing.</li>
+<li><a href="../..*guides*rails*api-development*">API Development with Rails</a> — API-only setup, serialization,
+versioning, authentication and testing.</li>
+<li><a href="../..*guides*rails*background-jobs*">Background Jobs</a> — Framework selection (Sidekiq, GoodJob,
+SolidQueue), job design, error handling, monitoring.</li>
+<li><a href="../..*guides*rails*authentication-authorization*">Authentication and Authorization</a> — Devise setup, Pundit
+policies, role-based authorization.</li>
+</ul>
+<h2 id="playbooks">Playbooks</h2>
+<ul>
+<li><a href="../..*playbooks*rails*upgrade*">Rails Upgrade Playbook</a> — Step-by-step Rails version upgrade
+workflow with rollback plan.</li>
+<li><a href="../..*playbooks*rails*deployment*">Rails Deployment Playbook</a> — Safe deployment with database
+migration safety, zero-downtime patterns.</li>
+</ul>
+<h2 id="checklists">Checklists</h2>
+<ul>
+<li><a href="../..*checklists*rails*pull-request*">Rails Pull Request Checklist</a> — Code quality, testing,
+security and migration safety for every PR.</li>
+<li><a href="../..*checklists*rails*security-review*">Rails Security Review Checklist</a> — Authentication,
+authorization, data protection and dependency verification.</li>
+<li><a href="../..*checklists*rails*deployment*">Rails Deployment Checklist</a> — Pre-deployment, migration
+safety and post-deployment verification.</li>
+</ul>
+<h2 id="templates">Templates</h2>
+<ul>
+<li><a href="../..*templates*rails*service-object*">Service Object Template</a> — Reusable service object with
+result object pattern.</li>
+<li><a href="../..*templates*rails*form-object*">Form Object Template</a> — Form object with ActiveModel
+integration.</li>
+<li><a href="../..*templates*rails*query-object*">Query Object Template</a> — Composable query object with scope
+chaining.</li>
+<li><a href="../..*templates*rails*policy-object*">Policy Object Template</a> — Authorization policy with Pundit
+conventions.</li>
+</ul>
+<h2 id="learning-paths">Learning Paths</h2>
+<ul>
+<li><a href="../..*learning-paths*rails*README*">Rails Learning Paths</a> — Beginner, intermediate and advanced
+tracks with topics, projects and assessment.</li>
+</ul>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="../..*references*rails*README*">Rails References</a> — Quick lookup: conventions, generators,
+test commands, gems, HTTP codes.</li>
+</ul>
+<h2 id="ai-workflows">AI Workflows</h2>
+<ul>
+<li><a href="../..*prompts*rails-ai-workflows*">AI Workflows for Rails</a> — Prompt patterns for model
+generation, API development, testing and debugging.</li>
+</ul>
+<h1 id="related-documents">Related Documents</h1>
+<ul>
+<li><a href="..*..*handbooks*engineering*README*">Engineering Fundamentals Handbook</a></li>
+<li><a href="../..*handbooks*architecture*README*">Software Architecture Handbook</a></li>
+<li><a href="../..*glossary*rails*README*">Rails Glossary</a></li>
+<li><a href="../..*guides*architecture*api-design*">API Design Guide</a></li>
+<li><a href="../..*playbooks*code-review*README*">Code Review Playbook</a></li>
+<li><a href="../..*guides*engineering*testing-strategies*">Testing Strategies Guide</a></li>
+</ul>
+
+</div>
+
+
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Engineering Knowledge Framework — Building AI-native engineering knowledge systems</p>
+    </div>
+  </footer>
+</body>
+</html>

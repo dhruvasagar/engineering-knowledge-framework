@@ -246,6 +246,6 @@ AI should accelerate learning, not replace it.
 
 * Related Documents
 
-- [[file:../../handbooks/engineering/README.org][Engineering Fundamentals Handbook]]
-- [[file:../../playbooks/code-review/README.org][Code Review Playbook]]
-- [[file:../../handbooks/ai/README.org][AI Engineering Handbook]]
+- [[file:../handbooks/engineering/README.org][Engineering Fundamentals Handbook]]
+- [[file:../playbooks/code-review/README.org][Code Review Playbook]]
+- [[file:../handbooks/ai/README.org][AI Engineering Handbook]]

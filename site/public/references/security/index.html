@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="An open framework for capturing, organizing and applying engineering knowledge">
+  <title>Engineering Knowledge Framework</title>
+  <link rel="stylesheet" href="https://dhruvasagar.github.io/engineering-knowledge-framework/style.css">
+  
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a href="https:&#x2F;&#x2F;dhruvasagar.github.io&#x2F;engineering-knowledge-framework" class="logo">Engineering Knowledge Framework</a>
+      <nav class="site-nav">
+        <a href="https:&#x2F;&#x2F;dhruvasagar.github.io&#x2F;engineering-knowledge-framework">Home</a>
+        <a href="https://github.com/dhruvasagar/engineering-knowledge-framework">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    
+<h1>Security References</h1>
+
+<p class="description">Quick-reference material for security engineering</p>
+
+
+<div class="content">
+  <h1 id="purpose">Purpose</h1>
+<p>Quick-reference material for security engineering.</p>
+<h1 id="owasp-top-10-2021">OWASP Top 10 (2021)</h1>
+<table><thead><tr><th>Rank</th><th>Category</th></tr></thead><tbody>
+<tr><td>A01</td><td>Broken Access Control</td></tr>
+<tr><td>A02</td><td>Cryptographic Failures</td></tr>
+<tr><td>A03</td><td>Injection</td></tr>
+<tr><td>A04</td><td>Insecure Design</td></tr>
+<tr><td>A05</td><td>Security Misconfiguration</td></tr>
+<tr><td>A06</td><td>Vulnerable and Outdated Components</td></tr>
+<tr><td>A07</td><td>Identification and Authentication Failures</td></tr>
+<tr><td>A08</td><td>Software and Data Integrity Failures</td></tr>
+<tr><td>A09</td><td>Security Logging and Monitoring Failures</td></tr>
+<tr><td>A10</td><td>Server-Side Request Forgery (SSRF)</td></tr>
+</tbody></table>
+<h1 id="stride-threat-model">STRIDE Threat Model</h1>
+<table><thead><tr><th>Threat</th><th>Definition</th><th>Example</th></tr></thead><tbody>
+<tr><td>Spoofing</td><td>Impersonating another user or system.</td><td>Session hijacking.</td></tr>
+<tr><td>Tampering</td><td>Unauthorized modification of data or code.</td><td>Modifying request params.</td></tr>
+<tr><td>Repudiation</td><td>Denying an action was performed.</td><td>User denies transaction.</td></tr>
+<tr><td>Information</td><td>Exposing information to unauthorized parties.</td><td>Data leak via API.</td></tr>
+<tr><td>Disclosure</td><td></td><td></td></tr>
+<tr><td>Denial of Service</td><td>Making the system unavailable.</td><td>Flooding an endpoint.</td></tr>
+<tr><td>Elevation of</td><td>Gaining unauthorized higher permissions.</td><td>Privilege escalation.</td></tr>
+<tr><td>Privilege</td><td></td><td></td></tr>
+</tbody></table>
+<h1 id="security-tools-quick-reference">Security Tools Quick Reference</h1>
+<table><thead><tr><th>Tool</th><th>Type</th><th>Purpose</th><th>Run</th></tr></thead><tbody>
+<tr><td>Brakeman</td><td>SAST</td><td>Rails static security analysis</td><td><code>brakeman -q --no-pager</code></td></tr>
+<tr><td>bundler-audit</td><td>SCA</td><td>Ruby dependency vulnerabilities</td><td><code>bundler-audit check --update</code></td></tr>
+<tr><td>Trivy</td><td>SCA</td><td>Container and filesystem scanning</td><td>=trivy fs . =</td></tr>
+<tr><td>OWASP ZAP</td><td>DAST</td><td>Dynamic web application scanning</td><td><code>zap.sh -cmd -quickurl</code></td></tr>
+<tr><td>git-secrets</td><td>Secrets</td><td>Prevent committing secrets</td><td><code>git secrets --scan</code></td></tr>
+<tr><td>truffleHog</td><td>Secrets</td><td>Scan git history for secrets</td><td>=trufflehog git file:*/. =</td></tr>
+</tbody></table>
+<h1 id="security-response-timeline">Security Response Timeline</h1>
+<table><thead><tr><th>Severity</th><th>Response Time</th><th>Examples</th></tr></thead><tbody>
+<tr><td>Critical</td><td>Within 24 hrs</td><td>Remote code execution, auth bypass, data</td></tr>
+<tr><td></td><td></td><td>breach.</td></tr>
+<tr><td>High</td><td>Within 1 week</td><td>Significant data exposure, privilege</td></tr>
+<tr><td></td><td></td><td>escalation.</td></tr>
+<tr><td>Medium</td><td>Within 1 month</td><td>Limited info disclosure.</td></tr>
+<tr><td>Low</td><td>Next release</td><td>Minimal risk, difficult to exploit.</td></tr>
+</tbody></table>
+<h1 id="security-headers">Security Headers</h1>
+<table><thead><tr><th>Header</th><th>Purpose</th><th>Value Example</th></tr></thead><tbody>
+<tr><td>Content-Security-Policy</td><td>Controls resources the browser</td><td><code>default-src 'self'</code></td></tr>
+<tr><td></td><td>is allowed to load.</td><td></td></tr>
+<tr><td>Strict-Transport-Security</td><td>Enforces HTTPS connections.</td><td><code>max-age</code>31536000=</td></tr>
+<tr><td>X-Frame-Options</td><td>Prevents clickjacking.</td><td><code>DENY</code></td></tr>
+<tr><td>X-Content-Type-Options</td><td>Prevents MIME type sniffing.</td><td><code>nosniff</code></td></tr>
+</tbody></table>
+<h1 id="related-documents">Related Documents</h1>
+<ul>
+<li><a href="..*..*handbooks*security*README*">Security Engineering Handbook</a></li>
+<li><a href="../..*glossary*security*README*">Security Glossary</a></li>
+<li><a href="../..*playbooks*security-review*README*">Security Review Playbook</a></li>
+<li><a href="../..*guides*security*web-vulnerabilities*">Web Vulnerabilities Guide</a></li>
+</ul>
+
+</div>
+
+
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Engineering Knowledge Framework — Building AI-native engineering knowledge systems</p>
+    </div>
+  </footer>
+</body>
+</html>

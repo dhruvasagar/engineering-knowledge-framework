@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="An open framework for capturing, organizing and applying engineering knowledge">
+  <title>Engineering Knowledge Framework</title>
+  <link rel="stylesheet" href="https://dhruvasagar.github.io/engineering-knowledge-framework/style.css">
+  
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a href="https:&#x2F;&#x2F;dhruvasagar.github.io&#x2F;engineering-knowledge-framework" class="logo">Engineering Knowledge Framework</a>
+      <nav class="site-nav">
+        <a href="https:&#x2F;&#x2F;dhruvasagar.github.io&#x2F;engineering-knowledge-framework">Home</a>
+        <a href="https://github.com/dhruvasagar/engineering-knowledge-framework">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    
+<h1>Architecture References</h1>
+
+<p class="description">Quick-reference material for software architecture</p>
+
+
+<div class="content">
+  <h1 id="purpose">Purpose</h1>
+<p>Quick-reference material for software architecture.</p>
+<p>These references are intended for lookup rather than learning. For
+in-depth explanations, see the referenced guides and handbooks.</p>
+<h1 id="c4-model-levels">C4 Model Levels</h1>
+<table><thead><tr><th>Level</th><th>View</th><th>Audience</th><th>Elements</th></tr></thead><tbody>
+<tr><td>1</td><td>System Context</td><td>Everyone</td><td>Users, system, external systems</td></tr>
+<tr><td>2</td><td>Container</td><td>Technical team</td><td>Services, databases, queues</td></tr>
+<tr><td>3</td><td>Component</td><td>Developers</td><td>Modules, controllers, services</td></tr>
+<tr><td>4</td><td>Code</td><td>Developers</td><td>Classes, interfaces, functions</td></tr>
+</tbody></table>
+<h1 id="architectural-patterns-quick-comparison">Architectural Patterns Quick Comparison</h1>
+<table><thead><tr><th>Pattern</th><th>Coupling</th><th>Complexity</th><th>Scale</th><th>Key Trade-off</th></tr></thead><tbody>
+<tr><td>Layered</td><td>Tight</td><td>Low</td><td>Small-Medium</td><td>Simplicity vs flexibility</td></tr>
+<tr><td>Hexagonal</td><td>Loose</td><td>Medium</td><td>Medium</td><td>Testability vs indirection</td></tr>
+<tr><td>Event-Driven</td><td>Very</td><td>High</td><td>Medium-Large</td><td>Decoupling vs debuggability</td></tr>
+<tr><td></td><td>Loose</td><td></td><td></td><td></td></tr>
+<tr><td>Microservices</td><td>Loose</td><td>Very High</td><td>Large</td><td>Autonomy vs operational cost</td></tr>
+<tr><td>CQRS</td><td>Medium</td><td>High</td><td>Medium-Large</td><td>Optimization vs complexity</td></tr>
+</tbody></table>
+<h1 id="http-status-codes">HTTP Status Codes</h1>
+<table><thead><tr><th>Code</th><th>Meaning</th><th>When to Use</th></tr></thead><tbody>
+<tr><td>200</td><td>OK</td><td>Successful GET, PUT, PATCH.</td></tr>
+<tr><td>201</td><td>Created</td><td>Successful POST.</td></tr>
+<tr><td>204</td><td>No Content</td><td>Successful DELETE.</td></tr>
+<tr><td>400</td><td>Bad Request</td><td>Malformed request, validation failure.</td></tr>
+<tr><td>401</td><td>Unauthorized</td><td>Missing or invalid authentication.</td></tr>
+<tr><td>403</td><td>Forbidden</td><td>Not authorized.</td></tr>
+<tr><td>404</td><td>Not Found</td><td>Resource does not exist.</td></tr>
+<tr><td>409</td><td>Conflict</td><td>State conflict (duplicate, stale).</td></tr>
+<tr><td>422</td><td>Unprocessable</td><td>Semantic validation failure.</td></tr>
+<tr><td>429</td><td>Too Many Requests</td><td>Rate limit exceeded.</td></tr>
+<tr><td>500</td><td>Internal Error</td><td>Unexpected server error.</td></tr>
+<tr><td>503</td><td>Unavailable</td><td>Temporary service unavailability.</td></tr>
+</tbody></table>
+<h1 id="quality-attributes">Quality Attributes</h1>
+<table><thead><tr><th>Attribute</th><th>Definition</th></tr></thead><tbody>
+<tr><td>Performance</td><td>Response time, throughput, latency.</td></tr>
+<tr><td>Scalability</td><td>Ability to handle increased load.</td></tr>
+<tr><td>Availability</td><td>Uptime, fault tolerance, recovery.</td></tr>
+<tr><td>Security</td><td>Authentication, authorization, data protection.</td></tr>
+<tr><td>Maintainability</td><td>Ease of change, testing, debugging.</td></tr>
+<tr><td>Evolvability</td><td>Ability to adapt to new requirements.</td></tr>
+<tr><td>Operability</td><td>Monitoring, deployment, incident response.</td></tr>
+<tr><td>Testability</td><td>Ability to verify correctness at every level.</td></tr>
+</tbody></table>
+<h1 id="adr-lifecycle-states">ADR Lifecycle States</h1>
+<table><thead><tr><th>State</th><th>Meaning</th></tr></thead><tbody>
+<tr><td>Proposed</td><td>Decision under discussion.</td></tr>
+<tr><td>Accepted</td><td>Decision agreed and implemented.</td></tr>
+<tr><td>Deprecated</td><td>Decision is no longer relevant.</td></tr>
+<tr><td>Superseded</td><td>A newer ADR has replaced this decision.</td></tr>
+</tbody></table>
+<h1 id="key-metrics">Key Metrics</h1>
+<table><thead><tr><th>Concept</th><th>Question to Ask</th></tr></thead><tbody>
+<tr><td>Coupling</td><td>Can this module change without affecting others?</td></tr>
+<tr><td>Cohesion</td><td>Does this module have one clear responsibility?</td></tr>
+<tr><td>Technical Debt</td><td>Is this intentional or accidental?</td></tr>
+<tr><td>Architectural Fit</td><td>Does this decision align with our principles?</td></tr>
+<tr><td>Quality Attribute Impact</td><td>What trade-off does this decision introduce?</td></tr>
+</tbody></table>
+<h1 id="recommended-reading">Recommended Reading</h1>
+<table><thead><tr><th>Title</th><th>Author</th><th>Focus</th></tr></thead><tbody>
+<tr><td>Software Architecture: The Hard Parts</td><td>Ford, Richards,</td><td>Trade-off analysis</td></tr>
+<tr><td></td><td>Sadalage</td><td></td></tr>
+<tr><td>Building Evolutionary Architectures</td><td>Ford, Parsons</td><td>Evolvability and fitness</td></tr>
+<tr><td></td><td></td><td>functions</td></tr>
+<tr><td>Domain-Driven Design</td><td>Eric Evans</td><td>Domain modeling and DDD</td></tr>
+<tr><td>Fundamentals of Software Architecture</td><td>Richards, Ford</td><td>Architecture fundamentals</td></tr>
+<tr><td>Documenting Software Architectures</td><td>Clements et al.</td><td>Architecture documentation</td></tr>
+</tbody></table>
+<h1 id="related-documents">Related Documents</h1>
+<ul>
+<li><a href="../..*handbooks*architecture*README*">Software Architecture Handbook</a></li>
+<li><a href="../..*guides*architecture*architectural-patterns*">Architectural Patterns Guide</a></li>
+<li><a href="../..*guides*architecture*api-design*">API Design Guide</a></li>
+<li><a href="../..*guides*architecture*adr-writing-guide*">ADR Writing Guide</a></li>
+<li><a href="../..*guides*architecture*system-modeling*">System Modeling Guide</a></li>
+<li><a href="../..*glossary*architecture*README*">Architecture Glossary</a></li>
+</ul>
+
+</div>
+
+
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Engineering Knowledge Framework — Building AI-native engineering knowledge systems</p>
+    </div>
+  </footer>
+</body>
+</html>

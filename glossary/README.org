@@ -66,7 +66,7 @@ Repository-wide terminology belongs in the Engineering Glossary.
 | [[file:rails/README.org][Rails]]          | Ruby on Rails terminology               |
 | [[file:security/README.org][Security]]       | Security concepts and terminology       |
 | [[file:accessibility/README.org][Accessibility]]  | Accessibility terminology               |
-| [[file:testing/README.org][Testing]]        | Testing vocabulary                      |
+| Testing (not yet developed)        | Testing vocabulary                      |
 | [[file:ai/README.org][AI Engineering]] | AI engineering terminology              |
 
 * When to Add a Glossary Entry

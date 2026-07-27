@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="An open framework for capturing, organizing and applying engineering knowledge">
+  <title>Engineering Knowledge Framework</title>
+  <link rel="stylesheet" href="https://dhruvasagar.github.io/engineering-knowledge-framework/style.css">
+  
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a href="https:&#x2F;&#x2F;dhruvasagar.github.io&#x2F;engineering-knowledge-framework" class="logo">Engineering Knowledge Framework</a>
+      <nav class="site-nav">
+        <a href="https:&#x2F;&#x2F;dhruvasagar.github.io&#x2F;engineering-knowledge-framework">Home</a>
+        <a href="https://github.com/dhruvasagar/engineering-knowledge-framework">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    
+<h1>Testing Strategies</h1>
+
+<p class="description">Principles and patterns for effective automated testing</p>
+
+<div class="content">
+  <h1 id="purpose">Purpose</h1>
+<p>Automated testing is the practice of verifying that software behaves
+correctly through repeatable, machine-executable checks.</p>
+<p>Well-designed tests provide confidence that changes work as expected,
+document system behaviour, and enable refactoring without fear.</p>
+<p>Poorly designed tests become brittle, slow, and expensive to maintain —
+reducing rather than increasing engineering velocity.</p>
+<p>This guide defines the principles and patterns for building effective,
+maintainable test suites.</p>
+<h1 id="background">Background</h1>
+<p>The value of a test is not in how much code it covers, but in how much
+confidence it provides.</p>
+<p>A test suite that catches regressions, documents behaviour and runs
+quickly is more valuable than a test suite with 100% coverage that is
+slow, flaky and hard to understand.</p>
+<p>The goal is sustainable test quality, not maximal test quantity.</p>
+<h1 id="principles">Principles</h1>
+<h2 id="test-behaviour-not-implementation">Test Behaviour, Not Implementation</h2>
+<p>Tests should verify that the system behaves correctly, not that it is
+implemented in a specific way.</p>
+<p>Tests coupled to implementation details break when the implementation
+changes, even when the behaviour remains correct.</p>
+<p>Good tests:</p>
+<ul>
+<li>Assert on outputs, return values and observable side effects.</li>
+<li>Avoid asserting on internal state or method call ordering.</li>
+<li>Treat the subject under test as a black box when possible.</li>
+</ul>
+<h2 id="prefer-fast-reliable-tests">Prefer Fast, Reliable Tests</h2>
+<p>A slow test suite discourages running tests. A flaky test suite
+undermines trust in test results.</p>
+<p>Optimise for speed and reliability:</p>
+<ul>
+<li>Use unit tests for detailed verification of logic.</li>
+<li>Use integration tests for critical paths.</li>
+<li>Minimise end-to-end tests that exercise the full stack.</li>
+<li>Mock or stub slow dependencies (databases, network services) in unit
+tests.</li>
+</ul>
+<h2 id="one-logical-assertion-per-test">One Logical Assertion Per Test</h2>
+<p>Each test should verify one specific behaviour.</p>
+<p>Tests that verify multiple behaviours are harder to understand, harder
+to debug when they fail, and more likely to mask regressions.</p>
+<p>Good:</p>
+<pre><code>def test_returns_error_when_email_is_missing():
+    result = register_user(email=None)
+    assert result.is_error()
+
+def test_returns_error_when_email_is_invalid():
+    result = register_user(email=&quot;not-an-email&quot;)
+    assert result.is_error()
+</code></pre>
+<h2 id="tests-are-code-treat-them-that-way">Tests Are Code. Treat Them That Way.</h2>
+<p>Tests should follow the same quality standards as production code:</p>
+<ul>
+<li>Descriptive names.</li>
+<li>Clear structure (arrange, act, assert).</li>
+<li>No duplication.</li>
+<li>Regular refactoring.</li>
+</ul>
+<p>Poorly maintained tests become a liability.</p>
+<h1 id="the-test-pyramid">The Test Pyramid</h1>
+<p>The test pyramid describes the optimal distribution of test types:</p>
+<pre><code>        /\
+       /  \
+      / E2E\    Few: full-stack, slow, expensive
+     /------\
+    / Integ- \  Some: service-level, moderate speed
+   /  ration  \
+  /------------\
+ /   Unit      \ Many: fast, isolated, reliable
+/    Tests      \
+-----------------
+</code></pre>
+<table><thead><tr><th>Type</th><th>Speed</th><th>Scope</th><th>Confidence</th><th>Count</th></tr></thead><tbody>
+<tr><td>Unit tests</td><td>Fast</td><td>Single unit</td><td>Low</td><td>Many</td></tr>
+<tr><td>Integration</td><td>Moderate</td><td>Service*Component</td><td>Medium</td><td>Some</td></tr>
+<tr><td>E2E tests</td><td>Slow</td><td>Full system</td><td>High</td><td>Few</td></tr>
+</tbody></table>
+<h2 id="unit-tests">Unit Tests</h2>
+<p>Test a single unit of behaviour in isolation.</p>
+<ul>
+<li>Fast to run and write.</li>
+<li>Pinpoint failures precisely.</li>
+<li>Enable refactoring with confidence.</li>
+<li>Should form the majority of your test suite.</li>
+</ul>
+<h2 id="integration-tests">Integration Tests</h2>
+<p>Test that components work together correctly.</p>
+<p>Focus on the boundaries between your code and external systems:</p>
+<ul>
+<li>Database queries and transactions.</li>
+<li>API endpoints and request handling.</li>
+<li>Service-to-service communication.</li>
+</ul>
+<h2 id="end-to-end-tests">End-to-End Tests</h2>
+<p>Test critical user journeys through the full system.</p>
+<p>Use sparingly:</p>
+<ul>
+<li>Cover the most important business flows.</li>
+<li>Test deployment and infrastructure integration.</li>
+<li>Accept that they are slow and occasionally flaky.</li>
+</ul>
+<h1 id="test-structure">Test Structure</h1>
+<h2 id="arrange-act-assert">Arrange, Act, Assert</h2>
+<p>Every test should follow three clear phases:</p>
+<ol>
+<li><em><strong>Arrange</strong></em>: Set up the test data and preconditions.</li>
+<li><em><strong>Act</strong></em>: Execute the behaviour under test.</li>
+<li><em><strong>Assert</strong></em>: Verify the outcome.</li>
+</ol>
+<p>Separating these phases makes tests easier to read and debug.</p>
+<h2 id="descriptive-test-names">Descriptive Test Names</h2>
+<p>Test names should describe the scenario and expected outcome.</p>
+<p>Good:</p>
+<pre><code>test_returns_400_when_email_is_missing
+test_sends_welcome_email_after_successful_registration
+test_does_not_send_welcome_email_when_registration_fails
+</code></pre>
+<h1 id="what-to-test">What to Test</h1>
+<h2 id="test-public-interfaces">Test Public Interfaces</h2>
+<p>Test the contract that a module exposes to its consumers.</p>
+<p>Internal implementation details should not be tested directly. They are
+exercised through the public interface.</p>
+<h2 id="test-boundary-conditions">Test Boundary Conditions</h2>
+<p>Errors cluster at boundaries.</p>
+<p>Test:</p>
+<ul>
+<li>Empty inputs.</li>
+<li>Maximum inputs.</li>
+<li>Invalid inputs.</li>
+<li>Missing resources.</li>
+<li>Concurrent access.</li>
+<li>Timeouts and failures.</li>
+</ul>
+<h2 id="test-error-paths">Test Error Paths</h2>
+<p>Happy paths are important.</p>
+<p>Error paths are where systems fail in production.</p>
+<p>Every recoverable error state should have a test.</p>
+<h1 id="what-not-to-test">What Not to Test</h1>
+<h2 id="framework-code">Framework Code</h2>
+<p>Do not test behaviour provided by your framework.</p>
+<p>Test that your configuration is correct, not that the framework works.</p>
+<h2 id="generated-code">Generated Code</h2>
+<p>Do not test code that is generated by tools.</p>
+<p>If the generator is trustworthy, the generated code is already tested.</p>
+<h2 id="infrastructure">Infrastructure</h2>
+<p>Do not test infrastructure behaviour (database transactions, network
+retries) in unit tests. Test your integration with infrastructure in
+integration tests.</p>
+<h1 id="test-doubles">Test Doubles</h1>
+<table><thead><tr><th>Double Type</th><th>Purpose</th></tr></thead><tbody>
+<tr><td>Stub</td><td>Returns a fixed value.</td></tr>
+<tr><td>Mock</td><td>Verifies that a method was called.</td></tr>
+<tr><td>Fake</td><td>Provides a lightweight implementation.</td></tr>
+<tr><td>Spy</td><td>Records method calls for later assertion.</td></tr>
+</tbody></table>
+<p>Use fakes for dependencies that are slow or unreliable (databases,
+network services). Use mocks sparingly — prefer verifying outcomes over
+verifying interactions.</p>
+<h1 id="anti-patterns">Anti-patterns</h1>
+<h2 id="testing-without-assertions">Testing Without Assertions</h2>
+<p>A test that does not assert anything provides false confidence.</p>
+<h2 id="overspecified-tests">Overspecified Tests</h2>
+<p>Tests that assert on internal implementation details break when the
+code is refactored.</p>
+<p>Test the observable behaviour, not the internal steps.</p>
+<h2 id="flaky-tests">Flaky Tests</h2>
+<p>A test that sometimes passes and sometimes fails erodes trust in the
+entire suite.</p>
+<p>Flaky tests should be fixed or removed. Never ignore flaky tests.</p>
+<h1 id="ai-integration">AI Integration</h1>
+<p>AI assistants can help with testing by:</p>
+<ul>
+<li>Generating test cases from production code.</li>
+<li>Identifying untested boundary conditions.</li>
+<li>Suggesting test data for edge cases.</li>
+<li>Detecting test smells and anti-patterns.</li>
+<li>Converting integration tests to use test doubles.</li>
+</ul>
+<p>When asking AI for testing advice, provide:</p>
+<ul>
+<li>The function or module being tested.</li>
+<li>Its inputs, outputs and error states.</li>
+<li>Existing test conventions in the codebase.</li>
+<li>Testing framework and tooling in use.</li>
+</ul>
+<h1 id="related-documents">Related Documents</h1>
+<ul>
+<li><a href="..*..*handbooks*engineering*README*">Engineering Fundamentals Handbook</a></li>
+<li><a href="../..*glossary*engineering*README*">Engineering Glossary</a></li>
+<li><a href="../..*playbooks*code-review*README*">Code Review Playbook</a></li>
+</ul>
+
+</div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Engineering Knowledge Framework — Building AI-native engineering knowledge systems</p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="An open framework for capturing, organizing and applying engineering knowledge">
+  <title>Engineering Knowledge Framework</title>
+  <link rel="stylesheet" href="https://dhruvasagar.github.io/engineering-knowledge-framework/style.css">
+  
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a href="https:&#x2F;&#x2F;dhruvasagar.github.io&#x2F;engineering-knowledge-framework" class="logo">Engineering Knowledge Framework</a>
+      <nav class="site-nav">
+        <a href="https:&#x2F;&#x2F;dhruvasagar.github.io&#x2F;engineering-knowledge-framework">Home</a>
+        <a href="https://github.com/dhruvasagar/engineering-knowledge-framework">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    
+<h1>Quality Gate Checklist</h1>
+
+<p class="description">Verification before accepting changes</p>
+
+<div class="content">
+  <h1 id="purpose">Purpose</h1>
+<p>Verify that changes meet minimum quality standards before being merged
+or deployed. This checklist should be used as part of the CI*CD pipeline
+and code review process.</p>
+<h1 id="code-quality">Code Quality</h1>
+<ul>
+<li><input disabled="" type="checkbox"/>
+Code follows project coding standards and style conventions.</li>
+<li><input disabled="" type="checkbox"/>
+No new linter warnings or errors introduced.</li>
+<li><input disabled="" type="checkbox"/>
+Cyclomatic complexity has not increased significantly.</li>
+<li><input disabled="" type="checkbox"/>
+Code duplication has not increased.</li>
+<li><input disabled="" type="checkbox"/>
+Dead code or commented-out code has been removed.</li>
+<li><input disabled="" type="checkbox"/>
+No TODO or FIXME comments without issue references.</li>
+</ul>
+<h1 id="testing">Testing</h1>
+<ul>
+<li><input disabled="" type="checkbox"/>
+New code has corresponding tests.</li>
+<li><input disabled="" type="checkbox"/>
+All existing tests still pass.</li>
+<li><input disabled="" type="checkbox"/>
+Test coverage has not decreased below the project threshold.</li>
+<li><input disabled="" type="checkbox"/>
+No flaky tests introduced.</li>
+<li><input disabled="" type="checkbox"/>
+Edge cases are tested (boundary conditions, error paths).</li>
+<li><input disabled="" type="checkbox"/>
+Test output is deterministic.</li>
+</ul>
+<h1 id="security">Security</h1>
+<ul>
+<li><input disabled="" type="checkbox"/>
+No new security vulnerabilities introduced.</li>
+<li><input disabled="" type="checkbox"/>
+Input validation is present for all user inputs.</li>
+<li><input disabled="" type="checkbox"/>
+Authentication and authorisation checks are in place.</li>
+<li><input disabled="" type="checkbox"/>
+Secrets and credentials are not hardcoded.</li>
+<li><input disabled="" type="checkbox"/>
+Dependencies have been scanned for vulnerabilities.</li>
+</ul>
+<h1 id="performance">Performance</h1>
+<ul>
+<li><input disabled="" type="checkbox"/>
+No obvious performance regressions (N+1 queries, missing indexes).</li>
+<li><input disabled="" type="checkbox"/>
+Database queries are efficient and indexed.</li>
+<li><input disabled="" type="checkbox"/>
+Caching is used where appropriate.</li>
+</ul>
+<h1 id="maintainability">Maintainability</h1>
+<ul>
+<li><input disabled="" type="checkbox"/>
+Code is readable and well-structured.</li>
+<li><input disabled="" type="checkbox"/>
+Public APIs and interfaces are documented.</li>
+<li><input disabled="" type="checkbox"/>
+Complex logic includes explanatory comments.</li>
+<li><input disabled="" type="checkbox"/>
+Error messages are clear and actionable.</li>
+<li><input disabled="" type="checkbox"/>
+Logging is appropriate for debugging.</li>
+</ul>
+<h1 id="related-documents">Related Documents</h1>
+<ul>
+<li><a href="..*..*handbooks*quality*README*">Engineering Quality Handbook</a></li>
+<li><a href="../..*playbooks*quality*release-quality-gate*">Release Quality Gate Playbook</a></li>
+<li><a href="../..*references*quality*README*">Quality References</a></li>
+</ul>
+
+</div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Engineering Knowledge Framework — Building AI-native engineering knowledge systems</p>
+    </div>
+  </footer>
+</body>
+</html>

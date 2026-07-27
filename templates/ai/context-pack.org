@@ -46,8 +46,7 @@ Examples of good output for similar tasks:
 
 Relevant documentation:
 
-- [[file:./path/to/document.org][Document Title]]
-- [[file:./path/to/guide.org][Guide Title]]
+- (Add relevant document links here)
 
 * Task-Specific Context
 

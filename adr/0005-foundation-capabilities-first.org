@@ -1,6 +1,7 @@
 #+TITLE: ADR-0005: Foundation Capabilities First
 #+AUTHOR: Engineering
 #+DATE: 2026-07-27
+#+DESCRIPTION: Decision to build Engineering Fundamentals and Architecture before technology-specific capabilities
 #+STARTUP: overview indent
 
 :PROPERTIES:

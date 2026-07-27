@@ -1,6 +1,7 @@
 #+TITLE: ADR-0004: AI-Native Knowledge Design
 #+AUTHOR: Engineering
 #+DATE: 2026-07-27
+#+DESCRIPTION: Decision to treat AI as a first-class knowledge consumer
 #+STARTUP: overview indent
 
 :PROPERTIES:

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="An open framework for capturing, organizing and applying engineering knowledge">
+  <title>Engineering Knowledge Framework</title>
+  <link rel="stylesheet" href="https://dhruvasagar.github.io/engineering-knowledge-framework/style.css">
+  
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a href="https:&#x2F;&#x2F;dhruvasagar.github.io&#x2F;engineering-knowledge-framework" class="logo">Engineering Knowledge Framework</a>
+      <nav class="site-nav">
+        <a href="https:&#x2F;&#x2F;dhruvasagar.github.io&#x2F;engineering-knowledge-framework">Home</a>
+        <a href="https://github.com/dhruvasagar/engineering-knowledge-framework">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    
+<h1>Rails References</h1>
+
+<p class="description">Quick-reference material for Rails development</p>
+
+
+<div class="content">
+  <h1 id="purpose">Purpose</h1>
+<p>Quick-reference material for Rails development.</p>
+<p>These references are intended for lookup rather than learning. For
+in-depth explanations, see the referenced guides and handbooks.</p>
+<h1 id="rails-conventions">Rails Conventions</h1>
+<table><thead><tr><th>Concept</th><th>Convention</th><th>Example</th></tr></thead><tbody>
+<tr><td>Model</td><td>Singular, CamelCase</td><td><code>UserAccount</code></td></tr>
+<tr><td>Table</td><td>Plural, snake_case</td><td><code>user_accounts</code></td></tr>
+<tr><td>Controller</td><td>Plural, CamelCase with Controller</td><td><code>UserAccountsController</code></td></tr>
+<tr><td>Route</td><td>Resourceful, snake_case</td><td><code>resources :users</code></td></tr>
+<tr><td>Migration</td><td>Descriptive snake_case</td><td><code>add_email_to_users</code></td></tr>
+<tr><td>Service</td><td>Named after operation</td><td><code>RegisterUser</code></td></tr>
+</tbody></table>
+<h1 id="common-generators">Common Generators</h1>
+<table><thead><tr><th>Command</th><th>Creates</th></tr></thead><tbody>
+<tr><td><code>rails generate model User email:string</code></td><td>Model, migration, factory</td></tr>
+<tr><td><code>rails generate controller Api::V1::Users</code></td><td>Controller, routes, specs</td></tr>
+<tr><td><code>rails generate migration add_email_to_users</code></td><td>Migration file</td></tr>
+<tr><td><code>rails generate resource Product name:string</code></td><td>Model, controller, routes,</td></tr>
+<tr><td></td><td>migration, factory</td></tr>
+</tbody></table>
+<h1 id="testing-commands">Testing Commands</h1>
+<table><thead><tr><th>Command</th><th>Purpose</th></tr></thead><tbody>
+<tr><td><code>bundle exec rspec</code></td><td>Run full test suite.</td></tr>
+<tr><td><code>bundle exec rspec spec*models*</code></td><td>Run model specs.</td></tr>
+<tr><td><code>bundle exec rspec spec*requests*</code></td><td>Run request specs.</td></tr>
+<tr><td><code>bundle exec rspec spec*system*</code></td><td>Run system specs.</td></tr>
+<tr><td><code>bundle exec rspec spec*models*user_spec.rb:5</code></td><td>Run a single test by line.</td></tr>
+</tbody></table>
+<h1 id="key-gems">Key Gems</h1>
+<table><thead><tr><th>Gem</th><th>Purpose</th></tr></thead><tbody>
+<tr><td>Devise</td><td>Authentication</td></tr>
+<tr><td>Pundit</td><td>Authorization</td></tr>
+<tr><td>RSpec-Rails</td><td>Testing framework</td></tr>
+<tr><td>FactoryBot</td><td>Test data factories</td></tr>
+<tr><td>Sidekiq</td><td>Background job processing</td></tr>
+<tr><td>Bullet</td><td>N+1 query detection</td></tr>
+<tr><td>RuboCop</td><td>Style linting</td></tr>
+<tr><td>Rack::Attack</td><td>Rate limiting</td></tr>
+</tbody></table>
+<h1 id="rails-error-codes">Rails Error Codes</h1>
+<table><thead><tr><th>HTTP Code</th><th>Rails Helper</th><th>When to Use</th></tr></thead><tbody>
+<tr><td>200</td><td><code>:ok</code></td><td>Successful GET request.</td></tr>
+<tr><td>201</td><td><code>:created</code></td><td>Successful POST (resource</td></tr>
+<tr><td></td><td></td><td>created).</td></tr>
+<tr><td>204</td><td><code>:no_content</code></td><td>Successful DELETE or PUT with</td></tr>
+<tr><td></td><td></td><td>no response body.</td></tr>
+<tr><td>400</td><td><code>:bad_request</code></td><td>Malformed request parameters.</td></tr>
+<tr><td>401</td><td><code>:unauthorized</code></td><td>Authentication required.</td></tr>
+<tr><td>403</td><td><code>:forbidden</code></td><td>Authenticated but not</td></tr>
+<tr><td></td><td></td><td>authorized.</td></tr>
+<tr><td>404</td><td><code>:not_found</code></td><td>Resource does not exist.</td></tr>
+<tr><td>422</td><td><code>:unprocessable_entity</code></td><td>Validation failure.</td></tr>
+<tr><td>429</td><td><code>:too_many_requests</code></td><td>Rate limit exceeded.</td></tr>
+</tbody></table>
+<h1 id="related-documents">Related Documents</h1>
+<ul>
+<li><a href="../..*handbooks*rails*README*">Rails Engineering Handbook</a></li>
+<li><a href="../..*glossary*rails*README*">Rails Glossary</a></li>
+<li><a href="../..*guides*rails*service-objects*">Service Objects Guide</a></li>
+<li><a href="../..*guides*rails*testing*">Testing Rails Applications Guide</a></li>
+<li><a href="../..*references*architecture*README*">Architecture References</a></li>
+</ul>
+
+</div>
+
+
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Engineering Knowledge Framework — Building AI-native engineering knowledge systems</p>
+    </div>
+  </footer>
+</body>
+</html>

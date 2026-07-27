@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="An open framework for capturing, organizing and applying engineering knowledge">
+  <title>Engineering Knowledge Framework</title>
+  <link rel="stylesheet" href="https://dhruvasagar.github.io/engineering-knowledge-framework/style.css">
+  
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a href="https:&#x2F;&#x2F;dhruvasagar.github.io&#x2F;engineering-knowledge-framework" class="logo">Engineering Knowledge Framework</a>
+      <nav class="site-nav">
+        <a href="https:&#x2F;&#x2F;dhruvasagar.github.io&#x2F;engineering-knowledge-framework">Home</a>
+        <a href="https://github.com/dhruvasagar/engineering-knowledge-framework">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    
+<h1>ADR-0001: Capability Model for Knowledge Organization</h1>
+
+<p class="description">Decision to organize knowledge around Engineering Capabilities</p>
+
+<div class="content">
+  <p>:PROPERTIES:
+:STATUS:   accepted
+:DATE:     2026-07-27
+:END:</p>
+<h1 id="context">Context</h1>
+<p>Engineering knowledge can be organized in many ways:</p>
+<ul>
+<li>By technology stack (Rails, React, Kubernetes).</li>
+<li>By document type (all handbooks together, all guides together).</li>
+<li>By engineering discipline (architecture, security, testing).</li>
+<li>By project or team.</li>
+</ul>
+<p>The framework needed a primary organizational unit that is:</p>
+<ul>
+<li>Stable over time as technologies change.</li>
+<li>Reusable across different engineering domains.</li>
+<li>Intuitive for both engineers and AI to navigate.</li>
+<li>Capable of grouping all knowledge artifacts for a subject together.</li>
+</ul>
+<h1 id="decision">Decision</h1>
+<p>Organize engineering knowledge around <em><strong>Engineering Capabilities</strong></em>.</p>
+<p>A capability represents an engineering discipline or area of expertise
+(e.g., Software Architecture, Rails Engineering, Security Engineering).</p>
+<p>Each capability owns the complete collection of knowledge artifacts
+needed to master that discipline:</p>
+<pre><code>
+Capability
+
+├── Handbook
+├── Guides
+├── Playbooks
+├── Checklists
+├── Templates
+├── References
+├── Glossary
+├── Learning Paths
+└── Examples
+
+</code></pre>
+<p>Capabilities are the primary organizational unit. Document types are
+a secondary classification within each capability.</p>
+<h1 id="consequences">Consequences</h1>
+<h2 id="positive">Positive</h2>
+<ul>
+<li>Capabilities are stable as technologies evolve (Architecture as a
+capability outlives any specific architectural pattern).</li>
+<li>Related knowledge lives together, making it easier to discover and
+maintain.</li>
+<li>New capabilities can be added without restructuring existing ones.</li>
+<li>AI assistants can target a capability context for better retrieval.</li>
+<li>Capabilities can be developed and maintained independently.</li>
+</ul>
+<h2 id="negative">Negative</h2>
+<ul>
+<li>Some knowledge spans multiple capabilities (e.g., security concerns
+touch every discipline), requiring careful cross-referencing.</li>
+<li>The capability model is less familiar than a simple document-type
+hierarchy, requiring documentation and onboarding.</li>
+<li>Determining capability boundaries requires judgement.</li>
+</ul>
+<h1 id="alternatives-considered">Alternatives Considered</h1>
+<h2 id="document-type-hierarchy">Document-Type Hierarchy</h2>
+<p>Organize documents primarily by type: all handbooks in one directory,
+all guides in another, etc.</p>
+<p>Rejected because it scatters related knowledge across the repository,
+making it harder to discover and maintain. Engineers think in terms of
+subjects ("I need the Rails guidance"), not document types.</p>
+<h2 id="technology-specific-organization">Technology-Specific Organization</h2>
+<p>Organize around technology stacks (Rails, Kubernetes, React).</p>
+<p>Rejected because technologies change frequently, making this structure
+unstable. Principles and practices transcend specific technologies.</p>
+<h2 id="flat-structure">Flat Structure</h2>
+<p>Place all documents in a single directory with no grouping.</p>
+<p>Rejected because it does not scale. Even a modest number of documents
+becomes difficult to navigate.</p>
+<h1 id="references">References</h1>
+<ul>
+<li><a href="..*DOCUMENT_TYPES*">Document Types</a></li>
+<li><a href="..*handbooks*engineering*README*">Engineering Fundamentals Handbook</a></li>
+</ul>
+
+</div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Engineering Knowledge Framework — Building AI-native engineering knowledge systems</p>
+    </div>
+  </footer>
+</body>
+</html>

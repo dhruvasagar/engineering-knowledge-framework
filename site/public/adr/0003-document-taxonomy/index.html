@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="An open framework for capturing, organizing and applying engineering knowledge">
+  <title>Engineering Knowledge Framework</title>
+  <link rel="stylesheet" href="https://dhruvasagar.github.io/engineering-knowledge-framework/style.css">
+  
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a href="https:&#x2F;&#x2F;dhruvasagar.github.io&#x2F;engineering-knowledge-framework" class="logo">Engineering Knowledge Framework</a>
+      <nav class="site-nav">
+        <a href="https:&#x2F;&#x2F;dhruvasagar.github.io&#x2F;engineering-knowledge-framework">Home</a>
+        <a href="https://github.com/dhruvasagar/engineering-knowledge-framework">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    
+<h1>ADR-0003: Document Taxonomy with Single Responsibility</h1>
+
+<p class="description">Decision to use nine document types with single responsibility</p>
+
+<div class="content">
+  <p>:PROPERTIES:
+:STATUS:   accepted
+:DATE:     2026-07-27
+:END:</p>
+<h1 id="context">Context</h1>
+<p>The framework needed a standardized set of document types that:</p>
+<ul>
+<li>Cover the full range of engineering knowledge needs.</li>
+<li>Have clear, non-overlapping responsibilities.</li>
+<li>Support composition from small focused documents into larger
+understanding.</li>
+<li>Enable AI retrieval by being modular and explicit.</li>
+<li>Are stable enough to serve as the taxonomy for the entire framework.</li>
+</ul>
+<p>Without a clear taxonomy, documents drift into undefined formats,
+duplicate each other's responsibilities, and become harder to maintain.</p>
+<h1 id="decision">Decision</h1>
+<p>Define nine document types, each with a single, distinct responsibility:</p>
+<table><thead><tr><th>Document Type</th><th>Primary Purpose</th><th>Answers</th></tr></thead><tbody>
+<tr><td>Handbook</td><td>Principles, philosophy and standards</td><td>Why? What?</td></tr>
+<tr><td>Guide</td><td>Explain a focused engineering topic</td><td>How does it work?</td></tr>
+<tr><td>Playbook</td><td>Repeatable engineering workflow</td><td>How do I do this?</td></tr>
+<tr><td>Checklist</td><td>Verify correctness</td><td>Did I complete everything?</td></tr>
+<tr><td>Template</td><td>Standardize repeatable artifacts</td><td>Where do I start?</td></tr>
+<tr><td>Reference</td><td>Quick factual lookup</td><td>What is the syntax?</td></tr>
+<tr><td>Glossary</td><td>Canonical terminology</td><td>What does this mean?</td></tr>
+<tr><td>Learning Path</td><td>Structured learning progression</td><td>What should I learn next?</td></tr>
+<tr><td>Example</td><td>Practical implementation</td><td>What does good look like?</td></tr>
+</tbody></table>
+<p>The taxonomy follows a clear progression:</p>
+<pre><code>
+Handbook → Guide → Playbook → Checklist → Template
+
+Glossary and References support all document types.
+
+Learning Paths connect all document types.
+
+Examples support Guides and Playbooks.
+
+</code></pre>
+<p>Each document type has a single responsibility. Documents should never
+attempt to fulfil multiple responsibilities. Complex knowledge emerges
+from composition of specialized documents.</p>
+<h1 id="consequences">Consequences</h1>
+<h2 id="positive">Positive</h2>
+<ul>
+<li>Clear guidance for authors on what to write and how to structure it.</li>
+<li>AI systems can route queries to the document type best suited to
+answer them.</li>
+<li>Small, focused documents are easier to maintain than large monoliths.</li>
+<li>Document types compose naturally into a knowledge graph.</li>
+<li>New capabilities follow the same taxonomy, ensuring consistency.</li>
+</ul>
+<h2 id="negative">Negative</h2>
+<ul>
+<li>Authors must learn to decompose knowledge into the correct document
+types, which requires judgement.</li>
+<li>Some topics may not fit neatly into a single type, requiring
+cross-referencing rather than a single document.</li>
+<li>The taxonomy adds structure that simpler repositories do not need.</li>
+</ul>
+<h1 id="alternatives-considered">Alternatives Considered</h1>
+<h2 id="single-document-type-monolithic">Single Document Type (Monolithic)</h2>
+<p>One type of document that contains everything.</p>
+<p>Rejected because it produces large, hard-to-maintain documents that are
+difficult for AI to retrieve from effectively. It also provides no
+guidance to authors about structure.</p>
+<h2 id="fewer-types">Fewer Types</h2>
+<p>Use only handbooks, guides, and playbooks.</p>
+<p>Rejected because checklists, templates, references and glossaries each
+serve distinct purposes that cannot be absorbed into the other types
+without losing clarity.</p>
+<h2 id="more-types">More Types</h2>
+<p>Include additional types like tutorial, FAQ, cookbook, specification.</p>
+<p>Rejected because each additional type increases complexity and the core
+nine cover the essential needs. New types can be added later if a clear
+gap emerges.</p>
+<h1 id="references">References</h1>
+<ul>
+<li><a href="..*DOCUMENT_TYPES*">Document Types</a></li>
+<li><a href="..*handbooks*engineering*README*">Engineering Fundamentals Handbook</a></li>
+</ul>
+
+</div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Engineering Knowledge Framework — Building AI-native engineering knowledge systems</p>
+    </div>
+  </footer>
+</body>
+</html>

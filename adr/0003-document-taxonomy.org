@@ -1,6 +1,7 @@
 #+TITLE: ADR-0003: Document Taxonomy with Single Responsibility
 #+AUTHOR: Engineering
 #+DATE: 2026-07-27
+#+DESCRIPTION: Decision to use nine document types with single responsibility
 #+STARTUP: overview indent
 
 :PROPERTIES:

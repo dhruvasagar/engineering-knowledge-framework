@@ -236,7 +236,7 @@ Prefer:
 
 #+BEGIN_QUOTE
 See the
-[[file:../handbook/rails/README.org][Rails Engineering Handbook]]
+[[file:./handbooks/rails/README.org][Rails Engineering Handbook]]
 for the underlying architectural principles.
 #+END_QUOTE
 

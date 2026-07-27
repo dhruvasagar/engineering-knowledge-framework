@@ -1,6 +1,7 @@
 #+TITLE: ADR-0002: Org-mode as Primary Document Format
 #+AUTHOR: Engineering
 #+DATE: 2026-07-27
+#+DESCRIPTION: Decision to use Org-mode as the primary document format
 #+STARTUP: overview indent
 
 :PROPERTIES:

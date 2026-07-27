@@ -100,7 +100,7 @@ Questions:
 
 * Related Documents
 
-- [[file:../../handbooks/security/README.org][Security Engineering Handbook]]
-- [[file:../../playbooks/security-review/README.org][Security Review Playbook]]
-- [[file:../../guides/security/secure-coding.org][Secure Coding Guide]]
-- [[file:../../prompts/engineering-ai-workflows.org][AI Workflows for Engineering]]
+- [[file:../handbooks/security/README.org][Security Engineering Handbook]]
+- [[file:../playbooks/security-review/README.org][Security Review Playbook]]
+- [[file:../guides/security/secure-coding.org][Secure Coding Guide]]
+- [[file:../prompts/engineering-ai-workflows.org][AI Workflows for Engineering]]

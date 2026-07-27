@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="An open framework for capturing, organizing and applying engineering knowledge">
+  <title>Engineering Knowledge Framework</title>
+  <link rel="stylesheet" href="https://dhruvasagar.github.io/engineering-knowledge-framework/style.css">
+  
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a href="https:&#x2F;&#x2F;dhruvasagar.github.io&#x2F;engineering-knowledge-framework" class="logo">Engineering Knowledge Framework</a>
+      <nav class="site-nav">
+        <a href="https:&#x2F;&#x2F;dhruvasagar.github.io&#x2F;engineering-knowledge-framework">Home</a>
+        <a href="https://github.com/dhruvasagar/engineering-knowledge-framework">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    
+<h1>AI Evaluation Frameworks</h1>
+
+<p class="description">Frameworks for measuring AI output quality and reliability</p>
+
+<div class="content">
+  <h1 id="purpose">Purpose</h1>
+<p>AI evaluation frameworks provide systematic methods for assessing the
+quality, correctness and reliability of AI-generated output. Consistent
+evaluation enables teams to measure improvement, identify failure modes
+and build trust in AI-assisted workflows.</p>
+<h1 id="principles">Principles</h1>
+<h2 id="evaluate-output-not-process">Evaluate Output, Not Process</h2>
+<p>Judge AI by what it produces, not how it produces it. The quality of
+the output is what matters for engineering work.</p>
+<h2 id="evaluate-in-context">Evaluate in Context</h2>
+<p>AI output that is correct in one context may be wrong in another.
+Always evaluate against specific requirements, constraints and
+standards.</p>
+<h2 id="measure-what-matters">Measure What Matters</h2>
+<p>Different tasks need different evaluation criteria. Code generation
+needs correctness and security; documentation needs accuracy and
+clarity; design needs trade-off awareness.</p>
+<h2 id="bias-toward-objective-criteria">Bias Toward Objective Criteria</h2>
+<p>Prefer verifiable criteria (does the code compile? do tests pass?)
+over subjective criteria (does this look right?). Use subjective
+assessment only when objective measures are unavailable.</p>
+<h1 id="evaluation-dimensions">Evaluation Dimensions</h1>
+<p>| Dimension | What It Measures | How to Test |
++----------------+-----------------------------------------------+-------------------------------------+</p>
+<table><thead><tr><th>Correctness</th><th>Is the output technically accurate?</th><th>Tests, compilation, manual review.</th></tr></thead><tbody>
+<tr><td>Completeness</td><td>Does it address all requirements?</td><td>Checklist against requirements.</td></tr>
+<tr><td>Consistency</td><td>Does it follow conventions and standards?</td><td>Linting, style checks, review.</td></tr>
+<tr><td>Security</td><td>Does it introduce vulnerabilities?</td><td>Security scan, manual review.</td></tr>
+<tr><td>Performance</td><td>Is it efficient and scalable?</td><td>Benchmarks, profiling.</td></tr>
+<tr><td>Maintainability</td><td>Is it easy to understand and change?</td><td>Code review, complexity metrics.</td></tr>
+<tr><td>Safety</td><td>Does it avoid harmful or misleading output?</td><td>Safety checklist, edge case testing.</td></tr>
+</tbody></table>
+<h1 id="evaluation-methods">Evaluation Methods</h1>
+<h2 id="method-1-automated-verification">Method 1: Automated Verification</h2>
+<p>Run automated checks against AI-generated output.</p>
+<pre><code>Checklist:
+[x] Code compiles without errors.
+[x] All existing tests pass.
+[x] Linting passes with no new violations.
+[x] Security scan shows no critical or high findings.
+[x] Test coverage meets the project threshold.
+</code></pre>
+<p>| Strength | Weakness |
++--------------------------------+-----------------------------------+</p>
+<table><thead><tr><th>Fast, objective, repeatable.</th><th>Catches only ~30% of issues.</th></tr></thead><tbody>
+<tr><td>Can be run in CI.</td><td>Misses semantic correctness.</td></tr>
+</tbody></table>
+<h2 id="method-2-structured-human-review">Method 2: Structured Human Review</h2>
+<p>A human reviewer evaluates AI output against defined criteria.</p>
+<pre><code>Criteria:
+[ ] Correctness: Is the logic correct?
+[ ] Completeness: Are all requirements addressed?
+[ ] Consistency: Does it match project conventions?
+[ ] Security: Are there vulnerabilities?
+[ ] Maintainability: Is it well-structured?
+
+Rating per criterion: Pass / Minor Issue / Major Issue / Fail
+</code></pre>
+<p>| Strength | Weakness |
++--------------------------------+-----------------------------------+</p>
+<table><thead><tr><th>Catches nuanced issues.</th><th>Subjective, time-consuming.</th></tr></thead><tbody>
+<tr><td>Can evaluate correctness.</td><td>Requires domain expertise.</td></tr>
+</tbody></table>
+<h2 id="method-3-comparative-evaluation">Method 3: Comparative Evaluation</h2>
+<p>Compare AI output against a baseline or alternative.</p>
+<pre><code>Approach:
+1. Generate output from two different prompts or models.
+2. Compare both against requirements.
+3. Identify where they agree (likely correct).
+4. Investigate where they differ (needs human judgment).
+</code></pre>
+<p>| Strength | Weakness |
++--------------------------------+-----------------------------------+</p>
+<table><thead><tr><th>Reduces blind spots.</th><th>Doubles evaluation time.</th></tr></thead><tbody>
+<tr><td>Highlights uncertainty areas.</td><td>Agreement does not guarantee</td></tr>
+<tr><td></td><td>correctness.</td></tr>
+</tbody></table>
+<h2 id="method-4-longitudinal-tracking">Method 4: Longitudinal Tracking</h2>
+<p>Track AI output quality over time to measure improvement.</p>
+<pre><code>Metrics to track per task type:
+- Pass rate on first attempt.
+- Number of issues found per review.
+- Time spent reviewing and correcting.
+- Severity distribution of issues.
+
+Track per model, prompt template and task type.
+</code></pre>
+<p>| Strength | Weakness |
++--------------------------------+-----------------------------------+</p>
+<table><thead><tr><th>Identifies trends and regressions.</th><th>Requires consistent measurement.</th></tr></thead><tbody>
+<tr><td>Informs prompt improvements.</td><td>Needs data collection over time.</td></tr>
+</tbody></table>
+<h1 id="task-specific-evaluation-criteria">Task-Specific Evaluation Criteria</h1>
+<h2 id="code-generation">Code Generation</h2>
+<p>| Criterion | How to Evaluate |
++--------------------+--------------------------------------------+</p>
+<table><thead><tr><th>Compilation</th><th>Does it compile without errors?</th></tr></thead><tbody>
+<tr><td>Test passage</td><td>Do existing and generated tests pass?</td></tr>
+<tr><td>Correctness</td><td>Does it implement the specified behaviour?</td></tr>
+<tr><td>Edge cases</td><td>Are error paths and boundary conditions</td></tr>
+<tr><td></td><td>handled?</td></tr>
+<tr><td>Security</td><td>Are inputs validated, outputs encoded?</td></tr>
+<tr><td>Style</td><td>Does it match project conventions?</td></tr>
+<tr><td>Performance</td><td>Are there obvious inefficiencies?</td></tr>
+</tbody></table>
+<h2 id="documentation">Documentation</h2>
+<p>| Criterion | How to Evaluate |
++--------------------+--------------------------------------------+</p>
+<table><thead><tr><th>Accuracy</th><th>Are facts correct and verifiable?</th></tr></thead><tbody>
+<tr><td>Completeness</td><td>Does it cover all required topics?</td></tr>
+<tr><td>Clarity</td><td>Is it understandable without prior</td></tr>
+<tr><td></td><td>context?</td></tr>
+<tr><td>Structure</td><td>Is it well-organised with clear headings?</td></tr>
+<tr><td>Examples</td><td>Are examples correct and relevant?</td></tr>
+<tr><td>Cross-references</td><td>Are related documents linked?</td></tr>
+</tbody></table>
+<h2 id="architecture-design">Architecture / Design</h2>
+<p>| Criterion | How to Evaluate |
++--------------------+--------------------------------------------+</p>
+<table><thead><tr><th>Trade-off awareness</th><th>Are trade-offs explicitly discussed?</th></tr></thead><tbody>
+<tr><td>Constraint fit</td><td>Does it respect stated constraints?</td></tr>
+<tr><td>Consistency</td><td>Does it align with existing patterns?</td></tr>
+<tr><td>Completeness</td><td>Are all quality attributes addressed?</td></tr>
+<tr><td>Feasibility</td><td>Is the design implementable?</td></tr>
+<tr><td>Clarity</td><td>Is the design easy to understand?</td></tr>
+</tbody></table>
+<h2 id="test-generation">Test Generation</h2>
+<p>| Criterion | How to Evaluate |
++--------------------+--------------------------------------------+</p>
+<table><thead><tr><th>Correctness</th><th>Do tests accurately test the intended</th></tr></thead><tbody>
+<tr><td></td><td>behaviour?</td></tr>
+<tr><td>Coverage</td><td>Do they cover key paths and edge cases?</td></tr>
+<tr><td>Independence</td><td>Are tests independent and deterministic?</td></tr>
+<tr><td>Readability</td><td>Are test names and assertions clear?</td></tr>
+<tr><td>Maintainability</td><td>Are tests resilient to refactoring?</td></tr>
+</tbody></table>
+<h1 id="scoring-rubric">Scoring Rubric</h1>
+<p>| Score | Label | Description |
++-------+--------------+-------------------------------------------+</p>
+<table><thead><tr><th>5</th><th>Excellent</th><th>Production-ready with minor or no changes.</th></tr></thead><tbody>
+<tr><td>4</td><td>Good</td><td>Usable after moderate revision.</td></tr>
+<tr><td>3</td><td>Acceptable</td><td>Requires significant revision.</td></tr>
+<tr><td>2</td><td>Poor</td><td>Major issues, needs substantial rework.</td></tr>
+<tr><td>1</td><td>Unusable</td><td>Cannot be used — start over.</td></tr>
+</tbody></table>
+<h1 id="evaluation-workflow">Evaluation Workflow</h1>
+<ol>
+<li><em><strong>Define criteria</strong></em> before generating output.</li>
+<li><em><strong>Generate output</strong></em> using best prompt practices.</li>
+<li><em><strong>Run automated checks</strong></em> (compile, lint, test, security).</li>
+<li><em><strong>Perform structured review</strong></em> against criteria.</li>
+<li><em><strong>Score each dimension</strong></em> using the rubric.</li>
+<li><em><strong>Document findings</strong></em> — what worked, what did not.</li>
+<li><em><strong>Feed back</strong></em> into prompt and context improvements.</li>
+</ol>
+<h1 id="anti-patterns">Anti-patterns</h1>
+<ul>
+<li><em><strong>Evaluating without criteria</strong></em>: Review without defined standards
+leads to inconsistent assessment.</li>
+<li><em><strong>Confirmation bias</strong></em>: Favouring AI output that matches your
+preconceptions.</li>
+<li><em><strong>Ignoring false positives</strong></em>: Flagging correct output as incorrect
+wastes time and reduces trust.</li>
+<li><em><strong>Single-dimension evaluation</strong></em>: Judging AI output on correctness
+alone misses security, performance and maintainability issues.</li>
+<li><em><strong>Not tracking over time</strong></em>: Without longitudinal data, it is
+impossible to know if AI output is improving or degrading.</li>
+</ul>
+<h1 id="related-documents">Related Documents</h1>
+<ul>
+<li><a href="https://dhruvasagar.github.io/engineering-knowledge-framework/guides/ai/evaluation-frameworks/.*human-review-strategies*">Human Review Strategies</a></li>
+<li><a href="../..*playbooks*ai*verification-workflows*">Verification Workflows</a></li>
+<li><a href="../..*checklists*ai-usage*">AI Usage Checklist</a></li>
+<li><a href="..*ai*ai-safety*">AI Safety and Verification</a></li>
+<li><a href="../..*references*ai*README*">AI References</a></li>
+</ul>
+
+</div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Engineering Knowledge Framework — Building AI-native engineering knowledge systems</p>
+    </div>
+  </footer>
+</body>
+</html>

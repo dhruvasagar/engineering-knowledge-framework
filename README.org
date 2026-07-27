@@ -187,7 +187,7 @@ Each document type has a clearly defined purpose.
 
 See:
 
-[[file:./governance/DOCUMENT_TYPES.org][Document Types]]
+[[file:./DOCUMENT_TYPES.org][Document Types]]
 
 for more information.
 
@@ -278,12 +278,12 @@ individual components to meet their own needs.
 
 If you are new to the repository, begin with the governance documents.
 
-1. [[file:./governance/CLAUDE.md][CLAUDE.md]]
-2. [[file:./governance/STRATEGY.org][Strategy]]
-3. [[file:./governance/ROADMAP.org][Roadmap]]
-4. [[file:./governance/DOCUMENT_TYPES.org][Document Types]]
-5. [[file:./governance/STYLE_GUIDE.org][Style Guide]]
-6. [[file:./governance/CONTRIBUTING.org][Contributing]]
+1. [[file:./CLAUDE.md][CLAUDE.md]]
+2. [[file:./STRATEGY.org][Strategy]]
+3. [[file:./ROADMAP.org][Roadmap]]
+4. [[file:./DOCUMENT_TYPES.org][Document Types]]
+5. [[file:./STYLE_GUIDE.org][Style Guide]]
+6. [[file:./CONTRIBUTING.org][Contributing]]
 
 These documents explain the philosophy, organization and contribution
 model of the framework.
@@ -315,7 +315,7 @@ The current priorities are:
 
 Progress is tracked in:
 
-[[file:./governance/ROADMAP.org][Roadmap]]
+[[file:./ROADMAP.org][Roadmap]]
 
 * Long-term Goals
 
@@ -344,7 +344,7 @@ Before contributing:
 
 See:
 
-[[file:./governance/CONTRIBUTING.org][Contributing]]
+[[file:./CONTRIBUTING.org][Contributing]]
 
 for the complete contribution workflow.
 
@@ -357,10 +357,10 @@ repository's license.
 
 * Related Documents
 
-- [[file:./governance/CLAUDE.md][CLAUDE.md]]
-- [[file:./governance/STRATEGY.org][Strategy]]
-- [[file:./governance/ROADMAP.org][Roadmap]]
-- [[file:./governance/DOCUMENT_TYPES.org][Document Types]]
-- [[file:./governance/STYLE_GUIDE.org][Style Guide]]
-- [[file:./governance/CONTRIBUTING.org][Contributing]]
+- [[file:./CLAUDE.md][CLAUDE.md]]
+- [[file:./STRATEGY.org][Strategy]]
+- [[file:./ROADMAP.org][Roadmap]]
+- [[file:./DOCUMENT_TYPES.org][Document Types]]
+- [[file:./STYLE_GUIDE.org][Style Guide]]
+- [[file:./CONTRIBUTING.org][Contributing]]
 - [[file:./glossary/README.org][Glossary]]

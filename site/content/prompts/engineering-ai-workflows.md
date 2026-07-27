@@ -1,0 +1,251 @@
++++
+title = "AI Workflows for Engineering"
+description = "Prompt patterns and AI workflows for engineering tasks"
++++
+
+
+# Purpose
+
+AI assistants can accelerate engineering work when used effectively.
+
+This document provides prompt patterns and workflows for using AI
+assistants in common engineering tasks: code review, design
+exploration, refactoring, documentation generation and problem
+diagnosis.
+
+These patterns are guidelines, not scripts. Adapt them to your context
+and always review AI output before acting on it.
+
+# Principles for AI-Assisted Engineering
+
+## AI Augments, Does Not Replace
+
+AI accelerates engineering work but does not replace engineering
+judgement. Every AI-generated suggestion must be reviewed by a human.
+
+## Context is Everything
+
+The quality of AI output depends directly on the quality of context
+provided. Invest time in writing clear, complete prompts.
+
+## Iterate
+
+Treat AI interactions as conversations. Start broad, then refine.
+Provide feedback on what is useful and what is not.
+
+## Keep Humans in the Loop
+
+AI is a collaborator, not an authority. Critical decisions, especially
+those involving trade-offs, require human judgement.
+
+# Workflows
+
+## Code Review
+
+### Purpose
+
+Use AI to assist with code review by catching issues the human reviewer
+might miss and generating constructive feedback.
+
+#### Context to Provide
+
+- The diff or pull request.
+- The programming language and framework.
+- Relevant coding standards or style guides.
+- Specific areas of concern (security, performance, error handling).
+
+#### Prompt Pattern
+
+```
+Review this pull request for [LANGUAGE] code.
+
+Focus on:
+1. Correctness: Are there any bugs or edge cases?
+2. Design: Does this follow separation of concerns?
+3. Error handling: Are errors handled appropriately?
+4. Testing: Is the change adequately tested?
+5. Security: Are there any security concerns?
+
+Code:
+```[LANGUAGE]
+[paste code or diff]
+```
+
+Reference standards:
+- [link to coding standards]
+- [link to testing guide]
+```
+
+#### Output Review
+
+- Verify that AI-identified issues are real, not false positives.
+- Prioritize AI suggestions alongside your own observations.
+- Do not delegate review judgement to AI.
+
+## Design Exploration
+
+### Purpose
+
+Use AI to explore alternative approaches, identify trade-offs and
+discover considerations you might have missed.
+
+#### Context to Provide
+
+- The problem statement.
+- Constraints (time, technology, team, performance).
+- Quality attribute priorities.
+- Any approaches already considered.
+
+#### Prompt Pattern
+
+```
+I am designing a solution for:
+
+[problem description]
+
+Constraints:
+- [constraint 1]
+- [constraint 2]
+
+Quality attribute priorities (ranked):
+1. [attribute 1]
+2. [attribute 2]
+
+Approaches I have considered:
+- [approach 1]
+- [approach 2]
+
+What alternatives am I missing? For each alternative, describe:
+1. The approach briefly.
+2. Key trade-offs relative to my priorities.
+3. When this approach would be preferred.
+```
+
+## Refactoring
+
+### Purpose
+
+Use AI to identify refactoring opportunities and suggest improvements
+to code structure.
+
+#### Context to Provide
+
+- The code to refactor.
+- The refactoring goal (improve readability, reduce duplication, improve
+  testability).
+- Constraints (public API must not change, performance must not degrade).
+
+#### Prompt Pattern
+
+```
+Help me refactor this [LANGUAGE] code.
+
+Goal: [improve readability / reduce duplication / improve testability]
+
+Constraints:
+- Public interface must remain unchanged.
+- [other constraint]
+
+Current code:
+```[LANGUAGE]
+[paste code]
+```
+
+Suggest:
+1. The most impactful improvement.
+2. The steps to achieve it.
+3. Potential risks or trade-offs.
+```
+
+## Documentation Generation
+
+### Purpose
+
+Use AI to draft documentation from code, reducing the friction of
+keeping documentation current.
+
+#### Context to Provide
+
+- The code or module to document.
+- The document type (guide, README, ADR, reference).
+- The audience.
+- Existing documentation conventions.
+
+#### Prompt Pattern
+
+```
+Write a [document type] for this [LANGUAGE] module.
+
+Audience: [engineers familiar with the codebase / new team members /
+          stakeholders]
+
+Conventions:
+- Use [format*style] for documentation.
+- Include examples.
+- Explain why, not just what.
+
+Module:
+```[LANGUAGE]
+[paste code]
+```
+```
+
+## Problem Diagnosis
+
+### Purpose
+
+Use AI to help diagnose and troubleshoot issues by analysing error
+messages, logs and code.
+
+#### Context to Provide
+
+- Error message or log output.
+- Relevant code or configuration.
+- What was attempted before the error.
+- Environment details (version, OS, dependencies).
+
+#### Prompt Pattern
+
+```
+I am seeing this error:
+
+[error message or log output]
+
+Code context:
+```[LANGUAGE]
+[paste relevant code]
+```
+
+What I tried:
+- [attempt 1]
+- [attempt 2]
+
+Environment:
+- [language*framework version]
+- [OS*container details]
+
+What is the most likely cause? What should I try next?
+```
+
+# Anti-patterns
+
+## Blind Acceptance
+
+Accepting AI output without review undermines quality and introduces
+risk. Always verify.
+
+## Insufficient Context
+
+Providing too little context produces generic, low-quality output.
+Invest in writing good prompts.
+
+## Over-Reliance
+
+Using AI as a crutch instead of developing engineering judgement.
+AI should accelerate learning, not replace it.
+
+# Related Documents
+
+- [Engineering Fundamentals Handbook](..*handbooks*engineering*README*)
+- [Code Review Playbook](..*playbooks*code-review*README*)
+- [AI Engineering Handbook](..*handbooks/ai*README*)

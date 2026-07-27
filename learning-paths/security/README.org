@@ -115,7 +115,7 @@ respond to security incidents.
 2. **Incident Response**
    - Detection, containment, eradication, recovery.
    - Post-incident analysis.
-   - Reference: [[file:../../playbooks/incident-response/README.org][Incident Response Playbook]]
+   - Reference: Incident Response Playbook (not yet developed)
 
 3. **Security Standards and Compliance**
    - Defining security standards for an organization.

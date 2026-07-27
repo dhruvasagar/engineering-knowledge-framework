@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="An open framework for capturing, organizing and applying engineering knowledge">
+  <title>Engineering Knowledge Framework</title>
+  <link rel="stylesheet" href="https://dhruvasagar.github.io/engineering-knowledge-framework/style.css">
+  
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a href="https:&#x2F;&#x2F;dhruvasagar.github.io&#x2F;engineering-knowledge-framework" class="logo">Engineering Knowledge Framework</a>
+      <nav class="site-nav">
+        <a href="https:&#x2F;&#x2F;dhruvasagar.github.io&#x2F;engineering-knowledge-framework">Home</a>
+        <a href="https://github.com/dhruvasagar/engineering-knowledge-framework">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    
+<h1>Architecture Review Playbook</h1>
+
+<p class="description">Repeatable workflow for conducting architecture reviews</p>
+
+
+<div class="content">
+  <h1 id="objective">Objective</h1>
+<p>Ensure architectural decisions are sound, well-documented, aligned with
+principles, and appropriate for the system's context and goals.</p>
+<p>Architecture reviews provide a structured forum for evaluating
+significant design decisions before they become costly to reverse.</p>
+<h1 id="inputs">Inputs</h1>
+<ul>
+<li>Architecture Decision Record (ADR) or RFC proposing the change.</li>
+<li>Current architecture documentation (diagrams, decision log, system
+context).</li>
+<li>Relevant quality attribute requirements.</li>
+<li>Business context and constraints.</li>
+</ul>
+<h1 id="prerequisites">Prerequisites</h1>
+<p>Before requesting an architecture review, the author should verify:</p>
+<ul>
+<li><input disabled="" type="checkbox"/>
+An ADR or RFC is drafted with context, decision and consequences.</li>
+<li><input disabled="" type="checkbox"/>
+Alternatives have been identified and evaluated.</li>
+<li><input disabled="" type="checkbox"/>
+Quality attribute trade-offs are documented.</li>
+<li><input disabled="" type="checkbox"/>
+Architecture diagrams are current (C4 model preferred).</li>
+<li><input disabled="" type="checkbox"/>
+Relevant stakeholders have been identified.</li>
+<li><input disabled="" type="checkbox"/>
+The proposal is ready for review, not early exploration.</li>
+</ul>
+<h1 id="workflow">Workflow</h1>
+<h2 id="step-1-determine-review-scope">Step 1: Determine Review Scope</h2>
+<p>Not every decision needs a full architecture review.</p>
+<table><thead><tr><th>Decision Type</th><th>Review Level</th><th>Participants</th></tr></thead><tbody>
+<tr><td>Technology introduction</td><td>Full review</td><td>Architects, senior</td></tr>
+<tr><td></td><td></td><td>engineers, operations</td></tr>
+<tr><td>Architecture pattern change</td><td>Full review</td><td>Architects, affected team</td></tr>
+<tr><td>Service boundary change</td><td>Full review</td><td>Architects, service owners</td></tr>
+<tr><td>API design decision</td><td>Lightweight</td><td>Technical lead, reviewer</td></tr>
+<tr><td>Library or framework upgrade</td><td>Lightweight</td><td>Team, platform</td></tr>
+<tr><td>Internal component refactor</td><td>Self-service</td><td>Team only</td></tr>
+</tbody></table>
+<h2 id="step-2-assemble-review-team">Step 2: Assemble Review Team</h2>
+<p>Select reviewers based on scope:</p>
+<ul>
+<li>At least one architect or senior engineer not on the proposing team.</li>
+<li>Representatives from affected teams.</li>
+<li>Subject matter experts (security, performance, data) as needed.</li>
+<li>Operations or platform team if deployment or infrastructure is
+affected.</li>
+</ul>
+<h2 id="step-3-distribute-materials">Step 3: Distribute Materials</h2>
+<p>Share the following at least two business days before the review:</p>
+<ul>
+<li>ADR or RFC document.</li>
+<li>Current architecture diagrams.</li>
+<li>Alternatives analysis.</li>
+<li>Quality attribute trade-off matrix.</li>
+<li>Any relevant performance, security or scalability data.</li>
+</ul>
+<h2 id="step-4-conduct-the-review">Step 4: Conduct the Review</h2>
+<h3 id="presentation-15-20-minutes">Presentation (15-20 minutes)</h3>
+<p>The author presents:</p>
+<ul>
+<li>The problem or opportunity.</li>
+<li>The proposed approach.</li>
+<li>Alternatives considered.</li>
+<li>Trade-offs and consequences.</li>
+</ul>
+<h4 id="discussion-and-questions-30-40-minutes">Discussion and Questions (30-40 minutes)</h4>
+<p>Reviewers evaluate the proposal against:</p>
+<table><thead><tr><th>Criterion</th><th>Questions</th></tr></thead><tbody>
+<tr><td>Problem alignment</td><td>Does the proposal solve the stated problem? Is the problem</td></tr>
+<tr><td></td><td>correctly understood?</td></tr>
+<tr><td>Principle alignment</td><td>Is the proposal consistent with engineering and architecture</td></tr>
+<tr><td></td><td>principles? Does it follow separation of concerns,</td></tr>
+<tr><td></td><td>encapsulation and dependency management?</td></tr>
+<tr><td>Quality attributes</td><td>Are the relevant quality attributes addressed (performance,</td></tr>
+<tr><td></td><td>scalability, security, maintainability, evolvability)?</td></tr>
+<tr><td></td><td>Are trade-offs explicitly acknowledged?</td></tr>
+<tr><td>Alternatives</td><td>Were meaningful alternatives considered? Is the chosen</td></tr>
+<tr><td></td><td>approach justified relative to the alternatives?</td></tr>
+<tr><td>Consequences</td><td>Are the consequences (both positive and negative) fully</td></tr>
+<tr><td></td><td>understood? Are there hidden dependencies or risks?</td></tr>
+<tr><td>Documentation</td><td>Is the decision adequately documented? Can a future engineer</td></tr>
+<tr><td></td><td>understand the reasoning?</td></tr>
+</tbody></table>
+<h4 id="decision-and-next-steps-10-15-minutes">Decision and Next Steps (10-15 minutes)</h4>
+<p>The review concludes with one of:</p>
+<table><thead><tr><th>Outcome</th><th>Meaning</th></tr></thead><tbody>
+<tr><td>Approved</td><td>The decision is accepted. Proceed with implementation.</td></tr>
+<tr><td>Conditional</td><td>Approved pending specific changes. Address conditions</td></tr>
+<tr><td></td><td>and confirm with reviewers.</td></tr>
+<tr><td>Revise</td><td>Significant issues identified. Revise and resubmit.</td></tr>
+<tr><td>Rejected</td><td>The proposal is not accepted. Document the reasoning</td></tr>
+<tr><td></td><td>and explore alternatives.</td></tr>
+</tbody></table>
+<h2 id="step-5-document-the-outcome">Step 5: Document the Outcome</h2>
+<p>The author updates the ADR or RFC with:</p>
+<ul>
+<li>Review date and participants.</li>
+<li>Review outcome.</li>
+<li>Conditions or action items.</li>
+<li>Rationale for any changes made during review.</li>
+</ul>
+<h2 id="step-6-follow-up">Step 6: Follow Up</h2>
+<p>For approved or conditional decisions:</p>
+<ul>
+<li>Schedule implementation milestones.</li>
+<li>Identify monitoring points to validate the decision.</li>
+<li>Schedule a post-implementation review if appropriate.</li>
+</ul>
+<h1 id="checklist">Checklist</h1>
+<p>The reviewer should verify:</p>
+<ul>
+<li><input disabled="" type="checkbox"/>
+The problem is clearly defined and understood.</li>
+<li><input disabled="" type="checkbox"/>
+The proposal is consistent with architecture principles.</li>
+<li><input disabled="" type="checkbox"/>
+Quality attributes are explicitly addressed.</li>
+<li><input disabled="" type="checkbox"/>
+Trade-offs are documented and acknowledged.</li>
+<li><input disabled="" type="checkbox"/>
+Meaningful alternatives were considered.</li>
+<li><input disabled="" type="checkbox"/>
+Consequences are fully understood.</li>
+<li><input disabled="" type="checkbox"/>
+The decision is documented in an ADR or RFC.</li>
+<li><input disabled="" type="checkbox"/>
+All stakeholders have been consulted.</li>
+<li><input disabled="" type="checkbox"/>
+Risks are identified and mitigated.</li>
+<li><input disabled="" type="checkbox"/>
+The proposal can be implemented incrementally.</li>
+</ul>
+<h1 id="escalation-points">Escalation Points</h1>
+<table><thead><tr><th>Situation</th><th>Action</th></tr></thead><tbody>
+<tr><td>Disagreement cannot be resolved in review</td><td>Escalate to the architecture forum</td></tr>
+<tr><td></td><td>or chief architect.</td></tr>
+<tr><td>Decision affects multiple organizations</td><td>Involve all affected teams before</td></tr>
+<tr><td></td><td>finalizing.</td></tr>
+<tr><td>Security or compliance implications</td><td>Require security review sign-off.</td></tr>
+<tr><td>Significant cost or resource impact</td><td>Include budget or resource owner</td></tr>
+<tr><td></td><td>in the review.</td></tr>
+</tbody></table>
+<h1 id="ai-workflow">AI Workflow</h1>
+<p>AI assistants can support architecture reviews by:</p>
+<h2 id="preparation">Preparation</h2>
+<ul>
+<li>Summarizing the proposal and alternatives for reviewers.</li>
+<li>Generating trade-off matrices from the ADR.</li>
+<li>Identifying related ADRs and architectural decisions.</li>
+<li>Drafting review questions based on the proposal.</li>
+</ul>
+<h3 id="during-review">During Review</h3>
+<ul>
+<li>Recording decisions and action items.</li>
+<li>Comparing the proposal against stored principles and patterns.</li>
+<li>Identifying potential blind spots or unaddressed quality attributes.</li>
+</ul>
+<h3 id="post-review">Post-Review</h3>
+<ul>
+<li>Updating ADRs with review outcomes.</li>
+<li>Generating decision logs from review conclusions.</li>
+<li>Tracking conditions and action items.</li>
+</ul>
+<p>When using AI for architecture review support, provide:</p>
+<ul>
+<li>The ADR or RFC under review.</li>
+<li>Current architecture documentation.</li>
+<li>Relevant principles and standards.</li>
+<li>Review criteria and evaluation framework.</li>
+</ul>
+<h1 id="expected-outputs">Expected Outputs</h1>
+<ul>
+<li>Reviewed and documented architectural decision.</li>
+<li>Updated ADR or RFC with review outcome.</li>
+<li>Clear decision on whether to proceed.</li>
+<li>Action items and conditions documented.</li>
+<li>Knowledge shared across the team and stakeholders.</li>
+</ul>
+<h1 id="related-documents">Related Documents</h1>
+<ul>
+<li><a href="../..*handbooks*architecture*README*">Software Architecture Handbook</a></li>
+<li><a href="../..*handbooks*engineering*README*">Engineering Fundamentals Handbook</a></li>
+<li><a href="../..*guides*architecture*adr-writing-guide*">ADR Writing Guide</a></li>
+<li><a href="../..*guides*architecture*architectural-patterns*">Architectural Patterns Guide</a></li>
+<li><a href="../..*templates*adr*README*">ADR Template</a></li>
+<li><a href="../..*glossary*architecture*README*">Architecture Glossary</a></li>
+</ul>
+
+</div>
+
+
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Engineering Knowledge Framework — Building AI-native engineering knowledge systems</p>
+    </div>
+  </footer>
+</body>
+</html>

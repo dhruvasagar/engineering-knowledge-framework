@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="An open framework for capturing, organizing and applying engineering knowledge">
+  <title>Engineering Knowledge Framework</title>
+  <link rel="stylesheet" href="https://dhruvasagar.github.io/engineering-knowledge-framework/style.css">
+  
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a href="https:&#x2F;&#x2F;dhruvasagar.github.io&#x2F;engineering-knowledge-framework" class="logo">Engineering Knowledge Framework</a>
+      <nav class="site-nav">
+        <a href="https:&#x2F;&#x2F;dhruvasagar.github.io&#x2F;engineering-knowledge-framework">Home</a>
+        <a href="https://github.com/dhruvasagar/engineering-knowledge-framework">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    
+<h1>Semantic HTML</h1>
+
+<p class="description">Using HTML elements for their intended purpose</p>
+
+<div class="content">
+  <h1 id="purpose">Purpose</h1>
+<p>Semantic HTML is the foundation of accessible web development. Using
+elements according to their intended meaning provides built-in
+accessibility support, improves SEO and makes code easier to maintain.</p>
+<h1 id="principles">Principles</h1>
+<h2 id="choose-the-right-element">Choose the Right Element</h2>
+<p>Every HTML element has a defined purpose. Choose the element that best
+matches the meaning of your content.</p>
+<p>| Content | Correct Element | Common Mistake |
++--------------------+-----------------------+-----------------------+</p>
+<table><thead><tr><th>Navigation</th><th><code>&lt;nav&gt;</code></th><th><code>&lt;div class</code>"nav"&gt;=</th></tr></thead><tbody>
+<tr><td>Main content</td><td><code>&lt;main&gt;</code></td><td><code>&lt;div class</code>"main"&gt;=</td></tr>
+<tr><td>Article</td><td><code>&lt;article&gt;</code></td><td><code>&lt;div&gt;</code></td></tr>
+<tr><td>Section</td><td><code>&lt;section&gt;</code></td><td><code>&lt;div&gt;</code></td></tr>
+<tr><td>Heading</td><td><code>&lt;h1&gt;-&lt;h6&gt;</code></td><td><code>&lt;div class</code>"title"&gt;=</td></tr>
+<tr><td>List</td><td><code>&lt;ul&gt;*&lt;ol&gt;</code></td><td><code>&lt;div&gt;</code> with bullets</td></tr>
+<tr><td>Button</td><td><code>&lt;button&gt;</code></td><td><code>&lt;div onclick</code>"..."&gt;=</td></tr>
+<tr><td>Link</td><td><code>&lt;a&gt;</code></td><td><code>&lt;span onclick</code>"..."&gt;=</td></tr>
+<tr><td>Form input</td><td><code>&lt;input&gt;</code>, <code>&lt;select&gt;</code></td><td>=<div contenteditable></td></tr>
+</tbody></table>
+<h2 id="follow-heading-hierarchy">Follow Heading Hierarchy</h2>
+<p>Headings should form a logical outline:</p>
+<ul>
+<li><code>&lt;h1&gt;</code>: Page title (one per page).</li>
+<li><code>&lt;h2&gt;</code>: Major sections.</li>
+<li><code>&lt;h3&gt;</code>: Subsections.</li>
+<li><code>&lt;h4&gt;-&lt;h6&gt;</code>: Further subdivisions as needed.</li>
+</ul>
+<p>Do not skip heading levels (e.g., <code>&lt;h1&gt;</code> to <code>&lt;h3&gt;</code> without <code>&lt;h2&gt;</code>).</p>
+<h2 id="use-landmarks">Use Landmarks</h2>
+<p>Provide landmark regions to enable quick navigation:</p>
+<ul>
+<li><code>&lt;header&gt;</code> or role="banner".</li>
+<li><code>&lt;nav&gt;</code> or role="navigation".</li>
+<li><code>&lt;main&gt;</code> or role="main".</li>
+<li><code>&lt;aside&gt;</code> or role="complementary".</li>
+<li><code>&lt;footer&gt;</code> or role="contentinfo".</li>
+<li><code>&lt;form&gt;</code> or role="form".</li>
+<li><code>&lt;search&gt;</code> or role`"search".</li>
+</ul>
+<h1 id="common-anti-patterns">Common Anti-patterns</h1>
+<h2 id="div-soup">Div Soup</h2>
+<pre><code>&lt;!-- Avoid --&gt;
+&lt;div class`&quot;header&quot;&gt;
+  &lt;div class`&quot;nav&quot;&gt;
+    &lt;div class`&quot;nav-item&quot;&gt;Home&lt;*div&gt;
+  &lt;*div&gt;
+&lt;*div&gt;
+</code></pre>
+<pre><code>&lt;!-- Prefer --&gt;
+&lt;header&gt;
+  &lt;nav&gt;
+    &lt;a href`&quot;*&quot;&gt;Home&lt;*a&gt;
+  &lt;*nav&gt;
+&lt;*header&gt;
+</code></pre>
+<h2 id="button-vs-div">Button vs Div</h2>
+<pre><code>&lt;!-- Avoid — not keyboard accessible, no button semantics --&gt;
+&lt;div class`&quot;btn&quot; onclick`&quot;submit()&quot;&gt;Submit&lt;*div&gt;
+
+&lt;!-- Prefer — keyboard accessible, screen reader friendly --&gt;
+&lt;button type`&quot;submit&quot;&gt;Submit&lt;*button&gt;
+</code></pre>
+<h2 id="styling-divs-as-headings">Styling Divs as Headings</h2>
+<pre><code>&lt;!-- Avoid — screen readers do not recognise this as a heading --&gt;
+&lt;div class=&quot;heading-large&quot;&gt;Section Title&lt;*div&gt;
+
+&lt;!-- Prefer --&gt;
+&lt;h2&gt;Section Title&lt;*h2&gt;
+</code></pre>
+<h1 id="checklist">Checklist</h1>
+<ul>
+<li><input disabled="" type="checkbox"/>
+All content uses the most semantic HTML element available.</li>
+<li><input disabled="" type="checkbox"/>
+Heading hierarchy is logical and does not skip levels.</li>
+<li><input disabled="" type="checkbox"/>
+Page has one <code>&lt;h1&gt;</code> element.</li>
+<li><input disabled="" type="checkbox"/>
+Landmark regions are present and correctly used.</li>
+<li><input disabled="" type="checkbox"/>
+Interactive elements use native HTML elements (<code>&lt;button&gt;</code>, <code>&lt;a&gt;</code>, <code>&lt;input&gt;</code>).</li>
+<li><input disabled="" type="checkbox"/>
+Custom interactive elements have appropriate ARIA roles.</li>
+</ul>
+<h1 id="related-documents">Related Documents</h1>
+<ul>
+<li><a href="https://dhruvasagar.github.io/engineering-knowledge-framework/guides/accessibility/semantic-html/.*aria-patterns*">ARIA Patterns</a></li>
+<li><a href="https://dhruvasagar.github.io/engineering-knowledge-framework/guides/accessibility/semantic-html/.*keyboard-accessibility*">Keyboard Accessibility</a></li>
+<li><a href="../..*glossary*accessibility*README*">Accessibility Glossary</a></li>
+</ul>
+
+</div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Engineering Knowledge Framework — Building AI-native engineering knowledge systems</p>
+    </div>
+  </footer>
+</body>
+</html>

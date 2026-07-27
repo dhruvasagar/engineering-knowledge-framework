@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="An open framework for capturing, organizing and applying engineering knowledge">
+  <title>Engineering Knowledge Framework</title>
+  <link rel="stylesheet" href="https://dhruvasagar.github.io/engineering-knowledge-framework/style.css">
+  
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a href="https:&#x2F;&#x2F;dhruvasagar.github.io&#x2F;engineering-knowledge-framework" class="logo">Engineering Knowledge Framework</a>
+      <nav class="site-nav">
+        <a href="https:&#x2F;&#x2F;dhruvasagar.github.io&#x2F;engineering-knowledge-framework">Home</a>
+        <a href="https://github.com/dhruvasagar/engineering-knowledge-framework">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    
+<h1>Accessibility References</h1>
+
+<p class="description">Quick-reference material for accessibility engineering</p>
+
+
+<div class="content">
+  <h1 id="purpose">Purpose</h1>
+<p>Quick-reference material for accessibility engineering. Use this for
+rapid lookup during development and review.</p>
+<h1 id="wcag-levels">WCAG Levels</h1>
+<p>| Level | Description |
++-------+----------------------------------------------------+</p>
+<table><thead><tr><th>A</th><th>Essential accessibility support.</th></tr></thead><tbody>
+<tr><td>AA</td><td>Recommended — removes common barriers.</td></tr>
+<tr><td>AAA</td><td>Highest — may not be achievable for all content.</td></tr>
+</tbody></table>
+<h1 id="wcag-principles-pour">WCAG Principles (POUR)</h1>
+<p>| Principle | Meaning |
++----------------+------------------------------------------------+</p>
+<table><thead><tr><th>Perceivable</th><th>Users can perceive the content.</th></tr></thead><tbody>
+<tr><td>Operable</td><td>Users can operate the interface.</td></tr>
+<tr><td>Understandable</td><td>Users can understand the content and interface.</td></tr>
+<tr><td>Robust</td><td>Content works with current and future tools.</td></tr>
+</tbody></table>
+<h1 id="colour-contrast-ratios">Colour Contrast Ratios</h1>
+<p>| Text Type | AA | AAA |
++----------------------------+------+-------+</p>
+<table><thead><tr><th>Normal text (&lt; 18px)</th><th>4.5:1</th><th>7:1</th></tr></thead><tbody>
+<tr><td>Large text (&gt;= 18px, bold)</td><td>3:1</td><td>4.5:1</td></tr>
+<tr><td>UI components</td><td>3:1</td><td>3:1</td></tr>
+<tr><td>Graphical objects</td><td>3:1</td><td>3:1</td></tr>
+</tbody></table>
+<h1 id="touch-target-size">Touch Target Size</h1>
+<p>| Target Size | Minimum |
++-------------+---------+
+| All targets | 44x44 CSS pixels |</p>
+<h1 id="aria-landmark-roles">ARIA Landmark Roles</h1>
+<p>| Role | HTML Equivalent | Purpose |
++-------------------+-----------------+---------------------------+</p>
+<table><thead><tr><th>role="banner"</th><th><code>&lt;header&gt;</code></th><th>Site-wide header</th></tr></thead><tbody>
+<tr><td>role="navigation"</td><td><code>&lt;nav&gt;</code></td><td>Navigation sections</td></tr>
+<tr><td>role="main"</td><td><code>&lt;main&gt;</code></td><td>Primary content</td></tr>
+<tr><td>role="complementary"</td><td><code>&lt;aside&gt;</code></td><td>Supporting content</td></tr>
+<tr><td>role="contentinfo"</td><td><code>&lt;footer&gt;</code></td><td>Footer information</td></tr>
+<tr><td>role="form"</td><td><code>&lt;form&gt;</code></td><td>Form sections</td></tr>
+<tr><td>role="search"</td><td><code>&lt;search&gt;</code></td><td>Search functionality</td></tr>
+</tbody></table>
+<h1 id="keyboard-interaction-reference">Keyboard Interaction Reference</h1>
+<p>| Element | Keys |
++----------------+---------------------------------------------+</p>
+<table><thead><tr><th>Button</th><th>Enter / Space</th></tr></thead><tbody>
+<tr><td>Link</td><td>Enter</td></tr>
+<tr><td>Checkbox</td><td>Space to toggle</td></tr>
+<tr><td>Radio group</td><td>Arrow keys to change, Tab to enter*exit</td></tr>
+<tr><td>Select</td><td>Arrow keys, Enter to expand</td></tr>
+<tr><td>Tab panel</td><td>Tab to tablist, Arrow keys to switch tabs</td></tr>
+<tr><td>Dialog</td><td>Tab within, Escape to close</td></tr>
+<tr><td>Slider</td><td>Arrow keys, Home*End</td></tr>
+</tbody></table>
+<h1 id="testing-tools">Testing Tools</h1>
+<p>| Tool | Type |
++-------------------------------------------+-------------+</p>
+<table><thead><tr><th>axe DevTools</th><th>Browser ext</th></tr></thead><tbody>
+<tr><td>WAVE</td><td>Browser ext</td></tr>
+<tr><td>Lighthouse Accessibility</td><td>Built-in</td></tr>
+<tr><td>Colour Contrast Analyser (TPGi)</td><td>Desktop app</td></tr>
+<tr><td>Silktide Colour Contrast Checker</td><td>Web app</td></tr>
+<tr><td>VoiceOver (macOS)</td><td>Screen reader</td></tr>
+<tr><td>NVDA (Windows)</td><td>Screen reader</td></tr>
+</tbody></table>
+<h1 id="common-wcag-failure-patterns">Common WCAG Failure Patterns</h1>
+<p>| Failure | SC |
++--------------------------------------+-----------+</p>
+<table><thead><tr><th>Missing alt text</th><th>1.1.1</th></tr></thead><tbody>
+<tr><td>Low colour contrast</td><td>1.4.3</td></tr>
+<tr><td>No keyboard access</td><td>2.1.1</td></tr>
+<tr><td>Missing form labels</td><td>3.3.2</td></tr>
+<tr><td>No skip link</td><td>2.4.1</td></tr>
+<tr><td>Empty or duplicate link text</td><td>2.4.4</td></tr>
+<tr><td>No heading structure</td><td>2.4.6</td></tr>
+<tr><td>Missing language declaration</td><td>3.1.1</td></tr>
+<tr><td>No focus indicator</td><td>2.4.7</td></tr>
+<tr><td>Colour-only indicators</td><td>1.4.1</td></tr>
+</tbody></table>
+<h1 id="accessibility-statement-requirements">Accessibility Statement Requirements</h1>
+<ul>
+<li>Commitment statement.</li>
+<li>Compliance level (WCAG X.X Level X).</li>
+<li>Accessibility features.</li>
+<li>Known limitations.</li>
+<li>Feedback mechanism.</li>
+<li>Testing methodology.</li>
+</ul>
+<h1 id="recommended-reading">Recommended Reading</h1>
+<ul>
+<li>[[https:<em>/www.w3.org</em>TR<em>WCAG22</em>][WCAG 2.2 Specification]]</li>
+<li>[[https:<em>/www.w3.org</em>WAI<em>ARIA</em>apg*][ARIA Authoring Practices Guide]]</li>
+<li>[[https:/<em>developer.mozilla.org</em>en-US<em>docs</em>Web*Accessibility][MDN Accessibility Guide]]</li>
+<li>[[https:<em>/webaim.org</em>resources*][WebAIM Resources]]</li>
+<li>[[https:/<em>inclusive-components.design</em>][Inclusive Components]]</li>
+</ul>
+<h1 id="related-documents">Related Documents</h1>
+<ul>
+<li><a href="..*..*handbooks*accessibility*README*">Accessibility Engineering Handbook</a></li>
+<li><a href="../..*glossary*accessibility*README*">Accessibility Glossary</a></li>
+<li><a href="../..*guides*accessibility/">Accessibility Guides</a></li>
+</ul>
+
+</div>
+
+
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Engineering Knowledge Framework — Building AI-native engineering knowledge systems</p>
+    </div>
+  </footer>
+</body>
+</html>

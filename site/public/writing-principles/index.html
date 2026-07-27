@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="An open framework for capturing, organizing and applying engineering knowledge">
+  <title>Engineering Knowledge Framework</title>
+  <link rel="stylesheet" href="https://dhruvasagar.github.io/engineering-knowledge-framework/style.css">
+  
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a href="https:&#x2F;&#x2F;dhruvasagar.github.io&#x2F;engineering-knowledge-framework" class="logo">Engineering Knowledge Framework</a>
+      <nav class="site-nav">
+        <a href="https:&#x2F;&#x2F;dhruvasagar.github.io&#x2F;engineering-knowledge-framework">Home</a>
+        <a href="https://github.com/dhruvasagar/engineering-knowledge-framework">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    
+<h1>Writing Principles</h1>
+
+<p class="description">Principles for creating high-quality, timeless engineering knowledge</p>
+
+<div class="content">
+  <h1 id="purpose">Purpose</h1>
+<p>This document defines the principles that guide how engineering
+knowledge should be written within the Engineering Knowledge Framework.</p>
+<p>Unlike the <a href="https://dhruvasagar.github.io/engineering-knowledge-framework/writing-principles/.*STYLE_GUIDE*">Style Guide</a>, which defines formatting and writing
+conventions, this document explains the philosophy behind effective
+engineering documentation.</p>
+<p>The Style Guide answers:</p>
+<p>#+BEGIN_QUOTE
+How should we write?
+#+END_QUOTE</p>
+<p>This document answers:</p>
+<p>#+BEGIN_QUOTE
+How should we think when writing?
+#+END_QUOTE</p>
+<p>These principles should guide every contribution to the framework.</p>
+<h1 id="philosophy">Philosophy</h1>
+<p>The purpose of engineering documentation is not to create documents.</p>
+<p>It is to improve engineering understanding.</p>
+<p>Every document should help engineers make better decisions today while
+remaining valuable years into the future.</p>
+<p>Knowledge compounds.</p>
+<p>Documentation decays.</p>
+<p>Our objective is to continually transform documentation into enduring
+knowledge.</p>
+<h1 id="knowledge-first">Knowledge First</h1>
+<p>Always optimize for knowledge rather than information.</p>
+<p>Information answers:</p>
+<ul>
+<li>What happened?</li>
+<li>What exists?</li>
+</ul>
+<p>Knowledge answers:</p>
+<ul>
+<li>Why?</li>
+<li>When?</li>
+<li>How?</li>
+<li>What are the trade-offs?</li>
+<li>What should I do?</li>
+</ul>
+<p>Documents should prioritize understanding over completeness.</p>
+<h1 id="write-timelessly">Write Timelessly</h1>
+<p>Technology changes.</p>
+<p>Engineering principles evolve much more slowly.</p>
+<p>Whenever possible, document:</p>
+<ul>
+<li>Principles.</li>
+<li>Decision frameworks.</li>
+<li>Trade-offs.</li>
+<li>Mental models.</li>
+<li>Patterns.</li>
+<li>Engineering judgement.</li>
+</ul>
+<p>Avoid writing documents that are tightly coupled to:</p>
+<ul>
+<li>Framework versions.</li>
+<li>Tool versions.</li>
+<li>Vendor products.</li>
+<li>Temporary organizational structures.</li>
+</ul>
+<p>Implementation-specific details belong in references, examples and
+playbooks—not handbooks.</p>
+<p>A useful question to ask is:</p>
+<p>#+BEGIN_QUOTE
+Will this still be useful five years from now?
+#+END_QUOTE</p>
+<h1 id="explain-why">Explain Why</h1>
+<p>The most valuable engineering knowledge explains <strong>why</strong>.</p>
+<p>When introducing a recommendation, explain:</p>
+<ul>
+<li>The problem it solves.</li>
+<li>Why it exists.</li>
+<li>Alternatives.</li>
+<li>Trade-offs.</li>
+<li>Failure modes.</li>
+<li>When it should not be used.</li>
+</ul>
+<p>Reasoning survives technological change.</p>
+<p>Instructions alone rarely do.</p>
+<h1 id="optimize-for-decisions">Optimize for Decisions</h1>
+<p>Engineering is largely the process of making decisions under
+constraints.</p>
+<p>Good documentation should improve decision making.</p>
+<p>Instead of writing:</p>
+<p>#+BEGIN_QUOTE
+Use Service Objects.
+#+END_QUOTE</p>
+<p>Prefer:</p>
+<p>#+BEGIN_QUOTE
+Use Service Objects when business logic exceeds the responsibilities of
+models or controllers, because they improve separation of concerns,
+testability and reuse.
+#+END_QUOTE</p>
+<p>The second example teaches judgement rather than rules.</p>
+<h1 id="single-responsibility">Single Responsibility</h1>
+<p>Every document should answer one primary question.</p>
+<p>Examples:</p>
+<table><thead><tr><th>Question</th><th>Document Type</th></tr></thead><tbody>
+<tr><td>Why should we do this?</td><td>Handbook</td></tr>
+<tr><td>How does this concept work?</td><td>Guide</td></tr>
+<tr><td>How do I perform this task?</td><td>Playbook</td></tr>
+<tr><td>How do I verify it?</td><td>Checklist</td></tr>
+</tbody></table>
+<p>If a document attempts to answer multiple unrelated questions, split it
+into multiple documents.</p>
+<p>Small documents compose better than large documents.</p>
+<h1 id="prefer-composition">Prefer Composition</h1>
+<p>Knowledge should be assembled from reusable building blocks.</p>
+<p>Avoid creating large monolithic documents.</p>
+<p>Instead:</p>
+<p>Handbook</p>
+<p>↓</p>
+<p>Guide</p>
+<p>↓</p>
+<p>Playbook</p>
+<p>↓</p>
+<p>Checklist</p>
+<p>↓</p>
+<p>Template</p>
+<p>Each document should contribute one piece to the larger knowledge graph.</p>
+<h1 id="canonical-sources">Canonical Sources</h1>
+<p>Every engineering concept should have one authoritative source.</p>
+<p>Other documents should reference it.</p>
+<p>Never maintain the same explanation in multiple places.</p>
+<p>Benefits include:</p>
+<ul>
+<li>Reduced maintenance.</li>
+<li>Better consistency.</li>
+<li>Easier review.</li>
+<li>Better AI retrieval.</li>
+<li>Fewer contradictions.</li>
+</ul>
+<p>Duplication is technical debt.</p>
+<p>Documentation duplication is knowledge debt.</p>
+<h1 id="explicit-over-implicit">Explicit Over Implicit</h1>
+<p>Assume the reader has not seen any previous document.</p>
+<p>State important assumptions explicitly.</p>
+<p>Avoid:</p>
+<ul>
+<li>"It"</li>
+<li>"This"</li>
+<li>"That approach"</li>
+</ul>
+<p>Prefer explicit nouns.</p>
+<p>Good engineering writing minimizes ambiguity.</p>
+<h1 id="context-independence">Context Independence</h1>
+<p>Documents should remain understandable when read independently.</p>
+<p>This is particularly important for:</p>
+<ul>
+<li>Search.</li>
+<li>AI retrieval.</li>
+<li>Knowledge graphs.</li>
+<li>Future repository organization.</li>
+</ul>
+<p>Avoid:</p>
+<p>#+BEGIN_QUOTE
+As discussed earlier...
+#+END_QUOTE</p>
+<p>Prefer:</p>
+<p>#+BEGIN_QUOTE
+See the
+<a href="https://dhruvasagar.github.io/engineering-knowledge-framework/writing-principles/.*handbooks*rails*README*">Rails Engineering Handbook</a>
+for the underlying architectural principles.
+#+END_QUOTE</p>
+<h1 id="build-a-knowledge-graph">Build a Knowledge Graph</h1>
+<p>Think beyond individual documents.</p>
+<p>Every document should strengthen the connections between ideas.</p>
+<p>When introducing a concept, ask:</p>
+<ul>
+<li>Where is this defined?</li>
+<li>What depends on it?</li>
+<li>What should readers learn next?</li>
+<li>What complements this knowledge?</li>
+</ul>
+<p>Prefer links over repetition.</p>
+<p>Knowledge should form a graph rather than a hierarchy.</p>
+<h1 id="write-for-humans-and-ai">Write for Humans and AI</h1>
+<p>The framework serves two audiences:</p>
+<ul>
+<li>Engineers.</li>
+<li>AI systems.</li>
+</ul>
+<p>Fortunately, both benefit from the same characteristics:</p>
+<ul>
+<li>Clear language.</li>
+<li>Explicit terminology.</li>
+<li>Consistent structure.</li>
+<li>Logical progression.</li>
+<li>Meaningful headings.</li>
+<li>Small focused documents.</li>
+<li>Strong cross-linking.</li>
+</ul>
+<p>Good engineering writing is naturally AI-friendly.</p>
+<h1 id="teach-mental-models">Teach Mental Models</h1>
+<p>Documentation should teach engineers how to think rather than what to
+memorize.</p>
+<p>Prefer:</p>
+<ul>
+<li>Principles.</li>
+<li>Heuristics.</li>
+<li>Decision trees.</li>
+<li>Trade-offs.</li>
+<li>Failure analysis.</li>
+<li>Patterns.</li>
+</ul>
+<p>Avoid documenting only procedures.</p>
+<p>Procedures change.</p>
+<p>Mental models endure.</p>
+<h1 id="show-good-engineering">Show Good Engineering</h1>
+<p>Whenever possible, demonstrate:</p>
+<ul>
+<li>Good examples.</li>
+<li>Bad examples.</li>
+<li>Common mistakes.</li>
+<li>Better alternatives.</li>
+</ul>
+<p>Engineers often learn faster through comparison than explanation.</p>
+<h1 id="prefer-evolution-over-perfection">Prefer Evolution Over Perfection</h1>
+<p>Knowledge is never finished.</p>
+<p>Every document can be improved.</p>
+<p>Contributors should feel comfortable:</p>
+<ul>
+<li>Refining wording.</li>
+<li>Improving examples.</li>
+<li>Clarifying explanations.</li>
+<li>Improving structure.</li>
+<li>Adding references.</li>
+<li>Simplifying concepts.</li>
+</ul>
+<p>Continuous refinement produces better knowledge than infrequent
+rewrites.</p>
+<h1 id="capture-experience">Capture Experience</h1>
+<p>Projects generate valuable engineering knowledge.</p>
+<p>Examples include:</p>
+<ul>
+<li>Incidents.</li>
+<li>Retrospectives.</li>
+<li>Architectural decisions.</li>
+<li>Production failures.</li>
+<li>Successful patterns.</li>
+<li>Lessons learned.</li>
+</ul>
+<p>These should become reusable engineering knowledge rather than remaining
+project-specific artifacts.</p>
+<p>Experience should evolve into standards.</p>
+<h1 id="optimize-for-reuse">Optimize for Reuse</h1>
+<p>Ask:</p>
+<p>#+BEGIN_QUOTE
+Can another team reuse this?
+#+END_QUOTE</p>
+<p>If the answer is no, consider whether the knowledge belongs in a
+project-specific repository instead.</p>
+<p>The framework exists to capture reusable engineering knowledge.</p>
+<h1 id="respect-the-reader">Respect the Reader</h1>
+<p>Good engineering writing respects the reader's time.</p>
+<p>Prefer:</p>
+<ul>
+<li>Concise explanations.</li>
+<li>Clear organization.</li>
+<li>Meaningful headings.</li>
+<li>Direct language.</li>
+<li>Practical examples.</li>
+</ul>
+<p>Avoid unnecessary complexity.</p>
+<p>The best engineering writing often feels simple.</p>
+<h1 id="continuous-improvement">Continuous Improvement</h1>
+<p>Knowledge should continuously evolve.</p>
+<p>The expected lifecycle is:</p>
+<p>Experience</p>
+<p>↓</p>
+<p>Reflection</p>
+<p>↓</p>
+<p>Knowledge</p>
+<p>↓</p>
+<p>Standards</p>
+<p>↓</p>
+<p>Practice</p>
+<p>↓</p>
+<p>Learning</p>
+<p>↓</p>
+<p>Improvement</p>
+<p>Every contribution should move knowledge one step further along this
+journey.</p>
+<h1 id="questions-every-author-should-ask">Questions Every Author Should Ask</h1>
+<p>Before publishing, ask:</p>
+<ol>
+<li>Does this improve engineering understanding?</li>
+<li>Will this remain valuable over time?</li>
+<li>Have I explained why?</li>
+<li>Is there one clear responsibility?</li>
+<li>Have I duplicated existing knowledge?</li>
+<li>Have I linked related concepts?</li>
+<li>Can this be understood independently?</li>
+<li>Will this help AI retrieve the right information?</li>
+<li>Does this improve engineering judgement?</li>
+<li>Would I want future engineers to learn from this?</li>
+</ol>
+<p>If the answer to several of these questions is "no", continue refining
+the document.</p>
+<h1 id="guiding-statement">Guiding Statement</h1>
+<p>#+BEGIN_QUOTE
+The purpose of engineering documentation is not to record what we know.</p>
+<p>It is to help future engineers know what we have learned.</p>
+<p>The Engineering Knowledge Framework exists to transform experience into
+timeless engineering knowledge that benefits both humans and AI.
+#+END_QUOTE</p>
+<h1 id="related-documents">Related Documents</h1>
+<ul>
+<li><a href="https://dhruvasagar.github.io/engineering-knowledge-framework/writing-principles/.*CLAUDE.md">CLAUDE.md</a></li>
+<li><a href="https://dhruvasagar.github.io/engineering-knowledge-framework/writing-principles/.*STRATEGY*">Strategy</a></li>
+<li><a href="https://dhruvasagar.github.io/engineering-knowledge-framework/writing-principles/.*ARCHITECTURE*">Architecture</a></li>
+<li><a href="https://dhruvasagar.github.io/engineering-knowledge-framework/writing-principles/.*STYLE_GUIDE*">Style Guide</a></li>
+<li><a href="https://dhruvasagar.github.io/engineering-knowledge-framework/writing-principles/.*DOCUMENT_TYPES*">Document Types</a></li>
+<li><a href="https://dhruvasagar.github.io/engineering-knowledge-framework/writing-principles/.*CONTRIBUTING*">Contributing</a></li>
+<li><a href="..*README/">Repository Overview</a></li>
+</ul>
+
+</div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Engineering Knowledge Framework — Building AI-native engineering knowledge systems</p>
+    </div>
+  </footer>
+</body>
+</html>

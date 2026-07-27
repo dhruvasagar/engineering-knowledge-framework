@@ -474,7 +474,7 @@ Develop tooling that improves authoring, validation and discovery.
 
 Initial tooling focused on correctness and consistency:
 
-- [ ] Link validation: Verify all =[[file:...][...]]= cross-references resolve to existing files.
+- [ ] Link validation: Verify all == cross-references resolve to existing files.
 - [ ] Style validation: Check documents against =STYLE_GUIDE.org= rules (heading levels, metadata, list syntax).
 - [ ] Glossary validation: Ensure all glossary entries have required fields and cross-references.
 - [ ] Bullet syntax linting: Detect =* = used as bullet instead of headline.
@@ -494,7 +494,7 @@ Tooling for scaffolding new capabilities and documents:
 
 Tooling for discovery and navigation:
 
-- [ ] Cross-reference extraction: Parse all documents and extract =[[file:...][...]]= links.
+- [ ] Cross-reference extraction: Parse all documents and extract == links.
 - [ ] Knowledge graph generation: Produce a machine-readable graph of document relationships.
 - [ ] AI context packaging: Generate condensed context packs for AI assistants from selected documents.
 - [ ] Search indexing: Build search index across all documents.

@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="An open framework for capturing, organizing and applying engineering knowledge">
+  <title>Engineering Knowledge Framework</title>
+  <link rel="stylesheet" href="https://dhruvasagar.github.io/engineering-knowledge-framework/style.css">
+  
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a href="https:&#x2F;&#x2F;dhruvasagar.github.io&#x2F;engineering-knowledge-framework" class="logo">Engineering Knowledge Framework</a>
+      <nav class="site-nav">
+        <a href="https:&#x2F;&#x2F;dhruvasagar.github.io&#x2F;engineering-knowledge-framework">Home</a>
+        <a href="https://github.com/dhruvasagar/engineering-knowledge-framework">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    
+<h1>Security Engineering Handbook</h1>
+
+<p class="description">Principles, standards and practices for security engineering</p>
+
+
+<div class="content">
+  <h1 id="purpose">Purpose</h1>
+<p>Security engineering is the discipline of building systems that remain
+secure even when under attack.</p>
+<p>Security is not a feature or a phase. It is a property of the entire
+system that must be considered from design through operations.</p>
+<p>This handbook defines the principles, standards and practices for
+building and maintaining secure systems within this organization.</p>
+<p>It builds upon the <a href="../..*handbooks*engineering*README*">Engineering Fundamentals Handbook</a> and
+<a href="../..*handbooks*architecture*README*">Software Architecture Handbook</a>, applying their principles to the
+security domain.</p>
+<h1 id="scope">Scope</h1>
+<p>This handbook covers:</p>
+<ul>
+<li>Security principles and philosophy.</li>
+<li>Threat modeling and risk assessment.</li>
+<li>Secure development lifecycle.</li>
+<li>Security standards for engineering teams.</li>
+<li>Common vulnerabilities and mitigations.</li>
+<li>Security testing and verification.</li>
+<li>Incident response fundamentals.</li>
+<li>AI integration in security engineering.</li>
+</ul>
+<h1 id="principles">Principles</h1>
+<h2 id="defense-in-depth">Defense in Depth</h2>
+<p>No single security control is sufficient. Layer multiple independent
+defenses so that if one fails, another provides protection.</p>
+<p>Layers include:</p>
+<ul>
+<li>Network security (firewalls, segmentation).</li>
+<li>Application security (input validation, authentication).</li>
+<li>Data security (encryption, access control).</li>
+<li>Operational security (monitoring, incident response).</li>
+</ul>
+<h2 id="least-privilege">Least Privilege</h2>
+<p>Every user, process and system should have only the minimum permissions
+necessary to perform its function.</p>
+<p>Apply least privilege at every level:</p>
+<ul>
+<li>Database accounts should have only the permissions needed.</li>
+<li>Service accounts should not have admin access.</li>
+<li>Users should not have access they do not need.</li>
+</ul>
+<h2 id="secure-by-default">Secure by Default</h2>
+<p>Systems should be secure in their default configuration.</p>
+<p>Engineers should explicitly opt into reduced security, not opt into
+increased security. Defaults should be restrictive.</p>
+<h2 id="fail-securely">Fail Securely</h2>
+<p>When a system fails, it should fail in a secure state.</p>
+<ul>
+<li>Access control failures should deny access.</li>
+<li>Authentication failures should deny access.</li>
+<li>Error messages should not leak sensitive information.</li>
+</ul>
+<h2 id="never-trust-user-input">Never Trust User Input</h2>
+<p>All user input is potentially malicious until validated.</p>
+<p>This applies to:</p>
+<ul>
+<li>Form parameters and query strings.</li>
+<li>HTTP headers and cookies.</li>
+<li>File uploads.</li>
+<li>API request bodies.</li>
+<li>Data from external systems.</li>
+</ul>
+<h2 id="security-is-everyone-s-responsibility">Security is Everyone's Responsibility</h2>
+<p>Security is not the sole responsibility of a security team.</p>
+<p>Every engineer is responsible for understanding security principles and
+applying them in their work.</p>
+<h1 id="threat-modeling">Threat Modeling</h1>
+<p>Threat modeling is the practice of identifying potential threats and
+designing mitigations before they are exploited.</p>
+<h2 id="when-to-threat-model">When to Threat Model</h2>
+<ul>
+<li>During the design phase of a new system or feature.</li>
+<li>When integrating with an external system.</li>
+<li>When introducing a new technology or dependency.</li>
+<li>When a significant architectural change is proposed.</li>
+</ul>
+<h2 id="stride-framework">STRIDE Framework</h2>
+<table><thead><tr><th>Threat</th><th>Definition</th><th>Example</th></tr></thead><tbody>
+<tr><td>Spoofing</td><td>Impersonating another user</td><td>Stealing session token.</td></tr>
+<tr><td></td><td>or system.</td><td></td></tr>
+<tr><td>Tampering</td><td>Modifying data or code</td><td>Modifying request parameters.</td></tr>
+<tr><td></td><td>without authorization.</td><td></td></tr>
+<tr><td>Repudiation</td><td>Denying an action was</td><td>User claims they did not</td></tr>
+<tr><td></td><td>performed.</td><td>make a transaction.</td></tr>
+<tr><td>Information</td><td>Exposing information to</td><td>Leaking customer data through</td></tr>
+<tr><td>Disclosure</td><td>unauthorized parties.</td><td>an API endpoint.</td></tr>
+<tr><td>Denial of</td><td>Making a system unavailable</td><td>Flooding an endpoint with</td></tr>
+<tr><td>Service</td><td>to legitimate users.</td><td>requests to exhaust resources.</td></tr>
+<tr><td>Elevation of</td><td>Gaining unauthorized access</td><td>Exploiting a vulnerability to</td></tr>
+<tr><td>Privilege</td><td>to higher permissions.</td><td>gain admin access.</td></tr>
+</tbody></table>
+<h1 id="secure-development-lifecycle">Secure Development Lifecycle</h1>
+<p>Integrate security into every phase of development.</p>
+<h2 id="design-phase">Design Phase</h2>
+<ul>
+<li>Perform threat modeling for significant changes.</li>
+<li>Review security architecture.</li>
+<li>Identify security requirements.</li>
+<li>Document trust boundaries.</li>
+</ul>
+<h2 id="development-phase">Development Phase</h2>
+<ul>
+<li>Follow secure coding standards.</li>
+<li>Validate all inputs.</li>
+<li>Use parameterized queries (no raw SQL concatenation).</li>
+<li>Encrypt sensitive data at rest and in transit.</li>
+<li>Log security-relevant events.</li>
+</ul>
+<h2 id="testing-phase">Testing Phase</h2>
+<ul>
+<li>Run static analysis security tools (SAST).</li>
+<li>Run dependency vulnerability scanners.</li>
+<li>Perform dynamic security testing (DAST) where feasible.</li>
+<li>Conduct manual security review for critical changes.</li>
+</ul>
+<h2 id="deployment-phase">Deployment Phase</h2>
+<ul>
+<li>Verify production configuration is secure.</li>
+<li>Ensure secrets are not exposed in configuration.</li>
+<li>Verify access controls are correctly configured.</li>
+</ul>
+<h2 id="operations-phase">Operations Phase</h2>
+<ul>
+<li>Monitor security events.</li>
+<li>Apply security patches promptly.</li>
+<li>Conduct regular security reviews.</li>
+<li>Perform incident response drills.</li>
+</ul>
+<h1 id="common-vulnerabilities">Common Vulnerabilities</h1>
+<h2 id="sql-injection">SQL Injection</h2>
+<p>Occurs when untrusted input is concatenated into SQL queries.</p>
+<p>Prevention:</p>
+<ul>
+<li>Use parameterized queries (ActiveRecord, prepared statements).</li>
+<li>Never use raw SQL with string interpolation.</li>
+<li>Use ActiveRecord's query interface.</li>
+</ul>
+<h2 id="cross-site-scripting-xss">Cross-Site Scripting (XSS)</h2>
+<p>Occurs when untrusted input is rendered in HTML without escaping.</p>
+<p>Prevention:</p>
+<ul>
+<li>Rails auto-escapes by default. Do not use <code>.html_safe</code> or <code>raw</code>
+unless necessary and reviewed.</li>
+<li>Use Content Security Policy headers.</li>
+</ul>
+<h2 id="cross-site-request-forgery-csrf">Cross-Site Request Forgery (CSRF)</h2>
+<p>Occurs when an attacker tricks a user into performing an action they
+did not intend.</p>
+<p>Prevention:</p>
+<ul>
+<li>Rails includes CSRF protection by default. Do not disable it.</li>
+<li>Use SameSite cookies.</li>
+</ul>
+<h2 id="insecure-direct-object-reference-idor">Insecure Direct Object Reference (IDOR)</h2>
+<p>Occurs when an attacker can access a resource by guessing or
+manipulating an identifier.</p>
+<p>Prevention:</p>
+<ul>
+<li>Always authorize access to resources.</li>
+<li>Use random, unguessable identifiers where appropriate.</li>
+<li>Never rely on identifier obscurity alone.</li>
+</ul>
+<h2 id="security-misconfiguration">Security Misconfiguration</h2>
+<p>Occurs when default configurations are insecure.</p>
+<p>Prevention:</p>
+<ul>
+<li>Disable unnecessary services and features.</li>
+<li>Use secure defaults.</li>
+<li>Regularly audit configuration.</li>
+</ul>
+<h1 id="security-standards">Security Standards</h1>
+<h2 id="password-storage">Password Storage</h2>
+<ul>
+<li>Use bcrypt with cost factor &gt;= 12.</li>
+<li>Never store passwords in plain text.</li>
+<li>Never log passwords or password hashes.</li>
+</ul>
+<h2 id="encryption">Encryption</h2>
+<ul>
+<li>Encrypt data in transit using TLS 1.2+.</li>
+<li>Encrypt sensitive data at rest.</li>
+<li>Use strong, modern encryption algorithms.</li>
+<li>Store encryption keys separately from encrypted data.</li>
+</ul>
+<h2 id="authentication">Authentication</h2>
+<ul>
+<li>Enforce strong password policies (minimum length, complexity).</li>
+<li>Implement account lockout after repeated failures.</li>
+<li>Use multi-factor authentication for privileged access.</li>
+<li>Use secure session management.</li>
+</ul>
+<h2 id="logging">Logging</h2>
+<ul>
+<li>Log authentication successes and failures.</li>
+<li>Log authorization failures.</li>
+<li>Log privileged operations.</li>
+<li>Never log sensitive data (passwords, tokens, PII).</li>
+<li>Use structured logging for security events.</li>
+</ul>
+<h1 id="ai-integration">AI Integration</h1>
+<p>AI assistants can support security engineering through:</p>
+<ul>
+<li>Threat modeling assistance (identifying potential threats).</li>
+<li>Code review for security vulnerabilities.</li>
+<li>Generating security test cases.</li>
+<li>Reviewing security configuration.</li>
+<li>Analysing security logs and incident data.</li>
+</ul>
+<p>AI limitations in security:</p>
+<ul>
+<li>AI may not understand organizational security context.</li>
+<li>AI-generated security recommendations must be reviewed by a security
+engineer.</li>
+<li>AI cannot replace human security review for critical systems.</li>
+</ul>
+<p>When using AI for security work, provide:</p>
+<ul>
+<li>System architecture and context.</li>
+<li>Security requirements and compliance obligations.</li>
+<li>Existing security controls and policies.</li>
+<li>Specific security concerns or threat models.</li>
+</ul>
+<h1 id="capability-map">Capability Map</h1>
+<p>This handbook is the entry point for the Security Engineering
+capability. The following documents form the complete capability:</p>
+<h2 id="handbooks">Handbooks</h2>
+<ul>
+<li><a href="https://dhruvasagar.github.io/engineering-knowledge-framework/handbooks/security/.*README*">Security Engineering Handbook</a> — This document. Principles,
+threat modeling, secure development lifecycle and standards.</li>
+</ul>
+<h2 id="glossaries">Glossaries</h2>
+<ul>
+<li><a href="../..*glossary*security*README*">Security Glossary</a> — Canonical security terminology (CSRF,
+defense in depth, SAST, STRIDE, XSS, etc.).</li>
+</ul>
+<h2 id="guides">Guides</h2>
+<ul>
+<li><a href="../..*guides*security*secure-coding*">Secure Coding Practices</a> — Input validation, authentication,
+authorization, output encoding, error handling, cryptography.</li>
+<li><a href="../..*guides*security*web-vulnerabilities*">Web Application Vulnerabilities</a> — OWASP Top 10 (2021)
+with explanations and mitigations for each category.</li>
+<li><a href="../..*guides*security*dependency-security*">Dependency Security</a> — Vulnerability scanning, dependency
+selection, vulnerability response, license compliance.</li>
+</ul>
+<h2 id="playbooks">Playbooks</h2>
+<ul>
+<li><a href="../..*playbooks*security-review*README*">Security Review Playbook</a> — Security review workflow with
+scoping, threat modeling (STRIDE) and remediation.</li>
+</ul>
+<h2 id="checklists">Checklists</h2>
+<ul>
+<li><a href="../..*checklists*security-review*">Security Review Checklist</a> — General security verification
+for any project.</li>
+<li><a href="..*..*checklists*rails*security-review*">Rails Security Review Checklist</a> — Rails-specific security
+verification.</li>
+</ul>
+<h2 id="learning-paths">Learning Paths</h2>
+<ul>
+<li><a href="../..*learning-paths*security*README*">Security Learning Paths</a> — Beginner, intermediate and
+advanced tracks for security engineering.</li>
+</ul>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="../..*references*security*README*">Security References</a> — Quick lookup: OWASP Top 10, STRIDE,
+tools, response timeline, security headers.</li>
+</ul>
+<h2 id="ai-workflows">AI Workflows</h2>
+<ul>
+<li><a href="../..*prompts*security-ai-workflows*">AI Workflows for Security</a> — Prompt patterns for
+vulnerability identification, threat modeling, configuration
+review and incident analysis.</li>
+</ul>
+<h1 id="related-documents">Related Documents</h1>
+<ul>
+<li><a href="..*..*glossary*security*README*">Security Glossary</a></li>
+<li><a href="../..*playbooks*security-review*README*">Security Review Playbook</a></li>
+<li><a href="../..*handbooks*engineering*README*">Engineering Fundamentals Handbook</a></li>
+<li><a href="../..*handbooks*architecture*README*">Software Architecture Handbook</a></li>
+<li><a href="../..*checklists*rails*security-review*">Rails Security Review Checklist</a></li>
+</ul>
+
+</div>
+
+
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Engineering Knowledge Framework — Building AI-native engineering knowledge systems</p>
+    </div>
+  </footer>
+</body>
+</html>

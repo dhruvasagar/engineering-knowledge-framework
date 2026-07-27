@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="An open framework for capturing, organizing and applying engineering knowledge">
+  <title>Engineering Knowledge Framework</title>
+  <link rel="stylesheet" href="https://dhruvasagar.github.io/engineering-knowledge-framework/style.css">
+  
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a href="https:&#x2F;&#x2F;dhruvasagar.github.io&#x2F;engineering-knowledge-framework" class="logo">Engineering Knowledge Framework</a>
+      <nav class="site-nav">
+        <a href="https:&#x2F;&#x2F;dhruvasagar.github.io&#x2F;engineering-knowledge-framework">Home</a>
+        <a href="https://github.com/dhruvasagar/engineering-knowledge-framework">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    
+<h1>System Modeling</h1>
+
+<p class="description">Approaches and standards for modeling software systems</p>
+
+<div class="content">
+  <h1 id="purpose">Purpose</h1>
+<p>System modeling is the practice of creating abstract representations of
+a software system to communicate its structure, behaviour and
+constraints.</p>
+<p>Models enable engineers to reason about architecture at different
+levels of detail, discuss trade-offs, and document decisions in a
+shared visual language.</p>
+<p>This guide covers the C4 model for structural diagrams and event
+modeling for designing event-driven systems.</p>
+<h1 id="background">Background</h1>
+<p>Software systems are complex. No single diagram can capture every
+aspect of a system.</p>
+<p>Different audiences need different views:</p>
+<table><thead><tr><th>Audience</th><th>Needs</th></tr></thead><tbody>
+<tr><td>Stakeholders</td><td>System context, boundaries, external</td></tr>
+<tr><td></td><td>integrations.</td></tr>
+<tr><td>Engineers</td><td>Component structure, interactions, data flow.</td></tr>
+<tr><td>New team members</td><td>High-level orientation, key concepts.</td></tr>
+<tr><td>Operations</td><td>Deployment topology, infrastructure.</td></tr>
+</tbody></table>
+<p>Using a consistent modeling approach ensures that diagrams across the
+organization use the same conventions and are understandable by
+everyone.</p>
+<h1 id="the-c4-model">The C4 Model</h1>
+<p>The C4 model provides a hierarchical approach to visualizing software
+architecture at four levels.</p>
+<h2 id="level-1-system-context">Level 1: System Context</h2>
+<p>Shows the system being built, its users and the external systems it
+integrates with.</p>
+<p>Purpose: Provide a high-level overview for everyone from stakeholders
+to developers.</p>
+<pre><code>[Customer] ──→ [Order Management System] ←── [Payment Gateway]
+                                    ↓
+                              [Notification Service]
+</code></pre>
+<p>Recommended for: Every system. This is the starting point for any
+architecture discussion.</p>
+<h2 id="level-2-container">Level 2: Container</h2>
+<p>Shows the high-level technology choices and how responsibilities are
+distributed across containers (applications, services, databases).</p>
+<p>A container is a separately runnable or deployable unit.</p>
+<pre><code>[Web App] ──→ [API Service] ──→ [Database]
+                ↓
+           [Background Worker] ──→ [Queue]
+</code></pre>
+<p>Recommended for: Every system. Essential for understanding deployment
+boundaries and technology choices.</p>
+<h2 id="level-3-component">Level 3: Component</h2>
+<p>Shows the major structural components inside a container and their
+interactions.</p>
+<p>Components are the building blocks within a container (modules,
+controllers, services, repositories).</p>
+<pre><code>[OrderController] ──→ [OrderService] ──→ [OrderRepository] ──→ [Database]
+                         ↓
+                   [PaymentService] ──→ [PaymentGateway]
+</code></pre>
+<p>Recommended for: Complex containers. Useful for onboarding and design
+reviews.</p>
+<h2 id="level-4-code">Level 4: Code</h2>
+<p>Shows the implementation details of a specific component.</p>
+<p>Typically represented as a class diagram, entity relationship diagram
+or detailed design document.</p>
+<p>Recommended for: Critical or complex components where implementation
+detail matters.</p>
+<h2 id="diagram-standards">Diagram Standards</h2>
+<p>All C4 diagrams should follow these conventions:</p>
+<ul>
+<li>Use boxes for elements, arrows for relationships.</li>
+<li>Label relationships with a description of the interaction.</li>
+<li>Use consistent colours for element types (person, system, container,
+component).</li>
+<li>Include a legend for any non-standard notation.</li>
+<li>Store diagrams in <a href="../..*assets*diagrams*">assets<em>diagrams</em></a> as source files (PlantUML,
+Mermaid, or draw.io).</li>
+</ul>
+<h1 id="event-modeling">Event Modeling</h1>
+<p>Event modeling is a collaborative technique for designing systems driven
+by events and commands.</p>
+<p>It is particularly useful for:</p>
+<ul>
+<li>Event-driven architectures.</li>
+<li>Microservices with asynchronous communication.</li>
+<li>Systems with complex business workflows.</li>
+<li>Designing bounded contexts and aggregates.</li>
+</ul>
+<h2 id="core-concepts">Core Concepts</h2>
+<table><thead><tr><th>Concept</th><th>Meaning</th></tr></thead><tbody>
+<tr><td>Event</td><td>Something that has happened in the past. Immutable.</td></tr>
+<tr><td></td><td>Examples: OrderPlaced, PaymentReceived, InvoiceSent.</td></tr>
+<tr><td>Command</td><td>An intention to perform an action. May be rejected.</td></tr>
+<tr><td></td><td>Examples: PlaceOrder, ProcessPayment, SendInvoice.</td></tr>
+<tr><td>Aggregate</td><td>A cluster of domain objects treated as a unit.</td></tr>
+<tr><td></td><td>Ensures consistency within its boundary.</td></tr>
+</tbody></table>
+<h2 id="workshop-format">Workshop Format</h2>
+<p>Event modeling is typically done as a collaborative workshop with
+domain experts and engineers.</p>
+<ol>
+<li><em><strong>Big Picture</strong></em>: Identify business events across the domain.
+Place events on a timeline from left to right.</li>
+<li><em><strong>Process Level</strong></em>: Add commands, actors and read models for each
+workflow.</li>
+<li><em><strong>Design Level</strong></em>: Define aggregates, commands, events and
+constraints for each bounded context.</li>
+</ol>
+<h2 id="artefacts">Artefacts</h2>
+<p>The workshop produces:</p>
+<ul>
+<li>An event timeline showing the sequence of business events.</li>
+<li>Bounded context boundaries and their relationships.</li>
+<li>Aggregate definitions with commands and events.</li>
+<li>Read models for each user-facing view.</li>
+<li>Integration contracts between contexts.</li>
+</ul>
+<h1 id="choosing-the-right-model">Choosing the Right Model</h1>
+<table><thead><tr><th>Situation</th><th>Recommended Approach</th></tr></thead><tbody>
+<tr><td>New system, need to communicate</td><td>C4 Level 1-2: Context and Container</td></tr>
+<tr><td>overall architecture</td><td>diagrams</td></tr>
+<tr><td>Complex component, need detail</td><td>C4 Level 3-4: Component and Code</td></tr>
+<tr><td>Designing an event-driven system</td><td>Event modeling workshop</td></tr>
+<tr><td>Exploring a new domain</td><td>Event modeling big picture</td></tr>
+<tr><td>Documenting existing architecture</td><td>C4 Level 1-3: Reverse-engineer diagrams</td></tr>
+<tr><td>Defining service boundaries</td><td>Event modeling or DDD context mapping</td></tr>
+</tbody></table>
+<h1 id="keeping-models-current">Keeping Models Current</h1>
+<p>Outdated diagrams are worse than no diagrams because they actively
+mislead.</p>
+<ul>
+<li>Treat diagrams as living documentation.</li>
+<li>Update diagrams as part of the implementation work.</li>
+<li>Review diagrams during architecture reviews.</li>
+<li>Use automated tools where possible (diagrams from code, ADR
+references).</li>
+</ul>
+<p>A diagram that is 80% accurate and up to date is more valuable than a
+diagram that is 100% accurate but six months out of date.</p>
+<h1 id="ai-integration">AI Integration</h1>
+<p>AI assistants can help with system modeling by:</p>
+<ul>
+<li>Generating C4 diagrams from natural language descriptions.</li>
+<li>Suggesting bounded context boundaries from domain descriptions.</li>
+<li>Identifying missing events or commands in event models.</li>
+<li>Converting between modeling formats (PlantUML, Mermaid, text).</li>
+<li>Reviewing diagrams for consistency with written architecture.</li>
+</ul>
+<p>When asking AI for modeling assistance, provide:</p>
+<ul>
+<li>The purpose and audience for the diagram.</li>
+<li>The system's key elements and their relationships.</li>
+<li>Any existing diagrams or descriptions.</li>
+<li>The preferred diagram format.</li>
+</ul>
+<h1 id="related-documents">Related Documents</h1>
+<ul>
+<li><a href="..*..*handbooks*architecture*README*">Software Architecture Handbook</a></li>
+<li><a href="../..*guides*architecture*architectural-patterns*">Architectural Patterns Guide</a></li>
+<li><a href="../..*playbooks*architecture-review*README*">Architecture Review Playbook</a></li>
+<li><a href="../..*glossary*architecture*README*">Architecture Glossary</a></li>
+<li><a href="../..*assets*diagrams/">Diagrams Directory</a></li>
+</ul>
+
+</div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Engineering Knowledge Framework — Building AI-native engineering knowledge systems</p>
+    </div>
+  </footer>
+</body>
+</html>

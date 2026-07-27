@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="An open framework for capturing, organizing and applying engineering knowledge">
+  <title>Engineering Knowledge Framework</title>
+  <link rel="stylesheet" href="https://dhruvasagar.github.io/engineering-knowledge-framework/style.css">
+  
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a href="https:&#x2F;&#x2F;dhruvasagar.github.io&#x2F;engineering-knowledge-framework" class="logo">Engineering Knowledge Framework</a>
+      <nav class="site-nav">
+        <a href="https:&#x2F;&#x2F;dhruvasagar.github.io&#x2F;engineering-knowledge-framework">Home</a>
+        <a href="https://github.com/dhruvasagar/engineering-knowledge-framework">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    
+<h1>Security Review Playbook</h1>
+
+<p class="description">Repeatable workflow for conducting security reviews</p>
+
+
+<div class="content">
+  <h1 id="objective">Objective</h1>
+<p>Ensure that systems, features and changes meet security standards
+before being deployed to production.</p>
+<h1 id="inputs">Inputs</h1>
+<ul>
+<li>System or feature design documentation.</li>
+<li>Architecture diagrams and data flow.</li>
+<li>Threat model (if available).</li>
+<li>Relevant compliance requirements.</li>
+</ul>
+<h1 id="prerequisites">Prerequisites</h1>
+<ul>
+<li><input disabled="" type="checkbox"/>
+System architecture is documented.</li>
+<li><input disabled="" type="checkbox"/>
+Data flows are mapped (what data, where it goes, who accesses it).</li>
+<li><input disabled="" type="checkbox"/>
+Authentication and authorization design is documented.</li>
+<li><input disabled="" type="checkbox"/>
+External integrations are identified.</li>
+<li><input disabled="" type="checkbox"/>
+Security requirements from compliance are defined.</li>
+</ul>
+<h1 id="workflow">Workflow</h1>
+<h2 id="step-1-scoping">Step 1: Scoping</h2>
+<p>Determine the review scope:</p>
+<table><thead><tr><th>Review Type</th><th>Triggers</th><th>Duration</th></tr></thead><tbody>
+<tr><td>Full security</td><td>New system, major architecture change, new</td><td>2-4 hours</td></tr>
+<tr><td>review</td><td>external integration, compliance requirement.</td><td></td></tr>
+<tr><td>Lightweight</td><td>Feature change, dependency update, minor</td><td>30-60</td></tr>
+<tr><td>review</td><td>configuration change.</td><td>minutes</td></tr>
+<tr><td>CI scan</td><td>Every pull request.</td><td>Automated</td></tr>
+</tbody></table>
+<h2 id="step-2-threat-modeling">Step 2: Threat Modeling</h2>
+<p>Apply the STRIDE framework to identify threats:</p>
+<table><thead><tr><th>Threat</th><th>Questions to Ask</th></tr></thead><tbody>
+<tr><td>Spoofing</td><td>How is identity verified? Could an attacker</td></tr>
+<tr><td></td><td>impersonate a user or system?</td></tr>
+<tr><td>Tampering</td><td>Can data be modified in transit or at rest</td></tr>
+<tr><td></td><td>without detection?</td></tr>
+<tr><td>Repudiation</td><td>Are actions logged with sufficient detail to</td></tr>
+<tr><td></td><td>prove who did what?</td></tr>
+<tr><td>Information</td><td>Is sensitive data exposed in responses, logs,</td></tr>
+<tr><td>Disclosure</td><td>or error messages?</td></tr>
+<tr><td>Denial of Service</td><td>What happens under high load? Are there</td></tr>
+<tr><td></td><td>rate limits?</td></tr>
+<tr><td>Elevation of</td><td>Can a normal user gain admin privileges?</td></tr>
+<tr><td>Privilege</td><td></td></tr>
+</tbody></table>
+<h2 id="step-3-code-and-configuration-review">Step 3: Code and Configuration Review</h2>
+<p>Review for common vulnerabilities:</p>
+<ul>
+<li><input disabled="" type="checkbox"/>
+Input validation on all external entry points.</li>
+<li><input disabled="" type="checkbox"/>
+Authentication on all protected endpoints.</li>
+<li><input disabled="" type="checkbox"/>
+Authorization on every resource access.</li>
+<li><input disabled="" type="checkbox"/>
+No hard-coded secrets or credentials.</li>
+<li><input disabled="" type="checkbox"/>
+Encryption for sensitive data in transit and at rest.</li>
+<li><input disabled="" type="checkbox"/>
+Safe session management.</li>
+<li><input disabled="" type="checkbox"/>
+Proper error handling (no information leakage).</li>
+<li><input disabled="" type="checkbox"/>
+Security headers are configured (CSP, HSTS, X-Frame-Options).</li>
+</ul>
+<h2 id="step-4-dependency-review">Step 4: Dependency Review</h2>
+<ul>
+<li><input disabled="" type="checkbox"/>
+Run <code>bundler-audit</code> or equivalent for known vulnerabilities.</li>
+<li><input disabled="" type="checkbox"/>
+Review new dependencies for maintenance status and security track
+record.</li>
+<li><input disabled="" type="checkbox"/>
+Check for unused or abandoned dependencies.</li>
+</ul>
+<h2 id="step-5-document-findings">Step 5: Document Findings</h2>
+<p>Record each finding with:</p>
+<ul>
+<li>Severity (critical, high, medium, low).</li>
+<li>Description of the issue.</li>
+<li>Location or evidence.</li>
+<li>Recommended remediation.</li>
+<li>Owner and timeline.</li>
+</ul>
+<h2 id="step-6-remediation-and-verification">Step 6: Remediation and Verification</h2>
+<ul>
+<li>Critical and high findings must be fixed before deployment.</li>
+<li>Medium findings should be scheduled in the current sprint.</li>
+<li>Low findings should be tracked and addressed opportunistically.</li>
+<li>Verification that fixes address the finding.</li>
+</ul>
+<h1 id="checklist">Checklist</h1>
+<ul>
+<li><input disabled="" type="checkbox"/>
+Threat model completed.</li>
+<li><input disabled="" type="checkbox"/>
+Authentication verified.</li>
+<li><input disabled="" type="checkbox"/>
+Authorization verified on every resource.</li>
+<li><input disabled="" type="checkbox"/>
+Input validation on all entry points.</li>
+<li><input disabled="" type="checkbox"/>
+No sensitive data in logs or error messages.</li>
+<li><input disabled="" type="checkbox"/>
+Security headers configured.</li>
+<li><input disabled="" type="checkbox"/>
+Dependencies scanned for vulnerabilities.</li>
+<li><input disabled="" type="checkbox"/>
+Encryption for sensitive data.</li>
+<li><input disabled="" type="checkbox"/>
+Session management is secure.</li>
+<li><input disabled="" type="checkbox"/>
+Findings documented with severity and remediation.</li>
+</ul>
+<h1 id="ai-workflow">AI Workflow</h1>
+<p>AI can assist with security reviews by:</p>
+<ul>
+<li>Scanning code for common vulnerability patterns.</li>
+<li>Reviewing security configuration against best practices.</li>
+<li>Identifying missing security controls in design documents.</li>
+<li>Generating security test cases.</li>
+</ul>
+<p>AI limitations:</p>
+<ul>
+<li>AI may miss context-specific security concerns.</li>
+<li>AI cannot evaluate compliance with organizational policies.</li>
+<li>All AI findings must be validated by a human security reviewer.</li>
+</ul>
+<h1 id="related-documents">Related Documents</h1>
+<ul>
+<li><a href="../..*handbooks*security*README*">Security Engineering Handbook</a></li>
+<li><a href="../..*glossary*security*README*">Security Glossary</a></li>
+<li><a href="../..*handbooks*engineering*README*">Engineering Fundamentals Handbook</a></li>
+<li><a href="../..*checklists*rails*security-review*">Rails Security Review Checklist</a></li>
+</ul>
+
+</div>
+
+
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Engineering Knowledge Framework — Building AI-native engineering knowledge systems</p>
+    </div>
+  </footer>
+</body>
+</html>

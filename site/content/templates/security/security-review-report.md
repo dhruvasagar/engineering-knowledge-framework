@@ -1,0 +1,91 @@
++++
+title = "Security Review Report Template"
+description = "Findings report for security review outcomes"
++++
+
+
+# SECURITY-REVIEW-NNNN: [Project/System Name]
+
+# Metadata
+
+- ***System:*** [System name]
+- ***Version:*** [Version]
+- ***Review Date:*** [YYYY-MM-DD]
+- ***Reviewer(s):*** [Name(s)]
+- ***Review Type:*** [Architecture review / Code review / Penetration test / Dependency audit]
+- ***Status:*** [Draft / In Review / Final]
+
+# Scope
+
+## In Scope
+
+- Component 1
+- Component 2
+
+## Out of Scope
+
+- Component 1
+- Component 2
+
+# Executive Summary
+
+Brief overview of the review, key findings and overall risk assessment.
+
+# Findings
+
+## Finding 1: [Title]
+
+- ***Severity:*** [Critical / High / Medium / Low / Informational]
+- ***Category:*** [Authentication / Authorization / Input Validation / etc.]
+- ***Location:*** [File, endpoint or component]
+- ***Description:*** Detailed description of the finding.
+- ***Impact:*** What an attacker could achieve.
+- ***Reproduction:*** Steps to reproduce (if applicable).
+- ***Recommendation:*** How to fix the issue.
+- ***References:*** Links to relevant standards, guides or CVEs.
+
+## Finding 2: [Title]
+
+- ***Severity:*** [Critical / High / Medium / Low / Informational]
+- ***Category:*** [Authentication / Authorization / Input Validation / etc.]
+- ***Location:*** [File, endpoint or component]
+- ***Description:*** Detailed description of the finding.
+- ***Impact:*** What an attacker could achieve.
+- ***Recommendation:*** How to fix the issue.
+
+# Risk Summary
+
+| Severity | Count | Action Required |
+| --- | --- | --- |
+| Critical | 0 | Immediate remediation required before deployment. |
+| High | 0 | Remediation required before next release. |
+| Medium | 0 | Remediation should be scheduled. |
+| Low | 0 | Remediation recommended but not blocking. |
+| Informational | 0 | No action required, documented for awareness. |
+
+# Recommendations
+
+## Immediate
+
+- [ ] Recommendation 1
+
+## Short-term
+
+- [ ] Recommendation 1
+
+## Long-term
+
+- [ ] Recommendation 1
+
+# Appendices
+
+## Tools Used
+
+- Tool 1 — version
+- Tool 2 — version
+
+## Related Documents
+
+- [Security Engineering Handbook](../..*handbooks*security*README*)
+- [Security Review Playbook](../..*playbooks*security-review*README*)
+- [Security Review Checklist](../..*checklists*security-review/)

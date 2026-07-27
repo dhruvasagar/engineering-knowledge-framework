@@ -506,4 +506,4 @@ without modifying the framework itself.
 - [[file:./DOCUMENT_TYPES.org][Document Types]]
 - [[file:./STYLE_GUIDE.org][Style Guide]]
 - [[file:./CONTRIBUTING.org][Contributing]]
-- [[file:../glossary/README.org][Glossary]]
+- [[file:./glossary/README.org][Glossary]]
