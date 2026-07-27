@@ -1,0 +1,66 @@
+#+TITLE: Service Object Template
+#+AUTHOR: Engineering
+#+DATE: 2026-07-27
+#+DESCRIPTION: Template for Rails service objects
+#+STARTUP: overview indent
+
+* Purpose
+
+Service objects encapsulate a single business operation.
+
+Use this template when the operation involves multiple models, external
+services or complex orchestration.
+
+* Template
+
+#+BEGIN_EXAMPLE
+# app/services/OPERATION_NAME.rb
+class OPERATION_NAME
+  Result = Struct.new(:success?, :data, :error, keyword_init: true)
+
+  def initialize(params)
+    @params = params
+  end
+
+  def call
+    validate_params
+    perform_operation
+    Result.new(success?: true, data: result_data)
+  rescue StandardError => e
+    Result.new(success?: false, error: e)
+  end
+
+  private
+
+  attr_reader :params
+
+  def validate_params
+    # Raise if required params are missing or invalid
+  end
+
+  def perform_operation
+    # Business logic here
+  end
+
+  def result_data
+    # Return the operation result
+  end
+end
+#+END_EXAMPLE
+
+* Usage
+
+#+BEGIN_EXAMPLE
+result = OPERATION_NAME.new(param1: value1).call
+
+if result.success?
+  # Handle success
+else
+  # Handle failure
+end
+#+END_EXAMPLE
+
+* Related Documents
+
+- [[file:../../guides/rails/service-objects.org][Service Objects Guide]]
+- [[file:../../handbooks/rails/README.org][Rails Engineering Handbook]]

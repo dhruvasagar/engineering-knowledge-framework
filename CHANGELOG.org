@@ -144,3 +144,14 @@
 - Added =prompts/rails-ai-workflows.org=: Prompt patterns for AI-assisted model generation, API development, testing, debugging and refactoring in Rails.
 - Added =guides/rails/audit-guide.org=: Comprehensive guide to Rails code quality tools (RuboCop, Brakeman, bundler-audit, Reek, rails_best_practices, Bullet, Fasterer), audit pipeline setup (pre-commit, CI, scheduled, release gate), tool configuration, audit frequency, result prioritization, Rails-specific audit areas and quality standard establishment.
 - Added =guides/rails/project-standards.org=: Mandatory tooling baseline for every Rails project covering required gems (RuboCop, Brakeman, bundler-audit, Bullet, Rack::MiniProfiler, SimpleCov), CI/CD pipeline template with quality gates, project bootstrap script, pre-commit hook configuration, exception process and compliance verification.
+- Added =guides/rails/active-record.org=: ActiveRecord patterns and query optimization covering scopes, query optimization, N+1 prevention, indexing strategy, counter caches and transactions.
+- Added =guides/rails/api-development.org=: API development with Rails covering API-only setup, routing, controllers, serialization, response format, authentication, versioning and testing.
+- Added =guides/rails/background-jobs.org=: Background job patterns covering framework selection (Sidekiq, GoodJob, SolidQueue, DelayedJob), job structure, idempotency, error handling, monitoring and common patterns.
+- Added =guides/rails/authentication-authorization.org=: Authentication and authorization patterns covering Devise setup, Pundit policies, role-based authorization, view-level authorization and anti-patterns.
+- Added =playbooks/rails/deployment.org=: Rails deployment playbook with migration safety review, zero-downtime deployment patterns, deployment monitoring, rollback procedures and migration patterns (concurrent indexes, backfilling, safe column removal).
+- Added =checklists/rails/security-review.org=: Security verification checklist covering authentication, authorization, data protection, input validation, output protection, dependency security and infrastructure.
+- Added =checklists/rails/deployment.org=: Pre-deployment, deployment and post-deployment verification checklist.
+- Added =templates/rails/service-object.org=: Reusable service object template with result object pattern.
+- Added =templates/rails/form-object.org=: Reusable form object template with ActiveModel integration.
+- Added =templates/rails/query-object.org=: Reusable query object template with composable scope chaining.
+- Added =templates/rails/policy-object.org=: Reusable authorization policy template with Pundit conventions.

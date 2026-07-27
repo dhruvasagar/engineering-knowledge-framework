@@ -174,7 +174,7 @@ Engineering Fundamentals and Architecture capabilities as templates.
 
 ** In Progress
 
-- Rails Engineering: Handbook, glossary, guides (service objects, testing, audit guide, project standards), playbook (upgrade), checklist (PR review), learning paths, references and AI workflows complete.
+- Rails Engineering: Complete capability with all 9 document types. Guides cover service objects, testing, audit, project standards, ActiveRecord, API development, background jobs, auth/authz. Playbooks cover upgrade and deployment. Checklists cover PR review, security review and deployment.
 
 ** Ready for Development
 
