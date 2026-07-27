@@ -1,0 +1,123 @@
+#+TITLE: AI Engineering Learning Paths
+#+AUTHOR: Engineering
+#+DATE: 2026-07-27
+#+DESCRIPTION: Structured learning progression for AI-assisted engineering
+#+STARTUP: overview indent
+
+* Purpose
+
+These learning paths provide a structured progression through AI
+engineering, from using AI as an individual contributor to establishing
+AI practices across an organization.
+
+* Beginner Path
+
+** Objective
+
+Use AI effectively for individual engineering tasks with proper
+verification.
+
+** Prerequisites
+
+- Familiarity with basic engineering workflows.
+
+** Topics
+
+1. **AI Engineering Principles**
+   - AI augments, does not replace.
+   - Human responsibility is final.
+   - Reference: [[file:../../handbooks/ai/README.org][AI Engineering Handbook]]
+
+2. **Prompt Engineering Basics**
+   - Be specific, provide context, iterate.
+   - Reference: [[file:../../guides/ai/prompt-engineering.org][Prompt Engineering Guide]]
+
+3. **Using AI for Code Review**
+   - AI as a first pass; human as the decision-maker.
+   - Practice: Use AI to review a pull request and evaluate its
+     suggestions.
+   - Reference: [[file:../../prompts/engineering-ai-workflows.org][AI Workflows for Engineering]]
+
+4. **Verification Basics**
+   - Never trust, always verify.
+   - Reference: [[file:../../guides/ai/ai-safety.org][AI Safety Guide]]
+
+** Assessment
+
+Demonstrate by: Using AI to assist with a coding task and correctly
+identifying which suggestions to accept and which to reject.
+
+* Intermediate Path
+
+** Objective
+
+Design effective AI workflows for team processes and evaluate AI output
+critically.
+
+** Prerequisites
+
+- Completed Beginner Path or equivalent experience.
+
+** Topics
+
+1. **Context Engineering**
+   - Providing structured context for better AI output.
+   - Reference: [[file:../../guides/ai/context-engineering.org][Context Engineering Guide]]
+
+2. **AI Workflow Patterns**
+   - Draft and refine, constrain and generate, analyse and advise.
+   - Reference: [[file:../../handbooks/ai/README.org][AI Engineering Handbook]]
+
+3. **AI for Architecture**
+   - Using AI for trade-off analysis and design exploration.
+   - Reference: [[file:../../prompts/architecture-ai-workflows.org][AI Workflows for Architecture]]
+
+4. **AI Safety Practices**
+   - High-risk use cases and prohibited uses.
+   - Reference: [[file:../../guides/ai/ai-safety.org][AI Safety Guide]]
+
+** Assessment
+
+Demonstrate by: Designing an AI workflow for a team process.
+Evaluating AI-generated architecture suggestions critically.
+
+* Advanced Path
+
+** Objective
+
+Establish AI practices across teams, mentor others and define
+organizational AI standards.
+
+** Prerequisites
+
+- Completed Intermediate Path or equivalent experience.
+
+** Topics
+
+1. **AI Integration Strategy**
+   - Integrating AI into team workflows.
+   - Measuring AI impact on productivity and quality.
+
+2. **AI Risk Management**
+   - Identifying and mitigating AI risks.
+   - Compliance and governance for AI usage.
+
+3. **Mentoring AI Practices**
+   - Training teams on effective AI use.
+   - Reviewing AI usage patterns for improvement.
+
+4. **AI and Engineering Culture**
+   - Balancing AI acceleration with engineering judgement.
+   - Maintaining quality standards in an AI-assisted workflow.
+
+** Assessment
+
+Demonstrate by: Establishing AI practices for a team. Mentoring others
+in effective AI use. Defining AI usage standards.
+
+* Related Documents
+
+- [[file:../../handbooks/ai/README.org][AI Engineering Handbook]]
+- [[file:../../guides/ai/prompt-engineering.org][Prompt Engineering Guide]]
+- [[file:../../guides/ai/context-engineering.org][Context Engineering Guide]]
+- [[file:../../guides/ai/ai-safety.org][AI Safety Guide]]

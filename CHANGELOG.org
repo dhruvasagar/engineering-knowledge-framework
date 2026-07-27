@@ -144,6 +144,17 @@
 - Added =references/security/README.org=: Quick-reference material for OWASP Top 10, STRIDE, security tools, response timeline and security headers.
 - Added =prompts/security-ai-workflows.org=: Prompt patterns for vulnerability identification, threat modeling, configuration review and incident analysis.
 
+** AI Engineering Capability (Phase 3)
+
+- Added =handbooks/ai/README.org=: AI Engineering Handbook covering principles (AI augments, human responsibility, context is primary lever, verify everything), context engineering, AI workflow patterns (draft and refine, constrain and generate, analyse and advise, explore and discover), verification and validation, team integration practices.
+- Added =glossary/ai/README.org=: AI terminology (context engineering, hallucination, prompt engineering, verification).
+- Added =guides/ai/prompt-engineering.org=: Prompt engineering principles, patterns (persona, format, constraint, verification, decomposition) and anti-patterns.
+- Added =guides/ai/context-engineering.org=: Context engineering with categories (scope, constraints, standards, examples, references), context templates for code generation, code review and design exploration.
+- Added =guides/ai/ai-safety.org=: AI safety practices covering human oversight, high-risk use cases, prohibited uses, verification practices and over-reliance prevention.
+- Added =checklists/ai-usage.org=: Verification checklist for AI-generated code, documentation, architecture and general usage.
+- Added =learning-paths/ai/README.org=: Three-tier learning path (beginner, intermediate, advanced) for AI-assisted engineering.
+- Added =references/ai/README.org=: Quick-reference material for AI workflow patterns, context categories, failure modes and prompt patterns.
+
 ** Rails Engineering Capability (Phase 3)
 
 - Added =handbooks/rails/README.org=: Rails Engineering Handbook covering Rails philosophy, MVC principles, code organization, standards (models, migrations, routes, API), testing strategy, patterns (service objects, form objects, query objects, policy objects), anti-patterns and AI integration.

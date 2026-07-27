@@ -258,6 +258,46 @@ The foundational documents that define the framework itself.
 |---------------------------+--------------------------------------------------------|
 | [[file:./prompts/security-ai-workflows.org][AI Workflows for Security]] | Prompt patterns for vulnerability ID, threat modeling. |
 
+** AI Engineering
+
+*** Handbooks
+
+| Document | Description |
+|----------+-------------|
+| [[file:./handbooks/ai/README.org][AI Engineering Handbook]] | Principles, context engineering, AI workflow patterns, verification. |
+
+*** Glossaries
+
+| Document | Description |
+|----------+-------------|
+| [[file:./glossary/ai/README.org][AI Engineering Glossary]] | Terminology (context engineering, hallucination, prompt engineering, verification). |
+
+*** Guides
+
+| Document | Description |
+|----------+-------------|
+| [[file:./guides/ai/prompt-engineering.org][Prompt Engineering]] | Principles, patterns (persona, format, constraint, verification) and anti-patterns. |
+| [[file:./guides/ai/context-engineering.org][Context Engineering]] | Context categories, templates for code, review and design. |
+| [[file:./guides/ai/ai-safety.org][AI Safety and Verification]] | Human oversight, high-risk use cases, prohibited uses, verification practices. |
+
+*** Checklists
+
+| Document | Description |
+|----------+-------------|
+| [[file:./checklists/ai-usage.org][AI Usage Checklist]] | Verification checklist for AI-generated code, docs and architecture. |
+
+*** Learning Paths
+
+| Document | Description |
+|----------+-------------|
+| [[file:./learning-paths/ai/README.org][AI Engineering Learning Paths]] | Beginner/intermediate/advanced tracks. |
+
+*** References
+
+| Document | Description |
+|----------+-------------|
+| [[file:./references/ai/README.org][AI Engineering References]] | Quick lookup: workflow patterns, context categories, failure modes. |
+
 * Cross-Cutting Topics
 
 The following indexes gather documents across capabilities by topic.
@@ -327,6 +367,35 @@ The following indexes gather documents across capabilities by topic.
 | Rails       | [[file:./playbooks/rails/deployment.org][Rails Deployment Playbook]]  | Playbook  | Safe deployment with migrations.   |
 | Rails       | [[file:./checklists/rails/deployment.org][Rails Deployment Checklist]] | Checklist | Pre/post-deploy verification.      |
 | Engineering | [[file:./checklists/tech-debt-assessment.org][Tech Debt Assessment]]       | Checklist | Debt identification and tracking.  |
+
+** AI and Engineering
+
+| Capability      | Document                    | Type      | Description                             |
++-----------------+-----------------------------+-----------+-----------------------------------------+
+| AI Engineering  | [[file:./handbooks/ai/README.org][AI Engineering Handbook]]       | Handbook  | AI principles, context engineering,     |
+|                 |                             |           | workflow patterns.                      |
++-----------------+-----------------------------+-----------+-----------------------------------------+
+| AI Engineering  | [[file:./guides/ai/prompt-engineering.org][Prompt Engineering]]            | Guide     | Patterns and anti-patterns for prompt   |
+|                 |                             |           | design.                                 |
++-----------------+-----------------------------+-----------+-----------------------------------------+
+| AI Engineering  | [[file:./guides/ai/context-engineering.org][Context Engineering]]           | Guide     | Providing effective context to AI.      |
++-----------------+-----------------------------+-----------+-----------------------------------------+
+| AI Engineering  | [[file:./guides/ai/ai-safety.org][AI Safety and Verification]]    | Guide     | Safe and responsible AI use practices.  |
++-----------------+-----------------------------+-----------+-----------------------------------------+
+| AI Engineering  | [[file:./checklists/ai-usage.org][AI Usage Checklist]]            | Checklist | Verification for AI-generated output.  |
++-----------------+-----------------------------+-----------+-----------------------------------------+
+| Engineering     | [[file:./prompts/engineering-ai-workflows.org][AI Workflows for Engineering]]  | AI Work   | Prompt patterns for code review, design |
+|                 |                             |           | exploration, refactoring.               |
++-----------------+-----------------------------+-----------+-----------------------------------------+
+| Architecture    | [[file:./prompts/architecture-ai-workflows.org][AI Workflows for Architecture]]| AI Work   | Prompt patterns for trade-off analysis, |
+|                 |                             |           | ADR drafting, pattern selection.        |
++-----------------+-----------------------------+-----------+-----------------------------------------+
+| Rails           | [[file:./prompts/rails-ai-workflows.org][AI Workflows for Rails]]        | AI Work   | Prompt patterns for model gen, API dev, |
+|                 |                             |           | testing.                                |
++-----------------+-----------------------------+-----------+-----------------------------------------+
+| Security        | [[file:./prompts/security-ai-workflows.org][AI Workflows for Security]]     | AI Work   | Prompt patterns for vulnerability ID,   |
+|                 |                             |           | threat modeling.                        |
++-----------------+-----------------------------+-----------+-----------------------------------------+
 
 * Related Documents
 
