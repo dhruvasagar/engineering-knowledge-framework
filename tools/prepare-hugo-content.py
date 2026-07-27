@@ -91,10 +91,104 @@ def prepare_content():
     return count
 
 
+def fix_org_links(content):
+    """Fix [[file:path.org][desc]] links to use directory paths.
+
+    Hugo's org parser converts [[file:path.org][desc]] to href="path.html"
+    but pages are at path/ (directory index). This rewrites .org
+    links to directory paths so Hugo produces correct URLs.
+    """
+    import re
+    # Match [[file:path.org][desc]] or [[file:path.org]]
+    # Replace .org with / in the link target
+    content = re.sub(
+        r'(\[\[file:)([^\]]+?)\.org(\]\](?:\[[^\]]+\])?)',
+        r'\1\2/\3',
+        content
+    )
+    return content
+
+
+def fix_org_file(filepath):
+    """Fix links in a single org file."""
+    content = filepath.read_text(encoding='utf-8')
+    fixed = fix_org_links(content)
+    if fixed != content:
+        filepath.write_text(fixed, encoding='utf-8')
+        return True
+    return False
+
+
+def prepare_content():
+    """Copy org files into Hugo content directory and fix links."""
+    if HUGO_CONTENT.exists():
+        shutil.rmtree(HUGO_CONTENT)
+    HUGO_CONTENT.mkdir(parents=True)
+
+    count = 0
+    link_fixes = 0
+
+    # Copy root README.org as homepage
+    readme = REPO_ROOT / 'README.org'
+    if readme.exists():
+        dst = HUGO_CONTENT / '_index.org'
+        shutil.copy2(readme, dst)
+        if fix_org_file(dst):
+            link_fixes += 1
+        count += 1
+
+    # Copy governance files to their own directories
+    for src_name, dst_rel in GOVERNANCE_FILES.items():
+        src = REPO_ROOT / src_name
+        if src.exists():
+            dst = HUGO_CONTENT / dst_rel
+            dst.parent.mkdir(parents=True, exist_ok=True)
+            shutil.copy2(src, dst)
+            count += 1
+
+    # Walk the repo and copy capability directories
+    for root, dirs, files in os.walk(REPO_ROOT):
+        rel_root = Path(root).relative_to(REPO_ROOT)
+
+        # Skip ignored directories
+        parts = set(rel_root.parts)
+        if SKIP_DIRS & parts:
+            continue
+
+        # Skip root-level governance files (already handled)
+        if rel_root == Path('.'):
+            continue
+
+        for f in files:
+            if not f.endswith('.org'):
+                continue
+
+            src_path = Path(root) / f
+
+            # Determine destination
+            if f == 'README.org':
+                dst_rel = rel_root / '_index.org'
+            else:
+                dst_rel = rel_root / f
+
+            dst_path = HUGO_CONTENT / dst_rel
+            dst_path.parent.mkdir(parents=True, exist_ok=True)
+            shutil.copy2(src_path, dst_path)
+            count += 1
+
+            # Fix links in the copied file
+            if fix_org_file(dst_path):
+                link_fixes += 1
+
+    return count, link_fixes
+
+
 def main():
     print("📦 Preparing Hugo content...")
-    count = prepare_content()
+    count, fixes = prepare_content()
     print(f"   Copied {count} .org files to {HUGO_CONTENT}")
+    if fixes:
+        print(f"   Fixed links in {fixes} files")
     print("✅ Done!")
 
 

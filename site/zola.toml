@@ -1,0 +1,11 @@
+# Engineering Knowledge Framework — Zola configuration
+base_url = "https://dhruvasagar.github.io/engineering-knowledge-framework/"
+title = "Engineering Knowledge Framework"
+description = "An open-source framework for building AI-native engineering knowledge systems"
+theme = "engineering-knowledge"
+default_language = "en"
+build_search_index = true
+
+[extra]
+site_tagline = "Building AI-native engineering knowledge systems"
+github_url = "https://github.com/dhruvasagar/engineering-knowledge-framework"

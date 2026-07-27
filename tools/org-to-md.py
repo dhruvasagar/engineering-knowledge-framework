@@ -1,301 +1,250 @@
 #!/usr/bin/env python3
 """
-Org to Markdown Converter — Convert .org files to Zola-compatible .md.
+One-time Org to Markdown Converter — Converts all .org files to .md in-place.
 
-Handles the org-mode features used across the framework:
-- #+TITLE:, #+DESCRIPTION: → front matter
-- * headings → # headings
-- [[file:path][desc]] links → [desc](path) links
-- [[file:path]] links → relative path links
-- - bullet lists
-- Tables (org → markdown)
-- Code blocks (BEGIN_SRC/END_SRC, BEGIN_EXAMPLE/END_EXAMPLE)
-- #+BEGIN_VERSE, #+END_VERSE
-- Bold, italic, code, verbatim markup
+- Converts [[file:path.org][desc]] → [desc](path.md) for inter-file links
+- Converts all org markup to markdown
+- Removes .org files after successful conversion
 
 Usage:
-    python3 tools/org-to-md.py                    # Convert all files
-    python3 tools/org-to-md.py --watch            # Watch for changes
-    python3 tools/org-to-md.py path/to/file.org   # Convert single file
+    python3 tools/org-to-md.py
 """
 
 import os
 import re
-import sys
+import shutil
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
-SITE_DIR = REPO_ROOT / 'site'
-CONTENT_DIR = SITE_DIR / 'content'
 
-# Files to skip (no need to convert for site)
-SKIP_FILES = {
-    'CHANGELOG.org',
-    'TOC.org',
-    'CLAUDE.md',
-}
+# Patterns
+BOLD = re.compile(r'\*(\S[^*]+\S)\*')
+ITALIC = re.compile(r'/(\S[^/]+\S)/')
+CODE = re.compile(r'=(\S[^=]+\S)=')
+VERBATIM = re.compile(r'~(\S[^~]+\S)~')
+LINK_ORG = re.compile(r'\[\[file:([^\]]+)\]\[([^\]]*)\]\]')
+LINK_ORG_SIMPLE = re.compile(r'\[\[file:([^\]]+)\]\]')
+HEADING = re.compile(r'^(\*+)\s+(.*)')
+TABLE = re.compile(r'^\|(.+)\|$')
+TABLE_SEP = re.compile(r'^\|[-+|]+\|$')
+TITLE = re.compile(r'^#\+TITLE:\s*(.*)', re.MULTILINE)
+DESC = re.compile(r'^#\+DESCRIPTION:\s*(.*)', re.MULTILINE)
+ORG_META = re.compile(r'^#\+[A-Z_]+:.*\n?', re.MULTILINE)
+ORG_STARTUP = re.compile(r'^#\+STARTUP:.*\n?', re.MULTILINE)
 
-# Org-mode markup patterns
-BOLD_PATTERN = re.compile(r'\*(\S[^*]+\S)\*')
-ITALIC_PATTERN = re.compile(r'/(\S[^/]+\S)/')
-CODE_PATTERN = re.compile(r'=(\S[^=]+\S)=')
-VERBATIM_PATTERN = re.compile(r'~(\S[^~]+\S)~')
-LINK_PATTERN = re.compile(r'\[\[file:([^\]]+)\]\[([^\]]*)\]\]')
-LINK_SIMPLE_PATTERN = re.compile(r'\[\[file:([^\]]+)\]\]')
-HEADING_PATTERN = re.compile(r'^(\*+)\s+(.*)')
-TABLE_PATTERN = re.compile(r'^\|(.+)\|$')
-TABLE_SEPARATOR = re.compile(r'^\|[-+|]+\|$')
-
-# Org metadata patterns
-TITLE_PATTERN = re.compile(r'^#\+TITLE:\s*(.*)', re.MULTILINE)
-DESC_PATTERN = re.compile(r'^#\+DESCRIPTION:\s*(.*)', re.MULTILINE)
-DATE_PATTERN = re.compile(r'^#\+DATE:\s*(.*)', re.MULTILINE)
-AUTHOR_PATTERN = re.compile(r'^#\+AUTHOR:\s*(.*)', re.MULTILINE)
+SKIP_DIRS = {'.git', 'site', 'tools', 'assets', '__pycache__'}
+BACKUP_DIR = REPO_ROOT / '.org-backup'
 
 
-def convert_inline_markup(text):
-    """Convert org-mode inline markup to markdown."""
-    text = BOLD_PATTERN.sub(r'**\1**', text)
-    text = ITALIC_PATTERN.sub(r'*\1*', text)
-    text = CODE_PATTERN.sub(r'`\1`', text)
-    text = VERBATIM_PATTERN.sub(r'`\1`', text)
+def convert_inline(text):
+    """Convert org inline markup to markdown."""
+    text = BOLD.sub(r'**\1**', text)
+    text = ITALIC.sub(r'*\1*', text)
+    text = CODE.sub(r'`\1`', text)
+    text = VERBATIM.sub(r'`\1`', text)
     return text
 
 
-def convert_links(text, filepath):
-    """Convert [[file:path][desc]] to markdown links."""
-    def replace_link(match):
-        target = match.group(1)
-        desc = match.group(2) or target
-
-        # Convert .org to .html for internal links
+def convert_links(content):
+    """Convert [[file:path.org][desc]] → [desc](path.md)."""
+    def replace(m):
+        target = m.group(1)
+        desc = m.group(2) or target
+        desc = convert_inline(desc)
+        # Strip .org extension → .md
         if target.endswith('.org'):
+            # Strip .org extension → directory path for Zola
             target = target[:-4] + '/'
-
-        # Make relative path work from the converted file's location
-        # Since we're flattening to content/, resolve relative to the source
+        elif target.endswith('/'):
+            pass  # Already a directory path
         return f'[{desc}]({target})'
 
-    text = LINK_PATTERN.sub(replace_link, text)
-    text = LINK_SIMPLE_PATTERN.sub(r'[\1](\1)', text)
-    return text
+    # Protect links from inline markup, convert them, restore
+    placeholders = {}
+    def save(m):
+        idx = len(placeholders)
+        key = f'⛓{idx}⛓'
+        placeholders[key] = m.group(0)
+        return key
+
+    content = LINK_ORG.sub(save, content)
+    content = LINK_ORG_SIMPLE.sub(save, content)
+    content = convert_inline(content)
+    for key, org_link in placeholders.items():
+        md_link = LINK_ORG.sub(replace, org_link)
+        md_link = LINK_ORG_SIMPLE.sub(replace, md_link)
+        content = content.replace(key, md_link)
+    return content
 
 
-def convert_headings(text):
-    """Convert org headings to markdown headings."""
-    lines = text.split('\n')
+def convert_headings(content):
+    """Convert * headings → # headings."""
+    lines = content.split('\n')
     result = []
     for line in lines:
-        match = HEADING_PATTERN.match(line)
-        if match:
-            level = len(match.group(1))
-            heading_text = convert_inline_markup(match.group(2))
-            heading_text = convert_links(heading_text, None)
-            result.append(f'{"#" * level} {heading_text}')
+        m = HEADING.match(line)
+        if m:
+            level = len(m.group(1))
+            text = convert_inline(m.group(2))
+            result.append(f'{"#" * level} {text}')
         else:
             result.append(line)
     return '\n'.join(result)
 
 
-def convert_tables(text):
+def convert_tables(content):
     """Convert org tables to markdown tables."""
-    lines = text.split('\n')
+    lines = content.split('\n')
     result = []
     in_table = False
-    header_separated = False
-    table_lines = []
+    header_done = False
+    table = []
 
     for line in lines:
-        if TABLE_PATTERN.match(line):
-            if TABLE_SEPARATOR.match(line):
-                continue  # Skip org table separators
-            table_lines.append(line)
+        if TABLE.match(line) and not TABLE_SEP.match(line):
+            table.append(line)
             in_table = True
-            header_separated = False
         else:
             if in_table:
-                # Flush the table
-                for i, tline in enumerate(table_lines):
-                    cells = [c.strip() for c in tline.strip('|').split('|')]
-                    md_line = '| ' + ' | '.join(cells) + ' |'
-                    if i == 1 and not header_separated:
-                        # Add markdown header separator after first row
+                for i, t in enumerate(table):
+                    cells = [c.strip() for c in t.strip('|').split('|')]
+                    result.append('| ' + ' | '.join(cells) + ' |')
+                    if i == 0:
                         result.append('| ' + ' | '.join(['---'] * len(cells)) + ' |')
-                        header_separated = True
-                    result.append(md_line)
-                table_lines = []
+                table = []
                 in_table = False
             result.append(line)
 
-    # Flush remaining table
-    if table_lines:
-        for i, tline in enumerate(table_lines):
-            cells = [c.strip() for c in tline.strip('|').split('|')]
-            md_line = '| ' + ' | '.join(cells) + ' |'
-            if i == 1 and not header_separated:
+    if table:
+        for i, t in enumerate(table):
+            cells = [c.strip() for c in t.strip('|').split('|')]
+            result.append('| ' + ' | '.join(cells) + ' |')
+            if i == 0:
                 result.append('| ' + ' | '.join(['---'] * len(cells)) + ' |')
-            result.append(md_line)
 
     return '\n'.join(result)
 
 
-def convert_code_blocks(text):
-    """Convert org code blocks to markdown code blocks."""
-    lines = text.split('\n')
+def convert_code_blocks(content):
+    """Convert #+BEGIN_SRC/EXAMPLE → ```."""
+    lines = content.split('\n')
     result = []
     in_block = False
-    block_lang = ''
-
     for line in lines:
-        stripped = line.strip()
-
-        if stripped.startswith('#+BEGIN_SRC') or stripped.startswith('#+BEGIN_EXAMPLE'):
+        s = line.strip()
+        if s.startswith('#+BEGIN_SRC') or s.startswith('#+BEGIN_EXAMPLE'):
             in_block = True
-            # Extract language
-            lang_match = re.search(r'#\+BEGIN_SRC\s+(\w+)', stripped)
-            block_lang = lang_match.group(1) if lang_match else ''
-            result.append(f'```{block_lang}')
-            continue
-
-        if stripped.startswith('#+END_SRC') or stripped.startswith('#+END_EXAMPLE'):
+            lang = re.search(r'#\+BEGIN_SRC\s+(\w+)', s)
+            result.append('```' + (lang.group(1) if lang else ''))
+        elif s.startswith('#+END_SRC') or s.startswith('#+END_EXAMPLE'):
             in_block = False
             result.append('```')
-            continue
-
-        if stripped.startswith('#+BEGIN_VERSE'):
+        elif s.startswith('#+BEGIN_VERSE'):
             result.append('> ')
-            continue
-
-        if stripped.startswith('#+END_VERSE'):
-            continue
-
-        if in_block:
-            result.append(line)
+        elif s.startswith('#+END_VERSE'):
+            pass
         else:
             result.append(line)
-
     return '\n'.join(result)
 
 
-def convert_org_to_md(content, filepath):
-    """Convert full org file content to markdown."""
-    # Remove org metadata
+def convert_org_file(filepath):
+    """Convert a single .org file to .md content."""
+    content = filepath.read_text(encoding='utf-8')
+
+    # Extract title/description
     title = ''
     description = ''
-    date = ''
-    author = ''
+    tm = TITLE.search(content)
+    dm = DESC.search(content)
+    if tm:
+        title = tm.group(1).strip()
+    if dm:
+        description = dm.group(1).strip()
 
-    title_match = TITLE_PATTERN.search(content)
-    desc_match = DESC_PATTERN.search(content)
-    date_match = DATE_PATTERN.search(content)
-    author_match = AUTHOR_PATTERN.search(content)
-
-    if title_match:
-        title = title_match.group(1).strip()
-    if desc_match:
-        description = desc_match.group(1).strip()
-    if date_match:
-        date = date_match.group(1).strip()
-    if author_match:
-        author = author_match.group(1).strip()
-
-    # Remove org metadata lines
-    content = re.sub(r'^#\+[A-Z_]+:.*\n?', '', content, flags=re.MULTILINE)
-
-    # Remove org startup directive
-    content = re.sub(r'^#\+STARTUP:.*\n?', '', content, flags=re.MULTILINE)
+    # Strip org metadata
+    content = ORG_META.sub('', content)
+    content = ORG_STARTUP.sub('', content)
 
     # Convert
     content = convert_code_blocks(content)
     content = convert_tables(content)
     content = convert_headings(content)
-    content = convert_links(content, filepath)
-    content = convert_inline_markup(content)
+    content = convert_links(content)
 
-    # Build front matter (only valid Zola section/page fields)
-    front_matter = ['+++']
+    # Build front matter
+    fm = ['+++']
     if title:
-        safe_title = title.replace('"', '\\"')
-        front_matter.append(f'title = "{safe_title}"')
+        fm.append(f'title = "{title.replace(chr(34), chr(92)+chr(34))}"')
     if description:
-        safe_desc = description.replace('"', '\\"')
-        front_matter.append(f'description = "{safe_desc}"')
-    front_matter.append('+++\n')
+        fm.append(f'description = "{description.replace(chr(34), chr(92)+chr(34))}"')
+    fm.append('+++\n')
 
-    return '\n'.join(front_matter) + '\n' + content
-
-
-def get_output_path(filepath):
-    """Get the output path for a converted file.
-
-    README.org files become _index.md (Zola section indexes).
-    All other .org files keep their name as .md.
-    """
-    rel_path = filepath.relative_to(REPO_ROOT)
-
-    if filepath.name == 'README.org':
-        # Section index — becomes _index.md
-        md_path = rel_path.parent / '_index.md'
-    else:
-        md_path = rel_path.with_suffix('.md')
-
-    return CONTENT_DIR / md_path
+    return '\n'.join(fm) + '\n' + content
 
 
-def convert_file(filepath):
-    """Convert a single org file to markdown."""
-    try:
-        content = filepath.read_text(encoding='utf-8')
-        md_content = convert_org_to_md(content, filepath)
-        output_path = get_output_path(filepath)
-        output_path.parent.mkdir(parents=True, exist_ok=True)
-        output_path.write_text(md_content, encoding='utf-8')
-        rel = filepath.relative_to(REPO_ROOT)
-        print(f"  ✓ {rel}")
-        return True
-    except Exception as e:
-        rel = filepath.relative_to(REPO_ROOT)
-        print(f"  ✗ {rel}: {e}")
-        return False
+def backup_org(filepath):
+    """Backup an org file before replacing."""
+    rel = filepath.relative_to(REPO_ROOT)
+    backup_path = BACKUP_DIR / rel
+    backup_path.parent.mkdir(parents=True, exist_ok=True)
+    shutil.copy2(filepath, backup_path)
+    return backup_path
 
 
-def convert_all():
-    """Convert all org files in the repository."""
-    count = 0
+def convert_repo():
+    """Convert all .org files in the repository to .md in-place."""
+    converted = 0
     errors = 0
+    backups = 0
 
     for root, dirs, files in os.walk(REPO_ROOT):
-        if '.git' in root.split(os.sep):
-            continue
-        if 'site' in root.split(os.sep):
-            continue
-        if 'tools' in root.split(os.sep):
+        rel = Path(root).relative_to(REPO_ROOT)
+        if any(p in SKIP_DIRS for p in rel.parts):
             continue
 
         for f in sorted(files):
-            if f in SKIP_FILES:
+            if not f.endswith('.org'):
                 continue
-            if f.endswith('.org'):
-                filepath = Path(root) / f
-                if convert_file(filepath):
-                    count += 1
-                else:
-                    errors += 1
 
-    return count, errors
+            src = Path(root) / f
+
+            # Backup
+            try:
+                backup_org(src)
+                backups += 1
+            except Exception as e:
+                print(f"  ⚠ Backup failed for {src.relative_to(REPO_ROOT)}: {e}")
+
+            # Convert
+            try:
+                md_content = convert_org_file(src)
+                md_path = src.with_suffix('.md')
+                md_path.write_text(md_content, encoding='utf-8')
+                src.unlink()  # Remove .org file
+                converted += 1
+                print(f"  ✓ {src.relative_to(REPO_ROOT)} → {md_path.name}")
+            except Exception as e:
+                errors += 1
+                print(f"  ✗ {src.relative_to(REPO_ROOT)}: {e}")
+
+    return converted, errors, backups
 
 
 def main():
-    print("🔄 Org to Markdown Converter")
-    print(f"   Source: {REPO_ROOT}")
-    print(f"   Target: {CONTENT_DIR}\n")
+    print("🔄 Converting all .org files to .md in-place...\n")
+    print(f"   Backup directory: {BACKUP_DIR}\n")
 
-    count, errors = convert_all()
+    converted, errors, backups = convert_repo()
 
-    print(f"\n   Converted: {count} files")
+    print(f"\n   Converted: {converted} files")
+    print(f"   Backed up: {backups} files")
     if errors:
         print(f"   Errors: {errors}")
-    print("✅ Done!")
+    if BACKUP_DIR.exists():
+        print(f"   Backup: {BACKUP_DIR} (delete after verifying)")
+    print("\n✅ Done! .org files replaced with .md. Backups saved to .org-backup/")
+    print("   Run: rm -rf .org-backup  (after verifying everything works)")
 
 
 if __name__ == '__main__':
