@@ -1,0 +1,5 @@
+name = "engineering-knowledge"
+description = "Minimal theme for the Engineering Knowledge Framework"
+author = "Engineering Knowledge Framework"
+license = "MIT"
+min_version = "0.163.0"

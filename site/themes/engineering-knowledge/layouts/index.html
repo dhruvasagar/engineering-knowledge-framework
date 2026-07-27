@@ -1,0 +1,45 @@
+{{ define "main" }}
+<h1>{{ .Title }}</h1>
+{{ if .Description }}
+<p class="description">{{ .Description }}</p>
+{{ end }}
+<div class="content">
+  {{ .Content }}
+</div>
+
+<h2>Engineering Capabilities</h2>
+<div class="capability-grid">
+  <div class="capability-card">
+    <h3><a href="{{ "/handbooks/engineering/" | relURL }}">Engineering Fundamentals</a></h3>
+  </div>
+  <div class="capability-card">
+    <h3><a href="{{ "/handbooks/architecture/" | relURL }}">Software Architecture</a></h3>
+  </div>
+  <div class="capability-card">
+    <h3><a href="{{ "/handbooks/rails/" | relURL }}">Rails Engineering</a></h3>
+  </div>
+  <div class="capability-card">
+    <h3><a href="{{ "/handbooks/security/" | relURL }}">Security Engineering</a></h3>
+  </div>
+  <div class="capability-card">
+    <h3><a href="{{ "/handbooks/ai/" | relURL }}">AI Engineering</a></h3>
+  </div>
+  <div class="capability-card">
+    <h3><a href="{{ "/handbooks/quality/" | relURL }}">Engineering Quality</a></h3>
+  </div>
+  <div class="capability-card">
+    <h3><a href="{{ "/handbooks/accessibility/" | relURL }}">Accessibility Engineering</a></h3>
+  </div>
+</div>
+
+<h2>Governance</h2>
+<ul>
+  <li><a href="{{ "/strategy/" | relURL }}">Strategy</a></li>
+  <li><a href="{{ "/roadmap/" | relURL }}">Roadmap</a></li>
+  <li><a href="{{ "/architecture/" | relURL }}">Architecture</a></li>
+  <li><a href="{{ "/document-types/" | relURL }}">Document Types</a></li>
+  <li><a href="{{ "/style-guide/" | relURL }}">Style Guide</a></li>
+  <li><a href="{{ "/writing-principles/" | relURL }}">Writing Principles</a></li>
+  <li><a href="{{ "/contributing/" | relURL }}">Contributing</a></li>
+</ul>
+{{ end }}
