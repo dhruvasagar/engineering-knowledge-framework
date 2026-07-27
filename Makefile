@@ -18,7 +18,8 @@ site:
 
 serve:
 	@echo "🌐 Starting Hugo dev server..."
-	cd site && hugo server --port 1111 -D
+	@python3 tools/prepare-hugo-content.py
+	cd site && hugo server --port 1111 --baseURL http://localhost:1111/
 
 clean:
 	@echo "🧹 Cleaning..."

@@ -5,14 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
   <title>{{ if .Title }}{{ .Title }} — {{ end }}{{ .Site.Title }}</title>
-  <link rel="stylesheet" href="{{ "/css/style.css" | relURL }}">
+  <link rel="stylesheet" href="{{ "css/style.css" | absURL }}">
 </head>
 <body>
   <header class="site-header">
     <div class="container">
-      <a href="{{ "/" | relURL }}" class="logo">{{ .Site.Title }}</a>
+      <a href="{{ "" | absURL }}" class="logo">{{ .Site.Title }}</a>
       <nav class="site-nav">
-        <a href="{{ "/" | relURL }}">Home</a>
+        <a href="{{ "" | absURL }}">Home</a>
         <a href="{{ .Site.Params.github_url }}">GitHub</a>
       </nav>
     </div>

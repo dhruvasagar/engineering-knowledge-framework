@@ -27,6 +27,8 @@ GOVERNANCE_FILES = {
     'WRITING_PRINCIPLES.org': 'writing-principles/_index.org',
     'CONTRIBUTING.org': 'contributing/_index.org',
     'CHANGELOG.org': 'changelog/_index.org',
+    'TOC.org': 'table-of-contents/_index.org',
+    'CLAUDE.md': 'claude/_index.md',
 }
 
 SKIP_DIRS = {'.git', 'site', 'tools', 'assets'}
