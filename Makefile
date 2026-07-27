@@ -17,7 +17,8 @@ site:
 	@echo "✅ Site built in site/public/"
 
 serve:
-	@echo "🌐 Starting dev server..."
+	@echo "🌐 Starting dev server at http://localhost:1111 ..."
+	-pkill zola 2>/dev/null; sleep 0.5
 	@python3 tools/prepare-site-content.py
 	cd site && zola serve --port 1111
 
