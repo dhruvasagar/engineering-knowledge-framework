@@ -69,7 +69,7 @@ Share the following at least two business days before the review:
 
 ** Step 4: Conduct the Review
 
-**** Presentation (15-20 minutes)
+*** Presentation (15-20 minutes)
 
 The author presents:
 
@@ -166,20 +166,20 @@ The reviewer should verify:
 
 AI assistants can support architecture reviews by:
 
-**** Preparation
+** Preparation
 
 - Summarizing the proposal and alternatives for reviewers.
 - Generating trade-off matrices from the ADR.
 - Identifying related ADRs and architectural decisions.
 - Drafting review questions based on the proposal.
 
-**** During Review
+*** During Review
 
 - Recording decisions and action items.
 - Comparing the proposal against stored principles and patterns.
 - Identifying potential blind spots or unaddressed quality attributes.
 
-**** Post-Review
+*** Post-Review
 
 - Updating ADRs with review outcomes.
 - Generating decision logs from review conclusions.

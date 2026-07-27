@@ -16,7 +16,7 @@ development, testing, debugging and refactoring.
 
 ** Model and Migration Generation
 
-**** Purpose
+*** Purpose
 
 Use AI to generate models and migrations from descriptions.
 
@@ -48,7 +48,7 @@ Also generate the factory and model spec.
 
 ** API Endpoint Development
 
-**** Purpose
+*** Purpose
 
 Use AI to generate API endpoints with request specs.
 
@@ -73,7 +73,7 @@ Also generate the request specs.
 
 ** Test Generation
 
-**** Purpose
+*** Purpose
 
 Use AI to generate tests for existing code.
 
@@ -110,7 +110,7 @@ Include tests for:
 
 ** Debugging
 
-**** Purpose
+*** Purpose
 
 Use AI to diagnose Rails errors.
 
@@ -134,7 +134,7 @@ What is the most likely cause and how should I fix it?
 
 ** Refactoring
 
-**** Purpose
+*** Purpose
 
 Use AI to suggest Rails-specific refactorings.
 

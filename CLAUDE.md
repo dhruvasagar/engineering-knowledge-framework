@@ -219,6 +219,14 @@ all documents in that capability.
 **When adding or moving documents, update TOC.org and the
 relevant handbook's Capability Map.**
 
+When writing or editing documents:
+
+- Use =-= for bullet lists and =*= [ ]= for checklists.
+  Never use =*= for bullets — in Org-mode, =*= creates a headline,
+  not a list item.
+- Do not skip headline levels (e.g., =*= to =***= without =**=).
+- Follow the table formatting rules in [[file:./STYLE_GUIDE.org][STYLE_GUIDE.org]].
+
 ## Context Engineering
 
 Documents should maximize AI effectiveness by providing:

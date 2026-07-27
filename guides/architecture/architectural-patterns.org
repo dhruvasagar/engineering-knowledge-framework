@@ -45,7 +45,7 @@ that best aligns the architecture with the business goals.
 
 ** Layered Architecture
 
-**** Description
+*** Description
 
 Organize the system into horizontal layers, each with a specific
 responsibility. Each layer depends only on the layer directly beneath
@@ -86,7 +86,7 @@ it.
 
 ** Hexagonal Architecture (Ports and Adapters)
 
-**** Description
+*** Description
 
 Isolate core business logic from external concerns through ports
 (interfaces) and adapters (implementations).
@@ -123,7 +123,7 @@ implement ports defined by the core.
 
 ** Event-Driven Architecture
 
-**** Description
+*** Description
 
 Components communicate through events rather than direct calls.
 
@@ -161,7 +161,7 @@ them. This creates loose coupling between components.
 
 ** Microservices Architecture
 
-**** Description
+*** Description
 
 Compose the system from independently deployable services, each owning
 its own data and domain. Services communicate through well-defined APIs
@@ -198,7 +198,7 @@ its own data and domain. Services communicate through well-defined APIs
 
 ** CQRS (Command Query Responsibility Segregation)
 
-**** Description
+*** Description
 
 Separate read and write operations into different models. Commands
 handle state changes. Queries handle data retrieval.

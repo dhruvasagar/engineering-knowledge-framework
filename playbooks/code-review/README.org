@@ -61,7 +61,7 @@ later.
 
 Examine the implementation for correctness and quality.
 
-**** Correctness
+*** Correctness
 
 - Does the code do what it intends?
 - Are edge cases handled?
@@ -91,7 +91,7 @@ Examine the implementation for correctness and quality.
 
 Write clear, constructive review comments.
 
-**** Good Feedback
+*** Good Feedback
 
 - **Specific**: Reference specific lines or functions.
 - **Actionable**: Suggest what to improve, not just what is wrong.
@@ -174,21 +174,21 @@ The reviewer should verify:
 
 AI assistants can participate in code review by:
 
-**** Automated Analysis
+** Automated Analysis
 
 - Detecting code smells and anti-patterns.
 - Identifying missing error handling.
 - Checking for test coverage gaps.
 - Verifying style guideline compliance.
 
-**** Review Assistance
+*** Review Assistance
 
 - Summarizing large diffs for human reviewers.
 - Suggesting alternative implementations.
 - Identifying duplicated code.
 - Generating review comments for common issues.
 
-**** Limitations
+*** Limitations
 
 - AI cannot evaluate design intent or business context.
 - AI-generated review comments must be reviewed by a human.

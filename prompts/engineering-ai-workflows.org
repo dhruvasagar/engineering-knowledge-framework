@@ -42,7 +42,7 @@ those involving trade-offs, require human judgement.
 
 ** Code Review
 
-**** Purpose
+*** Purpose
 
 Use AI to assist with code review by catching issues the human reviewer
 might miss and generating constructive feedback.
@@ -84,7 +84,7 @@ Reference standards:
 
 ** Design Exploration
 
-**** Purpose
+*** Purpose
 
 Use AI to explore alternative approaches, identify trade-offs and
 discover considerations you might have missed.
@@ -123,7 +123,7 @@ What alternatives am I missing? For each alternative, describe:
 
 ** Refactoring
 
-**** Purpose
+*** Purpose
 
 Use AI to identify refactoring opportunities and suggest improvements
 to code structure.
@@ -159,7 +159,7 @@ Suggest:
 
 ** Documentation Generation
 
-**** Purpose
+*** Purpose
 
 Use AI to draft documentation from code, reducing the friction of
 keeping documentation current.
@@ -192,7 +192,7 @@ Module:
 
 ** Problem Diagnosis
 
-**** Purpose
+*** Purpose
 
 Use AI to help diagnose and troubleshoot issues by analysing error
 messages, logs and code.

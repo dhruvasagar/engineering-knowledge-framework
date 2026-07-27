@@ -40,7 +40,7 @@ attribute priorities, technology constraints and organisational context.
 
 ** Trade-off Analysis
 
-**** Purpose
+*** Purpose
 
 Use AI to analyse trade-offs between architectural approaches,
 identifying impacts on quality attributes that might be overlooked.
@@ -80,7 +80,7 @@ For each approach, analyse:
 
 ** ADR Drafting
 
-**** Purpose
+*** Purpose
 
 Use AI to draft Architecture Decision Records from discussion notes,
 reducing the friction of documenting decisions.
@@ -127,7 +127,7 @@ Link to related ADRs if relevant: [list related ADRs]
 
 ** Pattern Selection
 
-**** Purpose
+*** Purpose
 
 Use AI to evaluate which architectural patterns suit a given problem
 context.
@@ -174,7 +174,7 @@ For each, explain:
 
 ** Architecture Review Preparation
 
-**** Purpose
+*** Purpose
 
 Use AI to prepare for architecture reviews by summarising proposals,
 identifying potential issues and suggesting review questions.
@@ -210,7 +210,7 @@ For each criterion:
 
 ** System Design Exploration
 
-**** Purpose
+*** Purpose
 
 Use AI to explore design alternatives, generate C4 diagrams from
 descriptions, and identify design considerations.
