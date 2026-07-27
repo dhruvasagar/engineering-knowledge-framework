@@ -1,0 +1,378 @@
+#+TITLE: Contributing
+#+AUTHOR: Engineering
+#+DATE: 2026-07-27
+#+DESCRIPTION: Guidelines for contributing to the Engineering Knowledge Framework
+#+STARTUP: overview indent
+
+* Purpose
+
+The Engineering Knowledge Framework is a community-driven project for
+building high-quality, AI-native engineering knowledge systems.
+
+This document describes how to contribute effectively while maintaining
+the consistency, quality and long-term vision of the framework.
+
+Contributions are not limited to documentation. They include improving
+the framework itself, expanding engineering capabilities, developing
+tooling and advancing AI-assisted engineering practices.
+
+* Guiding Philosophy
+
+Contributors should view themselves as stewards of engineering
+knowledge.
+
+Every contribution should strive to:
+
+* Improve engineering understanding.
+* Preserve institutional knowledge.
+* Increase reuse.
+* Improve engineering quality.
+* Reduce future maintenance.
+* Help both engineers and AI systems make better decisions.
+
+The goal is not simply to create more documents, but to build a better
+framework for engineering knowledge.
+
+* Types of Contributions
+
+The framework welcomes contributions across multiple areas.
+
+** Governance
+
+Improve the framework itself.
+
+Examples include:
+
+* Repository architecture
+* Strategy
+* Writing standards
+* Style guide
+* Document taxonomy
+* Governance processes
+
+** Engineering Capabilities
+
+Develop or improve engineering capabilities.
+
+Examples include:
+
+* Rails Engineering
+* Security Engineering
+* Software Architecture
+* Accessibility
+* AI Engineering
+* Testing
+* Platform Engineering
+
+** Knowledge Artifacts
+
+Create or improve reusable knowledge.
+
+Examples include:
+
+* Handbooks
+* Guides
+* Playbooks
+* Checklists
+* Templates
+* References
+* Learning Paths
+* Examples
+* Glossaries
+
+** AI Workflows
+
+Improve AI-assisted engineering.
+
+Examples include:
+
+* Prompt libraries
+* Context engineering
+* Agentic workflows
+* Verification workflows
+* AI review patterns
+* Knowledge extraction
+
+** Tooling
+
+Build tools that improve the framework.
+
+Examples include:
+
+* Repository generators
+* Validation tools
+* Search
+* Knowledge graph generation
+* Documentation linting
+* AI context generation
+
+- Before Contributing
+
+Before creating new content:
+
+1. Read the repository [[file:../README.org][README]].
+2. Read [[file:./CLAUDE.md][CLAUDE.md]].
+3. Understand the [[file:./STRATEGY.org][Strategy]].
+4. Review the [[file:./ARCHITECTURE.org][Architecture]].
+5. Read the [[file:./STYLE_GUIDE.org][Style Guide]].
+6. Understand the [[file:./DOCUMENT_TYPES.org][Document Types]].
+
+Contributors should understand the framework before extending it.
+
+* Contribution Principles
+
+All contributions should follow these principles.
+
+** Prefer improving existing knowledge
+
+Before creating a new document, determine whether the knowledge belongs
+within an existing document.
+
+Avoid unnecessary duplication.
+
+** Write timelessly
+
+Prefer enduring engineering principles over transient implementation
+details.
+
+Instead of documenting a particular tool version, explain the underlying
+engineering concepts whenever possible.
+
+** Explain reasoning
+
+Do not simply describe what should be done.
+
+Explain:
+
+* Why.
+* Trade-offs.
+* Alternatives.
+* Decision criteria.
+
+Reasoning has a longer lifespan than implementation details.
+
+** One responsibility per document
+
+Each document should have a clear purpose.
+
+If a document attempts to answer several different questions, consider
+splitting it into multiple documents.
+
+** Prefer links over duplication
+
+Knowledge should exist in one authoritative location.
+
+Other documents should reference it rather than repeat it.
+
+** Optimize for humans and AI
+
+Documents should be:
+
+* Easy to read.
+* Easy to search.
+* Easy to navigate.
+* Easy for AI to retrieve.
+* Easy to maintain.
+
+- Contribution Workflow
+
+The recommended workflow is:
+
+#+BEGIN_EXAMPLE
+
+Identify a problem
+
+↓
+
+Discuss (if needed)
+
+↓
+
+Design the solution
+
+↓
+
+Create or update documents
+
+↓
+
+Cross-reference related knowledge
+
+↓
+
+Validate formatting
+
+↓
+
+Review
+
+↓
+
+Merge
+
+#+END_EXAMPLE
+
+Larger architectural changes should be discussed before implementation.
+
+* Creating New Knowledge
+
+When adding new engineering knowledge:
+
+1. Determine the correct capability.
+2. Choose the correct document type.
+3. Follow the Style Guide.
+4. Link related documents.
+5. Explain reasoning.
+6. Add practical examples where appropriate.
+7. Consider AI integration opportunities.
+8. Verify consistency with existing standards.
+
+Every new document should strengthen the overall knowledge graph.
+
+* Creating New Capabilities
+
+New capabilities should represent coherent engineering disciplines.
+
+A capability should eventually contain:
+
+* Handbook
+* Guides
+* Playbooks
+* Checklists
+* Templates
+* References
+* Glossary
+* Learning Paths
+* Examples
+
+New capabilities should follow the repository architecture and document
+taxonomy.
+
+* Writing Guidelines
+
+All contributions must follow the
+[[file:./STYLE_GUIDE.org][Style Guide]].
+
+In particular:
+
+* Write in British English.
+* Use consistent terminology.
+* Prefer active voice.
+* Explain concepts clearly.
+* Avoid unnecessary jargon.
+* Use meaningful headings.
+* Cross-reference related knowledge.
+
+- AI-Assisted Contributions
+
+AI is encouraged throughout the authoring process.
+
+Recommended uses include:
+
+* Brainstorming.
+* Research assistance.
+* Draft generation.
+* Editing.
+* Structural improvements.
+* Cross-reference suggestions.
+* Gap analysis.
+* Example generation.
+* Diagram generation.
+* Review preparation.
+
+AI should accelerate engineering work rather than replace engineering
+judgement.
+
+* Human Review
+
+Every contribution should undergo human review.
+
+Reviewers should verify:
+
+* Technical accuracy.
+* Engineering quality.
+* Alignment with framework philosophy.
+* Appropriate document type.
+* Correct cross-references.
+* Writing quality.
+* AI-generated content accuracy.
+
+Human reviewers remain responsible for the final content.
+
+* Quality Checklist
+
+Before submitting a contribution, verify:
+
+* [ ] The correct document type was used.
+* [ ] The document has a single responsibility.
+* [ ] Existing knowledge was reused where appropriate.
+* [ ] Internal links are valid.
+* [ ] Terminology is consistent.
+* [ ] Examples are technically accurate.
+* [ ] AI-generated content has been reviewed.
+* [ ] Formatting follows the Style Guide.
+* [ ] Metadata is complete.
+* [ ] The document contributes lasting value.
+
+- Proposing Framework Changes
+
+Changes to governance documents should be considered carefully.
+
+Examples include:
+
+* Repository architecture.
+* Document taxonomy.
+* Capability model.
+* Writing standards.
+* Framework philosophy.
+
+These changes affect the entire repository and should prioritize
+long-term stability over short-term convenience.
+
+* Community Expectations
+
+The framework values constructive collaboration.
+
+Contributors are expected to:
+
+* Be respectful.
+* Assume good intent.
+* Provide constructive feedback.
+* Welcome differing engineering perspectives.
+* Support proposals with reasoning and practical experience.
+* Be willing to revise ideas based on discussion.
+
+Engineering is collaborative, and so is engineering knowledge.
+
+* Long-Term Perspective
+
+Every contribution should be evaluated using a simple question:
+
+#+BEGIN_QUOTE
+Will this still help engineers make better decisions five years from
+now?
+#+END_QUOTE
+
+If the answer is no, consider whether the knowledge belongs in the
+framework or in a project-specific repository.
+
+The Engineering Knowledge Framework exists to preserve enduring
+engineering knowledge rather than transient project documentation.
+
+* Recognition
+
+All meaningful contributions are valuable.
+
+Whether you improve a sentence, contribute a handbook, create a new
+capability or build tooling, you are helping improve the collective
+engineering knowledge available to the community.
+
+* Related Documents
+
+- [[file:../README.org][Repository Overview]]
+- [[file:./CLAUDE.md][CLAUDE.md]]
+- [[file:./STRATEGY.org][Strategy]]
+- [[file:./ARCHITECTURE.org][Architecture]]
+- [[file:./DOCUMENT_TYPES.org][Document Types]]
+- [[file:./STYLE_GUIDE.org][Style Guide]]
+- [[file:./ROADMAP.org][Roadmap]]

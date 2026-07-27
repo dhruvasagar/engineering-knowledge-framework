@@ -1,0 +1,96 @@
+#+TITLE: ADR-0005: Foundation Capabilities First
+#+AUTHOR: Engineering
+#+DATE: 2026-07-27
+#+STARTUP: overview indent
+
+:PROPERTIES:
+:STATUS:   accepted
+:DATE:     2026-07-27
+:END:
+
+* Context
+
+The framework has many potential capabilities it could develop:
+Engineering Fundamentals, Software Architecture, Rails Engineering,
+Security Engineering, Testing, Accessibility, and more.
+
+The roadmap needed to prioritize which capabilities to build first.
+
+Options considered:
+
+- Build a technology-specific capability first (e.g., Rails) as a
+  concrete reference.
+- Build foundational capabilities first (Engineering Fundamentals,
+  Architecture) before technology-specific ones.
+- Build all capabilities in parallel at a shallow level.
+
+* Decision
+
+Build **Engineering Fundamentals** and **Software Architecture** as the
+first two capabilities before any technology-specific capabilities
+(e.g., Rails, Security, Testing).
+
+This decision is based on the following reasoning:
+
+- Engineering principles (separation of concerns, coupling, cohesion)
+  are referenced by every other capability. Building them first
+  establishes vocabulary and mental models that downstream capabilities
+  depend on.
+- Architecture concepts (patterns, ADRs, trade-offs) are used by every
+  engineering discipline. Creating the Architecture capability first
+  provides decision frameworks that other capabilities will reference.
+- Foundation capabilities are more stable than technology-specific ones.
+  They change slowly and provide a durable core for the framework.
+- Building foundations first validates the capability template with
+  abstract knowledge before applying it to concrete technologies.
+- Downstream capabilities (Rails, Security) can reference and extend
+  the foundations rather than duplicating them.
+
+* Consequences
+
+** Positive
+
+- Establish vocabulary and principles that all other capabilities
+  reference.
+- Validate the capability-building process with stable subject matter
+  before tackling fast-changing technologies.
+- Produce reference-quality documents that set the standard for future
+  capabilities.
+- Reduce duplication across capabilities (principles live in
+  Engineering Fundamentals, not in each capability).
+
+** Negative
+
+- Delays building concrete, technology-specific capabilities that
+  engineers may find immediately useful.
+- Foundation capabilities are abstract and may feel less tangible than
+  Rails guides or Security checklists.
+- The value of foundation capabilities is realized fully only when
+  downstream capabilities reference them, creating a dependency on
+  completing Phase 3.
+
+* Alternatives Considered
+
+** Rails as First Capability
+
+Build a technology-specific capability first as a concrete reference.
+
+Rejected because Rails-specific guidance would reference engineering
+principles and architecture concepts that do not yet exist as canonical
+sources. This would either duplicate those concepts or leave them
+undefined.
+
+** All Capabilities in Parallel
+
+Start shallow work on all capabilities simultaneously.
+
+Rejected because it would spread effort too thinly, produce shallow
+documents, and not validate the capability template properly. Building
+one capability to completion teaches lessons that apply to all others.
+
+* References
+
+- [[file:../ROADMAP.org][Roadmap]]
+- [[file:../handbooks/engineering/README.org][Engineering Fundamentals Handbook]]
+- [[file:../handbooks/architecture/README.org][Software Architecture Handbook]]
+- [[file:../adr/0001-capability-model.org][ADR-0001: Capability Model for Knowledge Organization]]

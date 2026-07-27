@@ -1,0 +1,459 @@
+#+TITLE: Roadmap
+#+AUTHOR: Engineering
+#+DATE: 2026-07-27
+#+DESCRIPTION: Strategic roadmap for the Engineering Knowledge Framework
+#+STARTUP: overview indent
+
+* Purpose
+
+This roadmap describes the planned evolution of the Engineering
+Knowledge Framework.
+
+Unlike the [[file:./STRATEGY.org][Strategy]], which defines the long-term vision, this document
+captures the major initiatives required to realize that vision.
+
+The roadmap should evolve continuously as the project matures.
+
+* Guiding Principles
+
+Roadmap priorities should always support the framework's mission:
+
+* Build reusable engineering knowledge.
+* Capture institutional learning.
+* Enable effective collaboration between engineers and AI.
+* Prefer timeless knowledge over transient implementation details.
+* Improve engineering practice rather than simply increasing documentation.
+
+Priority should always be given to work that strengthens the framework
+itself before expanding its content.
+
+* Phase Progression
+
+Progress through phases is not strictly sequential. Work may overlap
+between phases, especially for cross-cutting initiatives like AI
+integration and tooling.
+
+** Transition Criteria
+
+A phase is considered complete when:
+
+- All primary deliverables are published and reviewable.
+- The phase's success criteria are satisfied.
+- Lessons learned are captured in the framework.
+- The next phase can build on solid foundations.
+
+** Current Phase
+
+The project is currently in **Phase 2** (Foundation Capabilities), with
+cross-cutting work in AI integration (Phase 4) and templates (Phase 6).
+
+Phase 1 (Foundation) was completed with the initial repository
+structure and governance documents. See the [[file:./CHANGELOG.org][CHANGELOG]] for the
+detailed deliverable list.
+
+* Phase 1 — Foundation
+
+Establish the governance and architectural foundations of the framework.
+
+** Objectives
+
+- Define repository philosophy.
+- Establish writing standards.
+- Define document taxonomy.
+- Define repository architecture.
+- Establish glossary structure.
+- Create contribution guidelines.
+- Define capability model.
+
+** Deliverables
+
+- [x] =README.org=: Repository overview, mission and philosophy.
+- [x] =CLAUDE.md=: AI-specific project instructions and guidelines.
+- [x] =STRATEGY.org=: Long-term strategy and guiding vision.
+- [x] =ROADMAP.org=: Strategic roadmap (this document).
+- [x] =STYLE_GUIDE.org=: Writing, formatting and documentation standards.
+- [x] =DOCUMENT_TYPES.org=: Canonical document taxonomy.
+- [x] =CONTRIBUTING.org=: Contribution guidelines and processes.
+- [x] =ARCHITECTURE.org=: Architectural overview of the framework.
+- [x] =glossary/README.org=: Glossary structure and writing guidelines.
+- [x] Capability handbook stubs: engineering, architecture, rails, security, accessibility, quality, ai.
+- [x] Workflow playbook stubs: code-review, architecture-review, security-review, accessibility-review, incident-response, release, project-kickoff.
+
+** Success Criteria
+
+- Governance documents are internally consistent.
+- Repository structure is stable.
+- Contributors can understand how the framework is organized.
+- AI assistants can navigate the repository effectively.
+
+* Phase 2 — Foundation Capabilities
+
+Develop foundational engineering capabilities that establish patterns
+for all future capabilities.
+
+Engineering Fundamentals and Software Architecture are the initial
+foundation capabilities. They are chosen because engineering principles
+apply across all capabilities and architecture concepts are referenced
+by every engineering discipline.
+
+** Objectives
+
+Build comprehensive documentation for Engineering Fundamentals and
+Software Architecture that:
+
+- Demonstrates every supported document type.
+- Follows all writing principles and style guidelines.
+- Shows how capabilities compose across document types.
+- Provides reusable patterns for future capabilities.
+- Serves as a testbed for tooling and templates.
+- Establishes cross-referencing conventions between capabilities.
+
+** Deliverables
+
+*** 2a — Engineering Fundamentals
+
+- [x] =handbooks/engineering/README.org=: Engineering Fundamentals Handbook covering core principles, quality philosophy and decision frameworks.
+- [x] =glossary/engineering/README.org=: Foundational engineering terminology (abstraction, cohesion, coupling, encapsulation, modularity, separation of concerns, technical debt).
+- [x] =guides/engineering/code-organization.org=: Code organization principles, patterns and anti-patterns.
+- [x] =guides/engineering/error-handling.org=: Error handling principles, patterns and logging standards.
+- [x] =guides/engineering/testing-strategies.org=: Testing philosophy, test pyramid and best practices.
+- [x] =guides/engineering/logging.org=: Logging standards and structured logging patterns.
+- [x] =learning-paths/engineering/README.org=: Progressive learning paths (beginner, intermediate, advanced) with topics, projects and assessment criteria.
+- [x] =references/engineering/README.org=: Quick-reference material including design principles, code organization patterns, testing guidelines, log levels, error handling and recommended reading.
+
+*** 2b — Software Architecture
+
+- [x] =handbooks/architecture/README.org=: Software Architecture Handbook covering architectural principles, patterns, decision frameworks and documentation standards.
+- [x] =glossary/architecture/README.org=: Architecture-specific terminology (ADR, C4 model, DDD, hexagonal architecture, quality attributes, trade-offs).
+- [x] =guides/architecture/adr-writing-guide.org=: How to write effective Architecture Decision Records.
+- [x] =guides/architecture/architectural-patterns.org=: Guide to common architectural patterns and when to apply them.
+- [x] =guides/architecture/api-design.org=: API design principles and standards.
+- [x] =guides/architecture/system-modeling.org=: System modeling with C4 and event modeling.
+- [x] =learning-paths/architecture/README.org=: Architecture learning paths (beginner, intermediate, advanced) with topics, projects and assessment criteria.
+- [x] =references/architecture/README.org=: Quick-reference material including C4 model, pattern comparison, HTTP status codes, quality attributes, ADR lifecycle and recommended reading.
+
+*** Practices
+
+- [x] =templates/adr/README.org=: ADR template with context, decision, consequences and alternatives format.
+- [x] =templates/rfc/README.org=: RFC template for major architectural proposals.
+- [x] =checklists/architecture-review.org=: Verification checklist for architecture reviews.
+- [x] =checklists/design-decision.org=: Verification checklist for design decisions.
+- [x] =checklists/tech-debt-assessment.org=: Verification checklist for technical debt assessment.
+
+*** Workflows
+
+- [x] =playbooks/architecture-review/README.org=: Architecture review playbook with criteria, process and documentation standards.
+- [x] =playbooks/code-review/README.org=: Engineering code review playbook covering principle-based and implementation-level review.
+
+*** AI Workflows
+
+- [x] AI Workflows for Engineering (=prompts/engineering-ai-workflows.org=): Prompt patterns for code review, design exploration, refactoring, documentation generation and problem diagnosis.
+- [x] AI Workflows for Architecture (=prompts/architecture-ai-workflows.org=): Prompt patterns for trade-off analysis, ADR drafting, pattern selection, review preparation and system design exploration.
+
+** Success Criteria
+
+- Demonstrates every supported document type from =DOCUMENT_TYPES.org=.
+- Engineering Fundamentals and Architecture documents are internally consistent and cross-reference each other effectively.
+- Every document follows the [[file:./STYLE_GUIDE.org][Style Guide]] and [[file:./WRITING_PRINCIPLES.org][Writing Principles]].
+- Documents form a connected knowledge network with rich cross-references.
+- Serves as a repeatable template for future capabilities.
+- AI assistants can use the capabilities effectively.
+- Provides clear vocabulary and principles that downstream capabilities will reference.
+
+* Phase 3 — Engineering Capabilities
+
+Expand the framework to additional engineering disciplines using the
+Engineering Fundamentals and Architecture capabilities as templates.
+
+** Objectives
+
+- Build complete capabilities for additional engineering disciplines.
+- Validate the capability template established in Phase 2.
+- Establish cross-referencing patterns between capabilities.
+- Grow the repository's knowledge graph.
+
+** Ready for Development
+
+Handbook stubs already exist for these capabilities:
+
+- Rails Engineering (=handbooks/rails/=)
+- Security Engineering (=handbooks/security/=)
+- Accessibility (=handbooks/accessibility/=)
+- Engineering Quality (=handbooks/quality/=)
+- AI Engineering (=handbooks/ai/=)
+
+** Future Capabilities
+
+Additional capabilities to be developed as the community grows:
+
+- Platform Engineering
+- DevOps
+- Testing
+- Observability
+- Performance Engineering
+- Distributed Systems
+- API Design
+- Frontend Engineering
+- Backend Engineering
+- Data Engineering
+- Site Reliability Engineering
+- Engineering Leadership
+
+** Development Approach
+
+Each capability should:
+
+1. Define its scope and boundaries.
+2. Identify related capabilities and cross-references.
+3. Build incrementally: handbook → glossary → guides → playbooks → checklists → templates → learning paths.
+4. Include AI workflows alongside traditional documentation.
+5. Pass style and link validation before release.
+
+Priority should follow organizational need rather than attempting to
+build all capabilities simultaneously.
+
+* Phase 4 — AI Engineering Framework
+
+Develop AI-native engineering practices that integrate AI throughout
+the engineering lifecycle.
+
+** Objectives
+
+- Establish context engineering standards.
+- Define AI collaboration patterns.
+- Create review and verification workflows.
+- Provide practical guidance for AI-assisted engineering.
+
+** Topics
+
+- Context Engineering
+- Prompt Engineering
+- Agentic Workflows
+- Code Review
+- Architecture Review
+- Documentation Generation
+- Test Generation
+- Security Analysis
+- Accessibility Assessment
+- Knowledge Extraction
+- Verification Workflows
+- AI Collaboration Patterns
+- Human Review Strategies
+- AI Evaluation
+
+** Long-term Goal
+
+Provide practical guidance for integrating AI throughout the engineering
+lifecycle, establishing AI-assisted engineering as a core organizational
+capability.
+
+* Phase 5 — Learning Framework
+
+Build structured learning experiences for every capability.
+
+** Objectives
+
+Develop standardized learning paths that support progressive skill
+development.
+
+** Deliverables
+
+Each capability should eventually include:
+
+- Beginner Learning Path
+- Intermediate Learning Path
+- Advanced Learning Path
+- Practical Exercises
+- Suggested Projects
+- Reading Lists
+- Competency Assessments
+
+The framework should support both self-paced learning and organizational
+training.
+
+* Phase 6 — Framework Tooling
+
+Develop tooling that improves authoring, validation and discovery.
+
+** Objectives
+
+- Automate repetitive documentation tasks.
+- Enforce style and structural consistency.
+- Improve knowledge discovery and navigation.
+- Support AI context packaging.
+
+** Potential Tooling
+
+- Repository generators
+- Capability generators
+- Handbook generators
+- Playbook generators
+- Link validation
+- Style validation
+- Glossary validation
+- Knowledge linting
+- Cross-reference validation
+- Metadata validation
+- Search indexing
+- Knowledge graph generation
+- AI context packaging
+
+Tooling should automate repetitive work while preserving editorial
+quality.
+
+* Phase 7 — Platform
+
+Expand the framework into a complete engineering knowledge platform.
+
+** Objectives
+
+- Improve discoverability of engineering knowledge.
+- Provide interactive and visual access to the knowledge graph.
+- Integrate with AI assistants and development workflows.
+
+** Potential Capabilities
+
+- Static website
+- Full-text search
+- Knowledge graph visualization
+- Interactive learning paths
+- AI assistant integration
+- MCP server
+- Documentation analytics
+- Versioned releases
+- Community portal
+
+* Phase 8 — Community
+
+Grow an active open-source community around the framework.
+
+** Objectives
+
+- Encourage community contributions.
+- Establish review processes.
+- Publish contribution guidelines.
+- Create mentoring resources.
+- Develop maintainership practices.
+- Foster engineering discussions.
+- Share lessons learned from real-world adoption.
+
+The framework should evolve through practical engineering experience
+rather than theoretical completeness.
+
+* Phase 9 — Open Standard
+
+Establish the Engineering Knowledge Framework as an open standard for
+engineering knowledge management.
+
+** Objectives
+
+- Define an interoperable specification for engineering knowledge.
+- Enable third-party tooling and ecosystem development.
+- Allow organizations to adopt the framework while maintaining
+  compatibility with the broader ecosystem.
+
+** Future Initiatives
+
+- Engineering Knowledge Specification (EKS)
+- Standardized metadata
+- Capability specifications
+- Document interoperability
+- Repository validation tools
+- Reference implementations
+- Third-party tooling ecosystem
+
+* Cross-cutting Initiatives
+
+The following initiatives span multiple roadmap phases.
+
+** AI Integration
+
+Every capability should eventually include:
+
+- AI-assisted workflows.
+- AI review guidance.
+- Prompt patterns.
+- Context engineering recommendations.
+- Verification strategies.
+
+** Continuous Improvement
+
+Regularly refine:
+
+- Repository architecture.
+- Writing standards.
+- Templates.
+- Learning paths.
+- Contribution workflow.
+
+Lessons learned from adopting the framework should feed back into the
+framework itself.
+
+** Knowledge Preservation
+
+Prioritize capturing:
+
+- Architectural decisions.
+- Project retrospectives.
+- Lessons learned.
+- Engineering standards.
+- Decision frameworks.
+- Organizational practices.
+
+Institutional knowledge should become reusable organizational assets.
+
+* Measuring Progress
+
+Progress should be measured by:
+
+- Quality of engineering guidance.
+- Reusability of knowledge.
+- Completeness of engineering capabilities.
+- Ease of adoption.
+- AI effectiveness.
+- Community participation.
+- Long-term maintainability.
+
+Document count is *not* a success metric.
+
+* Near-term Priorities
+
+Current priorities are:
+
+1. Build Engineering Fundamentals capability (Phase 2a).
+2. Build Software Architecture capability (Phase 2b).
+3. Create reusable document templates for all document types.
+4. Develop the AI Engineering capability (Phase 4).
+5. Build initial validation tooling (Phase 6).
+6. [x] Establish RFC and ADR processes for framework evolution (see [[file:./adr/][adr/]] directory and [[file:./templates/adr/README.org][ADR template]]).
+
+These initiatives establish the foundation for all future work.
+
+See [[file:./CHANGELOG.org][CHANGELOG]] for completed milestones.
+
+* Future Evolution
+
+This roadmap intentionally focuses on enduring direction rather than
+specific release schedules.
+
+As the framework matures, priorities will evolve based on:
+
+- Community feedback.
+- Real-world adoption.
+- Advances in AI-assisted engineering.
+- Lessons learned from building new capabilities.
+- Improvements to engineering practices.
+
+The roadmap should remain flexible while preserving the framework's core
+mission.
+
+* Related Documents
+
+- [[file:./STRATEGY.org][Strategy]]
+- [[file:./CLAUDE.md][CLAUDE.md]]
+- [[file:./DOCUMENT_TYPES.org][Document Types]]
+- [[file:./STYLE_GUIDE.org][Style Guide]]
+- [[file:./CONTRIBUTING.org][Contributing]]
+- [[file:./CHANGELOG.org][Changelog]]
+- [[file:./ARCHITECTURE.org][Architecture]]
+- [[file:../README.org][Repository Overview]]

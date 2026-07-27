@@ -1,0 +1,130 @@
+#+TITLE: Changelog
+#+AUTHOR: Engineering
+#+DATE: 2026-07-27
+#+DESCRIPTION: Version history for the Engineering Knowledge Framework
+#+STARTUP: overview indent
+
+* 0.1.0 (2026-07-27)
+
+** Initial Framework Creation
+
+- Established the Engineering Knowledge Framework repository.
+
+** Governance Documents
+
+- Added =README.org=: Repository overview, mission, vision, and core philosophy.
+- Added =CLAUDE.md=: AI-specific project instructions and guidelines.
+- Added =STRATEGY.org=: Long-term strategy and guiding vision.
+- Added =ROADMAP.org=: Strategic roadmap with milestones and themes.
+- Added =CONTRIBUTING.org=: Contribution guidelines and processes.
+- Added =STYLE_GUIDE.org=: Writing, formatting, and documentation standards.
+- Added =WRITING_PRINCIPLES.org=: Principles for creating high-quality, timeless engineering knowledge.
+- Added =ARCHITECTURE.org=: Architectural overview of the framework.
+- Added =CHANGELOG.org=: Version history (this file).
+
+** Knowledge Architecture
+
+- Added =DOCUMENT_TYPES.org=: Canonical document taxonomy defining all document types (handbook, guide, playbook, checklist, reference, template, glossary, RFC, ADR, learning path).
+- Added =glossary/README.org=: Glossary structure and writing guidelines.
+- Established capability-aligned glossary directories:
+  - =glossary/engineering/=, =glossary/architecture/=, =glossary/rails/=
+  - =glossary/security/=, =glossary/accessibility/=, =glossary/testing/=
+
+** Engineering Capabilities (Stubs)
+
+- Established handbook directories for core capabilities:
+  - =handbooks/engineering/=, =handbooks/architecture/=, =handbooks/rails/=
+  - =handbooks/security/=, =handbooks/accessibility/=, =handbooks/quality/=
+  - =handbooks/ai/=
+- Established playbook directories for key workflows:
+  - =playbooks/code-review/=, =playbooks/architecture-review/=
+  - =playbooks/security-review/=, =playbooks/accessibility-review/=
+  - =playbooks/incident-response/=, =playbooks/release/=
+  - =playbooks/project-kickoff/=
+- Added =assets/diagrams/= and =assets/images/= for visual resources.
+
+** Placeholder Directories
+
+- Created stub directories for future content:
+  - =adr/= (Architecture Decision Records)
+  - =checklists/=, =guides/=, =learning-paths/=, =prompts/=
+  - =references/=, =rfc/=, =templates/=, =docs/=
+
+* 0.2.0 (2026-07-27)
+
+** Foundation Capabilities (Phase 2)
+
+*** Engineering Fundamentals
+
+- Added =handbooks/engineering/README.org=: Engineering Fundamentals Handbook covering core principles (separation of concerns, encapsulation, composition over inheritance, dependency inversion, explicit dependencies, consistency), code organization, quality philosophy, technical debt management, decision frameworks and AI integration.
+- Added =glossary/engineering/README.org=: Canonical engineering glossary with definitions for abstraction, cohesion, composition, coupling, dependency injection, encapsulation, modularity, refactoring, separation of concerns and technical debt.
+
+*** Software Architecture
+
+- Added =handbooks/architecture/README.org=: Software Architecture Handbook covering architectural principles, patterns (layered, hexagonal, event-driven, microservices), decision documentation standards (ADRs, RFCs, decision log), C4 model, event modeling, quality attribute trade-offs, architecture review practices and AI integration.
+- Added =glossary/architecture/README.org=: Architecture glossary with definitions for ADR, bounded context, C4 model, decision log, DDD, event storming, hexagonal architecture, layered architecture, quality attributes, RFC and trade-off.
+
+** Roadmap Restructured
+
+- Renamed "Phase Transition" to "Phase Progression" to clarify it is not a phase.
+- Normalized phase sections with consistent =** Objectives=, =** Deliverables=, =** Success Criteria= structure.
+- Added =** Objectives= and =** Potential Tooling= headings to Phases 4-9 for consistency.
+- Updated Phase 2 deliverables to mark completed handbook and glossary items as [x].
+- Reorganized closing sections (Measuring Progress, Near-term Priorities, Future Evolution) to sit clearly after phases.
+
+** Architecture Decision Records
+
+- Created =templates/adr/README.org=: ADR template with standard sections (context, decision, consequences, alternatives considered, references).
+- Added =adr/0001-capability-model.org=: Decision to organize knowledge around Engineering Capabilities.
+- Added =adr/0002-org-mode-format.org=: Decision to use Org-mode as the primary document format.
+- Added =adr/0003-document-taxonomy.org=: Decision to use nine document types with single responsibility.
+- Added =adr/0004-ai-native-knowledge-design.org=: Decision to treat AI as a first-class knowledge consumer.
+- Added =adr/0005-foundation-capabilities-first.org=: Decision to build Engineering Fundamentals and Architecture before technology-specific capabilities.
+- Added =adr/0006-per-capability-glossaries.org=: Decision to organize glossaries by capability with a shared root glossary.
+
+** Engineering Guides
+
+- Added =guides/engineering/code-organization.org=: Code organization principles, feature-based packaging, patterns and anti-patterns.
+- Added =guides/engineering/error-handling.org=: Error handling principles, recoverable vs unrecoverable errors, patterns, logging standards.
+- Added =guides/engineering/testing-strategies.org=: Testing philosophy, test pyramid, what to test, test doubles and anti-patterns.
+
+** Architecture Guides
+
+- Added =guides/architecture/adr-writing-guide.org=: When and how to write ADRs, lifecycle states, characteristics of good ADRs, common mistakes.
+- Added =guides/architecture/architectural-patterns.org=: Pattern catalogue (layered, hexagonal, event-driven, microservices, CQRS) with trade-offs and composition guidance.
+
+** Playbooks
+
+- Added =playbooks/code-review/README.org=: Complete code review workflow with design review, implementation review, feedback guidelines, severity labels and AI workflow.
+- Added =playbooks/architecture-review/README.org=: Architecture review workflow with scope determination, review team assembly, evaluation criteria, outcome documentation and AI workflow.
+
+** Templates
+
+- Added =templates/rfc/README.org=: RFC template for major architectural proposals with motivation, proposed solution, alternatives, impact assessment, quality attribute matrix and migration plan.
+
+** Checklists
+
+- Added =checklists/architecture-review.org=: Pre-review, during-review and post-review verification checklist.
+- Added =checklists/design-decision.org=: Before, during and after design decision checklist.
+- Added =checklists/tech-debt-assessment.org=: Identification, classification, tracking and remediation planning checklist.
+
+** Additional Guides
+
+- Added =guides/engineering/logging.org=: Logging principles, structured format standards, log levels, context fields and anti-patterns.
+- Added =guides/architecture/api-design.org=: API design principles, RESTful conventions, versioning, documentation standards and anti-patterns.
+- Added =guides/architecture/system-modeling.org=: C4 model (context, container, component, code) and event modeling with workshop format.
+
+** Learning Paths
+
+- Added =learning-paths/engineering/README.org=: Three-tier learning path (beginner, intermediate, advanced) with topics, suggested projects and assessment criteria for engineering fundamentals.
+- Added =learning-paths/architecture/README.org=: Three-tier learning path (beginner, intermediate, advanced) with topics, suggested projects and assessment criteria for software architecture.
+
+** References
+
+- Added =references/engineering/README.org=: Quick-reference material for design principles, code organization patterns, testing, error handling, log levels and recommended reading.
+- Added =references/architecture/README.org=: Quick-reference material for C4 model, architectural pattern comparison, HTTP status codes, quality attributes, ADR lifecycle and recommended reading.
+
+** AI Workflows
+
+- Added =prompts/engineering-ai-workflows.org=: Prompt patterns and workflows for AI-assisted code review, design exploration, refactoring, documentation generation and problem diagnosis.
+- Added =prompts/architecture-ai-workflows.org=: Prompt patterns and workflows for AI-assisted trade-off analysis, ADR drafting, pattern selection, architecture review preparation and system design exploration.
