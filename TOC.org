@@ -371,31 +371,31 @@ The following indexes gather documents across capabilities by topic.
 ** AI and Engineering
 
 | Capability      | Document                    | Type      | Description                             |
-+-----------------+-----------------------------+-----------+-----------------------------------------+
+|-----------------+-----------------------------+-----------+-----------------------------------------|
 | AI Engineering  | [[file:./handbooks/ai/README.org][AI Engineering Handbook]]       | Handbook  | AI principles, context engineering,     |
 |                 |                             |           | workflow patterns.                      |
-+-----------------+-----------------------------+-----------+-----------------------------------------+
+|-----------------+-----------------------------+-----------+-----------------------------------------|
 | AI Engineering  | [[file:./guides/ai/prompt-engineering.org][Prompt Engineering]]            | Guide     | Patterns and anti-patterns for prompt   |
 |                 |                             |           | design.                                 |
-+-----------------+-----------------------------+-----------+-----------------------------------------+
+|-----------------+-----------------------------+-----------+-----------------------------------------|
 | AI Engineering  | [[file:./guides/ai/context-engineering.org][Context Engineering]]           | Guide     | Providing effective context to AI.      |
-+-----------------+-----------------------------+-----------+-----------------------------------------+
+|-----------------+-----------------------------+-----------+-----------------------------------------|
 | AI Engineering  | [[file:./guides/ai/ai-safety.org][AI Safety and Verification]]    | Guide     | Safe and responsible AI use practices.  |
-+-----------------+-----------------------------+-----------+-----------------------------------------+
+|-----------------+-----------------------------+-----------+-----------------------------------------|
 | AI Engineering  | [[file:./checklists/ai-usage.org][AI Usage Checklist]]            | Checklist | Verification for AI-generated output.  |
-+-----------------+-----------------------------+-----------+-----------------------------------------+
+|-----------------+-----------------------------+-----------+-----------------------------------------|
 | Engineering     | [[file:./prompts/engineering-ai-workflows.org][AI Workflows for Engineering]]  | AI Work   | Prompt patterns for code review, design |
 |                 |                             |           | exploration, refactoring.               |
-+-----------------+-----------------------------+-----------+-----------------------------------------+
+|-----------------+-----------------------------+-----------+-----------------------------------------|
 | Architecture    | [[file:./prompts/architecture-ai-workflows.org][AI Workflows for Architecture]]| AI Work   | Prompt patterns for trade-off analysis, |
 |                 |                             |           | ADR drafting, pattern selection.        |
-+-----------------+-----------------------------+-----------+-----------------------------------------+
+|-----------------+-----------------------------+-----------+-----------------------------------------|
 | Rails           | [[file:./prompts/rails-ai-workflows.org][AI Workflows for Rails]]        | AI Work   | Prompt patterns for model gen, API dev, |
 |                 |                             |           | testing.                                |
-+-----------------+-----------------------------+-----------+-----------------------------------------+
+|-----------------+-----------------------------+-----------+-----------------------------------------|
 | Security        | [[file:./prompts/security-ai-workflows.org][AI Workflows for Security]]     | AI Work   | Prompt patterns for vulnerability ID,   |
 |                 |                             |           | threat modeling.                        |
-+-----------------+-----------------------------+-----------+-----------------------------------------+
+|-----------------+-----------------------------+-----------+-----------------------------------------|
 
 * Related Documents
 
