@@ -369,7 +369,7 @@ engineering knowledge available to the community.
 
 * Keeping the Index in Sync
 
-[[file:./TOC.org][TOC.org]] is the central navigation index for the repository.
+[[file:./table-of-contents/][TOC.org]] is the central navigation index for the repository.
 
 When adding a new document:
 
@@ -390,7 +390,7 @@ When moving or renaming a document:
 
 * Related Documents
 
-- [[file:./TOC.org][Table of Contents]]
+- [[file:./table-of-contents/][Table of Contents]]
 - [[file:../README.org][Repository Overview]]
 - [[file:./CLAUDE.md][CLAUDE.md]]
 - [[file:./STRATEGY.org][Strategy]]

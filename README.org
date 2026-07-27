@@ -290,7 +290,7 @@ model of the framework.
 
 * Navigating the Repository
 
-Once you understand the philosophy, use the [[file:./TOC.org][Table of Contents]]
+Once you understand the philosophy, use the [[file:./table-of-contents/][Table of Contents]]
 to explore the repository by capability or by topic.
 
 The TOC provides two complementary views:

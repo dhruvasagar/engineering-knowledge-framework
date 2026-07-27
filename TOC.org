@@ -62,7 +62,7 @@ The foundational documents that define the framework itself.
 | [[file:./WRITING_PRINCIPLES.org][Writing Principles]] | Philosophy behind effective engineering documentation. |
 | [[file:./CONTRIBUTING.org][Contributing]]       | Contribution guidelines and workflows.                 |
 | [[file:./CHANGELOG.org][Changelog]]          | Version history of the framework.                      |
-| [[file:./TOC.org][TOC.org]]            | This document — table of contents and indexes.         |
+| [[file:./table-of-contents/][TOC.org]]            | This document — table of contents and indexes.         |
 
 ** Engineering Fundamentals
 
