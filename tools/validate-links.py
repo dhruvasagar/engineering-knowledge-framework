@@ -27,9 +27,10 @@ IGNORE_PATTERNS = [
 def collect_org_files():
     """Collect all .md files in the repository."""
     org_files = []
+    SKIP_DIRS = {'.git', 'site', 'tools', '.org-backup'}
     for root, dirs, files in os.walk(REPO_ROOT):
-        # Skip .git directory
-        if '.git' in root.split(os.sep):
+        # Skip ignored directories
+        if any(d in root.split(os.sep) for d in SKIP_DIRS):
             continue
         for f in files:
             if f.endswith('.md'):
@@ -50,7 +51,7 @@ def resolve_link(doc_path, link_target):
     # Resolve from doc's directory
     for v in variants:
         resolved = (doc_path.parent / v).resolve()
-        if resolved.exists():
+        if resolved.exists() and resolved.is_file():
             try:
                 resolved.relative_to(REPO_ROOT)
                 return resolved
@@ -59,20 +60,29 @@ def resolve_link(doc_path, link_target):
     # Resolve from repo root
     for v in variants:
         resolved = (REPO_ROOT / v.lstrip('./')).resolve()
-        if resolved.exists():
+        if resolved.exists() and resolved.is_file():
             return resolved
         # Try with .md if no extension
         parts = v.lstrip('./').split('/')
         if parts and '.' not in parts[-1]:
-            resolved = (REPO_ROOT / v.lstrip('./') / '').with_suffix('.md').resolve()
-            if resolved.exists():
-                return resolved
+            # Try as a file with .md
+            trial = (REPO_ROOT / v.lstrip('./') / '').with_suffix('.md').resolve()
+            if trial.exists() and trial.is_file():
+                return trial
+            # Also try the last component as filename
+            trial2 = (REPO_ROOT / '/'.join(parts[:-1]) / (parts[-1] + '.md')).resolve()
+            if trial2.exists() and trial2.is_file():
+                return trial2
     # Final: strip ../ prefix (Zola-style links from root files)
     clean = link_target
     while clean.startswith('../'):
         clean = clean[3:]
     if clean != link_target:
         return resolve_link(REPO_ROOT / 'README.md', clean)
+    # Check if target is a directory (some links reference dirs like rfc/, assets/)
+    dir_check = (doc_path.parent / link_target).resolve()
+    if dir_check.is_dir():
+        return dir_check  # Accept directory links
     return Path('/nonexistent')
 
 
