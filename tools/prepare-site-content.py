@@ -35,8 +35,10 @@ def fix_links(content, dst_rel):
     #   ../../handbooks/engineering/README/ → ../../handbooks/engineering/
     content = re.sub(r'(]\()([^)]*)/README/(\))', r'\1\2/\3', content)
 
-    # Fix 2: For root-level files, ./ → ../ since page is at /file/ not /
-    if depth == 0:
+    # Fix 2: For root-level non-index files, ./ → ../ since page is at /file/ not /
+    # Don't apply to _index.md (homepage) which is served at /
+    is_index = dst_rel.name == '_index.md'
+    if depth == 0 and not is_index:
         content = re.sub(r'(]\()\./', r'\1../', content)
 
     return content
