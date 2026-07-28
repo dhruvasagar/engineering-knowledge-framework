@@ -1,4 +1,4 @@
-# Engineering Knowledge Base
+# Engineering Knowledge Framework
 
 Engineering Knowledge Framework is an open-source framework for building
 AI-native engineering knowledge systems.
