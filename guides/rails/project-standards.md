@@ -1,9 +1,3 @@
----
-title: "Rails Project Standards"
-description: "Mandatory tooling and CI/CD configuration baseline for every Rails project"
----
-
-
 # Purpose
 
 Every Rails project should start with a consistent baseline of code
@@ -14,7 +8,7 @@ Rails project in this organization must adopt. It ensures consistency
 across projects, reduces onboarding friction and prevents common
 issues from reaching production.
 
-Unlike the [Rails Audit Guide](./audit-guide/), which describes how to perform a
+Unlike the [Rails Audit Guide](./audit-guide.md), which describes how to perform a
 periodic audit, this document defines the standards that should be in
 place from project inception and enforced continuously.
 
@@ -382,9 +376,9 @@ This standard SHOULD be reviewed quarterly to:
 
 # Related Documents
 
-- [Rails Audit Guide](./audit-guide/)
-- [Rails Engineering Handbook](../../handbooks/rails/README/)
-- [Testing Rails Applications Guide](../../guides/rails/testing/)
-- [Rails Upgrade Playbook](../../playbooks/rails/upgrade/)
-- [Rails Pull Request Checklist](../../checklists/rails/pull-request/)
-- [Engineering Fundamentals Handbook](../../handbooks/engineering/README/)
+- [Rails Audit Guide](./audit-guide.md)
+- [Rails Engineering Handbook](../../handbooks/rails/README.md)
+- [Testing Rails Applications Guide](../../guides/rails/testing.md)
+- [Rails Upgrade Playbook](../../playbooks/rails/upgrade.md)
+- [Rails Pull Request Checklist](../../checklists/rails/pull-request.md)
+- [Engineering Fundamentals Handbook](../../handbooks/engineering/README.md)

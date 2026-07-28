@@ -1,9 +1,3 @@
----
-title: "AI Engineering Glossary"
-description: "AI engineering terminology used throughout the Engineering Knowledge Framework"
----
-
-
 # Purpose
 
 This glossary defines AI engineering terminology used throughout the
@@ -11,7 +5,7 @@ Engineering Knowledge Framework.
 
 # Glossary
 
-## Context Engineering
+## Context Engineering {#context-engineering}
 
 | Property | Value |
 | --- | --- |
@@ -25,9 +19,9 @@ Engineering Knowledge Framework.
 |  | criteria. It is the primary lever for improving AI |
 |  | output quality. |
 | Related | [Prompt Engineering](#prompt-engineering) |
-| References | [AI Engineering Handbook](../../handbooks/ai/README/) |
+| References | [AI Engineering Handbook](../../handbooks/ai/README.md) |
 
-## Hallucination
+## Hallucination {#hallucination}
 
 | Property | Value |
 | --- | --- |
@@ -39,9 +33,9 @@ Engineering Knowledge Framework.
 |  | models. Mitigation requires verifying AI output against |
 |  | authoritative sources and applying human review. |
 | Related | [Verification](#verification) |
-| References | [AI Engineering Handbook](../../handbooks/ai/README/) |
+| References | [AI Engineering Handbook](../../handbooks/ai/README.md) |
 
-## Prompt Engineering
+## Prompt Engineering {#prompt-engineering}
 
 | Property | Value |
 | --- | --- |
@@ -53,9 +47,9 @@ Engineering Knowledge Framework.
 |  | Effective prompts are specific, structured and include |
 |  | relevant context. |
 | Related | [Context Engineering](#context-engineering) |
-| References | [AI Engineering Handbook](../../handbooks/ai/README/) |
+| References | [AI Engineering Handbook](../../handbooks/ai/README.md) |
 
-## Verification
+## Verification {#verification}
 
 | Property | Value |
 | --- | --- |
@@ -67,10 +61,10 @@ Engineering Knowledge Framework.
 |  | testing code, checking facts, reviewing security |
 |  | implications and evaluating against requirements. |
 | Related | [Hallucination](#hallucination) |
-| References | [AI Engineering Handbook](../../handbooks/ai/README/) |
+| References | [AI Engineering Handbook](../../handbooks/ai/README.md) |
 
 # Related Documents
 
-- [AI Engineering Handbook](../../handbooks/ai/README/)
-- [Engineering Glossary](../engineering/README/)
-- [AI Workflows for Engineering](../../prompts/engineering-ai-workflows/)
+- [AI Engineering Handbook](../../handbooks/ai/README.md)
+- [Engineering Glossary](../engineering/README.md)
+- [AI Workflows for Engineering](../../prompts/engineering-ai-workflows.md)

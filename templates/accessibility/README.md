@@ -1,9 +1,3 @@
----
-title: "Accessibility Templates"
-description: "Reusable templates for accessibility engineering"
----
-
-
 # Purpose
 
 This directory contains reusable templates for accessibility-related
@@ -15,9 +9,9 @@ documentation and accessibility statements.
 | Template | Description |
 | --- | --- |
 +--------------------------------------------------------------+-------------------------------------------+
-| [Accessibility Report](./accessibility-report/) | Standard format for audit findings. |
+| [Accessibility Report](./accessibility-report.md) | Standard format for audit findings. |
 | --- | --- |
-| [Accessibility Statement](./accessibility-statement/) | Public-facing accessibility statement. |
+| [Accessibility Statement](./accessibility-statement.md) | Public-facing accessibility statement. |
 
 # Usage
 
@@ -26,6 +20,6 @@ customised. Reports should reference specific WCAG criteria.
 
 # Related Documents
 
-- [Accessibility Engineering Handbook](../../handbooks/accessibility/README/)
-- [Accessibility Review Playbook](../../playbooks/accessibility-review/README/)
-- [WCAG Audit Checklist](../../checklists/accessibility/wcag-audit/)
+- [Accessibility Engineering Handbook](../../handbooks/accessibility/README.md)
+- [Accessibility Review Playbook](../../playbooks/accessibility-review/README.md)
+- [WCAG Audit Checklist](../../checklists/accessibility/wcag-audit.md)

@@ -1,9 +1,3 @@
----
-title: "Background Jobs"
-description: "Patterns for background job processing in Rails"
----
-
-
 # Purpose
 
 Background jobs handle work that should not block a web request:
@@ -177,7 +171,7 @@ end
 
 # Related Documents
 
-- [Rails Engineering Handbook](../../handbooks/rails/README/)
-- [Testing Rails Applications Guide](../../guides/rails/testing/)
-- [Rails Upgrade Playbook](../../playbooks/rails/upgrade/)
-- [Rails References](../../references/rails/README/)
+- [Rails Engineering Handbook](../../handbooks/rails/README.md)
+- [Testing Rails Applications Guide](../../guides/rails/testing.md)
+- [Rails Upgrade Playbook](../../playbooks/rails/upgrade.md)
+- [Rails References](../../references/rails/README.md)

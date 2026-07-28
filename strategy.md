@@ -1,9 +1,3 @@
----
-title: "Strategy"
-description: "Long-term strategy and guiding vision for the Engineering Knowledge Framework"
----
-
-
 # Purpose
 
 This document defines the long-term strategy for the Engineering
@@ -20,7 +14,7 @@ This strategy should evolve slowly. It defines the enduring direction of
 the project rather than its short-term priorities.
 
 Implementation plans, milestones and active work are tracked separately
-in [ROADMAP.md](./roadmap/).
+in [ROADMAP.md](./roadmap.md).
 
 # Mission
 
@@ -373,8 +367,8 @@ engineer and every AI system—today and in the future.
 # Related Documents
 
 - [CLAUDE.md](./CLAUDE.md)
-- [Roadmap](./roadmap/)
-- [Document Types](./document-types/)
-- [Style Guide](./style-guide/)
-- [Contributing](./contributing/)
-- [Repository Overview](../README/)
+- [Roadmap](./roadmap.md)
+- [Document Types](./document-types.md)
+- [Style Guide](./style-guide.md)
+- [Contributing](./contributing.md)
+- [Repository Overview](../README.md)

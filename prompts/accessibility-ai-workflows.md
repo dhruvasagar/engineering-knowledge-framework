@@ -1,9 +1,3 @@
----
-title: "AI Workflows for Accessibility"
-description: "Prompt patterns for AI-assisted accessibility engineering"
----
-
-
 # Purpose
 
 This document provides prompt patterns for using AI to assist with
@@ -137,8 +131,8 @@ Follow the WAI-ARIA Authoring Practices for pattern guidance.
 
 # Related Documents
 
-- [Accessibility Engineering Handbook](../handbooks/accessibility/README/)
-- [Accessibility Guides](../guides/accessibility/)
-- [Accessibility Review Playbook](../playbooks/accessibility-review/README/)
-- [WCAG Audit Checklist](../checklists/accessibility/wcag-audit/)
-- [AI Usage Checklist](../checklists/ai-usage/)
+- [Accessibility Engineering Handbook](../handbooks/accessibility/README.md)
+- [Accessibility Guides](../guides/accessibility/README.md)
+- [Accessibility Review Playbook](../playbooks/accessibility-review/README.md)
+- [WCAG Audit Checklist](../checklists/accessibility/wcag-audit.md)
+- [AI Usage Checklist](../checklists/ai-usage.md)

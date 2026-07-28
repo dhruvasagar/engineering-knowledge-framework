@@ -1,9 +1,3 @@
----
-title: "Security Engineering Handbook"
-description: "Principles, standards and practices for security engineering"
----
-
-
 # Purpose
 
 Security engineering is the discipline of building systems that remain
@@ -15,8 +9,8 @@ system that must be considered from design through operations.
 This handbook defines the principles, standards and practices for
 building and maintaining secure systems within this organization.
 
-It builds upon the [Engineering Fundamentals Handbook](../../handbooks/engineering/README/) and
-[Software Architecture Handbook](../../handbooks/architecture/README/), applying their principles to the
+It builds upon the [Engineering Fundamentals Handbook](../../handbooks/engineering/README.md) and
+[Software Architecture Handbook](../../handbooks/architecture/README.md), applying their principles to the
 security domain.
 
 # Scope
@@ -286,55 +280,55 @@ capability. The following documents form the complete capability:
 
 ## Handbooks
 
-- [Security Engineering Handbook](./README/) — This document. Principles,
+- [Security Engineering Handbook](./README.md) — This document. Principles,
   threat modeling, secure development lifecycle and standards.
 
 ## Glossaries
 
-- [Security Glossary](../../glossary/security/README/) — Canonical security terminology (CSRF,
+- [Security Glossary](../../glossary/security/README.md) — Canonical security terminology (CSRF,
   defense in depth, SAST, STRIDE, XSS, etc.).
 
 ## Guides
 
-- [Secure Coding Practices](../../guides/security/secure-coding/) — Input validation, authentication,
+- [Secure Coding Practices](../../guides/security/secure-coding.md) — Input validation, authentication,
   authorization, output encoding, error handling, cryptography.
-- [Web Application Vulnerabilities](../../guides/security/web-vulnerabilities/) — OWASP Top 10 (2021)
+- [Web Application Vulnerabilities](../../guides/security/web-vulnerabilities.md) — OWASP Top 10 (2021)
   with explanations and mitigations for each category.
-- [Dependency Security](../../guides/security/dependency-security/) — Vulnerability scanning, dependency
+- [Dependency Security](../../guides/security/dependency-security.md) — Vulnerability scanning, dependency
   selection, vulnerability response, license compliance.
 
 ## Playbooks
 
-- [Security Review Playbook](../../playbooks/security-review/README/) — Security review workflow with
+- [Security Review Playbook](../../playbooks/security-review/README.md) — Security review workflow with
   scoping, threat modeling (STRIDE) and remediation.
 
 ## Checklists
 
-- [Security Review Checklist](../../checklists/security-review/) — General security verification
+- [Security Review Checklist](../../checklists/security-review.md) — General security verification
   for any project.
-- [Rails Security Review Checklist](../../checklists/rails/security-review/) — Rails-specific security
+- [Rails Security Review Checklist](../../checklists/rails/security-review.md) — Rails-specific security
   verification.
 
 ## Learning Paths
 
-- [Security Learning Paths](../../learning-paths/security/README/) — Beginner, intermediate and
+- [Security Learning Paths](../../learning-paths/security/README.md) — Beginner, intermediate and
   advanced tracks for security engineering.
 
 ## References
 
-- [Security References](../../references/security/README/) — Quick lookup: OWASP Top 10, STRIDE,
+- [Security References](../../references/security/README.md) — Quick lookup: OWASP Top 10, STRIDE,
   tools, response timeline, security headers.
 
 ## AI Workflows
 
-- [AI Workflows for Security](../../prompts/security-ai-workflows/) — Prompt patterns for
+- [AI Workflows for Security](../../prompts/security-ai-workflows.md) — Prompt patterns for
   vulnerability identification, threat modeling, configuration
   review and incident analysis.
 
 # Related Documents
 
-- [Security Glossary](../../glossary/security/README/)
-- [Security Review Playbook](../../playbooks/security-review/README/)
-- [Engineering Fundamentals Handbook](../../handbooks/engineering/README/)
-- [Software Architecture Handbook](../../handbooks/architecture/README/)
-- [Rails Security Review Checklist](../../checklists/rails/security-review/)
+- [Security Glossary](../../glossary/security/README.md)
+- [Security Review Playbook](../../playbooks/security-review/README.md)
+- [Engineering Fundamentals Handbook](../../handbooks/engineering/README.md)
+- [Software Architecture Handbook](../../handbooks/architecture/README.md)
+- [Rails Security Review Checklist](../../checklists/rails/security-review.md)

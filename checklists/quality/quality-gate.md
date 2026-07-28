@@ -1,9 +1,3 @@
----
-title: "Quality Gate Checklist"
-description: "Verification before accepting changes"
----
-
-
 # Purpose
 
 Verify that changes meet minimum quality standards before being merged
@@ -52,6 +46,6 @@ and code review process.
 
 # Related Documents
 
-- [Engineering Quality Handbook](../../handbooks/quality/README/)
-- [Release Quality Gate Playbook](../../playbooks/quality/release-quality-gate/)
-- [Quality References](../../references/quality/README/)
+- [Engineering Quality Handbook](../../handbooks/quality/README.md)
+- [Release Quality Gate Playbook](../../playbooks/quality/release-quality-gate.md)
+- [Quality References](../../references/quality/README.md)

@@ -1,9 +1,3 @@
----
-title: "ADR-0004: AI-Native Knowledge Design"
-description: "Decision to treat AI as a first-class knowledge consumer"
----
-
-
 :PROPERTIES:
 :STATUS:   accepted
 :DATE:     2026-07-27
@@ -87,6 +81,6 @@ naturally produces good AI documentation.
 
 # References
 
-- [Engineering Fundamentals Handbook](../handbooks/engineering/README/)
-- [Writing Principles](../writing-principles/)
-- [Style Guide](../style-guide/)
+- [Engineering Fundamentals Handbook](../handbooks/engineering/README.md)
+- [Writing Principles](../writing-principles.md)
+- [Style Guide](../style-guide.md)

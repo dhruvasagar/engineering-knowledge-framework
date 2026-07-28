@@ -1,9 +1,3 @@
----
-title: "Design Review Accessibility Checklist"
-description: "Accessibility checks during the design phase"
----
-
-
 # Purpose
 
 Verify accessibility requirements during the design phase. Catching
@@ -46,6 +40,6 @@ issues early is significantly cheaper than fixing them in development.
 
 # Related Documents
 
-- [Accessibility Engineering Handbook](../../handbooks/accessibility/README/)
-- [Colour and Contrast](../../guides/accessibility/colour-and-contrast/)
-- [Accessible Forms](../../guides/accessibility/accessible-forms/)
+- [Accessibility Engineering Handbook](../../handbooks/accessibility/README.md)
+- [Colour and Contrast](../../guides/accessibility/colour-and-contrast.md)
+- [Accessible Forms](../../guides/accessibility/accessible-forms.md)

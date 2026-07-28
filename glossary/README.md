@@ -1,9 +1,3 @@
----
-title: "Glossary"
-description: "Canonical engineering terminology used throughout the Engineering Knowledge Base"
----
-
-
 # Purpose
 
 The Glossary provides the canonical vocabulary used throughout the
@@ -62,14 +56,14 @@ Repository-wide terminology belongs in the Engineering Glossary.
 | Glossary | Purpose |
 | --- | --- |
 |----------------+-----------------------------------------|
-| [Engineering](engineering/README/) | Repository-wide engineering terminology |
+| [Engineering](engineering/README.md) | Repository-wide engineering terminology |
 | --- | --- |
-| [Architecture](architecture/README/) | Software architecture concepts |
-| [Rails](rails/README/) | Ruby on Rails terminology |
-| [Security](security/README/) | Security concepts and terminology |
-| [Accessibility](accessibility/README/) | Accessibility terminology |
+| [Architecture](architecture/README.md) | Software architecture concepts |
+| [Rails](rails/README.md) | Ruby on Rails terminology |
+| [Security](security/README.md) | Security concepts and terminology |
+| [Accessibility](accessibility/README.md) | Accessibility terminology |
 | Testing (not yet developed) | Testing vocabulary |
-| [AI Engineering](ai/README/) | AI engineering terminology |
+| [AI Engineering](ai/README.md) | AI engineering terminology |
 
 # When to Add a Glossary Entry
 
@@ -98,6 +92,6 @@ Handbooks should explain concepts in depth.
 
 # Related Documents
 
-- [Document Types](../document-types/)
-- [Style Guide](../style-guide/)
-- [Contributing](../contributing/)
+- [Document Types](../document-types.md)
+- [Style Guide](../style-guide.md)
+- [Contributing](../contributing.md)

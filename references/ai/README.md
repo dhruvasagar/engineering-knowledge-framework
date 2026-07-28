@@ -1,9 +1,3 @@
----
-title: "AI Engineering References"
-description: "Quick-reference material for AI-assisted engineering"
----
-
-
 # Purpose
 
 Quick-reference material for AI-assisted engineering.
@@ -99,6 +93,6 @@ Quick-reference material for AI-assisted engineering.
 
 # Related Documents
 
-- [AI Engineering Handbook](../../handbooks/ai/README/)
-- [AI Engineering Glossary](../../glossary/ai/README/)
-- [AI Workflows for Engineering](../../prompts/engineering-ai-workflows/)
+- [AI Engineering Handbook](../../handbooks/ai/README.md)
+- [AI Engineering Glossary](../../glossary/ai/README.md)
+- [AI Workflows for Engineering](../../prompts/engineering-ai-workflows.md)

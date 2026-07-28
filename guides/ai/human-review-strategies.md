@@ -1,9 +1,3 @@
----
-title: "Human Review Strategies"
-description: "When and how to review AI output effectively"
----
-
-
 # Purpose
 
 AI-generated output requires human review, but reviewing AI output is
@@ -174,8 +168,8 @@ Best for: Large or complex output where fresh eyes help.
 
 # Related Documents
 
-- [Agentic Workflows](./agentic-workflows/)
-- [AI Collaboration Patterns](./collaboration-patterns/)
-- [AI-Assisted Code Review Playbook](../../playbooks/ai/ai-assisted-code-review/)
-- [AI Usage Checklist](../../checklists/ai-usage/)
-- [AI Safety and Verification](../ai/ai-safety/)
+- [Agentic Workflows](./agentic-workflows.md)
+- [AI Collaboration Patterns](./collaboration-patterns.md)
+- [AI-Assisted Code Review Playbook](../../playbooks/ai/ai-assisted-code-review.md)
+- [AI Usage Checklist](../../checklists/ai-usage.md)
+- [AI Safety and Verification](../ai/ai-safety.md)

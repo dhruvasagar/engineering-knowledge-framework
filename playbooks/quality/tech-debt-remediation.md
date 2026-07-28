@@ -1,9 +1,3 @@
----
-title: "Technical Debt Remediation Playbook"
-description: "Workflow for managing and reducing technical debt"
----
-
-
 # Objective
 
 Systematically identify, classify and reduce technical debt. This
@@ -12,13 +6,13 @@ that balances remediation with feature delivery.
 
 # Inputs
 
-- Technical debt assessment (see [Tech Debt Assessment Checklist](../../checklists/tech-debt-assessment/)).
+- Technical debt assessment (see [Tech Debt Assessment Checklist](../../checklists/tech-debt-assessment.md)).
 - Project roadmap and sprint commitments.
 - Existing debt tracking (issue tracker, ADRs, team knowledge).
 
 # Prerequisites
 
-- Familiarity with [Technical Debt Management](../../guides/quality/technical-debt-management/).
+- Familiarity with [Technical Debt Management](../../guides/quality/technical-debt-management.md).
 - Understanding of the debt classification system.
 - Team agreement on remediation approach.
 
@@ -27,7 +21,7 @@ that balances remediation with feature delivery.
 ## Step 1: Inventory
 
 1. Collect known technical debt items from:
-   - [Tech Debt Assessment Checklist](../../checklists/tech-debt-assessment/) results.
+   - [Tech Debt Assessment Checklist](../../checklists/tech-debt-assessment.md) results.
    - Issue tracker labels.
    - Team knowledge and retrospection.
    - Static analysis reports (complexity, duplication, coverage gaps).
@@ -39,7 +33,7 @@ that balances remediation with feature delivery.
 
 ## Step 2: Classify
 
-Classify each debt item using the framework in [Technical Debt Management](../../guides/quality/technical-debt-management/):
+Classify each debt item using the framework in [Technical Debt Management](../../guides/quality/technical-debt-management.md):
 
 | Type | Description | Example |
 | --- | --- | --- |
@@ -113,6 +107,6 @@ Classify each debt item using the framework in [Technical Debt Management](../..
 
 # Related Documents
 
-- [Technical Debt Management](../../guides/quality/technical-debt-management/)
-- [Tech Debt Assessment Checklist](../../checklists/tech-debt-assessment/)
-- [Quality References](../../references/quality/README/)
+- [Technical Debt Management](../../guides/quality/technical-debt-management.md)
+- [Tech Debt Assessment Checklist](../../checklists/tech-debt-assessment.md)
+- [Quality References](../../references/quality/README.md)

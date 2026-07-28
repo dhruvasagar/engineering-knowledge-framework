@@ -1,9 +1,3 @@
----
-title: "Engineering Glossary"
-description: "Canonical engineering terminology used throughout the Engineering Knowledge Framework"
----
-
-
 # Purpose
 
 This glossary defines the foundational engineering terminology used
@@ -12,11 +6,11 @@ throughout the Engineering Knowledge Framework.
 Every term defined here is authoritative across the entire repository.
 
 Capability-specific terminology belongs in the corresponding capability
-glossary (e.g., [Architecture Glossary](../architecture/README/), [Rails Glossary](../rails/README/)).
+glossary (e.g., [Architecture Glossary](../architecture/README.md), [Rails Glossary](../rails/README.md)).
 
 # Glossary
 
-## Abstraction
+## Abstraction {#abstraction}
 
 | Property | Value |
 | --- | --- |
@@ -29,9 +23,9 @@ glossary (e.g., [Architecture Glossary](../architecture/README/), [Rails Glossar
 |  | work at a higher level of understanding. It is a |
 |  | fundamental tool for managing software complexity. |
 | Related | [Encapsulation](#encapsulation), [Modularity](#modularity) |
-| References | [Engineering Fundamentals Handbook](../../handbooks/engineering/README/) |
+| References | [Engineering Fundamentals Handbook](../../handbooks/engineering/README.md) |
 
-## Cohesion
+## Cohesion {#cohesion}
 
 | Property | Value |
 | --- | --- |
@@ -44,9 +38,9 @@ glossary (e.g., [Architecture Glossary](../architecture/README/), [Rails Glossar
 |  | module attempts to do many unrelated things. High |
 |  | cohesion is preferred. |
 | Related | [Coupling](#coupling), [Separation of Concerns](#separation-of-concerns) |
-| References | [Engineering Fundamentals Handbook](../../handbooks/engineering/README/) |
+| References | [Engineering Fundamentals Handbook](../../handbooks/engineering/README.md) |
 
-## Composition
+## Composition {#composition}
 
 | Property | Value |
 | --- | --- |
@@ -59,9 +53,9 @@ glossary (e.g., [Architecture Glossary](../architecture/README/), [Rails Glossar
 |  | cases because it is more flexible, easier to test and |
 |  | less likely to produce fragile code. |
 | Related | [Coupling](#coupling), [Encapsulation](#encapsulation) |
-| References | [Engineering Fundamentals Handbook](../../handbooks/engineering/README/) |
+| References | [Engineering Fundamentals Handbook](../../handbooks/engineering/README.md) |
 
-## Coupling
+## Coupling {#coupling}
 
 | Property | Value |
 | --- | --- |
@@ -74,9 +68,9 @@ glossary (e.g., [Architecture Glossary](../architecture/README/), [Rails Glossar
 |  | Tight coupling means changes to one module require |
 |  | changes to others. Loose coupling is preferred. |
 | Related | [Cohesion](#cohesion), [Encapsulation](#encapsulation) |
-| References | [Engineering Fundamentals Handbook](../../handbooks/engineering/README/) |
+| References | [Engineering Fundamentals Handbook](../../handbooks/engineering/README.md) |
 
-## Dependency Injection
+## Dependency Injection {#dependency-injection}
 
 | Property | Value |
 | --- | --- |
@@ -90,9 +84,9 @@ glossary (e.g., [Architecture Glossary](../architecture/README/), [Rails Glossar
 |  | include constructor injection, setter injection and |
 |  | interface injection. |
 | Related | [Coupling](#coupling), [Encapsulation](#encapsulation) |
-| References | [Engineering Fundamentals Handbook](../../handbooks/engineering/README/) |
+| References | [Engineering Fundamentals Handbook](../../handbooks/engineering/README.md) |
 
-## Encapsulation
+## Encapsulation {#encapsulation}
 
 | Property | Value |
 | --- | --- |
@@ -105,9 +99,9 @@ glossary (e.g., [Architecture Glossary](../architecture/README/), [Rails Glossar
 |  | refactoring does not affect consumers. A well- |
 |  | encapsulated component exposes only what is necessary. |
 | Related | [Abstraction](#abstraction), [Modularity](#modularity) |
-| References | [Engineering Fundamentals Handbook](../../handbooks/engineering/README/) |
+| References | [Engineering Fundamentals Handbook](../../handbooks/engineering/README.md) |
 
-## Modularity
+## Modularity {#modularity}
 
 | Property | Value |
 | --- | --- |
@@ -120,9 +114,9 @@ glossary (e.g., [Architecture Glossary](../architecture/README/), [Rails Glossar
 |  | enables parallel development, simplifies testing and |
 |  | reduces the impact of changes. |
 | Related | [Cohesion](#cohesion), [Coupling](#coupling), [Encapsulation](#encapsulation) |
-| References | [Engineering Fundamentals Handbook](../../handbooks/engineering/README/) |
+| References | [Engineering Fundamentals Handbook](../../handbooks/engineering/README.md) |
 
-## Refactoring
+## Refactoring {#refactoring}
 
 | Property | Value |
 | --- | --- |
@@ -134,9 +128,9 @@ glossary (e.g., [Architecture Glossary](../architecture/README/), [Rails Glossar
 |  | project. It should be driven by clear goals, supported |
 |  | by tests and done incrementally. |
 | Related | [Technical Debt](#technical-debt) |
-| References | [Engineering Fundamentals Handbook](../../handbooks/engineering/README/) |
+| References | [Engineering Fundamentals Handbook](../../handbooks/engineering/README.md) |
 
-## Separation of Concerns
+## Separation of Concerns {#separation-of-concerns}
 
 | Property | Value |
 | --- | --- |
@@ -150,9 +144,9 @@ glossary (e.g., [Architecture Glossary](../architecture/README/), [Rails Glossar
 |  | and enables independent evolution of different parts |
 |  | of a system. |
 | Related | [Cohesion](#cohesion), [Coupling](#coupling), [Modularity](#modularity) |
-| References | [Engineering Fundamentals Handbook](../../handbooks/engineering/README/) |
+| References | [Engineering Fundamentals Handbook](../../handbooks/engineering/README.md) |
 
-## Technical Debt
+## Technical Debt {#technical-debt}
 
 | Property | Value |
 | --- | --- |
@@ -167,11 +161,11 @@ glossary (e.g., [Architecture Glossary](../architecture/README/), [Rails Glossar
 |  | neglect). All technical debt should be tracked |
 |  | explicitly and regularly addressed. |
 | Related | [Refactoring](#refactoring) |
-| References | [Engineering Fundamentals Handbook](../../handbooks/engineering/README/) |
+| References | [Engineering Fundamentals Handbook](../../handbooks/engineering/README.md) |
 
 # Related Documents
 
-- [Engineering Fundamentals Handbook](../../handbooks/engineering/README/)
-- [Style Guide](../../style-guide/)
-- [Writing Principles](../../writing-principles/)
-- [Glossary Overview](../README/)
+- [Engineering Fundamentals Handbook](../../handbooks/engineering/README.md)
+- [Style Guide](../../style-guide.md)
+- [Writing Principles](../../writing-principles.md)
+- [Glossary Overview](../README.md)

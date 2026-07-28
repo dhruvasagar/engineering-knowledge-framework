@@ -1,9 +1,3 @@
----
-title: "Security Glossary"
-description: "Security terminology used throughout the Engineering Knowledge Framework"
----
-
-
 # Purpose
 
 This glossary defines security terminology used throughout the
@@ -11,11 +5,11 @@ Engineering Knowledge Framework.
 
 Security terms defined here are authoritative across the repository.
 Foundational engineering terms are defined in the
-[Engineering Glossary](../engineering/README/).
+[Engineering Glossary](../engineering/README.md).
 
 # Glossary
 
-## CSRF (Cross-Site Request Forgery)
+## CSRF (Cross-Site Request Forgery) {#csrf}
 
 | Property | Value |
 | --- | --- |
@@ -28,9 +22,9 @@ Foundational engineering terms are defined in the
 |  | `protect_from_forgery with: :exception`. Do not disable |
 |  | it. |
 | Related | [XSS](#xss), [SQL Injection](#sql-injection) |
-| References | [Security Engineering Handbook](../../handbooks/security/README/) |
+| References | [Security Engineering Handbook](../../handbooks/security/README.md) |
 
-## Defense in Depth
+## Defense in Depth {#defense-in-depth}
 
 | Property | Value |
 | --- | --- |
@@ -43,9 +37,9 @@ Foundational engineering terms are defined in the
 |  | depth combines network, application, data and |
 |  | operational security controls. |
 | Related | [Least Privilege](#least-privilege), [Secure by Default](#secure-by-default) |
-| References | [Security Engineering Handbook](../../handbooks/security/README/) |
+| References | [Security Engineering Handbook](../../handbooks/security/README.md) |
 
-## IDOR (Insecure Direct Object Reference)
+## IDOR (Insecure Direct Object Reference) {#idor}
 
 | Property | Value |
 | --- | --- |
@@ -57,9 +51,9 @@ Foundational engineering terms are defined in the
 | Context | Prevention requires authorization checks on every |
 |  | resource access, not relying on identifier obscurity. |
 | Related | [SQL Injection](#sql-injection), [XSS](#xss) |
-| References | [Security Engineering Handbook](../../handbooks/security/README/) |
+| References | [Security Engineering Handbook](../../handbooks/security/README.md) |
 
-## Least Privilege
+## Least Privilege {#least-privilege}
 
 | Property | Value |
 | --- | --- |
@@ -71,9 +65,9 @@ Foundational engineering terms are defined in the
 | Context | Apply least privilege at every level: database accounts, |
 |  | service accounts, user permissions and network access. |
 | Related | [Defense in Depth](#defense-in-depth), [Secure by Default](#secure-by-default) |
-| References | [Security Engineering Handbook](../../handbooks/security/README/) |
+| References | [Security Engineering Handbook](../../handbooks/security/README.md) |
 
-## SAST (Static Application Security Testing)
+## SAST (Static Application Security Testing) {#sast}
 
 | Property | Value |
 | --- | --- |
@@ -85,9 +79,9 @@ Foundational engineering terms are defined in the
 |  | known to be insecure. They are fast and can be run in |
 |  | CI, but may produce false positives. |
 | Related | [Threat Modeling](#threat-modeling) |
-| References | [Security Engineering Handbook](../../handbooks/security/README/) |
+| References | [Security Engineering Handbook](../../handbooks/security/README.md) |
 
-## Secure by Default
+## Secure by Default {#secure-by-default}
 
 | Property | Value |
 | --- | --- |
@@ -100,9 +94,9 @@ Foundational engineering terms are defined in the
 |  | not opt into increased security. Defaults should be |
 |  | restrictive. |
 | Related | [Defense in Depth](#defense-in-depth), [Least Privilege](#least-privilege) |
-| References | [Security Engineering Handbook](../../handbooks/security/README/) |
+| References | [Security Engineering Handbook](../../handbooks/security/README.md) |
 
-## SQL Injection
+## SQL Injection {#sql-injection}
 
 | Property | Value |
 | --- | --- |
@@ -115,9 +109,9 @@ Foundational engineering terms are defined in the
 |  | statements or an ORM like ActiveRecord. Never use raw |
 |  | SQL with string interpolation from user input. |
 | Related | [XSS](#xss), [IDOR](#idor) |
-| References | [Security Engineering Handbook](../../handbooks/security/README/) |
+| References | [Security Engineering Handbook](../../handbooks/security/README.md) |
 
-## Threat Modeling
+## Threat Modeling {#threat-modeling}
 
 | Property | Value |
 | --- | --- |
@@ -130,9 +124,9 @@ Foundational engineering terms are defined in the
 |  | phase of new systems or significant changes. The STRIDE |
 |  | framework provides a structured approach. |
 | Related | [SAST](#sast), [Defense in Depth](#defense-in-depth) |
-| References | [Security Engineering Handbook](../../handbooks/security/README/) |
+| References | [Security Engineering Handbook](../../handbooks/security/README.md) |
 
-## XSS (Cross-Site Scripting)
+## XSS (Cross-Site Scripting) {#xss}
 
 | Property | Value |
 | --- | --- |
@@ -145,11 +139,11 @@ Foundational engineering terms are defined in the
 |  | `.html_safe` or `raw` unless necessary and reviewed. |
 |  | Content Security Policy provides additional protection. |
 | Related | [CSRF](#csrf), [SQL Injection](#sql-injection) |
-| References | [Security Engineering Handbook](../../handbooks/security/README/) |
+| References | [Security Engineering Handbook](../../handbooks/security/README.md) |
 
 # Related Documents
 
-- [Security Engineering Handbook](../../handbooks/security/README/)
-- [Engineering Glossary](../engineering/README/)
-- [Security Review Playbook](../../playbooks/security-review/README/)
-- [Glossary Overview](../README/)
+- [Security Engineering Handbook](../../handbooks/security/README.md)
+- [Engineering Glossary](../engineering/README.md)
+- [Security Review Playbook](../../playbooks/security-review/README.md)
+- [Glossary Overview](../README.md)

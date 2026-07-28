@@ -1,9 +1,3 @@
----
-title: "AI Usage Checklist"
-description: "Verification checklist for safe AI usage in engineering"
----
-
-
 # Purpose
 
 Verify that AI-generated output is safe, correct and appropriate before
@@ -50,6 +44,6 @@ acceptance.
 
 # Related Documents
 
-- [AI Engineering Handbook](../handbooks/ai/README/)
-- [AI Safety Guide](../guides/ai/ai-safety/)
-- [Code Review Playbook](../playbooks/code-review/README/)
+- [AI Engineering Handbook](../handbooks/ai/README.md)
+- [AI Safety Guide](../guides/ai/ai-safety.md)
+- [Code Review Playbook](../playbooks/code-review/README.md)

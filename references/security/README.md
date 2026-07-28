@@ -1,9 +1,3 @@
----
-title: "Security References"
-description: "Quick-reference material for security engineering"
----
-
-
 # Purpose
 
 Quick-reference material for security engineering.
@@ -135,7 +129,7 @@ Quick-reference material for security engineering.
 
 # Related Documents
 
-- [Security Engineering Handbook](../../handbooks/security/README/)
-- [Security Glossary](../../glossary/security/README/)
-- [Security Review Playbook](../../playbooks/security-review/README/)
-- [Web Vulnerabilities Guide](../../guides/security/web-vulnerabilities/)
+- [Security Engineering Handbook](../../handbooks/security/README.md)
+- [Security Glossary](../../glossary/security/README.md)
+- [Security Review Playbook](../../playbooks/security-review/README.md)
+- [Web Vulnerabilities Guide](../../guides/security/web-vulnerabilities.md)

@@ -1,9 +1,3 @@
----
-title: "AI Workflows for AI Engineering"
-description: "Prompt patterns for AI-assisted AI engineering tasks"
----
-
-
 # Purpose
 
 This document provides prompt patterns for using AI to assist with
@@ -135,8 +129,8 @@ conventions. Include:
 
 # Related Documents
 
-- [AI Engineering Handbook](../handbooks/ai/README/)
-- [Prompt Engineering](../guides/ai/prompt-engineering/)
-- [Context Engineering](../guides/ai/context-engineering/)
-- [AI Safety and Verification](../guides/ai/ai-safety/)
-- [AI Usage Checklist](../checklists/ai-usage/)
+- [AI Engineering Handbook](../handbooks/ai/README.md)
+- [Prompt Engineering](../guides/ai/prompt-engineering.md)
+- [Context Engineering](../guides/ai/context-engineering.md)
+- [AI Safety and Verification](../guides/ai/ai-safety.md)
+- [AI Usage Checklist](../checklists/ai-usage.md)

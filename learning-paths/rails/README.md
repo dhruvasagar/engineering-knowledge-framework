@@ -1,17 +1,11 @@
----
-title: "Rails Learning Paths"
-description: "Structured learning progression for Rails development"
----
-
-
 # Purpose
 
 These learning paths provide a structured progression through Rails
 development, from building basic applications to designing complex
 Rails systems.
 
-Each path builds on the [Engineering Fundamentals Learning Paths](../../learning-paths/engineering/README/) and
-[Architecture Learning Paths](../../learning-paths/architecture/README/).
+Each path builds on the [Engineering Fundamentals Learning Paths](../../learning-paths/engineering/README.md) and
+[Architecture Learning Paths](../../learning-paths/architecture/README.md).
 
 # Beginner Path
 
@@ -29,7 +23,7 @@ Build and deploy a basic Rails application following Rails conventions.
 1. ***Rails Philosophy***
    - Convention over configuration.
    - MVC architecture in Rails.
-   - Reference: [Rails Engineering Handbook](../../handbooks/rails/README/)
+   - Reference: [Rails Engineering Handbook](../../handbooks/rails/README.md)
 
 2. ***Application Structure***
    - Rails directory structure.
@@ -41,7 +35,7 @@ Build and deploy a basic Rails application following Rails conventions.
    - Writing migrations.
    - Validations and associations.
    - Exercise: Build a data model with associated tables.
-   - Reference: [Rails Engineering Handbook](../../handbooks/rails/README/)
+   - Reference: [Rails Engineering Handbook](../../handbooks/rails/README.md)
 
 4. ***Controllers and Routes***
    - Resourceful routes.
@@ -58,7 +52,7 @@ Build and deploy a basic Rails application following Rails conventions.
    - Model and request specs.
    - Factory setup.
    - Exercise: Write tests for a CRUD feature.
-   - Reference: [Testing Rails Applications Guide](../../guides/rails/testing/)
+   - Reference: [Testing Rails Applications Guide](../../guides/rails/testing.md)
 
 ## Suggested Projects
 
@@ -88,20 +82,20 @@ testing and clean architecture.
    - When and how to extract service objects.
    - Result objects and error handling.
    - Exercise: Refactor a fat controller into service objects.
-   - Reference: [Service Objects Guide](../../guides/rails/service-objects/)
+   - Reference: [Service Objects Guide](../../guides/rails/service-objects.md)
 
 2. ***Advanced Testing***
    - Request specs for API testing.
    - System specs for critical journeys.
    - Testing service objects in isolation.
    - Exercise: Build a comprehensive test suite for a feature.
-   - Reference: [Testing Rails Applications Guide](../../guides/rails/testing/)
+   - Reference: [Testing Rails Applications Guide](../../guides/rails/testing.md)
 
 3. ***API Development***
    - Building JSON APIs with Rails.
    - Versioning and serialization.
    - Exercise: Build an API-only Rails application.
-   - Reference: [Rails Engineering Handbook](../../handbooks/rails/README/)
+   - Reference: [Rails Engineering Handbook](../../handbooks/rails/README.md)
 
 4. ***Performance Basics***
    - N+1 query detection and prevention.
@@ -143,19 +137,19 @@ Rails standards for a team or organization.
    - Hexagonal architecture in Rails.
    - Event-driven patterns with Rails.
    - Exercise: Design a Rails system using hexagonal architecture.
-   - Reference: [Architectural Patterns Guide](../../guides/architecture/architectural-patterns/)
+   - Reference: [Architectural Patterns Guide](../../guides/architecture/architectural-patterns.md)
 
 2. ***Upgrade Strategy***
    - Managing Rails version upgrades.
    - Deprecation management.
    - Exercise: Plan and execute a Rails version upgrade.
-   - Reference: [Rails Upgrade Playbook](../../playbooks/rails/upgrade/)
+   - Reference: [Rails Upgrade Playbook](../../playbooks/rails/upgrade.md)
 
 3. ***Gem Strategy***
    - Evaluating and selecting gems.
    - When to build vs buy.
    - Maintaining custom gems.
-   - Reference: [Rails Engineering Handbook](../../handbooks/rails/README/)
+   - Reference: [Rails Engineering Handbook](../../handbooks/rails/README.md)
 
 4. ***Rails at Scale***
    - Database scaling strategies.
@@ -183,11 +177,11 @@ other Rails developers.
 
 # Related Documents
 
-- [Rails Engineering Handbook](../../handbooks/rails/README/)
-- [Rails Glossary](../../glossary/rails/README/)
-- [Service Objects Guide](../../guides/rails/service-objects/)
-- [Testing Rails Applications Guide](../../guides/rails/testing/)
-- [Rails Upgrade Playbook](../../playbooks/rails/upgrade/)
-- [Rails References](../../references/rails/README/)
-- [Engineering Learning Paths](../../learning-paths/engineering/README/)
-- [Architecture Learning Paths](../../learning-paths/architecture/README/)
+- [Rails Engineering Handbook](../../handbooks/rails/README.md)
+- [Rails Glossary](../../glossary/rails/README.md)
+- [Service Objects Guide](../../guides/rails/service-objects.md)
+- [Testing Rails Applications Guide](../../guides/rails/testing.md)
+- [Rails Upgrade Playbook](../../playbooks/rails/upgrade.md)
+- [Rails References](../../references/rails/README.md)
+- [Engineering Learning Paths](../../learning-paths/engineering/README.md)
+- [Architecture Learning Paths](../../learning-paths/architecture/README.md)

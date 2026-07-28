@@ -1,9 +1,3 @@
----
-title: "Secure Coding Practices"
-description: "Principles and patterns for writing secure code"
----
-
-
 # Purpose
 
 Secure coding is the practice of writing code that is resilient to
@@ -175,7 +169,7 @@ libraries.
 
 # Related Documents
 
-- [Security Engineering Handbook](../../handbooks/security/README/)
-- [Security Glossary](../../glossary/security/README/)
-- [Security Review Playbook](../../playbooks/security-review/README/)
-- [Rails Engineering Handbook](../../handbooks/rails/README/)
+- [Security Engineering Handbook](../../handbooks/security/README.md)
+- [Security Glossary](../../glossary/security/README.md)
+- [Security Review Playbook](../../playbooks/security-review/README.md)
+- [Rails Engineering Handbook](../../handbooks/rails/README.md)

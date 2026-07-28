@@ -1,9 +1,3 @@
----
-title: "AI Engineering Handbook"
-description: "Principles, patterns and practices for AI-assisted engineering"
----
-
-
 # Purpose
 
 AI engineering is the practice of integrating AI assistants into the
@@ -13,8 +7,8 @@ decision-making.
 This handbook defines the principles, patterns and practices for
 using AI effectively throughout the engineering lifecycle.
 
-It builds upon the [Engineering Fundamentals Handbook](../../handbooks/engineering/README/) and
-[Software Architecture Handbook](../../handbooks/architecture/README/), applying their principles to the
+It builds upon the [Engineering Fundamentals Handbook](../../handbooks/engineering/README.md) and
+[Software Architecture Handbook](../../handbooks/architecture/README.md), applying their principles to the
 AI context.
 
 # Scope
@@ -29,7 +23,7 @@ This handbook covers:
 - Integrating AI into team practices.
 
 Capability-specific AI guidance is in the AI Workflow documents for
-each capability (e.g., [AI Workflows for Rails](../../prompts/rails-ai-workflows/)).
+each capability (e.g., [AI Workflows for Rails](../../prompts/rails-ai-workflows.md)).
 
 # Principles
 
@@ -248,9 +242,9 @@ AI-generated tests must be reviewed for correctness and completeness.
 
 # Related Documents
 
-- [AI Workflows for Engineering](../../prompts/engineering-ai-workflows/)
-- [AI Workflows for Architecture](../../prompts/architecture-ai-workflows/)
-- [AI Workflows for Rails](../../prompts/rails-ai-workflows/)
-- [AI Workflows for Security](../../prompts/security-ai-workflows/)
-- [Engineering Fundamentals Handbook](../../handbooks/engineering/README/)
-- [Style Guide](../../style-guide/)
+- [AI Workflows for Engineering](../../prompts/engineering-ai-workflows.md)
+- [AI Workflows for Architecture](../../prompts/architecture-ai-workflows.md)
+- [AI Workflows for Rails](../../prompts/rails-ai-workflows.md)
+- [AI Workflows for Security](../../prompts/security-ai-workflows.md)
+- [Engineering Fundamentals Handbook](../../handbooks/engineering/README.md)
+- [Style Guide](../../style-guide.md)

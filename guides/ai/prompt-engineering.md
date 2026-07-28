@@ -1,9 +1,3 @@
----
-title: "Prompt Engineering"
-description: "Principles and patterns for effective AI prompt design"
----
-
-
 # Purpose
 
 Prompt engineering is the practice of designing inputs that elicit
@@ -142,6 +136,6 @@ anti-pattern. Always verify.
 
 # Related Documents
 
-- [AI Engineering Handbook](../../handbooks/ai/README/)
-- [Context Engineering Guide](../../guides/ai/context-engineering/)
-- [AI Workflows for Engineering](../../prompts/engineering-ai-workflows/)
+- [AI Engineering Handbook](../../handbooks/ai/README.md)
+- [Context Engineering Guide](../../guides/ai/context-engineering.md)
+- [AI Workflows for Engineering](../../prompts/engineering-ai-workflows.md)

@@ -1,9 +1,3 @@
----
-title: "Ruby on Rails: Audit Guide"
-description: "Systematic audit of Rails applications covering code quality, performance, security, database health and operational concerns"
----
-
-
 # Purpose
 
 Rails applications accumulate technical debt, security vulnerabilities
@@ -514,10 +508,10 @@ When asking AI for audit assistance, provide:
 
 # Related Documents
 
-- [Rails Engineering Handbook](../../handbooks/rails/README/)
-- [Engineering Fundamentals Handbook](../../handbooks/engineering/README/)
-- [Testing Rails Applications Guide](../../guides/rails/testing/)
-- [Rails Upgrade Playbook](../../playbooks/rails/upgrade/)
-- [Rails Pull Request Checklist](../../checklists/rails/pull-request/)
-- [Rails Glossary](../../glossary/rails/README/)
-- [Security Engineering Handbook](../../handbooks/security/README/)
+- [Rails Engineering Handbook](../../handbooks/rails/README.md)
+- [Engineering Fundamentals Handbook](../../handbooks/engineering/README.md)
+- [Testing Rails Applications Guide](../../guides/rails/testing.md)
+- [Rails Upgrade Playbook](../../playbooks/rails/upgrade.md)
+- [Rails Pull Request Checklist](../../checklists/rails/pull-request.md)
+- [Rails Glossary](../../glossary/rails/README.md)
+- [Security Engineering Handbook](../../handbooks/security/README.md)

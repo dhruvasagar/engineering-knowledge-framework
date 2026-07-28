@@ -1,9 +1,3 @@
----
-title: "AI-Assisted Architecture Review Playbook"
-description: "Workflow for architecture review with AI assistance"
----
-
-
 # Objective
 
 Leverage AI to accelerate architecture reviews by analysing trade-offs,
@@ -18,9 +12,9 @@ Human architects retain final authority on all decisions.
 
 # Prerequisites
 
-- The proposal is documented in the standard format (see [RFC template](../../templates/rfc/README/) or [ADR template](../../templates/adr/README/)).
+- The proposal is documented in the standard format (see [RFC template](../../templates/rfc/README.md) or [ADR template](../../templates/adr/README.md)).
 - Review team is identified.
-- AI assistant has access to the [Architecture Handbook](../../handbooks/architecture/README/) and relevant [pattern guides](../../guides/architecture/architectural-patterns/).
+- AI assistant has access to the [Architecture Handbook](../../handbooks/architecture/README.md) and relevant [pattern guides](../../guides/architecture/architectural-patterns.md).
 
 # Workflow
 
@@ -41,7 +35,7 @@ Ask the AI to analyse:
 - Trade-off identification: What trade-offs are implicit or unstated?
 - Completeness: Are there gaps in the proposal?
 
-Use the prompt patterns from [AI Workflows for Architecture](../../prompts/architecture-ai-workflows/).
+Use the prompt patterns from [AI Workflows for Architecture](../../prompts/architecture-ai-workflows.md).
 
 ## Step 3: Human Review
 
@@ -90,7 +84,7 @@ Use the prompt patterns from [AI Workflows for Architecture](../../prompts/archi
 
 # Related Documents
 
-- [Architecture Review Playbook](../../playbooks/architecture-review/README/)
-- [AI Workflows for Architecture](../../prompts/architecture-ai-workflows/)
-- [Architectural Patterns](../../guides/architecture/architectural-patterns/)
-- [Architecture Handbook](../../handbooks/architecture/README/)
+- [Architecture Review Playbook](../../playbooks/architecture-review/README.md)
+- [AI Workflows for Architecture](../../prompts/architecture-ai-workflows.md)
+- [Architectural Patterns](../../guides/architecture/architectural-patterns.md)
+- [Architecture Handbook](../../handbooks/architecture/README.md)

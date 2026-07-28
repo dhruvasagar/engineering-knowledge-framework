@@ -1,9 +1,3 @@
----
-title: "Query Object Template"
-description: "Template for Rails query objects"
----
-
-
 # Purpose
 
 Query objects encapsulate complex database queries that do not belong
@@ -50,5 +44,5 @@ results = query.call
 
 # Related Documents
 
-- [Rails Engineering Handbook](../../handbooks/rails/README/)
-- [Service Objects Guide](../../guides/rails/service-objects/)
+- [Rails Engineering Handbook](../../handbooks/rails/README.md)
+- [Service Objects Guide](../../guides/rails/service-objects.md)

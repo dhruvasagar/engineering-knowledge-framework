@@ -1,9 +1,3 @@
----
-title: "Service Objects"
-description: "How to design and use service objects in Rails applications"
----
-
-
 # Purpose
 
 Service objects encapsulate a single business operation into a
@@ -274,8 +268,8 @@ When asking AI for service object help, provide:
 
 # Related Documents
 
-- [Rails Engineering Handbook](../../handbooks/rails/README/)
-- [Engineering Fundamentals Handbook](../../handbooks/engineering/README/)
-- [Rails Glossary](../../glossary/rails/README/)
-- [Code Review Playbook](../../playbooks/code-review/README/)
-- [Testing Strategies Guide](../../guides/engineering/testing-strategies/)
+- [Rails Engineering Handbook](../../handbooks/rails/README.md)
+- [Engineering Fundamentals Handbook](../../handbooks/engineering/README.md)
+- [Rails Glossary](../../glossary/rails/README.md)
+- [Code Review Playbook](../../playbooks/code-review/README.md)
+- [Testing Strategies Guide](../../guides/engineering/testing-strategies.md)

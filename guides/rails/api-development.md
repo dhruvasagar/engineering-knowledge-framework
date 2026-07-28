@@ -1,9 +1,3 @@
----
-title: "API Development with Rails"
-description: "Patterns and standards for building JSON APIs with Rails"
----
-
-
 # Purpose
 
 Rails is a popular choice for building JSON APIs.
@@ -11,7 +5,7 @@ Rails is a popular choice for building JSON APIs.
 This guide covers the patterns and standards for designing, building
 and maintaining API-only Rails applications, building on the general
 API design principles in the
-[API Design Guide](../../guides/architecture/api-design/).
+[API Design Guide](../../guides/architecture/api-design.md).
 
 # Setup
 
@@ -289,7 +283,7 @@ end
 
 # Related Documents
 
-- [Rails Engineering Handbook](../../handbooks/rails/README/)
-- [API Design Guide](../../guides/architecture/api-design/)
-- [Testing Rails Applications Guide](../../guides/rails/testing/)
-- [Rails References](../../references/rails/README/)
+- [Rails Engineering Handbook](../../handbooks/rails/README.md)
+- [API Design Guide](../../guides/architecture/api-design.md)
+- [Testing Rails Applications Guide](../../guides/rails/testing.md)
+- [Rails References](../../references/rails/README.md)

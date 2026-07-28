@@ -1,13 +1,7 @@
----
-title: "Prompt Template"
-description: "Standard prompt structure for engineering AI"
----
-
-
 # Prompt Template
 
 Use this structure when writing prompts for engineering tasks. Adapt the
-sections based on the task type. See [Prompt Engineering](../../guides/ai/prompt-engineering/) for detailed
+sections based on the task type. See [Prompt Engineering](../../guides/ai/prompt-engineering.md) for detailed
 guidance on each pattern.
 
 # Structure
@@ -100,6 +94,6 @@ Analyse the trade-offs and recommend an approach with rationale.
 
 # Related Documents
 
-- [Prompt Engineering guide](../../guides/ai/prompt-engineering/)
-- [Context Engineering guide](../../guides/ai/context-engineering/)
-- [AI References — prompt patterns quick reference](../../references/ai/README/)
+- [Prompt Engineering guide](../../guides/ai/prompt-engineering.md)
+- [Context Engineering guide](../../guides/ai/context-engineering.md)
+- [AI References — prompt patterns quick reference](../../references/ai/README.md)

@@ -1,9 +1,3 @@
----
-title: "AI Workflows for Rails"
-description: "Prompt patterns and AI workflows for Rails development"
----
-
-
 # Purpose
 
 AI assistants can accelerate Rails development when used effectively.
@@ -189,8 +183,8 @@ queries. Always review generated database access code.
 
 # Related Documents
 
-- [Rails Engineering Handbook](../handbooks/rails/README/)
-- [Service Objects Guide](../guides/rails/service-objects/)
-- [Testing Rails Applications Guide](../guides/rails/testing/)
-- [Rails Upgrade Playbook](../playbooks/rails/upgrade/)
-- [AI Workflows for Engineering](../prompts/engineering-ai-workflows/)
+- [Rails Engineering Handbook](../handbooks/rails/README.md)
+- [Service Objects Guide](../guides/rails/service-objects.md)
+- [Testing Rails Applications Guide](../guides/rails/testing.md)
+- [Rails Upgrade Playbook](../playbooks/rails/upgrade.md)
+- [AI Workflows for Engineering](../prompts/engineering-ai-workflows.md)

@@ -1,9 +1,3 @@
----
-title: "Engineering Quality Glossary"
-description: "Engineering quality terminology used throughout the Engineering Knowledge Framework"
----
-
-
 # Purpose
 
 This glossary defines engineering quality terminology used throughout
@@ -11,7 +5,7 @@ the Engineering Knowledge Framework.
 
 # Glossary
 
-## Change Failure Rate
+## Change Failure Rate {#change-failure-rate}
 
 | Property | Value |
 | --- | --- |
@@ -22,9 +16,9 @@ the Engineering Knowledge Framework.
 | Context | A key DORA metric for measuring deployment reliability. |
 |  | Target: < 5%. |
 | Related | [Defect Escape Rate](#defect-escape-rate), [MTTR](#mean-time-to-recover) |
-| References | [Engineering Quality Handbook](../../handbooks/quality/README/) |
+| References | [Engineering Quality Handbook](../../handbooks/quality/README.md) |
 
-## Defect Escape Rate
+## Defect Escape Rate {#defect-escape-rate}
 
 | Property | Value |
 | --- | --- |
@@ -35,9 +29,9 @@ the Engineering Knowledge Framework.
 | Context | Measures the effectiveness of testing and review |
 |  | processes. Target: < 5%. |
 | Related | [Change Failure Rate](#change-failure-rate) |
-| References | [Engineering Quality Handbook](../../handbooks/quality/README/) |
+| References | [Engineering Quality Handbook](../../handbooks/quality/README.md) |
 
-## Mean Time to Recover (MTTR)
+## Mean Time to Recover (MTTR) {#mean-time-to-recover}
 
 | Property | Value |
 | --- | --- |
@@ -48,9 +42,9 @@ the Engineering Knowledge Framework.
 | Context | A key DORA metric for operational quality. Target: |
 |  | < 1 hour. |
 | Related | [Change Failure Rate](#change-failure-rate), [Defect Escape Rate](#defect-escape-rate) |
-| References | [Engineering Quality Handbook](../../handbooks/quality/README/) |
+| References | [Engineering Quality Handbook](../../handbooks/quality/README.md) |
 
-## Quality Gate
+## Quality Gate {#quality-gate}
 
 | Property | Value |
 | --- | --- |
@@ -61,9 +55,9 @@ the Engineering Knowledge Framework.
 | Context | Quality gates prevent defects from propagating. They |
 |  | should be automated, fast and enforced in CI/CD. |
 | Related | [Technical Debt](#technical-debt) |
-| References | [Engineering Quality Handbook](../../handbooks/quality/README/) |
+| References | [Engineering Quality Handbook](../../handbooks/quality/README.md) |
 
-## Technical Debt
+## Technical Debt {#technical-debt}
 
 | Property | Value |
 | --- | --- |
@@ -78,11 +72,11 @@ the Engineering Knowledge Framework.
 |  | neglect). All technical debt should be tracked |
 |  | explicitly and regularly addressed. |
 | Related | [Quality Gate](#quality-gate) |
-| References | [Engineering Quality Handbook](../../handbooks/quality/README/), |
-|  | [Engineering Fundamentals Handbook](../../handbooks/engineering/README/) |
+| References | [Engineering Quality Handbook](../../handbooks/quality/README.md), |
+|  | [Engineering Fundamentals Handbook](../../handbooks/engineering/README.md) |
 
 # Related Documents
 
-- [Engineering Quality Handbook](../../handbooks/quality/README/)
-- [Engineering Glossary](../engineering/README/)
-- [Testing Strategies Guide](../../guides/engineering/testing-strategies/)
+- [Engineering Quality Handbook](../../handbooks/quality/README.md)
+- [Engineering Glossary](../engineering/README.md)
+- [Testing Strategies Guide](../../guides/engineering/testing-strategies.md)

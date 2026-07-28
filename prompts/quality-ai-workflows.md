@@ -1,9 +1,3 @@
----
-title: "AI Workflows for Engineering Quality"
-description: "Prompt patterns for AI-assisted quality engineering tasks"
----
-
-
 # Purpose
 
 This document provides prompt patterns for using AI to assist with
@@ -133,8 +127,8 @@ Organise findings by severity: critical / major / minor / suggestion.
 
 # Related Documents
 
-- [Engineering Quality Handbook](../handbooks/quality/README/)
-- [Quality Metrics](../guides/quality/quality-metrics/)
-- [Code Review Standards](../guides/quality/code-review-standards/)
-- [Quality Review Playbook](../playbooks/quality/quality-review/)
-- [AI Usage Checklist](../checklists/ai-usage/)
+- [Engineering Quality Handbook](../handbooks/quality/README.md)
+- [Quality Metrics](../guides/quality/quality-metrics.md)
+- [Code Review Standards](../guides/quality/code-review-standards.md)
+- [Quality Review Playbook](../playbooks/quality/quality-review.md)
+- [AI Usage Checklist](../checklists/ai-usage.md)

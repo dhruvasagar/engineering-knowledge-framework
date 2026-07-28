@@ -1,9 +1,3 @@
----
-title: "Web Application Vulnerabilities"
-description: "Common web application vulnerabilities and their mitigations"
----
-
-
 # Purpose
 
 Understanding common web vulnerabilities is essential for building
@@ -141,7 +135,7 @@ Marshal or YAML for external data.
 
 # Related Documents
 
-- [Security Engineering Handbook](../../handbooks/security/README/)
-- [Secure Coding Practices Guide](../../guides/security/secure-coding/)
-- [Security Glossary](../../glossary/security/README/)
-- [Rails Security Review Checklist](../../checklists/rails/security-review/)
+- [Security Engineering Handbook](../../handbooks/security/README.md)
+- [Secure Coding Practices Guide](../../guides/security/secure-coding.md)
+- [Security Glossary](../../glossary/security/README.md)
+- [Rails Security Review Checklist](../../checklists/rails/security-review.md)

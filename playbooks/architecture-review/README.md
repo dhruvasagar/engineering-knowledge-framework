@@ -1,9 +1,3 @@
----
-title: "Architecture Review Playbook"
-description: "Repeatable workflow for conducting architecture reviews"
----
-
-
 # Objective
 
 Ensure architectural decisions are sound, well-documented, aligned with
@@ -215,9 +209,9 @@ When using AI for architecture review support, provide:
 
 # Related Documents
 
-- [Software Architecture Handbook](../../handbooks/architecture/README/)
-- [Engineering Fundamentals Handbook](../../handbooks/engineering/README/)
-- [ADR Writing Guide](../../guides/architecture/adr-writing-guide/)
-- [Architectural Patterns Guide](../../guides/architecture/architectural-patterns/)
-- [ADR Template](../../templates/adr/README/)
-- [Architecture Glossary](../../glossary/architecture/README/)
+- [Software Architecture Handbook](../../handbooks/architecture/README.md)
+- [Engineering Fundamentals Handbook](../../handbooks/engineering/README.md)
+- [ADR Writing Guide](../../guides/architecture/adr-writing-guide.md)
+- [Architectural Patterns Guide](../../guides/architecture/architectural-patterns.md)
+- [ADR Template](../../templates/adr/README.md)
+- [Architecture Glossary](../../glossary/architecture/README.md)

@@ -1,9 +1,3 @@
----
-title: "Engineering Quality References"
-description: "Quick-reference material for engineering quality"
----
-
-
 # Purpose
 
 Quick-reference material for engineering quality.
@@ -130,7 +124,7 @@ Quick-reference material for engineering quality.
 
 # Related Documents
 
-- [Engineering Quality Handbook](../../handbooks/quality/README/)
-- [Engineering Quality Glossary](../../glossary/quality/README/)
-- [Code Review Standards Guide](../../guides/quality/code-review-standards/)
-- [Quality Metrics Guide](../../guides/quality/quality-metrics/)
+- [Engineering Quality Handbook](../../handbooks/quality/README.md)
+- [Engineering Quality Glossary](../../glossary/quality/README.md)
+- [Code Review Standards Guide](../../guides/quality/code-review-standards.md)
+- [Quality Metrics Guide](../../guides/quality/quality-metrics.md)

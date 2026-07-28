@@ -1,9 +1,3 @@
----
-title: "Error Handling"
-description: "Principles and patterns for handling errors effectively"
----
-
-
 # Purpose
 
 Errors are an inevitable part of software operation.
@@ -243,7 +237,7 @@ When asking AI for error handling advice, provide:
 
 # Related Documents
 
-- [Engineering Fundamentals Handbook](../../handbooks/engineering/README/)
-- [Software Architecture Handbook](../../handbooks/architecture/README/)
-- [Engineering Glossary](../../glossary/engineering/README/)
-- [Code Review Playbook](../../playbooks/code-review/README/)
+- [Engineering Fundamentals Handbook](../../handbooks/engineering/README.md)
+- [Software Architecture Handbook](../../handbooks/architecture/README.md)
+- [Engineering Glossary](../../glossary/engineering/README.md)
+- [Code Review Playbook](../../playbooks/code-review/README.md)

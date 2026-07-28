@@ -1,9 +1,3 @@
----
-title: "AI Collaboration Patterns"
-description: "How engineers and AI should interact in different contexts"
----
-
-
 # Purpose
 
 AI collaboration patterns define how engineers and AI interact during
@@ -170,7 +164,7 @@ Engineer: "Now show me how it differs from the service object pattern."
 
 # Related Documents
 
-- [Agentic Workflows](./agentic-workflows/)
-- [Prompt Engineering](./prompt-engineering/)
-- [AI Pair Programming Playbook](../../playbooks/ai/ai-pair-programming/)
-- [AI Engineering Handbook](../../handbooks/ai/README/)
+- [Agentic Workflows](./agentic-workflows.md)
+- [Prompt Engineering](./prompt-engineering.md)
+- [AI Pair Programming Playbook](../../playbooks/ai/ai-pair-programming.md)
+- [AI Engineering Handbook](../../handbooks/ai/README.md)

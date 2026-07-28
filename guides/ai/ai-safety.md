@@ -1,9 +1,3 @@
----
-title: "AI Safety and Verification"
-description: "Practices for safe and responsible use of AI in engineering"
----
-
-
 # Purpose
 
 AI systems are powerful tools, but they introduce risks: incorrect
@@ -127,8 +121,8 @@ The following uses of AI are prohibited:
 
 # Related Documents
 
-- [AI Engineering Handbook](../../handbooks/ai/README/)
-- [Prompt Engineering Guide](../../guides/ai/prompt-engineering/)
-- [Code Review Playbook](../../playbooks/code-review/README/)
-- [Architecture Review Playbook](../../playbooks/architecture-review/README/)
-- [Security Engineering Handbook](../../handbooks/security/README/)
+- [AI Engineering Handbook](../../handbooks/ai/README.md)
+- [Prompt Engineering Guide](../../guides/ai/prompt-engineering.md)
+- [Code Review Playbook](../../playbooks/code-review/README.md)
+- [Architecture Review Playbook](../../playbooks/architecture-review/README.md)
+- [Security Engineering Handbook](../../handbooks/security/README.md)

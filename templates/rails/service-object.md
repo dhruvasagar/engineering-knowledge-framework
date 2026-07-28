@@ -1,9 +1,3 @@
----
-title: "Service Object Template"
-description: "Template for Rails service objects"
----
-
-
 # Purpose
 
 Service objects encapsulate a single business operation.
@@ -62,5 +56,5 @@ end
 
 # Related Documents
 
-- [Service Objects Guide](../../guides/rails/service-objects/)
-- [Rails Engineering Handbook](../../handbooks/rails/README/)
+- [Service Objects Guide](../../guides/rails/service-objects.md)
+- [Rails Engineering Handbook](../../handbooks/rails/README.md)

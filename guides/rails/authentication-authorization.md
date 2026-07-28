@@ -1,9 +1,3 @@
----
-title: "Authentication and Authorization"
-description: "Patterns for authentication and authorization in Rails"
----
-
-
 # Purpose
 
 Authentication verifies who a user is. Authorization determines what a
@@ -207,7 +201,7 @@ action should have an explicit authorization check.
 
 # Related Documents
 
-- [Rails Engineering Handbook](../../handbooks/rails/README/)
-- [Policy Object Template](../../templates/rails/policy-object/)
-- [API Development with Rails](../../guides/rails/api-development/)
-- [Rails Pull Request Checklist](../../checklists/rails/pull-request/)
+- [Rails Engineering Handbook](../../handbooks/rails/README.md)
+- [Policy Object Template](../../templates/rails/policy-object.md)
+- [API Development with Rails](../../guides/rails/api-development.md)
+- [Rails Pull Request Checklist](../../checklists/rails/pull-request.md)

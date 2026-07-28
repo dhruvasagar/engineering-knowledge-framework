@@ -1,9 +1,3 @@
----
-title: "Testing Rails Applications"
-description: "Testing strategies and patterns specific to Rails"
----
-
-
 # Purpose
 
 Testing is essential to maintaining a healthy Rails application.
@@ -14,7 +8,7 @@ and maintainable.
 
 This guide defines the testing strategy for Rails applications, building
 on the general testing principles in the
-[Testing Strategies Guide](../../guides/engineering/testing-strategies/).
+[Testing Strategies Guide](../../guides/engineering/testing-strategies.md).
 
 # Test Distribution
 
@@ -195,7 +189,7 @@ When asking AI for testing help, provide:
 
 # Related Documents
 
-- [Rails Engineering Handbook](../../handbooks/rails/README/)
-- [Testing Strategies Guide](../../guides/engineering/testing-strategies/)
-- [Code Review Playbook](../../playbooks/code-review/README/)
-- [Rails Glossary](../../glossary/rails/README/)
+- [Rails Engineering Handbook](../../handbooks/rails/README.md)
+- [Testing Strategies Guide](../../guides/engineering/testing-strategies.md)
+- [Code Review Playbook](../../playbooks/code-review/README.md)
+- [Rails Glossary](../../glossary/rails/README.md)

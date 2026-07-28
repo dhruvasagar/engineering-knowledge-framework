@@ -1,8 +1,3 @@
----
-title: "Engineering Knowledge Framework"
-description: "An open-source framework for building AI-native engineering knowledge systems"
----
-
 # Engineering Knowledge Base
 
 Engineering Knowledge Framework is an open-source framework for building
@@ -188,7 +183,7 @@ Each document type has a clearly defined purpose.
 
 See:
 
-[Document Types](./document-types/)
+[Document Types](./document-types.md)
 
 for more information.
 
@@ -280,18 +275,18 @@ individual components to meet their own needs.
 If you are new to the repository, begin with the governance documents.
 
 1. [CLAUDE.md](./CLAUDE.md)
-2. [Strategy](./strategy/)
-3. [Roadmap](./roadmap/)
-4. [Document Types](./document-types/)
-5. [Style Guide](./style-guide/)
-6. [Contributing](./contributing/)
+2. [Strategy](./strategy.md)
+3. [Roadmap](./roadmap.md)
+4. [Document Types](./document-types.md)
+5. [Style Guide](./style-guide.md)
+6. [Contributing](./contributing.md)
 
 These documents explain the philosophy, organization and contribution
 model of the framework.
 
 # Navigating the Repository
 
-Once you understand the philosophy, use the [Table of Contents](./TOC/)
+Once you understand the philosophy, use the [Table of Contents](./TOC.md)
 to explore the repository by capability or by topic.
 
 The TOC provides two complementary views:
@@ -316,7 +311,7 @@ The current priorities are:
 
 Progress is tracked in:
 
-[Roadmap](./roadmap/)
+[Roadmap](./roadmap.md)
 
 # Long-term Goals
 
@@ -345,7 +340,7 @@ Before contributing:
 
 See:
 
-[Contributing](./contributing/)
+[Contributing](./contributing.md)
 
 for the complete contribution workflow.
 
@@ -359,9 +354,9 @@ repository's license.
 # Related Documents
 
 - [CLAUDE.md](./CLAUDE.md)
-- [Strategy](./strategy/)
-- [Roadmap](./roadmap/)
-- [Document Types](./document-types/)
-- [Style Guide](./style-guide/)
-- [Contributing](./contributing/)
-- [Glossary](./glossary/README/)
+- [Strategy](./strategy.md)
+- [Roadmap](./roadmap.md)
+- [Document Types](./document-types.md)
+- [Style Guide](./style-guide.md)
+- [Contributing](./contributing.md)
+- [Glossary](./glossary/README.md)

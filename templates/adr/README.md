@@ -1,9 +1,3 @@
----
-title: "ADR Template"
-description: "Template for Architecture Decision Records"
----
-
-
 # ADR-NNNN: Title
 
 :PROPERTIES:

@@ -1,9 +1,3 @@
----
-title: "Contributing"
-description: "Guidelines for contributing to the Engineering Knowledge Framework"
----
-
-
 # Purpose
 
 The Engineering Knowledge Framework is a community-driven project for
@@ -110,12 +104,12 @@ Examples include:
 
 Before creating new content:
 
-1. Read the repository [README](../README/).
+1. Read the repository [README](../README.md).
 2. Read [CLAUDE.md](./CLAUDE.md).
-3. Understand the [Strategy](./strategy/).
-4. Review the [Architecture](./architecture/).
-5. Read the [Style Guide](./style-guide/).
-6. Understand the [Document Types](./document-types/).
+3. Understand the [Strategy](./strategy.md).
+4. Review the [Architecture](./architecture.md).
+5. Read the [Style Guide](./style-guide.md).
+6. Understand the [Document Types](./document-types.md).
 
 Contributors should understand the framework before extending it.
 
@@ -251,7 +245,7 @@ taxonomy.
 # Writing Guidelines
 
 All contributions must follow the
-[Style Guide](./style-guide/).
+[Style Guide](./style-guide.md).
 
 In particular:
 
@@ -369,7 +363,7 @@ engineering knowledge available to the community.
 
 # Keeping the Index in Sync
 
-[TOC.md](./TOC/) is the central navigation index for the repository.
+[TOC.md](./TOC.md) is the central navigation index for the repository.
 
 When adding a new document:
 
@@ -390,11 +384,11 @@ When moving or renaming a document:
 
 # Related Documents
 
-- [Table of Contents](./TOC/)
-- [Repository Overview](../README/)
+- [Table of Contents](./TOC.md)
+- [Repository Overview](../README.md)
 - [CLAUDE.md](./CLAUDE.md)
-- [Strategy](./strategy/)
-- [Architecture](./architecture/)
-- [Document Types](./document-types/)
-- [Style Guide](./style-guide/)
-- [Roadmap](./roadmap/)
+- [Strategy](./strategy.md)
+- [Architecture](./architecture.md)
+- [Document Types](./document-types.md)
+- [Style Guide](./style-guide.md)
+- [Roadmap](./roadmap.md)

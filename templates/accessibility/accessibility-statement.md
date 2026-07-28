@@ -1,9 +1,3 @@
----
-title: "Accessibility Statement Template"
-description: "Public-facing accessibility statement"
----
-
-
 # Accessibility Statement: [Product/Organisation Name]
 
 # Status
@@ -66,6 +60,6 @@ Our accessibility testing includes:
 
 # Related Documents
 
-- [Accessibility Engineering Handbook](../../handbooks/accessibility/README/)
-- [WCAG Audit Checklist](../../checklists/accessibility/wcag-audit/)
-- [Accessibility Report Template](../../templates/accessibility/accessibility-report/)
+- [Accessibility Engineering Handbook](../../handbooks/accessibility/README.md)
+- [WCAG Audit Checklist](../../checklists/accessibility/wcag-audit.md)
+- [Accessibility Report Template](../../templates/accessibility/accessibility-report.md)

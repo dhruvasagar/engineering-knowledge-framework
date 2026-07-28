@@ -1,9 +1,3 @@
----
-title: "Release Quality Gate Playbook"
-description: "Quality verification before release"
----
-
-
 # Objective
 
 Ensure every release meets defined quality standards before reaching
@@ -20,9 +14,9 @@ protect users and infrastructure.
 
 # Prerequisites
 
-- CI*CD pipeline configured with quality gates (see [Project Standards](../../guides/rails/project-standards/)).
-- Quality metrics baselines established (see [Quality Metrics](../../guides/quality/quality-metrics/)).
-- [Release Readiness Checklist](../../checklists/quality/release-readiness/) available.
+- CI*CD pipeline configured with quality gates (see [Project Standards](../../guides/rails/project-standards.md)).
+- Quality metrics baselines established (see [Quality Metrics](../../guides/quality/quality-metrics.md)).
+- [Release Readiness Checklist](../../checklists/quality/release-readiness.md) available.
 
 # Workflow
 
@@ -110,7 +104,7 @@ Based on gate results, decide:
 
 - Blocking gate failure: fix before release or obtain exception approval.
 - Performance regression > 5%: investigate before release.
-- Security vulnerability discovered: follow [Dependency Security](../../guides/security/dependency-security/) response.
+- Security vulnerability discovered: follow [Dependency Security](../../guides/security/dependency-security.md) response.
 
 # Expected Outputs
 
@@ -121,7 +115,7 @@ Based on gate results, decide:
 
 # Related Documents
 
-- [Quality Metrics](../../guides/quality/quality-metrics/)
-- [Rails Project Standards](../../guides/rails/project-standards/)
-- [Rails Deployment Checklist](../../checklists/rails/deployment/)
-- [Rails Deployment Playbook](../../playbooks/rails/deployment/)
+- [Quality Metrics](../../guides/quality/quality-metrics.md)
+- [Rails Project Standards](../../guides/rails/project-standards.md)
+- [Rails Deployment Checklist](../../checklists/rails/deployment.md)
+- [Rails Deployment Playbook](../../playbooks/rails/deployment.md)

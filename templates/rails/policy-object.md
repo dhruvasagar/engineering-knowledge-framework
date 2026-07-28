@@ -1,9 +1,3 @@
----
-title: "Policy Object Template"
-description: "Template for Rails authorization policy objects"
----
-
-
 # Purpose
 
 Policy objects encapsulate authorization logic.
@@ -69,5 +63,5 @@ end
 
 # Related Documents
 
-- [Rails Engineering Handbook](../../handbooks/rails/README/)
-- [Engineering Fundamentals Handbook](../../handbooks/engineering/README/)
+- [Rails Engineering Handbook](../../handbooks/rails/README.md)
+- [Engineering Fundamentals Handbook](../../handbooks/engineering/README.md)

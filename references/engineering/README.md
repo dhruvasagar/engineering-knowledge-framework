@@ -1,9 +1,3 @@
----
-title: "Engineering References"
-description: "Quick-reference material for engineering fundamentals"
----
-
-
 # Purpose
 
 Quick-reference material for engineering fundamentals.
@@ -145,9 +139,9 @@ in-depth explanations, see the referenced guides and handbooks.
 
 # Related Documents
 
-- [Engineering Fundamentals Handbook](../../handbooks/engineering/README/)
-- [Code Organization Guide](../../guides/engineering/code-organization/)
-- [Testing Strategies Guide](../../guides/engineering/testing-strategies/)
-- [Error Handling Guide](../../guides/engineering/error-handling/)
-- [Logging Guide](../../guides/engineering/logging/)
-- [Engineering Glossary](../../glossary/engineering/README/)
+- [Engineering Fundamentals Handbook](../../handbooks/engineering/README.md)
+- [Code Organization Guide](../../guides/engineering/code-organization.md)
+- [Testing Strategies Guide](../../guides/engineering/testing-strategies.md)
+- [Error Handling Guide](../../guides/engineering/error-handling.md)
+- [Logging Guide](../../guides/engineering/logging.md)
+- [Engineering Glossary](../../glossary/engineering/README.md)

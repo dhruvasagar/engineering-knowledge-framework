@@ -1,9 +1,3 @@
----
-title: "Quality Metrics Dashboard Template"
-description: "Template for tracking quality metrics"
----
-
-
 # Quality Dashboard: [Project Name]
 
 # Purpose
@@ -72,6 +66,6 @@ improvement and spot regressions early.
 
 # Related Documents
 
-- [Quality Metrics](../../guides/quality/quality-metrics/)
-- [Quality References](../../references/quality/README/)
-- [Quality Report Template](../../templates/quality/quality-report/)
+- [Quality Metrics](../../guides/quality/quality-metrics.md)
+- [Quality References](../../references/quality/README.md)
+- [Quality Report Template](../../templates/quality/quality-report.md)

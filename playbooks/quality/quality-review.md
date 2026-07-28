@@ -1,9 +1,3 @@
----
-title: "Quality Review Playbook"
-description: "Workflow for conducting quality reviews"
----
-
-
 # Objective
 
 Perform systematic quality reviews of engineering projects to assess
@@ -20,9 +14,9 @@ landscape.
 
 # Prerequisites
 
-- Familiarity with [Quality Metrics](../../guides/quality/quality-metrics/).
+- Familiarity with [Quality Metrics](../../guides/quality/quality-metrics.md).
 - Access to quality tooling (linters, static analysis, coverage reports).
-- Understanding of [quality principles](../../handbooks/quality/README/).
+- Understanding of [quality principles](../../handbooks/quality/README.md).
 
 # Workflow
 
@@ -46,8 +40,8 @@ landscape.
 
 ## Step 3: Assessment
 
-Evaluate against the standards in [Code Review Standards](../../guides/quality/code-review-standards/) and
-[Quality Metrics](../../guides/quality/quality-metrics/):
+Evaluate against the standards in [Code Review Standards](../../guides/quality/code-review-standards.md) and
+[Quality Metrics](../../guides/quality/quality-metrics.md):
 
 - Code quality: complexity trends, test coverage adequacy, duplication.
 - Process quality: review velocity, CI pass rate, deployment frequency.
@@ -56,7 +50,7 @@ Evaluate against the standards in [Code Review Standards](../../guides/quality/c
 
 ## Step 4: Findings and Recommendations
 
-1. Document findings with severity labels (see [Quality References](../../references/quality/README/)).
+1. Document findings with severity labels (see [Quality References](../../references/quality/README.md)).
 2. Prioritise recommendations by impact and effort.
 3. Assign owners and target dates for each action item.
 
@@ -92,7 +86,7 @@ Evaluate against the standards in [Code Review Standards](../../guides/quality/c
 
 # Related Documents
 
-- [Engineering Quality Handbook](../../handbooks/quality/README/)
-- [Quality Metrics](../../guides/quality/quality-metrics/)
-- [Code Review Standards](../../guides/quality/code-review-standards/)
-- [Quality References](../../references/quality/README/)
+- [Engineering Quality Handbook](../../handbooks/quality/README.md)
+- [Quality Metrics](../../guides/quality/quality-metrics.md)
+- [Code Review Standards](../../guides/quality/code-review-standards.md)
+- [Quality References](../../references/quality/README.md)

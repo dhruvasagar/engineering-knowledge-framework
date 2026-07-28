@@ -1,9 +1,3 @@
----
-title: "Technical Debt Triage Checklist"
-description: "Classification and prioritisation of technical debt"
----
-
-
 # Purpose
 
 Quickly classify and prioritise technical debt items for remediation
@@ -80,6 +74,6 @@ reviewing existing debt inventories.
 
 # Related Documents
 
-- [Technical Debt Management](../../guides/quality/technical-debt-management/)
-- [Tech Debt Assessment Checklist](../../checklists/tech-debt-assessment/)
-- [Technical Debt Remediation Playbook](../../playbooks/quality/tech-debt-remediation/)
+- [Technical Debt Management](../../guides/quality/technical-debt-management.md)
+- [Tech Debt Assessment Checklist](../../checklists/tech-debt-assessment.md)
+- [Technical Debt Remediation Playbook](../../playbooks/quality/tech-debt-remediation.md)

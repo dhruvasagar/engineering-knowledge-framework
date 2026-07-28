@@ -1,9 +1,3 @@
----
-title: "ADR Writing Guide"
-description: "How to write effective Architecture Decision Records"
----
-
-
 # Purpose
 
 An Architecture Decision Record (ADR) is a short document that captures
@@ -241,8 +235,8 @@ When asking AI to draft an ADR, provide:
 
 # References
 
-- [ADR Template](../../templates/adr/README/)
-- [ADR-0001: Capability Model for Knowledge Organization](../../adr/0001-capability-model/)
-- [ADR-0003: Document Taxonomy with Single Responsibility](../../adr/0003-document-taxonomy/)
-- [Software Architecture Handbook](../../handbooks/architecture/README/)
-- [Engineering Fundamentals Handbook](../../handbooks/engineering/README/)
+- [ADR Template](../../templates/adr/README.md)
+- [ADR-0001: Capability Model for Knowledge Organization](../../adr/0001-capability-model.md)
+- [ADR-0003: Document Taxonomy with Single Responsibility](../../adr/0003-document-taxonomy.md)
+- [Software Architecture Handbook](../../handbooks/architecture/README.md)
+- [Engineering Fundamentals Handbook](../../handbooks/engineering/README.md)

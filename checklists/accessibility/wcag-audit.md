@@ -1,9 +1,3 @@
----
-title: "WCAG Audit Checklist"
-description: "Comprehensive WCAG compliance audit"
----
-
-
 # Purpose
 
 Complete WCAG 2.2 AA audit checklist. Use this for full accessibility
@@ -107,6 +101,6 @@ audits before major releases or as part of a quality review.
 
 # Related Documents
 
-- [Accessibility Engineering Handbook](../../handbooks/accessibility/README/)
-- [Accessibility Review Playbook](../../playbooks/accessibility-review/README/)
-- [Accessibility References](../../references/accessibility/README/)
+- [Accessibility Engineering Handbook](../../handbooks/accessibility/README.md)
+- [Accessibility Review Playbook](../../playbooks/accessibility-review/README.md)
+- [Accessibility References](../../references/accessibility/README.md)

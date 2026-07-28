@@ -1,9 +1,3 @@
----
-title: "Verification Workflows"
-description: "Systematic verification of AI-generated output"
----
-
-
 # Objective
 
 Systematically verify AI-generated code, architecture and documentation
@@ -20,10 +14,10 @@ assistance safe and reliable.
 
 # Prerequisites
 
-- Familiarity with [AI Evaluation Frameworks](../../guides/ai/evaluation-frameworks/).
+- Familiarity with [AI Evaluation Frameworks](../../guides/ai/evaluation-frameworks.md).
 - Access to standard engineering tooling (compiler, linter, test runner,
   security scanner).
-- Understanding of [Human Review Strategies](../../guides/ai/human-review-strategies/).
+- Understanding of [Human Review Strategies](../../guides/ai/human-review-strategies.md).
 
 # Workflow
 
@@ -59,7 +53,7 @@ Automated verification gates:
 
 ## Step 3: Perform Structured Review
 
-Use the appropriate review strategy from [Human Review Strategies](../../guides/ai/human-review-strategies/).
+Use the appropriate review strategy from [Human Review Strategies](../../guides/ai/human-review-strategies.md).
 
 ```
 For code:
@@ -142,8 +136,8 @@ For each issue found:
 
 # Related Documents
 
-- [AI Evaluation Frameworks](../../guides/ai/evaluation-frameworks/)
-- [Human Review Strategies](../../guides/ai/human-review-strategies/)
-- [Agentic Workflows](../../guides/ai/agentic-workflows/)
-- [AI Usage Checklist](../../checklists/ai-usage/)
-- [AI Safety and Verification](../../guides/ai/ai-safety/)
+- [AI Evaluation Frameworks](../../guides/ai/evaluation-frameworks.md)
+- [Human Review Strategies](../../guides/ai/human-review-strategies.md)
+- [Agentic Workflows](../../guides/ai/agentic-workflows.md)
+- [AI Usage Checklist](../../checklists/ai-usage.md)
+- [AI Safety and Verification](../../guides/ai/ai-safety.md)

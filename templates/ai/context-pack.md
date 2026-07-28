@@ -1,9 +1,3 @@
----
-title: "Context Pack Template"
-description: "Structure for assembling AI context packs"
----
-
-
 # Context Pack Template
 
 Use this structure when assembling context for an AI assistant. A well-
@@ -74,5 +68,5 @@ After receiving AI output, note:
 
 # Related Documents
 
-- [Context Engineering guide](../../guides/ai/context-engineering/)
-- [Prompt Engineering guide](../../guides/ai/prompt-engineering/)
+- [Context Engineering guide](../../guides/ai/context-engineering.md)
+- [Prompt Engineering guide](../../guides/ai/prompt-engineering.md)

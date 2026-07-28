@@ -1,9 +1,3 @@
----
-title: "Engineering Learning Paths"
-description: "Structured learning progression for engineering fundamentals"
----
-
-
 # Purpose
 
 These learning paths provide a structured progression through
@@ -33,31 +27,31 @@ them in everyday work.
    - Core concept and why it matters.
    - Identifying mixed responsibilities in existing code.
    - Practice: Refactor a monolithic function into focused modules.
-   - Reference: [Engineering Fundamentals Handbook](../../handbooks/engineering/README/)
+   - Reference: [Engineering Fundamentals Handbook](../../handbooks/engineering/README.md)
 
 2. ***Code Organization***
    - Feature-based vs layer-based organization.
    - Module boundaries and responsibilities.
    - Practice: Restructure a small project by feature.
-   - Reference: [Code Organization Guide](../../guides/engineering/code-organization/)
+   - Reference: [Code Organization Guide](../../guides/engineering/code-organization.md)
 
 3. ***Basic Testing***
    - Test pyramid and where to focus.
    - Writing unit tests for isolated logic.
    - Practice: Add tests to an untested module.
-   - Reference: [Testing Strategies Guide](../../guides/engineering/testing-strategies/)
+   - Reference: [Testing Strategies Guide](../../guides/engineering/testing-strategies.md)
 
 4. ***Error Handling***
    - Distinguishing recoverable and unrecoverable errors.
    - Writing meaningful error messages.
    - Practice: Audit and improve error handling in a service.
-   - Reference: [Error Handling Guide](../../guides/engineering/error-handling/)
+   - Reference: [Error Handling Guide](../../guides/engineering/error-handling.md)
 
 5. ***Code Review Fundamentals***
    - Reviewing for correctness, design and maintainability.
    - Writing constructive review feedback.
    - Practice: Review a pull request using the code review checklist.
-   - Reference: [Code Review Playbook](../../playbooks/code-review/README/)
+   - Reference: [Code Review Playbook](../../playbooks/code-review/README.md)
 
 ## Suggested Projects
 
@@ -89,34 +83,34 @@ architecture discussions.
    - Improving cohesion through module design.
    - Practice: Analyse coupling in an existing system and propose
      improvements.
-   - Reference: [Engineering Glossary](../../glossary/engineering/README/)
+   - Reference: [Engineering Glossary](../../glossary/engineering/README.md)
 
 2. ***Dependency Management***
    - Dependency inversion principle.
    - Dependency injection patterns.
    - Practice: Refactor a tightly coupled module to use dependency
      injection.
-   - Reference: [Engineering Fundamentals Handbook](../../handbooks/engineering/README/)
+   - Reference: [Engineering Fundamentals Handbook](../../handbooks/engineering/README.md)
 
 3. ***Technical Debt Management***
    - Strategic vs accidental debt.
    - Assessment and prioritization.
    - Practice: Conduct a technical debt assessment on a code area.
-   - Reference: [Tech Debt Assessment Checklist](../../checklists/tech-debt-assessment/)
+   - Reference: [Tech Debt Assessment Checklist](../../checklists/tech-debt-assessment.md)
 
 4. ***Logging and Observability***
    - Structured logging standards.
    - Log levels and context.
    - Practice: Add structured logging to a service and verify in
      development.
-   - Reference: [Logging Guide](../../guides/engineering/logging/)
+   - Reference: [Logging Guide](../../guides/engineering/logging.md)
 
 5. ***Architecture Awareness***
    - Understanding architectural patterns (layered, hexagonal).
    - How engineering decisions affect architecture.
    - Practice: Document the architecture of an existing system using C4
      Level 1-2.
-   - Reference: [Software Architecture Handbook](../../handbooks/architecture/README/)
+   - Reference: [Software Architecture Handbook](../../handbooks/architecture/README.md)
 
 ## Suggested Projects
 
@@ -148,19 +142,19 @@ mentor other engineers.
    - Architectural decision documentation.
    - Practice: Evaluate two architectural approaches and document the
      trade-offs in an ADR.
-   - Reference: [Architectural Patterns Guide](../../guides/architecture/architectural-patterns/)
+   - Reference: [Architectural Patterns Guide](../../guides/architecture/architectural-patterns.md)
 
 2. ***Engineering Strategy***
    - Defining engineering standards for a team or organization.
    - Balancing velocity, quality and innovation.
    - Practice: Draft an engineering standard for a capability.
-   - Reference: [Engineering Fundamentals Handbook](../../handbooks/engineering/README/)
+   - Reference: [Engineering Fundamentals Handbook](../../handbooks/engineering/README.md)
 
 3. ***Mentoring and Review***
    - Reviewing for engineering growth, not just code correctness.
    - Providing feedback that builds judgement.
    - Practice: Mentor a junior engineer through a code review cycle.
-   - Reference: [Code Review Playbook](../../playbooks/code-review/README/)
+   - Reference: [Code Review Playbook](../../playbooks/code-review/README.md)
 
 4. ***Cross-Capability Integration***
    - How engineering principles intersect with architecture, security
@@ -190,10 +184,10 @@ engineering knowledge framework.
 
 # Related Documents
 
-- [Engineering Fundamentals Handbook](../../handbooks/engineering/README/)
-- [Software Architecture Handbook](../../handbooks/architecture/README/)
-- [Code Review Playbook](../../playbooks/code-review/README/)
-- [Code Organization Guide](../../guides/engineering/code-organization/)
-- [Testing Strategies Guide](../../guides/engineering/testing-strategies/)
-- [Error Handling Guide](../../guides/engineering/error-handling/)
-- [ADR Writing Guide](../../guides/architecture/adr-writing-guide/)
+- [Engineering Fundamentals Handbook](../../handbooks/engineering/README.md)
+- [Software Architecture Handbook](../../handbooks/architecture/README.md)
+- [Code Review Playbook](../../playbooks/code-review/README.md)
+- [Code Organization Guide](../../guides/engineering/code-organization.md)
+- [Testing Strategies Guide](../../guides/engineering/testing-strategies.md)
+- [Error Handling Guide](../../guides/engineering/error-handling.md)
+- [ADR Writing Guide](../../guides/architecture/adr-writing-guide.md)

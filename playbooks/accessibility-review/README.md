@@ -1,9 +1,3 @@
----
-title: "Accessibility Review Playbook"
-description: "Workflow for reviewing digital accessibility"
----
-
-
 # Objective
 
 Perform systematic accessibility reviews to identify and remediate
@@ -18,10 +12,10 @@ testing and assistive technology verification.
 
 # Prerequisites
 
-- Familiarity with [Accessibility Engineering principles](../../handbooks/accessibility/README/).
+- Familiarity with [Accessibility Engineering principles](../../handbooks/accessibility/README.md).
 - Accessibility testing tools installed (axe DevTools, colour contrast
   checker, screen reader).
-- [Accessibility checklists](../../checklists/accessibility/) available.
+- [Accessibility checklists](../../checklists/accessibility/README.md) available.
 
 # Workflow
 
@@ -57,7 +51,7 @@ Run automated accessibility checks:
 
 ## Step 5: Document Findings
 
-1. Record all findings with severity labels (see [Accessibility References](../../references/accessibility/README/)).
+1. Record all findings with severity labels (see [Accessibility References](../../references/accessibility/README.md)).
 2. Include the WCAG criterion violated for each finding.
 3. Provide reproduction steps and remediation guidance.
 4. Prioritise findings by impact.
@@ -100,7 +94,7 @@ Run automated accessibility checks:
 
 # Related Documents
 
-- [Accessibility Engineering Handbook](../../handbooks/accessibility/README/)
-- [Accessibility Checklists](../../checklists/accessibility/)
-- [Accessibility References](../../references/accessibility/README/)
-- [Accessibility Guides](../../guides/accessibility/)
+- [Accessibility Engineering Handbook](../../handbooks/accessibility/README.md)
+- [Accessibility Checklists](../../checklists/accessibility/README.md)
+- [Accessibility References](../../references/accessibility/README.md)
+- [Accessibility Guides](../../guides/accessibility/README.md)

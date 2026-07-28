@@ -1,9 +1,3 @@
----
-title: "Accessibility References"
-description: "Quick-reference material for accessibility engineering"
----
-
-
 # Purpose
 
 Quick-reference material for accessibility engineering. Use this for
@@ -128,6 +122,6 @@ rapid lookup during development and review.
 
 # Related Documents
 
-- [Accessibility Engineering Handbook](../../handbooks/accessibility/README/)
-- [Accessibility Glossary](../../glossary/accessibility/README/)
-- [Accessibility Guides](../../guides/accessibility/)
+- [Accessibility Engineering Handbook](../../handbooks/accessibility/README.md)
+- [Accessibility Glossary](../../glossary/accessibility/README.md)
+- [Accessibility Guides](../../guides/accessibility/README.md)

@@ -1,9 +1,3 @@
----
-title: "Rails Deployment Playbook"
-description: "Repeatable workflow for safe Rails deployments with database migrations"
----
-
-
 # Objective
 
 Deploy Rails application changes to production safely, with particular
@@ -175,7 +169,7 @@ end
 
 # Related Documents
 
-- [Rails Engineering Handbook](../../handbooks/rails/README/)
-- [ActiveRecord Patterns Guide](../../guides/rails/active-record/)
-- [Rails Upgrade Playbook](../../playbooks/rails/upgrade/)
-- [Rails Deployment Checklist](../../checklists/rails/deployment/)
+- [Rails Engineering Handbook](../../handbooks/rails/README.md)
+- [ActiveRecord Patterns Guide](../../guides/rails/active-record.md)
+- [Rails Upgrade Playbook](../../playbooks/rails/upgrade.md)
+- [Rails Deployment Checklist](../../checklists/rails/deployment.md)

@@ -1,9 +1,3 @@
----
-title: "ADR-0003: Document Taxonomy with Single Responsibility"
-description: "Decision to use nine document types with single responsibility"
----
-
-
 :PROPERTIES:
 :STATUS:   accepted
 :DATE:     2026-07-27
@@ -106,5 +100,5 @@ gap emerges.
 
 # References
 
-- [Document Types](../document-types/)
-- [Engineering Fundamentals Handbook](../handbooks/engineering/README/)
+- [Document Types](../document-types.md)
+- [Engineering Fundamentals Handbook](../handbooks/engineering/README.md)

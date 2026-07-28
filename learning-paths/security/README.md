@@ -1,9 +1,3 @@
----
-title: "Security Learning Paths"
-description: "Structured learning progression for security engineering"
----
-
-
 # Purpose
 
 These learning paths provide a structured progression through security
@@ -25,26 +19,26 @@ participate in security reviews.
 
 1. ***Security Principles***
    - Defense in depth, least privilege, secure by default.
-   - Reference: [Security Engineering Handbook](../../handbooks/security/README/)
+   - Reference: [Security Engineering Handbook](../../handbooks/security/README.md)
 
 2. ***Common Web Vulnerabilities***
    - OWASP Top 10 overview.
    - SQL injection, XSS, CSRF, IDOR.
-   - Reference: [Web Vulnerabilities Guide](../../guides/security/web-vulnerabilities/)
+   - Reference: [Web Vulnerabilities Guide](../../guides/security/web-vulnerabilities.md)
 
 3. ***Secure Coding Practices***
    - Input validation, authentication, output encoding.
-   - Reference: [Secure Coding Guide](../../guides/security/secure-coding/)
+   - Reference: [Secure Coding Guide](../../guides/security/secure-coding.md)
 
 4. ***Using Security Tools***
    - Running SAST scanners (Brakeman, RuboCop).
    - Running dependency scanners (bundler-audit).
-   - Reference: [Dependency Security Guide](../../guides/security/dependency-security/)
+   - Reference: [Dependency Security Guide](../../guides/security/dependency-security.md)
 
 5. ***Participating in Security Reviews***
    - What to look for as a reviewer.
    - Basic threat identification.
-   - Reference: [Security Review Playbook](../../playbooks/security-review/README/)
+   - Reference: [Security Review Playbook](../../playbooks/security-review/README.md)
 
 ## Assessment
 
@@ -67,27 +61,27 @@ security controls.
 1. ***Threat Modeling***
    - STRIDE framework.
    - Identifying trust boundaries.
-   - Reference: [Security Engineering Handbook](../../handbooks/security/README/)
+   - Reference: [Security Engineering Handbook](../../handbooks/security/README.md)
 
 2. ***Authentication and Authorization***
    - Implementing secure authentication.
    - Role-based and attribute-based access control.
-   - Reference: [Authentication and Authorization Guide](../../guides/rails/authentication-authorization/)
+   - Reference: [Authentication and Authorization Guide](../../guides/rails/authentication-authorization.md)
 
 3. ***Security Testing***
    - SAST, DAST, and manual testing.
    - Writing security test cases.
-   - Reference: [Security Review Playbook](../../playbooks/security-review/README/)
+   - Reference: [Security Review Playbook](../../playbooks/security-review/README.md)
 
 4. ***Dependency Management***
    - Vulnerability response workflow.
    - Dependency evaluation and selection.
-   - Reference: [Dependency Security Guide](../../guides/security/dependency-security/)
+   - Reference: [Dependency Security Guide](../../guides/security/dependency-security.md)
 
 5. ***Security Configuration***
    - Security headers (CSP, HSTS).
    - Secure deployment configuration.
-   - Reference: [Security Engineering Handbook](../../handbooks/security/README/)
+   - Reference: [Security Engineering Handbook](../../handbooks/security/README.md)
 
 ## Assessment
 
@@ -138,9 +132,9 @@ security standards for a team. Mentoring others in security practices.
 
 # Related Documents
 
-- [Security Engineering Handbook](../../handbooks/security/README/)
-- [Security Glossary](../../glossary/security/README/)
-- [Security Review Playbook](../../playbooks/security-review/README/)
-- [Secure Coding Guide](../../guides/security/secure-coding/)
-- [Web Vulnerabilities Guide](../../guides/security/web-vulnerabilities/)
-- [Dependency Security Guide](../../guides/security/dependency-security/)
+- [Security Engineering Handbook](../../handbooks/security/README.md)
+- [Security Glossary](../../glossary/security/README.md)
+- [Security Review Playbook](../../playbooks/security-review/README.md)
+- [Secure Coding Guide](../../guides/security/secure-coding.md)
+- [Web Vulnerabilities Guide](../../guides/security/web-vulnerabilities.md)
+- [Dependency Security Guide](../../guides/security/dependency-security.md)

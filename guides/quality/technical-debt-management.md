@@ -1,9 +1,3 @@
----
-title: "Technical Debt Management"
-description: "Systematic approach to managing technical debt"
----
-
-
 # Purpose
 
 Technical debt is the gap between the current state of a codebase and
@@ -163,7 +157,7 @@ approval.
 
 # Related Documents
 
-- [Engineering Quality Handbook](../../handbooks/quality/README/)
-- [Tech Debt Assessment Checklist](../../checklists/tech-debt-assessment/)
-- [Engineering Fundamentals Handbook](../../handbooks/engineering/README/)
-- [Code Review Playbook](../../playbooks/code-review/README/)
+- [Engineering Quality Handbook](../../handbooks/quality/README.md)
+- [Tech Debt Assessment Checklist](../../checklists/tech-debt-assessment.md)
+- [Engineering Fundamentals Handbook](../../handbooks/engineering/README.md)
+- [Code Review Playbook](../../playbooks/code-review/README.md)

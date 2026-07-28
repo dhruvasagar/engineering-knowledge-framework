@@ -1,9 +1,3 @@
----
-title: "Rails References"
-description: "Quick-reference material for Rails development"
----
-
-
 # Purpose
 
 Quick-reference material for Rails development.
@@ -142,8 +136,8 @@ in-depth explanations, see the referenced guides and handbooks.
 
 # Related Documents
 
-- [Rails Engineering Handbook](../../handbooks/rails/README/)
-- [Rails Glossary](../../glossary/rails/README/)
-- [Service Objects Guide](../../guides/rails/service-objects/)
-- [Testing Rails Applications Guide](../../guides/rails/testing/)
-- [Architecture References](../../references/architecture/README/)
+- [Rails Engineering Handbook](../../handbooks/rails/README.md)
+- [Rails Glossary](../../glossary/rails/README.md)
+- [Service Objects Guide](../../guides/rails/service-objects.md)
+- [Testing Rails Applications Guide](../../guides/rails/testing.md)
+- [Architecture References](../../references/architecture/README.md)

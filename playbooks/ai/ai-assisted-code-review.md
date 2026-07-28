@@ -1,9 +1,3 @@
----
-title: "AI-Assisted Code Review Playbook"
-description: "Workflow for reviewing code with AI assistance"
----
-
-
 # Objective
 
 Perform thorough code reviews by combining AI analysis with human
@@ -19,8 +13,8 @@ potential issues, while humans evaluate design, trade-offs and context.
 # Prerequisites
 
 - Access to an AI coding assistant configured with the project context.
-- Familiarity with the [Context Engineering guide](../../guides/ai/context-engineering/).
-- Understanding of the [standard code review process](../../playbooks/code-review/README/).
+- Familiarity with the [Context Engineering guide](../../guides/ai/context-engineering.md).
+- Understanding of the [standard code review process](../../playbooks/code-review/README.md).
 
 # Workflow
 
@@ -30,7 +24,7 @@ potential issues, while humans evaluate design, trade-offs and context.
    - The diff or PR description.
    - Related architecture documents or ADRs.
    - Relevant style guides or standards.
-2. Build an AI context pack following the [Context Engineering guide](../../guides/ai/context-engineering/).
+2. Build an AI context pack following the [Context Engineering guide](../../guides/ai/context-engineering.md).
 
 ## Step 2: AI Pre-Review
 
@@ -42,7 +36,7 @@ Ask the AI to perform an initial review covering:
 - Testing: Is there appropriate test coverage?
 - Performance: Are there obvious performance concerns?
 
-Use the prompt patterns from [AI Workflows for Engineering](../../prompts/engineering-ai-workflows/).
+Use the prompt patterns from [AI Workflows for Engineering](../../prompts/engineering-ai-workflows.md).
 
 ## Step 3: Human Review
 
@@ -59,7 +53,7 @@ Use the prompt patterns from [AI Workflows for Engineering](../../prompts/engine
 1. Merge your findings with AI findings.
 2. Discard false positives from the AI review.
 3. Add context and rationale the AI may have missed.
-4. Assign severity levels following [Code Review Standards](../../guides/quality/code-review-standards/).
+4. Assign severity levels following [Code Review Standards](../../guides/quality/code-review-standards.md).
 
 ## Step 5: Provide Feedback
 
@@ -92,7 +86,7 @@ Use the prompt patterns from [AI Workflows for Engineering](../../prompts/engine
 
 # Related Documents
 
-- [Code Review Playbook](../../playbooks/code-review/README/)
-- [Context Engineering](../../guides/ai/context-engineering/)
-- [AI Workflows for Engineering](../../prompts/engineering-ai-workflows/)
-- [AI Usage Checklist](../../checklists/ai-usage/)
+- [Code Review Playbook](../../playbooks/code-review/README.md)
+- [Context Engineering](../../guides/ai/context-engineering.md)
+- [AI Workflows for Engineering](../../prompts/engineering-ai-workflows.md)
+- [AI Usage Checklist](../../checklists/ai-usage.md)

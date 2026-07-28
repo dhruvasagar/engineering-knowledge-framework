@@ -1,9 +1,3 @@
----
-title: "Architecture Learning Paths"
-description: "Structured learning progression for software architecture"
----
-
-
 # Purpose
 
 These learning paths provide a structured progression through software
@@ -31,31 +25,31 @@ documentation, and participate in architecture reviews.
 1. ***What is Architecture?***
    - Architecture as significant decisions.
    - Quality attributes and trade-offs.
-   - Reference: [Software Architecture Handbook](../../handbooks/architecture/README/)
+   - Reference: [Software Architecture Handbook](../../handbooks/architecture/README.md)
 
 2. ***Reading C4 Diagrams***
    - System context and container diagrams.
    - Understanding architectural boundaries.
    - Exercise: Read and explain a C4 diagram for an existing system.
-   - Reference: [System Modeling Guide](../../guides/architecture/system-modeling/)
+   - Reference: [System Modeling Guide](../../guides/architecture/system-modeling.md)
 
 3. ***Architecture Decision Records***
    - Why ADRs matter.
    - Reading and understanding existing ADRs.
    - Exercise: Read three ADRs and summarize the decisions.
-   - Reference: [ADR Writing Guide](../../guides/architecture/adr-writing-guide/)
+   - Reference: [ADR Writing Guide](../../guides/architecture/adr-writing-guide.md)
 
 4. ***Layered Architecture***
    - Structure and responsibilities of each layer.
    - When layered architecture works and when it does not.
    - Exercise: Identify the layers in an existing application.
-   - Reference: [Architectural Patterns Guide](../../guides/architecture/architectural-patterns/)
+   - Reference: [Architectural Patterns Guide](../../guides/architecture/architectural-patterns.md)
 
 5. ***Participating in Architecture Reviews***
    - What to look for as a reviewer.
    - Asking good questions about trade-offs.
    - Exercise: Attend an architecture review and provide feedback.
-   - Reference: [Architecture Review Playbook](../../playbooks/architecture-review/README/)
+   - Reference: [Architecture Review Playbook](../../playbooks/architecture-review/README.md)
 
 ## Suggested Projects
 
@@ -89,34 +83,34 @@ and lead architecture reviews for team-level changes.
    - Pattern trade-offs and selection criteria.
    - Exercise: Evaluate which architectural pattern suits a given
      problem context.
-   - Reference: [Architectural Patterns Guide](../../guides/architecture/architectural-patterns/)
+   - Reference: [Architectural Patterns Guide](../../guides/architecture/architectural-patterns.md)
 
 2. ***Writing Effective ADRs***
    - Structuring context, decision and consequences.
    - Documenting alternatives and trade-offs.
    - Exercise: Write an ADR for a proposed architecture change and
      seek review.
-   - Reference: [ADR Writing Guide](../../guides/architecture/adr-writing-guide/)
+   - Reference: [ADR Writing Guide](../../guides/architecture/adr-writing-guide.md)
 
 3. ***API Design***
    - RESTful API conventions.
    - Versioning and evolvability.
    - Exercise: Design an API for a new service and review it with a
      peer.
-   - Reference: [API Design Guide](../../guides/architecture/api-design/)
+   - Reference: [API Design Guide](../../guides/architecture/api-design.md)
 
 4. ***Quality Attribute Trade-offs***
    - Performance vs evolvability.
    - Consistency vs availability.
    - Exercise: Create a trade-off matrix for a proposed architecture
      change.
-   - Reference: [Software Architecture Handbook](../../handbooks/architecture/README/)
+   - Reference: [Software Architecture Handbook](../../handbooks/architecture/README.md)
 
 5. ***Leading Architecture Reviews***
    - Setting scope and assembling the review team.
    - Facilitating productive discussions.
    - Exercise: Lead an architecture review for a team-level decision.
-   - Reference: [Architecture Review Playbook](../../playbooks/architecture-review/README/)
+   - Reference: [Architecture Review Playbook](../../playbooks/architecture-review/README.md)
 
 ## Suggested Projects
 
@@ -148,7 +142,7 @@ standards, and mentor other architects.
    - Designing bounded contexts and aggregates.
    - Event modeling workshops.
    - Exercise: Facilitate an event modeling session for a new domain.
-   - Reference: [System Modeling Guide](../../guides/architecture/system-modeling/)
+   - Reference: [System Modeling Guide](../../guides/architecture/system-modeling.md)
 
 2. ***Architectural Strategy***
    - Defining architectural principles and standards for an
@@ -156,7 +150,7 @@ standards, and mentor other architects.
    - Balancing consistency with team autonomy.
    - Exercise: Draft an architectural standard for a cross-cutting
      concern.
-   - Reference: [Software Architecture Handbook](../../handbooks/architecture/README/)
+   - Reference: [Software Architecture Handbook](../../handbooks/architecture/README.md)
 
 3. ***Cross-Capability Architecture***
    - How architecture intersects with security, testing and operations.
@@ -193,10 +187,10 @@ standards to the framework.
 
 # Related Documents
 
-- [Software Architecture Handbook](../../handbooks/architecture/README/)
-- [Engineering Fundamentals Handbook](../../handbooks/engineering/README/)
-- [ADR Writing Guide](../../guides/architecture/adr-writing-guide/)
-- [Architectural Patterns Guide](../../guides/architecture/architectural-patterns/)
-- [API Design Guide](../../guides/architecture/api-design/)
-- [System Modeling Guide](../../guides/architecture/system-modeling/)
-- [Architecture Review Playbook](../../playbooks/architecture-review/README/)
+- [Software Architecture Handbook](../../handbooks/architecture/README.md)
+- [Engineering Fundamentals Handbook](../../handbooks/engineering/README.md)
+- [ADR Writing Guide](../../guides/architecture/adr-writing-guide.md)
+- [Architectural Patterns Guide](../../guides/architecture/architectural-patterns.md)
+- [API Design Guide](../../guides/architecture/api-design.md)
+- [System Modeling Guide](../../guides/architecture/system-modeling.md)
+- [Architecture Review Playbook](../../playbooks/architecture-review/README.md)

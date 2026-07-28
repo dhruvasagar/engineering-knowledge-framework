@@ -1,9 +1,3 @@
----
-title: "PR Accessibility Checklist"
-description: "Quick accessibility checks for every pull request"
----
-
-
 # Purpose
 
 Quick accessibility verification for every pull request. Completing these
@@ -42,6 +36,6 @@ checks before requesting review prevents accessibility regressions.
 
 # Related Documents
 
-- [Accessibility Engineering Handbook](../../handbooks/accessibility/README/)
-- [Semantic HTML](../../guides/accessibility/semantic-html/)
-- [Keyboard Accessibility](../../guides/accessibility/keyboard-accessibility/)
+- [Accessibility Engineering Handbook](../../handbooks/accessibility/README.md)
+- [Semantic HTML](../../guides/accessibility/semantic-html.md)
+- [Keyboard Accessibility](../../guides/accessibility/keyboard-accessibility.md)

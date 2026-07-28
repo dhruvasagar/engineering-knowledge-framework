@@ -1,9 +1,3 @@
----
-title: "ADR-0006: Per-Capability Glossaries"
-description: "Decision to organize glossaries by capability with a shared root glossary"
----
-
-
 :PROPERTIES:
 :STATUS:   accepted
 :DATE:     2026-07-27
@@ -99,8 +93,8 @@ knowledge framework.
 
 # References
 
-- [Glossary Overview](../glossary/README/)
-- [Engineering Glossary](../glossary/engineering/README/)
-- [Architecture Glossary](../glossary/architecture/README/)
-- [Document Types](../document-types/)
-- [ADR-0001: Capability Model for Knowledge Organization](../adr/0001-capability-model/)
+- [Glossary Overview](../glossary/README.md)
+- [Engineering Glossary](../glossary/engineering/README.md)
+- [Architecture Glossary](../glossary/architecture/README.md)
+- [Document Types](../document-types.md)
+- [ADR-0001: Capability Model for Knowledge Organization](../adr/0001-capability-model.md)

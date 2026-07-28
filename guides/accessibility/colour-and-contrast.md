@@ -1,9 +1,3 @@
----
-title: "Colour and Contrast"
-description: "Meeting colour contrast requirements"
----
-
-
 # Purpose
 
 Sufficient colour contrast is essential for readability. Low contrast
@@ -89,5 +83,5 @@ means:
 
 # Related Documents
 
-- [Accessibility Glossary](../../glossary/accessibility/README/)
-- [Accessibility References](../../references/accessibility/README/)
+- [Accessibility Glossary](../../glossary/accessibility/README.md)
+- [Accessibility References](../../references/accessibility/README.md)

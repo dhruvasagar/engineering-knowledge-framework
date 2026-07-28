@@ -1,9 +1,3 @@
----
-title: "Engineering Quality Checklists"
-description: "Verification checklists for engineering quality activities"
----
-
-
 # Purpose
 
 This directory contains checklists for quality-related engineering
@@ -15,14 +9,14 @@ at key points in the development lifecycle.
 | Checklist | Description |
 | --- | --- |
 +--------------------------------------------------------+------------------------------------------------+
-| [Quality Gate Checklist](./quality-gate/) | Verification before accepting changes. |
+| [Quality Gate Checklist](./quality-gate.md) | Verification before accepting changes. |
 | --- | --- |
-| [Release Readiness Checklist](./release-readiness/) | Verification before production release. |
-| [Technical Debt Triage](./tech-debt-triage/) | Classification and prioritisation of debt. |
+| [Release Readiness Checklist](./release-readiness.md) | Verification before production release. |
+| [Technical Debt Triage](./tech-debt-triage.md) | Classification and prioritisation of debt. |
 
 # Related Documents
 
-- [Engineering Quality Handbook](../../handbooks/quality/README/)
-- [Quality Metrics](../../guides/quality/quality-metrics/)
-- [Code Review Standards](../../guides/quality/code-review-standards/)
-- [Quality Review Playbook](../../playbooks/quality/quality-review/)
+- [Engineering Quality Handbook](../../handbooks/quality/README.md)
+- [Quality Metrics](../../guides/quality/quality-metrics.md)
+- [Code Review Standards](../../guides/quality/code-review-standards.md)
+- [Quality Review Playbook](../../playbooks/quality/quality-review.md)

@@ -1,9 +1,3 @@
----
-title: "ARIA Patterns"
-description: "Using ARIA correctly for custom widgets"
----
-
-
 # Purpose
 
 ARIA (Accessible Rich Internet Applications) provides attributes that
@@ -120,6 +114,6 @@ announced immediately. Do not use for persistent page content.
 
 # Related Documents
 
-- [Semantic HTML](./semantic-html/)
-- [Keyboard Accessibility](./keyboard-accessibility/)
-- [Accessibility References](../../references/accessibility/README/)
+- [Semantic HTML](./semantic-html.md)
+- [Keyboard Accessibility](./keyboard-accessibility.md)
+- [Accessibility References](../../references/accessibility/README.md)

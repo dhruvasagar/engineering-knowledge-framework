@@ -1,9 +1,3 @@
----
-title: "Document Types"
-description: "Canonical document taxonomy for the Engineering Knowledge Framework"
----
-
-
 # Purpose
 
 The Engineering Knowledge Framework is built from a small set of
@@ -440,10 +434,10 @@ Document proliferation should be avoided.
 
 # Related Documents
 
-- [Architecture](./architecture/)
-- [Strategy](./strategy/)
-- [Roadmap](./roadmap/)
-- [Style Guide](./style-guide/)
-- [Contributing](./contributing/)
-- [Repository Overview](../README/)
-- [Glossary](./glossary/README/)
+- [Architecture](./architecture.md)
+- [Strategy](./strategy.md)
+- [Roadmap](./roadmap.md)
+- [Style Guide](./style-guide.md)
+- [Contributing](./contributing.md)
+- [Repository Overview](../README.md)
+- [Glossary](./glossary/README.md)

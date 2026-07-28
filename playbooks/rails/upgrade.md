@@ -1,9 +1,3 @@
----
-title: "Rails Upgrade Playbook"
-description: "Repeatable workflow for upgrading Rails versions"
----
-
-
 # Objective
 
 Upgrade a Rails application to a new version with minimal risk, minimal
@@ -114,6 +108,6 @@ If the upgrade causes issues in production:
 
 # Related Documents
 
-- [Rails Engineering Handbook](../../handbooks/rails/README/)
-- [Rails Glossary](../../glossary/rails/README/)
-- [Engineering Fundamentals Handbook](../../handbooks/engineering/README/)
+- [Rails Engineering Handbook](../../handbooks/rails/README.md)
+- [Rails Glossary](../../glossary/rails/README.md)
+- [Engineering Fundamentals Handbook](../../handbooks/engineering/README.md)

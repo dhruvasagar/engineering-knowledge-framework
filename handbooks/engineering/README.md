@@ -1,9 +1,3 @@
----
-title: "Engineering Fundamentals Handbook"
-description: "Enduring principles, standards and decision frameworks for software engineering"
----
-
-
 # Purpose
 
 Engineering is the disciplined application of knowledge to build and
@@ -53,7 +47,7 @@ Applying separation of concerns means:
 - Ensuring each layer or component has a clear boundary.
 - Keeping coupling loose and cohesion high.
 
-See the [Engineering Glossary](../../glossary/engineering/README/) for definitions of coupling and cohesion.
+See the [Engineering Glossary](../../glossary/engineering/README.md) for definitions of coupling and cohesion.
 
 ## Encapsulation
 
@@ -264,7 +258,7 @@ Common principles include:
 - Follow the test pyramid: many unit tests, fewer integration tests,
   fewest end-to-end tests.
 
-See the [Code Review Playbook](../../playbooks/code-review/README/) for testing review standards.
+See the [Code Review Playbook](../../playbooks/code-review/README.md) for testing review standards.
 
 # Quality Philosophy
 
@@ -389,7 +383,7 @@ AI systems are more effective when provided with:
 - Explicit success criteria.
 - Examples of desired output.
 
-See the [AI Engineering Handbook](../../handbooks/ai/README/) for detailed guidance on AI
+See the [AI Engineering Handbook](../../handbooks/ai/README.md) for detailed guidance on AI
 workflows and context engineering.
 
 # Capability Map
@@ -399,45 +393,45 @@ capability. The following documents form the complete capability:
 
 ## Handbooks
 
-- [Engineering Fundamentals Handbook](./README/) — This document. Core
+- [Engineering Fundamentals Handbook](./README.md) — This document. Core
   engineering principles, quality philosophy and decision frameworks.
 
 ## Glossaries
 
-- [Engineering Glossary](../../glossary/engineering/README/) — Foundational terminology (abstraction,
+- [Engineering Glossary](../../glossary/engineering/README.md) — Foundational terminology (abstraction,
   cohesion, coupling, encapsulation, separation of concerns, etc.).
 
 ## Guides
 
-- [Code Organization](../../guides/engineering/code-organization/) — Feature-based packaging, module
+- [Code Organization](../../guides/engineering/code-organization.md) — Feature-based packaging, module
   boundaries, dependency flow, anti-patterns.
-- [Error Handling](../../guides/engineering/error-handling/) — Recoverable vs unrecoverable errors,
+- [Error Handling](../../guides/engineering/error-handling.md) — Recoverable vs unrecoverable errors,
   patterns, logging standards, anti-patterns.
-- [Testing Strategies](../../guides/engineering/testing-strategies/) — Test pyramid, what to test, test
+- [Testing Strategies](../../guides/engineering/testing-strategies.md) — Test pyramid, what to test, test
   doubles, sustainable testing practices.
-- [Logging](../../guides/engineering/logging/) — Structured logging standards, log levels,
+- [Logging](../../guides/engineering/logging.md) — Structured logging standards, log levels,
   context fields, anti-patterns.
 
 ## Learning Paths
 
-- [Engineering Learning Paths](../../learning-paths/engineering/README/) — Beginner, intermediate and
+- [Engineering Learning Paths](../../learning-paths/engineering/README.md) — Beginner, intermediate and
   advanced tracks for engineering fundamentals.
 
 ## References
 
-- [Engineering References](../../references/engineering/README/) — Quick lookup: design principles,
+- [Engineering References](../../references/engineering/README.md) — Quick lookup: design principles,
   patterns, testing, logging, error handling.
 
 ## AI Workflows
 
-- [AI Workflows for Engineering](../../prompts/engineering-ai-workflows/) — Prompt patterns for code
+- [AI Workflows for Engineering](../../prompts/engineering-ai-workflows.md) — Prompt patterns for code
   review, design exploration, refactoring, documentation.
 
 # Related Documents
 
-- [Engineering Glossary](../../glossary/engineering/README/)
-- [Software Architecture Handbook](../../handbooks/architecture/README/)
-- [Code Review Playbook](../../playbooks/code-review/README/)
-- [Style Guide](../../style-guide/)
-- [Writing Principles](../../writing-principles/)
-- [Document Types](../../document-types/)
+- [Engineering Glossary](../../glossary/engineering/README.md)
+- [Software Architecture Handbook](../../handbooks/architecture/README.md)
+- [Code Review Playbook](../../playbooks/code-review/README.md)
+- [Style Guide](../../style-guide.md)
+- [Writing Principles](../../writing-principles.md)
+- [Document Types](../../document-types.md)

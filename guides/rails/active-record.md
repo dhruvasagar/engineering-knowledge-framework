@@ -1,9 +1,3 @@
----
-title: "ActiveRecord Patterns and Query Optimization"
-description: "Patterns for effective database access with ActiveRecord"
----
-
-
 # Purpose
 
 ActiveRecord is the heart of most Rails applications.
@@ -192,8 +186,8 @@ failure triggers a rollback.
 
 # Related Documents
 
-- [Rails Engineering Handbook](../../handbooks/rails/README/)
-- [Testing Rails Applications Guide](../../guides/rails/testing/)
-- [Rails Upgrade Playbook](../../playbooks/rails/upgrade/)
-- [Rails Glossary](../../glossary/rails/README/)
-- [Rails References](../../references/rails/README/)
+- [Rails Engineering Handbook](../../handbooks/rails/README.md)
+- [Testing Rails Applications Guide](../../guides/rails/testing.md)
+- [Rails Upgrade Playbook](../../playbooks/rails/upgrade.md)
+- [Rails Glossary](../../glossary/rails/README.md)
+- [Rails References](../../references/rails/README.md)

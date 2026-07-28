@@ -1,9 +1,3 @@
----
-title: "Style Guide"
-description: "Writing, formatting and documentation standards for the Engineering Knowledge Framework"
----
-
-
 # Purpose
 
 This document defines the writing and formatting standards for the
@@ -19,7 +13,7 @@ This document focuses on **how** knowledge should be written.
 
 The philosophy behind the framework is documented in
 [CLAUDE.md](./CLAUDE.md) and
-[Strategy](./strategy/).
+[Strategy](./strategy.md).
 
 # AI-First Writing
 
@@ -104,7 +98,7 @@ General guidance:
 6. References
 
 Specific document structures are defined in
-[Document Types](./document-types/).
+[Document Types](./document-types.md).
 
 # Single Responsibility
 
@@ -229,7 +223,7 @@ Good:
 
 #+BEGIN_QUOTE
 See the
-[Rails Engineering Handbook](./handbooks/rails/README/)
+[Rails Engineering Handbook](./handbooks/rails/README.md)
 for architectural principles.
 #+END_QUOTE
 
@@ -284,7 +278,7 @@ Every significant concept should be connected to related knowledge.
 Good:
 
 ```org
-[Code Review Playbook](./playbooks/code-review/README/)
+[Code Review Playbook](./playbooks/code-review/README.md)
 ```
 
 Avoid:
@@ -565,9 +559,9 @@ Additionally verify:
 - References
 
 - [CLAUDE.md](./CLAUDE.md)
-- [Strategy](./strategy/)
-- [Architecture](./architecture/)
-- [Document Types](./document-types/)
-- [Contributing](./contributing/)
-- [Repository Overview](../README/)
+- [Strategy](./strategy.md)
+- [Architecture](./architecture.md)
+- [Document Types](./document-types.md)
+- [Contributing](./contributing.md)
+- [Repository Overview](../README.md)
 - [[https:*www.markdownguide.org*][Markdown Guide]]

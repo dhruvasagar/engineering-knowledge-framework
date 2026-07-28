@@ -1,9 +1,3 @@
----
-title: "Rails Engineering Handbook"
-description: "Principles, standards and patterns for building Rails applications"
----
-
-
 # Purpose
 
 Ruby on Rails is a web application framework that emphasizes convention
@@ -12,8 +6,8 @@ over configuration, developer productivity and elegant code.
 This handbook defines the principles, standards and patterns for
 building Rails applications within this organization.
 
-It builds upon the [Engineering Fundamentals Handbook](../../handbooks/engineering/README/) and
-[Software Architecture Handbook](../../handbooks/architecture/README/), applying their principles to the Rails
+It builds upon the [Engineering Fundamentals Handbook](../../handbooks/engineering/README.md) and
+[Software Architecture Handbook](../../handbooks/architecture/README.md), applying their principles to the Rails
 context.
 
 # Scope
@@ -30,7 +24,7 @@ This handbook covers:
 
 This document focuses on enduring Rails principles rather than
 version-specific features. For version-specific guidance, see the
-[Rails References](../../references/rails/README/).
+[Rails References](../../references/rails/README.md).
 
 # Rails Philosophy
 
@@ -186,7 +180,7 @@ Follow Rails naming conventions consistently.
 - Use serializers or jbuilder for response formatting.
 - Version APIs explicitly in the URL path.
 - Follow the API design standards in the
-  [API Design Guide](../../guides/architecture/api-design/).
+  [API Design Guide](../../guides/architecture/api-design.md).
 
 # Testing
 
@@ -200,7 +194,7 @@ Follow Rails naming conventions consistently.
 ## Test Distribution
 
 Follow the testing principles in the
-[Testing Strategies Guide](../../guides/engineering/testing-strategies/).
+[Testing Strategies Guide](../../guides/engineering/testing-strategies.md).
 
 For Rails specifically:
 
@@ -316,7 +310,7 @@ When using AI for Rails development, provide:
 - The specific problem or task.
 - Existing conventions or patterns to follow.
 
-See the [AI Engineering Handbook](../../handbooks/ai/README/) for general AI workflow guidance.
+See the [AI Engineering Handbook](../../handbooks/ai/README.md) for general AI workflow guidance.
 
 # Capability Map
 
@@ -325,80 +319,80 @@ The following documents form the complete capability:
 
 ## Handbooks
 
-- [Rails Engineering Handbook](./README/) — This document. Principles, standards,
+- [Rails Engineering Handbook](./README.md) — This document. Principles, standards,
   and philosophy for Rails development.
 
 ## Glossaries
 
-- [Rails Glossary](../../glossary/rails/README/) — Canonical Rails terminology (ActiveRecord,
+- [Rails Glossary](../../glossary/rails/README.md) — Canonical Rails terminology (ActiveRecord,
   controller, service object, view, etc.).
 
 ## Guides
 
-- [Service Objects](../../guides/rails/service-objects/) — When and how to use service objects,
+- [Service Objects](../../guides/rails/service-objects.md) — When and how to use service objects,
   structure, patterns and testing.
-- [Testing Rails Applications](../../guides/rails/testing/) — Test distribution, model*request*
+- [Testing Rails Applications](../../guides/rails/testing.md) — Test distribution, model*request*
   system specs, factory patterns.
-- [Rails Audit Guide](../../guides/rails/audit-guide/) — Systematic code quality, performance,
+- [Rails Audit Guide](../../guides/rails/audit-guide.md) — Systematic code quality, performance,
   database and security auditing.
-- [Rails Project Standards](../../guides/rails/project-standards/) — Mandatory tooling baseline and
+- [Rails Project Standards](../../guides/rails/project-standards.md) — Mandatory tooling baseline and
   CI/CD configuration for every Rails project.
-- [ActiveRecord Patterns and Query Optimization](../../guides/rails/active-record/) — Scopes, query
+- [ActiveRecord Patterns and Query Optimization](../../guides/rails/active-record.md) — Scopes, query
   optimization, N+1 prevention, indexing.
-- [API Development with Rails](../../guides/rails/api-development/) — API-only setup, serialization,
+- [API Development with Rails](../../guides/rails/api-development.md) — API-only setup, serialization,
   versioning, authentication and testing.
-- [Background Jobs](../../guides/rails/background-jobs/) — Framework selection (Sidekiq, GoodJob,
+- [Background Jobs](../../guides/rails/background-jobs.md) — Framework selection (Sidekiq, GoodJob,
   SolidQueue), job design, error handling, monitoring.
-- [Authentication and Authorization](../../guides/rails/authentication-authorization/) — Devise setup, Pundit
+- [Authentication and Authorization](../../guides/rails/authentication-authorization.md) — Devise setup, Pundit
   policies, role-based authorization.
 
 ## Playbooks
 
-- [Rails Upgrade Playbook](../../playbooks/rails/upgrade/) — Step-by-step Rails version upgrade
+- [Rails Upgrade Playbook](../../playbooks/rails/upgrade.md) — Step-by-step Rails version upgrade
   workflow with rollback plan.
-- [Rails Deployment Playbook](../../playbooks/rails/deployment/) — Safe deployment with database
+- [Rails Deployment Playbook](../../playbooks/rails/deployment.md) — Safe deployment with database
   migration safety, zero-downtime patterns.
 
 ## Checklists
 
-- [Rails Pull Request Checklist](../../checklists/rails/pull-request/) — Code quality, testing,
+- [Rails Pull Request Checklist](../../checklists/rails/pull-request.md) — Code quality, testing,
   security and migration safety for every PR.
-- [Rails Security Review Checklist](../../checklists/rails/security-review/) — Authentication,
+- [Rails Security Review Checklist](../../checklists/rails/security-review.md) — Authentication,
   authorization, data protection and dependency verification.
-- [Rails Deployment Checklist](../../checklists/rails/deployment/) — Pre-deployment, migration
+- [Rails Deployment Checklist](../../checklists/rails/deployment.md) — Pre-deployment, migration
   safety and post-deployment verification.
 
 ## Templates
 
-- [Service Object Template](../../templates/rails/service-object/) — Reusable service object with
+- [Service Object Template](../../templates/rails/service-object.md) — Reusable service object with
   result object pattern.
-- [Form Object Template](../../templates/rails/form-object/) — Form object with ActiveModel
+- [Form Object Template](../../templates/rails/form-object.md) — Form object with ActiveModel
   integration.
-- [Query Object Template](../../templates/rails/query-object/) — Composable query object with scope
+- [Query Object Template](../../templates/rails/query-object.md) — Composable query object with scope
   chaining.
-- [Policy Object Template](../../templates/rails/policy-object/) — Authorization policy with Pundit
+- [Policy Object Template](../../templates/rails/policy-object.md) — Authorization policy with Pundit
   conventions.
 
 ## Learning Paths
 
-- [Rails Learning Paths](../../learning-paths/rails/README/) — Beginner, intermediate and advanced
+- [Rails Learning Paths](../../learning-paths/rails/README.md) — Beginner, intermediate and advanced
   tracks with topics, projects and assessment.
 
 ## References
 
-- [Rails References](../../references/rails/README/) — Quick lookup: conventions, generators,
+- [Rails References](../../references/rails/README.md) — Quick lookup: conventions, generators,
   test commands, gems, HTTP codes.
 
 ## AI Workflows
 
-- [AI Workflows for Rails](../../prompts/rails-ai-workflows/) — Prompt patterns for model
+- [AI Workflows for Rails](../../prompts/rails-ai-workflows.md) — Prompt patterns for model
   generation, API development, testing and debugging.
 
 # Related Documents
 
-- [Engineering Fundamentals Handbook](../../handbooks/engineering/README/)
-- [Software Architecture Handbook](../../handbooks/architecture/README/)
-- [Rails Glossary](../../glossary/rails/README/)
-- [API Design Guide](../../guides/architecture/api-design/)
-- [Code Review Playbook](../../playbooks/code-review/README/)
-- [Testing Strategies Guide](../../guides/engineering/testing-strategies/)
+- [Engineering Fundamentals Handbook](../../handbooks/engineering/README.md)
+- [Software Architecture Handbook](../../handbooks/architecture/README.md)
+- [Rails Glossary](../../glossary/rails/README.md)
+- [API Design Guide](../../guides/architecture/api-design.md)
+- [Code Review Playbook](../../playbooks/code-review/README.md)
+- [Testing Strategies Guide](../../guides/engineering/testing-strategies.md)

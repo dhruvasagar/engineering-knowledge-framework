@@ -1,9 +1,3 @@
----
-title: "API Design"
-description: "Principles and standards for designing effective APIs"
----
-
-
 # Purpose
 
 APIs define the contracts between components, services and systems.
@@ -246,7 +240,7 @@ When asking AI for API design advice, provide:
 
 # Related Documents
 
-- [Software Architecture Handbook](../../handbooks/architecture/README/)
-- [Engineering Fundamentals Handbook](../../handbooks/engineering/README/)
-- [Architecture Review Playbook](../../playbooks/architecture-review/README/)
-- [Architecture Glossary](../../glossary/architecture/README/)
+- [Software Architecture Handbook](../../handbooks/architecture/README.md)
+- [Engineering Fundamentals Handbook](../../handbooks/engineering/README.md)
+- [Architecture Review Playbook](../../playbooks/architecture-review/README.md)
+- [Architecture Glossary](../../glossary/architecture/README.md)

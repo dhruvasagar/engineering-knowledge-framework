@@ -1,9 +1,3 @@
----
-title: "Security Review Report Template"
-description: "Findings report for security review outcomes"
----
-
-
 # SECURITY-REVIEW-NNNN: [Project/System Name]
 
 # Metadata
@@ -88,6 +82,6 @@ Brief overview of the review, key findings and overall risk assessment.
 
 ## Related Documents
 
-- [Security Engineering Handbook](../../handbooks/security/README/)
-- [Security Review Playbook](../../playbooks/security-review/README/)
-- [Security Review Checklist](../../checklists/security-review/)
+- [Security Engineering Handbook](../../handbooks/security/README.md)
+- [Security Review Playbook](../../playbooks/security-review/README.md)
+- [Security Review Checklist](../../checklists/security-review.md)

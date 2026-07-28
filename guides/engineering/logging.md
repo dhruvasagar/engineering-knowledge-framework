@@ -1,9 +1,3 @@
----
-title: "Logging"
-description: "Principles and standards for effective application logging"
----
-
-
 # Purpose
 
 Logging is the practice of recording events, state changes and errors
@@ -200,6 +194,6 @@ When asking AI for logging advice, provide:
 
 # Related Documents
 
-- [Engineering Fundamentals Handbook](../../handbooks/engineering/README/)
-- [Error Handling Guide](../../guides/engineering/error-handling/)
-- [Code Review Playbook](../../playbooks/code-review/README/)
+- [Engineering Fundamentals Handbook](../../handbooks/engineering/README.md)
+- [Error Handling Guide](../../guides/engineering/error-handling.md)
+- [Code Review Playbook](../../playbooks/code-review/README.md)

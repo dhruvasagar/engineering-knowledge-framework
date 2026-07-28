@@ -1,9 +1,3 @@
----
-title: "Semantic HTML"
-description: "Using HTML elements for their intended purpose"
----
-
-
 # Purpose
 
 Semantic HTML is the foundation of accessible web development. Using
@@ -107,6 +101,6 @@ Provide landmark regions to enable quick navigation:
 
 # Related Documents
 
-- [ARIA Patterns](./aria-patterns/)
-- [Keyboard Accessibility](./keyboard-accessibility/)
-- [Accessibility Glossary](../../glossary/accessibility/README/)
+- [ARIA Patterns](./aria-patterns.md)
+- [Keyboard Accessibility](./keyboard-accessibility.md)
+- [Accessibility Glossary](../../glossary/accessibility/README.md)

@@ -1,9 +1,3 @@
----
-title: "AI Workflows for Engineering"
-description: "Prompt patterns and AI workflows for engineering tasks"
----
-
-
 # Purpose
 
 AI assistants can accelerate engineering work when used effectively.
@@ -246,6 +240,6 @@ AI should accelerate learning, not replace it.
 
 # Related Documents
 
-- [Engineering Fundamentals Handbook](../handbooks/engineering/README/)
-- [Code Review Playbook](../playbooks/code-review/README/)
-- [AI Engineering Handbook](../handbooks/ai/README/)
+- [Engineering Fundamentals Handbook](../handbooks/engineering/README.md)
+- [Code Review Playbook](../playbooks/code-review/README.md)
+- [AI Engineering Handbook](../handbooks/ai/README.md)

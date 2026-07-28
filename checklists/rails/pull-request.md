@@ -1,9 +1,3 @@
----
-title: "Rails Pull Request Checklist"
-description: "Verification checklist for Rails pull requests"
----
-
-
 # Purpose
 
 Ensure every Rails pull request meets quality standards before merging.
@@ -60,7 +54,7 @@ Ensure every Rails pull request meets quality standards before merging.
 
 # Related Documents
 
-- [Rails Engineering Handbook](../../handbooks/rails/README/)
-- [Code Review Playbook](../../playbooks/code-review/README/)
-- [Testing Rails Applications Guide](../../guides/rails/testing/)
-- [Service Objects Guide](../../guides/rails/service-objects/)
+- [Rails Engineering Handbook](../../handbooks/rails/README.md)
+- [Code Review Playbook](../../playbooks/code-review/README.md)
+- [Testing Rails Applications Guide](../../guides/rails/testing.md)
+- [Service Objects Guide](../../guides/rails/service-objects.md)

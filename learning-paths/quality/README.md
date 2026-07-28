@@ -1,9 +1,3 @@
----
-title: "Engineering Quality Learning Paths"
-description: "Structured learning progression for engineering quality"
----
-
-
 # Purpose
 
 These learning paths provide a structured progression through
@@ -26,21 +20,21 @@ consistently.
 1. ***Quality Principles***
    - Quality is a shared responsibility.
    - Prevent defects, don't just find them.
-   - Reference: [Engineering Quality Handbook](../../handbooks/quality/README/)
+   - Reference: [Engineering Quality Handbook](../../handbooks/quality/README.md)
 
 2. ***Code Review Participation***
    - What to look for in a review.
    - Writing constructive review comments.
-   - Reference: [Code Review Standards Guide](../../guides/quality/code-review-standards/)
+   - Reference: [Code Review Standards Guide](../../guides/quality/code-review-standards.md)
 
 3. ***Testing Basics***
    - Test pyramid and test distribution.
    - Writing meaningful tests.
-   - Reference: [Testing Strategies Guide](../../guides/engineering/testing-strategies/)
+   - Reference: [Testing Strategies Guide](../../guides/engineering/testing-strategies.md)
 
 4. ***Following Quality Gates***
    - Understanding pre-commit, PR, deploy and release gates.
-   - Reference: [Engineering Quality Handbook](../../handbooks/quality/README/)
+   - Reference: [Engineering Quality Handbook](../../handbooks/quality/README.md)
 
 ## Assessment
 
@@ -62,17 +56,17 @@ Define quality metrics, lead code reviews and manage technical debt.
 1. ***Quality Metrics***
    - Measuring code and process quality.
    - Tracking trends and setting targets.
-   - Reference: [Quality Metrics Guide](../../guides/quality/quality-metrics/)
+   - Reference: [Quality Metrics Guide](../../guides/quality/quality-metrics.md)
 
 2. ***Leading Code Reviews***
    - Reviewing for design and architecture.
    - Mentoring junior reviewers.
-   - Reference: [Code Review Playbook](../../playbooks/code-review/README/)
+   - Reference: [Code Review Playbook](../../playbooks/code-review/README.md)
 
 3. ***Technical Debt Management***
    - Identifying and classifying debt.
    - Prioritising and tracking remediation.
-   - Reference: [Technical Debt Management Guide](../../guides/quality/technical-debt-management/)
+   - Reference: [Technical Debt Management Guide](../../guides/quality/technical-debt-management.md)
 
 4. ***Quality Dashboards***
    - Building and maintaining quality dashboards.
@@ -103,7 +97,7 @@ mentor quality practices.
 2. ***Quality Culture***
    - Building a blame-free quality culture.
    - Incentivising quality without gaming metrics.
-   - Reference: [Engineering Quality Handbook](../../handbooks/quality/README/)
+   - Reference: [Engineering Quality Handbook](../../handbooks/quality/README.md)
 
 3. ***Cross-Capability Quality***
    - Quality standards across multiple teams.
@@ -121,8 +115,8 @@ improvements.
 
 # Related Documents
 
-- [Engineering Quality Handbook](../../handbooks/quality/README/)
-- [Engineering Quality Glossary](../../glossary/quality/README/)
-- [Code Review Standards Guide](../../guides/quality/code-review-standards/)
-- [Quality Metrics Guide](../../guides/quality/quality-metrics/)
-- [Technical Debt Management Guide](../../guides/quality/technical-debt-management/)
+- [Engineering Quality Handbook](../../handbooks/quality/README.md)
+- [Engineering Quality Glossary](../../glossary/quality/README.md)
+- [Code Review Standards Guide](../../guides/quality/code-review-standards.md)
+- [Quality Metrics Guide](../../guides/quality/quality-metrics.md)
+- [Technical Debt Management Guide](../../guides/quality/technical-debt-management.md)

@@ -1,9 +1,3 @@
----
-title: "ADR-0001: Capability Model for Knowledge Organization"
-description: "Decision to organize knowledge around Engineering Capabilities"
----
-
-
 :PROPERTIES:
 :STATUS:   accepted
 :DATE:     2026-07-27
@@ -101,5 +95,5 @@ becomes difficult to navigate.
 
 # References
 
-- [Document Types](../document-types/)
-- [Engineering Fundamentals Handbook](../handbooks/engineering/README/)
+- [Document Types](../document-types.md)
+- [Engineering Fundamentals Handbook](../handbooks/engineering/README.md)

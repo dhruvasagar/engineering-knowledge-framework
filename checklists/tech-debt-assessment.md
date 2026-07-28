@@ -1,9 +1,3 @@
----
-title: "Technical Debt Assessment Checklist"
-description: "Verification checklist for assessing and managing technical debt"
----
-
-
 # Purpose
 
 Ensure technical debt is identified, classified, tracked and addressed
@@ -43,7 +37,7 @@ systematically.
 
 # Related Documents
 
-- [Engineering Fundamentals Handbook](../handbooks/engineering/README/)
-- [Software Architecture Handbook](../handbooks/architecture/README/)
-- [Code Review Playbook](../playbooks/code-review/README/)
-- [Engineering Glossary](../glossary/engineering/README/)
+- [Engineering Fundamentals Handbook](../handbooks/engineering/README.md)
+- [Software Architecture Handbook](../handbooks/architecture/README.md)
+- [Code Review Playbook](../playbooks/code-review/README.md)
+- [Engineering Glossary](../glossary/engineering/README.md)

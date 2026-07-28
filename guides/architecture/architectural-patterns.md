@@ -1,9 +1,3 @@
----
-title: "Architectural Patterns"
-description: "A guide to common architectural patterns and when to apply them"
----
-
-
 # Purpose
 
 Architectural patterns provide proven, reusable solutions to common
@@ -274,7 +268,7 @@ When asking AI for architectural pattern advice, provide:
 
 # Related Documents
 
-- [Software Architecture Handbook](../../handbooks/architecture/README/)
-- [Engineering Fundamentals Handbook](../../handbooks/engineering/README/)
-- [Architecture Glossary](../../glossary/architecture/README/)
-- [Architecture Review Playbook](../../playbooks/architecture-review/README/)
+- [Software Architecture Handbook](../../handbooks/architecture/README.md)
+- [Engineering Fundamentals Handbook](../../handbooks/engineering/README.md)
+- [Architecture Glossary](../../glossary/architecture/README.md)
+- [Architecture Review Playbook](../../playbooks/architecture-review/README.md)

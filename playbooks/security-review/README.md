@@ -1,9 +1,3 @@
----
-title: "Security Review Playbook"
-description: "Repeatable workflow for conducting security reviews"
----
-
-
 # Objective
 
 Ensure that systems, features and changes meet security standards
@@ -144,7 +138,7 @@ AI limitations:
 
 # Related Documents
 
-- [Security Engineering Handbook](../../handbooks/security/README/)
-- [Security Glossary](../../glossary/security/README/)
-- [Engineering Fundamentals Handbook](../../handbooks/engineering/README/)
-- [Rails Security Review Checklist](../../checklists/rails/security-review/)
+- [Security Engineering Handbook](../../handbooks/security/README.md)
+- [Security Glossary](../../glossary/security/README.md)
+- [Engineering Fundamentals Handbook](../../handbooks/engineering/README.md)
+- [Rails Security Review Checklist](../../checklists/rails/security-review.md)

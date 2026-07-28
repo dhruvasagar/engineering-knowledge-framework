@@ -1,9 +1,3 @@
----
-title: "Agentic Workflows"
-description: "Patterns for multi-step AI-assisted engineering workflows"
----
-
-
 # Purpose
 
 Agentic workflows are multi-step processes where AI assists across
@@ -168,8 +162,8 @@ For each step, define:
 
 # Related Documents
 
-- [Prompt Engineering](./prompt-engineering/)
-- [Context Engineering](./context-engineering/)
-- [AI-Assisted Code Review Playbook](../../playbooks/ai/ai-assisted-code-review/)
-- [AI-Assisted Architecture Review Playbook](../../playbooks/ai/ai-assisted-architecture-review/)
-- [AI References](../../references/ai/README/)
+- [Prompt Engineering](./prompt-engineering.md)
+- [Context Engineering](./context-engineering.md)
+- [AI-Assisted Code Review Playbook](../../playbooks/ai/ai-assisted-code-review.md)
+- [AI-Assisted Architecture Review Playbook](../../playbooks/ai/ai-assisted-architecture-review.md)
+- [AI References](../../references/ai/README.md)

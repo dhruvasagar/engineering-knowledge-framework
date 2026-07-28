@@ -1,9 +1,3 @@
----
-title: "Technical Debt Register Template"
-description: "Track and monitor technical debt items"
----
-
-
 # Technical Debt Register: [Project Name]
 
 # Purpose
@@ -80,6 +74,6 @@ Description of the debt item, rationale and remediation approach.
 
 # Related Documents
 
-- [Technical Debt Management](../../guides/quality/technical-debt-management/)
-- [Technical Debt Remediation Playbook](../../playbooks/quality/tech-debt-remediation/)
-- [Technical Debt Triage Checklist](../../checklists/quality/tech-debt-triage/)
+- [Technical Debt Management](../../guides/quality/technical-debt-management.md)
+- [Technical Debt Remediation Playbook](../../playbooks/quality/tech-debt-remediation.md)
+- [Technical Debt Triage Checklist](../../checklists/quality/tech-debt-triage.md)

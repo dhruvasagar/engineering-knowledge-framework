@@ -1,42 +1,36 @@
----
-title: "Engineering Guides"
-description: "Index of engineering fundamentals guides"
----
-
-
 # Purpose
 
 This directory contains guides for engineering fundamentals.
 
 Guides explain **how** focused engineering concepts work. They build on
-the principles in the [Engineering Fundamentals Handbook](../../handbooks/engineering/README/).
+the principles in the [Engineering Fundamentals Handbook](../../handbooks/engineering/README.md).
 
 # Guides
 
 | Guide | Description |
 | --- | --- |
 +--------------------------------------------------------------+------------------------------------------+
-| [Code Organization](./code-organization/) | Principles and patterns for structuring |
+| [Code Organization](./code-organization.md) | Principles and patterns for structuring |
 | --- | --- |
 |  | code: feature-based packaging, module |
 |  | boundaries, dependency flow. |
 +--------------------------------------------------------------+------------------------------------------+
-| [Error Handling](./error-handling/) | Principles for handling errors: |
+| [Error Handling](./error-handling.md) | Principles for handling errors: |
 | --- | --- |
 |  | recoverable vs unrecoverable, patterns, |
 |  | logging anti-patterns. |
 +--------------------------------------------------------------+------------------------------------------+
-| [Testing Strategies](./testing-strategies/) | Test pyramid, what to test, test doubles, |
+| [Testing Strategies](./testing-strategies.md) | Test pyramid, what to test, test doubles, |
 | --- | --- |
 |  | anti-patterns for sustainable testing. |
 +--------------------------------------------------------------+------------------------------------------+
-| [Logging](./logging/) | Structured logging standards, log levels, |
+| [Logging](./logging.md) | Structured logging standards, log levels, |
 | --- | --- |
 |  | context fields and anti-patterns. |
 +--------------------------------------------------------------+------------------------------------------+
 
 # Related Documents
 
-- [Engineering Fundamentals Handbook](../../handbooks/engineering/README/)
-- [Engineering References](../../references/engineering/README/)
-- [Engineering Glossary](../../glossary/engineering/README/)
+- [Engineering Fundamentals Handbook](../../handbooks/engineering/README.md)
+- [Engineering References](../../references/engineering/README.md)
+- [Engineering Glossary](../../glossary/engineering/README.md)

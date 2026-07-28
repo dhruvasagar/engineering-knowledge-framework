@@ -1,9 +1,3 @@
----
-title: "Quality Report Template"
-description: "Standard format for quality review reports"
----
-
-
 # Quality Report: [Project Name]
 
 # Metadata
@@ -101,5 +95,5 @@ quality rating (Green / Amber / Red).
 
 # Related Documents
 
-- [Engineering Quality Handbook](../../handbooks/quality/README/)
-- [Quality Review Playbook](../../playbooks/quality/quality-review/)
+- [Engineering Quality Handbook](../../handbooks/quality/README.md)
+- [Quality Review Playbook](../../playbooks/quality/quality-review.md)

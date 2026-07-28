@@ -1,9 +1,3 @@
----
-title: "Code Review Standards"
-description: "Standards and expectations for effective code reviews"
----
-
-
 # Purpose
 
 Code review is the most effective quality practice in software
@@ -148,7 +142,7 @@ This is wrong. Fix it.
 
 # Related Documents
 
-- [Engineering Quality Handbook](../../handbooks/quality/README/)
-- [Code Review Playbook](../../playbooks/code-review/README/)
-- [Engineering Fundamentals Handbook](../../handbooks/engineering/README/)
-- [Rails Pull Request Checklist](../../checklists/rails/pull-request/)
+- [Engineering Quality Handbook](../../handbooks/quality/README.md)
+- [Code Review Playbook](../../playbooks/code-review/README.md)
+- [Engineering Fundamentals Handbook](../../handbooks/engineering/README.md)
+- [Rails Pull Request Checklist](../../checklists/rails/pull-request.md)

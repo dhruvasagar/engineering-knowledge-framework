@@ -1,9 +1,3 @@
----
-title: "Keyboard Accessibility"
-description: "Ensuring full keyboard operability"
----
-
-
 # Purpose
 
 Keyboard accessibility ensures that all functionality can be operated
@@ -81,7 +75,7 @@ For custom interactive widgets, implement ARIA keyboard patterns:
 - `role`"tab"=: Arrow keys to switch, Enter*Space to activate panel.
 - `role`"slider"=: Arrow keys, Home*End, Page Up/Down.
 
-See [ARIA Patterns](./aria-patterns/) for detailed guidance.
+See [ARIA Patterns](./aria-patterns.md) for detailed guidance.
 
 # Anti-patterns
 
@@ -114,6 +108,6 @@ See [ARIA Patterns](./aria-patterns/) for detailed guidance.
 
 # Related Documents
 
-- [ARIA Patterns](./aria-patterns/)
-- [Semantic HTML](./semantic-html/)
-- [Accessibility Glossary](../../glossary/accessibility/README/)
+- [ARIA Patterns](./aria-patterns.md)
+- [Semantic HTML](./semantic-html.md)
+- [Accessibility Glossary](../../glossary/accessibility/README.md)

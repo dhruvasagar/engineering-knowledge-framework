@@ -40,29 +40,11 @@ def collect_org_files():
 
 
 def validate_metadata(filepath):
-    """Check that required metadata headers are present."""
-    rel = filepath.relative_to(REPO_ROOT)
-    path_str = str(rel)
-    # Skip files that don't need front matter
-    if path_str in ('CLAUDE.md',) or path_str.startswith('.github/') or path_str.startswith('site/'):
-        return []
-    content = filepath.read_text(encoding='utf-8')
-    errors = []
-
-    # Check front matter exists
-    if not content.startswith('---\n'):
-        errors.append('Missing front matter (---)')
-        return errors
-    fm_end = content.find('\n---\n', 4)
-    if fm_end == -1:
-        errors.append('Front matter not closed')
-        return errors
-    fm = content[4:fm_end]
-    for meta in REQUIRED_METADATA:
-        if meta not in fm:
-            errors.append(f'Missing metadata: {meta}')
-
-    return errors
+    """Front matter is optional in source files.
+    Zola-compatible front matter is added by prepare-site-content.py
+    during the site build step.
+    """
+    return []
 
 
 def validate_headings(filepath):

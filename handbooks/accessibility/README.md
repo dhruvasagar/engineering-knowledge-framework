@@ -1,9 +1,3 @@
----
-title: "Accessibility Engineering Handbook"
-description: "Engineering principles and practices for digital accessibility"
----
-
-
 # Purpose
 
 Accessibility engineering ensures that digital products are usable by
@@ -90,7 +84,7 @@ Target ***WCAG 2.2 AA*** as the minimum compliance level.
 ## ARIA (Accessible Rich Internet Applications)
 
 ARIA provides attributes that enhance the accessibility of dynamic
-content and custom widgets. Follow the [Accessibility References](../../references/accessibility/README/) for
+content and custom widgets. Follow the [Accessibility References](../../references/accessibility/README.md) for
 ARIA usage guidelines.
 
 # Testing Methodology
@@ -143,7 +137,7 @@ AI can assist with accessibility engineering:
 - Generating alternative text suggestions.
 - Identifying focus management issues.
 
-See [AI Workflows for Accessibility](../../prompts/accessibility-ai-workflows/) for prompt patterns.
+See [AI Workflows for Accessibility](../../prompts/accessibility-ai-workflows.md) for prompt patterns.
 
 # Capability Map
 
@@ -152,21 +146,21 @@ All documents in the Accessibility Engineering capability:
 | Document Type | Document |
 | --- | --- |
 +---------------+----------------------------------------------+
-| Handbook | [Accessibility Engineering Handbook](./README/) |
+| Handbook | [Accessibility Engineering Handbook](./README.md) |
 | --- | --- |
-| Glossary | [Accessibility Glossary](../../glossary/accessibility/README/) |
-| Guides | [Accessibility Guides](../../guides/accessibility/) |
-| Playbooks | [Accessibility Review Playbook](../../playbooks/accessibility-review/README/) |
-| Checklists | [Accessibility Checklists](../../checklists/accessibility/) |
-| Templates | [Accessibility Templates](../../templates/accessibility/) |
-| Learning Paths | [Accessibility Learning Paths](../../learning-paths/accessibility/README/) |
-| References | [Accessibility References](../../references/accessibility/README/) |
-| AI Workflows | [AI Workflows for Accessibility](../../prompts/accessibility-ai-workflows/) |
+| Glossary | [Accessibility Glossary](../../glossary/accessibility/README.md) |
+| Guides | [Accessibility Guides](../../guides/accessibility/README.md) |
+| Playbooks | [Accessibility Review Playbook](../../playbooks/accessibility-review/README.md) |
+| Checklists | [Accessibility Checklists](../../checklists/accessibility/README.md) |
+| Templates | [Accessibility Templates](../../templates/accessibility/README.md) |
+| Learning Paths | [Accessibility Learning Paths](../../learning-paths/accessibility/README.md) |
+| References | [Accessibility References](../../references/accessibility/README.md) |
+| AI Workflows | [AI Workflows for Accessibility](../../prompts/accessibility-ai-workflows.md) |
 
 # Related Documents
 
-- [Accessibility Glossary](../../glossary/accessibility/README/)
-- [Accessibility References](../../references/accessibility/README/)
-- [Accessibility Review Playbook](../../playbooks/accessibility-review/README/)
+- [Accessibility Glossary](../../glossary/accessibility/README.md)
+- [Accessibility References](../../references/accessibility/README.md)
+- [Accessibility Review Playbook](../../playbooks/accessibility-review/README.md)
 - [WCAG 2.2 Specification](https://www.w3.org/TR/WCAG22/)
 - [ARIA Authoring Practices Guide](https://www.w3.org/WAI/ARIA/apg/)

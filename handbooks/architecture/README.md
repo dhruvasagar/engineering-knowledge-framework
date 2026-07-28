@@ -1,9 +1,3 @@
----
-title: "Software Architecture Handbook"
-description: "Principles, patterns and decision frameworks for software architecture"
----
-
-
 # Purpose
 
 Software architecture is the set of design decisions that shape a system
@@ -121,7 +115,7 @@ future engineers can understand:
 - What alternatives were considered.
 - What trade-offs were accepted.
 
-See the [ADR Template](../../templates/adr/README/) for the standard decision documentation format.
+See the [ADR Template](../../templates/adr/README.md) for the standard decision documentation format.
 
 # Architectural Patterns
 
@@ -220,9 +214,9 @@ An ADR answers:
 - What alternatives were considered?
 - What are the consequences?
 
-ADR files are stored in the [adr/](../../adr/) directory.
+ADR files are stored in the [adr/](../../adr/0001-capability-model.md) directory.
 
-See the [ADR Template](../../templates/adr/README/) for the standard format.
+See the [ADR Template](../../templates/adr/README.md) for the standard format.
 
 ## RFCs
 
@@ -231,7 +225,7 @@ Major architectural changes should follow the RFC process.
 An RFC proposes a significant change and invites review before a
 decision is made.
 
-RFC files are stored in the [rfc/](../../rfc/) directory.
+RFC files are stored in the [rfc/](../../templates/rfc/README.md) directory (see the RFC template for the format).
 
 ## Decision Log
 
@@ -260,7 +254,7 @@ architecture.
 Each level answers different questions about the system.
 
 Diagrams should follow the C4 conventions and be stored in
-[assets*diagrams*](../../assets/diagrams/).
+[assets/diagrams/](../../assets/diagrams/).
 
 ## Event Modeling
 
@@ -303,7 +297,7 @@ Reviews should focus on:
 - Is the architecture documented appropriately?
 - Can the architecture evolve?
 
-See the [Architecture Review Playbook](../../playbooks/architecture-review/README/) for the complete review
+See the [Architecture Review Playbook](../../playbooks/architecture-review/README.md) for the complete review
 workflow.
 
 # AI Integration
@@ -339,7 +333,7 @@ When using AI for architectural work, provide:
 - Existing architectural decisions.
 - Technology constraints and preferences.
 
-See the [AI Engineering Handbook](../../handbooks/ai/README/) for detailed AI workflow guidance.
+See the [AI Engineering Handbook](../../handbooks/ai/README.md) for detailed AI workflow guidance.
 
 # Capability Map
 
@@ -348,61 +342,61 @@ capability. The following documents form the complete capability:
 
 ## Handbooks
 
-- [Software Architecture Handbook](./README/) — This document. Principles,
+- [Software Architecture Handbook](./README.md) — This document. Principles,
   patterns, decision frameworks and documentation standards.
 
 ## Glossaries
 
-- [Architecture Glossary](../../glossary/architecture/README/) — Terminology (ADR, C4, DDD, hexagonal
+- [Architecture Glossary](../../glossary/architecture/README.md) — Terminology (ADR, C4, DDD, hexagonal
   architecture, quality attributes, trade-offs).
 
 ## Guides
 
-- [ADR Writing Guide](../../guides/architecture/adr-writing-guide/) — When and how to write ADRs, lifecycle,
+- [ADR Writing Guide](../../guides/architecture/adr-writing-guide.md) — When and how to write ADRs, lifecycle,
   characteristics of good ADRs, common mistakes.
-- [Architectural Patterns](../../guides/architecture/architectural-patterns/) — Pattern catalogue with trade-offs
+- [Architectural Patterns](../../guides/architecture/architectural-patterns.md) — Pattern catalogue with trade-offs
   and selection guidance.
-- [API Design](../../guides/architecture/api-design/) — RESTful conventions, versioning, status codes,
+- [API Design](../../guides/architecture/api-design.md) — RESTful conventions, versioning, status codes,
   error formats.
-- [System Modeling](../../guides/architecture/system-modeling/) — C4 model levels, event modeling
+- [System Modeling](../../guides/architecture/system-modeling.md) — C4 model levels, event modeling
   techniques and workshop format.
 
 ## Playbooks
 
-- [Architecture Review Playbook](../../playbooks/architecture-review/README/) — Review workflow with
+- [Architecture Review Playbook](../../playbooks/architecture-review/README.md) — Review workflow with
   scope, team assembly, evaluation criteria.
 
 ## Checklists
 
-- [Architecture Review Checklist](../../checklists/architecture-review/) — Pre, during and
+- [Architecture Review Checklist](../../checklists/architecture-review.md) — Pre, during and
   post-review verification.
 
 ## Templates
 
-- [ADR Template](../../templates/adr/README/) — Standard format for Architecture Decision
+- [ADR Template](../../templates/adr/README.md) — Standard format for Architecture Decision
   Records.
-- [RFC Template](../../templates/rfc/README/) — Format for major architectural proposals.
+- [RFC Template](../../templates/rfc/README.md) — Format for major architectural proposals.
 
 ## Learning Paths
 
-- [Architecture Learning Paths](../../learning-paths/architecture/README/) — Beginner, intermediate and
+- [Architecture Learning Paths](../../learning-paths/architecture/README.md) — Beginner, intermediate and
   advanced tracks for software architecture.
 
 ## References
 
-- [Architecture References](../../references/architecture/README/) — Quick lookup: C4 model, pattern
+- [Architecture References](../../references/architecture/README.md) — Quick lookup: C4 model, pattern
   comparison, HTTP codes, quality attributes, ADR lifecycle.
 
 ## AI Workflows
 
-- [AI Workflows for Architecture](../../prompts/architecture-ai-workflows/) — Prompt patterns for
+- [AI Workflows for Architecture](../../prompts/architecture-ai-workflows.md) — Prompt patterns for
   trade-off analysis, ADR drafting, pattern selection and review.
 
 # Related Documents
 
-- [Architecture Glossary](../../glossary/architecture/README/)
-- [Engineering Fundamentals Handbook](../../handbooks/engineering/README/)
-- [Architecture Review Playbook](../../playbooks/architecture-review/README/)
-- [ADR Template](../../templates/adr/README/)
-- [Style Guide](../../style-guide/)
-- [Document Types](../../document-types/)
+- [Architecture Glossary](../../glossary/architecture/README.md)
+- [Engineering Fundamentals Handbook](../../handbooks/engineering/README.md)
+- [Architecture Review Playbook](../../playbooks/architecture-review/README.md)
+- [ADR Template](../../templates/adr/README.md)
+- [Style Guide](../../style-guide.md)
+- [Document Types](../../document-types.md)

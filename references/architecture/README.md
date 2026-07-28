@@ -1,9 +1,3 @@
----
-title: "Architecture References"
-description: "Quick-reference material for software architecture"
----
-
-
 # Purpose
 
 Quick-reference material for software architecture.
@@ -181,9 +175,9 @@ in-depth explanations, see the referenced guides and handbooks.
 
 # Related Documents
 
-- [Software Architecture Handbook](../../handbooks/architecture/README/)
-- [Architectural Patterns Guide](../../guides/architecture/architectural-patterns/)
-- [API Design Guide](../../guides/architecture/api-design/)
-- [ADR Writing Guide](../../guides/architecture/adr-writing-guide/)
-- [System Modeling Guide](../../guides/architecture/system-modeling/)
-- [Architecture Glossary](../../glossary/architecture/README/)
+- [Software Architecture Handbook](../../handbooks/architecture/README.md)
+- [Architectural Patterns Guide](../../guides/architecture/architectural-patterns.md)
+- [API Design Guide](../../guides/architecture/api-design.md)
+- [ADR Writing Guide](../../guides/architecture/adr-writing-guide.md)
+- [System Modeling Guide](../../guides/architecture/system-modeling.md)
+- [Architecture Glossary](../../glossary/architecture/README.md)

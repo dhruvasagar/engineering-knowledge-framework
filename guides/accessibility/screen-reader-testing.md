@@ -1,9 +1,3 @@
----
-title: "Screen Reader Testing"
-description: "Testing with assistive technologies"
----
-
-
 # Purpose
 
 Screen reader testing is essential for verifying that content and
@@ -95,7 +89,7 @@ the rest.
 
 # Related Documents
 
-- [Semantic HTML](./semantic-html/)
-- [Keyboard Accessibility](./keyboard-accessibility/)
-- [ARIA Patterns](./aria-patterns/)
-- [Accessibility Review Playbook](../../playbooks/accessibility-review/README/)
+- [Semantic HTML](./semantic-html.md)
+- [Keyboard Accessibility](./keyboard-accessibility.md)
+- [ARIA Patterns](./aria-patterns.md)
+- [Accessibility Review Playbook](../../playbooks/accessibility-review/README.md)

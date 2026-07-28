@@ -1,9 +1,3 @@
----
-title: "Code Review Playbook"
-description: "Repeatable workflow for conducting effective code reviews"
----
-
-
 # Objective
 
 Ensure every code change is reviewed for correctness, design quality,
@@ -217,8 +211,8 @@ When using AI for code review, provide:
 
 # Related Documents
 
-- [Engineering Fundamentals Handbook](../../handbooks/engineering/README/)
-- [Testing Strategies Guide](../../guides/engineering/testing-strategies/)
-- [Code Organization Guide](../../guides/engineering/code-organization/)
-- [Error Handling Guide](../../guides/engineering/error-handling/)
-- [Engineering Glossary](../../glossary/engineering/README/)
+- [Engineering Fundamentals Handbook](../../handbooks/engineering/README.md)
+- [Testing Strategies Guide](../../guides/engineering/testing-strategies.md)
+- [Code Organization Guide](../../guides/engineering/code-organization.md)
+- [Error Handling Guide](../../guides/engineering/error-handling.md)
+- [Engineering Glossary](../../glossary/engineering/README.md)

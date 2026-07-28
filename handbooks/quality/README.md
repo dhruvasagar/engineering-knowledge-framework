@@ -1,9 +1,3 @@
----
-title: "Engineering Quality Handbook"
-description: "Principles, standards and practices for engineering quality"
----
-
-
 # Purpose
 
 Engineering quality is the discipline of ensuring that software meets
@@ -250,8 +244,8 @@ standards and priorities must be set by humans.
 
 # Related Documents
 
-- [Engineering Fundamentals Handbook](../../handbooks/engineering/README/)
-- [Testing Strategies Guide](../../guides/engineering/testing-strategies/)
-- [Code Review Playbook](../../playbooks/code-review/README/)
-- [Tech Debt Assessment Checklist](../../checklists/tech-debt-assessment/)
-- [Rails Project Standards](../../guides/rails/project-standards/)
+- [Engineering Fundamentals Handbook](../../handbooks/engineering/README.md)
+- [Testing Strategies Guide](../../guides/engineering/testing-strategies.md)
+- [Code Review Playbook](../../playbooks/code-review/README.md)
+- [Tech Debt Assessment Checklist](../../checklists/tech-debt-assessment.md)
+- [Rails Project Standards](../../guides/rails/project-standards.md)

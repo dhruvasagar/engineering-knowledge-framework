@@ -1,9 +1,3 @@
----
-title: "Quality Metrics"
-description: "Measuring and tracking engineering quality"
----
-
-
 # Purpose
 
 Quality metrics provide objective data for evaluating and improving
@@ -152,7 +146,7 @@ needed.
 
 # Related Documents
 
-- [Engineering Quality Handbook](../../handbooks/quality/README/)
-- [Engineering Fundamentals Handbook](../../handbooks/engineering/README/)
-- [Rails Project Standards](../../guides/rails/project-standards/)
-- [Tech Debt Assessment Checklist](../../checklists/tech-debt-assessment/)
+- [Engineering Quality Handbook](../../handbooks/quality/README.md)
+- [Engineering Fundamentals Handbook](../../handbooks/engineering/README.md)
+- [Rails Project Standards](../../guides/rails/project-standards.md)
+- [Tech Debt Assessment Checklist](../../checklists/tech-debt-assessment.md)

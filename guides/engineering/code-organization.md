@@ -1,9 +1,3 @@
----
-title: "Code Organization"
-description: "Principles and patterns for organizing code into maintainable structures"
----
-
-
 # Purpose
 
 Code organization is the practice of structuring source code into
@@ -229,6 +223,6 @@ When asking AI for organization advice, provide:
 
 # Related Documents
 
-- [Engineering Fundamentals Handbook](../../handbooks/engineering/README/)
-- [Engineering Glossary](../../glossary/engineering/README/)
-- [Code Review Playbook](../../playbooks/code-review/README/)
+- [Engineering Fundamentals Handbook](../../handbooks/engineering/README.md)
+- [Engineering Glossary](../../glossary/engineering/README.md)
+- [Code Review Playbook](../../playbooks/code-review/README.md)

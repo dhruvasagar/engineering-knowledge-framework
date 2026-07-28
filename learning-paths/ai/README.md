@@ -1,9 +1,3 @@
----
-title: "AI Engineering Learning Paths"
-description: "Structured learning progression for AI-assisted engineering"
----
-
-
 # Purpose
 
 These learning paths provide a structured progression through AI
@@ -26,21 +20,21 @@ verification.
 1. ***AI Engineering Principles***
    - AI augments, does not replace.
    - Human responsibility is final.
-   - Reference: [AI Engineering Handbook](../../handbooks/ai/README/)
+   - Reference: [AI Engineering Handbook](../../handbooks/ai/README.md)
 
 2. ***Prompt Engineering Basics***
    - Be specific, provide context, iterate.
-   - Reference: [Prompt Engineering Guide](../../guides/ai/prompt-engineering/)
+   - Reference: [Prompt Engineering Guide](../../guides/ai/prompt-engineering.md)
 
 3. ***Using AI for Code Review***
    - AI as a first pass; human as the decision-maker.
    - Practice: Use AI to review a pull request and evaluate its
      suggestions.
-   - Reference: [AI Workflows for Engineering](../../prompts/engineering-ai-workflows/)
+   - Reference: [AI Workflows for Engineering](../../prompts/engineering-ai-workflows.md)
 
 4. ***Verification Basics***
    - Never trust, always verify.
-   - Reference: [AI Safety Guide](../../guides/ai/ai-safety/)
+   - Reference: [AI Safety Guide](../../guides/ai/ai-safety.md)
 
 ## Assessment
 
@@ -62,19 +56,19 @@ critically.
 
 1. ***Context Engineering***
    - Providing structured context for better AI output.
-   - Reference: [Context Engineering Guide](../../guides/ai/context-engineering/)
+   - Reference: [Context Engineering Guide](../../guides/ai/context-engineering.md)
 
 2. ***AI Workflow Patterns***
    - Draft and refine, constrain and generate, analyse and advise.
-   - Reference: [AI Engineering Handbook](../../handbooks/ai/README/)
+   - Reference: [AI Engineering Handbook](../../handbooks/ai/README.md)
 
 3. ***AI for Architecture***
    - Using AI for trade-off analysis and design exploration.
-   - Reference: [AI Workflows for Architecture](../../prompts/architecture-ai-workflows/)
+   - Reference: [AI Workflows for Architecture](../../prompts/architecture-ai-workflows.md)
 
 4. ***AI Safety Practices***
    - High-risk use cases and prohibited uses.
-   - Reference: [AI Safety Guide](../../guides/ai/ai-safety/)
+   - Reference: [AI Safety Guide](../../guides/ai/ai-safety.md)
 
 ## Assessment
 
@@ -117,7 +111,7 @@ in effective AI use. Defining AI usage standards.
 
 # Related Documents
 
-- [AI Engineering Handbook](../../handbooks/ai/README/)
-- [Prompt Engineering Guide](../../guides/ai/prompt-engineering/)
-- [Context Engineering Guide](../../guides/ai/context-engineering/)
-- [AI Safety Guide](../../guides/ai/ai-safety/)
+- [AI Engineering Handbook](../../handbooks/ai/README.md)
+- [Prompt Engineering Guide](../../guides/ai/prompt-engineering.md)
+- [Context Engineering Guide](../../guides/ai/context-engineering.md)
+- [AI Safety Guide](../../guides/ai/ai-safety.md)

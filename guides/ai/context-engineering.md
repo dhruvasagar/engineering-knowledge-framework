@@ -1,9 +1,3 @@
----
-title: "Context Engineering"
-description: "How to provide effective context to AI systems"
----
-
-
 # Purpose
 
 Context engineering is the practice of providing AI systems with
@@ -188,7 +182,7 @@ When working on a task, reference these documents in your prompts:
 
 # Related Documents
 
-- [AI Engineering Handbook](../../handbooks/ai/README/)
-- [Prompt Engineering Guide](../../guides/ai/prompt-engineering/)
-- [AI Workflows for Engineering](../../prompts/engineering-ai-workflows/)
-- [AI Workflows for Architecture](../../prompts/architecture-ai-workflows/)
+- [AI Engineering Handbook](../../handbooks/ai/README.md)
+- [Prompt Engineering Guide](../../guides/ai/prompt-engineering.md)
+- [AI Workflows for Engineering](../../prompts/engineering-ai-workflows.md)
+- [AI Workflows for Architecture](../../prompts/architecture-ai-workflows.md)

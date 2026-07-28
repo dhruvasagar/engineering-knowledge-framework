@@ -1,9 +1,3 @@
----
-title: "Testing Strategies"
-description: "Principles and patterns for effective automated testing"
----
-
-
 # Purpose
 
 Automated testing is the practice of verifying that software behaves
@@ -270,6 +264,6 @@ When asking AI for testing advice, provide:
 
 # Related Documents
 
-- [Engineering Fundamentals Handbook](../../handbooks/engineering/README/)
-- [Engineering Glossary](../../glossary/engineering/README/)
-- [Code Review Playbook](../../playbooks/code-review/README/)
+- [Engineering Fundamentals Handbook](../../handbooks/engineering/README.md)
+- [Engineering Glossary](../../glossary/engineering/README.md)
+- [Code Review Playbook](../../playbooks/code-review/README.md)

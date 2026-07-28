@@ -1,9 +1,3 @@
----
-title: "AI Evaluation Frameworks"
-description: "Frameworks for measuring AI output quality and reliability"
----
-
-
 # Purpose
 
 AI evaluation frameworks provide systematic methods for assessing the
@@ -229,8 +223,8 @@ Track per model, prompt template and task type.
 
 # Related Documents
 
-- [Human Review Strategies](./human-review-strategies/)
-- [Verification Workflows](../../playbooks/ai/verification-workflows/)
-- [AI Usage Checklist](../../checklists/ai-usage/)
-- [AI Safety and Verification](../ai/ai-safety/)
-- [AI References](../../references/ai/README/)
+- [Human Review Strategies](./human-review-strategies.md)
+- [Verification Workflows](../../playbooks/ai/verification-workflows.md)
+- [AI Usage Checklist](../../checklists/ai-usage.md)
+- [AI Safety and Verification](../ai/ai-safety.md)
+- [AI References](../../references/ai/README.md)

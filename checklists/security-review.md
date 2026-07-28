@@ -1,16 +1,10 @@
----
-title: "Security Review Checklist"
-description: "General security review checklist (framework-wide)"
----
-
-
 # Purpose
 
 Verify that a system meets security standards.
 
 This checklist applies to all projects, regardless of language or
 framework. For Rails-specific security checks, see
-[Rails Security Review Checklist](rails/security-review/).
+[Rails Security Review Checklist](rails/security-review.md).
 
 # Authentication
 
@@ -69,7 +63,7 @@ framework. For Rails-specific security checks, see
 
 # Related Documents
 
-- [Security Engineering Handbook](../handbooks/security/README/)
-- [Security Review Playbook](../playbooks/security-review/README/)
-- [Secure Coding Guide](../guides/security/secure-coding/)
-- [Web Vulnerabilities Guide](../guides/security/web-vulnerabilities/)
+- [Security Engineering Handbook](../handbooks/security/README.md)
+- [Security Review Playbook](../playbooks/security-review/README.md)
+- [Secure Coding Guide](../guides/security/secure-coding.md)
+- [Web Vulnerabilities Guide](../guides/security/web-vulnerabilities.md)

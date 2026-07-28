@@ -1,9 +1,3 @@
----
-title: "RFC Template"
-description: "Template for major architectural proposals (Request for Comments)"
----
-
-
 # RFC-NNNN: Title
 
 :PROPERTIES:

@@ -1,9 +1,3 @@
----
-title: "Rails Security Review Checklist"
-description: "Verification checklist for Rails application security"
----
-
-
 # Purpose
 
 Verify that a Rails application meets security standards before
@@ -66,7 +60,7 @@ deployment.
 
 # Related Documents
 
-- [Rails Engineering Handbook](../../handbooks/rails/README/)
-- [Authentication and Authorization Guide](../../guides/rails/authentication-authorization/)
-- [Security Engineering Handbook](../../handbooks/security/README/)
-- [Rails Deployment Playbook](../../playbooks/rails/deployment/)
+- [Rails Engineering Handbook](../../handbooks/rails/README.md)
+- [Authentication and Authorization Guide](../../guides/rails/authentication-authorization.md)
+- [Security Engineering Handbook](../../handbooks/security/README.md)
+- [Rails Deployment Playbook](../../playbooks/rails/deployment.md)

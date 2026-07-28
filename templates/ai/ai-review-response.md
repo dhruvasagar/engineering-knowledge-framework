@@ -1,9 +1,3 @@
----
-title: "AI Review Response Template"
-description: "Format for documenting AI review findings"
----
-
-
 # AI Review Response Template
 
 Use this template to document and track AI-generated review findings.
@@ -64,6 +58,6 @@ action is taken.
 
 # Related Documents
 
-- [AI Usage Checklist](../../checklists/ai-usage/)
-- [AI Safety and Verification](../../guides/ai/ai-safety/)
-- [Context Engineering](../../guides/ai/context-engineering/)
+- [AI Usage Checklist](../../checklists/ai-usage.md)
+- [AI Safety and Verification](../../guides/ai/ai-safety.md)
+- [Context Engineering](../../guides/ai/context-engineering.md)

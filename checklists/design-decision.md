@@ -1,9 +1,3 @@
----
-title: "Design Decision Checklist"
-description: "Verification checklist for making and documenting design decisions"
----
-
-
 # Purpose
 
 Ensure every significant design decision is properly evaluated,
@@ -37,7 +31,7 @@ documented and communicated.
 
 # Related Documents
 
-- [ADR Writing Guide](../guides/architecture/adr-writing-guide/)
-- [ADR Template](../templates/adr/README/)
-- [Software Architecture Handbook](../handbooks/architecture/README/)
-- [Engineering Fundamentals Handbook](../handbooks/engineering/README/)
+- [ADR Writing Guide](../guides/architecture/adr-writing-guide.md)
+- [ADR Template](../templates/adr/README.md)
+- [Software Architecture Handbook](../handbooks/architecture/README.md)
+- [Engineering Fundamentals Handbook](../handbooks/engineering/README.md)

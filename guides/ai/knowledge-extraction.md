@@ -1,9 +1,3 @@
----
-title: "Knowledge Extraction"
-description: "Using AI to extract and structure engineering knowledge"
----
-
-
 # Purpose
 
 Knowledge extraction is the process of capturing engineering knowledge
@@ -213,8 +207,8 @@ Source:
 
 # Related Documents
 
-- [Agentic Workflows — Explore-and-Discover pattern](./agentic-workflows/)
-- [AI Evaluation Frameworks](./evaluation-frameworks/)
-- [AI Engineering Handbook](../../handbooks/ai/README/)
-- [Style Guide](../../style-guide/)
-- [Document Types](../../document-types/)
+- [Agentic Workflows — Explore-and-Discover pattern](./agentic-workflows.md)
+- [AI Evaluation Frameworks](./evaluation-frameworks.md)
+- [AI Engineering Handbook](../../handbooks/ai/README.md)
+- [Style Guide](../../style-guide.md)
+- [Document Types](../../document-types.md)

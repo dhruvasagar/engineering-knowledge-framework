@@ -1,9 +1,3 @@
----
-title: "Architecture Review Checklist"
-description: "Verification checklist for architecture reviews"
----
-
-
 # Purpose
 
 Verify that an architectural decision or proposal is complete,
@@ -41,6 +35,6 @@ well-documented and ready for review.
 
 # Related Documents
 
-- [Architecture Review Playbook](../playbooks/architecture-review/README/)
-- [Software Architecture Handbook](../handbooks/architecture/README/)
-- [ADR Writing Guide](../guides/architecture/adr-writing-guide/)
+- [Architecture Review Playbook](../playbooks/architecture-review/README.md)
+- [Software Architecture Handbook](../handbooks/architecture/README.md)
+- [ADR Writing Guide](../guides/architecture/adr-writing-guide.md)

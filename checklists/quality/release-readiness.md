@@ -1,9 +1,3 @@
----
-title: "Release Readiness Checklist"
-description: "Verification before production release"
----
-
-
 # Purpose
 
 Verify that the system is ready for production release. This checklist
@@ -57,6 +51,6 @@ should be completed before every production deployment.
 
 # Related Documents
 
-- [Release Quality Gate Playbook](../../playbooks/quality/release-quality-gate/)
-- [Rails Deployment Playbook](../../playbooks/rails/deployment/)
-- [Rails Deployment Checklist](../../checklists/rails/deployment/)
+- [Release Quality Gate Playbook](../../playbooks/quality/release-quality-gate.md)
+- [Rails Deployment Playbook](../../playbooks/rails/deployment.md)
+- [Rails Deployment Checklist](../../checklists/rails/deployment.md)

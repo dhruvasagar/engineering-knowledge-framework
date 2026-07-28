@@ -1,9 +1,3 @@
----
-title: "Form Object Template"
-description: "Template for Rails form objects"
----
-
-
 # Purpose
 
 Form objects encapsulate validation and data processing for forms that
@@ -62,5 +56,5 @@ end
 
 # Related Documents
 
-- [Rails Engineering Handbook](../../handbooks/rails/README/)
-- [Service Objects Guide](../../guides/rails/service-objects/)
+- [Rails Engineering Handbook](../../handbooks/rails/README.md)
+- [Service Objects Guide](../../guides/rails/service-objects.md)

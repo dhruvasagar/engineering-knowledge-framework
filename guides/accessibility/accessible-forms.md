@@ -1,9 +1,3 @@
----
-title: "Accessible Forms"
-description: "Building forms that work for everyone"
----
-
-
 # Purpose
 
 Forms are one of the most common and critical interaction patterns on
@@ -109,6 +103,6 @@ radio buttons, checkboxes and address fields.
 
 # Related Documents
 
-- [Semantic HTML](./semantic-html/)
-- [Keyboard Accessibility](./keyboard-accessibility/)
-- [Accessibility References](../../references/accessibility/README/)
+- [Semantic HTML](./semantic-html.md)
+- [Keyboard Accessibility](./keyboard-accessibility.md)
+- [Accessibility References](../../references/accessibility/README.md)

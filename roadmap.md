@@ -1,15 +1,9 @@
----
-title: "Roadmap"
-description: "Strategic roadmap for the Engineering Knowledge Framework"
----
-
-
 # Purpose
 
 This roadmap describes the planned evolution of the Engineering
 Knowledge Framework.
 
-Unlike the [Strategy](./strategy/), which defines the long-term vision, this document
+Unlike the [Strategy](./strategy.md), which defines the long-term vision, this document
 captures the major initiatives required to realize that vision.
 
 The roadmap should evolve continuously as the project matures.
@@ -60,7 +54,7 @@ Zola-based site with full-text search, and GitHub Pages deployment are
 all operational. Remaining tooling work focuses on generator tooling
 and deeper AI integration.
 
-See the [CHANGELOG](./changelog/) for the detailed deliverable list.
+See the [CHANGELOG](./changelog.md) for the detailed deliverable list.
 
 # Phase 1 — Foundation
 
@@ -183,7 +177,7 @@ Software Architecture that:
 
 - Demonstrates every supported document type from `DOCUMENT_TYPES.org`.
 - Engineering Fundamentals and Architecture documents are internally consistent and cross-reference each other effectively.
-- Every document follows the [Style Guide](./style-guide/) and [Writing Principles](./writing-principles/).
+- Every document follows the [Style Guide](./style-guide.md) and [Writing Principles](./writing-principles.md).
 - Documents form a connected knowledge network with rich cross-references.
 - Serves as a repeatable template for future capabilities.
 - AI assistants can use the capabilities effectively.
@@ -482,7 +476,7 @@ Develop tooling that improves authoring, validation and discovery.
 Initial tooling focused on correctness and consistency:
 
 - [x] Link validation: Verify all markdown cross-references resolve to existing files.
-- [x] Style validation: Check documents against [Style Guide](./style-guide/) rules (heading levels, metadata, front matter, filename conventions).
+- [x] Style validation: Check documents against [Style Guide](./style-guide.md) rules (heading levels, metadata, front matter, filename conventions).
 - [x] Glossary validation: Ensure all glossary entries have required fields, non-empty definitions, and no duplicate terms.
 - [x] Bullet syntax linting: Detect incorrect list formatting.
 - [x] Metadata validation: Verify required `title:` and `description:` front matter.
@@ -630,7 +624,7 @@ Grow an active open-source community around the framework.
 
 ### Onboarding
 
-- [ ] `CONTRIBUTING.org`: Already published (see [./CONTRIBUTING.md](./contributing/)).
+- [ ] `CONTRIBUTING.org`: Already published (see [./CONTRIBUTING.md](./contributing.md)).
 - [ ] Good first issue labels for new contributors.
 - [ ] Contributor onboarding guide with step-by-step walkthrough.
 - [ ] Community expectations and code of conduct.
@@ -776,7 +770,7 @@ Current priorities are:
 6. [x] Develop AI Engineering capability (Phase 3/4).
 7. [x] Develop Engineering Quality capability (Phase 3).
 8. [x] Develop Accessibility Engineering capability (Phase 3).
-9. [x] Establish RFC and ADR processes for framework evolution (see [adr/](./adr/) directory and [ADR template](./templates/adr/README/)).
+9. [x] Establish RFC and ADR processes for framework evolution (see [adr/](./adr/0001-capability-model.md) directory and [ADR template](./templates/adr/README.md)).
 10. [ ] Add practical exercises, formal assessments and cross-capability learning sequences to learning paths (Phase 5).
 11. [x] Develop AI agentic workflows and evaluation frameworks (Phase 4).
 12. [x] Build validation tooling — link validation, style validation, glossary validation, TOC validation (Phase 6a).
@@ -786,7 +780,7 @@ Current priorities are:
 16. [x] Build AI context packaging for AI assistants — CLI tool + MCP server (Phase 6c/7c).
 17. [ ] Explore community engagement and contribution workflows (Phase 8).
 
-These initiatives build on the completed foundation. See [CHANGELOG](./changelog/) for
+These initiatives build on the completed foundation. See [CHANGELOG](./changelog.md) for
 completed milestones.
 
 # Future Evolution
@@ -807,11 +801,11 @@ mission.
 
 # Related Documents
 
-- [Strategy](./strategy/)
+- [Strategy](./strategy.md)
 - [CLAUDE.md](./CLAUDE.md)
-- [Document Types](./document-types/)
-- [Style Guide](./style-guide/)
-- [Contributing](./contributing/)
-- [Changelog](./changelog/)
-- [Architecture](./architecture/)
-- [Repository Overview](../README/)
+- [Document Types](./document-types.md)
+- [Style Guide](./style-guide.md)
+- [Contributing](./contributing.md)
+- [Changelog](./changelog.md)
+- [Architecture](./architecture.md)
+- [Repository Overview](../README.md)

@@ -1,9 +1,3 @@
----
-title: "ADR-0005: Foundation Capabilities First"
-description: "Decision to build Engineering Fundamentals and Architecture before technology-specific capabilities"
----
-
-
 :PROPERTIES:
 :STATUS:   accepted
 :DATE:     2026-07-27
@@ -91,7 +85,7 @@ one capability to completion teaches lessons that apply to all others.
 
 # References
 
-- [Roadmap](../roadmap/)
-- [Engineering Fundamentals Handbook](../handbooks/engineering/README/)
-- [Software Architecture Handbook](../handbooks/architecture/README/)
-- [ADR-0001: Capability Model for Knowledge Organization](../adr/0001-capability-model/)
+- [Roadmap](../roadmap.md)
+- [Engineering Fundamentals Handbook](../handbooks/engineering/README.md)
+- [Software Architecture Handbook](../handbooks/architecture/README.md)
+- [ADR-0001: Capability Model for Knowledge Organization](../adr/0001-capability-model.md)

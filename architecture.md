@@ -1,9 +1,3 @@
----
-title: "Architecture"
-description: "Architectural overview of the Engineering Knowledge Framework"
----
-
-
 # Purpose
 
 This document describes the architecture of the Engineering Knowledge
@@ -13,7 +7,7 @@ It explains how the framework is organized, how knowledge is structured,
 how the various document types relate to one another, and how the
 framework evolves over time.
 
-Unlike the [Strategy](./strategy/), which explains **why** the framework exists, this
+Unlike the [Strategy](./strategy.md), which explains **why** the framework exists, this
 document explains **how** the framework is designed.
 
 # Design Goals
@@ -230,7 +224,7 @@ Responsibilities:
 | Example | Practical implementation |
 
 Each artifact type is documented in
-[Document Types](./document-types/).
+[Document Types](./document-types.md).
 
 # Knowledge Graph
 
@@ -501,11 +495,11 @@ without modifying the framework itself.
 
 # Related Documents
 
-- [Repository Overview](../README/)
+- [Repository Overview](../README.md)
 - [CLAUDE](./CLAUDE.md)
-- [Strategy](./strategy/)
-- [Roadmap](./roadmap/)
-- [Document Types](./document-types/)
-- [Style Guide](./style-guide/)
-- [Contributing](./contributing/)
-- [Glossary](./glossary/README/)
+- [Strategy](./strategy.md)
+- [Roadmap](./roadmap.md)
+- [Document Types](./document-types.md)
+- [Style Guide](./style-guide.md)
+- [Contributing](./contributing.md)
+- [Glossary](./glossary/README.md)

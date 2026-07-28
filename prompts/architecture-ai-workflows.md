@@ -1,9 +1,3 @@
----
-title: "AI Workflows for Architecture"
-description: "Prompt patterns and AI workflows for architecture tasks"
----
-
-
 # Purpose
 
 AI assistants can support architectural work by helping analyse
@@ -269,9 +263,9 @@ principle of minimising accidental complexity.
 
 # Related Documents
 
-- [Software Architecture Handbook](../handbooks/architecture/README/)
-- [ADR Writing Guide](../guides/architecture/adr-writing-guide/)
-- [Architectural Patterns Guide](../guides/architecture/architectural-patterns/)
-- [Architecture Review Playbook](../playbooks/architecture-review/README/)
-- [ADR Template](../templates/adr/README/)
-- [AI Engineering Handbook](../handbooks/ai/README/)
+- [Software Architecture Handbook](../handbooks/architecture/README.md)
+- [ADR Writing Guide](../guides/architecture/adr-writing-guide.md)
+- [Architectural Patterns Guide](../guides/architecture/architectural-patterns.md)
+- [Architecture Review Playbook](../playbooks/architecture-review/README.md)
+- [ADR Template](../templates/adr/README.md)
+- [AI Engineering Handbook](../handbooks/ai/README.md)

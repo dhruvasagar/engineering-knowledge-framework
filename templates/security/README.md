@@ -1,9 +1,3 @@
----
-title: "Security Templates"
-description: "Reusable templates for security engineering workflows"
----
-
-
 # Purpose
 
 This directory contains reusable templates for security engineering
@@ -15,21 +9,21 @@ review reporting and security testing documentation.
 | Template | Description |
 | --- | --- |
 |-------------------------------+-------------------------------------------------|
-| [Threat Model Template](./threat-model/) | Structured threat model document using STRIDE. |
+| [Threat Model Template](./threat-model.md) | Structured threat model document using STRIDE. |
 | --- | --- |
-| [Security Review Report](./security-review-report/) | Findings report for security review outcomes. |
+| [Security Review Report](./security-review-report.md) | Findings report for security review outcomes. |
 
 # Usage
 
 Each template should be copied into the relevant project directory and
 customised. Templates follow the conventions established in the
-[Security Engineering Handbook](../../handbooks/security/README/) and the
-[Security Review Playbook](../../playbooks/security-review/README/).
+[Security Engineering Handbook](../../handbooks/security/README.md) and the
+[Security Review Playbook](../../playbooks/security-review/README.md).
 
 # Related Documents
 
-- [Security Engineering Handbook](../../handbooks/security/README/)
-- [Security Review Playbook](../../playbooks/security-review/README/)
-- [Security Review Checklist](../../checklists/security-review/)
-- [Security References](../../references/security/README/)
-- [Secure Coding Practices](../../guides/security/secure-coding/)
+- [Security Engineering Handbook](../../handbooks/security/README.md)
+- [Security Review Playbook](../../playbooks/security-review/README.md)
+- [Security Review Checklist](../../checklists/security-review.md)
+- [Security References](../../references/security/README.md)
+- [Secure Coding Practices](../../guides/security/secure-coding.md)

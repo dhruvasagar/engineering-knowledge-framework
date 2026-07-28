@@ -1,9 +1,3 @@
----
-title: "Engineering Quality Playbooks"
-description: "Operational workflows for engineering quality"
----
-
-
 # Purpose
 
 This directory contains playbooks for quality-related engineering
@@ -15,14 +9,14 @@ review, technical debt management and release quality gating.
 | Playbook | Description |
 | --- | --- |
 +--------------------------------------------------------+-------------------------------------------------+
-| [Quality Review Playbook](./quality-review/) | Workflow for conducting quality reviews. |
+| [Quality Review Playbook](./quality-review.md) | Workflow for conducting quality reviews. |
 | --- | --- |
-| [Technical Debt Remediation](./tech-debt-remediation/) | Workflow for managing and reducing tech debt. |
-| [Release Quality Gate](./release-quality-gate/) | Quality verification before release. |
+| [Technical Debt Remediation](./tech-debt-remediation.md) | Workflow for managing and reducing tech debt. |
+| [Release Quality Gate](./release-quality-gate.md) | Quality verification before release. |
 
 # Related Documents
 
-- [Engineering Quality Handbook](../../handbooks/quality/README/)
-- [Code Review Standards](../../guides/quality/code-review-standards/)
-- [Quality Metrics](../../guides/quality/quality-metrics/)
-- [Technical Debt Management](../../guides/quality/technical-debt-management/)
+- [Engineering Quality Handbook](../../handbooks/quality/README.md)
+- [Code Review Standards](../../guides/quality/code-review-standards.md)
+- [Quality Metrics](../../guides/quality/quality-metrics.md)
+- [Technical Debt Management](../../guides/quality/technical-debt-management.md)

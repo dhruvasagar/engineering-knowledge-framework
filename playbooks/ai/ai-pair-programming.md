@@ -1,9 +1,3 @@
----
-title: "AI Pair Programming Playbook"
-description: "Workflow for collaborative coding with AI"
----
-
-
 # Objective
 
 Use AI as a collaborative programming partner to improve productivity,
@@ -19,7 +13,7 @@ driver — AI augments, not replaces, engineering judgement.
 # Prerequisites
 
 - AI assistant configured with project context.
-- Familiarity with prompting patterns (see [Prompt Engineering](../../guides/ai/prompt-engineering/)).
+- Familiarity with prompting patterns (see [Prompt Engineering](../../guides/ai/prompt-engineering.md)).
 - Understanding of when AI is useful and when it is not.
 
 # Workflow
@@ -98,7 +92,7 @@ For well-understood tasks:
 
 # Related Documents
 
-- [Prompt Engineering](../../guides/ai/prompt-engineering/)
-- [Context Engineering](../../guides/ai/context-engineering/)
-- [AI Safety and Verification](../../guides/ai/ai-safety/)
-- [AI Usage Checklist](../../checklists/ai-usage/)
+- [Prompt Engineering](../../guides/ai/prompt-engineering.md)
+- [Context Engineering](../../guides/ai/context-engineering.md)
+- [AI Safety and Verification](../../guides/ai/ai-safety.md)
+- [AI Usage Checklist](../../checklists/ai-usage.md)

@@ -1,9 +1,3 @@
----
-title: "Accessibility Learning Paths"
-description: "Progressive learning paths for accessibility engineering"
----
-
-
 # Purpose
 
 These learning paths provide a structured progression for developing
@@ -20,31 +14,31 @@ For engineers new to accessibility.
    - Who benefits from accessible software?
    - The business case for accessibility.
    - Overview of WCAG principles (POUR).
-   - Read: [Accessibility Engineering Handbook](../../handbooks/accessibility/README/).
+   - Read: [Accessibility Engineering Handbook](../../handbooks/accessibility/README.md).
 
 2. ***Semantic HTML***
    - Why semantic HTML matters for accessibility.
    - Common HTML elements and their accessible uses.
    - Heading hierarchy and document structure.
-   - Read: [Semantic HTML](../../guides/accessibility/semantic-html/).
+   - Read: [Semantic HTML](../../guides/accessibility/semantic-html.md).
 
 3. ***Keyboard Accessibility***
    - Why keyboard accessibility matters.
    - Standard keyboard interactions.
    - Focus management basics.
-   - Read: [Keyboard Accessibility](../../guides/accessibility/keyboard-accessibility/).
+   - Read: [Keyboard Accessibility](../../guides/accessibility/keyboard-accessibility.md).
 
 4. ***Colour and Contrast***
    - Understanding contrast ratios.
    - Meeting WCAG contrast requirements.
    - Colour blindness considerations.
-   - Read: [Colour and Contrast](../../guides/accessibility/colour-and-contrast/).
+   - Read: [Colour and Contrast](../../guides/accessibility/colour-and-contrast.md).
 
 5. ***Accessible Forms***
    - Labelling inputs correctly.
    - Error handling for accessibility.
    - Accessible form structure.
-   - Read: [Accessible Forms](../../guides/accessibility/accessible-forms/).
+   - Read: [Accessible Forms](../../guides/accessibility/accessible-forms.md).
 
 ## Suggested Projects
 
@@ -67,25 +61,25 @@ For engineers who understand the basics and want to go deeper.
    - When to use ARIA (and when not to).
    - Common ARIA patterns (tabs, dialogs, alerts).
    - ARIA states and properties.
-   - Read: [ARIA Patterns](../../guides/accessibility/aria-patterns/).
+   - Read: [ARIA Patterns](../../guides/accessibility/aria-patterns.md).
 
 2. ***Screen Reader Testing***
    - Testing with VoiceOver and NVDA.
    - Navigating by headings, landmarks and links.
    - Testing dynamic content.
-   - Read: [Screen Reader Testing](../../guides/accessibility/screen-reader-testing/).
+   - Read: [Screen Reader Testing](../../guides/accessibility/screen-reader-testing.md).
 
 3. ***Accessibility Review***
    - Conducting accessibility audits.
    - Severity classification.
    - Writing accessibility findings.
-   - Read: [Accessibility Review Playbook](../../playbooks/accessibility-review/README/).
+   - Read: [Accessibility Review Playbook](../../playbooks/accessibility-review/README.md).
 
 4. ***WCAG Deep Dive***
    - Understanding WCAG success criteria.
    - Level A vs AA vs AAA.
    - Common failure patterns.
-   - Read: [WCAG Audit Checklist](../../checklists/accessibility/wcag-audit/).
+   - Read: [WCAG Audit Checklist](../../checklists/accessibility/wcag-audit.md).
 
 ## Suggested Projects
 
@@ -140,6 +134,6 @@ For engineers who want to lead accessibility engineering.
 
 # Related Documents
 
-- [Accessibility Engineering Handbook](../../handbooks/accessibility/README/)
-- [Accessibility References](../../references/accessibility/README/)
-- [Accessibility Glossary](../../glossary/accessibility/README/)
+- [Accessibility Engineering Handbook](../../handbooks/accessibility/README.md)
+- [Accessibility References](../../references/accessibility/README.md)
+- [Accessibility Glossary](../../glossary/accessibility/README.md)

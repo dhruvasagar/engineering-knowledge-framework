@@ -1,9 +1,3 @@
----
-title: "ADR-0002: Org-mode as Primary Document Format"
-description: "Decision to use Org-mode as the primary document format"
----
-
-
 :PROPERTIES:
 :STATUS:   accepted
 :DATE:     2026-07-27
@@ -91,5 +85,5 @@ familiar to engineers outside that ecosystem.
 
 # References
 
-- [Software Architecture Handbook](../handbooks/architecture/README/)
-- [Style Guide](../style-guide/)
+- [Software Architecture Handbook](../handbooks/architecture/README.md)
+- [Style Guide](../style-guide.md)

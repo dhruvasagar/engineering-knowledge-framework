@@ -1,9 +1,3 @@
----
-title: "Rails Deployment Checklist"
-description: "Pre-deployment verification checklist for Rails applications"
----
-
-
 # Purpose
 
 Ensure every Rails deployment is safe, reversible and verified.
@@ -46,7 +40,7 @@ Ensure every Rails deployment is safe, reversible and verified.
 
 # Related Documents
 
-- [Rails Deployment Playbook](../../playbooks/rails/deployment/)
-- [Rails Engineering Handbook](../../handbooks/rails/README/)
-- [Rails Pull Request Checklist](../../checklists/rails/pull-request/)
-- [Rails Security Review Checklist](../../checklists/rails/security-review/)
+- [Rails Deployment Playbook](../../playbooks/rails/deployment.md)
+- [Rails Engineering Handbook](../../handbooks/rails/README.md)
+- [Rails Pull Request Checklist](../../checklists/rails/pull-request.md)
+- [Rails Security Review Checklist](../../checklists/rails/security-review.md)

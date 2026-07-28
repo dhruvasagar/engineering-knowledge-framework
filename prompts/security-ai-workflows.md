@@ -1,9 +1,3 @@
----
-title: "AI Workflows for Security"
-description: "Prompt patterns and AI workflows for security engineering"
----
-
-
 # Purpose
 
 AI assistants can support security engineering through code analysis,
@@ -100,7 +94,7 @@ Questions:
 
 # Related Documents
 
-- [Security Engineering Handbook](../handbooks/security/README/)
-- [Security Review Playbook](../playbooks/security-review/README/)
-- [Secure Coding Guide](../guides/security/secure-coding/)
-- [AI Workflows for Engineering](../prompts/engineering-ai-workflows/)
+- [Security Engineering Handbook](../handbooks/security/README.md)
+- [Security Review Playbook](../playbooks/security-review/README.md)
+- [Secure Coding Guide](../guides/security/secure-coding.md)
+- [AI Workflows for Engineering](../prompts/engineering-ai-workflows.md)

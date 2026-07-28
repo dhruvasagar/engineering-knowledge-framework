@@ -1,9 +1,3 @@
----
-title: "Accessibility Report Template"
-description: "Standard format for accessibility audit findings"
----
-
-
 # Accessibility Report: [Project Name]
 
 # Metadata
@@ -96,6 +90,6 @@ recommendations.
 
 ## Related Documents
 
-- [Accessibility Engineering Handbook](../../handbooks/accessibility/README/)
-- [Accessibility Review Playbook](../../playbooks/accessibility-review/README/)
-- [WCAG Audit Checklist](../../checklists/accessibility/wcag-audit/)
+- [Accessibility Engineering Handbook](../../handbooks/accessibility/README.md)
+- [Accessibility Review Playbook](../../playbooks/accessibility-review/README.md)
+- [WCAG Audit Checklist](../../checklists/accessibility/wcag-audit.md)

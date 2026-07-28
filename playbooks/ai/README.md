@@ -1,9 +1,3 @@
----
-title: "AI Engineering Playbooks"
-description: "Operational workflows for AI-assisted engineering"
----
-
-
 # Purpose
 
 This directory contains playbooks for AI-assisted engineering workflows.
@@ -16,14 +10,14 @@ judgement.
 | Playbook | Description |
 | --- | --- |
 |-------------------------------------------------------+-------------------------------------------------|
-| [AI-Assisted Code Review](./ai-assisted-code-review/) | Workflow for reviewing code with AI assistance. |
+| [AI-Assisted Code Review](./ai-assisted-code-review.md) | Workflow for reviewing code with AI assistance. |
 | --- | --- |
-| [AI-Assisted Architecture Review](./ai-assisted-architecture-review/) | Workflow for architecture review with AI. |
-| [AI Pair Programming](./ai-pair-programming/) | Workflow for collaborative coding with AI. |
+| [AI-Assisted Architecture Review](./ai-assisted-architecture-review.md) | Workflow for architecture review with AI. |
+| [AI Pair Programming](./ai-pair-programming.md) | Workflow for collaborative coding with AI. |
 
 # Related Documents
 
-- [AI Engineering Handbook](../../handbooks/ai/README/)
-- [Context Engineering](../../guides/ai/context-engineering/)
-- [Prompt Engineering](../../guides/ai/prompt-engineering/)
-- [AI Usage Checklist](../../checklists/ai-usage/)
+- [AI Engineering Handbook](../../handbooks/ai/README.md)
+- [Context Engineering](../../guides/ai/context-engineering.md)
+- [Prompt Engineering](../../guides/ai/prompt-engineering.md)
+- [AI Usage Checklist](../../checklists/ai-usage.md)

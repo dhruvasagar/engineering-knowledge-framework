@@ -1,9 +1,3 @@
----
-title: "Dependency Security"
-description: "Managing security risks in third-party dependencies"
----
-
-
 # Purpose
 
 Modern applications depend on hundreds of third-party packages.
@@ -166,7 +160,7 @@ When removing a dependency:
 
 # Related Documents
 
-- [Security Engineering Handbook](../../handbooks/security/README/)
-- [Security Review Playbook](../../playbooks/security-review/README/)
-- [Rails Project Standards](../../guides/rails/project-standards/)
-- [Rails Security Review Checklist](../../checklists/rails/security-review/)
+- [Security Engineering Handbook](../../handbooks/security/README.md)
+- [Security Review Playbook](../../playbooks/security-review/README.md)
+- [Rails Project Standards](../../guides/rails/project-standards.md)
+- [Rails Security Review Checklist](../../checklists/rails/security-review.md)

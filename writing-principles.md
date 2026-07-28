@@ -1,15 +1,9 @@
----
-title: "Writing Principles"
-description: "Principles for creating high-quality, timeless engineering knowledge"
----
-
-
 # Purpose
 
 This document defines the principles that guide how engineering
 knowledge should be written within the Engineering Knowledge Framework.
 
-Unlike the [Style Guide](./style-guide/), which defines formatting and writing
+Unlike the [Style Guide](./style-guide.md), which defines formatting and writing
 conventions, this document explains the philosophy behind effective
 engineering documentation.
 
@@ -238,7 +232,7 @@ Prefer:
 
 #+BEGIN_QUOTE
 See the
-[Rails Engineering Handbook](./handbooks/rails/README/)
+[Rails Engineering Handbook](./handbooks/rails/README.md)
 for the underlying architectural principles.
 #+END_QUOTE
 
@@ -441,9 +435,9 @@ timeless engineering knowledge that benefits both humans and AI.
 # Related Documents
 
 - [CLAUDE.md](./CLAUDE.md)
-- [Strategy](./strategy/)
-- [Architecture](./architecture/)
-- [Style Guide](./style-guide/)
-- [Document Types](./document-types/)
-- [Contributing](./contributing/)
-- [Repository Overview](../README/)
+- [Strategy](./strategy.md)
+- [Architecture](./architecture.md)
+- [Style Guide](./style-guide.md)
+- [Document Types](./document-types.md)
+- [Contributing](./contributing.md)
+- [Repository Overview](../README.md)

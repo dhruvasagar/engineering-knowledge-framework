@@ -1,9 +1,3 @@
----
-title: "System Modeling"
-description: "Approaches and standards for modeling software systems"
----
-
-
 # Purpose
 
 System modeling is the practice of creating abstract representations of
@@ -219,8 +213,8 @@ When asking AI for modeling assistance, provide:
 
 # Related Documents
 
-- [Software Architecture Handbook](../../handbooks/architecture/README/)
-- [Architectural Patterns Guide](../../guides/architecture/architectural-patterns/)
-- [Architecture Review Playbook](../../playbooks/architecture-review/README/)
-- [Architecture Glossary](../../glossary/architecture/README/)
+- [Software Architecture Handbook](../../handbooks/architecture/README.md)
+- [Architectural Patterns Guide](../../guides/architecture/architectural-patterns.md)
+- [Architecture Review Playbook](../../playbooks/architecture-review/README.md)
+- [Architecture Glossary](../../glossary/architecture/README.md)
 - [Diagrams Directory](../../assets/diagrams/)
