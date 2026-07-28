@@ -26,10 +26,12 @@ BULLET_PATTERN = re.compile(r'^\s*\*\s+[A-Za-z]')
 
 
 def collect_org_files():
-    """Collect all .md files excluding .git."""
+    """Collect all .md files excluding .git and .venv."""
     org_files = []
+    SKIP_DIRS = {'.git', '.venv', '__pycache__', '.org-backup', 'node_modules'}
     for root, dirs, files in os.walk(REPO_ROOT):
-        if '.git' in root.split(os.sep):
+        rel = Path(root).relative_to(REPO_ROOT)
+        if any(p in SKIP_DIRS or p.startswith('.') for p in rel.parts):
             continue
         for f in files:
             if f.endswith('.md'):

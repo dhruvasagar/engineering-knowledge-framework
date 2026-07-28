@@ -45,14 +45,20 @@ A phase is considered complete when:
 ## Current Phase
 
 The project has completed ***Phase 1*** (Foundation), ***Phase 2***
-(Foundation Capabilities) and ***Phase 3*** (Engineering Capabilities).
-All five Phase 3 capabilities — Rails Engineering, Security Engineering,
+(Foundation Capabilities), ***Phase 3*** (Engineering Capabilities),
+and ***Phase 4*** (AI Engineering Framework). All five Phase 3
+capabilities — Rails Engineering, Security Engineering,
 AI Engineering, Engineering Quality and Accessibility Engineering — are
 now built out with all nine document types covered.
 
-Cross-cutting work continues in AI integration (Phase 4) and the
-Learning Framework (Phase 5). Initial tooling work (Phase 6) is the
-next major undertaking.
+The Learning Framework (Phase 5) has learning paths for all seven
+capabilities and needs practical exercises and assessments.
+
+Framework Tooling (Phase 6) and the Static Site (Phase 7a) are
+substantially built out — validation tools, knowledge graph generation,
+Zola-based site with full-text search, and GitHub Pages deployment are
+all operational. Remaining tooling work focuses on generator tooling
+and deeper AI integration.
 
 See the [CHANGELOG](./changelog/) for the detailed deliverable list.
 
@@ -348,14 +354,13 @@ the engineering lifecycle.
 
 ## Status
 
-[x] ***Substantially Complete*** — The AI Engineering capability is fully
-    built out across all nine document types. All six cross-cutting AI
-    topics (agentic workflows, collaboration patterns, human review
-    strategies, evaluation frameworks, verification workflows, knowledge
-    extraction) have been developed as guides and playbooks. Domain-
-    specific AI workflows exist for Engineering, Architecture, Rails,
-    Security, Quality and Accessibility. Remaining work focuses on
-    deeper integration across capabilities and long-term evaluation.
+[x] ***Complete*** — The AI Engineering capability is fully built out
+    across all nine document types. All six cross-cutting AI topics
+    (agentic workflows, collaboration patterns, human review strategies,
+    evaluation frameworks, verification workflows, knowledge extraction)
+    have been developed as guides and playbooks. Domain-specific AI
+    workflows exist for Engineering, Architecture, Rails, Security,
+    Quality and Accessibility. All Phase 4 deliverables are published.
 
 ## Objectives
 
@@ -413,9 +418,11 @@ Build structured learning experiences for every capability.
 
 [x] ***In Progress*** — Beginner, intermediate and advanced learning
     paths exist for Engineering, Architecture, Rails, Security, AI
-    Engineering, and Engineering Quality. The next step is to add
-    practical exercises, suggested projects and competency assessments
-    to each learning path.
+    Engineering, Engineering Quality, and Accessibility Engineering.
+    All seven capabilities have structured learning paths with topics,
+    suggested projects and assessment criteria. The next step is to
+    add practical exercises aligned with each level, formal competency
+    assessments, and cross-capability learning sequences.
 
 ## Objectives
 
@@ -455,10 +462,10 @@ Develop tooling that improves authoring, validation and discovery.
 
 ## Status
 
-[ ] ***Not Started*** — No tooling has been built yet. This is the next
-    major undertaking after current documentation work stabilises.
-    The prompts directory ([index](./prompts/README/)) and glossary*README provide
-    initial structure for understanding validation requirements.
+[x] ***Substantially Complete*** — Validation tooling (6a) and knowledge
+    graph tooling (6c) are fully implemented. Generator tooling (6b)
+    remains to be built. All tooling runs locally via `make` commands
+    and in CI via GitHub Actions.
 
 ## Objectives
 
@@ -470,18 +477,19 @@ Develop tooling that improves authoring, validation and discovery.
 
 ## Deliverables
 
-### Phase 6a — Validation Tooling (Priority)
+### Phase 6a — Validation Tooling (Complete)
 
 Initial tooling focused on correctness and consistency:
 
-- [ ] Link validation: Verify all == cross-references resolve to existing files.
-- [ ] Style validation: Check documents against `STYLE_GUIDE.org` rules (heading levels, metadata, list syntax).
-- [ ] Glossary validation: Ensure all glossary entries have required fields and cross-references.
-- [ ] Bullet syntax linting: Detect =* = used as bullet instead of headline.
-- [ ] Metadata validation: Verify required `#+TITLE`, `#+DESCRIPTION`, `#+DATE` headers.
-- [ ] TOC validation: Ensure TOC.md entries match actual file inventory.
+- [x] Link validation: Verify all markdown cross-references resolve to existing files.
+- [x] Style validation: Check documents against [Style Guide](./style-guide/) rules (heading levels, metadata, front matter, filename conventions).
+- [x] Glossary validation: Ensure all glossary entries have required fields, non-empty definitions, and no duplicate terms.
+- [x] Bullet syntax linting: Detect incorrect list formatting.
+- [x] Metadata validation: Verify required `title:` and `description:` front matter.
+- [x] TOC validation: Ensure TOC.md entries match actual file inventory.
+- [x] Validation runner: `make validate` runs all validators in sequence with summary output.
 
-### Phase 6b — Generator Tooling
+### Phase 6b — Generator Tooling (Not Started)
 
 Tooling for scaffolding new capabilities and documents:
 
@@ -490,15 +498,15 @@ Tooling for scaffolding new capabilities and documents:
 - [ ] Playbook generator: Scaffold playbooks with workflow sections.
 - [ ] Learning path generator: Scaffold three-tier learning paths.
 
-### Phase 6c — Knowledge Graph Tooling
+### Phase 6c — Knowledge Graph Tooling (Partial)
 
 Tooling for discovery and navigation:
 
-- [ ] Cross-reference extraction: Parse all documents and extract == links.
-- [ ] Knowledge graph generation: Produce a machine-readable graph of document relationships.
+- [x] Cross-reference extraction: Parse all documents and extract markdown links.
+- [x] Knowledge graph generation: Produce machine-readable graph (JSON + Graphviz DOT) of document relationships.
+- [x] Capability completeness report: Per-capability report of which document types are present and missing.
 - [ ] AI context packaging: Generate condensed context packs for AI assistants from selected documents.
-- [ ] Search indexing: Build search index across all documents.
-- [ ] Capability completeness report: Report which document types each capability has and is missing.
+- [ ] Search indexing: Build search index across all documents (handled by Zola for the site; standalone index pending).
 
 ## Development Approach
 
@@ -516,9 +524,14 @@ quality.
 
 ## Lessons Learned
 
-- No tooling exists yet to capture lessons from.
-- The prompts index and glossary README can inform initial validation
-  requirements.
+- Python scripts with no external dependencies are easy to run in CI and locally.
+- `make` targets provide a simple, discoverable interface for all tooling.
+- Running validation in CI before building the site catches broken links
+  before deployment.
+- The knowledge graph generator revealed missing cross-references and
+  capability gaps that were not obvious from directory listings.
+- Validators should be strict during development but can be configured
+  to allow selective exceptions for known issues.
 
 # Phase 7 — Platform
 
@@ -526,9 +539,12 @@ Expand the framework into a complete engineering knowledge platform.
 
 ## Status
 
-[ ] ***Not Started*** — Platform work depends on Phase 6 tooling being
-    in place. The knowledge graph and validation infrastructure must
-    exist before a platform can consume them.
+[x] ***In Progress*** — A Zola-based static site (Phase 7a) is fully
+    operational with custom theme, full-text search, and GitHub Pages
+    deployment via GitHub Actions. The static site serves all framework
+    content with navigation by capability and document type. Remaining
+    platform work focuses on the knowledge graph UI, AI integration,
+    and advanced platform features.
 
 ## Objectives
 
@@ -539,13 +555,15 @@ Expand the framework into a complete engineering knowledge platform.
 
 ## Deliverables
 
-### Phase 7a — Static Site
+### Phase 7a — Static Site (Complete)
 
-- [ ] Static site generator integration (e.g., Hugo, Org-mode export).
-- [ ] Full-text search across all documents.
-- [ ] Navigation by capability and document type.
-- [ ] Cross-cutting topic indexes.
-- [ ] Responsive design for desktop and mobile.
+- [x] Zola static site generator integration with custom theme.
+- [x] Full-text search across all documents (Zola search index with elasticlunr).
+- [x] Navigation by capability and document type.
+- [x] Cross-cutting topic indexes via TOC.md.
+- [x] Responsive design with custom CSS.
+- [x] GitHub Actions CI/CD pipeline: validate → build graph → prepare content → build site → deploy to GitHub Pages.
+- [x] `make site` and `make serve` commands for local preview.
 
 ### Phase 7b — Knowledge Graph UI
 
@@ -555,8 +573,11 @@ Expand the framework into a complete engineering knowledge platform.
 
 ### Phase 7c — AI Integration
 
-- [ ] MCP server exposing framework knowledge to AI assistants.
-- [ ] AI context packaging API.
+- [x] MCP server exposing framework knowledge to AI assistants via stdio transport.
+  - Resources: capabilities, documents, search, knowledge graph stats.
+  - Tools: context pack generation, document search, related documents, capability reports.
+  - Prompts: engineering review, architecture review, Rails development templates.
+- [x] AI context packaging API (CLI tool plus MCP tool).
 - [ ] Automatic context injection for coding agents.
 
 ### Phase 7d — Platform Features
@@ -568,11 +589,21 @@ Expand the framework into a complete engineering knowledge platform.
 
 ## Development Approach
 
-1. Static site should be the first platform deliverable — it provides
-   immediate value and surfaces rendering issues.
-2. Knowledge graph UI depends on Phase 6c (graph generation).
+1. Static site was built alongside Phase 6 tooling — validation and site
+   generation share the same CI pipeline.
+2. Knowledge graph UI depends on Phase 6c (graph generation — already built).
 3. AI integration should use the knowledge graph as its data source.
 4. Community portal is last — it requires critical mass of users.
+
+## Lessons Learned
+
+- Zola's `_index.md` convention maps well to the directory-based
+  capability structure.
+- The `prepare-site-content.py` script is essential for fixing relative
+  links between flat-file structure and Zola's URL hierarchy.
+- Building the site in CI ensures broken links are caught before deployment.
+- Full-text search was valuable immediately — should be included from the
+  start in any future static site setup.
 
 # Phase 8 — Community
 
@@ -746,11 +777,14 @@ Current priorities are:
 7. [x] Develop Engineering Quality capability (Phase 3).
 8. [x] Develop Accessibility Engineering capability (Phase 3).
 9. [x] Establish RFC and ADR processes for framework evolution (see [adr/](./adr/) directory and [ADR template](./templates/adr/README/)).
-10. [ ] Add practical exercises and assessments to learning paths (Phase 5).
+10. [ ] Add practical exercises, formal assessments and cross-capability learning sequences to learning paths (Phase 5).
 11. [x] Develop AI agentic workflows and evaluation frameworks (Phase 4).
-12. [ ] Build initial validation tooling — link validation, style validation, glossary validation (Phase 6).
-13. [ ] Build knowledge graph generation tooling (Phase 6).
-14. [ ] Explore community engagement and contribution workflows (Phase 8).
+12. [x] Build validation tooling — link validation, style validation, glossary validation, TOC validation (Phase 6a).
+13. [x] Build knowledge graph generation tooling (Phase 6c).
+14. [ ] Build generator tooling — capability scaffolding, document type generators (Phase 6b).
+15. [ ] Build knowledge graph UI visualization (Phase 7b).
+16. [x] Build AI context packaging for AI assistants — CLI tool + MCP server (Phase 6c/7c).
+17. [ ] Explore community engagement and contribution workflows (Phase 8).
 
 These initiatives build on the completed foundation. See [CHANGELOG](./changelog/) for
 completed milestones.

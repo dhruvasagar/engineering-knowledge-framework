@@ -27,7 +27,7 @@ Foundational engineering terms are defined in the
 | Context | Rails includes CSRF protection by default via |
 |  | `protect_from_forgery with: :exception`. Do not disable |
 |  | it. |
-| Related | [[#xss][XSS]], [[#sql-injection][SQL Injection]] |
+| Related | [XSS](#xss), [SQL Injection](#sql-injection) |
 | References | [Security Engineering Handbook](../../handbooks/security/README/) |
 
 ## Defense in Depth
@@ -42,7 +42,7 @@ Foundational engineering terms are defined in the
 | Context | No single security control is sufficient. Defense in |
 |  | depth combines network, application, data and |
 |  | operational security controls. |
-| Related | [[#least-privilege][Least Privilege]], [[#secure-by-default][Secure by Default]] |
+| Related | [Least Privilege](#least-privilege), [Secure by Default](#secure-by-default) |
 | References | [Security Engineering Handbook](../../handbooks/security/README/) |
 
 ## IDOR (Insecure Direct Object Reference)
@@ -56,7 +56,7 @@ Foundational engineering terms are defined in the
 |  | (e.g., changing a user ID in a URL parameter). |
 | Context | Prevention requires authorization checks on every |
 |  | resource access, not relying on identifier obscurity. |
-| Related | [[#sql-injection][SQL Injection]], [[#xss][XSS]] |
+| Related | [SQL Injection](#sql-injection), [XSS](#xss) |
 | References | [Security Engineering Handbook](../../handbooks/security/README/) |
 
 ## Least Privilege
@@ -70,7 +70,7 @@ Foundational engineering terms are defined in the
 |  | its function. |
 | Context | Apply least privilege at every level: database accounts, |
 |  | service accounts, user permissions and network access. |
-| Related | [[#defense-in-depth][Defense in Depth]], [[#secure-by-default][Secure by Default]] |
+| Related | [Defense in Depth](#defense-in-depth), [Secure by Default](#secure-by-default) |
 | References | [Security Engineering Handbook](../../handbooks/security/README/) |
 
 ## SAST (Static Application Security Testing)
@@ -84,7 +84,7 @@ Foundational engineering terms are defined in the
 | Context | SAST tools (e.g., Brakeman) scan code for patterns |
 |  | known to be insecure. They are fast and can be run in |
 |  | CI, but may produce false positives. |
-| Related | [[#threat-modeling][Threat Modeling]] |
+| Related | [Threat Modeling](#threat-modeling) |
 | References | [Security Engineering Handbook](../../handbooks/security/README/) |
 
 ## Secure by Default
@@ -99,7 +99,7 @@ Foundational engineering terms are defined in the
 | Context | Engineers should explicitly opt into reduced security, |
 |  | not opt into increased security. Defaults should be |
 |  | restrictive. |
-| Related | [[#defense-in-depth][Defense in Depth]], [[#least-privilege][Least Privilege]] |
+| Related | [Defense in Depth](#defense-in-depth), [Least Privilege](#least-privilege) |
 | References | [Security Engineering Handbook](../../handbooks/security/README/) |
 
 ## SQL Injection
@@ -114,7 +114,7 @@ Foundational engineering terms are defined in the
 | Context | Prevention: use parameterized queries, prepared |
 |  | statements or an ORM like ActiveRecord. Never use raw |
 |  | SQL with string interpolation from user input. |
-| Related | [[#xss][XSS]], [[#idor][IDOR]] |
+| Related | [XSS](#xss), [IDOR](#idor) |
 | References | [Security Engineering Handbook](../../handbooks/security/README/) |
 
 ## Threat Modeling
@@ -129,7 +129,7 @@ Foundational engineering terms are defined in the
 | Context | Threat modeling should be performed during the design |
 |  | phase of new systems or significant changes. The STRIDE |
 |  | framework provides a structured approach. |
-| Related | [[#sast][SAST]], [[#defense-in-depth][Defense in Depth]] |
+| Related | [SAST](#sast), [Defense in Depth](#defense-in-depth) |
 | References | [Security Engineering Handbook](../../handbooks/security/README/) |
 
 ## XSS (Cross-Site Scripting)
@@ -144,7 +144,7 @@ Foundational engineering terms are defined in the
 | Context | Rails auto-escapes in views by default. Avoid using |
 |  | `.html_safe` or `raw` unless necessary and reviewed. |
 |  | Content Security Policy provides additional protection. |
-| Related | [[#csrf][CSRF]], [[#sql-injection][SQL Injection]] |
+| Related | [CSRF](#csrf), [SQL Injection](#sql-injection) |
 | References | [Security Engineering Handbook](../../handbooks/security/README/) |
 
 # Related Documents

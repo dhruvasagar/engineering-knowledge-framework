@@ -27,7 +27,7 @@ repository. Foundational engineering terms are defined in the
 | Context | ActiveRecord is the default model layer in Rails. It |
 |  | implements the Active Record pattern where a class |
 |  | wraps a database table. |
-| Related | [[#migration][Migration]], [[#model][Model]] |
+| Related | [Migration](#migration), [Model](#model) |
 | References | [Rails Engineering Handbook](../../handbooks/rails/README/) |
 
 ## Concern
@@ -42,7 +42,7 @@ repository. Foundational engineering terms are defined in the
 | Context | Concerns are Rails' mechanism for sharing behaviour via |
 |  | modules. Use them for cross-cutting concerns, but prefer |
 |  | service objects for complex business logic. |
-| Related | [[#service-object][Service Object]] |
+| Related | [Service Object](#service-object) |
 | References | [Rails Engineering Handbook](../../handbooks/rails/README/) |
 
 ## Controller
@@ -55,7 +55,7 @@ repository. Foundational engineering terms are defined in the
 |  | invokes business logic and renders responses. |
 | Context | Controllers should be thin. Business logic belongs in |
 |  | models, service objects or other domain classes. |
-| Related | [[#model][Model]], [[#view][View]] |
+| Related | [Model](#model), [View](#view) |
 | References | [Rails Engineering Handbook](../../handbooks/rails/README/) |
 
 ## Form Object
@@ -70,7 +70,7 @@ repository. Foundational engineering terms are defined in the
 | Context | Form objects are used when a form collects data for |
 |  | multiple models or has validation logic that does not |
 |  | belong to any single model. |
-| Related | [[#service-object][Service Object]] |
+| Related | [Service Object](#service-object) |
 | References | [Rails Engineering Handbook](../../handbooks/rails/README/) |
 
 ## Migration
@@ -85,7 +85,7 @@ repository. Foundational engineering terms are defined in the
 | Context | Migrations are the Rails way to manage database schema |
 |  | changes. Each migration should change one logical thing |
 |  | and be reversible. |
-| Related | [[#activerecord][ActiveRecord]] |
+| Related | [ActiveRecord](#activerecord) |
 | References | [Rails Engineering Handbook](../../handbooks/rails/README/) |
 
 ## Model
@@ -100,7 +100,7 @@ repository. Foundational engineering terms are defined in the
 | Context | Models encapsulate domain logic, validations, |
 |  | associations and queries. Keep them focused on |
 |  | a single responsibility. |
-| Related | [[#activerecord][ActiveRecord]], [[#controller][Controller]], [[#view][View]] |
+| Related | [ActiveRecord](#activerecord), [Controller](#controller), [View](#view) |
 | References | [Rails Engineering Handbook](../../handbooks/rails/README/) |
 
 **Presenter
@@ -114,7 +114,7 @@ repository. Foundational engineering terms are defined in the
 | Context | Presenters wrap model objects with view-specific methods. |
 |  | They keep views clean and make presentation logic |
 |  | testable without slow feature specs. |
-| Related | [[#view][View]], [[#service-object][Service Object]] |
+| Related | [View](#view), [Service Object](#service-object) |
 | References | [Rails Engineering Handbook](../../handbooks/rails/README/) |
 
 ## Query Object
@@ -128,7 +128,7 @@ repository. Foundational engineering terms are defined in the
 |  | class. |
 | Context | Query objects keep models clean when queries become |
 |  | complex. They are named after the query they perform. |
-| Related | [[#activerecord][ActiveRecord]], [[#service-object][Service Object]] |
+| Related | [ActiveRecord](#activerecord), [Service Object](#service-object) |
 | References | [Rails Engineering Handbook](../../handbooks/rails/README/) |
 
 ## Service Object
@@ -142,7 +142,7 @@ repository. Foundational engineering terms are defined in the
 | Context | Service objects are the primary pattern for extracting |
 |  | complex operations from controllers and models. They |
 |  | are easy to test and can be reused across entry points. |
-| Related | [[#form-object][Form Object]], [[#query-object][Query Object]], [[#concern][Concern]] |
+| Related | [Form Object](#form-object), [Query Object](#query-object), [Concern](#concern) |
 | References | [Rails Engineering Handbook](../../handbooks/rails/README/) |
 
 ## View
@@ -156,7 +156,7 @@ repository. Foundational engineering terms are defined in the
 |  | languages. |
 | Context | Views should contain minimal logic. Presentation logic |
 |  | belongs in presenters, decorators or helpers. |
-| Related | [[#controller][Controller]], [[#model][Model]], [[#presenter][Presenter]] |
+| Related | [Controller](#controller), [Model](#model), [Presenter](#presenter) |
 | References | [Rails Engineering Handbook](../../handbooks/rails/README/) |
 
 # Related Documents

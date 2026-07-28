@@ -1,4 +1,4 @@
-.PHONY: validate lint graph site serve all clean help
+.PHONY: validate lint graph context-pack site serve clean all help
 
 validate:
 	@echo "🔍 Running all validators..."
@@ -9,6 +9,11 @@ lint: validate
 graph:
 	@echo "🕸️  Building knowledge graph..."
 	@python3 tools/build-knowledge-graph.py --format all
+
+context-pack:
+	@echo "📦 Generating context pack..."
+	@python3 tools/context-pack.py $(filter-out $@,$(MAKECMDGOALS)) --output /tmp/context-pack.md
+	@echo "   Output: /tmp/context-pack.md"
 
 site:
 	@echo "🌐 Building website..."
@@ -32,10 +37,12 @@ help:
 	@echo "Engineering Knowledge Framework — Tooling"
 	@echo ""
 	@echo "Usage:"
-	@echo "  make validate    Run all validators"
-	@echo "  make graph       Build knowledge graph (JSON + DOT)"
-	@echo "  make site        Build the Zola static site"
-	@echo "  make serve       Preview site at http://localhost:1111"
-	@echo "  make clean       Remove generated content and output"
-	@echo "  make all         Run validate + graph + site"
-	@echo "  make help        Show this help"
+	@echo "  make validate          Run all validators"
+	@echo "  make graph             Build knowledge graph (JSON + DOT)"
+	@echo "  make context-pack TERM Generate context pack for AI assistants"
+	@echo "  make mcp-server        Start MCP server (stdio)"
+	@echo "  make site              Build the Zola static site"
+	@echo "  make serve             Preview site at http://localhost:1111"
+	@echo "  make clean             Remove generated content and output"
+	@echo "  make all               Run validate + graph + site"
+	@echo "  make help              Show this help"

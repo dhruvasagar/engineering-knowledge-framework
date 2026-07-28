@@ -21,7 +21,7 @@ the Engineering Knowledge Framework.
 |  | in a failure, incident or rollback. |
 | Context | A key DORA metric for measuring deployment reliability. |
 |  | Target: < 5%. |
-| Related | [[#defect-escape-rate][Defect Escape Rate]], [[#mean-time-to-recover][MTTR]] |
+| Related | [Defect Escape Rate](#defect-escape-rate), [MTTR](#mean-time-to-recover) |
 | References | [Engineering Quality Handbook](../../handbooks/quality/README/) |
 
 ## Defect Escape Rate
@@ -34,7 +34,7 @@ the Engineering Knowledge Framework.
 |  | those found during development and testing. |
 | Context | Measures the effectiveness of testing and review |
 |  | processes. Target: < 5%. |
-| Related | [[#change-failure-rate][Change Failure Rate]] |
+| Related | [Change Failure Rate](#change-failure-rate) |
 | References | [Engineering Quality Handbook](../../handbooks/quality/README/) |
 
 ## Mean Time to Recover (MTTR)
@@ -47,7 +47,7 @@ the Engineering Knowledge Framework.
 |  | production incident or deployment failure. |
 | Context | A key DORA metric for operational quality. Target: |
 |  | < 1 hour. |
-| Related | [[#change-failure-rate][Change Failure Rate]], [[#defect-escape-rate][Defect Escape Rate]] |
+| Related | [Change Failure Rate](#change-failure-rate), [Defect Escape Rate](#defect-escape-rate) |
 | References | [Engineering Quality Handbook](../../handbooks/quality/README/) |
 
 ## Quality Gate
@@ -60,7 +60,7 @@ the Engineering Knowledge Framework.
 |  | proceeds to the next stage (commit, PR, deploy, release). |
 | Context | Quality gates prevent defects from propagating. They |
 |  | should be automated, fast and enforced in CI/CD. |
-| Related | [[#technical-debt][Technical Debt]] |
+| Related | [Technical Debt](#technical-debt) |
 | References | [Engineering Quality Handbook](../../handbooks/quality/README/) |
 
 ## Technical Debt
@@ -77,7 +77,7 @@ the Engineering Knowledge Framework.
 |  | plan to repay) or accidental (accumulated through |
 |  | neglect). All technical debt should be tracked |
 |  | explicitly and regularly addressed. |
-| Related | [[#quality-gate][Quality Gate]] |
+| Related | [Quality Gate](#quality-gate) |
 | References | [Engineering Quality Handbook](../../handbooks/quality/README/), |
 |  | [Engineering Fundamentals Handbook](../../handbooks/engineering/README/) |
 

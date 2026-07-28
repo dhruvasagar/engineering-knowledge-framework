@@ -25,6 +25,8 @@ IGNORE_FILES = {
     'site',
     'tools',
     '.org-backup',
+    '.venv',
+    '__pycache__',
 }
 
 

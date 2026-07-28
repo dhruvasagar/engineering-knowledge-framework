@@ -28,7 +28,7 @@ glossary (e.g., [Architecture Glossary](../architecture/README/), [Rails Glossar
 | Context | Abstraction reduces complexity by allowing engineers to |
 |  | work at a higher level of understanding. It is a |
 |  | fundamental tool for managing software complexity. |
-| Related | [[#encapsulation][Encapsulation]], [[#modularity][Modularity]] |
+| Related | [Encapsulation](#encapsulation), [Modularity](#modularity) |
 | References | [Engineering Fundamentals Handbook](../../handbooks/engineering/README/) |
 
 ## Cohesion
@@ -43,7 +43,7 @@ glossary (e.g., [Architecture Glossary](../architecture/README/), [Rails Glossar
 |  | are closely related and focused. Low cohesion means a |
 |  | module attempts to do many unrelated things. High |
 |  | cohesion is preferred. |
-| Related | [[#coupling][Coupling]], [[#separation-of-concerns][Separation of Concerns]] |
+| Related | [Coupling](#coupling), [Separation of Concerns](#separation-of-concerns) |
 | References | [Engineering Fundamentals Handbook](../../handbooks/engineering/README/) |
 
 ## Composition
@@ -58,7 +58,7 @@ glossary (e.g., [Architecture Glossary](../architecture/README/), [Rails Glossar
 | Context | Composition is preferred over inheritance in most |
 |  | cases because it is more flexible, easier to test and |
 |  | less likely to produce fragile code. |
-| Related | [[#coupling][Coupling]], [[#encapsulation][Encapsulation]] |
+| Related | [Coupling](#coupling), [Encapsulation](#encapsulation) |
 | References | [Engineering Fundamentals Handbook](../../handbooks/engineering/README/) |
 
 ## Coupling
@@ -73,7 +73,7 @@ glossary (e.g., [Architecture Glossary](../architecture/README/), [Rails Glossar
 |  | minimal interfaces and can be changed independently. |
 |  | Tight coupling means changes to one module require |
 |  | changes to others. Loose coupling is preferred. |
-| Related | [[#cohesion][Cohesion]], [[#encapsulation][Encapsulation]] |
+| Related | [Cohesion](#cohesion), [Encapsulation](#encapsulation) |
 | References | [Engineering Fundamentals Handbook](../../handbooks/engineering/README/) |
 
 ## Dependency Injection
@@ -89,7 +89,7 @@ glossary (e.g., [Architecture Glossary](../architecture/README/), [Rails Glossar
 |  | simplifies testing and reduces coupling. Common forms |
 |  | include constructor injection, setter injection and |
 |  | interface injection. |
-| Related | [[#coupling][Coupling]], [[#encapsulation][Encapsulation]] |
+| Related | [Coupling](#coupling), [Encapsulation](#encapsulation) |
 | References | [Engineering Fundamentals Handbook](../../handbooks/engineering/README/) |
 
 ## Encapsulation
@@ -104,7 +104,7 @@ glossary (e.g., [Architecture Glossary](../architecture/README/), [Rails Glossar
 | Context | Encapsulation enables change by ensuring that internal |
 |  | refactoring does not affect consumers. A well- |
 |  | encapsulated component exposes only what is necessary. |
-| Related | [[#abstraction][Abstraction]], [[#modularity][Modularity]] |
+| Related | [Abstraction](#abstraction), [Modularity](#modularity) |
 | References | [Engineering Fundamentals Handbook](../../handbooks/engineering/README/) |
 
 ## Modularity
@@ -119,7 +119,7 @@ glossary (e.g., [Architecture Glossary](../architecture/README/), [Rails Glossar
 | Context | Modularity is a key tool for managing complexity. It |
 |  | enables parallel development, simplifies testing and |
 |  | reduces the impact of changes. |
-| Related | [[#cohesion][Cohesion]], [[#coupling][Coupling]], [[#encapsulation][Encapsulation]] |
+| Related | [Cohesion](#cohesion), [Coupling](#coupling), [Encapsulation](#encapsulation) |
 | References | [Engineering Fundamentals Handbook](../../handbooks/engineering/README/) |
 
 ## Refactoring
@@ -133,7 +133,7 @@ glossary (e.g., [Architecture Glossary](../architecture/README/), [Rails Glossar
 | Context | Refactoring is an ongoing activity, not a separate |
 |  | project. It should be driven by clear goals, supported |
 |  | by tests and done incrementally. |
-| Related | [[#technical-debt][Technical Debt]] |
+| Related | [Technical Debt](#technical-debt) |
 | References | [Engineering Fundamentals Handbook](../../handbooks/engineering/README/) |
 
 ## Separation of Concerns
@@ -149,7 +149,7 @@ glossary (e.g., [Architecture Glossary](../architecture/README/), [Rails Glossar
 |  | design. It reduces complexity, improves maintainability |
 |  | and enables independent evolution of different parts |
 |  | of a system. |
-| Related | [[#cohesion][Cohesion]], [[#coupling][Coupling]], [[#modularity][Modularity]] |
+| Related | [Cohesion](#cohesion), [Coupling](#coupling), [Modularity](#modularity) |
 | References | [Engineering Fundamentals Handbook](../../handbooks/engineering/README/) |
 
 ## Technical Debt
@@ -166,7 +166,7 @@ glossary (e.g., [Architecture Glossary](../architecture/README/), [Rails Glossar
 |  | plan to repay) or accidental (accumulated through |
 |  | neglect). All technical debt should be tracked |
 |  | explicitly and regularly addressed. |
-| Related | [[#refactoring][Refactoring]] |
+| Related | [Refactoring](#refactoring) |
 | References | [Engineering Fundamentals Handbook](../../handbooks/engineering/README/) |
 
 # Related Documents

@@ -27,10 +27,11 @@ IGNORE_PATTERNS = [
 def collect_org_files():
     """Collect all .md files in the repository."""
     org_files = []
-    SKIP_DIRS = {'.git', 'site', 'tools', '.org-backup'}
+    SKIP_DIRS = {'.git', 'site', 'tools', '.org-backup', '.venv', '__pycache__'}
     for root, dirs, files in os.walk(REPO_ROOT):
+        rel = Path(root).relative_to(REPO_ROOT)
         # Skip ignored directories
-        if any(d in root.split(os.sep) for d in SKIP_DIRS):
+        if any(p in SKIP_DIRS or p.startswith('.') for p in rel.parts):
             continue
         for f in files:
             if f.endswith('.md'):

@@ -24,7 +24,7 @@ Engineering Knowledge Framework.
 |  | constraints, standards, examples, references and quality |
 |  | criteria. It is the primary lever for improving AI |
 |  | output quality. |
-| Related | [[#prompt-engineering][Prompt Engineering]] |
+| Related | [Prompt Engineering](#prompt-engineering) |
 | References | [AI Engineering Handbook](../../handbooks/ai/README/) |
 
 ## Hallucination
@@ -38,7 +38,7 @@ Engineering Knowledge Framework.
 | Context | Hallucinations are a known limitation of large language |
 |  | models. Mitigation requires verifying AI output against |
 |  | authoritative sources and applying human review. |
-| Related | [[#verification][Verification]] |
+| Related | [Verification](#verification) |
 | References | [AI Engineering Handbook](../../handbooks/ai/README/) |
 
 ## Prompt Engineering
@@ -52,7 +52,7 @@ Engineering Knowledge Framework.
 | Context | Prompt engineering is a subset of context engineering. |
 |  | Effective prompts are specific, structured and include |
 |  | relevant context. |
-| Related | [[#context-engineering][Context Engineering]] |
+| Related | [Context Engineering](#context-engineering) |
 | References | [AI Engineering Handbook](../../handbooks/ai/README/) |
 
 ## Verification
@@ -66,7 +66,7 @@ Engineering Knowledge Framework.
 | Context | Every AI output must be verified. Verification includes |
 |  | testing code, checking facts, reviewing security |
 |  | implications and evaluating against requirements. |
-| Related | [[#hallucination][Hallucination]] |
+| Related | [Hallucination](#hallucination) |
 | References | [AI Engineering Handbook](../../handbooks/ai/README/) |
 
 # Related Documents

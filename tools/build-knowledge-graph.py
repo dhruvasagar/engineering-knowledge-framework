@@ -23,9 +23,13 @@ from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 
-LINK_PATTERN = re.compile(r'\[\[file:([^\]]+)\]\[([^\]]*)\]\]')
-HEADING_PATTERN = re.compile(r'^#\+TITLE:\s*(.*)', re.MULTILINE)
-DESCRIPTION_PATTERN = re.compile(r'^#\+DESCRIPTION:\s*(.*)', re.MULTILINE)
+# Markdown link: [desc](path)
+LINK_PATTERN = re.compile(r'\]\(([^)]+)\)')
+# Front matter title and description
+FM_TITLE_PATTERN = re.compile(r'^title:\s*"?([^"\n]+)"?\s*$', re.MULTILINE)
+FM_DESC_PATTERN = re.compile(r'^description:\s*"?([^"\n]+)"?\s*$', re.MULTILINE)
+
+SKIP_DIRS = {'.git', 'site', 'tools', '__pycache__', '.org-backup', 'assets'}
 
 # Document types by directory
 DOC_TYPE_MAP = {
@@ -53,18 +57,17 @@ CAPABILITY_MAP = {
 }
 
 
-def collect_org_files():
-    """Collect all .md files."""
-    org_files = []
+def collect_md_files():
+    """Collect all .md files (excluding generated/site/tools files)."""
+    md_files = []
     for root, dirs, files in os.walk(REPO_ROOT):
-        if '.git' in root.split(os.sep):
-            continue
-        if 'tools' in root.split(os.sep):
+        rel = Path(root).relative_to(REPO_ROOT)
+        if any(p in SKIP_DIRS for p in rel.parts):
             continue
         for f in files:
             if f.endswith('.md'):
-                org_files.append(Path(root) / f)
-    return org_files
+                md_files.append(Path(root) / f)
+    return md_files
 
 
 def classify_file(filepath):
@@ -100,11 +103,11 @@ def classify_file(filepath):
 
 
 def extract_metadata(filepath):
-    """Extract title and description from an org file."""
+    """Extract title and description from front matter."""
     content = filepath.read_text(encoding='utf-8', errors='ignore')
 
-    title_match = HEADING_PATTERN.search(content)
-    desc_match = DESCRIPTION_PATTERN.search(content)
+    title_match = FM_TITLE_PATTERN.search(content)
+    desc_match = FM_DESC_PATTERN.search(content)
 
     title = title_match.group(1).strip() if title_match else filepath.stem
     description = desc_match.group(1).strip() if desc_match else ''
@@ -113,49 +116,106 @@ def extract_metadata(filepath):
 
 
 def extract_links(filepath):
-    """Extract all [[file:...][...]] references from a file."""
+    """Extract all markdown [desc](path) references from a file."""
     content = filepath.read_text(encoding='utf-8', errors='ignore')
     links = []
 
     for match in LINK_PATTERN.finditer(content):
         target = match.group(1)
-        text = match.group(2)
 
-        # Skip external links
-        if target.startswith('http://') or target.startswith('https://'):
+        # Skip external links, anchor links, mailto
+        if target.startswith(('http://', 'https://', '#', 'mailto:')):
             continue
 
-        links.append({'target': target, 'text': text})
+        # Extract link text by looking backwards for the [desc]
+        link_text = ''
+        bracket_end = content.rfind(']', 0, match.start())
+        if bracket_end >= 0:
+            # Find the opening [
+            # Skip over any nested ] inside []
+            scan = bracket_end - 1
+            while scan >= 0 and content[scan] != '[':
+                scan -= 1
+            if scan >= 0:
+                link_text = content[scan + 1:bracket_end]
+
+        links.append({'target': target, 'text': link_text})
 
     return links
 
 
 def resolve_link(doc_path, link_target):
-    """Resolve a link target to a relative path from repo root."""
+    """Resolve a markdown link target to a relative path from repo root."""
+    # Strip anchor/fragment and query string
+    link_target = link_target.split('#')[0].split('?')[0]
+    if not link_target:
+        return None
+
     doc_dir = doc_path.parent
-    resolved = (doc_dir / link_target).resolve()
+    candidates = []
 
-    # Try relative to repo root
-    if not resolved.exists():
-        resolved = (REPO_ROOT / link_target).resolve()
+    def add(path):
+        """Add a resolved path to candidates."""
+        candidates.append(Path(path).resolve())
 
-    if resolved.exists():
-        try:
-            return str(resolved.relative_to(REPO_ROOT))
-        except ValueError:
-            return None
+    # Build list of candidate paths to try
+    add(doc_dir / link_target)
+    add(REPO_ROOT / link_target.lstrip('./'))
+
+    # Handle directory-style paths (Zola: path/README/ → path/README.md)
+    stripped = link_target.rstrip('/')
+    if stripped != link_target:
+        add(doc_dir / stripped)
+        add(REPO_ROOT / stripped.lstrip('./'))
+        add(str(doc_dir / stripped) + '.md')
+        add(str(REPO_ROOT / stripped.lstrip('./')) + '.md')
+        add(doc_dir / link_target / 'README.md')
+        add(REPO_ROOT / link_target.lstrip('./') / 'README.md')
+
+    # If target ends with /README, also try as /README.md
+    if link_target.rstrip('/').endswith('/README'):
+        base = link_target.rstrip('/')[:-7]  # strip /README
+        add(str(doc_dir / base) + '.md')
+        add(str(REPO_ROOT / base.lstrip('./')) + '.md')
+
+    # If target has no extension, try .md
+    leaf = link_target.rstrip('/').split('/')[-1]
+    if '.' not in leaf:
+        add(str(doc_dir / link_target) + '.md')
+        add(str(REPO_ROOT / link_target.lstrip('./')) + '.md')
+        add(doc_dir / link_target.rstrip('/') / 'README.md')
+        add(REPO_ROOT / link_target.lstrip('./').rstrip('/') / 'README.md')
+
+    for candidate in candidates:
+        if candidate.exists() and candidate.is_file():
+            try:
+                rel = candidate.relative_to(REPO_ROOT)
+                return str(rel)
+            except ValueError:
+                continue
+        # If candidate is a directory, look for README.md or _index.md inside
+        if candidate.exists() and candidate.is_dir():
+            for idx in ('README.md', '_index.md', 'index.md'):
+                idx_path = candidate / idx
+                if idx_path.exists() and idx_path.is_file():
+                    try:
+                        rel = idx_path.relative_to(REPO_ROOT)
+                        return str(rel)
+                    except ValueError:
+                        continue
+
     return None
 
 
 def build_graph():
     """Build the complete knowledge graph."""
-    org_files = collect_org_files()
+    md_files = collect_md_files()
     nodes = {}
     edges = []
     capabilities = defaultdict(lambda: defaultdict(list))
 
     # Create nodes
-    for filepath in org_files:
+    for filepath in md_files:
         rel_path = str(filepath.relative_to(REPO_ROOT))
         title, description = extract_metadata(filepath)
         capability, doc_type = classify_file(filepath)
@@ -173,7 +233,7 @@ def build_graph():
             capabilities[capability][doc_type].append(rel_path)
 
     # Create edges from links
-    for filepath in org_files:
+    for filepath in md_files:
         rel_path = str(filepath.relative_to(REPO_ROOT))
         links = extract_links(filepath)
 

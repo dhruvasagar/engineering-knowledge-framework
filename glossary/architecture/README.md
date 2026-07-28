@@ -28,7 +28,7 @@ Foundational engineering terms are defined in the
 | Context | ADRs provide a historical record of why the system is |
 |  | the way it is. They enable future engineers to |
 |  | understand past reasoning and avoid repeating mistakes. |
-| Related | [[#rfc][RFC]], [[#decision-log][Decision Log]] |
+| Related | [RFC](#rfc), [Decision Log](#decision-log) |
 | References | [Software Architecture Handbook](../../handbooks/architecture/README/) |
 
 ## Bounded Context
@@ -43,7 +43,7 @@ Foundational engineering terms are defined in the
 | Context | Bounded contexts are a core concept in Domain-Driven |
 |  | Design. They define the boundaries of microservices, |
 |  | modules and team ownership. |
-| Related | [[#domain-driven-design][Domain-Driven Design]] |
+| Related | [Domain-Driven Design](#domain-driven-design) |
 | References | [Software Architecture Handbook](../../handbooks/architecture/README/) |
 
 ## C4 Model
@@ -58,7 +58,7 @@ Foundational engineering terms are defined in the
 | Context | The C4 model provides a structured way to communicate |
 |  | architecture to different audiences, from stakeholders |
 |  | to developers. |
-| Related | [[#architecture-decision-record-adr][ADR]] |
+| Related | [ADR](#architecture-decision-record-adr) |
 | References | [Software Architecture Handbook](../../handbooks/architecture/README/) |
 
 ## Decision Log
@@ -71,7 +71,7 @@ Foundational engineering terms are defined in the
 |  | made for a system, with links to the corresponding ADRs. |
 | Context | The decision log provides a single entry point for |
 |  | understanding the architectural history of a system. |
-| Related | [[#architecture-decision-record-adr][ADR]], [[#rfc][RFC]] |
+| Related | [ADR](#architecture-decision-record-adr), [RFC](#rfc) |
 | References | [Software Architecture Handbook](../../handbooks/architecture/README/) |
 
 ## Domain-Driven Design (DDD)
@@ -87,7 +87,7 @@ Foundational engineering terms are defined in the
 | Context | DDD provides patterns for handling complex domain |
 |  | logic, including entities, value objects, aggregates, |
 |  | repositories and domain events. |
-| Related | [[#bounded-context][Bounded Context]], [[#event-storming][Event Storming]] |
+| Related | [Bounded Context](#bounded-context), [Event Storming](#event-storming) |
 | References | [Software Architecture Handbook](../../handbooks/architecture/README/) |
 
 ## Event Storming
@@ -103,7 +103,7 @@ Foundational engineering terms are defined in the
 |  | together to build a shared understanding of the domain. |
 |  | It is particularly useful for designing event-driven |
 |  | systems. |
-| Related | [[#domain-driven-design][Domain-Driven Design]], [[#bounded-context][Bounded Context]] |
+| Related | [Domain-Driven Design](#domain-driven-design), [Bounded Context](#bounded-context) |
 | References | [Software Architecture Handbook](../../handbooks/architecture/README/) |
 
 ## Hexagonal Architecture
@@ -118,7 +118,7 @@ Foundational engineering terms are defined in the
 | Context | Also known as Ports and Adapters. The core domain has |
 |  | no dependency on databases, APIs, UIs or other external |
 |  | systems, improving testability and evolvability. |
-| Related | [[#layered-architecture][Layered Architecture]] |
+| Related | [Layered Architecture](#layered-architecture) |
 | References | [Software Architecture Handbook](../../handbooks/architecture/README/) |
 
 ## Layered Architecture
@@ -133,7 +133,7 @@ Foundational engineering terms are defined in the
 | Context | Each layer depends only on the layer directly beneath |
 |  | it. This is the most widely understood architectural |
 |  | pattern but can lead to leaky abstractions. |
-| Related | [[#hexagonal-architecture][Hexagonal Architecture]] |
+| Related | [Hexagonal Architecture](#hexagonal-architecture) |
 | References | [Software Architecture Handbook](../../handbooks/architecture/README/) |
 
 ## Quality Attribute
@@ -150,7 +150,7 @@ Foundational engineering terms are defined in the
 |  | evolvability, operability and testability. Every |
 |  | architectural decision involves trade-offs between |
 |  | quality attributes. |
-| Related | [[#architecture-decision-record-adr][ADR]], [[#trade-off][Trade-off]] |
+| Related | [ADR](#architecture-decision-record-adr), [Trade-off](#trade-off) |
 | References | [Software Architecture Handbook](../../handbooks/architecture/README/) |
 
 ## RFC (Request for Comments)
@@ -166,7 +166,7 @@ Foundational engineering terms are defined in the
 |  | involve significant trade-offs or affect multiple |
 |  | teams. They precede ADRs, which capture the final |
 |  | decision. |
-| Related | [[#architecture-decision-record-adr][ADR]], [[#decision-log][Decision Log]] |
+| Related | [ADR](#architecture-decision-record-adr), [Decision Log](#decision-log) |
 | References | [Software Architecture Handbook](../../handbooks/architecture/README/) |
 
 ## Trade-off
@@ -180,7 +180,7 @@ Foundational engineering terms are defined in the
 | Context | Architecture is the art of managing trade-offs. Every |
 |  | decision optimises for some outcomes at the expense of |
 |  | others. Good architecture makes trade-offs explicit. |
-| Related | [[#quality-attribute][Quality Attribute]], [[#architecture-decision-record-adr][ADR]] |
+| Related | [Quality Attribute](#quality-attribute), [ADR](#architecture-decision-record-adr) |
 | References | [Software Architecture Handbook](../../handbooks/architecture/README/) |
 
 # Related Documents
