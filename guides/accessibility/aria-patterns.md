@@ -1,7 +1,7 @@
-+++
-title = "ARIA Patterns"
-description = "Using ARIA correctly for custom widgets"
-+++
+---
+title: "ARIA Patterns"
+description: "Using ARIA correctly for custom widgets"
+---
 
 
 # Purpose

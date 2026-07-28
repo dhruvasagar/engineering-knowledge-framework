@@ -1,7 +1,7 @@
-+++
-title = "Architecture Guides"
-description = "Index of software architecture guides"
-+++
+---
+title: "Architecture Guides"
+description: "Index of software architecture guides"
+---
 
 
 # Purpose

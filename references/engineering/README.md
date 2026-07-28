@@ -1,7 +1,7 @@
-+++
-title = "Engineering References"
-description = "Quick-reference material for engineering fundamentals"
-+++
+---
+title: "Engineering References"
+description: "Quick-reference material for engineering fundamentals"
+---
 
 
 # Purpose

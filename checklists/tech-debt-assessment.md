@@ -1,7 +1,7 @@
-+++
-title = "Technical Debt Assessment Checklist"
-description = "Verification checklist for assessing and managing technical debt"
-+++
+---
+title: "Technical Debt Assessment Checklist"
+description: "Verification checklist for assessing and managing technical debt"
+---
 
 
 # Purpose

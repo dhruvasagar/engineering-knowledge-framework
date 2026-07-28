@@ -1,7 +1,7 @@
-+++
-title = "RFC Template"
-description = "Template for major architectural proposals (Request for Comments)"
-+++
+---
+title: "RFC Template"
+description: "Template for major architectural proposals (Request for Comments)"
+---
 
 
 # RFC-NNNN: Title

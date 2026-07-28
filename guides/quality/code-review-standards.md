@@ -1,7 +1,7 @@
-+++
-title = "Code Review Standards"
-description = "Standards and expectations for effective code reviews"
-+++
+---
+title: "Code Review Standards"
+description: "Standards and expectations for effective code reviews"
+---
 
 
 # Purpose

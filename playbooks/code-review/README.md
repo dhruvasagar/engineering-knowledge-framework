@@ -1,7 +1,7 @@
-+++
-title = "Code Review Playbook"
-description = "Repeatable workflow for conducting effective code reviews"
-+++
+---
+title: "Code Review Playbook"
+description: "Repeatable workflow for conducting effective code reviews"
+---
 
 
 # Objective

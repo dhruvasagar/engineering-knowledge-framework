@@ -1,7 +1,7 @@
-+++
-title = "AI Workflows for AI Engineering"
-description = "Prompt patterns for AI-assisted AI engineering tasks"
-+++
+---
+title: "AI Workflows for AI Engineering"
+description: "Prompt patterns for AI-assisted AI engineering tasks"
+---
 
 
 # Purpose

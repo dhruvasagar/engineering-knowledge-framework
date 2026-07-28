@@ -1,7 +1,7 @@
-+++
-title = "Design Decision Checklist"
-description = "Verification checklist for making and documenting design decisions"
-+++
+---
+title: "Design Decision Checklist"
+description: "Verification checklist for making and documenting design decisions"
+---
 
 
 # Purpose

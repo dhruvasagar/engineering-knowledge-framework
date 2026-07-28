@@ -1,7 +1,7 @@
-+++
-title = "Architectural Patterns"
-description = "A guide to common architectural patterns and when to apply them"
-+++
+---
+title: "Architectural Patterns"
+description: "A guide to common architectural patterns and when to apply them"
+---
 
 
 # Purpose

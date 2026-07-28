@@ -1,7 +1,7 @@
-+++
-title = "AI Pair Programming Playbook"
-description = "Workflow for collaborative coding with AI"
-+++
+---
+title: "AI Pair Programming Playbook"
+description: "Workflow for collaborative coding with AI"
+---
 
 
 # Objective

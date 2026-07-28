@@ -1,7 +1,7 @@
-+++
-title = "AI Workflows for Accessibility"
-description = "Prompt patterns for AI-assisted accessibility engineering"
-+++
+---
+title: "AI Workflows for Accessibility"
+description: "Prompt patterns for AI-assisted accessibility engineering"
+---
 
 
 # Purpose

@@ -1,7 +1,7 @@
-+++
-title = "Quality Metrics Dashboard Template"
-description = "Template for tracking quality metrics"
-+++
+---
+title: "Quality Metrics Dashboard Template"
+description: "Template for tracking quality metrics"
+---
 
 
 # Quality Dashboard: [Project Name]

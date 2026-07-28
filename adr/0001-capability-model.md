@@ -1,7 +1,7 @@
-+++
-title = "ADR-0001: Capability Model for Knowledge Organization"
-description = "Decision to organize knowledge around Engineering Capabilities"
-+++
+---
+title: "ADR-0001: Capability Model for Knowledge Organization"
+description: "Decision to organize knowledge around Engineering Capabilities"
+---
 
 
 :PROPERTIES:

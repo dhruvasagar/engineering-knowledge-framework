@@ -1,7 +1,7 @@
-+++
-title = "Architecture References"
-description = "Quick-reference material for software architecture"
-+++
+---
+title: "Architecture References"
+description: "Quick-reference material for software architecture"
+---
 
 
 # Purpose

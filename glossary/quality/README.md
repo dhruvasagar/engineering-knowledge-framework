@@ -1,7 +1,7 @@
-+++
-title = "Engineering Quality Glossary"
-description = "Engineering quality terminology used throughout the Engineering Knowledge Framework"
-+++
+---
+title: "Engineering Quality Glossary"
+description: "Engineering quality terminology used throughout the Engineering Knowledge Framework"
+---
 
 
 # Purpose

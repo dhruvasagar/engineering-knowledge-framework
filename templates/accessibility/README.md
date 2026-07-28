@@ -1,7 +1,7 @@
-+++
-title = "Accessibility Templates"
-description = "Reusable templates for accessibility engineering"
-+++
+---
+title: "Accessibility Templates"
+description: "Reusable templates for accessibility engineering"
+---
 
 
 # Purpose

@@ -1,7 +1,7 @@
-+++
-title = "Quality Metrics"
-description = "Measuring and tracking engineering quality"
-+++
+---
+title: "Quality Metrics"
+description: "Measuring and tracking engineering quality"
+---
 
 
 # Purpose

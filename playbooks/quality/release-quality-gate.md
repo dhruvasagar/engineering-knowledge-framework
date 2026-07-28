@@ -1,7 +1,7 @@
-+++
-title = "Release Quality Gate Playbook"
-description = "Quality verification before release"
-+++
+---
+title: "Release Quality Gate Playbook"
+description: "Quality verification before release"
+---
 
 
 # Objective

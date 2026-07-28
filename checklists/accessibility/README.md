@@ -1,7 +1,7 @@
-+++
-title = "Accessibility Checklists"
-description = "Verification checklists for accessibility engineering"
-+++
+---
+title: "Accessibility Checklists"
+description: "Verification checklists for accessibility engineering"
+---
 
 
 # Purpose

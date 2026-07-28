@@ -1,7 +1,7 @@
-+++
-title = "AI Review Response Template"
-description = "Format for documenting AI review findings"
-+++
+---
+title: "AI Review Response Template"
+description: "Format for documenting AI review findings"
+---
 
 
 # AI Review Response Template

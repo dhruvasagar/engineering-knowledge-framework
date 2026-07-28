@@ -1,7 +1,7 @@
-+++
-title = "Rails Engineering Handbook"
-description = "Principles, standards and patterns for building Rails applications"
-+++
+---
+title: "Rails Engineering Handbook"
+description: "Principles, standards and patterns for building Rails applications"
+---
 
 
 # Purpose

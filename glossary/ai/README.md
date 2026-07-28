@@ -1,7 +1,7 @@
-+++
-title = "AI Engineering Glossary"
-description = "AI engineering terminology used throughout the Engineering Knowledge Framework"
-+++
+---
+title: "AI Engineering Glossary"
+description: "AI engineering terminology used throughout the Engineering Knowledge Framework"
+---
 
 
 # Purpose

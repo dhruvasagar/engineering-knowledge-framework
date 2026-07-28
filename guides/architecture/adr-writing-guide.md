@@ -1,7 +1,7 @@
-+++
-title = "ADR Writing Guide"
-description = "How to write effective Architecture Decision Records"
-+++
+---
+title: "ADR Writing Guide"
+description: "How to write effective Architecture Decision Records"
+---
 
 
 # Purpose

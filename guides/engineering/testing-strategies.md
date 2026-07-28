@@ -1,7 +1,7 @@
-+++
-title = "Testing Strategies"
-description = "Principles and patterns for effective automated testing"
-+++
+---
+title: "Testing Strategies"
+description: "Principles and patterns for effective automated testing"
+---
 
 
 # Purpose

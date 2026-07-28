@@ -1,7 +1,7 @@
-+++
-title = "Rails References"
-description = "Quick-reference material for Rails development"
-+++
+---
+title: "Rails References"
+description: "Quick-reference material for Rails development"
+---
 
 
 # Purpose

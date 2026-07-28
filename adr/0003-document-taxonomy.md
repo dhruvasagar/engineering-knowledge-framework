@@ -1,7 +1,7 @@
-+++
-title = "ADR-0003: Document Taxonomy with Single Responsibility"
-description = "Decision to use nine document types with single responsibility"
-+++
+---
+title: "ADR-0003: Document Taxonomy with Single Responsibility"
+description: "Decision to use nine document types with single responsibility"
+---
 
 
 :PROPERTIES:

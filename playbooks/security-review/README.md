@@ -1,7 +1,7 @@
-+++
-title = "Security Review Playbook"
-description = "Repeatable workflow for conducting security reviews"
-+++
+---
+title: "Security Review Playbook"
+description: "Repeatable workflow for conducting security reviews"
+---
 
 
 # Objective

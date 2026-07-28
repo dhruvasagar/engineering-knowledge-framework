@@ -1,7 +1,7 @@
-+++
-title = "Web Application Vulnerabilities"
-description = "Common web application vulnerabilities and their mitigations"
-+++
+---
+title: "Web Application Vulnerabilities"
+description: "Common web application vulnerabilities and their mitigations"
+---
 
 
 # Purpose

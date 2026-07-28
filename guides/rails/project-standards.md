@@ -1,7 +1,7 @@
-+++
-title = "Rails Project Standards"
-description = "Mandatory tooling and CI/CD configuration baseline for every Rails project"
-+++
+---
+title: "Rails Project Standards"
+description: "Mandatory tooling and CI/CD configuration baseline for every Rails project"
+---
 
 
 # Purpose

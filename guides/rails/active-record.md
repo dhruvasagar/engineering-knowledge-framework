@@ -1,7 +1,7 @@
-+++
-title = "ActiveRecord Patterns and Query Optimization"
-description = "Patterns for effective database access with ActiveRecord"
-+++
+---
+title: "ActiveRecord Patterns and Query Optimization"
+description: "Patterns for effective database access with ActiveRecord"
+---
 
 
 # Purpose

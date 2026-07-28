@@ -1,7 +1,7 @@
-+++
-title = "AI Workflows"
-description = "Index of AI workflow documents"
-+++
+---
+title: "AI Workflows"
+description: "Index of AI workflow documents"
+---
 
 
 # Purpose

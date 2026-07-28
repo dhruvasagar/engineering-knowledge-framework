@@ -1,7 +1,7 @@
-+++
-title = "Changelog"
-description = "Version history for the Engineering Knowledge Framework"
-+++
+---
+title: "Changelog"
+description: "Version history for the Engineering Knowledge Framework"
+---
 
 
 # 0.1.0 (2026-07-27)

@@ -1,7 +1,7 @@
-+++
-title = "Engineering Quality Templates"
-description = "Reusable templates for engineering quality activities"
-+++
+---
+title: "Engineering Quality Templates"
+description: "Reusable templates for engineering quality activities"
+---
 
 
 # Purpose

@@ -1,7 +1,7 @@
-+++
-title = "Prompt Engineering"
-description = "Principles and patterns for effective AI prompt design"
-+++
+---
+title: "Prompt Engineering"
+description: "Principles and patterns for effective AI prompt design"
+---
 
 
 # Purpose

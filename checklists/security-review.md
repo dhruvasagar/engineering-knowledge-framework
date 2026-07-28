@@ -1,7 +1,7 @@
-+++
-title = "Security Review Checklist"
-description = "General security review checklist (framework-wide)"
-+++
+---
+title: "Security Review Checklist"
+description: "General security review checklist (framework-wide)"
+---
 
 
 # Purpose

@@ -1,7 +1,7 @@
-+++
-title = "Technical Debt Register Template"
-description = "Track and monitor technical debt items"
-+++
+---
+title: "Technical Debt Register Template"
+description: "Track and monitor technical debt items"
+---
 
 
 # Technical Debt Register: [Project Name]

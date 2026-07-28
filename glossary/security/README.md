@@ -1,7 +1,7 @@
-+++
-title = "Security Glossary"
-description = "Security terminology used throughout the Engineering Knowledge Framework"
-+++
+---
+title: "Security Glossary"
+description: "Security terminology used throughout the Engineering Knowledge Framework"
+---
 
 
 # Purpose

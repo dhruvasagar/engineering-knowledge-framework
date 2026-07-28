@@ -1,7 +1,7 @@
-+++
-title = "Engineering Fundamentals Handbook"
-description = "Enduring principles, standards and decision frameworks for software engineering"
-+++
+---
+title: "Engineering Fundamentals Handbook"
+description: "Enduring principles, standards and decision frameworks for software engineering"
+---
 
 
 # Purpose

@@ -1,7 +1,7 @@
-+++
-title = "Technical Debt Management"
-description = "Systematic approach to managing technical debt"
-+++
+---
+title: "Technical Debt Management"
+description: "Systematic approach to managing technical debt"
+---
 
 
 # Purpose

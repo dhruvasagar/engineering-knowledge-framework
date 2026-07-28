@@ -1,7 +1,7 @@
-+++
-title = "Code Organization"
-description = "Principles and patterns for organizing code into maintainable structures"
-+++
+---
+title: "Code Organization"
+description: "Principles and patterns for organizing code into maintainable structures"
+---
 
 
 # Purpose

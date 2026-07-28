@@ -1,7 +1,7 @@
-+++
-title = "AI-Assisted Architecture Review Playbook"
-description = "Workflow for architecture review with AI assistance"
-+++
+---
+title: "AI-Assisted Architecture Review Playbook"
+description: "Workflow for architecture review with AI assistance"
+---
 
 
 # Objective

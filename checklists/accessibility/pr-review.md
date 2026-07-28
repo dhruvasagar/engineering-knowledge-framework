@@ -1,7 +1,7 @@
-+++
-title = "PR Accessibility Checklist"
-description = "Quick accessibility checks for every pull request"
-+++
+---
+title: "PR Accessibility Checklist"
+description: "Quick accessibility checks for every pull request"
+---
 
 
 # Purpose

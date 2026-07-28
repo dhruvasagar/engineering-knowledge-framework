@@ -1,7 +1,7 @@
-+++
-title = "AI Usage Checklist"
-description = "Verification checklist for safe AI usage in engineering"
-+++
+---
+title: "AI Usage Checklist"
+description: "Verification checklist for safe AI usage in engineering"
+---
 
 
 # Purpose

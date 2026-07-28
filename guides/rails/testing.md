@@ -1,7 +1,7 @@
-+++
-title = "Testing Rails Applications"
-description = "Testing strategies and patterns specific to Rails"
-+++
+---
+title: "Testing Rails Applications"
+description: "Testing strategies and patterns specific to Rails"
+---
 
 
 # Purpose

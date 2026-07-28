@@ -1,7 +1,7 @@
-+++
-title = "Technical Debt Remediation Playbook"
-description = "Workflow for managing and reducing technical debt"
-+++
+---
+title: "Technical Debt Remediation Playbook"
+description: "Workflow for managing and reducing technical debt"
+---
 
 
 # Objective

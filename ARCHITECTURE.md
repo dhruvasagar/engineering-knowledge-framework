@@ -1,7 +1,7 @@
-+++
-title = "Architecture"
-description = "Architectural overview of the Engineering Knowledge Framework"
-+++
+---
+title: "Architecture"
+description: "Architectural overview of the Engineering Knowledge Framework"
+---
 
 
 # Purpose

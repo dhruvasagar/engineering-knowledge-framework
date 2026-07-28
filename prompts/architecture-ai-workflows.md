@@ -1,7 +1,7 @@
-+++
-title = "AI Workflows for Architecture"
-description = "Prompt patterns and AI workflows for architecture tasks"
-+++
+---
+title: "AI Workflows for Architecture"
+description: "Prompt patterns and AI workflows for architecture tasks"
+---
 
 
 # Purpose

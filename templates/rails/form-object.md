@@ -1,7 +1,7 @@
-+++
-title = "Form Object Template"
-description = "Template for Rails form objects"
-+++
+---
+title: "Form Object Template"
+description: "Template for Rails form objects"
+---
 
 
 # Purpose

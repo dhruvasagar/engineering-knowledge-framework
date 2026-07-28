@@ -1,7 +1,7 @@
-+++
-title = "Security Guides"
-description = "Index of security guides"
-+++
+---
+title: "Security Guides"
+description: "Index of security guides"
+---
 
 
 # Purpose

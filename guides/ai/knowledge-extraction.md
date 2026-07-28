@@ -1,7 +1,7 @@
-+++
-title = "Knowledge Extraction"
-description = "Using AI to extract and structure engineering knowledge"
-+++
+---
+title: "Knowledge Extraction"
+description: "Using AI to extract and structure engineering knowledge"
+---
 
 
 # Purpose

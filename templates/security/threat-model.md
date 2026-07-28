@@ -1,7 +1,7 @@
-+++
-title = "Threat Model Template"
-description = "Structured threat model document using STRIDE"
-+++
+---
+title: "Threat Model Template"
+description: "Structured threat model document using STRIDE"
+---
 
 
 # THREAT-NNNN: [System/Feature Name]

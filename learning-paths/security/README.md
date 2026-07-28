@@ -1,7 +1,7 @@
-+++
-title = "Security Learning Paths"
-description = "Structured learning progression for security engineering"
-+++
+---
+title: "Security Learning Paths"
+description: "Structured learning progression for security engineering"
+---
 
 
 # Purpose

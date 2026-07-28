@@ -1,7 +1,7 @@
-+++
-title = "Rails Glossary"
-description = "Ruby on Rails terminology used throughout the Engineering Knowledge Framework"
-+++
+---
+title: "Rails Glossary"
+description: "Ruby on Rails terminology used throughout the Engineering Knowledge Framework"
+---
 
 
 # Purpose

@@ -1,7 +1,7 @@
-+++
-title = "Human Review Strategies"
-description = "When and how to review AI output effectively"
-+++
+---
+title: "Human Review Strategies"
+description: "When and how to review AI output effectively"
+---
 
 
 # Purpose

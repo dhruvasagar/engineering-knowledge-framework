@@ -1,7 +1,7 @@
-+++
-title = "AI Engineering References"
-description = "Quick-reference material for AI-assisted engineering"
-+++
+---
+title: "AI Engineering References"
+description: "Quick-reference material for AI-assisted engineering"
+---
 
 
 # Purpose

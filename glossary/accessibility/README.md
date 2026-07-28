@@ -1,7 +1,7 @@
-+++
-title = "Accessibility Glossary"
-description = "Canonical terminology for accessibility engineering"
-+++
+---
+title: "Accessibility Glossary"
+description: "Canonical terminology for accessibility engineering"
+---
 
 
 # Purpose

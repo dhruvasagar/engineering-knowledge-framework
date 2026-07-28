@@ -1,7 +1,7 @@
-+++
-title = "Software Architecture Handbook"
-description = "Principles, patterns and decision frameworks for software architecture"
-+++
+---
+title: "Software Architecture Handbook"
+description: "Principles, patterns and decision frameworks for software architecture"
+---
 
 
 # Purpose

@@ -1,7 +1,7 @@
-+++
-title = "Rails Guides"
-description = "Index of Rails guides"
-+++
+---
+title: "Rails Guides"
+description: "Index of Rails guides"
+---
 
 
 # Purpose

@@ -1,7 +1,7 @@
-+++
-title = "Quality Gate Checklist"
-description = "Verification before accepting changes"
-+++
+---
+title: "Quality Gate Checklist"
+description: "Verification before accepting changes"
+---
 
 
 # Purpose

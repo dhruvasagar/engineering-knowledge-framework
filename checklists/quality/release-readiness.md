@@ -1,7 +1,7 @@
-+++
-title = "Release Readiness Checklist"
-description = "Verification before production release"
-+++
+---
+title: "Release Readiness Checklist"
+description: "Verification before production release"
+---
 
 
 # Purpose

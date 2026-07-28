@@ -1,7 +1,7 @@
-+++
-title = "Accessibility Review Playbook"
-description = "Workflow for reviewing digital accessibility"
-+++
+---
+title: "Accessibility Review Playbook"
+description: "Workflow for reviewing digital accessibility"
+---
 
 
 # Objective

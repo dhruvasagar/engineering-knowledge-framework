@@ -1,7 +1,7 @@
-+++
-title = "AI Engineering Templates"
-description = "Reusable templates for AI-assisted engineering workflows"
-+++
+---
+title: "AI Engineering Templates"
+description: "Reusable templates for AI-assisted engineering workflows"
+---
 
 
 # Purpose

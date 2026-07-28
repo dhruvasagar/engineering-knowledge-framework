@@ -1,7 +1,7 @@
-+++
-title = "Engineering Glossary"
-description = "Canonical engineering terminology used throughout the Engineering Knowledge Framework"
-+++
+---
+title: "Engineering Glossary"
+description: "Canonical engineering terminology used throughout the Engineering Knowledge Framework"
+---
 
 
 # Purpose

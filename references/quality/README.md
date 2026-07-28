@@ -1,7 +1,7 @@
-+++
-title = "Engineering Quality References"
-description = "Quick-reference material for engineering quality"
-+++
+---
+title: "Engineering Quality References"
+description: "Quick-reference material for engineering quality"
+---
 
 
 # Purpose

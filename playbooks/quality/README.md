@@ -1,7 +1,7 @@
-+++
-title = "Engineering Quality Playbooks"
-description = "Operational workflows for engineering quality"
-+++
+---
+title: "Engineering Quality Playbooks"
+description: "Operational workflows for engineering quality"
+---
 
 
 # Purpose

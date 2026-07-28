@@ -1,7 +1,7 @@
-+++
-title = "ADR Template"
-description = "Template for Architecture Decision Records"
-+++
+---
+title: "ADR Template"
+description: "Template for Architecture Decision Records"
+---
 
 
 # ADR-NNNN: Title

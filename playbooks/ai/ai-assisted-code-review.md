@@ -1,7 +1,7 @@
-+++
-title = "AI-Assisted Code Review Playbook"
-description = "Workflow for reviewing code with AI assistance"
-+++
+---
+title: "AI-Assisted Code Review Playbook"
+description: "Workflow for reviewing code with AI assistance"
+---
 
 
 # Objective

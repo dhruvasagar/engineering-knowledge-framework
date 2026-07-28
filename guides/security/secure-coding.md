@@ -1,7 +1,7 @@
-+++
-title = "Secure Coding Practices"
-description = "Principles and patterns for writing secure code"
-+++
+---
+title: "Secure Coding Practices"
+description: "Principles and patterns for writing secure code"
+---
 
 
 # Purpose

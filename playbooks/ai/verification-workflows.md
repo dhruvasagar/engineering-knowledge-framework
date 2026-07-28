@@ -1,7 +1,7 @@
-+++
-title = "Verification Workflows"
-description = "Systematic verification of AI-generated output"
-+++
+---
+title: "Verification Workflows"
+description: "Systematic verification of AI-generated output"
+---
 
 
 # Objective

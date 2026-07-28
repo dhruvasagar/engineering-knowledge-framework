@@ -1,7 +1,7 @@
-+++
-title = "ADR-0004: AI-Native Knowledge Design"
-description = "Decision to treat AI as a first-class knowledge consumer"
-+++
+---
+title: "ADR-0004: AI-Native Knowledge Design"
+description: "Decision to treat AI as a first-class knowledge consumer"
+---
 
 
 :PROPERTIES:

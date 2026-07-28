@@ -1,7 +1,7 @@
-+++
-title = "AI Workflows for Rails"
-description = "Prompt patterns and AI workflows for Rails development"
-+++
+---
+title: "AI Workflows for Rails"
+description: "Prompt patterns and AI workflows for Rails development"
+---
 
 
 # Purpose

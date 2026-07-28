@@ -1,7 +1,7 @@
-+++
-title = "Security Templates"
-description = "Reusable templates for security engineering workflows"
-+++
+---
+title: "Security Templates"
+description: "Reusable templates for security engineering workflows"
+---
 
 
 # Purpose

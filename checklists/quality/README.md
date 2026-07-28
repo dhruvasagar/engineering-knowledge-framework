@@ -1,7 +1,7 @@
-+++
-title = "Engineering Quality Checklists"
-description = "Verification checklists for engineering quality activities"
-+++
+---
+title: "Engineering Quality Checklists"
+description: "Verification checklists for engineering quality activities"
+---
 
 
 # Purpose

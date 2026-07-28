@@ -1,7 +1,7 @@
-+++
-title = "API Development with Rails"
-description = "Patterns and standards for building JSON APIs with Rails"
-+++
+---
+title: "API Development with Rails"
+description: "Patterns and standards for building JSON APIs with Rails"
+---
 
 
 # Purpose

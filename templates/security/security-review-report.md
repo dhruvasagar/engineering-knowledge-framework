@@ -1,7 +1,7 @@
-+++
-title = "Security Review Report Template"
-description = "Findings report for security review outcomes"
-+++
+---
+title: "Security Review Report Template"
+description: "Findings report for security review outcomes"
+---
 
 
 # SECURITY-REVIEW-NNNN: [Project/System Name]

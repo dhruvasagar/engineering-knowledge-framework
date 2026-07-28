@@ -1,7 +1,7 @@
-+++
-title = "Background Jobs"
-description = "Patterns for background job processing in Rails"
-+++
+---
+title: "Background Jobs"
+description: "Patterns for background job processing in Rails"
+---
 
 
 # Purpose

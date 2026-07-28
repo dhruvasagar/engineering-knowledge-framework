@@ -1,7 +1,7 @@
-+++
-title = "Rails Templates"
-description = "Index of Rails templates"
-+++
+---
+title: "Rails Templates"
+description: "Index of Rails templates"
+---
 
 
 # Purpose

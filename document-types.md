@@ -1,7 +1,7 @@
-+++
-title = "Document Types"
-description = "Canonical document taxonomy for the Engineering Knowledge Framework"
-+++
+---
+title: "Document Types"
+description: "Canonical document taxonomy for the Engineering Knowledge Framework"
+---
 
 
 # Purpose

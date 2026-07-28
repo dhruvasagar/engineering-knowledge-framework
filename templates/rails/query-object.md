@@ -1,7 +1,7 @@
-+++
-title = "Query Object Template"
-description = "Template for Rails query objects"
-+++
+---
+title: "Query Object Template"
+description: "Template for Rails query objects"
+---
 
 
 # Purpose

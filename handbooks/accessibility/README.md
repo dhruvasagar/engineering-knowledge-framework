@@ -1,7 +1,7 @@
-+++
-title = "Accessibility Engineering Handbook"
-description = "Engineering principles and practices for digital accessibility"
-+++
+---
+title: "Accessibility Engineering Handbook"
+description: "Engineering principles and practices for digital accessibility"
+---
 
 
 # Purpose

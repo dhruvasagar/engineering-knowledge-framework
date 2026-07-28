@@ -1,7 +1,7 @@
-+++
-title = "Rails Playbooks"
-description = "Index of Rails playbooks"
-+++
+---
+title: "Rails Playbooks"
+description: "Index of Rails playbooks"
+---
 
 
 # Purpose

@@ -1,7 +1,7 @@
-+++
-title = "API Design"
-description = "Principles and standards for designing effective APIs"
-+++
+---
+title: "API Design"
+description: "Principles and standards for designing effective APIs"
+---
 
 
 # Purpose

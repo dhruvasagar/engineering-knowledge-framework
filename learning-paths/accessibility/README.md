@@ -1,7 +1,7 @@
-+++
-title = "Accessibility Learning Paths"
-description = "Progressive learning paths for accessibility engineering"
-+++
+---
+title: "Accessibility Learning Paths"
+description: "Progressive learning paths for accessibility engineering"
+---
 
 
 # Purpose

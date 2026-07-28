@@ -1,7 +1,7 @@
-+++
-title = "Architecture Learning Paths"
-description = "Structured learning progression for software architecture"
-+++
+---
+title: "Architecture Learning Paths"
+description: "Structured learning progression for software architecture"
+---
 
 
 # Purpose

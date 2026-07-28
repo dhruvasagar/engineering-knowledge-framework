@@ -1,7 +1,7 @@
-+++
-title = "AI Engineering Playbooks"
-description = "Operational workflows for AI-assisted engineering"
-+++
+---
+title: "AI Engineering Playbooks"
+description: "Operational workflows for AI-assisted engineering"
+---
 
 
 # Purpose

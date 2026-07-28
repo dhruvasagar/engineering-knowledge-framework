@@ -1,7 +1,7 @@
-+++
-title = "Policy Object Template"
-description = "Template for Rails authorization policy objects"
-+++
+---
+title: "Policy Object Template"
+description: "Template for Rails authorization policy objects"
+---
 
 
 # Purpose

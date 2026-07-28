@@ -1,7 +1,7 @@
-+++
-title = "Service Objects"
-description = "How to design and use service objects in Rails applications"
-+++
+---
+title: "Service Objects"
+description: "How to design and use service objects in Rails applications"
+---
 
 
 # Purpose

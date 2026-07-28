@@ -1,7 +1,7 @@
-+++
-title = "AI Collaboration Patterns"
-description = "How engineers and AI should interact in different contexts"
-+++
+---
+title: "AI Collaboration Patterns"
+description: "How engineers and AI should interact in different contexts"
+---
 
 
 # Purpose

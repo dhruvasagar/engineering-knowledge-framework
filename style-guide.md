@@ -1,7 +1,7 @@
-+++
-title = "Style Guide"
-description = "Writing, formatting and documentation standards for the Engineering Knowledge Framework"
-+++
+---
+title: "Style Guide"
+description: "Writing, formatting and documentation standards for the Engineering Knowledge Framework"
+---
 
 
 # Purpose

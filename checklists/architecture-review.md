@@ -1,7 +1,7 @@
-+++
-title = "Architecture Review Checklist"
-description = "Verification checklist for architecture reviews"
-+++
+---
+title: "Architecture Review Checklist"
+description: "Verification checklist for architecture reviews"
+---
 
 
 # Purpose

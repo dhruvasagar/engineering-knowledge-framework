@@ -1,7 +1,7 @@
-+++
-title = "System Modeling"
-description = "Approaches and standards for modeling software systems"
-+++
+---
+title: "System Modeling"
+description: "Approaches and standards for modeling software systems"
+---
 
 
 # Purpose

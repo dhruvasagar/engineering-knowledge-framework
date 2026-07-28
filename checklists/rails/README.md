@@ -1,7 +1,7 @@
-+++
-title = "Rails Checklists"
-description = "Index of Rails checklists"
-+++
+---
+title: "Rails Checklists"
+description: "Index of Rails checklists"
+---
 
 
 # Purpose

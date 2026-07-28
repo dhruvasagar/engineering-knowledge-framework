@@ -1,7 +1,7 @@
-+++
-title = "ADR-0006: Per-Capability Glossaries"
-description = "Decision to organize glossaries by capability with a shared root glossary"
-+++
+---
+title: "ADR-0006: Per-Capability Glossaries"
+description: "Decision to organize glossaries by capability with a shared root glossary"
+---
 
 
 :PROPERTIES:

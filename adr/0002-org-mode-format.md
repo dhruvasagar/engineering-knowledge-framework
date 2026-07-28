@@ -1,7 +1,7 @@
-+++
-title = "ADR-0002: Org-mode as Primary Document Format"
-description = "Decision to use Org-mode as the primary document format"
-+++
+---
+title: "ADR-0002: Org-mode as Primary Document Format"
+description: "Decision to use Org-mode as the primary document format"
+---
 
 
 :PROPERTIES:

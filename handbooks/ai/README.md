@@ -1,7 +1,7 @@
-+++
-title = "AI Engineering Handbook"
-description = "Principles, patterns and practices for AI-assisted engineering"
-+++
+---
+title: "AI Engineering Handbook"
+description: "Principles, patterns and practices for AI-assisted engineering"
+---
 
 
 # Purpose

@@ -1,7 +1,7 @@
-+++
-title = "Rails Deployment Playbook"
-description = "Repeatable workflow for safe Rails deployments with database migrations"
-+++
+---
+title: "Rails Deployment Playbook"
+description: "Repeatable workflow for safe Rails deployments with database migrations"
+---
 
 
 # Objective

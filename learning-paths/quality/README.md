@@ -1,7 +1,7 @@
-+++
-title = "Engineering Quality Learning Paths"
-description = "Structured learning progression for engineering quality"
-+++
+---
+title: "Engineering Quality Learning Paths"
+description: "Structured learning progression for engineering quality"
+---
 
 
 # Purpose

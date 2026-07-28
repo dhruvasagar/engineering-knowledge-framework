@@ -1,7 +1,7 @@
-+++
-title = "ADR-0005: Foundation Capabilities First"
-description = "Decision to build Engineering Fundamentals and Architecture before technology-specific capabilities"
-+++
+---
+title: "ADR-0005: Foundation Capabilities First"
+description: "Decision to build Engineering Fundamentals and Architecture before technology-specific capabilities"
+---
 
 
 :PROPERTIES:

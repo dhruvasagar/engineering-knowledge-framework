@@ -1,7 +1,7 @@
-+++
-title = "Strategy"
-description = "Long-term strategy and guiding vision for the Engineering Knowledge Framework"
-+++
+---
+title: "Strategy"
+description: "Long-term strategy and guiding vision for the Engineering Knowledge Framework"
+---
 
 
 # Purpose

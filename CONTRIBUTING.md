@@ -1,7 +1,7 @@
-+++
-title = "Contributing"
-description = "Guidelines for contributing to the Engineering Knowledge Framework"
-+++
+---
+title: "Contributing"
+description: "Guidelines for contributing to the Engineering Knowledge Framework"
+---
 
 
 # Purpose

@@ -1,7 +1,7 @@
-+++
-title = "Error Handling"
-description = "Principles and patterns for handling errors effectively"
-+++
+---
+title: "Error Handling"
+description: "Principles and patterns for handling errors effectively"
+---
 
 
 # Purpose

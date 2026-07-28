@@ -1,7 +1,7 @@
-+++
-title = "Engineering Quality Handbook"
-description = "Principles, standards and practices for engineering quality"
-+++
+---
+title: "Engineering Quality Handbook"
+description: "Principles, standards and practices for engineering quality"
+---
 
 
 # Purpose

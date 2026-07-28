@@ -1,7 +1,7 @@
-+++
-title = "AI Evaluation Frameworks"
-description = "Frameworks for measuring AI output quality and reliability"
-+++
+---
+title: "AI Evaluation Frameworks"
+description: "Frameworks for measuring AI output quality and reliability"
+---
 
 
 # Purpose

@@ -1,7 +1,7 @@
-+++
-title = "Agentic Workflows"
-description = "Patterns for multi-step AI-assisted engineering workflows"
-+++
+---
+title: "Agentic Workflows"
+description: "Patterns for multi-step AI-assisted engineering workflows"
+---
 
 
 # Purpose

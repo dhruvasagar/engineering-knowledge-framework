@@ -1,7 +1,7 @@
-+++
-title = "Checklists"
-description = "Index of operational checklists"
-+++
+---
+title: "Checklists"
+description: "Index of operational checklists"
+---
 
 
 # Purpose

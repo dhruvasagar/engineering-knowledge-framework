@@ -1,7 +1,7 @@
-+++
-title = "WCAG Audit Checklist"
-description = "Comprehensive WCAG compliance audit"
-+++
+---
+title: "WCAG Audit Checklist"
+description: "Comprehensive WCAG compliance audit"
+---
 
 
 # Purpose

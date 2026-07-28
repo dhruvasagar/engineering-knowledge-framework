@@ -1,7 +1,7 @@
-+++
-title = "AI Engineering Learning Paths"
-description = "Structured learning progression for AI-assisted engineering"
-+++
+---
+title: "AI Engineering Learning Paths"
+description: "Structured learning progression for AI-assisted engineering"
+---
 
 
 # Purpose

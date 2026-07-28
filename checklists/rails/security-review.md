@@ -1,7 +1,7 @@
-+++
-title = "Rails Security Review Checklist"
-description = "Verification checklist for Rails application security"
-+++
+---
+title: "Rails Security Review Checklist"
+description: "Verification checklist for Rails application security"
+---
 
 
 # Purpose

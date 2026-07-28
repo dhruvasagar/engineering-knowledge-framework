@@ -1,7 +1,7 @@
-+++
-title = "Prompt Template"
-description = "Standard prompt structure for engineering AI"
-+++
+---
+title: "Prompt Template"
+description: "Standard prompt structure for engineering AI"
+---
 
 
 # Prompt Template

@@ -1,7 +1,7 @@
-+++
-title = "Architecture Glossary"
-description = "Software architecture terminology used throughout the Engineering Knowledge Framework"
-+++
+---
+title: "Architecture Glossary"
+description: "Software architecture terminology used throughout the Engineering Knowledge Framework"
+---
 
 
 # Purpose

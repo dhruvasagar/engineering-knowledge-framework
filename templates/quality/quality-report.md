@@ -1,7 +1,7 @@
-+++
-title = "Quality Report Template"
-description = "Standard format for quality review reports"
-+++
+---
+title: "Quality Report Template"
+description: "Standard format for quality review reports"
+---
 
 
 # Quality Report: [Project Name]

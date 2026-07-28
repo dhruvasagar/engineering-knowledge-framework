@@ -1,7 +1,7 @@
-+++
-title = "AI Safety and Verification"
-description = "Practices for safe and responsible use of AI in engineering"
-+++
+---
+title: "AI Safety and Verification"
+description: "Practices for safe and responsible use of AI in engineering"
+---
 
 
 # Purpose

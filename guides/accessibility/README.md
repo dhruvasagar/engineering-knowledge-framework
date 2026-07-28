@@ -1,7 +1,7 @@
-+++
-title = "Accessibility Guides"
-description = "Guides for accessibility engineering practices"
-+++
+---
+title: "Accessibility Guides"
+description: "Guides for accessibility engineering practices"
+---
 
 
 # Purpose

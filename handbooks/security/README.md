@@ -1,7 +1,7 @@
-+++
-title = "Security Engineering Handbook"
-description = "Principles, standards and practices for security engineering"
-+++
+---
+title: "Security Engineering Handbook"
+description: "Principles, standards and practices for security engineering"
+---
 
 
 # Purpose

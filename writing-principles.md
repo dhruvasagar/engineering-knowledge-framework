@@ -1,7 +1,7 @@
-+++
-title = "Writing Principles"
-description = "Principles for creating high-quality, timeless engineering knowledge"
-+++
+---
+title: "Writing Principles"
+description: "Principles for creating high-quality, timeless engineering knowledge"
+---
 
 
 # Purpose

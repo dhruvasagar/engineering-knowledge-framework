@@ -1,7 +1,7 @@
-+++
-title = "Accessibility References"
-description = "Quick-reference material for accessibility engineering"
-+++
+---
+title: "Accessibility References"
+description: "Quick-reference material for accessibility engineering"
+---
 
 
 # Purpose

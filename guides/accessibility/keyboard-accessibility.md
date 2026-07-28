@@ -1,7 +1,7 @@
-+++
-title = "Keyboard Accessibility"
-description = "Ensuring full keyboard operability"
-+++
+---
+title: "Keyboard Accessibility"
+description: "Ensuring full keyboard operability"
+---
 
 
 # Purpose

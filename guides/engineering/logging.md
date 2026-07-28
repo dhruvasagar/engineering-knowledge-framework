@@ -1,7 +1,7 @@
-+++
-title = "Logging"
-description = "Principles and standards for effective application logging"
-+++
+---
+title: "Logging"
+description: "Principles and standards for effective application logging"
+---
 
 
 # Purpose

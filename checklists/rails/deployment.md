@@ -1,7 +1,7 @@
-+++
-title = "Rails Deployment Checklist"
-description = "Pre-deployment verification checklist for Rails applications"
-+++
+---
+title: "Rails Deployment Checklist"
+description: "Pre-deployment verification checklist for Rails applications"
+---
 
 
 # Purpose

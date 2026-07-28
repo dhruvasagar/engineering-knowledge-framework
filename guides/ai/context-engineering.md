@@ -1,7 +1,7 @@
-+++
-title = "Context Engineering"
-description = "How to provide effective context to AI systems"
-+++
+---
+title: "Context Engineering"
+description: "How to provide effective context to AI systems"
+---
 
 
 # Purpose

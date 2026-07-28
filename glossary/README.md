@@ -1,7 +1,7 @@
-+++
-title = "Glossary"
-description = "Canonical engineering terminology used throughout the Engineering Knowledge Base"
-+++
+---
+title: "Glossary"
+description: "Canonical engineering terminology used throughout the Engineering Knowledge Base"
+---
 
 
 # Purpose

@@ -1,7 +1,7 @@
-+++
-title = "Architecture Review Playbook"
-description = "Repeatable workflow for conducting architecture reviews"
-+++
+---
+title: "Architecture Review Playbook"
+description: "Repeatable workflow for conducting architecture reviews"
+---
 
 
 # Objective

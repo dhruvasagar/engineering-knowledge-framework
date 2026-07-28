@@ -1,7 +1,7 @@
-+++
-title = "Context Pack Template"
-description = "Structure for assembling AI context packs"
-+++
+---
+title: "Context Pack Template"
+description: "Structure for assembling AI context packs"
+---
 
 
 # Context Pack Template

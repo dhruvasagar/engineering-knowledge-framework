@@ -1,7 +1,7 @@
-+++
-title = "Security References"
-description = "Quick-reference material for security engineering"
-+++
+---
+title: "Security References"
+description: "Quick-reference material for security engineering"
+---
 
 
 # Purpose

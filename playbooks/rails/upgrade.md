@@ -1,7 +1,7 @@
-+++
-title = "Rails Upgrade Playbook"
-description = "Repeatable workflow for upgrading Rails versions"
-+++
+---
+title: "Rails Upgrade Playbook"
+description: "Repeatable workflow for upgrading Rails versions"
+---
 
 
 # Objective

@@ -1,7 +1,7 @@
-+++
-title = "Accessibility Report Template"
-description = "Standard format for accessibility audit findings"
-+++
+---
+title: "Accessibility Report Template"
+description: "Standard format for accessibility audit findings"
+---
 
 
 # Accessibility Report: [Project Name]

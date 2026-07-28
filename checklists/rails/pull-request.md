@@ -1,7 +1,7 @@
-+++
-title = "Rails Pull Request Checklist"
-description = "Verification checklist for Rails pull requests"
-+++
+---
+title: "Rails Pull Request Checklist"
+description: "Verification checklist for Rails pull requests"
+---
 
 
 # Purpose

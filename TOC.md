@@ -1,7 +1,7 @@
-+++
-title = "Table of Contents"
-description = "Complete index of the Engineering Knowledge Framework"
-+++
+---
+title: "Table of Contents"
+description: "Complete index of the Engineering Knowledge Framework"
+---
 
 
 # How to Use This TOC

@@ -1,7 +1,7 @@
-+++
-title = "Authentication and Authorization"
-description = "Patterns for authentication and authorization in Rails"
-+++
+---
+title: "Authentication and Authorization"
+description: "Patterns for authentication and authorization in Rails"
+---
 
 
 # Purpose

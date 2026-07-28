@@ -1,7 +1,7 @@
-+++
-title = "Accessible Forms"
-description = "Building forms that work for everyone"
-+++
+---
+title: "Accessible Forms"
+description: "Building forms that work for everyone"
+---
 
 
 # Purpose

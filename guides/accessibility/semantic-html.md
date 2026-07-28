@@ -1,7 +1,7 @@
-+++
-title = "Semantic HTML"
-description = "Using HTML elements for their intended purpose"
-+++
+---
+title: "Semantic HTML"
+description: "Using HTML elements for their intended purpose"
+---
 
 
 # Purpose

@@ -1,7 +1,7 @@
-+++
-title = "Technical Debt Triage Checklist"
-description = "Classification and prioritisation of technical debt"
-+++
+---
+title: "Technical Debt Triage Checklist"
+description: "Classification and prioritisation of technical debt"
+---
 
 
 # Purpose

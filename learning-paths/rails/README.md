@@ -1,7 +1,7 @@
-+++
-title = "Rails Learning Paths"
-description = "Structured learning progression for Rails development"
-+++
+---
+title: "Rails Learning Paths"
+description: "Structured learning progression for Rails development"
+---
 
 
 # Purpose

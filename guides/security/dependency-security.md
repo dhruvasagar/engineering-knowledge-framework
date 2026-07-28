@@ -1,7 +1,7 @@
-+++
-title = "Dependency Security"
-description = "Managing security risks in third-party dependencies"
-+++
+---
+title: "Dependency Security"
+description: "Managing security risks in third-party dependencies"
+---
 
 
 # Purpose

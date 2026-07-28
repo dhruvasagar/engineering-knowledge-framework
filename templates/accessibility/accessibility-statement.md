@@ -1,7 +1,7 @@
-+++
-title = "Accessibility Statement Template"
-description = "Public-facing accessibility statement"
-+++
+---
+title: "Accessibility Statement Template"
+description: "Public-facing accessibility statement"
+---
 
 
 # Accessibility Statement: [Product/Organisation Name]

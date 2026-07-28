@@ -1,7 +1,7 @@
-+++
-title = "Service Object Template"
-description = "Template for Rails service objects"
-+++
+---
+title: "Service Object Template"
+description: "Template for Rails service objects"
+---
 
 
 # Purpose

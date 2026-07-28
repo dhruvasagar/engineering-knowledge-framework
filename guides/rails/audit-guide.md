@@ -1,7 +1,7 @@
-+++
-title = "Ruby on Rails: Audit Guide"
-description = "Systematic audit of Rails applications covering code quality, performance, security, database health and operational concerns"
-+++
+---
+title: "Ruby on Rails: Audit Guide"
+description: "Systematic audit of Rails applications covering code quality, performance, security, database health and operational concerns"
+---
 
 
 # Purpose

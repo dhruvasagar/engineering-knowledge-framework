@@ -1,7 +1,7 @@
-+++
-title = "Design Review Accessibility Checklist"
-description = "Accessibility checks during the design phase"
-+++
+---
+title: "Design Review Accessibility Checklist"
+description: "Accessibility checks during the design phase"
+---
 
 
 # Purpose

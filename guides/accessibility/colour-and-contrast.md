@@ -1,7 +1,7 @@
-+++
-title = "Colour and Contrast"
-description = "Meeting colour contrast requirements"
-+++
+---
+title: "Colour and Contrast"
+description: "Meeting colour contrast requirements"
+---
 
 
 # Purpose
