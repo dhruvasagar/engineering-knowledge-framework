@@ -34,35 +34,35 @@ automatically.
 
 The server exposes the following resources that AI assistants can read:
 
-| Resource | Description |
-| --- | --- |
-| `knowledge://capabilities` | List all capabilities with document counts and completeness status |
-| `knowledge://capability/{name}` | All documents in a capability (e.g., `Rails%20Engineering`) |
+| Resource                         | Description                                                                                     |
+|----------------------------------|-------------------------------------------------------------------------------------------------|
+| `knowledge://capabilities`       | List all capabilities with document counts and completeness status                              |
+| `knowledge://capability/{name}`  | All documents in a capability (e.g., `Rails%20Engineering`)                                     |
 | `knowledge://doc/{encoded-path}` | Content of a specific document. Use `__` for `/` in paths (e.g., `handbooks__rails__README.md`) |
-| `knowledge://graph/stats` | Knowledge graph statistics and most-connected documents |
-| `knowledge://search?q={query}` | Search documents by title, description, and path |
+| `knowledge://graph/stats`        | Knowledge graph statistics and most-connected documents                                         |
+| `knowledge://search?q={query}`   | Search documents by title, description, and path                                                |
 
 ## Tools
 
 The server exposes the following tools that AI assistants can call:
 
-| Tool | Description |
-| --- | --- |
-| `generate-context-pack` | Generate a condensed AI context pack from a capability name, document path, or search term. Configurable depth and document count. |
-| `find-related-documents` | Find documents related to a given path via knowledge graph cross-references |
-| `search-knowledge` | Search across all framework documents |
-| `capability-report` | Get per-capability completeness report showing which document types are present and missing |
-| `read-document` | Read a specific document by path |
+| Tool                     | Description                                                                                                                        |
+|--------------------------|------------------------------------------------------------------------------------------------------------------------------------|
+| `generate-context-pack`  | Generate a condensed AI context pack from a capability name, document path, or search term. Configurable depth and document count. |
+| `find-related-documents` | Find documents related to a given path via knowledge graph cross-references                                                        |
+| `search-knowledge`       | Search across all framework documents                                                                                              |
+| `capability-report`      | Get per-capability completeness report showing which document types are present and missing                                        |
+| `read-document`          | Read a specific document by path                                                                                                   |
 
 ## Prompts
 
 The server exposes prompt templates that AI assistants can use:
 
-| Prompt | Description |
-| --- | --- |
-| `engineering-review` | Template for code, design, or documentation review context |
-| `architecture-review` | Template for architectural decision review |
-| `rails-development` | Template for Rails development tasks |
+| Prompt                | Description                                                |
+|-----------------------|------------------------------------------------------------|
+| `engineering-review`  | Template for code, design, or documentation review context |
+| `architecture-review` | Template for architectural decision review                 |
+| `rails-development`   | Template for Rails development tasks                       |
 
 ## Configuring MCP Clients
 
@@ -106,23 +106,23 @@ It loads the knowledge graph from `tools/output/knowledge-graph.json`
 repository.
 
 ```
-                    ┌─────────────────────┐
-                    │   MCP Client         │
-                    │  (Claude, etc.)      │
-                    └──────────┬──────────┘
+                    ┌───────────────────────┐
+                    │     MCP Client        │
+                    │    (Claude, etc.)     │
+                    └──────────┬────────────┘
                                │ stdio JSON-RPC
-                    ┌──────────▼──────────┐
-                    │   MCP Server         │
-                    │  (server.py)         │
-                    ├──────────────────────┤
+                    ┌──────────▼────────────┐
+                    │      MCP Server       │
+                    │     (server.py)       │
+                    ├───────────────────────┤
                     │ Resources │ Tools     │
                     │           │ Prompts   │
-                    └──────────┬──────────┘
+                    └──────────┬────────────┘
                                │
-                    ┌──────────▼──────────┐
-                    │ Knowledge Graph      │
+                    ┌──────────▼────────────┐
+                    │    Knowledge Graph    │
                     │ (knowledge-graph.json)│
-                    └─────────────────────┘
+                    └───────────────────────┘
 ```
 
 ## Development
@@ -163,6 +163,7 @@ async def test():
 
 anyio.run(test)
 "
+```
 
 ## Related
 
