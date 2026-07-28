@@ -296,6 +296,8 @@ AI assistants can assist with Rails development through:
 - Suggesting refactoring opportunities.
 - Reviewing Rails code for convention compliance.
 - Debugging errors with Rails-specific knowledge.
+- Automating Ruby and Rails upgrades via the
+  [Ruby Upgrade Toolkit](https://github.com/dhruvasagar/ruby-upgrade-toolkit).
 
 When using AI for Rails development, provide:
 
@@ -305,6 +307,20 @@ When using AI for Rails development, provide:
 - Existing conventions or patterns to follow.
 
 See the [AI Engineering Handbook](../../handbooks/ai/README.md) for general AI workflow guidance.
+
+### AI-Assisted Upgrades
+
+The [Ruby Upgrade Toolkit](https://github.com/dhruvasagar/ruby-upgrade-toolkit)
+is a Claude Code plugin that fully automates Ruby and Rails version
+upgrades. It follows a phased methodology — audit, plan, fix, verify
+— with three workflow modes:
+
+- **Fully automated**: `/ruby-upgrade-toolkit:upgrade ruby:X.Y.Z rails:X.Y`
+- **Review-then-automate**: audit → plan → upgrade
+- **Per-phase control**: audit → plan → fix next (iterate)
+
+See the [Rails Upgrade Playbook](../../playbooks/rails/upgrade.md) for the
+detailed workflow and usage guide.
 
 # Capability Map
 
