@@ -60,29 +60,14 @@ Prefer principles over implementation details.
 
 | Convention | Example | Rule |
 | --- | --- | --- |
-| Lowercase | `guides/engineering/code-organization.md` | No capital letters |
-| Hyphen-separated | `service-objects.md` | Use hyphens, never spaces |
-| Markdown | `README.md` | All documents use `.md` extension |
-| Directory README | `handbooks/engineering/README.md` | Each directory has a README |
+| Lowercase | `handbooks/rails/README.md` | No capital letters in filenames or directory names |
+| Hyphen-separated | `service-objects.md` | Use hyphens, never spaces or underscores |
+| Markdown extension | `testing-strategies.md` | All documents use `.md` extension |
+| Directory index | `handbooks/engineering/README.md` | Each directory has a README.md as its index |
 
 Choose descriptive names.
 
 Avoid abbreviations unless they are universally understood.
-
-# Document Metadata
-
-Every document should begin with:
-
-```org
-```
-
-Optional metadata may include:
-
-- `#+TODO`
-- `#+OPTIONS`
-- `#+PROPERTY`
-
-Metadata should accurately describe the document.
 
 # Document Structure
 
@@ -108,9 +93,7 @@ Examples:
 
 | Question | Document Type |
 | --- | --- |
-|-----------+----------------|
 | Why? | Handbook |
-| --- | --- |
 | How does it work? | Guide |
 | How do I perform it? | Playbook |
 | Did I finish everything? | Checklist |
@@ -146,7 +129,8 @@ Avoid:
 A heading should remain meaningful when viewed independently in search
 results or a table of contents.
 
-Do not skip heading levels.
+Do not skip heading levels. For example, do not jump from `##` to `####`
+without `###` in between.
 
 Prefer three heading levels or fewer whenever practical.
 
@@ -172,15 +156,11 @@ Avoid:
 
 Good:
 
-#+BEGIN_QUOTE
-Controllers should remain thin.
-#+END_QUOTE
+> Controllers should remain thin.
 
 Avoid:
 
-#+BEGIN_QUOTE
-Controllers might perhaps benefit from being relatively small.
-#+END_QUOTE
+> Controllers might perhaps benefit from being relatively small.
 
 # Semantic Writing
 
@@ -190,15 +170,11 @@ Avoid ambiguous references.
 
 Good:
 
-#+BEGIN_QUOTE
-The Rails application loads configuration during initialization.
-#+END_QUOTE
+> The Rails application loads configuration during initialization.
 
 Avoid:
 
-#+BEGIN_QUOTE
-It loads configuration.
-#+END_QUOTE
+> It loads configuration.
 
 Prefer explicit nouns over pronouns when ambiguity is possible.
 
@@ -221,11 +197,9 @@ Whenever practical:
 
 Good:
 
-#+BEGIN_QUOTE
-See the
-[Rails Engineering Handbook](./handbooks/rails/README.md)
-for architectural principles.
-#+END_QUOTE
+> See the
+> [Rails Engineering Handbook](./handbooks/rails/README.md)
+> for architectural principles.
 
 # Timeless Writing
 
@@ -277,15 +251,13 @@ Every significant concept should be connected to related knowledge.
 
 Good:
 
-```org
+```
 [Code Review Playbook](./playbooks/code-review/README.md)
 ```
 
 Avoid:
 
-#+BEGIN_QUOTE
-See the code review documentation.
-#+END_QUOTE
+> See the code review documentation.
 
 # Knowledge Graph
 
@@ -300,25 +272,7 @@ Documents should both:
 Example:
 
 ```
-
-Rails Handbook
-
-↓
-
-Service Objects Guide
-
-↓
-
-Code Review Playbook
-
-↓
-
-Pull Request Checklist
-
-↓
-
-PR Template
-
+Rails Handbook → Service Objects Guide → Code Review Playbook
 ```
 
 Navigation should emphasize relationships rather than directory
@@ -326,11 +280,9 @@ structure.
 
 # Lists
 
-Use unordered lists for collections.
+Use unordered lists (`-`) for collections.
 
-Use ordered lists for sequences.
-
-Use definition lists when introducing terminology.
+Use ordered lists (`1.`) for sequences.
 
 Keep nesting shallow.
 
@@ -338,42 +290,31 @@ Avoid deeply nested lists.
 
 ## Bullet Format
 
-Use =-= for bullet list items, not =**=. In Markdown, =**= at the start
-of a line creates a **headline**, not a bullet. Using =**= instead of
-=-= causes structural issues:
-
-- Short =**= items become orphaned Level-1 headlines rather than
-  list entries.
-- They do not nest properly under parent sections.
-- They break document outline and navigation.
+Use `-` for bullet list items, never `*`.
 
 Correct:
 
-: - Item one.
-: - Item two.
-:   - Nested sub-item.
+- Item one.
+- Item two.
+  - Nested sub-item.
 
 Incorrect:
 
-: * Item one.
-: * Item two.
+- Item one.
+- Item two.
 
 ## Checklist Format
 
-Use =-= [ ]= for checklist items, not =*= [ ]=.
+Use `- [ ]` for checklist items.
 
 Correct:
 
-: - [ ] Task to complete.
-: - [x] Completed task.
-
-Incorrect:
-
-: * [ ] Task to complete.
+- [ ] Task to complete.
+- [x] Completed task.
 
 # Tables
 
-Use Org tables for structured information.
+Use markdown tables for structured information.
 
 Tables are appropriate for:
 
@@ -389,58 +330,75 @@ Avoid using tables for layout.
 
 Every table must follow this structure:
 
-| Header 1 | Header 2 | Header 3 |   ← Header row: | at edges, | between cells
-|----------+----------+----------|   ← Separator:  | at edges, + between columns
-| Cell 1   | Cell 2   | Cell 3   |   ← Data rows:  | at edges, | between cells
+```
+| Header 1 | Header 2 | Header 3 |
+| --- | --- | --- |
+| Cell 1   | Cell 2   | Cell 3   |
+```
 
 Rules:
 
-- Every row starts and ends with =|=.
-- The header separator (hline) uses =| at both edges and =+ between
-  columns, e.g., `|-------+-------|`. It must not use =+ at the
-  edges or =| between columns in place of =+.
-- All rows in a table must have the same number of columns.
+- The header separator row uses `|---|` (three or more dashes between pipes).
+- All rows must have the same number of columns.
 - A blank line ends the table.
 
-## Correct Examples
+## Correct Example
 
-Two-column table:
+```
+| Principle | Description |
+| --- | --- |
+| Keep it simple | Prefer simple over clever designs. |
+| Single purpose | One responsibility per module. |
+```
+
+Rendered:
 
 | Principle | Description |
 | --- | --- |
-|-----------------+-------------------------------------|
 | Keep it simple | Prefer simple over clever designs. |
-| --- | --- |
 | Single purpose | One responsibility per module. |
 
-Three-column table with multi-line cells:
+## Multi-line Cells
 
+Markdown does not support multi-line cells natively. For content that
+needs multiple lines, use separate rows with the first column empty:
+
+```
 | Type | Speed | Notes |
 | --- | --- | --- |
-|--------+-------+------------------------------------|
 | Unit | Fast | Isolated, single behaviour. |
-| --- | --- | --- |
-| E2E | Slow | Full stack, critical journeys |
-|  |  | only. |
+| | | Tests a single module in isolation. |
+| E2E | Slow | Full stack, critical journeys only. |
+```
 
-## Common Mistakes
+Or use a list within a cell if the renderer supports it (most do not).
+For complex multi-line content, prefer a definition list or bullet list
+outside the table.
 
-- Using =+ at the start or end of the separator row instead of =|.
-  Correct: `|-------+-------`|. Wrong: `+-------+-------`+.
-- Using =| between columns in the separator row instead of =+.
-  Correct: `|-------+-------`|. Wrong: `|-------|-------|`.
-- Missing the separator row between header and data.
-- Inconsistent column counts across rows.
+# Blockquotes
+
+Use `>` for blockquotes.
+
+Used for:
+
+- Highlighting important principles.
+- Showing good and bad examples.
+- Excerpts from other documents.
+
+Example:
+
+> Controllers should remain thin. Move business logic into service
+> objects or models.
 
 # Code Blocks
 
-Always specify the language.
+Always specify the language for syntax highlighting.
 
 Example:
 
 ```ruby
 class User < ApplicationRecord
-has_many :posts
+  has_many :posts
 end
 ```
 
@@ -462,7 +420,7 @@ When appropriate, include:
 
 - Good examples.
 - Bad examples.
-- Before*after comparisons.
+- Before/after comparisons.
 
 Examples are often the fastest way to teach engineering concepts.
 
@@ -528,22 +486,24 @@ Repository quality is more important than document count.
 
 Before committing a document, verify:
 
-- [ ] Metadata is complete.
-- [ ] The correct document type was used.
+- [ ] Correct document type was used (handbook, guide, playbook, etc.).
 - [ ] The document has a single responsibility.
-- [ ] Headings are meaningful.
-- [ ] Terminology is consistent.
-- [ ] Internal links are valid.
-- [ ] Duplicate knowledge has been avoided.
+- [ ] Headings are meaningful and descriptive.
+- [ ] Heading levels do not skip (e.g., `##` to `####` without `###`).
+- [ ] Terminology is consistent with the relevant glossary.
+- [ ] Internal links are valid and use lowercase paths.
+- [ ] Lists use `-` for bullets, not `*`.
+- [ ] Checklists use `- [ ]` format.
+- [ ] Table formatting is correct and consistent.
+- [ ] Code blocks specify a language.
+- [ ] Duplicate knowledge has been consolidated.
 - [ ] Examples are technically accurate.
-- [ ] The document follows repository conventions.
-- [ ] Lists use =-= for bullets, not =**= (which creates headlines).
-- [ ] Headline levels do not skip (e.g., =**= to `****` without `***`).
-- [ ] toc.md is updated if this is a new or renamed document.
+- [ ] `toc.md` is updated if this is a new or renamed document.
 - [ ] Handbook capability map is updated if this is a new or renamed
       document.
+- [ ] The document follows repository conventions.
 
-- AI Readability Checklist
+## AI Readability Checklist
 
 Additionally verify:
 
@@ -552,11 +512,11 @@ Additionally verify:
 - [ ] Assumptions are explained.
 - [ ] Related documents are linked.
 - [ ] Canonical sources are referenced.
-- [ ] The document is modular.
+- [ ] The document is modular (not monolithic).
 - [ ] Sections are concise.
 - [ ] AI-generated content has been reviewed by a human.
 
-- References
+# References
 
 - [CLAUDE.md](./CLAUDE.md)
 - [Strategy](./strategy.md)
@@ -564,4 +524,4 @@ Additionally verify:
 - [Document Types](./document-types.md)
 - [Contributing](./contributing.md)
 - [Repository Overview](../README.md)
-- [[https:*www.markdownguide.org*][Markdown Guide]]
+- [Markdown Guide](https://www.markdownguide.org/)

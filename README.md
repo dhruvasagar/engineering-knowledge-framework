@@ -146,7 +146,6 @@ Examples include:
 The repository is organized into several major areas.
 
 ```
-
 governance/
 Repository philosophy, standards and guidance
 
@@ -176,7 +175,6 @@ Structured learning journeys
 
 assets/
 Shared diagrams, images and supporting resources
-
 ```
 
 Each document type has a clearly defined purpose.
@@ -192,45 +190,25 @@ for more information.
 Engineering knowledge evolves continuously.
 
 ```
-
 Experience
-
 ↓
-
 Capture
-
 ↓
-
 Review
-
 ↓
-
 Refine
-
 ↓
-
 Organize
-
 ↓
-
 Publish
-
 ↓
-
 Apply
-
 ↓
-
 Learn
-
 ↓
-
 Improve
-
 ↓
-
 Repeat
-
 ```
 
 This framework exists to support every stage of that lifecycle.

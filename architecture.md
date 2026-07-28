@@ -77,21 +77,13 @@ Knowledge should form a connected graph rather than isolated pages.
 The framework consists of several architectural layers.
 
 ```
-
 Engineering Knowledge Framework
-
 ├── Governance
-│
 ├── Knowledge Architecture
-│
 ├── Engineering Capabilities
-│
 ├── AI Framework
-│
 ├── Learning Framework
-│
 └── Tooling
-
 ```
 
 Each layer has a distinct responsibility.
@@ -161,9 +153,7 @@ Each capability is expected to contain a consistent collection of
 knowledge artifacts.
 
 ```
-
 Capability
-
 ├── Handbook
 ├── Guides
 ├── Playbooks
@@ -173,7 +163,6 @@ Capability
 ├── Glossary
 ├── Learning Paths
 └── Examples
-
 ```
 
 Not every capability must initially contain every artifact, but this is
@@ -184,13 +173,10 @@ the target architecture.
 Knowledge artifacts have distinct responsibilities.
 
 ```
-
-```
              Handbook
                  │
   ┌──────────────┼──────────────┐
   │              │              │
-```
 
 Guides       References      Glossary
 │
@@ -202,26 +188,23 @@ Checklists
 │
 │
 Templates
+```
 
 Learning Paths connect all of the above.
 
-```
-
 Responsibilities:
 
-| Artifact | Responsibility |
-| --- | --- |
-|---------------+------------------------------------------|
-| Handbook | Principles, philosophy and standards |
-| --- | --- |
-| Guide | Deep explanation of a focused topic |
-| Playbook | Repeatable operational workflow |
-| Checklist | Verification and quality gates |
-| Template | Reusable starting point |
-| Reference | Quick factual lookup |
-| Glossary | Canonical terminology |
+| Artifact      | Responsibility                           |
+|---------------|------------------------------------------|
+| Handbook      | Principles, philosophy and standards     |
+| Guide         | Deep explanation of a focused topic      |
+| Playbook      | Repeatable operational workflow          |
+| Checklist     | Verification and quality gates           |
+| Template      | Reusable starting point                  |
+| Reference     | Quick factual lookup                     |
+| Glossary      | Canonical terminology                    |
 | Learning Path | Structured progression through knowledge |
-| Example | Practical implementation |
+| Example       | Practical implementation                 |
 
 Each artifact type is documented in
 [Document Types](./document-types.md).
@@ -233,29 +216,17 @@ The framework should be viewed as a graph rather than a hierarchy.
 Example:
 
 ```
-
 Rails Handbook
-
 ↓
-
 Service Objects Guide
-
 ↓
-
 Code Review Playbook
-
 ↓
-
 Pull Request Checklist
-
 ↓
-
 Service Object Template
-
 ↓
-
 Learning Path
-
 ```
 
 Documents should be interconnected through meaningful relationships.
@@ -267,45 +238,25 @@ Navigation should emphasize concepts rather than directory structure.
 Knowledge continuously evolves.
 
 ```
-
 Experience
-
 ↓
-
 Capture
-
 ↓
-
 Review
-
 ↓
-
 Refine
-
 ↓
-
 Standardize
-
 ↓
-
 Publish
-
 ↓
-
 Apply
-
 ↓
-
 Learn
-
 ↓
-
 Improve
-
 ↓
-
 Repeat
-
 ```
 
 Every engineering experience should eventually become reusable
@@ -381,27 +332,16 @@ CONTRIBUTING
 Contains engineering capabilities.
 
 ```
-
 glossary/
-
 handbook/
-
 guides/
-
 playbooks/
-
 checklists/
-
 templates/
-
 references/
-
 learning-paths/
-
 examples/
-
 assets/
-
 ```
 
 Future tooling should understand this organization automatically.
@@ -438,37 +378,19 @@ The architecture is designed to evolve through incremental improvement.
 
 Expected evolution includes:
 
-Phase 1
-
-Foundation
-
+```
+Phase 1: Foundation
 ↓
-
-Phase 2
-
-Reference Capabilities
-
+Phase 2: Reference Capabilities
 ↓
-
-Phase 3
-
-Framework Tooling
-
+Phase 3: Framework Tooling
 ↓
-
-Phase 4
-
-Knowledge Platform
-
+Phase 4: Knowledge Platform
 ↓
-
-Phase 5
-
-Community Ecosystem
-
+Phase 5: Community Ecosystem
 ↓
-
 Phase 6
+```
 
 Open Standard
 

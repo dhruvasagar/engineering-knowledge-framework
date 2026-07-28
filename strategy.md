@@ -163,31 +163,21 @@ engineering collaborators while preserving human engineering judgement.
 
 Engineering knowledge should evolve continuously through:
 
+```
 Experience
-
 ↓
-
 Reflection
-
 ↓
-
 Refinement
-
 ↓
-
 Standardization
-
 ↓
-
 Reuse
-
 ↓
-
 Learning
-
 ↓
-
 Further Improvement
+```
 
 # Framework Architecture
 

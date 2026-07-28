@@ -46,9 +46,7 @@ Examples include:
 Each capability owns a collection of knowledge artifacts.
 
 ```
-
 Capability
-
 ├── Handbook
 ├── Guides
 ├── Playbooks
@@ -58,26 +56,23 @@ Capability
 ├── Glossary
 ├── Learning Paths
 └── Examples
-
 ```
 
 Each artifact has a distinct purpose.
 
 # Document Taxonomy
 
-| Document Type | Primary Purpose | Answers |
-| --- | --- | --- |
-|---------------+--------------------------------------+----------------------------|
-| Handbook | Principles, philosophy and standards | Why? What? |
-| --- | --- | --- |
-| Guide | Explain a focused engineering topic | How does it work? |
-| Playbook | Repeatable engineering workflow | How do I do this? |
-| Checklist | Verify correctness | Did I complete everything? |
-| Template | Standardize repeatable artifacts | Where do I start? |
-| Reference | Quick factual lookup | What is the syntax? |
-| Glossary | Canonical terminology | What does this mean? |
-| Learning Path | Structured learning progression | What should I learn next? |
-| Example | Practical implementation | What does good look like? |
+| Document Type | Primary Purpose                      | Answers                    |
+|---------------|--------------------------------------|----------------------------|
+| Handbook      | Principles, philosophy and standards | Why? What?                 |
+| Guide         | Explain a focused engineering topic  | How does it work?          |
+| Playbook      | Repeatable engineering workflow      | How do I do this?          |
+| Checklist     | Verify correctness                   | Did I complete everything? |
+| Template      | Standardize repeatable artifacts     | Where do I start?          |
+| Reference     | Quick factual lookup                 | What is the syntax?        |
+| Glossary      | Canonical terminology                | What does this mean?       |
+| Learning Path | Structured learning progression      | What should I learn next?  |
+| Example       | Practical implementation             | What does good look like?  |
 
 No document type should duplicate the responsibility of another.
 
@@ -316,14 +311,10 @@ Examples should illustrate:
 Document types are designed to complement one another.
 
 ```
-
-```
              Handbook
                  │
   ┌──────────────┼──────────────┐
   │              │              │
-```
-
 Guides       References      Glossary
 │
 │
@@ -334,12 +325,11 @@ Checklists
 │
 │
 Templates
+```
 
 Learning Paths connect all document types.
 
 Examples support Guides and Playbooks.
-
-```
 
 This relationship intentionally separates principles, concepts,
 workflows and verification.
@@ -348,19 +338,17 @@ workflows and verification.
 
 When creating new knowledge, ask the following questions.
 
-| Question | Document Type |
-| --- | --- |
-|---------------------------------+---------------|
-| Why should we do this? | Handbook |
-| --- | --- |
-| How does this concept work? | Guide |
-| How do I perform this task? | Playbook |
-| How do I verify it? | Checklist |
-| How do I start? | Template |
-| Where can I quickly look it up? | Reference |
-| What does this term mean? | Glossary |
-| What should I learn next? | Learning Path |
-| What does good look like? | Example |
+| Question                        | Document Type |
+|---------------------------------|---------------|
+| Why should we do this?          | Handbook      |
+| How does this concept work?     | Guide         |
+| How do I perform this task?     | Playbook      |
+| How do I verify it?             | Checklist     |
+| How do I start?                 | Template      |
+| Where can I quickly look it up? | Reference     |
+| What does this term mean?       | Glossary      |
+| What should I learn next?       | Learning Path |
+| What does good look like?       | Example       |
 
 If a document answers multiple questions, it should probably be split
 into multiple documents.
@@ -385,37 +373,21 @@ AI should consume many small documents rather than one large document.
 Engineering knowledge evolves through experience.
 
 ```
-
 Experience
-
 ↓
-
 Lesson Learned
-
 ↓
-
 Guide
-
 ↓
-
 Handbook Standard
-
 ↓
-
 Playbook
-
 ↓
-
 Checklist
-
 ↓
-
 Template
-
 ↓
-
 Learning Path
-
 ```
 
 The framework encourages converting project experience into reusable

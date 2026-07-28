@@ -111,21 +111,13 @@ single-responsibility documents.
 Prefer:
 
 Handbook
-
 ↓
-
 Guide
-
 ↓
-
 Playbook
-
 ↓
-
 Checklist
-
 ↓
-
 Reference
 
 rather than one large document attempting to explain everything.
@@ -141,10 +133,8 @@ A capability combines all knowledge required to master a subject.
 
 Example:
 
-#+BEGIN_EXAMPLE
-
+```
 Rails Engineering
-
 ├── Handbook
 ├── Guides
 ├── Playbooks
@@ -154,8 +144,7 @@ Rails Engineering
 ├── Glossary
 ├── Learning Paths
 └── AI Workflows
-
-#+END_EXAMPLE
+```
 
 Documentation should evolve around capabilities rather than document
 types.
@@ -397,47 +386,27 @@ Examples:
 
 Engineering knowledge continuously evolves.
 
-#+BEGIN_EXAMPLE
-
+```
 Experience
-
 ↓
-
 Capture
-
 ↓
-
 Review
-
 ↓
-
 Refine
-
 ↓
-
 Organize
-
 ↓
-
 Publish
-
 ↓
-
 Apply
-
 ↓
-
 Learn
-
 ↓
-
 Improve
-
 ↓
-
 Repeat
-
-#+END_EXAMPLE
+```
 
 Every document contributes to this lifecycle.
 

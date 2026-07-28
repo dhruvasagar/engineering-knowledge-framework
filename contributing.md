@@ -173,37 +173,21 @@ Documents should be:
 The recommended workflow is:
 
 ```
-
 Identify a problem
-
 ↓
-
 Discuss (if needed)
-
 ↓
-
 Design the solution
-
 ↓
-
 Create or update documents
-
 ↓
-
 Cross-reference related knowledge
-
 ↓
-
 Validate formatting
-
 ↓
-
 Review
-
 ↓
-
 Merge
-
 ```
 
 Larger architectural changes should be discussed before implementation.
