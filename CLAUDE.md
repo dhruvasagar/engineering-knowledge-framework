@@ -205,7 +205,7 @@ Human review remains mandatory.
 
 ## Navigation and Discovery
 
-The repository uses [TOC.md](./TOC.md) as the central navigation index.
+The repository uses [toc.md](./toc.md) as the central navigation index.
 It provides two views:
 
 * **From Top to Bottom**: Complete inventory of all documents
@@ -216,7 +216,7 @@ It provides two views:
 Every handbook also includes a **Capability Map** section listing
 all documents in that capability.
 
-**When adding or moving documents, update TOC.md and the
+**When adding or moving documents, update toc.md and the
 relevant handbook's Capability Map.**
 
 When writing or editing documents:

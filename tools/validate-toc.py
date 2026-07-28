@@ -17,7 +17,7 @@ import sys
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
-TOC_FILE = REPO_ROOT / 'TOC.md'
+TOC_FILE = REPO_ROOT / 'toc.md'  # renamed from TOC.md for case-sensitive deployment
 
 LINK_PATTERN = re.compile(r'\]\(([^)]+)\)')
 IGNORE_FILES = {
@@ -47,7 +47,7 @@ def collect_org_files():
 def extract_toc_links():
     """Extract all [[file:...]] links from TOC.md."""
     if not TOC_FILE.exists():
-        print(f"❌ TOC.md not found at {TOC_FILE}")
+        print(f"❌ toc.md not found at {TOC_FILE}")
         sys.exit(1)
 
     content = TOC_FILE.read_text(encoding='utf-8')
@@ -100,12 +100,12 @@ def validate_toc():
 
 def main():
     print("📑 TOC Validator")
-    print(f"   Checking {TOC_FILE}...\n")
+    print(f"   Checking toc.md...\n")
 
     errors, org_count, toc_count = validate_toc()
 
     print(f"   {org_count} .md files in repository")
-    print(f"   {toc_count} links in TOC.md\n")
+    print(f"   {toc_count} links in toc.md\n")
 
     if errors:
         print(f"❌ {len(errors)} TOC issue(s) found:\n")
@@ -114,7 +114,7 @@ def main():
         print()
         sys.exit(1)
     else:
-        print("✅ TOC.md is complete and consistent!")
+        print("✅ toc.md is complete and consistent!")
         sys.exit(0)
 
 

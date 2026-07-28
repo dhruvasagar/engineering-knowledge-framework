@@ -122,7 +122,7 @@ Source material:
 1. Place the document in the appropriate capability directory.
 2. Add cross-references to related documents.
 3. Update the handbook's Capability Map section.
-4. Update TOC.md with the new document entry.
+4. Update toc.md with the new document entry.
 
 # Extraction Templates
 

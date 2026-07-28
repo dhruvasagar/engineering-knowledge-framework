@@ -539,7 +539,7 @@ Before committing a document, verify:
 - [ ] The document follows repository conventions.
 - [ ] Lists use =-= for bullets, not =**= (which creates headlines).
 - [ ] Headline levels do not skip (e.g., =**= to `****` without `***`).
-- [ ] TOC.md is updated if this is a new or renamed document.
+- [ ] toc.md is updated if this is a new or renamed document.
 - [ ] Handbook capability map is updated if this is a new or renamed
       document.
 

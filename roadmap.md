@@ -480,7 +480,7 @@ Initial tooling focused on correctness and consistency:
 - [x] Glossary validation: Ensure all glossary entries have required fields, non-empty definitions, and no duplicate terms.
 - [x] Bullet syntax linting: Detect incorrect list formatting.
 - [x] Metadata validation: Verify required `title:` and `description:` front matter.
-- [x] TOC validation: Ensure TOC.md entries match actual file inventory.
+- [x] TOC validation: Ensure toc.md entries match actual file inventory.
 - [x] Validation runner: `make validate` runs all validators in sequence with summary output.
 
 ### Phase 6b — Generator Tooling (Not Started)
@@ -554,7 +554,7 @@ Expand the framework into a complete engineering knowledge platform.
 - [x] Zola static site generator integration with custom theme.
 - [x] Full-text search across all documents (Zola search index with elasticlunr).
 - [x] Navigation by capability and document type.
-- [x] Cross-cutting topic indexes via TOC.md.
+- [x] Cross-cutting topic indexes via toc.md.
 - [x] Responsive design with custom CSS.
 - [x] GitHub Actions CI/CD pipeline: validate → build graph → prepare content → build site → deploy to GitHub Pages.
 - [x] `make site` and `make serve` commands for local preview.

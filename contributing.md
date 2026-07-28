@@ -363,14 +363,14 @@ engineering knowledge available to the community.
 
 # Keeping the Index in Sync
 
-[TOC.md](./TOC.md) is the central navigation index for the repository.
+[toc.md](./toc.md) is the central navigation index for the repository.
 
 When adding a new document:
 
-1. Add it to the relevant capability section in TOC.md's "From Top
+1. Add it to the relevant capability section in toc.md's "From Top
    to Bottom" inventory.
 2. If the document addresses a cross-cutting topic, add it to the
-   relevant topic index in TOC.md's "Cross-Cutting Topics" section.
+   relevant topic index in toc.md's "Cross-Cutting Topics" section.
 3. Update the handbook's ***Capability Map*** for the relevant
    capability.
 4. Add a README.md entry if the document is in a directory that
@@ -378,13 +378,13 @@ When adding a new document:
 
 When moving or renaming a document:
 
-1. Update all links in TOC.md, the handbook capability map, and
+1. Update all links in toc.md, the handbook capability map, and
    directory READMEs.
 2. Update cross-references in related documents.
 
 # Related Documents
 
-- [Table of Contents](./TOC.md)
+- [Table of Contents](./toc.md)
 - [Repository Overview](../README.md)
 - [CLAUDE.md](./CLAUDE.md)
 - [Strategy](./strategy.md)
