@@ -113,10 +113,16 @@ def add_front_matter(content, title):
 def zolafy_link_target(target):
     """Convert a markdown .md link target to Zola's directory-style URL.
     
+    Zola serves markdown files without the .md extension:
+      - README.md becomes _index.md → served at the directory level
+      - file.md is served at file/
+    
     Rules:
-      path/README.md  → path/README/    (Zola serves README at dir/README/)
-      path/file.md    → path/file/      (Zola serves without .md extension)
-      ./path.md       → ./path/
+      path/README.md  → path/           (README becomes dir index)
+      ./README.md     → ./              (same for relative)
+      path/file.md    → path/file/      (served without .md)
+      ./file.md       → ./file/
+      path.md         → path/           (root-level files)
       http://...      → unchanged
       #anchor         → unchanged
       mailto:...      → unchanged
@@ -124,7 +130,21 @@ def zolafy_link_target(target):
     if target.startswith(('http://', 'https://', '#', 'mailto:')):
         return target
     
-    if target.endswith('.md'):
+    # Check if the last path component is README.md
+    # (README.md becomes _index.md → directory index)
+    if target.endswith('README.md'):
+        # Strip /README.md or README.md
+        if target.endswith('/README.md'):
+            target = target[:-len('/README.md')]
+        else:
+            target = target[:-len('README.md')]
+        # Ensure trailing /
+        if target and not target.endswith('/'):
+            target += '/'
+        elif not target:
+            target = './'
+    elif target.endswith('.md'):
+        # Regular .md file → served without extension
         target = target[:-3]
         if not target.endswith('/'):
             target += '/'
