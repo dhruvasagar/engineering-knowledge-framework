@@ -29,16 +29,14 @@ start. Every function, service and system boundary should define:
 
 Errors fall into two categories:
 
-| Category | Definition | Examples |
-| --- | --- | --- |
-|----------------+-----------------------------------------+--------------------------|
-| Recoverable | The system can continue operating | Validation failure, |
-| --- | --- | --- |
-|  | despite the error. | network timeout, |
-|  |  | resource not found |
+| Category      | Definition                         | Examples                  |
+|---------------|------------------------------------|---------------------------|
+| Recoverable   | The system can continue operating  | Validation failure,       |
+|               | despite the error.                 | network timeout,          |
+|               |                                    | resource not found        |
 | Unrecoverable | The system cannot safely continue. | Null pointer dereference, |
-|  | Fail fast and report. | out of memory, |
-|  |  | configuration error |
+|               | Fail fast and report.              | out of memory,            |
+|               |                                    | configuration error       |
 
 Recoverable errors should be handled gracefully.
 
@@ -108,16 +106,14 @@ execution prevents wasted work.
 
 Choose the error mechanism that matches the context:
 
-| Mechanism | Use When |
-| --- | --- |
-|----------------+-------------------------------------------------------|
-| Return types | The error is expected and callers should handle it |
-| --- | --- |
-|  | (e.g., validation, not found). |
-| Exceptions | The error is unexpected or cannot be handled at the |
-|  | call site (e.g., network failure, configuration error). |
-| Result types | You want type-safe error handling without exceptions |
-|  | (e.g., `Result[T, E]`, `Either`, =Ok=). |
+| Mechanism    | Use When                                                |
+|--------------|---------------------------------------------------------|
+| Return types | The error is expected and callers should handle it      |
+|              | (e.g., validation, not found).                          |
+| Exceptions   | The error is unexpected or cannot be handled at the     |
+|              | call site (e.g., network failure, configuration error). |
+| Result types | You want type-safe error handling without exceptions    |
+|              | (e.g., `Result[T, E]`, `Either`, =Ok=).                 |
 
 Prefer return types or result types for expected errors. Reserve
 exceptions for exceptional conditions.
@@ -163,15 +159,13 @@ recovered.
 
 ## Log Levels
 
-| Level | Use When |
-| --- | --- |
-|---------+-----------------------------------------------------------|
-| ERROR | A failure that requires human investigation. |
-| --- | --- |
-| WARN | An unexpected condition that the system handled. |
-| INFO | Significant lifecycle events (startup, shutdown, deploy). |
-| DEBUG | Detailed information for diagnosing issues. |
-| TRACE | Very detailed diagnostic information. |
+| Level | Use When                                                  |
+|-------|-----------------------------------------------------------|
+| ERROR | A failure that requires human investigation.              |
+| WARN  | An unexpected condition that the system handled.          |
+| INFO  | Significant lifecycle events (startup, shutdown, deploy). |
+| DEBUG | Detailed information for diagnosing issues.               |
+| TRACE | Very detailed diagnostic information.                     |
 
 ## Structured Logging
 

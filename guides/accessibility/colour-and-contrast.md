@@ -8,16 +8,14 @@ in bright environments.
 
 ## WCAG Contrast Ratios
 
-| Text Type | Minimum Ratio | Level |
-| --- | --- | --- |
-+----------------------+---------------+-------+
-| Normal text (< 18px) | 4.5:1 | AA |
-| --- | --- | --- |
-| Large text (>= 18px) | 3:1 | AA |
-| Normal text | 7:1 | AAA |
-| Large text | 4.5:1 | AAA |
-| UI components | 3:1 | AA |
-| Graphical objects | 3:1 | AA |
+| Text Type            | Minimum Ratio | Level |
+|----------------------|---------------|-------|
+| Normal text (< 18px) | 4.5:1         | AA    |
+| Large text (>= 18px) | 3:1           | AA    |
+| Normal text          | 7:1           | AAA   |
+| Large text           | 4.5:1         | AAA   |
+| UI components        | 3:1           | AA    |
+| Graphical objects    | 3:1           | AA    |
 
 ## Exceptions
 
@@ -47,14 +45,12 @@ in bright environments.
 Information conveyed by colour must also be available through other
 means:
 
-| Use Case | Alternative |
-| --- | --- |
-+--------------------+---------------------------------------+
-| Error state | Icon + text + colour |
-| --- | --- |
-| Status indicator | Text label + colour |
-| Link colour | Underline + colour |
-| Graph legend | Patterns + labels + colour |
+| Use Case         | Alternative                |
+|------------------|----------------------------|
+| Error state      | Icon + text + colour       |
+| Status indicator | Text label + colour        |
+| Link colour      | Underline + colour         |
+| Graph legend     | Patterns + labels + colour |
 
 # Anti-patterns
 

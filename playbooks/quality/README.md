@@ -6,13 +6,11 @@ review, technical debt management and release quality gating.
 
 # Playbooks
 
-| Playbook | Description |
-| --- | --- |
-+--------------------------------------------------------+-------------------------------------------------+
-| [Quality Review Playbook](./quality-review.md) | Workflow for conducting quality reviews. |
-| --- | --- |
+| Playbook                                                 | Description                                   |
+|----------------------------------------------------------|-----------------------------------------------|
+| [Quality Review Playbook](./quality-review.md)           | Workflow for conducting quality reviews.      |
 | [Technical Debt Remediation](./tech-debt-remediation.md) | Workflow for managing and reducing tech debt. |
-| [Release Quality Gate](./release-quality-gate.md) | Quality verification before release. |
+| [Release Quality Gate](./release-quality-gate.md)        | Quality verification before release.          |
 
 # Related Documents
 

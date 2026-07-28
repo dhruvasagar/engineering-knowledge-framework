@@ -71,13 +71,11 @@ it.
 
 #### Trade-offs
 
-| Pro | Con |
-| --- | --- |
-|---------------------------------------+----------------------------------------|
-| Simple and widely understood | Can lead to monolithic deployments |
-| --- | --- |
-| Clear separation of concerns | Layer bypass undermines the pattern |
-| Easy to get started | Tendency toward code duplication |
+| Pro                              | Con                                  |
+|----------------------------------|--------------------------------------|
+| Simple and widely understood     | Can lead to monolithic deployments   |
+| Clear separation of concerns     | Layer bypass undermines the pattern  |
+| Easy to get started              | Tendency toward code duplication     |
 | Good for small to medium systems | Does not scale well organizationally |
 
 ## Hexagonal Architecture (Ports and Adapters)
@@ -112,9 +110,7 @@ implement ports defined by the core.
 
 | Pro | Con |
 | --- | --- |
-|---------------------------------------+----------------------------------------|
 | Domain is highly testable | Increased indirection and complexity |
-| --- | --- |
 | External systems are swappable | More interfaces to maintain |
 | Business logic is framework-free | Can be over-engineering for simple apps |
 | Strong separation of concerns | Requires discipline to maintain |
@@ -150,15 +146,12 @@ them. This creates loose coupling between components.
 
 #### Trade-offs
 
-| Pro | Con |
-| --- | --- |
-|---------------------------------------+----------------------------------------|
-| Strong decoupling between services | Eventual consistency is complex |
-| --- | --- |
-| Highly scalable and extensible        | Debugging is harder than request*response
-| Real-time processing capability | Event schema evolution is challenging |
-| --- | --- |
-| Good for heterogeneous systems | Requires robust monitoring |
+| Pro                                | Con                                       |
+|------------------------------------|-------------------------------------------|
+| Strong decoupling between services | Eventual consistency is complex           |
+| Highly scalable and extensible     | Debugging is harder than request*response |
+| Real-time processing capability    | Event schema evolution is challenging     |
+| Good for heterogeneous systems     | Requires robust monitoring                |
 
 ## Microservices Architecture
 
@@ -190,14 +183,12 @@ its own data and domain. Services communicate through well-defined APIs
 
 #### Trade-offs
 
-| Pro | Con |
-| --- | --- |
-|---------------------------------------+----------------------------------------|
-| Independent deployability | Operational complexity |
-| --- | --- |
-| Team autonomy | Data consistency challenges |
-| Technology heterogeneity | Network overhead and latency |
-| Independent scaling | Testing across services is harder |
+| Pro                       | Con                               |
+|---------------------------|-----------------------------------|
+| Independent deployability | Operational complexity            |
+| Team autonomy             | Data consistency challenges       |
+| Technology heterogeneity  | Network overhead and latency      |
+| Independent scaling       | Testing across services is harder |
 
 ## CQRS (Command Query Responsibility Segregation)
 
@@ -224,13 +215,11 @@ The separation allows each model to be optimized independently.
 
 #### Trade-offs
 
-| Pro | Con |
-| --- | --- |
-|---------------------------------------+----------------------------------------|
-| Optimized read and write models | Increased complexity |
-| --- | --- |
-| Independent scaling of reads*writes | Eventual consistency between models |
-| Better performance for each workload | More code to maintain |
+| Pro                                  | Con                                 |
+|--------------------------------------|-------------------------------------|
+| Optimized read and write models      | Increased complexity                |
+| Independent scaling of reads*writes  | Eventual consistency between models |
+| Better performance for each workload | More code to maintain               |
 
 # Pattern Composition
 

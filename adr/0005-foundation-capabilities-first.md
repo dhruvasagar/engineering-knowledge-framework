@@ -1,8 +1,3 @@
-:PROPERTIES:
-:STATUS:   accepted
-:DATE:     2026-07-27
-:END:
-
 # Context
 
 The framework has many potential capabilities it could develop:

@@ -24,15 +24,13 @@ protect users and infrastructure.
 
 Before human review, the CI*CD pipeline must pass these automated gates:
 
-| Gate | Threshold |
-| --- | --- |
-+----------------------+--------------------------------------------------+
-| Test pass rate | 100% — no skipped, failed or flaky tests. |
-| --- | --- |
-| Test coverage | >= 80% line coverage (project baseline). |
-| Linting | No errors, warnings reviewed. |
-| Security scan | No critical or high vulnerabilities. |
-| Dependency audit | No vulnerable or deprecated dependencies. |
+| Gate              | Threshold                                  |
+|-------------------|--------------------------------------------|
+| Test pass rate    | 100% — no skipped, failed or flaky tests.  |
+| Test coverage     | >= 80% line coverage (project baseline).   |
+| Linting           | No errors, warnings reviewed.              |
+| Security scan     | No critical or high vulnerabilities.       |
+| Dependency audit  | No vulnerable or deprecated dependencies.  |
 | Performance check | No regression beyond 5% on critical paths. |
 
 ## Step 2: Manual Review Gates
@@ -71,21 +69,19 @@ Based on gate results, decide:
 
 # Quality Gate Summary
 
-| Gate | Automated | Manual | Blocking |
-| --- | --- | --- | --- |
-+--------------------+-----------+--------+----------+
-| Tests pass | ✅ |  | ✅ |
-| --- | --- | --- | --- |
-| Coverage threshold | ✅ |  | ✅ |
-| Linting | ✅ |  | ✅ |
-| Security scan | ✅ |  | ✅ |
-| Dependency audit | ✅ |  | ✅ |
-| Performance | ✅ |  | ⚠️ |
-| Code review |  | ✅ | ✅ |
-| Changelog |  | ✅ | ✅ |
-| API compat |  | ✅ | ⚠️ |
-| Migration safety |  | ✅ | ✅ |
-| Feature flags |  | ✅ | ⚠️ |
+| Gate               | Automated | Manual | Blocking |
+|--------------------|-----------|--------|----------|
+| Tests pass         | ✅        |        | ✅       |
+| Coverage threshold | ✅        |        | ✅       |
+| Linting            | ✅        |        | ✅       |
+| Security scan      | ✅        |        | ✅       |
+| Dependency audit   | ✅        |        | ✅       |
+| Performance        | ✅        |        | ⚠️        |
+| Code review        |           | ✅     | ✅       |
+| Changelog          |           | ✅     | ✅       |
+| API compat         |           | ✅     | ⚠️        |
+| Migration safety   |           | ✅     | ✅       |
+| Feature flags      |           | ✅     | ⚠️        |
 
 # Checklist
 

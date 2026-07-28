@@ -6,11 +6,9 @@ documentation and accessibility statements.
 
 # Templates
 
-| Template | Description |
-| --- | --- |
-+--------------------------------------------------------------+-------------------------------------------+
-| [Accessibility Report](./accessibility-report.md) | Standard format for audit findings. |
-| --- | --- |
+| Template                                                | Description                            |
+|---------------------------------------------------------|----------------------------------------|
+| [Accessibility Report](./accessibility-report.md)       | Standard format for audit findings.    |
 | [Accessibility Statement](./accessibility-statement.md) | Public-facing accessibility statement. |
 
 # Usage

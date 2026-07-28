@@ -25,16 +25,14 @@ assistance safe and reliable.
 
 Determine the type and risk level of the AI-generated output:
 
-| Type | Risk Level | Examples |
-| --- | --- | --- |
-+----------------+------------+----------------------------------+
-| Code | Variable | Feature implementation, bug fix. |
-| --- | --- | --- |
-| Architecture | High | System design, pattern selection. |
-| Documentation | Low-Medium | README, API docs, comments. |
-| Tests | Medium | Unit tests, integration tests. |
-| Configuration | Medium | CI config, dependency changes. |
-| Data / Content | Low | Migration data, seed data. |
+| Type           | Risk Level | Examples                          |
+|----------------|------------|-----------------------------------|
+| Code           | Variable   | Feature implementation, bug fix.  |
+| Architecture   | High       | System design, pattern selection. |
+| Documentation  | Low-Medium | README, API docs, comments.       |
+| Tests          | Medium     | Unit tests, integration tests.    |
+| Configuration  | Medium     | CI config, dependency changes.    |
+| Data / Content | Low        | Migration data, seed data.        |
 
 ## Step 2: Run Automated Verification
 
@@ -95,15 +93,13 @@ For each issue found:
 # Verification Depth by Risk
 
 | Risk Level | Automated Checks | Review Strategy | Review Time | Approval |
-| --- | --- | --- | --- | --- |
-+------------+------------------+-----------------+-------------+----------+
-| Critical | Full suite | Decomposition | 30-60 min | Senior |
-| --- | --- | --- | --- | --- |
-|  |  | + Walkaway |  | engineer |
-| High | Full suite | Test-Driven | 15-30 min | Any |
-|  |  | + Read-Through |  | engineer |
-| Medium | Standard suite | Read-Through | 5-15 min | Author |
-| Low | Lint + compile | Spot-check | < 5 min | Author |
+|------------|------------------|-----------------|-------------|----------|
+| Critical   | Full suite       | Decomposition   | 30-60 min   | Senior   |
+|            |                  | + Walkaway      |             | engineer |
+| High       | Full suite       | Test-Driven     | 15-30 min   | Any      |
+|            |                  | + Read-Through  |             | engineer |
+| Medium     | Standard suite   | Read-Through    | 5-15 min    | Author   |
+| Low        | Lint + compile   | Spot-check      | < 5 min     | Author   |
 
 # Verification Checklist
 

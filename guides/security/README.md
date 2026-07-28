@@ -7,22 +7,15 @@ principles in the [Security Engineering Handbook](../../handbooks/security/READM
 
 # Guides
 
-| Guide | Description |
-| --- | --- |
-+------------------------------------------------------------------------+------------------------------------------+
-| [Secure Coding Practices](./secure-coding.md) | Input validation, authentication, output |
-| --- | --- |
-|  | encoding, error handling, cryptography. |
-+------------------------------------------------------------------------+------------------------------------------+
-| [Web Application Vulnerabilities](./web-vulnerabilities.md) | OWASP Top 10 (2021) with explanations |
-| --- | --- |
-|  | and mitigations for each category. |
-+------------------------------------------------------------------------+------------------------------------------+
-| [Dependency Security](./dependency-security.md) | Vulnerability scanning, dependency |
-| --- | --- |
-|  | selection, vulnerability response, |
-|  | license compliance. |
-+------------------------------------------------------------------------+------------------------------------------+
+| Guide                                                       | Description                              |
+|-------------------------------------------------------------|------------------------------------------|
+| [Secure Coding Practices](./secure-coding.md)               | Input validation, authentication, output |
+|                                                             | encoding, error handling, cryptography.  |
+| [Web Application Vulnerabilities](./web-vulnerabilities.md) | OWASP Top 10 (2021) with explanations    |
+|                                                             | and mitigations for each category.       |
+| [Dependency Security](./dependency-security.md)             | Vulnerability scanning, dependency       |
+|                                                             | selection, vulnerability response,       |
+|                                                             | license compliance.                      |
 
 # Related Documents
 

@@ -29,19 +29,17 @@ keyboard. This is especially important for menus, dialogs and modals.
 
 # Standard Keyboard Interactions
 
-| Element | Keyboard Interaction |
-| --- | --- |
-+----------------+--------------------------------------------------+
-| Link | Tab to focus, Enter to activate. |
-| --- | --- |
-| Button | Tab to focus, Enter*Space to activate. |
-| Checkbox | Tab to focus, Space to toggle. |
-| Radio group | Tab to focus group, Arrow keys to change option. |
-| Select | Tab to focus, Arrow keys*typing to change. |
-| Slider | Tab to focus, Arrow keys to adjust value. |
-| Tab panel | Tab to focus tab list, Arrow keys to switch tabs. |
-| Dialog | Focus trapped while open, Escape to close. |
-| Menu | Tab to open, Arrow keys to navigate, Escape to close. |
+| Element     | Keyboard Interaction                                  |
+|-------------|-------------------------------------------------------|
+| Link        | Tab to focus, Enter to activate.                      |
+| Button      | Tab to focus, Enter, Space to activate.               |
+| Checkbox    | Tab to focus, Space to toggle.                        |
+| Radio group | Tab to focus group, Arrow keys to change option.      |
+| Select      | Tab to focus, Arrow keys, typing to change.           |
+| Slider      | Tab to focus, Arrow keys to adjust value.             |
+| Tab panel   | Tab to focus tab list, Arrow keys to switch tabs.     |
+| Dialog      | Focus trapped while open, Escape to close.            |
+| Menu        | Tab to open, Arrow keys to navigate, Escape to close. |
 
 # Implementation
 

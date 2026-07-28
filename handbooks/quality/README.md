@@ -47,21 +47,12 @@ expensive.
 The cost of fixing a defect increases exponentially the later it is
 found:
 
-| Phase | Relative Cost |
-| --- | --- |
-+------------------+---------------+
-| Design | 1x |
-| --- | --- |
-+------------------+---------------+
-| Development | 5x |
-| --- | --- |
-+------------------+---------------+
-| Testing | 10x |
-| --- | --- |
-+------------------+---------------+
-| Production | 50x+ |
-| --- | --- |
-+------------------+---------------+
+| Phase       | Relative Cost |
+|-------------|---------------|
+| Design      | 1x            |
+| Development | 5x            |
+| Testing     | 10x           |
+| Production  | 50x+          |
 
 ## Consistency Enables Quality
 
@@ -82,47 +73,27 @@ system's purpose and risk profile.
 
 ## Code Quality Metrics
 
-| Metric | What It Measures | Target |
-| --- | --- | --- |
-+-----------------------+------------------------------------------+------------------+
-| Cyclomatic complexity | How difficult code is to test and | <= 10 per method |
-| --- | --- | --- |
-|  | maintain. |  |
-+-----------------------+------------------------------------------+------------------+
-| Duplication | Amount of duplicated code. | < 5% |
-| --- | --- | --- |
-+-----------------------+------------------------------------------+------------------+
-| Code coverage | Percentage of code exercised by tests. | >= 90% |
-| --- | --- | --- |
-+-----------------------+------------------------------------------+------------------+
-| Style violations | Deviations from coding standards. | 0 in new code |
-| --- | --- | --- |
-+-----------------------+------------------------------------------+------------------+
-| Technical debt ratio | Estimated effort to fix issues vs | < 5% |
-| --- | --- | --- |
-|  | cost to rebuild. |  |
-+-----------------------+------------------------------------------+------------------+
+| Metric                | What It Measures                       | Target           |
+|-----------------------|----------------------------------------|------------------|
+| Cyclomatic complexity | How difficult code is to test and      | <= 10 per method |
+|                       | maintain.                              |                  |
+| Duplication           | Amount of duplicated code.             | < 5%             |
+| Code coverage         | Percentage of code exercised by tests. | >= 90%           |
+| Style violations      | Deviations from coding standards.      | 0 in new code    |
+| Technical debt ratio  | Estimated effort to fix issues vs      | < 5%             |
+|                       | cost to rebuild.                       |                  |
 
 ## Process Quality Metrics
 
-| Metric | What It Measures | Target |
-| --- | --- | --- |
-+-----------------------+------------------------------------------+------------------+
-| Defect escape rate | Defects found in production vs testing. | < 5% |
-| --- | --- | --- |
-+-----------------------+------------------------------------------+------------------+
-| Mean time to recover | How quickly the team can recover from | < 1 hour |
-| --- | --- | --- |
-|  | production incidents. |  |
-+-----------------------+------------------------------------------+------------------+
-| Deployment frequency | How often the team deploys to | Daily or more |
-| --- | --- | --- |
-|  | production. |  |
-+-----------------------+------------------------------------------+------------------+
-| Change failure rate | Percentage of deployments that cause | < 5% |
-| --- | --- | --- |
-|  | a failure. |  |
-+-----------------------+------------------------------------------+------------------+
+| Metric               | What It Measures                        | Target        |
+|----------------------|-----------------------------------------|---------------|
+| Defect escape rate   | Defects found in production vs testing. | < 5%          |
+| Mean time to recover | How quickly the team can recover from   | < 1 hour      |
+|                      | production incidents.                   |               |
+| Deployment frequency | How often the team deploys to           | Daily or more |
+|                      | production.                             |               |
+| Change failure rate  | Percentage of deployments that cause    | < 5%          |
+|                      | a failure.                              |               |
 
 # Quality Gates
 
@@ -189,17 +160,12 @@ Code review is the most effective quality practice.
 
 ## Classification
 
-| Category | Description | Approach |
-| --- | --- | --- |
-+-------------+------------------------------------------+---------------------------------+
-| Strategic | Intentional debt taken to meet a | Track, schedule repayment. |
-| --- | --- | --- |
-|  | deadline with a plan to repay. |  |
-+-------------+------------------------------------------+---------------------------------+
+| Category   | Description                            | Approach                   |
+|------------|----------------------------------------|----------------------------|
+| Strategic  | Intentional debt taken to meet a       | Track, schedule repayment. |
+|            | deadline with a plan to repay.         |                            |
 | Accidental | Accumulated through inadequate design, | Assess, prioritise, reduce |
-| --- | --- | --- |
-|  | insufficient testing or neglect. | incrementally. |
-+-------------+------------------------------------------+---------------------------------+
+|            | insufficient testing or neglect.       | incrementally.             |
 
 ## Management Process
 

@@ -38,16 +38,14 @@ The reviewer begins by understanding the context of the change.
 
 Before examining implementation details, evaluate the design.
 
-| Question | Why It Matters |
-| --- | --- |
-|--------------------------------------------------------------+----------------------------------------|
-| Does the approach solve the right problem? | Avoids wasted effort on wrong solution |
-| --- | --- |
-| Is the design consistent with the system architecture? | Prevents architectural drift |
-| Does the change follow separation of concerns? | Ensures maintainability |
-| Are the interfaces clear and well-defined? | Supports future change |
-| Are there simpler alternatives? | Defends against over-engineering |
-| Does the change introduce unnecessary dependencies? | Controls coupling |
+| Question                                               | Why It Matters                         |
+|--------------------------------------------------------|----------------------------------------|
+| Does the approach solve the right problem?             | Avoids wasted effort on wrong solution |
+| Is the design consistent with the system architecture? | Prevents architectural drift           |
+| Does the change follow separation of concerns?         | Ensures maintainability                |
+| Are the interfaces clear and well-defined?             | Supports future change                 |
+| Are there simpler alternatives?                        | Defends against over-engineering       |
+| Does the change introduce unnecessary dependencies?    | Controls coupling                      |
 
 If design issues are found, address them before proceeding to the
 implementation review. Design issues are the most expensive to fix
@@ -96,32 +94,26 @@ Write clear, constructive review comments.
 
 Good:
 
-#+BEGIN_QUOTE
-This method handles both validation and persistence. Consider splitting
-it into two methods to follow single responsibility. The validation
-logic could go into a separate validator class that this method calls.
-#+END_QUOTE
+> This method handles both validation and persistence. Consider splitting
+> it into two methods to follow single responsibility. The validation
+> logic could go into a separate validator class that this method calls.
 
 Avoid:
 
-#+BEGIN_QUOTE
-This is wrong. Fix it.
-#+END_QUOTE
+> This is wrong. Fix it.
 
 #### Prioritization
 
 Use labels to indicate severity:
 
-| Label | Meaning |
-| --- | --- |
-|-------------+----------------------------------------------------------|
-| BLOCKER | Must be fixed before merge. Design flaw, correctness |
-| --- | --- |
-|  | issue, security vulnerability. |
-| SHOULD FIX | Important but not blocking. Could be addressed in a |
-|  | follow-up. |
-| NICE TO HAVE | Suggestion for improvement. Can be deferred. |
-| QUESTION | Clarification needed. Not necessarily a change request. |
+| Label        | Meaning                                                 |
+|--------------|---------------------------------------------------------|
+| BLOCKER      | Must be fixed before merge. Design flaw, correctness    |
+|              | issue, security vulnerability.                          |
+| SHOULD FIX   | Important but not blocking. Could be addressed in a     |
+|              | follow-up.                                              |
+| NICE TO HAVE | Suggestion for improvement. Can be deferred.            |
+| QUESTION     | Clarification needed. Not necessarily a change request. |
 
 ## Step 5: Author Responds
 
@@ -158,17 +150,15 @@ The reviewer should verify:
 
 # Escalation Points
 
-| Situation | Action |
-| --- | --- |
-|---------------------------------------------+-------------------------------------|
-| Reviewer and author disagree on approach | Escalate to a senior engineer or |
-| --- | --- |
-|  | tech lead for third-party review. |
-| Change is large and difficult to review | Request the author split into |
-|  | smaller, incremental changes. |
-| Security concern identified | Involve security engineer in review. |
-| Performance concern identified | Request performance review or |
-|  | benchmark results. |
+| Situation                                | Action                               |
+|------------------------------------------|--------------------------------------|
+| Reviewer and author disagree on approach | Escalate to a senior engineer or     |
+|                                          | tech lead for third-party review.    |
+| Change is large and difficult to review  | Request the author split into        |
+|                                          | smaller, incremental changes.        |
+| Security concern identified              | Involve security engineer in review. |
+| Performance concern identified           | Request performance review or        |
+|                                          | benchmark results.                   |
 
 # AI Workflow
 

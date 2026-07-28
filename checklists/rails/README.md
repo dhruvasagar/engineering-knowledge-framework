@@ -7,24 +7,17 @@ operations.
 
 # Checklists
 
-| Checklist | Description |
-| --- | --- |
-+---------------------------------------------------------------+-------------------------------------------+
-| [Rails Pull Request Checklist](./pull-request.md) | Code quality, testing, security, |
-| --- | --- |
-|  | documentation and migration verification |
-|  | for every pull request. |
-+---------------------------------------------------------------+-------------------------------------------+
-| [Rails Security Review Checklist](./security-review.md) | Authentication, authorization, data |
-| --- | --- |
-|  | protection, dependency and infrastructure |
-|  | security verification. |
-+---------------------------------------------------------------+-------------------------------------------+
-| [Rails Deployment Checklist](./deployment.md) | Pre-deployment, migration safety, |
-| --- | --- |
-|  | deployment and post-deployment |
-|  | verification. |
-+---------------------------------------------------------------+-------------------------------------------+
+| Checklist                                               | Description                               |
+|---------------------------------------------------------|-------------------------------------------|
+| [Rails Pull Request Checklist](./pull-request.md)       | Code quality, testing, security,          |
+|                                                         | documentation and migration verification  |
+|                                                         | for every pull request.                   |
+| [Rails Security Review Checklist](./security-review.md) | Authentication, authorization, data       |
+|                                                         | protection, dependency and infrastructure |
+|                                                         | security verification.                    |
+| [Rails Deployment Checklist](./deployment.md)           | Pre-deployment, migration safety,         |
+|                                                         | deployment and post-deployment            |
+|                                                         | verification.                             |
 
 # Related Documents
 

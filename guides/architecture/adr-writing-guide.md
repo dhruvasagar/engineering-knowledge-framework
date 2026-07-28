@@ -6,9 +6,7 @@ considered and consequences.
 
 ADRs exist to answer a single question for future engineers:
 
-#+BEGIN_QUOTE
-Why is the system the way it is?
-#+END_QUOTE
+> Why is the system the way it is?
 
 This guide explains when to write an ADR, how to structure one
 effectively, and what makes an ADR useful over time.
@@ -52,14 +50,12 @@ a future engineer, write an ADR.
 
 An ADR progresses through these states:
 
-| State | Meaning |
-| --- | --- |
-|------------+-------------------------------------------------------|
-| Proposed | The decision is under discussion. |
-| --- | --- |
-| Accepted | The decision has been agreed and implemented. |
-| Deprecated | The decision is no longer relevant. |
-| Superseded | A newer ADR has replaced this decision. |
+| State      | Meaning                                       |
+|------------|-----------------------------------------------|
+| Proposed   | The decision is under discussion.             |
+| Accepted   | The decision has been agreed and implemented. |
+| Deprecated | The decision is no longer relevant.           |
+| Superseded | A newer ADR has replaced this decision.       |
 
 ADRs are never deleted. A deprecated or superseded ADR remains as a
 historical record of why the system evolved the way it did.
@@ -103,16 +99,12 @@ Avoid vague language.
 
 Good:
 
-#+BEGIN_QUOTE
-We will use Apache Kafka for asynchronous communication between the
-Order Service and the Inventory Service.
-#+END_QUOTE
+> We will use Apache Kafka for asynchronous communication between the
+> Order Service and the Inventory Service.
 
 Avoid:
 
-#+BEGIN_QUOTE
-We decided to look into using some kind of message queue.
-#+END_QUOTE
+> We decided to look into using some kind of message queue.
 
 ## Consequences
 

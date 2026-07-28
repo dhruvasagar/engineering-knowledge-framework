@@ -326,10 +326,8 @@ Engineering is collaborative, and so is engineering knowledge.
 
 Every contribution should be evaluated using a simple question:
 
-#+BEGIN_QUOTE
-Will this still help engineers make better decisions five years from
-now?
-#+END_QUOTE
+> Will this still help engineers make better decisions five years from
+> now?
 
 If the answer is no, consider whether the knowledge belongs in the
 framework or in a project-specific repository.

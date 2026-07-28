@@ -338,9 +338,13 @@ Every table must follow this structure:
 
 Rules:
 
-- The header separator row uses `|---|` (three or more dashes between pipes).
-- All rows must have the same number of columns.
-- A blank line ends the table.
+1. The **first row** is the header.
+2. The **second row** is the separator: `|---|---|` (pipes with dashes).
+   - Always use `|` between columns in the separator row, never `+`.
+   - Each column separator has three or more dashes: `|---|`.
+3. **Data rows** follow, one per row.
+4. All rows must have the same number of columns.
+5. A blank line ends the table.
 
 ## Correct Example
 
@@ -353,23 +357,91 @@ Rules:
 
 Rendered:
 
-| Principle      | Description                        |
-|----------------|------------------------------------|
+| Principle | Description |
+| --- | --- |
 | Keep it simple | Prefer simple over clever designs. |
-| Single purpose | One responsibility per module.     |
+| Single purpose | One responsibility per module. |
+
+## Common Mistakes
+
+### Mistake 1: Using `+` in the separator row (org-mode style)
+
+This is the most common and destructive error. The separator row must
+use `|` between columns, never `+`. Using `+` creates invalid markdown
+and renders incorrectly.
+
+```
+# Wrong — do NOT use + in separators:
+| Pro | Con |
+|-------+-------|    ← WRONG: + between columns
+| Domain is testable | Increased complexity |
+
+# Correct:
+| Pro | Con |
+|-----|------|
+| Domain is testable | Increased complexity |
+```
+
+### Mistake 2: Extra separator rows mid-table
+
+Only one separator row is needed (between header and data). Do not add
+extra `|---|---|` rows in the middle of the table.
+
+```
+# Wrong — extra separator in data:
+| Type | Description |
+|------|-------------|
+| Unit | Fast tests. |
+|------|-------------|    ← WRONG: redundant separator
+| E2E  | Slow tests. |
+
+# Correct:
+| Type | Description |
+|------|-------------|
+| Unit | Fast tests. |
+| E2E  | Slow tests. |
+```
+
+### Mistake 3: Inconsistent column count
+
+Every row must have the same number of `|`-separated cells.
+
+```
+# Wrong — first row has 2 columns, second has 3:
+| Name | Role |
+|------|------|
+| Alice | Engineer | Lead |    ← WRONG: 3 cells instead of 2
+
+# Correct:
+| Name | Role |
+|------|--------|
+| Alice | Engineer |
+```
 
 ## Multi-line Cells
 
-Markdown does not support multi-line cells natively. For content that
-needs multiple lines, use separate rows with the first column empty:
+Standard markdown does not support multi-line cells natively. For
+content that needs multiple lines (common in glossaries), use
+continuation rows with an empty first cell:
 
 ```
-| Type | Speed | Notes                               |
-|------|-------|-------------------------------------|
-| Unit | Fast  | Isolated, single behaviour.         |
-|      |       | Tests a single module in isolation. |
-| E2E  | Slow  | Full stack, critical journeys only. |
+| Property | Value                                                |
+|----------|------------------------------------------------------|
+| Definition | A short document that captures an architectural     |
+|           | decision, its context and alternatives.              |
+| Context  | ADRs provide a historical record of why the          |
+|           | system is the way it is.                             |
 ```
+
+Rendered:
+
+| Property | Value |
+| --- | --- |
+| Definition | A short document that captures an architectural decision, its context and alternatives. |
+| Context | ADRs provide a historical record of why the system is the way it is. |
+
+Continuation rows must have the same number of `|` characters as the
+header (even if some cells are visually empty).
 
 Or use a list within a cell if the renderer supports it (most do not).
 For complex multi-line content, prefer a definition list or bullet list

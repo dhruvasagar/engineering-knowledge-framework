@@ -7,19 +7,14 @@ consistently.
 
 # Playbooks
 
-| Playbook | Description |
-| --- | --- |
-+-----------------------------------------------------------------+-------------------------------------------+
-| [Rails Upgrade Playbook](./upgrade.md) | Step-by-step Rails version upgrade with |
-| --- | --- |
-|  | compatibility assessment, gem updates, |
-|  | testing, deployment and rollback. |
-+-----------------------------------------------------------------+-------------------------------------------+
-| [Rails Deployment Playbook](./deployment.md) | Safe deployment with database migration |
-| --- | --- |
-|  | safety, zero-downtime patterns, rollback |
-|  | procedures. |
-+-----------------------------------------------------------------+-------------------------------------------+
+| Playbook                                     | Description                              |
+|----------------------------------------------|------------------------------------------|
+| [Rails Upgrade Playbook](./upgrade.md)       | Step-by-step Rails version upgrade with  |
+|                                              | compatibility assessment, gem updates,   |
+|                                              | testing, deployment and rollback.        |
+| [Rails Deployment Playbook](./deployment.md) | Safe deployment with database migration  |
+|                                              | safety, zero-downtime patterns, rollback |
+|                                              | procedures.                              |
 
 # Related Documents
 

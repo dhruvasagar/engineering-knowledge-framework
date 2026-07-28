@@ -97,18 +97,11 @@ end
 
 Name service objects after the operation they perform.
 
-| Good | Avoid |
-| --- | --- |
-|-------------------------------+--------------------------|
-| `RegisterUser` | `UserService` |
-| --- | --- |
-|-------------------------------+--------------------------|
-| `ProcessPayment` | `PaymentHandler` |
-| --- | --- |
-|-------------------------------+--------------------------|
-| `SendWelcomeEmail` | `EmailManager` |
-| --- | --- |
-|-------------------------------+--------------------------|
+| Good               | Avoid            |
+|--------------------|------------------|
+| `RegisterUser`     | `UserService`    |
+| `ProcessPayment`   | `PaymentHandler` |
+| `SendWelcomeEmail` | `EmailManager`   |
 
 The name should describe what the object does, not what it is.
 

@@ -151,14 +151,12 @@ For each step, define:
 
 # Workflow Selection Guide
 
-| Pattern | Best For | Human Effort | AI Autonomy |
-| --- | --- | --- | --- |
-+----------------------+-----------------------------------+--------------+-------------+
-| Draft-and-Refine | Code, docs, tests | Medium | High |
-| --- | --- | --- | --- |
-| Analyse-and-Recommend | Reviews, audits | High | Medium |
-| Explore-and-Discover | Design, research, debugging | High | Medium |
-| Constrain-and-Generate | Boilerplate, migrations | Low | High |
+| Pattern                | Best For                    | Human Effort | AI Autonomy |
+|------------------------|-----------------------------|--------------|-------------|
+| Draft-and-Refine       | Code, docs, tests           | Medium       | High        |
+| Analyse-and-Recommend  | Reviews, audits             | High         | Medium      |
+| Explore-and-Discover   | Design, research, debugging | High         | Medium      |
+| Constrain-and-Generate | Boilerplate, migrations     | Low          | High        |
 
 # Related Documents
 

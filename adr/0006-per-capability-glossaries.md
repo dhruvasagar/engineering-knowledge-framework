@@ -1,8 +1,3 @@
-:PROPERTIES:
-:STATUS:   accepted
-:DATE:     2026-07-27
-:END:
-
 # Context
 
 The framework needs a standardized approach to terminology management.
@@ -29,15 +24,12 @@ repository-wide terminology.
 Each capability owns its own glossary directory:
 
 ```
-
 glossary/
-
 ├── README.org              (overview and writing guidelines)
 ├── engineering/            (repository-wide terminology)
 ├── architecture/           (architecture-specific terms)
 ├── rails/                  (Rails-specific terms)
 └── security/               (security-specific terms)
-
 ```
 
 Repository-wide terminology (abstraction, coupling, cohesion) lives in

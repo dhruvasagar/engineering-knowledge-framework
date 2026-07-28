@@ -73,13 +73,11 @@ A good error response includes:
 
 Use nouns, not verbs.
 
-| Good | Avoid |
-| --- | --- |
-|--------------------+---------------------|
-| `GET /orders` | `GET /getOrders` |
-| --- | --- |
-| `POST /orders` | `POST /createOrder` |
-| `GET *orders*123` | `GET /order?id`123= |
+| Good                 | Avoid               |
+|----------------------|---------------------|
+| `GET /orders`        | `GET /getOrders`    |
+| `POST /orders`       | `POST /createOrder` |
+| `GET *orders*123`    | `GET /order?id`123= |
 | `DELETE *orders*123` | `POST /deleteOrder` |
 
 Use plural nouns for collections. Use nested resources for
@@ -87,36 +85,32 @@ relationships, but limit to one level of nesting.
 
 ## HTTP Methods
 
-| Method | Semantics | Idempotent | Safe |
-| --- | --- | --- | --- |
-|--------+----------------------------+------------+------|
-| GET | Retrieve a resource. | Yes | Yes |
-| --- | --- | --- | --- |
-| POST | Create a resource. | No | No |
-| PUT | Replace a resource. | Yes | No |
-| PATCH | Partial update. | No | No |
-| DELETE | Remove a resource. | Yes | No |
+| Method | Semantics            | Idempotent | Safe |
+|--------|----------------------|------------|------|
+| GET    | Retrieve a resource. | Yes        | Yes  |
+| POST   | Create a resource.   | No         | No   |
+| PUT    | Replace a resource.  | Yes        | No   |
+| PATCH  | Partial update.      | No         | No   |
+| DELETE | Remove a resource.   | Yes        | No   |
 
 ## Status Codes
 
 Use standard HTTP status codes consistently.
 
-| Code | Meaning | When to Use |
-| --- | --- | --- |
-|------+-------------------+--------------------------------------------|
-| 200 | OK | Successful GET, PUT, PATCH. |
-| --- | --- | --- |
-| 201 | Created | Successful POST (include Location header). |
-| 204 | No Content | Successful DELETE. |
-| 400 | Bad Request | Malformed request, validation failure. |
-| 401 | Unauthorized | Missing or invalid authentication. |
-| 403 | Forbidden | Authenticated but not authorized. |
-| 404 | Not Found | Resource does not exist. |
-| 409 | Conflict | State conflict (duplicate, stale version). |
-| 422 | Unprocessable | Semantic validation failure. |
-| 429 | Too Many Requests | Rate limit exceeded. |
-| 500 | Internal Error | Unexpected server error. |
-| 503 | Unavailable | Temporary service unavailability. |
+| Code | Meaning           | When to Use                                |
+|------|-------------------|--------------------------------------------|
+| 200  | OK                | Successful GET, PUT, PATCH.                |
+| 201  | Created           | Successful POST (include Location header). |
+| 204  | No Content        | Successful DELETE.                         |
+| 400  | Bad Request       | Malformed request, validation failure.     |
+| 401  | Unauthorized      | Missing or invalid authentication.         |
+| 403  | Forbidden         | Authenticated but not authorized.          |
+| 404  | Not Found         | Resource does not exist.                   |
+| 409  | Conflict          | State conflict (duplicate, stale version). |
+| 422  | Unprocessable     | Semantic validation failure.               |
+| 429  | Too Many Requests | Rate limit exceeded.                       |
+| 500  | Internal Error    | Unexpected server error.                   |
+| 503  | Unavailable       | Temporary service unavailability.          |
 
 ## Pagination
 

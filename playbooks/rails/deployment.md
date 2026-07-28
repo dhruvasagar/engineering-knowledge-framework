@@ -30,25 +30,14 @@ Use `strong_migrations` to detect dangerous operations:
 bundle exec strong_migrations --check
 ```
 
-| Dangerous Operation | Safe Alternative |
-| --- | --- |
-|-----------------------------------+----------------------------------------|
-| Adding a column with a default | Add column, then backfill default. |
-| --- | --- |
-| value to a large table |  |
-|-----------------------------------+----------------------------------------|
-| Adding an index on a large table | Use `CONCURRENTLY` (see below). |
-| --- | --- |
-|-----------------------------------+----------------------------------------|
-| Removing a column | Mark as ignored first, remove later. |
-| --- | --- |
-|-----------------------------------+----------------------------------------|
-| Renaming a column | Add new column, backfill, drop old. |
-| --- | --- |
-|-----------------------------------+----------------------------------------|
-| Changing column type | Add new column, backfill, drop old. |
-| --- | --- |
-|-----------------------------------+----------------------------------------|
+| Dangerous Operation              | Safe Alternative                     |
+|----------------------------------|--------------------------------------|
+| Adding a column with a default   | Add column, then backfill default.   |
+| value to a large table           |                                      |
+| Adding an index on a large table | Use `CONCURRENTLY` (see below).      |
+| Removing a column                | Mark as ignored first, remove later. |
+| Renaming a column                | Add new column, backfill, drop old.  |
+| Changing column type             | Add new column, backfill, drop old.  |
 
 ## Step 2: Deploy Migrations First
 

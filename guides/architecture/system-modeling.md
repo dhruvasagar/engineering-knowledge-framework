@@ -18,15 +18,13 @@ aspect of a system.
 
 Different audiences need different views:
 
-| Audience | Needs |
-| --- | --- |
-|--------------------+----------------------------------------------|
-| Stakeholders | System context, boundaries, external |
-| --- | --- |
-|  | integrations. |
-| Engineers | Component structure, interactions, data flow. |
-| New team members | High-level orientation, key concepts. |
-| Operations | Deployment topology, infrastructure. |
+| Audience         | Needs                                         |
+|------------------|-----------------------------------------------|
+| Stakeholders     | System context, boundaries, external          |
+|                  | integrations.                                 |
+| Engineers        | Component structure, interactions, data flow. |
+| New team members | High-level orientation, key concepts.         |
+| Operations       | Deployment topology, infrastructure.          |
 
 Using a consistent modeling approach ensures that diagrams across the
 organization use the same conventions and are understandable by
@@ -123,16 +121,14 @@ It is particularly useful for:
 
 ## Core Concepts
 
-| Concept | Meaning |
-| --- | --- |
-|----------+--------------------------------------------------------|
-| Event | Something that has happened in the past. Immutable. |
-| --- | --- |
-|  | Examples: OrderPlaced, PaymentReceived, InvoiceSent. |
-| Command | An intention to perform an action. May be rejected. |
-|  | Examples: PlaceOrder, ProcessPayment, SendInvoice. |
-| Aggregate | A cluster of domain objects treated as a unit. |
-|  | Ensures consistency within its boundary. |
+| Concept   | Meaning                                              |
+|-----------|------------------------------------------------------|
+| Event     | Something that has happened in the past. Immutable.  |
+|           | Examples: OrderPlaced, PaymentReceived, InvoiceSent. |
+| Command   | An intention to perform an action. May be rejected.  |
+|           | Examples: PlaceOrder, ProcessPayment, SendInvoice.   |
+| Aggregate | A cluster of domain objects treated as a unit.       |
+|           | Ensures consistency within its boundary.             |
 
 ## Workshop Format
 
@@ -158,27 +154,15 @@ The workshop produces:
 
 # Choosing the Right Model
 
-| Situation | Recommended Approach |
-| --- | --- |
-|-----------------------------------------+-----------------------------------------|
-| New system, need to communicate | C4 Level 1-2: Context and Container |
-| --- | --- |
-| overall architecture | diagrams |
-|-----------------------------------------+-----------------------------------------|
-| Complex component, need detail | C4 Level 3-4: Component and Code |
-| --- | --- |
-|-----------------------------------------+-----------------------------------------|
-| Designing an event-driven system | Event modeling workshop |
-| --- | --- |
-|-----------------------------------------+-----------------------------------------|
-| Exploring a new domain | Event modeling big picture |
-| --- | --- |
-|-----------------------------------------+-----------------------------------------|
+| Situation                         | Recommended Approach                    |
+|-----------------------------------|-----------------------------------------|
+| New system, need to communicate   | C4 Level 1-2: Context and Container     |
+| overall architecture              | diagrams                                |
+| Complex component, need detail    | C4 Level 3-4: Component and Code        |
+| Designing an event-driven system  | Event modeling workshop                 |
+| Exploring a new domain            | Event modeling big picture              |
 | Documenting existing architecture | C4 Level 1-3: Reverse-engineer diagrams |
-| --- | --- |
-|-----------------------------------------+-----------------------------------------|
-| Defining service boundaries | Event modeling or DDD context mapping |
-| --- | --- |
+| Defining service boundaries       | Event modeling or DDD context mapping   |
 
 # Keeping Models Current
 

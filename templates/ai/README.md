@@ -6,13 +6,11 @@ review processes.
 
 # Templates
 
-| Template | Description |
-| --- | --- |
-+--------------------------------------------------------+-----------------------------------------------+
-| [Context Pack Template](./context-pack.md) | Structure for assembling AI context packs. |
-| --- | --- |
-| [Prompt Template](./prompt-template.md) | Standard prompt structure for engineering AI. |
-| [AI Review Response Template](./ai-review-response.md) | Format for documenting AI review findings. |
+| Template                                               | Description                                   |
+|--------------------------------------------------------|-----------------------------------------------|
+| [Context Pack Template](./context-pack.md)             | Structure for assembling AI context packs.    |
+| [Prompt Template](./prompt-template.md)                | Standard prompt structure for engineering AI. |
+| [AI Review Response Template](./ai-review-response.md) | Format for documenting AI review findings.    |
 
 # Usage
 

@@ -57,16 +57,14 @@ For well-understood tasks:
 
 # When to Use AI
 
-| Good for AI | Better for human |
-| --- | --- |
-+----------------------------------------------+----------------------------------------------+
-| Boilerplate code generation | Design decisions and trade-offs |
-| --- | --- |
-| Test case generation | Security-critical code |
-| Code explanation and documentation | Complex business logic |
-| Refactoring and migration | Code review and verification |
-| Pattern application (service objects, etc.) | Architectural decisions |
-| Debugging assistance | Performance-critical code |
+| Good for AI                                 | Better for human                |
+|---------------------------------------------|---------------------------------|
+| Boilerplate code generation                 | Design decisions and trade-offs |
+| Test case generation                        | Security-critical code          |
+| Code explanation and documentation          | Complex business logic          |
+| Refactoring and migration                   | Code review and verification    |
+| Pattern application (service objects, etc.) | Architectural decisions         |
+| Debugging assistance                        | Performance-critical code       |
 
 # Checklist
 

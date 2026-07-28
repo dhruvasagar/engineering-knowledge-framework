@@ -36,18 +36,16 @@ with different organisations before settling on the final form.
 
 # Extraction Sources
 
-| Source | What Can Be Extracted |
-| --- | --- |
-+---------------------+----------------------------------------------+
-| Code review comments | Patterns, anti-patterns, conventions. |
-| --- | --- |
-| Incident reports | Runbooks, playbooks, prevention checklists. |
-| Architecture decisions (ADRs) | Decision frameworks, trade-off patterns. |
-| Retrospectives | Process improvements, best practices. |
-| Pull request discussions | Standards, review criteria. |
-| Onboarding sessions | Glossary terms, conceptual guides. |
-| Codebase analysis | Coding standards, architectural patterns. |
-| Team discussions | Decision frameworks, heuristics. |
+| Source                        | What Can Be Extracted                       |
+|-------------------------------|---------------------------------------------|
+| Code review comments          | Patterns, anti-patterns, conventions.       |
+| Incident reports              | Runbooks, playbooks, prevention checklists. |
+| Architecture decisions (ADRs) | Decision frameworks, trade-off patterns.    |
+| Retrospectives                | Process improvements, best practices.       |
+| Pull request discussions      | Standards, review criteria.                 |
+| Onboarding sessions           | Glossary terms, conceptual guides.          |
+| Codebase analysis             | Coding standards, architectural patterns.   |
+| Team discussions              | Decision frameworks, heuristics.            |
 
 # Workflow
 
@@ -177,20 +175,18 @@ Source:
 
 # Quality Criteria
 
-| Criterion | Description |
-| --- | --- |
-+-------------------+---------------------------------------------+
-| Faithfulness | Does the document accurately reflect the |
-| --- | --- |
-|  | source material? |
-| Completeness | Are all important patterns from the source |
-|  | captured? |
-| Generalisation | Is the knowledge presented as general |
-|  | guidance, not tied to a specific instance? |
-| Actionability | Can a reader use this to make better |
-|  | decisions? |
-| Consistency | Does it follow framework conventions and |
-|  | document type structure? |
+| Criterion      | Description                                |
+|----------------|--------------------------------------------|
+| Faithfulness   | Does the document accurately reflect the   |
+|                | source material?                           |
+| Completeness   | Are all important patterns from the source |
+|                | captured?                                  |
+| Generalisation | Is the knowledge presented as general      |
+|                | guidance, not tied to a specific instance? |
+| Actionability  | Can a reader use this to make better       |
+|                | decisions?                                 |
+| Consistency    | Does it follow framework conventions and   |
+|                | document type structure?                   |
 
 # Anti-patterns
 

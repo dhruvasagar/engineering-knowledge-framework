@@ -49,25 +49,16 @@ Examples:
 
 ## Severity Levels
 
-| Severity | Description | Response Time |
-| --- | --- | --- |
-+----------+------------------------------------------------+--------------------+
-| Critical | Blocks delivery, causes production incidents, | Immediate |
-| --- | --- | --- |
-|  | or introduces security vulnerabilities. |  |
-+----------+------------------------------------------------+--------------------+
-| High | Significantly slows development, causes | Within 1 sprint |
-| --- | --- | --- |
-|  | frequent bugs, or makes the codebase hard to |  |
-|  | change. |  |
-+----------+------------------------------------------------+--------------------+
-| Medium | Moderate impact on development speed or | Schedule within |
-| --- | --- | --- |
-|  | code quality. | the quarter. |
-+----------+------------------------------------------------+--------------------+
-| Low | Minor inconvenience or cosmetic issue. | Opportunistic. |
-| --- | --- | --- |
-+----------+------------------------------------------------+--------------------+
+| Severity | Description                                   | Response Time   |
+|----------|-----------------------------------------------|-----------------|
+| Critical | Blocks delivery, causes production incidents, | Immediate       |
+|          | or introduces security vulnerabilities.       |                 |
+| High     | Significantly slows development, causes       | Within 1 sprint |
+|          | frequent bugs, or makes the codebase hard to  |                 |
+|          | change.                                       |                 |
+| Medium   | Moderate impact on development speed or       | Schedule within |
+|          | code quality.                                 | the quarter.    |
+| Low      | Minor inconvenience or cosmetic issue.        | Opportunistic.  |
 
 ## Assessment Criteria
 
@@ -132,17 +123,12 @@ Record each debt item with:
 Maintain a simple log of known technical debt:
 
 ```
-| ID | Area | Description | Severity | Effort | Status |
-| --- | --- | --- | --- | --- | --- |
-+----+------------+--------------------------+----------+--------+---------+
-| 1 | Auth | Duplicate auth logic | High | 2 days | Tracked |
-| --- | --- | --- | --- | --- | --- |
-|  |  | across controllers |  |  |  |
-+----+------------+--------------------------+----------+--------+---------+
-| 2 | Reporting | Reports take > 30s | Critical | 1 week | Planned |
-| --- | --- | --- | --- | --- | --- |
-|  |  | to generate |  |  |  |
-+----+------------+--------------------------+----------+--------+---------+
+| ID | Area      | Description          | Severity | Effort | Status  |
+|----|-----------|----------------------|----------|--------|---------|
+| 1  | Auth      | Duplicate auth logic | High     | 2 days | Tracked |
+|    |           | across controllers   |          |        |         |
+| 2  | Reporting | Reports take > 30s   | Critical | 1 week | Planned |
+|    |           | to generate          |          |        |         |
 ```
 
 ## Percentage-Based Allocation

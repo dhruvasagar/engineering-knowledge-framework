@@ -124,13 +124,11 @@ See the [ADR Template](../../templates/adr/README.md) for the standard decision 
 Organise the system into horizontal layers, each with a specific
 responsibility.
 
-| Layer | Responsibility |
-| --- | --- |
-|---------------+---------------------------------------|
-| Presentation | User interaction and interface |
-| --- | --- |
-| Application | Request handling and orchestration |
-| Domain | Business logic and rules |
+| Layer          | Responsibility                         |
+|----------------|----------------------------------------|
+| Presentation   | User interaction and interface         |
+| Application    | Request handling and orchestration     |
+| Domain         | Business logic and rules               |
 | Infrastructure | Technical capabilities and persistence |
 
 Each layer depends only on the layer directly beneath it.
@@ -242,14 +240,12 @@ and its context.
 The C4 model provides a hierarchical approach to communicating
 architecture.
 
-| Level | View | Audience |
-| --- | --- | --- |
-|-------+----------------------+---------------------|
-| 1 | System Context | Everyone |
-| --- | --- | --- |
-| 2 | Container | Technical team |
-| 3 | Component | Developers |
-| 4 | Code | Developers (detail) |
+| Level | View           | Audience            |
+|-------|----------------|---------------------|
+| 1     | System Context | Everyone            |
+| 2     | Container      | Technical team      |
+| 3     | Component      | Developers          |
+| 4     | Code           | Developers (detail) |
 
 Each level answers different questions about the system.
 
@@ -268,18 +264,16 @@ architectures.
 
 Architecture must balance competing quality attributes.
 
-| Attribute | Consideration |
-| --- | --- |
-|----------------+---------------------------------------------------------|
-| Performance | Response time, throughput, latency |
-| --- | --- |
-| Scalability | Ability to handle increased load |
-| Availability | Uptime, fault tolerance, disaster recovery |
-| Security | Authentication, authorisation, data protection |
-| Maintainability | Ease of change, testing, and debugging |
-| Evolvability | Ability to adapt to new requirements |
-| Operability | Monitoring, deployment, incident response |
-| Testability | Ability to verify correctness at every level |
+| Attribute       | Consideration                                  |
+|-----------------|------------------------------------------------|
+| Performance     | Response time, throughput, latency             |
+| Scalability     | Ability to handle increased load               |
+| Availability    | Uptime, fault tolerance, disaster recovery     |
+| Security        | Authentication, authorisation, data protection |
+| Maintainability | Ease of change, testing, and debugging         |
+| Evolvability    | Ability to adapt to new requirements           |
+| Operability     | Monitoring, deployment, incident response      |
+| Testability     | Ability to verify correctness at every level   |
 
 Every architectural decision should explicitly consider its impact on
 relevant quality attributes.

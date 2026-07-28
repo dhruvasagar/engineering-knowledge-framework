@@ -49,15 +49,13 @@ Brief overview of the review, key findings and overall risk assessment.
 
 # Risk Summary
 
-| Severity | Count | Action Required |
-| --- | --- | --- |
-|-------------+-------+----------------------------------------------------------|
-| Critical | 0 | Immediate remediation required before deployment. |
-| --- | --- | --- |
-| High | 0 | Remediation required before next release. |
-| Medium | 0 | Remediation should be scheduled. |
-| Low | 0 | Remediation recommended but not blocking. |
-| Informational | 0 | No action required, documented for awareness. |
+| Severity      | Count | Action Required                                   |
+|---------------|-------|---------------------------------------------------|
+| Critical      | 0     | Immediate remediation required before deployment. |
+| High          | 0     | Remediation required before next release.         |
+| Medium        | 0     | Remediation should be scheduled.                  |
+| Low           | 0     | Remediation recommended but not blocking.         |
+| Informational | 0     | No action required, documented for awareness.     |
 
 # Recommendations
 

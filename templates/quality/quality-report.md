@@ -15,50 +15,42 @@ quality rating (Green / Amber / Red).
 
 # Code Quality
 
-| Metric | Current | Target | Trend |
-| --- | --- | --- | --- |
-+---------------------------+---------+---------+-----------+
-| Cyclomatic complexity |  | < 15 | ↑ / ↓ / → |
-| --- | --- | --- | --- |
-| Code duplication (%) |  | < 5% | ↑ / ↓ / → |
-| Linting violations |  | 0 | ↑ / ↓ / → |
-| Code churn (LOC/month) |  |  | ↑ / ↓ / → |
+| Metric                 | Current | Target | Trend     |
+|------------------------|---------|--------|-----------|
+| Cyclomatic complexity  |         | < 15   | ↑ / ↓ / → |
+| Code duplication (%)   |         | < 5%   | ↑ / ↓ / → |
+| Linting violations     |         | 0      | ↑ / ↓ / → |
+| Code churn (LOC/month) |         |        | ↑ / ↓ / → |
 
 # Test Quality
 
-| Metric | Current | Target | Trend |
-| --- | --- | --- | --- |
-+---------------------------+---------+---------+-----------+
-| Line coverage (%) |  | >= 80% | ↑ / ↓ / → |
-| --- | --- | --- | --- |
-| Branch coverage (%) |  | >= 70% | ↑ / ↓ / → |
-| Test count |  |  | ↑ / ↓ / → |
-| Flaky tests |  | 0 | ↑ / ↓ / → |
-| Test run time (minutes) |  | < 10 | ↑ / ↓ / → |
+| Metric                  | Current | Target | Trend     |
+|-------------------------|---------|--------|-----------|
+| Line coverage (%)       |         | >= 80% | ↑ / ↓ / → |
+| Branch coverage (%)     |         | >= 70% | ↑ / ↓ / → |
+| Test count              |         |        | ↑ / ↓ / → |
+| Flaky tests             |         | 0      | ↑ / ↓ / → |
+| Test run time (minutes) |         | < 10   | ↑ / ↓ / → |
 
 # Process Quality
 
-| Metric | Current | Target | Trend |
-| --- | --- | --- | --- |
-+---------------------------+---------+---------+-----------+
-| Deployment frequency |  |  | ↑ / ↓ / → |
-| --- | --- | --- | --- |
-| Change failure rate (%) |  | < 15% | ↑ / ↓ / → |
-| MTTR (minutes) |  | < 60 | ↑ / ↓ / → |
-| PR review turnaround (hrs) |  | < 4 | ↑ / ↓ / → |
+| Metric                     | Current | Target | Trend     |
+|----------------------------|---------|--------|-----------|
+| Deployment frequency       |         |        | ↑ / ↓ / → |
+| Change failure rate (%)    |         | < 15%  | ↑ / ↓ / → |
+| MTTR (minutes)             |         | < 60   | ↑ / ↓ / → |
+| PR review turnaround (hrs) |         | < 4    | ↑ / ↓ / → |
 
 # Technical Debt
 
-| Category | Items | Critical | High | Medium | Low |
-| --- | --- | --- | --- | --- | --- |
-+-------------------+-------+----------+------+--------+-----+
-| Code quality |  |  |  |  |  |
-| --- | --- | --- | --- | --- | --- |
-| Test coverage |  |  |  |  |  |
-| Architecture |  |  |  |  |  |
-| Infrastructure |  |  |  |  |  |
-| Documentation |  |  |  |  |  |
-| Security |  |  |  |  |  |
+| Category       | Items | Critical | High | Medium | Low |
+|----------------|-------|----------|------|--------|-----|
+| Code quality   |       |          |      |        |     |
+| Test coverage  |       |          |      |        |     |
+| Architecture   |       |          |      |        |     |
+| Infrastructure |       |          |      |        |     |
+| Documentation  |       |          |      |        |     |
+| Security       |       |          |      |        |     |
 
 # Security Posture
 
@@ -82,10 +74,8 @@ quality rating (Green / Amber / Red).
 # Action Items
 
 | # | Finding | Severity | Owner | Target Date | Status |
-| --- | --- | --- | --- | --- | --- |
-|---+---------+----------+-------+-------------+--------|
-| 1 |  |  |  |  |  |
-| --- | --- | --- | --- | --- | --- |
+|---|---------|----------|-------|-------------|--------|
+| 1 |         |          |       |             |        |
 
 # Overall Assessment
 

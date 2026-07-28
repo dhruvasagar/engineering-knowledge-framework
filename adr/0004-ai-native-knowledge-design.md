@@ -1,8 +1,3 @@
-:PROPERTIES:
-:STATUS:   accepted
-:DATE:     2026-07-27
-:END:
-
 # Context
 
 Engineering knowledge is consumed by two distinct audiences:

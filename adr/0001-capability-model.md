@@ -1,8 +1,3 @@
-:PROPERTIES:
-:STATUS:   accepted
-:DATE:     2026-07-27
-:END:
-
 # Context
 
 Engineering knowledge can be organized in many ways:
@@ -30,9 +25,7 @@ Each capability owns the complete collection of knowledge artifacts
 needed to master that discipline:
 
 ```
-
 Capability
-
 ├── Handbook
 ├── Guides
 ├── Playbooks
@@ -42,7 +35,6 @@ Capability
 ├── Glossary
 ├── Learning Paths
 └── Examples
-
 ```
 
 Capabilities are the primary organizational unit. Document types are

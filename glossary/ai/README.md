@@ -7,60 +7,52 @@ Engineering Knowledge Framework.
 
 ## Context Engineering {#context-engineering}
 
-| Property | Value |
-| --- | --- |
-|-------------+----------------------------------------------------------|
-| Definition | The practice of providing AI systems with structured, |
-| --- | --- |
-|  | relevant information to improve the quality and accuracy |
-|  | of their output. |
-| Context | Context engineering includes defining scope, |
-|  | constraints, standards, examples, references and quality |
-|  | criteria. It is the primary lever for improving AI |
-|  | output quality. |
-| Related | [Prompt Engineering](#prompt-engineering) |
-| References | [AI Engineering Handbook](../../handbooks/ai/README.md) |
+| Property   | Value                                                    |
+|------------|----------------------------------------------------------|
+| Definition | The practice of providing AI systems with structured,    |
+|            | relevant information to improve the quality and accuracy |
+|            | of their output.                                         |
+| Context    | Context engineering includes defining scope,             |
+|            | constraints, standards, examples, references and quality |
+|            | criteria. It is the primary lever for improving AI       |
+|            | output quality.                                          |
+| Related    | [Prompt Engineering](#prompt-engineering)                |
+| References | [AI Engineering Handbook](../../handbooks/ai/README.md)  |
 
 ## Hallucination {#hallucination}
 
-| Property | Value |
-| --- | --- |
-|-------------+----------------------------------------------------------|
-| Definition | The tendency of AI systems to generate plausible but |
-| --- | --- |
-|  | incorrect information with high confidence. |
-| Context | Hallucinations are a known limitation of large language |
-|  | models. Mitigation requires verifying AI output against |
-|  | authoritative sources and applying human review. |
-| Related | [Verification](#verification) |
+| Property   | Value                                                   |
+|------------|---------------------------------------------------------|
+| Definition | The tendency of AI systems to generate plausible but    |
+|            | incorrect information with high confidence.             |
+| Context    | Hallucinations are a known limitation of large language |
+|            | models. Mitigation requires verifying AI output against |
+|            | authoritative sources and applying human review.        |
+| Related    | [Verification](#verification)                           |
 | References | [AI Engineering Handbook](../../handbooks/ai/README.md) |
 
 ## Prompt Engineering {#prompt-engineering}
 
-| Property | Value |
-| --- | --- |
-|-------------+----------------------------------------------------------|
-| Definition | The practice of designing input prompts to elicit |
-| --- | --- |
-|  | desired responses from AI systems. |
-| Context | Prompt engineering is a subset of context engineering. |
-|  | Effective prompts are specific, structured and include |
-|  | relevant context. |
-| Related | [Context Engineering](#context-engineering) |
+| Property   | Value                                                   |
+|------------|---------------------------------------------------------|
+| Definition | The practice of designing input prompts to elicit       |
+|            | desired responses from AI systems.                      |
+| Context    | Prompt engineering is a subset of context engineering.  |
+|            | Effective prompts are specific, structured and include  |
+|            | relevant context.                                       |
+| Related    | [Context Engineering](#context-engineering)             |
 | References | [AI Engineering Handbook](../../handbooks/ai/README.md) |
 
 ## Verification {#verification}
 
-| Property | Value |
-| --- | --- |
-|-------------+----------------------------------------------------------|
-| Definition | The process of evaluating AI-generated output for |
-| --- | --- |
-|  | correctness, consistency and safety before acceptance. |
-| Context | Every AI output must be verified. Verification includes |
-|  | testing code, checking facts, reviewing security |
-|  | implications and evaluating against requirements. |
-| Related | [Hallucination](#hallucination) |
+| Property   | Value                                                   |
+|------------|---------------------------------------------------------|
+| Definition | The process of evaluating AI-generated output for       |
+|            | correctness, consistency and safety before acceptance.  |
+| Context    | Every AI output must be verified. Verification includes |
+|            | testing code, checking facts, reviewing security        |
+|            | implications and evaluating against requirements.       |
+| Related    | [Hallucination](#hallucination)                         |
 | References | [AI Engineering Handbook](../../handbooks/ai/README.md) |
 
 # Related Documents

@@ -214,13 +214,11 @@ Good names:
 - Are specific rather than generic.
 - Avoid abbreviations unless universally understood.
 
-| Good | Avoid |
-| --- | --- |
-|------+-------|
-| `UserRegistrationService` | `UserService` |
-| --- | --- |
+| Good                        | Avoid          |
+|-----------------------------|----------------|
+| `UserRegistrationService`   | `UserService`  |
 | `send_password_reset_email` | `handle_email` |
-| `calculate_total_revenue` | `calc` |
+| `calculate_total_revenue`   | `calc`         |
 
 ## Error Handling
 

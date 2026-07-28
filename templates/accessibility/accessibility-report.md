@@ -16,13 +16,11 @@ recommendations.
 # Results Summary
 
 | WCAG Principle | Pass | Fail | Not Applicable |
-| --- | --- | --- | --- |
-+------------------+------+------+----------------+
-| Perceivable |  |  |  |
-| --- | --- | --- | --- |
-| Operable |  |  |  |
-| Understandable |  |  |  |
-| Robust |  |  |  |
+|----------------|------|------|----------------|
+| Perceivable    |      |      |                |
+| Operable       |      |      |                |
+| Understandable |      |      |                |
+| Robust         |      |      |                |
 
 ## Overall Compliance Level
 
@@ -35,37 +33,31 @@ recommendations.
 
 ## Finding 1: [Title]
 
-| Field | Value |
-| --- | --- |
-+-------------------+--------------------------------------------+
-| ***WCAG Criterion*** | [SC X.X.X] |
-| --- | --- |
-| ***Severity*** | [Critical / High / Medium / Low] |
-| ***Location*** | [Page or component] |
-| ***Description*** | [What is the issue?] |
-| ***Impact*** | [Who is affected and how?] |
-| ***Recommendation*** | [How to fix it.] |
+| Field                | Value                            |
+|----------------------|----------------------------------|
+| ***WCAG Criterion*** | [SC X.X.X]                       |
+| ***Severity***       | [Critical / High / Medium / Low] |
+| ***Location***       | [Page or component]              |
+| ***Description***    | [What is the issue?]             |
+| ***Impact***         | [Who is affected and how?]       |
+| ***Recommendation*** | [How to fix it.]                 |
 
 ## Finding 2: [Title]
 
-| Field | Value |
-| --- | --- |
-+-------------------+--------------------------------------------+
-| ***WCAG Criterion*** | [SC X.X.X] |
-| --- | --- |
-| ***Severity*** | [Critical / High / Medium / Low] |
-| ***Location*** | [Page or component] |
-| ***Description*** | [What is the issue?] |
-| ***Impact*** | [Who is affected and how?] |
-| ***Recommendation*** | [How to fix it.] |
+| Field                | Value                            |
+|----------------------|----------------------------------|
+| ***WCAG Criterion*** | [SC X.X.X]                       |
+| ***Severity***       | [Critical / High / Medium / Low] |
+| ***Location***       | [Page or component]              |
+| ***Description***    | [What is the issue?]             |
+| ***Impact***         | [Who is affected and how?]       |
+| ***Recommendation*** | [How to fix it.]                 |
 
 # Prioritised Action Items
 
 | # | Finding | Severity | Effort | Owner | Target | Status |
-| --- | --- | --- | --- | --- | --- | --- |
-|---+---------+----------+--------+-------+--------+--------|
-| 1 |  |  |  |  |  |  |
-| --- | --- | --- | --- | --- | --- | --- |
+|---|---------|----------|--------|-------|--------|--------|
+| 1 |         |          |        |       |        |        |
 
 # Recommendations
 

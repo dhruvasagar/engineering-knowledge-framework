@@ -1,10 +1,5 @@
 # RFC-NNNN: Title
 
-:PROPERTIES:
-:STATUS:   draft | review | accepted | rejected | implemented
-:DATE:     YYYY-MM-DD
-:END:
-
 # Summary
 
 A brief, one-paragraph summary of the proposal.
@@ -63,20 +58,18 @@ What becomes harder? What risks are introduced?
 
 ## Quality Attribute Impact
 
-| Attribute | Impact | Notes |
-| --- | --- | --- |
-|---------------+-------------+---------------------------------|
-| Performance | Positive | Expected 20% reduction in p99 |
-| --- | --- | --- |
-|  | / Neutral | latency |
-|  | / Negative |  |
-| Scalability |  |  |
-| Availability |  |  |
-| Security |  |  |
-| Maintainability |  |  |
-| Evolvability |  |  |
-| Operability |  |  |
-| Testability |  |  |
+| Attribute       | Impact     | Notes                         |
+|-----------------|------------|-------------------------------|
+| Performance     | Positive   | Expected 20% reduction in p99 |
+|                 | / Neutral  | latency                       |
+|                 | / Negative |                               |
+| Scalability     |            |                               |
+| Availability    |            |                               |
+| Security        |            |                               |
+| Maintainability |            |                               |
+| Evolvability    |            |                               |
+| Operability     |            |                               |
+| Testability     |            |                               |
 
 # Migration Plan
 

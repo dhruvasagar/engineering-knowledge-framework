@@ -152,33 +152,16 @@ context for AI systems.
 
 When working on a task, reference these documents in your prompts:
 
-| Need | Reference Document |
-| --- | --- |
-+--------------------------------+----------------------------------+
-| Engineering principles | Engineering Fundamentals Handbook |
-| --- | --- |
-+--------------------------------+----------------------------------+
-| Architecture standards | Software Architecture Handbook |
-| --- | --- |
-+--------------------------------+----------------------------------+
-| Rails conventions | Rails Engineering Handbook |
-| --- | --- |
-+--------------------------------+----------------------------------+
-| Security requirements | Security Engineering Handbook |
-| --- | --- |
-+--------------------------------+----------------------------------+
-| Terminology definitions | Relevant capability glossary |
-| --- | --- |
-+--------------------------------+----------------------------------+
-| Workflow steps | Relevant capability playbook |
-| --- | --- |
-+--------------------------------+----------------------------------+
-| Quality criteria | Relevant capability checklist |
-| --- | --- |
-+--------------------------------+----------------------------------+
-| Code examples and patterns | Relevant capability templates |
-| --- | --- |
-+--------------------------------+----------------------------------+
+| Need                       | Reference Document                |
+|----------------------------|-----------------------------------|
+| Engineering principles     | Engineering Fundamentals Handbook |
+| Architecture standards     | Software Architecture Handbook    |
+| Rails conventions          | Rails Engineering Handbook        |
+| Security requirements      | Security Engineering Handbook     |
+| Terminology definitions    | Relevant capability glossary      |
+| Workflow steps             | Relevant capability playbook      |
+| Quality criteria           | Relevant capability checklist     |
+| Code examples and patterns | Relevant capability templates     |
 
 # Related Documents
 

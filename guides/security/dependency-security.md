@@ -15,21 +15,12 @@ throughout the application lifecycle.
 
 Every project MUST scan dependencies for known vulnerabilities.
 
-| Ecosystem | Tool | CI Integration |
-| --- | --- | --- |
-|-----------+-----------------------+-----------------------------------|
-| Ruby | bundler-audit | `bundle exec bundler-audit check --update` |
-| --- | --- | --- |
-|-----------+-----------------------+-----------------------------------|
-| JavaScript | npm audit / yarn audit | `npm audit --audit-level`high= |
-| --- | --- | --- |
-|-----------+-----------------------+-----------------------------------|
-| Python | pip-audit | `pip-audit` |
-| --- | --- | --- |
-|-----------+-----------------------+-----------------------------------|
-| Docker | Trivy / Grype | `trivy image myapp:latest` |
-| --- | --- | --- |
-|-----------+-----------------------+-----------------------------------|
+| Ecosystem  | Tool                   | CI Integration                             |
+|------------|------------------------|--------------------------------------------|
+| Ruby       | bundler-audit          | `bundle exec bundler-audit check --update` |
+| JavaScript | npm audit / yarn audit | `npm audit --audit-level`high=             |
+| Python     | pip-audit              | `pip-audit`                                |
+| Docker     | Trivy / Grype          | `trivy image myapp:latest`                 |
 
 ## Continuous Monitoring
 
@@ -49,29 +40,16 @@ are detected.
 
 Before adding a new dependency, evaluate:
 
-| Criterion | Questions |
-| --- | --- |
-|---------------------+----------------------------------------------------|
-| Necessity | Can we solve this without a dependency? |
-| --- | --- |
-|---------------------+----------------------------------------------------|
-| Maintenance | When was the last release? Is it actively |
-| --- | --- |
-|  | maintained? |
-|---------------------+----------------------------------------------------|
-| Security track | Are there historical vulnerabilities? How quickly |
-| --- | --- |
-| record | are they addressed? |
-|---------------------+----------------------------------------------------|
-| Community | How many users? Is there a community around it? |
-| --- | --- |
-|---------------------+----------------------------------------------------|
-| License | Is the license compatible with our project? |
-| --- | --- |
-|---------------------+----------------------------------------------------|
+| Criterion           | Questions                                           |
+|---------------------|-----------------------------------------------------|
+| Necessity           | Can we solve this without a dependency?             |
+| Maintenance         | When was the last release? Is it actively           |
+|                     | maintained?                                         |
+| Security track      | Are there historical vulnerabilities? How quickly   |
+| record              | are they addressed?                                 |
+| Community           | How many users? Is there a community around it?     |
+| License             | Is the license compatible with our project?         |
 | Size and complexity | Is it a small focused library or a large framework? |
-| --- | --- |
-|---------------------+----------------------------------------------------|
 
 ## Minimum Dependency Principle
 
@@ -85,24 +63,15 @@ needed?
 
 ## Severity Classification
 
-| Severity | Definition | Response Time |
-| --- | --- | --- |
-|----------+-----------------------------------------------+--------------------|
+| Severity | Definition                                    | Response Time   |
+|----------|-----------------------------------------------|-----------------|
 | Critical | Remote code execution, authentication bypass, | Within 24 hours |
-| --- | --- | --- |
-|  | data breach. |  |
-|----------+-----------------------------------------------+--------------------|
-| High | Significant data exposure, privilege | Within 1 week |
-| --- | --- | --- |
-|  | escalation. |  |
-|----------+-----------------------------------------------+--------------------|
-| Medium | Limited information disclosure, | Within 1 month |
-| --- | --- | --- |
-|  | minor privilege escalation. |  |
-|----------+-----------------------------------------------+--------------------|
-| Low | Minimal risk, difficult to exploit. | Next release. |
-| --- | --- | --- |
-|----------+-----------------------------------------------+--------------------|
+|          | data breach.                                  |                 |
+| High     | Significant data exposure, privilege          | Within 1 week   |
+|          | escalation.                                   |                 |
+| Medium   | Limited information disclosure,               | Within 1 month  |
+|          | minor privilege escalation.                   |                 |
+| Low      | Minimal risk, difficult to exploit.           | Next release.   |
 
 ## Response Workflow
 

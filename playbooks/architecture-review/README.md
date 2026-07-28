@@ -31,17 +31,15 @@ Before requesting an architecture review, the author should verify:
 
 Not every decision needs a full architecture review.
 
-| Decision Type | Review Level | Participants |
-| --- | --- | --- |
-|---------------------------------+-------------------+---------------------------|
-| Technology introduction | Full review | Architects, senior |
-| --- | --- | --- |
-|  |  | engineers, operations |
-| Architecture pattern change | Full review | Architects, affected team |
-| Service boundary change | Full review | Architects, service owners |
-| API design decision | Lightweight | Technical lead, reviewer |
-| Library or framework upgrade | Lightweight | Team, platform |
-| Internal component refactor | Self-service | Team only |
+| Decision Type                | Review Level | Participants               |
+|------------------------------|--------------|----------------------------|
+| Technology introduction      | Full review  | Architects, senior         |
+|                              |              | engineers, operations      |
+| Architecture pattern change  | Full review  | Architects, affected team  |
+| Service boundary change      | Full review  | Architects, service owners |
+| API design decision          | Lightweight  | Technical lead, reviewer   |
+| Library or framework upgrade | Lightweight  | Team, platform             |
+| Internal component refactor  | Self-service | Team only                  |
 
 ## Step 2: Assemble Review Team
 
@@ -78,50 +76,35 @@ The author presents:
 
 Reviewers evaluate the proposal against:
 
-| Criterion | Questions |
-| --- | --- |
-|----------------------------------+--------------------------------------------------------------|
-| Problem alignment | Does the proposal solve the stated problem? Is the problem |
-| --- | --- |
-|  | correctly understood? |
-|----------------------------------+--------------------------------------------------------------|
+| Criterion           | Questions                                                    |
+|---------------------|--------------------------------------------------------------|
+| Problem alignment   | Does the proposal solve the stated problem? Is the problem   |
+|                     | correctly understood?                                        |
 | Principle alignment | Is the proposal consistent with engineering and architecture |
-| --- | --- |
-|  | principles? Does it follow separation of concerns, |
-|  | encapsulation and dependency management? |
-|----------------------------------+--------------------------------------------------------------|
-| Quality attributes | Are the relevant quality attributes addressed (performance, |
-| --- | --- |
-|  | scalability, security, maintainability, evolvability)? |
-|  | Are trade-offs explicitly acknowledged? |
-|----------------------------------+--------------------------------------------------------------|
-| Alternatives | Were meaningful alternatives considered? Is the chosen |
-| --- | --- |
-|  | approach justified relative to the alternatives? |
-|----------------------------------+--------------------------------------------------------------|
-| Consequences | Are the consequences (both positive and negative) fully |
-| --- | --- |
-|  | understood? Are there hidden dependencies or risks? |
-|----------------------------------+--------------------------------------------------------------|
-| Documentation | Is the decision adequately documented? Can a future engineer |
-| --- | --- |
-|  | understand the reasoning? |
-|----------------------------------+--------------------------------------------------------------|
+|                     | principles? Does it follow separation of concerns,           |
+|                     | encapsulation and dependency management?                     |
+| Quality attributes  | Are the relevant quality attributes addressed (performance,  |
+|                     | scalability, security, maintainability, evolvability)?       |
+|                     | Are trade-offs explicitly acknowledged?                      |
+| Alternatives        | Were meaningful alternatives considered? Is the chosen       |
+|                     | approach justified relative to the alternatives?             |
+| Consequences        | Are the consequences (both positive and negative) fully      |
+|                     | understood? Are there hidden dependencies or risks?          |
+| Documentation       | Is the decision adequately documented? Can a future engineer |
+|                     | understand the reasoning?                                    |
 
 #### Decision and Next Steps (10-15 minutes)
 
 The review concludes with one of:
 
-| Outcome | Meaning |
-| --- | --- |
-|---------------+--------------------------------------------------------|
-| Approved | The decision is accepted. Proceed with implementation. |
-| --- | --- |
-| Conditional | Approved pending specific changes. Address conditions |
-|  | and confirm with reviewers. |
-| Revise | Significant issues identified. Revise and resubmit. |
-| Rejected | The proposal is not accepted. Document the reasoning |
-|  | and explore alternatives. |
+| Outcome     | Meaning                                                |
+|-------------|--------------------------------------------------------|
+| Approved    | The decision is accepted. Proceed with implementation. |
+| Conditional | Approved pending specific changes. Address conditions  |
+|             | and confirm with reviewers.                            |
+| Revise      | Significant issues identified. Revise and resubmit.    |
+| Rejected    | The proposal is not accepted. Document the reasoning   |
+|             | and explore alternatives.                              |
 
 ## Step 5: Document the Outcome
 
@@ -157,17 +140,15 @@ The reviewer should verify:
 
 # Escalation Points
 
-| Situation | Action |
-| --- | --- |
-|---------------------------------------------+-------------------------------------|
+| Situation                                 | Action                             |
+|-------------------------------------------|------------------------------------|
 | Disagreement cannot be resolved in review | Escalate to the architecture forum |
-| --- | --- |
-|  | or chief architect. |
-| Decision affects multiple organizations | Involve all affected teams before |
-|  | finalizing. |
-| Security or compliance implications | Require security review sign-off. |
-| Significant cost or resource impact | Include budget or resource owner |
-|  | in the review. |
+|                                           | or chief architect.                |
+| Decision affects multiple organizations   | Involve all affected teams before  |
+|                                           | finalizing.                        |
+| Security or compliance implications       | Require security review sign-off.  |
+| Significant cost or resource impact       | Include budget or resource owner   |
+|                                           | in the review.                     |
 
 # AI Workflow
 

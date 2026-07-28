@@ -7,27 +7,18 @@ the principles in the [Engineering Fundamentals Handbook](../../handbooks/engine
 
 # Guides
 
-| Guide | Description |
-| --- | --- |
-+--------------------------------------------------------------+------------------------------------------+
-| [Code Organization](./code-organization.md) | Principles and patterns for structuring |
-| --- | --- |
-|  | code: feature-based packaging, module |
-|  | boundaries, dependency flow. |
-+--------------------------------------------------------------+------------------------------------------+
-| [Error Handling](./error-handling.md) | Principles for handling errors: |
-| --- | --- |
-|  | recoverable vs unrecoverable, patterns, |
-|  | logging anti-patterns. |
-+--------------------------------------------------------------+------------------------------------------+
+| Guide                                         | Description                               |
+|-----------------------------------------------|-------------------------------------------|
+| [Code Organization](./code-organization.md)   | Principles and patterns for structuring   |
+|                                               | code: feature-based packaging, module     |
+|                                               | boundaries, dependency flow.              |
+| [Error Handling](./error-handling.md)         | Principles for handling errors:           |
+|                                               | recoverable vs unrecoverable, patterns,   |
+|                                               | logging anti-patterns.                    |
 | [Testing Strategies](./testing-strategies.md) | Test pyramid, what to test, test doubles, |
-| --- | --- |
-|  | anti-patterns for sustainable testing. |
-+--------------------------------------------------------------+------------------------------------------+
-| [Logging](./logging.md) | Structured logging standards, log levels, |
-| --- | --- |
-|  | context fields and anti-patterns. |
-+--------------------------------------------------------------+------------------------------------------+
+|                                               | anti-patterns for sustainable testing.    |
+| [Logging](./logging.md)                       | Structured logging standards, log levels, |
+|                                               | context fields and anti-patterns.         |
 
 # Related Documents
 

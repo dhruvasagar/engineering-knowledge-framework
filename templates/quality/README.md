@@ -6,13 +6,11 @@ technical debt tracking and quality metrics dashboards.
 
 # Templates
 
-| Template | Description |
-| --- | --- |
-+--------------------------------------------------------+-----------------------------------------------+
-| [Quality Report Template](./quality-report.md) | Standard format for quality review reports. |
-| --- | --- |
-| [Technical Debt Register](./tech-debt-register.md) | Track and monitor technical debt items. |
-| [Quality Metrics Dashboard](./quality-dashboard.md) | Template for tracking quality metrics. |
+| Template                                            | Description                                 |
+|-----------------------------------------------------|---------------------------------------------|
+| [Quality Report Template](./quality-report.md)      | Standard format for quality review reports. |
+| [Technical Debt Register](./tech-debt-register.md)  | Track and monitor technical debt items.     |
+| [Quality Metrics Dashboard](./quality-dashboard.md) | Template for tracking quality metrics.      |
 
 # Related Documents
 

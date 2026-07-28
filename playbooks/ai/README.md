@@ -7,13 +7,11 @@ judgement.
 
 # Playbooks
 
-| Playbook | Description |
-| --- | --- |
-|-------------------------------------------------------+-------------------------------------------------|
-| [AI-Assisted Code Review](./ai-assisted-code-review.md) | Workflow for reviewing code with AI assistance. |
-| --- | --- |
-| [AI-Assisted Architecture Review](./ai-assisted-architecture-review.md) | Workflow for architecture review with AI. |
-| [AI Pair Programming](./ai-pair-programming.md) | Workflow for collaborative coding with AI. |
+| Playbook                                                                | Description                                     |
+|-------------------------------------------------------------------------|-------------------------------------------------|
+| [AI-Assisted Code Review](./ai-assisted-code-review.md)                 | Workflow for reviewing code with AI assistance. |
+| [AI-Assisted Architecture Review](./ai-assisted-architecture-review.md) | Workflow for architecture review with AI.       |
+| [AI Pair Programming](./ai-pair-programming.md)                         | Workflow for collaborative coding with AI.      |
 
 # Related Documents
 

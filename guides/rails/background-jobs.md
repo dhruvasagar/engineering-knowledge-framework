@@ -10,25 +10,16 @@ diagnose and retries that compound problems.
 
 # Choosing a Framework
 
-| Framework | Queue | Schedule | Concurrency | Use When |
-| --- | --- | --- | --- | --- |
-|-----------+------------+------------+-------------+----------------------------------|
-| Sidekiq | Redis | Sidekiq | Threads | High throughput, existing Redis. |
-| --- | --- | --- | --- | --- |
-|  |  | Enterprise |  |  |
-|-----------+------------+------------+-------------+----------------------------------|
-| GoodJob | PostgreSQL | Built-in | Processes | Want to avoid Redis, simpler |
-| --- | --- | --- | --- | --- |
-|  |  |  |  | deployment. |
-|-----------+------------+------------+-------------+----------------------------------|
-| SolidQueue | MySQL/ | Built-in | Processes | Rails 8 default, no Redis |
-| --- | --- | --- | --- | --- |
-|  | PostgreSQL |  |  | needed. |
-|-----------+------------+------------+-------------+----------------------------------|
-| DelayedJob | Database | Built-in | Processes | Legacy applications, simplest |
-| --- | --- | --- | --- | --- |
-|  |  |  |  | setup. |
-|-----------+------------+------------+-------------+----------------------------------|
+| Framework  | Queue      | Schedule   | Concurrency | Use When                         |
+|------------|------------|------------|-------------|----------------------------------|
+| Sidekiq    | Redis      | Sidekiq    | Threads     | High throughput, existing Redis. |
+|            |            | Enterprise |             |                                  |
+| GoodJob    | PostgreSQL | Built-in   | Processes   | Want to avoid Redis, simpler     |
+|            |            |            |             | deployment.                      |
+| SolidQueue | MySQL/     | Built-in   | Processes   | Rails 8 default, no Redis        |
+|            | PostgreSQL |            |             | needed.                          |
+| DelayedJob | Database   | Built-in   | Processes   | Legacy applications, simplest    |
+|            |            |            |             | setup.                           |
 
 For new projects, prefer ***SolidQueue*** (Rails 8 default, no Redis
 dependency) or ***Sidekiq*** (most mature, extensive ecosystem).

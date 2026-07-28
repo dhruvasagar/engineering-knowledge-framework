@@ -32,17 +32,15 @@ assessment only when objective measures are unavailable.
 
 # Evaluation Dimensions
 
-| Dimension | What It Measures | How to Test |
-| --- | --- | --- |
-+----------------+-----------------------------------------------+-------------------------------------+
-| Correctness | Is the output technically accurate? | Tests, compilation, manual review. |
-| --- | --- | --- |
-| Completeness | Does it address all requirements? | Checklist against requirements. |
-| Consistency | Does it follow conventions and standards? | Linting, style checks, review. |
-| Security | Does it introduce vulnerabilities? | Security scan, manual review. |
-| Performance | Is it efficient and scalable? | Benchmarks, profiling. |
-| Maintainability | Is it easy to understand and change? | Code review, complexity metrics. |
-| Safety | Does it avoid harmful or misleading output? | Safety checklist, edge case testing. |
+| Dimension       | What It Measures                            | How to Test                          |
+|-----------------|---------------------------------------------|--------------------------------------|
+| Correctness     | Is the output technically accurate?         | Tests, compilation, manual review.   |
+| Completeness    | Does it address all requirements?           | Checklist against requirements.      |
+| Consistency     | Does it follow conventions and standards?   | Linting, style checks, review.       |
+| Security        | Does it introduce vulnerabilities?          | Security scan, manual review.        |
+| Performance     | Is it efficient and scalable?               | Benchmarks, profiling.               |
+| Maintainability | Is it easy to understand and change?        | Code review, complexity metrics.     |
+| Safety          | Does it avoid harmful or misleading output? | Safety checklist, edge case testing. |
 
 # Evaluation Methods
 
@@ -59,12 +57,10 @@ Checklist:
 [x] Test coverage meets the project threshold.
 ```
 
-| Strength | Weakness |
-| --- | --- |
-+--------------------------------+-----------------------------------+
+| Strength                     | Weakness                     |
+|------------------------------|------------------------------|
 | Fast, objective, repeatable. | Catches only ~30% of issues. |
-| --- | --- |
-| Can be run in CI. | Misses semantic correctness. |
+| Can be run in CI.            | Misses semantic correctness. |
 
 ## Method 2: Structured Human Review
 
@@ -81,12 +77,10 @@ Criteria:
 Rating per criterion: Pass / Minor Issue / Major Issue / Fail
 ```
 
-| Strength | Weakness |
-| --- | --- |
-+--------------------------------+-----------------------------------+
-| Catches nuanced issues. | Subjective, time-consuming. |
-| --- | --- |
-| Can evaluate correctness. | Requires domain expertise. |
+| Strength                  | Weakness                    |
+|---------------------------|-----------------------------|
+| Catches nuanced issues.   | Subjective, time-consuming. |
+| Can evaluate correctness. | Requires domain expertise.  |
 
 ## Method 3: Comparative Evaluation
 
@@ -100,13 +94,11 @@ Approach:
 4. Investigate where they differ (needs human judgment).
 ```
 
-| Strength | Weakness |
-| --- | --- |
-+--------------------------------+-----------------------------------+
-| Reduces blind spots. | Doubles evaluation time. |
-| --- | --- |
+| Strength                      | Weakness                     |
+|-------------------------------|------------------------------|
+| Reduces blind spots.          | Doubles evaluation time.     |
 | Highlights uncertainty areas. | Agreement does not guarantee |
-|  | correctness. |
+|                               | correctness.                 |
 
 ## Method 4: Longitudinal Tracking
 
@@ -122,81 +114,69 @@ Metrics to track per task type:
 Track per model, prompt template and task type.
 ```
 
-| Strength | Weakness |
-| --- | --- |
-+--------------------------------+-----------------------------------+
+| Strength                           | Weakness                         |
+|------------------------------------|----------------------------------|
 | Identifies trends and regressions. | Requires consistent measurement. |
-| --- | --- |
-| Informs prompt improvements. | Needs data collection over time. |
+| Informs prompt improvements.       | Needs data collection over time. |
 
 # Task-Specific Evaluation Criteria
 
 ## Code Generation
 
-| Criterion | How to Evaluate |
-| --- | --- |
-+--------------------+--------------------------------------------+
-| Compilation | Does it compile without errors? |
-| --- | --- |
-| Test passage | Do existing and generated tests pass? |
-| Correctness | Does it implement the specified behaviour? |
-| Edge cases | Are error paths and boundary conditions |
-|  | handled? |
-| Security | Are inputs validated, outputs encoded? |
-| Style | Does it match project conventions? |
-| Performance | Are there obvious inefficiencies? |
+| Criterion    | How to Evaluate                            |
+|--------------|--------------------------------------------|
+| Compilation  | Does it compile without errors?            |
+| Test passage | Do existing and generated tests pass?      |
+| Correctness  | Does it implement the specified behaviour? |
+| Edge cases   | Are error paths and boundary conditions    |
+|              | handled?                                   |
+| Security     | Are inputs validated, outputs encoded?     |
+| Style        | Does it match project conventions?         |
+| Performance  | Are there obvious inefficiencies?          |
 
 ## Documentation
 
-| Criterion | How to Evaluate |
-| --- | --- |
-+--------------------+--------------------------------------------+
-| Accuracy | Are facts correct and verifiable? |
-| --- | --- |
-| Completeness | Does it cover all required topics? |
-| Clarity | Is it understandable without prior |
-|  | context? |
-| Structure | Is it well-organised with clear headings? |
-| Examples | Are examples correct and relevant? |
-| Cross-references | Are related documents linked? |
+| Criterion        | How to Evaluate                           |
+|------------------|-------------------------------------------|
+| Accuracy         | Are facts correct and verifiable?         |
+| Completeness     | Does it cover all required topics?        |
+| Clarity          | Is it understandable without prior        |
+|                  | context?                                  |
+| Structure        | Is it well-organised with clear headings? |
+| Examples         | Are examples correct and relevant?        |
+| Cross-references | Are related documents linked?             |
 
 ## Architecture / Design
 
-| Criterion | How to Evaluate |
-| --- | --- |
-+--------------------+--------------------------------------------+
-| Trade-off awareness | Are trade-offs explicitly discussed? |
-| --- | --- |
-| Constraint fit | Does it respect stated constraints? |
-| Consistency | Does it align with existing patterns? |
-| Completeness | Are all quality attributes addressed? |
-| Feasibility | Is the design implementable? |
-| Clarity | Is the design easy to understand? |
+| Criterion           | How to Evaluate                       |
+|---------------------|---------------------------------------|
+| Trade-off awareness | Are trade-offs explicitly discussed?  |
+| Constraint fit      | Does it respect stated constraints?   |
+| Consistency         | Does it align with existing patterns? |
+| Completeness        | Are all quality attributes addressed? |
+| Feasibility         | Is the design implementable?          |
+| Clarity             | Is the design easy to understand?     |
 
 ## Test Generation
 
-| Criterion | How to Evaluate |
-| --- | --- |
-+--------------------+--------------------------------------------+
-| Correctness | Do tests accurately test the intended |
-| --- | --- |
-|  | behaviour? |
-| Coverage | Do they cover key paths and edge cases? |
-| Independence | Are tests independent and deterministic? |
-| Readability | Are test names and assertions clear? |
-| Maintainability | Are tests resilient to refactoring? |
+| Criterion       | How to Evaluate                          |
+|-----------------|------------------------------------------|
+| Correctness     | Do tests accurately test the intended    |
+|                 | behaviour?                               |
+| Coverage        | Do they cover key paths and edge cases?  |
+| Independence    | Are tests independent and deterministic? |
+| Readability     | Are test names and assertions clear?     |
+| Maintainability | Are tests resilient to refactoring?      |
 
 # Scoring Rubric
 
-| Score | Label | Description |
-| --- | --- | --- |
-+-------+--------------+-------------------------------------------+
-| 5 | Excellent | Production-ready with minor or no changes. |
-| --- | --- | --- |
-| 4 | Good | Usable after moderate revision. |
-| 3 | Acceptable | Requires significant revision. |
-| 2 | Poor | Major issues, needs substantial rework. |
-| 1 | Unusable | Cannot be used — start over. |
+| Score | Label      | Description                                |
+|-------|------------|--------------------------------------------|
+| 5     | Excellent  | Production-ready with minor or no changes. |
+| 4     | Good       | Usable after moderate revision.            |
+| 3     | Acceptable | Requires significant revision.             |
+| 2     | Poor       | Major issues, needs substantial rework.    |
+| 1     | Unusable   | Cannot be used — start over.               |
 
 # Evaluation Workflow
 

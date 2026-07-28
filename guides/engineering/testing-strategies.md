@@ -94,18 +94,16 @@ The test pyramid describes the optimal distribution of test types:
     / Integ- \  Some: service-level, moderate speed
    /  ration  \
   /------------\
- /   Unit      \ Many: fast, isolated, reliable
-/    Tests      \
------------------
+ /    Unit      \ Many: fast, isolated, reliable
+/     Tests      \
+------------------
 ```
 
-| Type | Speed | Scope | Confidence | Count |
-| --- | --- | --- | --- | --- |
-|---------------+---------+---------------+------------+---------|
-| Unit tests | Fast | Single unit | Low | Many |
-| --- | --- | --- | --- | --- |
-| Integration | Moderate | Service/Component | Medium | Some |
-| E2E tests | Slow | Full system | High | Few |
+| Type        | Speed    | Scope             | Confidence | Count |
+|-------------|----------|-------------------|------------|-------|
+| Unit tests  | Fast     | Single unit       | Low        | Many  |
+| Integration | Moderate | Service/Component | Medium     | Some  |
+| E2E tests   | Slow     | Full system       | High       | Few   |
 
 ## Unit Tests
 
@@ -212,14 +210,12 @@ integration tests.
 
 # Test Doubles
 
-| Double Type | Purpose |
-| --- | --- |
-|-------------+------------------------------------------|
-| Stub | Returns a fixed value. |
-| --- | --- |
-| Mock | Verifies that a method was called. |
-| Fake | Provides a lightweight implementation. |
-| Spy | Records method calls for later assertion. |
+| Double Type | Purpose                                   |
+|-------------|-------------------------------------------|
+| Stub        | Returns a fixed value.                    |
+| Mock        | Verifies that a method was called.        |
+| Fake        | Provides a lightweight implementation.    |
+| Spy         | Records method calls for later assertion. |
 
 Use fakes for dependencies that are slow or unreliable (databases,
 network services). Use mocks sparingly — prefer verifying outcomes over

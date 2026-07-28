@@ -1,8 +1,3 @@
-:PROPERTIES:
-:STATUS:   accepted
-:DATE:     2026-07-27
-:END:
-
 # Context
 
 The framework needed a standardized set of document types that:
@@ -21,24 +16,21 @@ duplicate each other's responsibilities, and become harder to maintain.
 
 Define nine document types, each with a single, distinct responsibility:
 
-| Document Type | Primary Purpose | Answers |
-| --- | --- | --- |
-|---------------+--------------------------------------+----------------------------|
-| Handbook | Principles, philosophy and standards | Why? What? |
-| --- | --- | --- |
-| Guide | Explain a focused engineering topic | How does it work? |
-| Playbook | Repeatable engineering workflow | How do I do this? |
-| Checklist | Verify correctness | Did I complete everything? |
-| Template | Standardize repeatable artifacts | Where do I start? |
-| Reference | Quick factual lookup | What is the syntax? |
-| Glossary | Canonical terminology | What does this mean? |
-| Learning Path | Structured learning progression | What should I learn next? |
-| Example | Practical implementation | What does good look like? |
+| Document Type | Primary Purpose                      | Answers                    |
+|---------------|--------------------------------------|----------------------------|
+| Handbook      | Principles, philosophy and standards | Why? What?                 |
+| Guide         | Explain a focused engineering topic  | How does it work?          |
+| Playbook      | Repeatable engineering workflow      | How do I do this?          |
+| Checklist     | Verify correctness                   | Did I complete everything? |
+| Template      | Standardize repeatable artifacts     | Where do I start?          |
+| Reference     | Quick factual lookup                 | What is the syntax?        |
+| Glossary      | Canonical terminology                | What does this mean?       |
+| Learning Path | Structured learning progression      | What should I learn next?  |
+| Example       | Practical implementation             | What does good look like?  |
 
 The taxonomy follows a clear progression:
 
 ```
-
 Handbook → Guide → Playbook → Checklist → Template
 
 Glossary and References support all document types.
@@ -46,7 +38,6 @@ Glossary and References support all document types.
 Learning Paths connect all document types.
 
 Examples support Guides and Playbooks.
-
 ```
 
 Each document type has a single responsibility. Documents should never

@@ -9,15 +9,11 @@ engineering documentation.
 
 The Style Guide answers:
 
-#+BEGIN_QUOTE
-How should we write?
-#+END_QUOTE
+> How should we write?
 
 This document answers:
 
-#+BEGIN_QUOTE
-How should we think when writing?
-#+END_QUOTE
+> How should we think when writing?
 
 These principles should guide every contribution to the framework.
 
@@ -83,9 +79,7 @@ playbooks—not handbooks.
 
 A useful question to ask is:
 
-#+BEGIN_QUOTE
-Will this still be useful five years from now?
-#+END_QUOTE
+> Will this still be useful five years from now?
 
 # Explain Why
 
@@ -113,17 +107,13 @@ Good documentation should improve decision making.
 
 Instead of writing:
 
-#+BEGIN_QUOTE
-Use Service Objects.
-#+END_QUOTE
+> Use Service Objects.
 
 Prefer:
 
-#+BEGIN_QUOTE
-Use Service Objects when business logic exceeds the responsibilities of
-models or controllers, because they improve separation of concerns,
-testability and reuse.
-#+END_QUOTE
+> Use Service Objects when business logic exceeds the responsibilities of
+> models or controllers, because they improve separation of concerns,
+> testability and reuse.
 
 The second example teaches judgement rather than rules.
 
@@ -216,17 +206,13 @@ This is particularly important for:
 
 Avoid:
 
-#+BEGIN_QUOTE
-As discussed earlier...
-#+END_QUOTE
+> As discussed earlier...
 
 Prefer:
 
-#+BEGIN_QUOTE
-See the
-[Rails Engineering Handbook](./handbooks/rails/README.md)
-for the underlying architectural principles.
-#+END_QUOTE
+> See the
+> [Rails Engineering Handbook](./handbooks/rails/README.md)
+> for the underlying architectural principles.
 
 # Build a Knowledge Graph
 
@@ -335,9 +321,7 @@ Experience should evolve into standards.
 
 Ask:
 
-#+BEGIN_QUOTE
-Can another team reuse this?
-#+END_QUOTE
+> Can another team reuse this?
 
 If the answer is no, consider whether the knowledge belongs in a
 project-specific repository instead.
@@ -405,14 +389,12 @@ the document.
 
 # Guiding Statement
 
-#+BEGIN_QUOTE
-The purpose of engineering documentation is not to record what we know.
-
-It is to help future engineers know what we have learned.
-
-The Engineering Knowledge Framework exists to transform experience into
-timeless engineering knowledge that benefits both humans and AI.
-#+END_QUOTE
+> The purpose of engineering documentation is not to record what we know.
+>
+> It is to help future engineers know what we have learned.
+>
+> The Engineering Knowledge Framework exists to transform experience into
+> timeless engineering knowledge that benefits both humans and AI.
 
 # Related Documents
 

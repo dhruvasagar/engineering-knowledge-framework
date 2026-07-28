@@ -16,39 +16,33 @@ action is taken.
 
 ## Finding 1: [Title]
 
-| Field | Value |
-| --- | --- |
-|----------------+-----------------------------------------------------|
-| ***Severity*** | [Critical / High / Medium / Low / Informational] |
-| --- | --- |
-| ***Category*** | [Correctness / Security / Performance / Style / etc.] |
-| ***Location*** | [File, line or component] |
-| ***AI Finding*** | [What the AI identified] |
-| ***Human Verdict*** | [Confirmed / False Positive / Needs Investigation] |
-| ***Action*** | [Description of required change or rationale for dismissal] |
+| Field               | Value                                                       |
+|---------------------|-------------------------------------------------------------|
+| ***Severity***      | [Critical / High / Medium / Low / Informational]            |
+| ***Category***      | [Correctness / Security / Performance / Style / etc.]       |
+| ***Location***      | [File, line or component]                                   |
+| ***AI Finding***    | [What the AI identified]                                    |
+| ***Human Verdict*** | [Confirmed / False Positive / Needs Investigation]          |
+| ***Action***        | [Description of required change or rationale for dismissal] |
 
 ## Finding 2: [Title]
 
-| Field | Value |
-| --- | --- |
-|----------------+-----------------------------------------------------|
-| ***Severity*** | [Critical / High / Medium / Low / Informational] |
-| --- | --- |
-| ***Category*** | [Correctness / Security / Performance / Style / etc.] |
-| ***Location*** | [File, line or component] |
-| ***AI Finding*** | [What the AI identified] |
-| ***Human Verdict*** | [Confirmed / False Positive / Needs Investigation] |
-| ***Action*** | [Description of required change or rationale for dismissal] |
+| Field               | Value                                                       |
+|---------------------|-------------------------------------------------------------|
+| ***Severity***      | [Critical / High / Medium / Low / Informational]            |
+| ***Category***      | [Correctness / Security / Performance / Style / etc.]       |
+| ***Location***      | [File, line or component]                                   |
+| ***AI Finding***    | [What the AI identified]                                    |
+| ***Human Verdict*** | [Confirmed / False Positive / Needs Investigation]          |
+| ***Action***        | [Description of required change or rationale for dismissal] |
 
 # Summary
 
-| Verdict | Count |
-| --- | --- |
-|------------------+-------|
-| Confirmed |  |
-| --- | --- |
-| False Positive |  |
-| Needs Investigation |  |
+| Verdict             | Count |
+|---------------------|-------|
+| Confirmed           |       |
+| False Positive      |       |
+| Needs Investigation |       |
 
 # Quality Notes
 

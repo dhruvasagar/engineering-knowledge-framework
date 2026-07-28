@@ -358,58 +358,34 @@ Before tagging a release, run a comprehensive audit pass:
 
 # Audit Frequency
 
-| Audit Type | Frequency | Tools | Owner |
-| --- | --- | --- | --- |
-|-------------------------+-----------+------------------------------------------+-------------|
-| Pre-commit | Every | RuboCop, Fasterer | Developer |
-| --- | --- | --- | --- |
-|  | commit |  |  |
-|-------------------------+-----------+------------------------------------------+-------------|
-| CI audit | Every | RuboCop, Brakeman, bundler-audit, Reek, | CI pipeline |
-| --- | --- | --- | --- |
-|  | push | rails_best_practices, Flog, Flay, tests |  |
-|-------------------------+-----------+------------------------------------------+-------------|
-| Security audit | Weekly | Brakeman, bundler-audit, OWASP ZAP | Security |
-| --- | --- | --- | --- |
-|  |  |  | lead |
-|-------------------------+-----------+------------------------------------------+-------------|
-| Dependency review | Weekly | Dependabot, bundler-audit, LicenseFinder | Platform |
-| --- | --- | --- | --- |
-|-------------------------+-----------+------------------------------------------+-------------|
-| Performance audit | Monthly | Rack::MiniProfiler, Bullet, APM tools, | Performance |
-| --- | --- | --- | --- |
-|  |  | memory_profiler, PgHero | lead |
-|-------------------------+-----------+------------------------------------------+-------------|
-| Full quality audit | Monthly | All tools + manual review | Team |
-| --- | --- | --- | --- |
-|-------------------------+-----------+------------------------------------------+-------------|
-| Pre-release audit | Per | All tools + manual review | Release |
-| --- | --- | --- | --- |
-|  | release |  | manager |
-|-------------------------+-----------+------------------------------------------+-------------|
+| Audit Type         | Frequency | Tools                                    | Owner       |
+|--------------------|-----------|------------------------------------------|-------------|
+| Pre-commit         | Every     | RuboCop, Fasterer                        | Developer   |
+|                    | commit    |                                          |             |
+| CI audit           | Every     | RuboCop, Brakeman, bundler-audit, Reek,  | CI pipeline |
+|                    | push      | rails_best_practices, Flog, Flay, tests  |             |
+| Security audit     | Weekly    | Brakeman, bundler-audit, OWASP ZAP       | Security    |
+|                    |           |                                          | lead        |
+| Dependency review  | Weekly    | Dependabot, bundler-audit, LicenseFinder | Platform    |
+| Performance audit  | Monthly   | Rack::MiniProfiler, Bullet, APM tools,   | Performance |
+|                    |           | memory_profiler, PgHero                  | lead        |
+| Full quality audit | Monthly   | All tools + manual review                | Team        |
+| Pre-release audit  | Per       | All tools + manual review                | Release     |
+|                    | release   |                                          | manager     |
 
 # Interpreting Audit Results
 
 ## Prioritization Framework
 
-| Priority | Criteria | Action |
-| --- | --- | --- |
-|----------+-----------------------------------------------+-------------------------------------|
-| Critical | Security vulnerability in production | Fix immediately. Deploy out of |
-| --- | --- | --- |
-|  | dependencies. | cycle if needed. |
-|----------+-----------------------------------------------+-------------------------------------|
-| High | Security warnings, data exposure, severe | Fix within the current sprint. |
-| --- | --- | --- |
-|  | performance issues. |  |
-|----------+-----------------------------------------------+-------------------------------------|
-| Medium | Code smells, style violations, inadequate | Schedule in a future sprint. |
-| --- | --- | --- |
-|  | coverage. |  |
-|----------+-----------------------------------------------+-------------------------------------|
-| Low | Cosmetic issues, minor style preferences. | Fix opportunistically. |
-| --- | --- | --- |
-|----------+-----------------------------------------------+-------------------------------------|
+| Priority | Criteria                                  | Action                         |
+|----------|-------------------------------------------|--------------------------------|
+| Critical | Security vulnerability in production      | Fix immediately. Deploy out of |
+|          | dependencies.                             | cycle if needed.               |
+| High     | Security warnings, data exposure, severe  | Fix within the current sprint. |
+|          | performance issues.                       |                                |
+| Medium   | Code smells, style violations, inadequate | Schedule in a future sprint.   |
+|          | coverage.                                 |                                |
+| Low      | Cosmetic issues, minor style preferences. | Fix opportunistically.         |
 
 ## False Positives
 

@@ -142,33 +142,18 @@ Configuration requirements:
 
 The following tools are strongly recommended but not mandatory:
 
-| Tool | Purpose | When to Add |
-| --- | --- | --- |
-|---------------------+-----------------------------------------+--------------------------------------|
-| Reek | Code smell detection | Existing codebases with significant |
-| --- | --- | --- |
-|  |  | technical debt. |
-|---------------------+-----------------------------------------+--------------------------------------|
-| rails_best_practices | Rails-specific anti-pattern detection | Teams new to Rails conventions. |
-| --- | --- | --- |
-|---------------------+-----------------------------------------+--------------------------------------|
-| Flog / Flay | Complexity and duplication tracking | Projects with complex domain logic. |
-| --- | --- | --- |
-|---------------------+-----------------------------------------+--------------------------------------|
-| standardrb | Opinionated zero-config Ruby style | Teams that prefer no RuboCop config. |
-| --- | --- | --- |
-|---------------------+-----------------------------------------+--------------------------------------|
-| strong_migrations | Safe migration enforcement | Projects with production databases. |
-| --- | --- | --- |
-|---------------------+-----------------------------------------+--------------------------------------|
-| LicenseFinder | License compliance | Projects with third-party |
-| --- | --- | --- |
-|  |  | distribution. |
-|---------------------+-----------------------------------------+--------------------------------------|
-| Mutant | Mutation testing | Critical domain logic that demands |
-| --- | --- | --- |
-|  |  | high test quality. |
-|---------------------+-----------------------------------------+--------------------------------------|
+| Tool                 | Purpose                               | When to Add                          |
+|----------------------|---------------------------------------|--------------------------------------|
+| Reek                 | Code smell detection                  | Existing codebases with significant  |
+|                      |                                       | technical debt.                      |
+| rails_best_practices | Rails-specific anti-pattern detection | Teams new to Rails conventions.      |
+| Flog / Flay          | Complexity and duplication tracking   | Projects with complex domain logic.  |
+| standardrb           | Opinionated zero-config Ruby style    | Teams that prefer no RuboCop config. |
+| strong_migrations    | Safe migration enforcement            | Projects with production databases.  |
+| LicenseFinder        | License compliance                    | Projects with third-party            |
+|                      |                                       | distribution.                        |
+| Mutant               | Mutation testing                      | Critical domain logic that demands   |
+|                      |                                       | high test quality.                   |
 
 # CI*CD Baseline
 

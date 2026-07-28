@@ -60,24 +60,20 @@ aspects, but accessibility success requires organisational commitment.
 WCAG is the primary international standard for web accessibility. It is
 organised around four principles (POUR):
 
-| Principle | Description |
-| --- | --- |
-+-----------------+----------------------------------------------------+
-| Perceivable | Users must be able to perceive the content. |
-| --- | --- |
-| Operable | Users must be able to operate the interface. |
-| Understandable | Users must be able to understand the content. |
-| Robust | Content must work with current and future tools. |
+| Principle      | Description                                      |
+|----------------|--------------------------------------------------|
+| Perceivable    | Users must be able to perceive the content.      |
+| Operable       | Users must be able to operate the interface.     |
+| Understandable | Users must be able to understand the content.    |
+| Robust         | Content must work with current and future tools. |
 
 WCAG has three conformance levels:
 
-| Level | Description |
-| --- | --- |
-+-------+----------------------------------------------------+
-| A | Minimum level — essential accessibility support. |
-| --- | --- |
-| AA | Recommended level — removes common barriers. |
-| AAA | Highest level — may not be achievable for all content. |
+| Level | Description                                            |
+|-------|--------------------------------------------------------|
+| A     | Minimum level — essential accessibility support.       |
+| AA    | Recommended level — removes common barriers.           |
+| AAA   | Highest level — may not be achievable for all content. |
 
 Target ***WCAG 2.2 AA*** as the minimum compliance level.
 
@@ -89,14 +85,12 @@ ARIA usage guidelines.
 
 # Testing Methodology
 
-| Method | Coverage | When |
-| --- | --- | --- |
-+--------------------------+----------+------------------------------+
-| Automated checks | ~30% | CI pipeline, every commit. |
-| --- | --- | --- |
-| Manual keyboard testing | ~50% | Every feature before merge. |
-| Screen reader testing | ~80% | Before release, major features. |
-| User testing | ~90%+ | Periodic, with diverse users. |
+| Method                  | Coverage | When                            |
+|-------------------------|----------|---------------------------------|
+| Automated checks        | ~30%     | CI pipeline, every commit.      |
+| Manual keyboard testing | ~50%     | Every feature before merge.     |
+| Screen reader testing   | ~80%     | Before release, major features. |
+| User testing            | ~90%+    | Periodic, with diverse users.   |
 
 # Integration into Development
 
@@ -143,19 +137,17 @@ See [AI Workflows for Accessibility](../../prompts/accessibility-ai-workflows.md
 
 All documents in the Accessibility Engineering capability:
 
-| Document Type | Document |
-| --- | --- |
-+---------------+----------------------------------------------+
-| Handbook | [Accessibility Engineering Handbook](./README.md) |
-| --- | --- |
-| Glossary | [Accessibility Glossary](../../glossary/accessibility/README.md) |
-| Guides | [Accessibility Guides](../../guides/accessibility/README.md) |
-| Playbooks | [Accessibility Review Playbook](../../playbooks/accessibility-review/README.md) |
-| Checklists | [Accessibility Checklists](../../checklists/accessibility/README.md) |
-| Templates | [Accessibility Templates](../../templates/accessibility/README.md) |
-| Learning Paths | [Accessibility Learning Paths](../../learning-paths/accessibility/README.md) |
-| References | [Accessibility References](../../references/accessibility/README.md) |
-| AI Workflows | [AI Workflows for Accessibility](../../prompts/accessibility-ai-workflows.md) |
+| Document Type  | Document                                                                        |
+|----------------|---------------------------------------------------------------------------------|
+| Handbook       | [Accessibility Engineering Handbook](./README.md)                               |
+| Glossary       | [Accessibility Glossary](../../glossary/accessibility/README.md)                |
+| Guides         | [Accessibility Guides](../../guides/accessibility/README.md)                    |
+| Playbooks      | [Accessibility Review Playbook](../../playbooks/accessibility-review/README.md) |
+| Checklists     | [Accessibility Checklists](../../checklists/accessibility/README.md)            |
+| Templates      | [Accessibility Templates](../../templates/accessibility/README.md)              |
+| Learning Paths | [Accessibility Learning Paths](../../learning-paths/accessibility/README.md)    |
+| References     | [Accessibility References](../../references/accessibility/README.md)            |
+| AI Workflows   | [AI Workflows for Accessibility](../../prompts/accessibility-ai-workflows.md)   |
 
 # Related Documents
 

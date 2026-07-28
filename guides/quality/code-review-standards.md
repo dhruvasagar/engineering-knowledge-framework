@@ -27,75 +27,39 @@ defects, spread knowledge and improve design.
 
 ## Design
 
-| Question | Why It Matters |
-| --- | --- |
-+--------------------------------------------------------------+----------------------------------------+
-| Does the approach solve the right problem? | Avoids wasted effort. |
-| --- | --- |
-+--------------------------------------------------------------+----------------------------------------+
+| Question                                               | Why It Matters                |
+|--------------------------------------------------------|-------------------------------|
+| Does the approach solve the right problem?             | Avoids wasted effort.         |
 | Is the design consistent with the system architecture? | Prevents architectural drift. |
-| --- | --- |
-+--------------------------------------------------------------+----------------------------------------+
-| Does the change follow separation of concerns? | Ensures maintainability. |
-| --- | --- |
-+--------------------------------------------------------------+----------------------------------------+
-| Are the interfaces clear and well-defined? | Supports future change. |
-| --- | --- |
-+--------------------------------------------------------------+----------------------------------------+
+| Does the change follow separation of concerns?         | Ensures maintainability.      |
+| Are the interfaces clear and well-defined?             | Supports future change.       |
 
 ## Correctness
 
-| Question | Why It Matters |
-| --- | --- |
-+--------------------------------------------------------------+----------------------------------------+
-| Does the code do what it intends? | Obvious but essential. |
-| --- | --- |
-+--------------------------------------------------------------+----------------------------------------+
-| Are edge cases handled? | Prevents subtle bugs. |
-| --- | --- |
-+--------------------------------------------------------------+----------------------------------------+
-| Are error conditions handled properly? | Ensures reliability. |
-| --- | --- |
-+--------------------------------------------------------------+----------------------------------------+
-| Are security concerns addressed? | Prevents vulnerabilities. |
-| --- | --- |
-+--------------------------------------------------------------+----------------------------------------+
+| Question                               | Why It Matters            |
+|----------------------------------------|---------------------------|
+| Does the code do what it intends?      | Obvious but essential.    |
+| Are edge cases handled?                | Prevents subtle bugs.     |
+| Are error conditions handled properly? | Ensures reliability.      |
+| Are security concerns addressed?       | Prevents vulnerabilities. |
 
 ## Maintainability
 
-| Question | Why It Matters |
-| --- | --- |
-+--------------------------------------------------------------+----------------------------------------+
+| Question                                  | Why It Matters                 |
+|-------------------------------------------|--------------------------------|
 | Is the code readable and well-structured? | Reduces future cognitive load. |
-| --- | --- |
-+--------------------------------------------------------------+----------------------------------------+
-| Are names descriptive and clear? | Improves readability. |
-| --- | --- |
-+--------------------------------------------------------------+----------------------------------------+
-| Is there unnecessary duplication? | Increases maintenance cost. |
-| --- | --- |
-+--------------------------------------------------------------+----------------------------------------+
-| Are comments meaningful (why, not what)? | Preserves intent. |
-| --- | --- |
-+--------------------------------------------------------------+----------------------------------------+
+| Are names descriptive and clear?          | Improves readability.          |
+| Is there unnecessary duplication?         | Increases maintenance cost.    |
+| Are comments meaningful (why, not what)?  | Preserves intent.              |
 
 ## Testing
 
-| Question | Why It Matters |
-| --- | --- |
-+--------------------------------------------------------------+----------------------------------------+
-| Are new features covered by tests? | Prevents regression. |
-| --- | --- |
-+--------------------------------------------------------------+----------------------------------------+
-| Are bug fixes accompanied by regression tests? | Ensures bugs stay fixed. |
-| --- | --- |
-+--------------------------------------------------------------+----------------------------------------+
-| Are tests readable and maintainable? | Reduces test maintenance cost. |
-| --- | --- |
-+--------------------------------------------------------------+----------------------------------------+
-| Are edge cases and error paths tested? | Ensures robustness. |
-| --- | --- |
-+--------------------------------------------------------------+----------------------------------------+
+| Question                                       | Why It Matters                 |
+|------------------------------------------------|--------------------------------|
+| Are new features covered by tests?             | Prevents regression.           |
+| Are bug fixes accompanied by regression tests? | Ensures bugs stay fixed.       |
+| Are tests readable and maintainable?           | Reduces test maintenance cost. |
+| Are edge cases and error paths tested?         | Ensures robustness.            |
 
 # Review Quality
 
@@ -122,23 +86,14 @@ This is wrong. Fix it.
 
 ## Severity Labels
 
-| Label | Meaning |
-| --- | --- |
-+-------------+----------------------------------------------------------+
-| BLOCKER | Must be fixed before merge. Design flaw, correctness |
-| --- | --- |
-|  | issue, security vulnerability. |
-+-------------+----------------------------------------------------------+
-| SHOULD FIX | Important but not blocking. Can be addressed in a |
-| --- | --- |
-|  | follow-up. |
-+-------------+----------------------------------------------------------+
-| NICE TO HAVE | Suggestion for improvement. Can be deferred. |
-| --- | --- |
-+-------------+----------------------------------------------------------+
-| QUESTION | Clarification needed. Not necessarily a change request. |
-| --- | --- |
-+-------------+----------------------------------------------------------+
+| Label        | Meaning                                                 |
+|--------------|---------------------------------------------------------|
+| BLOCKER      | Must be fixed before merge. Design flaw, correctness    |
+|              | issue, security vulnerability.                          |
+| SHOULD FIX   | Important but not blocking. Can be addressed in a       |
+|              | follow-up.                                              |
+| NICE TO HAVE | Suggestion for improvement. Can be deferred.            |
+| QUESTION     | Clarification needed. Not necessarily a change request. |
 
 # Related Documents
 

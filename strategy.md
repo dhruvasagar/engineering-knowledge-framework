@@ -346,13 +346,11 @@ When making decisions about the framework, prefer approaches that:
 
 # Guiding Statement
 
-#+BEGIN_QUOTE
-Engineering knowledge is one of an organization's most valuable assets.
-
-The Engineering Knowledge Framework exists to help organizations capture
-that knowledge, evolve it continuously and make it available to every
-engineer and every AI system—today and in the future.
-#+END_QUOTE
+> Engineering knowledge is one of an organization's most valuable assets.
+>
+> The Engineering Knowledge Framework exists to help organizations capture
+> that knowledge, evolve it continuously and make it available to every
+> engineer and every AI system—today and in the future.
 
 # Related Documents
 

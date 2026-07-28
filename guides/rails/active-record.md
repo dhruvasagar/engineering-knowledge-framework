@@ -100,22 +100,15 @@ Post.includes(:author).each { |p| puts p.author.name }
 
 ## Preload vs Eager Load vs Joins
 
-| Method | Behaviour | Use When |
-| --- | --- | --- |
-|-------------+----------------------------------------------+---------------------------------|
-| `includes` | Smart loading — uses one query per | Default choice. |
-| --- | --- | --- |
-|  | association, or JOINs if needed by |  |
-|  | conditions. |  |
-|-------------+----------------------------------------------+---------------------------------|
-| `preload` | Always loads in separate queries. | You always want separate |
-| --- | --- | --- |
-|  |  | queries (e.g., across shards). |
-|-------------+----------------------------------------------+---------------------------------|
-| `eager_load` | Uses LEFT OUTER JOIN to load everything | You need to reference the |
-| --- | --- | --- |
-|  | in one query. | joined table in a WHERE clause. |
-|-------------+----------------------------------------------+---------------------------------|
+| Method       | Behaviour                               | Use When                        |
+|--------------|-----------------------------------------|---------------------------------|
+| `includes`   | Smart loading — uses one query per      | Default choice.                 |
+|              | association, or JOINs if needed by      |                                 |
+|              | conditions.                             |                                 |
+| `preload`    | Always loads in separate queries.       | You always want separate        |
+|              |                                         | queries (e.g., across shards).  |
+| `eager_load` | Uses LEFT OUTER JOIN to load everything | You need to reference the       |
+|              | in one query.                           | joined table in a WHERE clause. |
 
 # Indexing Strategy
 

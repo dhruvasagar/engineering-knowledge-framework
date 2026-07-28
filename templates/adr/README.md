@@ -1,11 +1,5 @@
 # ADR-NNNN: Title
 
-:PROPERTIES:
-:STATUS:   proposed | accepted | deprecated | superseded
-:ADDRESSES: <ADR-NNNN if superseded>
-:DATE:     YYYY-MM-DD
-:END:
-
 # Context
 
 What is the issue or problem motivating this decision?

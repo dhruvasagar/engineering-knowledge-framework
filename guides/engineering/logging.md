@@ -13,13 +13,11 @@ services and applications.
 
 Logs serve three primary audiences:
 
-| Audience | Need |
-| --- | --- |
-|---------------+---------------------------------------------------------|
-| Operators | Real-time visibility into system health and incidents. |
-| --- | --- |
-| Engineers | Historical record for debugging and post-mortem analysis. |
-| Systems | Machine consumption for monitoring, alerting and analytics. |
+| Audience  | Need                                                        |
+|-----------|-------------------------------------------------------------|
+| Operators | Real-time visibility into system health and incidents.      |
+| Engineers | Historical record for debugging and post-mortem analysis.   |
+| Systems   | Machine consumption for monitoring, alerting and analytics. |
 
 Each audience benefits from logs that are structured, consistent and
 context-rich.
@@ -50,23 +48,21 @@ aggregation systems.
 
 ## Log at the Appropriate Level
 
-| Level | Use When |
-| --- | --- |
-|---------+-----------------------------------------------------------|
-| ERROR | A failure that requires human investigation. The system |
-| --- | --- |
-|  | cannot complete the requested operation. |
-| WARN | An unexpected condition that the system handled |
-|  | gracefully. Does not require immediate action but may |
-|  | indicate a future problem. |
-| INFO | Significant lifecycle events: service startup, shutdown, |
-|  | configuration load, successful deployment, state |
-|  | transitions. |
-| DEBUG | Detailed information for diagnosing issues during |
-|  | development or incident investigation. Should be disabled |
-|  | in production under normal operation. |
+| Level | Use When                                                  |
+|-------|-----------------------------------------------------------|
+| ERROR | A failure that requires human investigation. The system   |
+|       | cannot complete the requested operation.                  |
+| WARN  | An unexpected condition that the system handled           |
+|       | gracefully. Does not require immediate action but may     |
+|       | indicate a future problem.                                |
+| INFO  | Significant lifecycle events: service startup, shutdown,  |
+|       | configuration load, successful deployment, state          |
+|       | transitions.                                              |
+| DEBUG | Detailed information for diagnosing issues during         |
+|       | development or incident investigation. Should be disabled |
+|       | in production under normal operation.                     |
 | TRACE | Very detailed diagnostic information. Typically used only |
-|  | for tracing specific requests through the system. |
+|       | for tracing specific requests through the system.         |
 
 ## Include Context with Every Log Event***
 

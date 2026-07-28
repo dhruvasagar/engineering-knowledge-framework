@@ -58,14 +58,12 @@ Run automated accessibility checks:
 
 # Severity Labels
 
-| Severity | Description |
-| --- | --- |
-+----------+-------------------------------------------------------+
-| Critical | Complete barrier — user cannot complete a task. |
-| --- | --- |
-| High | Significant barrier — task is very difficult. |
-| Medium | Moderate barrier — task is more difficult than needed. |
-| Low | Minor issue — does not block task completion. |
+| Severity | Description                                            |
+|----------|--------------------------------------------------------|
+| Critical | Complete barrier — user cannot complete a task.        |
+| High     | Significant barrier — task is very difficult.          |
+| Medium   | Moderate barrier — task is more difficult than needed. |
+| Low      | Minor issue — does not block task completion.          |
 
 # Checklist
 

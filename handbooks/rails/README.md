@@ -50,12 +50,10 @@ be updated — a process that is error-prone and容易遗漏.
 
 Rails follows the Model-View-Controller architectural pattern.
 
-| Layer | Responsibility |
-| --- | --- |
-|------------+-----------------------------------------------------------|
-| Model | Business logic, data validation, persistence. |
-| --- | --- |
-| View | Presentation logic, user interface rendering. |
+| Layer      | Responsibility                                            |
+|------------|-----------------------------------------------------------|
+| Model      | Business logic, data validation, persistence.             |
+| View       | Presentation logic, user interface rendering.             |
 | Controller | Request handling, parameter parsing, response generation. |
 
 Controllers should be thin. Models should capture domain logic. Views
@@ -140,15 +138,13 @@ app*
 
 Follow Rails naming conventions consistently.
 
-| Concept | Convention | Example |
-| --- | --- | --- |
-|------------+-----------------------------------+--------------------------|
-| Model | Singular, CamelCase | `UserAccount` |
-| --- | --- | --- |
-| Table | Plural, snake_case | `user_accounts` |
+| Concept    | Convention                        | Example                  |
+|------------|-----------------------------------|--------------------------|
+| Model      | Singular, CamelCase               | `UserAccount`            |
+| Table      | Plural, snake_case                | `user_accounts`          |
 | Controller | Plural, CamelCase with Controller | `UserAccountsController` |
-| Service | Named after operation | `RegisterUser` |
-| Migration | Descriptive snake_case | `add_email_to_users` |
+| Service    | Named after operation             | `RegisterUser`           |
+| Migration  | Descriptive snake_case            | `add_email_to_users`     |
 
 # Standards
 
@@ -198,16 +194,14 @@ Follow the testing principles in the
 
 For Rails specifically:
 
-| Test Type | What to Test | Speed |
-| --- | --- | --- |
-|---------------+-------------------------------------+----------|
-| Model specs | Validations, associations, scopes. | Fast |
-| --- | --- | --- |
+| Test Type     | What to Test                        | Speed    |
+|---------------|-------------------------------------|----------|
+| Model specs   | Validations, associations, scopes.  | Fast     |
 | Request specs | Controller behaviour, status codes, | Moderate |
-|  | response format. |  |
-| Feature specs | Critical user journeys. | Slow |
-| Unit tests | Service objects, form objects, | Fast |
-|  | presenters. |  |
+|               | response format.                    |          |
+| Feature specs | Critical user journeys.             | Slow     |
+| Unit tests    | Service objects, form objects,      | Fast     |
+|               | presenters.                         |          |
 
 # Patterns
 

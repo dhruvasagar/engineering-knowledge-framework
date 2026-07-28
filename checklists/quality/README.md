@@ -6,13 +6,11 @@ at key points in the development lifecycle.
 
 # Checklists
 
-| Checklist | Description |
-| --- | --- |
-+--------------------------------------------------------+------------------------------------------------+
-| [Quality Gate Checklist](./quality-gate.md) | Verification before accepting changes. |
-| --- | --- |
-| [Release Readiness Checklist](./release-readiness.md) | Verification before production release. |
-| [Technical Debt Triage](./tech-debt-triage.md) | Classification and prioritisation of debt. |
+| Checklist                                             | Description                                |
+|-------------------------------------------------------|--------------------------------------------|
+| [Quality Gate Checklist](./quality-gate.md)           | Verification before accepting changes.     |
+| [Release Readiness Checklist](./release-readiness.md) | Verification before production release.    |
+| [Technical Debt Triage](./tech-debt-triage.md)        | Classification and prioritisation of debt. |
 
 # Related Documents
 

@@ -6,12 +6,10 @@ review reporting and security testing documentation.
 
 # Templates
 
-| Template | Description |
-| --- | --- |
-|-------------------------------+-------------------------------------------------|
-| [Threat Model Template](./threat-model.md) | Structured threat model document using STRIDE. |
-| --- | --- |
-| [Security Review Report](./security-review-report.md) | Findings report for security review outcomes. |
+| Template                                              | Description                                    |
+|-------------------------------------------------------|------------------------------------------------|
+| [Threat Model Template](./threat-model.md)            | Structured threat model document using STRIDE. |
+| [Security Review Report](./security-review-report.md) | Findings report for security review outcomes.  |
 
 # Usage
 

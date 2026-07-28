@@ -80,17 +80,15 @@ announced immediately. Do not use for persistent page content.
 
 # Landmark Roles
 
-| ARIA Role | HTML Equivalent | When to Use |
-| --- | --- | --- |
-+------------------+-----------------+--------------------------------------------+
-| role="banner" | `<header>` | Site-wide header (use once per page). |
-| --- | --- | --- |
-| role="navigation" | `<nav>` | Navigation sections. |
-| role="main" | `<main>` | Primary content (use once per page). |
-| role="complementary" | `<aside>` | Supporting content. |
-| role="contentinfo" | `<footer>` | Footer information. |
-| role="form" | `<form>` | Form sections. |
-| role="search" | `<search>` | Search functionality. |
+| ARIA Role            | HTML Equivalent | When to Use                           |
+|----------------------|-----------------|---------------------------------------|
+| role="banner"        | `<header>`      | Site-wide header (use once per page). |
+| role="navigation"    | `<nav>`         | Navigation sections.                  |
+| role="main"          | `<main>`        | Primary content (use once per page).  |
+| role="complementary" | `<aside>`       | Supporting content.                   |
+| role="contentinfo"   | `<footer>`      | Footer information.                   |
+| role="form"          | `<form>`        | Form sections.                        |
+| role="search"        | `<search>`      | Search functionality.                 |
 
 # Anti-patterns
 

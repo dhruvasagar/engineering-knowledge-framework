@@ -35,14 +35,12 @@ that balances remediation with feature delivery.
 
 Classify each debt item using the framework in [Technical Debt Management](../../guides/quality/technical-debt-management.md):
 
-| Type | Description | Example |
-| --- | --- | --- |
-+------------+---------------------------------------------+--------------------------------+
-| Strategic | Intentional shortcut for speed | Skipping tests for MVP |
-| --- | --- | --- |
+| Type       | Description                    | Example                       |
+|------------|--------------------------------|-------------------------------|
+| Strategic  | Intentional shortcut for speed | Skipping tests for MVP        |
 | Accidental | Unintended quality degradation | Growing cyclomatic complexity |
-| Prudent | Known and tracked | Documented in ADR |
-| Reckless | Unknown or ignored | No tests, no documentation |
+| Prudent    | Known and tracked              | Documented in ADR             |
+| Reckless   | Unknown or ignored             | No tests, no documentation    |
 
 ## Step 3: Prioritise
 
@@ -70,14 +68,12 @@ Classify each debt item using the framework in [Technical Debt Management](../..
 
 # Debt Budget
 
-| Category | Target |
-| --- | --- |
-+---------------------+--------------------------------------+
-| Critical debt | Zero — remediate immediately. |
-| --- | --- |
-| Strategic debt | Document and track with planned remediation. |
-| Accidental debt | Investigate root cause to prevent recurrence. |
-| Total debt ratio | Keep below 20% of codebase churn. |
+| Category         | Target                                        |
+|------------------|-----------------------------------------------|
+| Critical debt    | Zero — remediate immediately.                 |
+| Strategic debt   | Document and track with planned remediation.  |
+| Accidental debt  | Investigate root cause to prevent recurrence. |
+| Total debt ratio | Keep below 20% of codebase churn.             |
 
 # Checklist
 

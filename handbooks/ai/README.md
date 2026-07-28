@@ -81,32 +81,19 @@ information they need to produce useful output.
 
 ## Context Categories
 
-| Category | What to Include |
-| --- | --- |
-+---------------+---------------------------------------------------+
-| Scope | What are we trying to accomplish? What are the |
-| --- | --- |
-|  | boundaries? |
-+---------------+---------------------------------------------------+
+| Category    | What to Include                                   |
+|-------------|---------------------------------------------------|
+| Scope       | What are we trying to accomplish? What are the    |
+|             | boundaries?                                       |
 | Constraints | What limits apply? Time, technology, performance, |
-| --- | --- |
-|  | compliance. |
-+---------------+---------------------------------------------------+
-| Standards | What conventions, style guides or patterns should |
-| --- | --- |
-|  | be followed? |
-+---------------+---------------------------------------------------+
-| Examples | What does good output look like? Provide samples. |
-| --- | --- |
-+---------------+---------------------------------------------------+
-| References | What documents, code or resources should the AI |
-| --- | --- |
-|  | reference? |
-+---------------+---------------------------------------------------+
-| Quality | What criteria define success? How will the output |
-| --- | --- |
-| Criteria | be evaluated? |
-+---------------+---------------------------------------------------+
+|             | compliance.                                       |
+| Standards   | What conventions, style guides or patterns should |
+|             | be followed?                                      |
+| Examples    | What does good output look like? Provide samples. |
+| References  | What documents, code or resources should the AI   |
+|             | reference?                                        |
+| Quality     | What criteria define success? How will the output |
+| Criteria    | be evaluated?                                     |
 
 ## Context Sources in This Repository
 
@@ -184,25 +171,16 @@ Before accepting AI-generated output:
 
 ## Common Failure Modes
 
-| Failure Mode | Description | Mitigation |
-| --- | --- | --- |
-+-------------------+------------------------------------------------+------------------------------------+
-| Hallucination | AI generates plausible but incorrect | Verify facts against authoritative |
-| --- | --- | --- |
-|  | information. | sources. |
-+-------------------+------------------------------------------------+------------------------------------+
-| Over-confidence | AI presents incorrect output with high | Always verify, especially when AI |
-| --- | --- | --- |
-|  | certainty. | seems confident. |
-+-------------------+------------------------------------------------+------------------------------------+
-| Style drift | AI output diverges from project conventions | Provide style references in |
-| --- | --- | --- |
-|  | over multiple interactions. | context. |
-+-------------------+------------------------------------------------+------------------------------------+
-| Context loss | AI loses track of earlier context in long | Periodically recap context in |
-| --- | --- | --- |
-|  | conversations. | long sessions. |
-+-------------------+------------------------------------------------+------------------------------------+
+| Failure Mode    | Description                                 | Mitigation                         |
+|-----------------|---------------------------------------------|------------------------------------|
+| Hallucination   | AI generates plausible but incorrect        | Verify facts against authoritative |
+|                 | information.                                | sources.                           |
+| Over-confidence | AI presents incorrect output with high      | Always verify, especially when AI  |
+|                 | certainty.                                  | seems confident.                   |
+| Style drift     | AI output diverges from project conventions | Provide style references in        |
+|                 | over multiple interactions.                 | context.                           |
+| Context loss    | AI loses track of earlier context in long   | Periodically recap context in      |
+|                 | conversations.                              | long sessions.                     |
 
 # Integrating AI into Team Practices
 

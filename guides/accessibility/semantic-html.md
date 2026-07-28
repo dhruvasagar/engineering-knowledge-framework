@@ -11,19 +11,17 @@ accessibility support, improves SEO and makes code easier to maintain.
 Every HTML element has a defined purpose. Choose the element that best
 matches the meaning of your content.
 
-| Content | Correct Element | Common Mistake |
-| --- | --- | --- |
-+--------------------+-----------------------+-----------------------+
-| Navigation | `<nav>` | `<div class`"nav">= |
-| --- | --- | --- |
-| Main content | `<main>` | `<div class`"main">= |
-| Article | `<article>` | `<div>` |
-| Section | `<section>` | `<div>` |
-| Heading | `<h1>-<h6>` | `<div class`"title">= |
-| List | `<ul>*<ol>` | `<div>` with bullets |
-| Button | `<button>` | `<div onclick`"...">= |
-| Link | `<a>` | `<span onclick`"...">= |
-| Form input | `<input>`, `<select>` | =<div contenteditable> |
+| Content      | Correct Element       | Common Mistake         |
+|--------------|-----------------------|------------------------|
+| Navigation   | `<nav>`               | `<div class`"nav">=    |
+| Main content | `<main>`              | `<div class`"main">=   |
+| Article      | `<article>`           | `<div>`                |
+| Section      | `<section>`           | `<div>`                |
+| Heading      | `<h1>-<h6>`           | `<div class`"title">=  |
+| List         | `<ul>*<ol>`           | `<div>` with bullets   |
+| Button       | `<button>`            | `<div onclick`"...">=  |
+| Link         | `<a>`                 | `<span onclick`"...">= |
+| Form input   | `<input>`, `<select>` | =<div contenteditable> |
 
 ## Follow Heading Hierarchy
 

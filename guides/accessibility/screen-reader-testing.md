@@ -7,15 +7,13 @@ the rest.
 
 # Screen Readers
 
-| Screen Reader | Platform | Browser | Notes |
-| --- | --- | --- | --- |
-+---------------+---------------+---------------+---------------+------------------------------+
-| VoiceOver | macOS, iOS | Safari | Built into Apple devices. |
-| --- | --- | --- | --- |
-| NVDA | Windows | Firefox | Free, most common on Windows. |
-| JAWS | Windows | Chrome, Edge | Paid, widely used in enterprise. |
-| TalkBack | Android | Chrome | Built into Android devices. |
-| ChromeVox | ChromeOS | Chrome | Built into Chromebooks. |
+| Screen Reader | Platform   | Browser      | Notes                            |
+|---------------|------------|--------------|----------------------------------|
+| VoiceOver     | macOS, iOS | Safari       | Built into Apple devices.        |
+| NVDA          | Windows    | Firefox      | Free, most common on Windows.    |
+| JAWS          | Windows    | Chrome, Edge | Paid, widely used in enterprise. |
+| TalkBack      | Android    | Chrome       | Built into Android devices.      |
+| ChromeVox     | ChromeOS   | Chrome       | Built into Chromebooks.          |
 
 # Testing Workflow
 
@@ -39,7 +37,8 @@ the rest.
 3. Are there empty or duplicate links?
 4. Are there "click here" or "read more" links?
 
-## Step 4: Interactive Elements
+##
+ Step 4: Interactive Elements
 
 1. Tab through all interactive elements.
 2. Is each element announced correctly (role, name, state)?
@@ -62,17 +61,15 @@ the rest.
 
 # Common Issues Found by Screen Reader Testing
 
-| Issue | How to Detect |
-| --- | --- |
-+--------------------------------+----------------------------------------+
-| Missing or incorrect labels | Tab to input, no label announced. |
-| --- | --- |
-| Unlabelled buttons | Navigate buttons, hear "button" only. |
-| Missing heading structure | Navigate headings, no structure. |
-| No landmark regions | Navigate landmarks, none found. |
-| Unannounced dynamic content | Trigger update, no announcement. |
-| Focus not managed | Open dialog, focus not inside. |
-| Keyboard trap | Tab into widget, cannot tab out. |
+| Issue                       | How to Detect                         |
+|-----------------------------|---------------------------------------|
+| Missing or incorrect labels | Tab to input, no label announced.     |
+| Unlabelled buttons          | Navigate buttons, hear "button" only. |
+| Missing heading structure   | Navigate headings, no structure.      |
+| No landmark regions         | Navigate landmarks, none found.       |
+| Unannounced dynamic content | Trigger update, no announcement.      |
+| Focus not managed           | Open dialog, focus not inside.        |
+| Keyboard trap               | Tab into widget, cannot tab out.      |
 
 # Checklist
 

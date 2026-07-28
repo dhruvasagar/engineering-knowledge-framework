@@ -99,33 +99,20 @@ designing mitigations before they are exploited.
 
 ## STRIDE Framework
 
-| Threat | Definition | Example |
-| --- | --- | --- |
-|-----------------+-------------------------------+---------------------------------|
-| Spoofing | Impersonating another user | Stealing session token. |
-| --- | --- | --- |
-|  | or system. |  |
-|-----------------+-------------------------------+---------------------------------|
-| Tampering | Modifying data or code | Modifying request parameters. |
-| --- | --- | --- |
-|  | without authorization. |  |
-|-----------------+-------------------------------+---------------------------------|
-| Repudiation | Denying an action was | User claims they did not |
-| --- | --- | --- |
-|  | performed. | make a transaction. |
-|-----------------+-------------------------------+---------------------------------|
-| Information | Exposing information to | Leaking customer data through |
-| --- | --- | --- |
-| Disclosure | unauthorized parties. | an API endpoint. |
-|-----------------+-------------------------------+---------------------------------|
-| Denial of | Making a system unavailable | Flooding an endpoint with |
-| --- | --- | --- |
-| Service | to legitimate users. | requests to exhaust resources. |
-|-----------------+-------------------------------+---------------------------------|
-| Elevation of | Gaining unauthorized access | Exploiting a vulnerability to |
-| --- | --- | --- |
-| Privilege | to higher permissions. | gain admin access. |
-|-----------------+-------------------------------+---------------------------------|
+| Threat       | Definition                  | Example                        |
+|--------------|-----------------------------|--------------------------------|
+| Spoofing     | Impersonating another user  | Stealing session token.        |
+|              | or system.                  |                                |
+| Tampering    | Modifying data or code      | Modifying request parameters.  |
+|              | without authorization.      |                                |
+| Repudiation  | Denying an action was       | User claims they did not       |
+|              | performed.                  | make a transaction.            |
+| Information  | Exposing information to     | Leaking customer data through  |
+| Disclosure   | unauthorized parties.       | an API endpoint.               |
+| Denial of    | Making a system unavailable | Flooding an endpoint with      |
+| Service      | to legitimate users.        | requests to exhaust resources. |
+| Elevation of | Gaining unauthorized access | Exploiting a vulnerability to  |
+| Privilege    | to higher permissions.      | gain admin access.             |
 
 # Secure Development Lifecycle
 

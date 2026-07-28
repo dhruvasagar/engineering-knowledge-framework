@@ -36,16 +36,14 @@ The engineer asks AI to gather information, summarise knowledge or
 explore options. The engineer evaluates the results and makes
 decisions.
 
-| Aspect | Description |
-| --- | --- |
-+-----------------+-------------------------------------------------+
-| AI role | Gather, summarise, explore. |
-| --- | --- |
-| Human role | Evaluate, decide, direct. |
-| Best for | Technology research, option exploration, |
-|  | learning new domains. |
-| Risk level | Low — output informs but does not execute. |
-| Verification | Quick plausibility check. |
+| Aspect       | Description                                |
+|--------------|--------------------------------------------|
+| AI role      | Gather, summarise, explore.                |
+| Human role   | Evaluate, decide, direct.                  |
+| Best for     | Technology research, option exploration,   |
+|              | learning new domains.                      |
+| Risk level   | Low — output informs but does not execute. |
+| Verification | Quick plausibility check.                  |
 
 ```
 Engineer: "What approaches exist for implementing background jobs?"
@@ -58,16 +56,14 @@ Engineer: "Deep-dive on option 2 — it fits our constraints."
 The engineer dictates or describes what to write, and AI produces the
 initial draft. The engineer then reviews and edits.
 
-| Aspect | Description |
-| --- | --- |
-+-----------------+-------------------------------------------------+
-| AI role | Draft, format, structure. |
-| --- | --- |
-| Human role | Direct, review, edit. |
-| Best for | Documentation, code comments, commit messages, |
-|  | boilerplate code, test scaffolding. |
-| Risk level | Low to medium — human reviews before use. |
-| Verification | Human reads and approves before committing. |
+| Aspect       | Description                                    |
+|--------------|------------------------------------------------|
+| AI role      | Draft, format, structure.                      |
+| Human role   | Direct, review, edit.                          |
+| Best for     | Documentation, code comments, commit messages, |
+|              | boilerplate code, test scaffolding.            |
+| Risk level   | Low to medium — human reviews before use.      |
+| Verification | Human reads and approves before committing.    |
 
 ```
 Engineer: "Write a service object for processing order payments..."
@@ -80,16 +76,14 @@ Engineer: [reviews, edits, commits]
 The engineer produces work and asks AI to review it for issues. The
 engineer evaluates each finding and decides whether to act.
 
-| Aspect | Description |
-| --- | --- |
-+-----------------+-------------------------------------------------+
-| AI role | Analyse, identify issues, suggest improvements. |
-| --- | --- |
-| Human role | Produce work, evaluate findings, decide. |
-| Best for | Code review, design review, documentation review. |
-| Risk level | Medium — AI may miss context or generate false |
-|  | positives. |
-| Verification | Human evaluates each finding before acting. |
+| Aspect       | Description                                       |
+|--------------|---------------------------------------------------|
+| AI role      | Analyse, identify issues, suggest improvements.   |
+| Human role   | Produce work, evaluate findings, decide.          |
+| Best for     | Code review, design review, documentation review. |
+| Risk level   | Medium — AI may miss context or generate false    |
+|              | positives.                                        |
+| Verification | Human evaluates each finding before acting.       |
 
 ```
 Engineer: "Review this pull request for security issues."
@@ -102,15 +96,13 @@ Engineer: [confirms, dismisses, or investigates each]
 The engineer and AI work side-by-side on a task. The AI handles routine
 aspects while the engineer focuses on design and complex logic.
 
-| Aspect | Description |
-| --- | --- |
-+-----------------+-------------------------------------------------+
-| AI role | Generate, refactor, test. |
-| --- | --- |
-| Human role | Design, decide, verify. |
-| Best for | Feature implementation, refactoring, debugging. |
-| Risk level | Medium to high — code is used with human review. |
-| Verification | Tests must pass, human reviews all logic. |
+| Aspect       | Description                                      |
+|--------------|--------------------------------------------------|
+| AI role      | Generate, refactor, test.                        |
+| Human role   | Design, decide, verify.                          |
+| Best for     | Feature implementation, refactoring, debugging.  |
+| Risk level   | Medium to high — code is used with human review. |
+| Verification | Tests must pass, human reviews all logic.        |
 
 ```
 Engineer: "Let's implement the user authentication module..."
@@ -124,15 +116,13 @@ AI: "I'll write the tests..."
 The engineer asks AI to explain concepts, suggest learning resources or
 provide guided practice. The engineer drives the learning process.
 
-| Aspect | Description |
-| --- | --- |
-+-----------------+-------------------------------------------------+
-| AI role | Explain, demonstrate, provide examples. |
-| --- | --- |
-| Human role | Ask, practice, apply. |
-| Best for | Learning new technologies, understanding patterns. |
-| Risk level | Low — AI output may contain inaccuracies. |
-| Verification | Cross-reference with official documentation. |
+| Aspect       | Description                                        |
+|--------------|----------------------------------------------------|
+| AI role      | Explain, demonstrate, provide examples.            |
+| Human role   | Ask, practice, apply.                              |
+| Best for     | Learning new technologies, understanding patterns. |
+| Risk level   | Low — AI output may contain inaccuracies.          |
+| Verification | Cross-reference with official documentation.       |
 
 ```
 Engineer: "Explain the strategy pattern with a Rails example."
@@ -142,15 +132,13 @@ Engineer: "Now show me how it differs from the service object pattern."
 
 # Selecting the Right Pattern
 
-| Factor | Research Asst | Scribe | Reviewer | Pair Prog | Tutor |
-| --- | --- | --- | --- | --- | --- |
-+---------------------------+---------------+---------------+----------+-----------+-------+
-| Task complexity | Any | Low | Any | Med-High | Any |
-| --- | --- | --- | --- | --- | --- |
-| Required creativity | Low | Low | Low | High | Low |
-| Risk of incorrect output | Low | Med | Med | High | Low |
-| Human effort required | Low | Med | High | High | Med |
-| AI autonomy | High | High | Medium | Medium | High |
+| Factor                   | Research Asst | Scribe | Reviewer | Pair Prog | Tutor |
+|--------------------------|---------------|--------|----------|-----------|-------|
+| Task complexity          | Any           | Low    | Any      | Med-High  | Any   |
+| Required creativity      | Low           | Low    | Low      | High      | Low   |
+| Risk of incorrect output | Low           | Med    | Med      | High      | Low   |
+| Human effort required    | Low           | Med    | High     | High      | Med   |
+| AI autonomy              | High          | High   | Medium   | Medium    | High  |
 
 # Anti-patterns
 

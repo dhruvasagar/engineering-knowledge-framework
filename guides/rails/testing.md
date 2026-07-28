@@ -17,34 +17,25 @@ Follow the test pyramid for Rails applications:
 ```
         /\
        /  \
-      / E2E\    Few: system specs, critical user journeys
+      /E2E \    Few: system specs, critical user journeys
      /------\
     / Request\  Some: controller behaviour, API responses
    /  specs   \
   /------------\
- / Model & Unit\ Many: models, services, forms, presenters
-/    specs      \
------------------
+ / Model & Unit \ Many: models, services, forms, presenters
+/     specs      \
+------------------
 ```
 
-| Type | Speed | Purpose | Proportion |
-| --- | --- | --- | --- |
-|--------------+---------+--------------------------------------+------------|
-| Model specs | Fast | Validations, associations, scopes. | 40% |
-| --- | --- | --- | --- |
-|--------------+---------+--------------------------------------+------------|
-| Unit specs | Fast | Services, forms, presenters, | 30% |
-| --- | --- | --- | --- |
-|  |  | queries. |  |
-|--------------+---------+--------------------------------------+------------|
-| Request specs | Moderate | Controller behaviour, status codes, | 20% |
-| --- | --- | --- | --- |
-|  |  | response format, authentication. |  |
-|--------------+---------+--------------------------------------+------------|
-| System specs | Slow | Critical user journeys through the | 10% |
-| --- | --- | --- | --- |
-|  |  | full stack. |  |
-|--------------+---------+--------------------------------------+------------|
+| Type          | Speed    | Purpose                             | Proportion |
+|---------------|----------|-------------------------------------|------------|
+| Model specs   | Fast     | Validations, associations, scopes.  | 40%        |
+| Unit specs    | Fast     | Services, forms, presenters,        | 30%        |
+|               |          | queries.                            |            |
+| Request specs | Moderate | Controller behaviour, status codes, | 20%        |
+|               |          | response format, authentication.    |            |
+| System specs  | Slow     | Critical user journeys through the  | 10%        |
+|               |          | full stack.                         |            |
 
 # Model Specs
 
