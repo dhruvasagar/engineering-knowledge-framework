@@ -21,7 +21,7 @@ REPO_ROOT = Path(__file__).resolve().parent.parent
 GLOSSARY_DIR = REPO_ROOT / 'glossary'
 
 # Pattern to match glossary entries: ** Term\n\nDefinition
-ENTRY_PATTERN = re.compile(r'\*\*\s+([A-Za-z][A-Za-z\s\-]+?)\n\n((?:(?!\*\*|\n\* )[^\n]*\n?)*)')
+ENTRY_PATTERN = re.compile(r'^##\s+([A-Za-z][A-Za-z\s\-/]+?)\n\n((?:(?!^##|^\* ).*\n?)*)', re.MULTILINE)
 
 
 def collect_glossary_files():
@@ -42,7 +42,7 @@ def parse_glossary_entries(filepath):
     entries = []
 
     # Find the Glossary section
-    glossary_start = content.find('* Glossary')
+    glossary_start = content.find('# Glossary')
     if glossary_start == -1:
         return entries
 
@@ -56,14 +56,20 @@ def parse_glossary_entries(filepath):
     for line in lines:
         stripped = line.strip()
 
-        if stripped.startswith('* ') and not stripped.startswith('**'):
-            if 'Glossary' in stripped:
-                in_glossary = True
-                continue
-            elif in_glossary:
-                break  # Reached next section
+        # Skip front matter and non-glossary top sections
+        if stripped.startswith('---') or stripped == '':
+            continue
 
-        if in_glossary and stripped.startswith('** ') and not stripped.startswith('***'):
+        if stripped.startswith('# ') and 'Glossary' not in stripped:
+            if in_glossary:
+                break  # Reached next top-level section
+            continue
+
+        if stripped == '# Glossary' or stripped == '## Glossary':
+            in_glossary = True
+            continue
+
+        if in_glossary and (stripped.startswith('## ') and not stripped.startswith('###') or stripped.startswith('** ') and not stripped.startswith('***')):
             # Save previous entry
             if current_term:
                 entries.append({
@@ -73,7 +79,21 @@ def parse_glossary_entries(filepath):
             current_term = stripped[3:]
             current_def = []
         elif in_glossary and current_term and stripped:
-            current_def.append(stripped)
+            # Collect definition from table rows or plain text
+            if stripped.startswith('|'):
+                cells = [c.strip() for c in stripped.strip('|').split('|')]
+                if len(cells) >= 2 and cells[0].startswith('Definition'):
+                    current_def.append(cells[1])
+                elif len(cells) >= 2 and cells[0] and len(cells[0]) < 3:
+                    if current_def:
+                        current_def[-1] += ' ' + cells[1]
+                elif len(cells) >= 2 and cells[0] in ('Context', 'Context '):
+                    pass  # skip context rows
+            elif not stripped.startswith('###') and not stripped.startswith('|'):
+                # Plain text definition (accessibility glossary style)
+                # Stop at next ## heading, blank line, table, or reference
+                if not stripped.startswith('-') and not stripped.startswith('['):
+                    current_def.append(stripped)
 
     # Save last entry
     if current_term:

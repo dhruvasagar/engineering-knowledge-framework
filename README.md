@@ -3,6 +3,7 @@ title: "Engineering Knowledge Framework"
 description: "An open-source framework for building AI-native engineering knowledge systems"
 ---
 
+# Engineering Knowledge Base
 
 Engineering Knowledge Framework is an open-source framework for building
 AI-native engineering knowledge systems.

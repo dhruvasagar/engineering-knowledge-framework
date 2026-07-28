@@ -20,7 +20,7 @@ from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 
-REQUIRED_METADATA = ['#+TITLE:', '#+AUTHOR:', '#+DATE:', '#+DESCRIPTION:']
+REQUIRED_METADATA = ['title:', 'description:']
 HEADING_PATTERN = re.compile(r'^(\*+)\s')
 BULLET_PATTERN = re.compile(r'^\s*\*\s+[A-Za-z]')
 
@@ -39,12 +39,26 @@ def collect_org_files():
 
 def validate_metadata(filepath):
     """Check that required metadata headers are present."""
+    rel = filepath.relative_to(REPO_ROOT)
+    path_str = str(rel)
+    # Skip files that don't need front matter
+    if path_str in ('CLAUDE.md',) or path_str.startswith('.github/') or path_str.startswith('site/'):
+        return []
     content = filepath.read_text(encoding='utf-8')
     errors = []
 
+    # Check front matter exists
+    if not content.startswith('---\n'):
+        errors.append('Missing front matter (---)')
+        return errors
+    fm_end = content.find('\n---\n', 4)
+    if fm_end == -1:
+        errors.append('Front matter not closed')
+        return errors
+    fm = content[4:fm_end]
     for meta in REQUIRED_METADATA:
-        if meta not in content:
-            errors.append(f"Missing metadata: {meta}")
+        if meta not in fm:
+            errors.append(f'Missing metadata: {meta}')
 
     return errors
 
@@ -72,35 +86,9 @@ def validate_headings(filepath):
 
 
 def validate_bullets(filepath):
-    """Check for * used as bullet instead of -."""
-    content = filepath.read_text(encoding='utf-8')
-    lines = content.split('\n')
-    errors = []
-    in_code_block = False
-
-    for i, line in enumerate(lines):
-        stripped = line.strip()
-
-        if stripped.startswith('```'):
-            in_code_block = not in_code_block
-            continue
-        if in_code_block:
-            continue
-
-        # Check for * used as bullet (not headline)
-        if re.match(r'^\*\s+', line) and not line.startswith('**'):
-            # Check if previous line also starts with * (list context)
-            prev_line = lines[i-1].strip() if i > 0 else ''
-            next_line = lines[i+1].strip() if i+1 < len(lines) else ''
-
-            if (prev_line.startswith('* ') and not prev_line.startswith('**')) or \
-               (next_line.startswith('* ') and not next_line.startswith('**')) or \
-               stripped.rstrip().endswith('.'):
-                errors.append(
-                    f"Line {i+1}: Use '-' instead of '*' for bullet: {stripped}"
-                )
-
-    return errors
+    """In markdown, both * and - are valid bullet characters.
+    No longer applicable since we migrated from org-mode."""
+    return []
 
 
 def validate_filename(filepath):

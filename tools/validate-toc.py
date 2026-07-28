@@ -19,11 +19,12 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parent.parent
 TOC_FILE = REPO_ROOT / 'TOC.md'
 
-LINK_PATTERN = re.compile(r'\[\[file:([^\]\[]+)\]\[|\[\[file:([^\]]+)\]\]')
+LINK_PATTERN = re.compile(r'\]\(([^)]+)\)')
 IGNORE_FILES = {
     '.git',
+    'site',
     'tools',
-    'zola-site',
+    '.org-backup',
 }
 
 
@@ -50,8 +51,7 @@ def extract_toc_links():
     content = TOC_FILE.read_text(encoding='utf-8')
     links = set()
     for match in LINK_PATTERN.finditer(content):
-        # Group 1 is [[file:path][desc]], Group 2 is [[file:path]]
-        link = match.group(1) or match.group(2)
+        link = match.group(1)
         if link:
             links.add(link)
     return links
@@ -64,23 +64,33 @@ def validate_toc():
 
     errors = []
 
-    # Normalize toc_links (strip leading ./)
+    # Normalize toc_links (strip leading ./, trailing /)
     normalized_links = set()
     for link in toc_links:
         normalized = link[2:] if link.startswith('./') else link
+        normalized = normalized.rstrip('/')
         normalized_links.add(normalized)
 
     # Check: every .md file is referenced in TOC
-    for org_file in sorted(org_files):
-        if org_file not in normalized_links:
-            errors.append(f"  Not in TOC: {org_file}")
+    for md_file in sorted(org_files):
+        stem = md_file[:-3] if md_file.endswith('.md') else md_file
+        if md_file not in normalized_links and stem not in normalized_links:
+            errors.append(f"  Not in TOC: {md_file}")
 
     # Check: every TOC link points to an existing file
     for link in sorted(toc_links):
-        # Strip ./ prefix for file existence check
         clean_link = link[2:] if link.startswith('./') else link
-        target_path = REPO_ROOT / clean_link
-        if not target_path.exists():
+        # Try as directory path (strip trailing /, add .md)
+        target = REPO_ROOT / clean_link
+        if not target.exists():
+            # Try with .md extension (links use directory-style paths)
+            target2 = REPO_ROOT / (clean_link.rstrip('/') + '.md')
+            if target2.exists():
+                continue
+            # Try as-is without trailing slash
+            target3 = REPO_ROOT / clean_link.rstrip('/')
+            if target3.exists():
+                continue
             errors.append(f"  Broken TOC link: {link}")
 
     return errors, len(org_files), len(toc_links)
