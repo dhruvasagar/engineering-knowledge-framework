@@ -133,14 +133,12 @@ Every document should answer one primary question.
 
 Examples:
 
-| Question | Document Type |
-| --- | --- |
-|-----------+----------------|
-| Why should we do this? | Handbook |
-| --- | --- |
-| How does this concept work? | Guide |
-| How do I perform this task? | Playbook |
-| How do I verify it? | Checklist |
+| Question                    | Document Type |
+|-----------------------------|---------------|
+| Why should we do this?      | Handbook      |
+| How does this concept work? | Guide         |
+| How do I perform this task? | Playbook      |
+| How do I verify it?         | Checklist     |
 
 If a document attempts to answer multiple unrelated questions, split it
 into multiple documents.
@@ -155,23 +153,17 @@ Avoid creating large monolithic documents.
 
 Instead:
 
+```
 Handbook
-
 ↓
-
 Guide
-
 ↓
-
 Playbook
-
 ↓
-
 Checklist
-
 ↓
-
 Template
+```
 
 Each document should contribute one piece to the larger knowledge graph.
 
@@ -374,31 +366,21 @@ Knowledge should continuously evolve.
 
 The expected lifecycle is:
 
+```
 Experience
-
 ↓
-
 Reflection
-
 ↓
-
 Knowledge
-
 ↓
-
 Standards
-
 ↓
-
 Practice
-
 ↓
-
 Learning
-
 ↓
-
 Improvement
+```
 
 Every contribution should move knowledge one step further along this
 journey.

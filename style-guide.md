@@ -58,12 +58,12 @@ Prefer principles over implementation details.
 
 # File Naming
 
-| Convention | Example | Rule |
-| --- | --- | --- |
-| Lowercase | `handbooks/rails/README.md` | No capital letters in filenames or directory names |
-| Hyphen-separated | `service-objects.md` | Use hyphens, never spaces or underscores |
-| Markdown extension | `testing-strategies.md` | All documents use `.md` extension |
-| Directory index | `handbooks/engineering/README.md` | Each directory has a README.md as its index |
+| Convention         | Example                           | Rule                                               |
+|--------------------|-----------------------------------|----------------------------------------------------|
+| Lowercase          | `handbooks/rails/README.md`       | No capital letters in filenames or directory names |
+| Hyphen-separated   | `service-objects.md`              | Use hyphens, never spaces or underscores           |
+| Markdown extension | `testing-strategies.md`           | All documents use `.md` extension                  |
+| Directory index    | `handbooks/engineering/README.md` | Each directory has a README.md as its index        |
 
 Choose descriptive names.
 
@@ -91,14 +91,14 @@ Every document should answer one primary question.
 
 Examples:
 
-| Question | Document Type |
-| --- | --- |
-| Why? | Handbook |
-| How does it work? | Guide |
-| How do I perform it? | Playbook |
-| Did I finish everything? | Checklist |
-| Where do I start? | Template |
-| What does this mean? | Glossary |
+| Question                  | Document Type |
+|---------------------------|---------------|
+| Why?                      | Handbook      |
+| How does it work?         | Guide         |
+| How do I perform it?      | Playbook      |
+| Did I finish everything?  | Checklist     |
+| Where do I start?         | Template      |
+| What does this mean?      | Glossary      |
 | What should I learn next? | Learning Path |
 
 If a document attempts to answer several unrelated questions, split it
@@ -332,7 +332,7 @@ Every table must follow this structure:
 
 ```
 | Header 1 | Header 2 | Header 3 |
-| --- | --- | --- |
+|----------|----------|----------|
 | Cell 1   | Cell 2   | Cell 3   |
 ```
 
@@ -345,18 +345,18 @@ Rules:
 ## Correct Example
 
 ```
-| Principle | Description |
-| --- | --- |
+| Principle      | Description                        |
+|----------------|------------------------------------|
 | Keep it simple | Prefer simple over clever designs. |
-| Single purpose | One responsibility per module. |
+| Single purpose | One responsibility per module.     |
 ```
 
 Rendered:
 
-| Principle | Description |
-| --- | --- |
+| Principle      | Description                        |
+|----------------|------------------------------------|
 | Keep it simple | Prefer simple over clever designs. |
-| Single purpose | One responsibility per module. |
+| Single purpose | One responsibility per module.     |
 
 ## Multi-line Cells
 
@@ -364,11 +364,11 @@ Markdown does not support multi-line cells natively. For content that
 needs multiple lines, use separate rows with the first column empty:
 
 ```
-| Type | Speed | Notes |
-| --- | --- | --- |
-| Unit | Fast | Isolated, single behaviour. |
-| | | Tests a single module in isolation. |
-| E2E | Slow | Full stack, critical journeys only. |
+| Type | Speed | Notes                               |
+|------|-------|-------------------------------------|
+| Unit | Fast  | Isolated, single behaviour.         |
+|      |       | Tests a single module in isolation. |
+| E2E  | Slow  | Full stack, critical journeys only. |
 ```
 
 Or use a list within a cell if the renderer supports it (most do not).
