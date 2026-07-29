@@ -1,3 +1,13 @@
+---
+title: "Contributing"
+description: "The Engineering Knowledge Framework is a community-driven project for building high-quality, AI-native engineering knowledge systems."
+type: governance
+capability: governance
+status: published
+tags: [contributing]
+last_reviewed: 2026-07-28
+---
+
 # Purpose
 
 The Engineering Knowledge Framework is a community-driven project for
@@ -172,7 +182,7 @@ Documents should be:
 
 The recommended workflow is:
 
-```
+```text
 Identify a problem
 ↓
 Discuss (if needed)

@@ -1,3 +1,12 @@
+---
+title: "Rails Templates Index"
+description: "This directory contains reusable templates for common Rails artifacts."
+type: template
+capability: rails
+status: published
+last_reviewed: 2026-07-28
+---
+
 # Purpose
 
 This directory contains reusable templates for common Rails artifacts.

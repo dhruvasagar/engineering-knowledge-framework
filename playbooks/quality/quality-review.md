@@ -1,3 +1,13 @@
+---
+title: "Quality Review Playbook"
+description: "Perform systematic quality reviews of engineering projects to assess code quality, process adherence and engineering practices."
+type: playbook
+capability: quality
+status: published
+tags: [review]
+last_reviewed: 2026-07-28
+---
+
 # Objective
 
 Perform systematic quality reviews of engineering projects to assess
@@ -8,7 +18,7 @@ landscape.
 # Inputs
 
 - Project codebase and test suite.
-- CI*CD pipeline configuration.
+- CI/CD pipeline configuration.
 - Dependency manifests and audit reports.
 - Monitoring and alerting setup.
 
@@ -26,7 +36,7 @@ landscape.
    cross-cutting concern).
 2. Identify the quality attributes to assess:
    - Code quality (complexity, duplication, coverage).
-   - Process quality (CI*CD, review velocity, deployment frequency).
+   - Process quality (CI/CD, review velocity, deployment frequency).
    - Technical debt (known issues, remediation progress).
    - Security posture (dependency vulnerabilities, secrets management).
 
@@ -34,7 +44,7 @@ landscape.
 
 1. Run static analysis and linters.
 2. Collect test coverage and test health metrics.
-3. Review CI*CD pipeline for quality gates.
+3. Review CI/CD pipeline for quality gates.
 4. Check dependency vulnerability reports.
 5. Gather process metrics (review turnaround, deployment frequency).
 
@@ -65,7 +75,7 @@ Evaluate against the standards in [Code Review Standards](../../guides/quality/c
 - [ ] Scope defined and agreed.
 - [ ] Static analysis completed.
 - [ ] Test coverage assessed.
-- [ ] CI*CD pipeline reviewed.
+- [ ] CI/CD pipeline reviewed.
 - [ ] Dependencies audited.
 - [ ] Process metrics collected.
 - [ ] Findings documented with severity.

@@ -1,3 +1,13 @@
+---
+title: "Agentic Workflows"
+description: "Agentic workflows are multi-step processes where AI assists across multiple stages of an engineering task."
+type: guide
+capability: ai
+status: published
+tags: [agentic, workflows]
+last_reviewed: 2026-07-28
+---
+
 # Purpose
 
 Agentic workflows are multi-step processes where AI assists across
@@ -40,7 +50,7 @@ errors.
 
 Best for: Code generation, documentation writing, test generation.
 
-```
+```text
 Step 1: Context gathering
   → Engineer provides requirements, constraints, examples.
 Step 2: AI generates initial draft
@@ -57,7 +67,7 @@ Step 5: Final human approval
 
 Best for: Code review, architecture review, security analysis.
 
-```
+```text
 Step 1: AI analyses input (code, design, config)
   → Engineer provides context and focus areas.
 Step 2: AI produces findings with evidence
@@ -74,7 +84,7 @@ Step 5: Human applies or adapts fixes
 
 Best for: Design exploration, technology selection, debugging.
 
-```
+```text
 Step 1: Define problem space
   → Engineer describes the problem, constraints, success criteria.
 Step 2: AI generates multiple approaches
@@ -91,7 +101,7 @@ Step 5: Human makes final decision
 
 Best for: Boilerplate code, migrations, repetitive tasks.
 
-```
+```text
 Step 1: Define constraints
   → Engineer specifies inputs, outputs, conventions, boundaries.
 Step 2: AI generates within constraints

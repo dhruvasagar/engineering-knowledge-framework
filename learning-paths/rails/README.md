@@ -1,3 +1,12 @@
+---
+title: "Rails Learning Paths"
+description: "These learning paths provide a structured progression through Rails development, from building basic applications to designing complex Rails systems."
+type: learning-path
+capability: rails
+status: published
+last_reviewed: 2026-07-28
+---
+
 # Purpose
 
 These learning paths provide a structured progression through Rails

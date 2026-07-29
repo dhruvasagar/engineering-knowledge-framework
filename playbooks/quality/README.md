@@ -1,3 +1,12 @@
+---
+title: "Quality Playbooks Index"
+description: "This directory contains playbooks for quality-related engineering workflows."
+type: playbook
+capability: quality
+status: published
+last_reviewed: 2026-07-28
+---
+
 # Purpose
 
 This directory contains playbooks for quality-related engineering

@@ -1,3 +1,13 @@
+---
+title: "Code Organization"
+description: "Code organization is the practice of structuring source code into modules, directories and files that make the system easier to understand, navigate and change."
+type: guide
+capability: engineering
+status: published
+tags: [code, organization]
+last_reviewed: 2026-07-28
+---
+
 # Purpose
 
 Code organization is the practice of structuring source code into
@@ -41,7 +51,7 @@ Feature-based organization:
 
 ***Good:***
 
-```
+```text
 src/
   users/
     UserRegistration/
@@ -58,7 +68,7 @@ src/
 
 ***Avoid:***
 
-```
+```text
 src/
   controllers/
     users_controller.rb
@@ -127,7 +137,7 @@ Organize code around business features or domain concepts.
 Suitable for most applications, especially those with clear domain
 boundaries.
 
-```
+```text
 src/
   checkout/
   product_catalog/
@@ -145,7 +155,7 @@ Organize code by technical role (controllers, models, services).
 Suitable for small applications or systems with very stable layer
 boundaries. Generally not recommended for larger systems.
 
-```
+```text
 src/
   controllers/
   models/
@@ -160,7 +170,7 @@ components.
 
 Suitable for systems with strong separation between major subsystems.
 
-```
+```text
 src/
   payment_processing/
   inventory_management/

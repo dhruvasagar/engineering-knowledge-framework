@@ -51,7 +51,7 @@ CAPABILITIES = {
     'governance': 'Governance',
 }
 
-SKIP_DIRS_IN_PACK = {'tools', 'site', 'assets', '.git', '__pycache__', '.org-backup'}
+SKIP_DIRS_IN_PACK = {'tools', 'site', 'docs', 'assets', '.git', '__pycache__', '.org-backup'}
 
 
 def load_knowledge_graph():

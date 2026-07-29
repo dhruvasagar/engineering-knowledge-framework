@@ -1,3 +1,13 @@
+---
+title: "ARIA Patterns"
+description: "ARIA (Accessible Rich Internet Applications) provides attributes that enhance accessibility when native HTML elements are insufficient."
+type: guide
+capability: accessibility
+status: published
+tags: [aria, patterns]
+last_reviewed: 2026-07-28
+---
+
 # Purpose
 
 ARIA (Accessible Rich Internet Applications) provides attributes that
@@ -27,7 +37,7 @@ implement those separately.
 
 ## Tabs
 
-```
+```html
 <div role`"tablist">
   <button role`"tab" aria-selected`"true" aria-controls`"panel1" id`"tab1">
     Tab 1
@@ -48,7 +58,7 @@ Keyboard: Arrow keys to switch tabs, Tab to move into tab panel.
 
 ## Dialog / Modal
 
-```
+```html
 <div role`"dialog" aria-modal`"true" aria-labelledby`"dialog-title">
   <h2 id`"dialog-title">Confirm Action<*h2>
   <p>Are you sure?<*p>
@@ -61,18 +71,18 @@ Keyboard: Tab cycles through dialog elements, Escape closes.
 
 ## Alert
 
-```
+```html
 <div role`"alert">
   Your changes have been saved.
 <*div>
 ```
 
-Use `role`"alert"= for time-sensitive information that should be
+Use `role="alert"` for time-sensitive information that should be
 announced immediately. Do not use for persistent page content.
 
 ## Progress Bar
 
-```
+```html
 <div role`"progressbar" aria-valuenow`"50" aria-valuemin`"0" aria-valuemax`"100">
   50% complete
 </div>
@@ -92,11 +102,11 @@ announced immediately. Do not use for persistent page content.
 
 # Anti-patterns
 
-- ***Redundant ARIA***: Do not add `role`"button"= to a `<button>` element.
+- ***Redundant ARIA***: Do not add `role="button"` to a `<button>` element.
 - ***Missing focus management***: ARIA roles do not manage focus —
   implement it manually.
 - ***aria-hidden misuse***: Do not hide focusable elements with
-  `aria-hidden`"true"= — this traps screen reader users.
+  `aria-hidden="true"` — this traps screen reader users.
 - ***Overuse of role="application"***: This removes standard keyboard
   handling — use sparingly.
 
@@ -108,7 +118,7 @@ announced immediately. Do not use for persistent page content.
 - [ ] Focus management is implemented for dialogs and menus.
 - [ ] `aria-hidden` is not applied to focusable elements.
 - [ ] `aria-label` and `aria-labelledby` provide accessible names where needed.
-- [ ] Dynamic content changes are announced with `aria-live` or `role`"alert"=.
+- [ ] Dynamic content changes are announced with `aria-live` or `role="alert"`.
 
 # Related Documents
 

@@ -1,3 +1,13 @@
+---
+title: "Rails Deployment Checklist"
+description: "Ensure every Rails deployment is safe, reversible and verified."
+type: checklist
+capability: rails
+status: published
+tags: [deployment]
+last_reviewed: 2026-07-28
+---
+
 # Purpose
 
 Ensure every Rails deployment is safe, reversible and verified.
@@ -21,7 +31,7 @@ Ensure every Rails deployment is safe, reversible and verified.
 - [ ] Indexes on large tables use `algorithm: :concurrently`.
 - [ ] Data backfills are in Rake tasks, not migrations.
 - [ ] Column removals use the two-phase process (ignore → remove).
-- [ ] Renames are handled with the add*backfill*drop pattern.
+- [ ] Renames are handled with the add/backfill/drop pattern.
 
 # Deployment
 

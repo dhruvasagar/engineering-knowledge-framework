@@ -1,3 +1,13 @@
+---
+title: "Verification Workflows"
+description: "Systematically verify AI-generated code, architecture and documentation to ensure correctness, security and compliance with engineering standards."
+type: playbook
+capability: ai
+status: published
+tags: [verification, workflows]
+last_reviewed: 2026-07-28
+---
+
 # Objective
 
 Systematically verify AI-generated code, architecture and documentation
@@ -39,7 +49,7 @@ Determine the type and risk level of the AI-generated output:
 Always run automated checks first — they are fast and catch common
 issues.
 
-```
+```text
 Automated verification gates:
 [ ] Compilation / syntax check passes.
 [ ] All existing tests pass.
@@ -53,7 +63,7 @@ Automated verification gates:
 
 Use the appropriate review strategy from [Human Review Strategies](../../guides/ai/human-review-strategies.md).
 
-```
+```text
 For code:
 [ ] Read-through for logic errors.
 [ ] Test edge cases (empty, nil, boundary, error).

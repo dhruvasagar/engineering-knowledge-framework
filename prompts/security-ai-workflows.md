@@ -1,3 +1,13 @@
+---
+title: "AI Workflows for Security"
+description: "AI assistants can support security engineering through code analysis, threat identification, configuration review and incident response."
+type: prompt
+capability: security
+status: published
+tags: [workflows]
+last_reviewed: 2026-07-28
+---
+
 # Purpose
 
 AI assistants can support security engineering through code analysis,
@@ -9,7 +19,7 @@ threat identification, configuration review and incident response.
 
 ### Prompt Pattern
 
-```
+````text
 Review this code for security vulnerabilities:
 
 ```[language]
@@ -27,13 +37,13 @@ For each finding, describe:
 - The vulnerability.
 - How it could be exploited.
 - How to fix it.
-```
+````
 
 ## Threat Modeling Assistance
 
 ### Prompt Pattern
 
-```
+```text
 Help me threat model this system using STRIDE:
 
 ***System Description***
@@ -52,7 +62,7 @@ For each STRIDE category:
 
 ### Prompt Pattern
 
-```
+````text
 Review this security configuration for best practices:
 
 ```[config language]
@@ -67,13 +77,13 @@ Check for:
 5. Exposed secrets or credentials.
 
 Suggest fixes for any issues found.
-```
+````
 
 ## Incident Analysis
 
 ### Prompt Pattern
 
-```
+```text
 Help me analyze this security incident:
 
 ***Timeline***

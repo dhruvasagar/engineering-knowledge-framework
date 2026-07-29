@@ -1,3 +1,12 @@
+---
+title: "Engineering Glossary"
+description: "This glossary defines the foundational engineering terminology used throughout the Engineering Knowledge Framework."
+type: glossary
+capability: engineering
+status: published
+last_reviewed: 2026-07-28
+---
+
 # Purpose
 
 This glossary defines the foundational engineering terminology used

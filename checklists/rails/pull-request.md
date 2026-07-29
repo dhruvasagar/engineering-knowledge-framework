@@ -1,3 +1,13 @@
+---
+title: "Rails Pull Request Checklist"
+description: "Ensure every Rails pull request meets quality standards before merging."
+type: checklist
+capability: rails
+status: published
+tags: [pull, request]
+last_reviewed: 2026-07-28
+---
+
 # Purpose
 
 Ensure every Rails pull request meets quality standards before merging.

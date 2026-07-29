@@ -1,3 +1,12 @@
+---
+title: "Quality Checklists Index"
+description: "This directory contains checklists for quality-related engineering activities."
+type: checklist
+capability: quality
+status: published
+last_reviewed: 2026-07-28
+---
+
 # Purpose
 
 This directory contains checklists for quality-related engineering

@@ -1,3 +1,13 @@
+---
+title: "AI-Assisted Code Review"
+description: "Perform thorough code reviews by combining AI analysis with human engineering judgement."
+type: playbook
+capability: ai
+status: published
+tags: [assisted, code, review]
+last_reviewed: 2026-07-28
+---
+
 # Objective
 
 Perform thorough code reviews by combining AI analysis with human

@@ -1,3 +1,13 @@
+---
+title: "ADR 0005: Foundation Capabilities First"
+description: "Build ***Engineering Fundamentals*** and ***Software Architecture*** as the first two capabilities before any technology-specific capabilities (e.g., Rails, Security, Testing)."
+type: adr
+capability: architecture
+status: published
+tags: [foundation, capabilities, first]
+last_reviewed: 2026-07-28
+---
+
 # Context
 
 The framework has many potential capabilities it could develop:

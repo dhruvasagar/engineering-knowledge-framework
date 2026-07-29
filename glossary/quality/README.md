@@ -1,3 +1,12 @@
+---
+title: "Engineering Quality Glossary"
+description: "This glossary defines engineering quality terminology used throughout the Engineering Knowledge Framework."
+type: glossary
+capability: quality
+status: published
+last_reviewed: 2026-07-28
+---
+
 # Purpose
 
 This glossary defines engineering quality terminology used throughout

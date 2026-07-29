@@ -1,3 +1,13 @@
+---
+title: "AI Pair Programming"
+description: "Use AI as a collaborative programming partner to improve productivity, explore solutions and catch issues early."
+type: playbook
+capability: ai
+status: published
+tags: [pair, programming]
+last_reviewed: 2026-07-28
+---
+
 # Objective
 
 Use AI as a collaborative programming partner to improve productivity,

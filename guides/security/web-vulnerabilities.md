@@ -1,3 +1,13 @@
+---
+title: "Web Application Vulnerabilities"
+description: "Understanding common web vulnerabilities is essential for building secure applications."
+type: guide
+capability: security
+status: published
+tags: [web, vulnerabilities]
+last_reviewed: 2026-07-28
+---
+
 # Purpose
 
 Understanding common web vulnerabilities is essential for building

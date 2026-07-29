@@ -1,3 +1,13 @@
+---
+title: "Architecture Review Playbook"
+description: "Ensure architectural decisions are sound, well-documented, aligned with principles, and appropriate for the system's context and goals."
+type: playbook
+capability: architecture
+status: published
+tags: [review]
+last_reviewed: 2026-07-28
+---
+
 # Objective
 
 Ensure architectural decisions are sound, well-documented, aligned with

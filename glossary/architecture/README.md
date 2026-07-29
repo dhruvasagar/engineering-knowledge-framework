@@ -1,3 +1,12 @@
+---
+title: "Architecture Glossary"
+description: "This glossary defines the software architecture terminology used throughout the Engineering Knowledge Framework."
+type: glossary
+capability: architecture
+status: published
+last_reviewed: 2026-07-28
+---
+
 # Purpose
 
 This glossary defines the software architecture terminology used

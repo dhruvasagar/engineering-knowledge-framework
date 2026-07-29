@@ -1,3 +1,12 @@
+---
+title: "Engineering Quality Handbook"
+description: "Engineering quality is the discipline of ensuring that software meets its intended purpose, is maintainable over time and can be delivered reliably."
+type: handbook
+capability: quality
+status: published
+last_reviewed: 2026-07-28
+---
+
 # Purpose
 
 Engineering quality is the discipline of ensuring that software meets

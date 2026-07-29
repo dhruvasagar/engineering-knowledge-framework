@@ -1,3 +1,12 @@
+---
+title: "Rails References"
+description: "Quick-reference material for Rails development."
+type: reference
+capability: rails
+status: published
+last_reviewed: 2026-07-28
+---
+
 # Purpose
 
 Quick-reference material for Rails development.
@@ -31,10 +40,10 @@ in-depth explanations, see the referenced guides and handbooks.
 | Command                                        | Purpose                    |
 |------------------------------------------------|----------------------------|
 | `bundle exec rspec`                            | Run full test suite.       |
-| `bundle exec rspec spec*models*`               | Run model specs.           |
-| `bundle exec rspec spec*requests*`             | Run request specs.         |
-| `bundle exec rspec spec*system*`               | Run system specs.          |
-| `bundle exec rspec spec*models*user_spec.rb:5` | Run a single test by line. |
+| `bundle exec rspec spec/models/`               | Run model specs.           |
+| `bundle exec rspec spec/requests/`             | Run request specs.         |
+| `bundle exec rspec spec/system/`               | Run system specs.          |
+| `bundle exec rspec spec/models/user_spec.rb:5` | Run a single test by line. |
 
 # Key Gems
 

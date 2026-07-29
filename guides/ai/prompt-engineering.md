@@ -1,3 +1,13 @@
+---
+title: "Prompt Engineering"
+description: "Prompt engineering is the practice of designing inputs that elicit useful, accurate output from AI systems."
+type: guide
+capability: ai
+status: published
+tags: [prompt, engineering]
+last_reviewed: 2026-07-28
+---
+
 # Purpose
 
 Prompt engineering is the practice of designing inputs that elicit
@@ -15,14 +25,14 @@ Vague prompts produce vague results.
 
 Good:
 
-```
+```text
 Write a Ruby method that validates an email address format using a
 regular expression. Return true if valid, false otherwise.
 ```
 
 Avoid:
 
-```
+```text
 Write some code for email validation.
 ```
 
@@ -69,7 +79,7 @@ Treat prompt engineering as an iterative process:
 
 Assign a role to the AI to focus its output.
 
-```
+```text
 You are a senior Rails engineer reviewing a pull request. Focus on
 design issues, security concerns and testing gaps.
 ```
@@ -78,7 +88,7 @@ design issues, security concerns and testing gaps.
 
 Specify the exact output format.
 
-```
+```text
 Provide the response as a JSON object with keys: "summary",
 "issues" (array), and "recommendations" (array).
 ```
@@ -87,7 +97,7 @@ Provide the response as a JSON object with keys: "summary",
 
 Limit the scope explicitly.
 
-```
+```text
 Only suggest changes to the service layer. Do not suggest changes to
 the database schema or frontend code.
 ```
@@ -96,7 +106,7 @@ the database schema or frontend code.
 
 Ask the AI to verify its own output.
 
-```
+```text
 After generating the code, review it for:
 1. Security vulnerabilities.
 2. Edge cases that are not handled.
@@ -107,7 +117,7 @@ After generating the code, review it for:
 
 Break complex requests into smaller steps.
 
-```
+```text
 Step 1: Analyse the current error handling in this controller.
 Step 2: Propose a service object to extract the business logic.
 Step 3: Write the service object implementation.

@@ -1,3 +1,13 @@
+---
+title: "Roadmap"
+description: "This roadmap describes the planned evolution of the Engineering Knowledge Framework."
+type: governance
+capability: governance
+status: published
+tags: [roadmap]
+last_reviewed: 2026-07-28
+---
+
 # Purpose
 
 This roadmap describes the planned evolution of the Engineering
@@ -86,7 +96,7 @@ Establish the governance and architectural foundations of the framework.
 - [x] `DOCUMENT_TYPES.org`: Canonical document taxonomy.
 - [x] `CONTRIBUTING.org`: Contribution guidelines and processes.
 - [x] `ARCHITECTURE.org`: Architectural overview of the framework.
-- [x] `glossary*README.org`: Glossary structure and writing guidelines.
+- [x] `glossary/README.org`: Glossary structure and writing guidelines.
 - [x] Capability handbook stubs: engineering, architecture, rails, security, accessibility, quality, ai.
 - [x] Workflow playbook stubs: code-review, architecture-review, security-review, accessibility-review, incident-response, release, project-kickoff.
 
@@ -135,43 +145,43 @@ Software Architecture that:
 
 ### 2a — Engineering Fundamentals
 
-- [x] `handbooks*engineering*README.org`: Engineering Fundamentals Handbook covering core principles, quality philosophy and decision frameworks.
-- [x] `glossary*engineering*README.org`: Foundational engineering terminology (abstraction, cohesion, coupling, encapsulation, modularity, separation of concerns, technical debt).
-- [x] `guides*engineering*code-organization.org`: Code organization principles, patterns and anti-patterns.
-- [x] `guides*engineering*error-handling.org`: Error handling principles, patterns and logging standards.
-- [x] `guides*engineering*testing-strategies.org`: Testing philosophy, test pyramid and best practices.
-- [x] `guides*engineering*logging.org`: Logging standards and structured logging patterns.
-- [x] `learning-paths*engineering*README.org`: Progressive learning paths (beginner, intermediate, advanced) with topics, projects and assessment criteria.
-- [x] `references*engineering*README.org`: Quick-reference material including design principles, code organization patterns, testing guidelines, log levels, error handling and recommended reading.
+- [x] `handbooks/engineering/README.org`: Engineering Fundamentals Handbook covering core principles, quality philosophy and decision frameworks.
+- [x] `glossary/engineering/README.org`: Foundational engineering terminology (abstraction, cohesion, coupling, encapsulation, modularity, separation of concerns, technical debt).
+- [x] `guides/engineering/code-organization.org`: Code organization principles, patterns and anti-patterns.
+- [x] `guides/engineering/error-handling.org`: Error handling principles, patterns and logging standards.
+- [x] `guides/engineering/testing-strategies.org`: Testing philosophy, test pyramid and best practices.
+- [x] `guides/engineering/logging.org`: Logging standards and structured logging patterns.
+- [x] `learning-paths/engineering/README.org`: Progressive learning paths (beginner, intermediate, advanced) with topics, projects and assessment criteria.
+- [x] `references/engineering/README.org`: Quick-reference material including design principles, code organization patterns, testing guidelines, log levels, error handling and recommended reading.
 
 ### 2b — Software Architecture
 
-- [x] `handbooks*architecture*README.org`: Software Architecture Handbook covering architectural principles, patterns, decision frameworks and documentation standards.
-- [x] `glossary*architecture*README.org`: Architecture-specific terminology (ADR, C4 model, DDD, hexagonal architecture, quality attributes, trade-offs).
-- [x] `guides*architecture*adr-writing-guide.org`: How to write effective Architecture Decision Records.
-- [x] `guides*architecture*architectural-patterns.org`: Guide to common architectural patterns and when to apply them.
-- [x] `guides*architecture*api-design.org`: API design principles and standards.
-- [x] `guides*architecture*system-modeling.org`: System modeling with C4 and event modeling.
-- [x] `learning-paths*architecture*README.org`: Architecture learning paths (beginner, intermediate, advanced) with topics, projects and assessment criteria.
-- [x] `references*architecture*README.org`: Quick-reference material including C4 model, pattern comparison, HTTP status codes, quality attributes, ADR lifecycle and recommended reading.
+- [x] `handbooks/architecture/README.org`: Software Architecture Handbook covering architectural principles, patterns, decision frameworks and documentation standards.
+- [x] `glossary/architecture/README.org`: Architecture-specific terminology (ADR, C4 model, DDD, hexagonal architecture, quality attributes, trade-offs).
+- [x] `guides/architecture/adr-writing-guide.org`: How to write effective Architecture Decision Records.
+- [x] `guides/architecture/architectural-patterns.org`: Guide to common architectural patterns and when to apply them.
+- [x] `guides/architecture/api-design.org`: API design principles and standards.
+- [x] `guides/architecture/system-modeling.org`: System modeling with C4 and event modeling.
+- [x] `learning-paths/architecture/README.org`: Architecture learning paths (beginner, intermediate, advanced) with topics, projects and assessment criteria.
+- [x] `references/architecture/README.org`: Quick-reference material including C4 model, pattern comparison, HTTP status codes, quality attributes, ADR lifecycle and recommended reading.
 
 ### Practices
 
-- [x] `templates*adr*README.org`: ADR template with context, decision, consequences and alternatives format.
-- [x] `templates*rfc*README.org`: RFC template for major architectural proposals.
-- [x] `checklists*architecture-review.org`: Verification checklist for architecture reviews.
-- [x] `checklists*design-decision.org`: Verification checklist for design decisions.
-- [x] `checklists*tech-debt-assessment.org`: Verification checklist for technical debt assessment.
+- [x] `templates/adr/README.org`: ADR template with context, decision, consequences and alternatives format.
+- [x] `templates/rfc/README.org`: RFC template for major architectural proposals.
+- [x] `checklists/architecture-review.org`: Verification checklist for architecture reviews.
+- [x] `checklists/design-decision.org`: Verification checklist for design decisions.
+- [x] `checklists/tech-debt-assessment.org`: Verification checklist for technical debt assessment.
 
 ### Workflows
 
-- [x] `playbooks*architecture-review*README.org`: Architecture review playbook with criteria, process and documentation standards.
-- [x] `playbooks*code-review*README.org`: Engineering code review playbook covering principle-based and implementation-level review.
+- [x] `playbooks/architecture-review/README.org`: Architecture review playbook with criteria, process and documentation standards.
+- [x] `playbooks/code-review/README.org`: Engineering code review playbook covering principle-based and implementation-level review.
 
 ### AI Workflows
 
-- [x] AI Workflows for Engineering (`prompts*engineering-ai-workflows.org`): Prompt patterns for code review, design exploration, refactoring, documentation generation and problem diagnosis.
-- [x] AI Workflows for Architecture (`prompts*architecture-ai-workflows.org`): Prompt patterns for trade-off analysis, ADR drafting, pattern selection, review preparation and system design exploration.
+- [x] AI Workflows for Engineering (`prompts/engineering-ai-workflows.org`): Prompt patterns for code review, design exploration, refactoring, documentation generation and problem diagnosis.
+- [x] AI Workflows for Architecture (`prompts/architecture-ai-workflows.org`): Prompt patterns for trade-off analysis, ADR drafting, pattern selection, review preparation and system design exploration.
 
 ## Success Criteria
 
@@ -214,89 +224,89 @@ Engineering Fundamentals and Architecture capabilities as templates.
 
 ### [x] Rails Engineering — Complete (all 9 document types)
 
-- [x] `handbooks*rails*README.org`: Rails Engineering Handbook.
-- [x] `glossary*rails*README.org`: Rails-specific terminology.
-- [x] `guides*rails*service-objects.org`, `testing.org`, `audit-guide.org`, `project-standards.org`, `active-record.org`, `api-development.org`, `background-jobs.org`, `authentication-authorization.org` (8 guides).
-- [x] `playbooks*rails*upgrade.org`, `deployment.org`, `README.org` (3 playbooks).
-- [x] `checklists*rails*pull-request.org`, `security-review.org`, `deployment.org`, `README.org` (4 checklists).
-- [x] `templates*rails*service-object.org`, `form-object.org`, `query-object.org`, `policy-object.org`, `README.org` (5 templates).
-- [x] `learning-paths*rails*README.org`: Three-tier learning path.
-- [x] `references*rails*README.org`: Quick-reference material.
-- [x] `prompts*rails-ai-workflows.org`: AI workflows for Rails development.
+- [x] `handbooks/rails/README.org`: Rails Engineering Handbook.
+- [x] `glossary/rails/README.org`: Rails-specific terminology.
+- [x] `guides/rails/service-objects.org`, `testing.org`, `audit-guide.org`, `project-standards.org`, `active-record.org`, `api-development.org`, `background-jobs.org`, `authentication-authorization.org` (8 guides).
+- [x] `playbooks/rails/upgrade.org`, `deployment.org`, `README.org` (3 playbooks).
+- [x] `checklists/rails/pull-request.org`, `security-review.org`, `deployment.org`, `README.org` (4 checklists).
+- [x] `templates/rails/service-object.org`, `form-object.org`, `query-object.org`, `policy-object.org`, `README.org` (5 templates).
+- [x] `learning-paths/rails/README.org`: Three-tier learning path.
+- [x] `references/rails/README.org`: Quick-reference material.
+- [x] `prompts/rails-ai-workflows.org`: AI workflows for Rails development.
 
 ### [x] Rails Engineering — Complete (all 9 document types)
 
-- [x] `handbooks*rails*README.org`: Rails Engineering Handbook.
-- [x] `glossary*rails*README.org`: Rails-specific terminology.
-- [x] `guides*rails*` (8 guides): service-objects, testing, audit-guide,
+- [x] `handbooks/rails/README.org`: Rails Engineering Handbook.
+- [x] `glossary/rails/README.org`: Rails-specific terminology.
+- [x] `guides/rails/` (8 guides): service-objects, testing, audit-guide,
   project-standards, active-record, api-development, background-jobs,
   authentication-authorization.
-- [x] `playbooks*rails*` (3): upgrade, deployment, README.
-- [x] `checklists*rails*` (4): pull-request, security-review, deployment, README.
-- [x] `templates*rails*` (5): service-object, form-object, query-object,
+- [x] `playbooks/rails/` (3): upgrade, deployment, README.
+- [x] `checklists/rails/` (4): pull-request, security-review, deployment, README.
+- [x] `templates/rails/` (5): service-object, form-object, query-object,
   policy-object, README.
-- [x] `learning-paths*rails*README.org`: Three-tier learning path.
-- [x] `references*rails*README.org`: Quick-reference material.
-- [x] `prompts*rails-ai-workflows.org`: AI workflows for Rails development.
+- [x] `learning-paths/rails/README.org`: Three-tier learning path.
+- [x] `references/rails/README.org`: Quick-reference material.
+- [x] `prompts/rails-ai-workflows.org`: AI workflows for Rails development.
 
 ### [x] Security Engineering — Complete (all 9 document types)
 
-- [x] `handbooks*security*README.org`: Security Engineering Handbook.
-- [x] `glossary*security*README.org`: Security terminology.
-- [x] `guides*security*` (3 + README): secure-coding, web-vulnerabilities,
+- [x] `handbooks/security/README.org`: Security Engineering Handbook.
+- [x] `glossary/security/README.org`: Security terminology.
+- [x] `guides/security/` (3 + README): secure-coding, web-vulnerabilities,
   dependency-security.
-- [x] `playbooks*security-review*README.org`: Security review workflow.
-- [x] `checklists*security-review.org`: General security review checklist.
-- [x] `templates*security*` (3): threat-model, security-review-report, README.
-- [x] `learning-paths*security*README.org`: Three-tier learning path.
-- [x] `references*security*README.org`: Quick-reference material.
-- [x] `prompts*security-ai-workflows.org`: AI workflows for security.
+- [x] `playbooks/security-review/README.org`: Security review workflow.
+- [x] `checklists/security-review.org`: General security review checklist.
+- [x] `templates/security/` (3): threat-model, security-review-report, README.
+- [x] `learning-paths/security/README.org`: Three-tier learning path.
+- [x] `references/security/README.org`: Quick-reference material.
+- [x] `prompts/security-ai-workflows.org`: AI workflows for security.
 
 ### [x] AI Engineering — Complete (all 9 document types)
 
-- [x] `handbooks/ai*README.org`: AI Engineering Handbook.
-- [x] `glossary*ai*README.org`: AI terminology.
-- [x] `guides*ai*` (3): prompt-engineering, context-engineering, ai-safety.
-- [x] `playbooks*ai*` (4): ai-assisted-code-review,
+- [x] `handbooks/ai/README.org`: AI Engineering Handbook.
+- [x] `glossary/ai/README.org`: AI terminology.
+- [x] `guides/ai/` (3): prompt-engineering, context-engineering, ai-safety.
+- [x] `playbooks/ai/` (4): ai-assisted-code-review,
   ai-assisted-architecture-review, ai-pair-programming, README.
-- [x] `checklists*ai-usage.org`: AI usage verification checklist.
-- [x] `templates/ai*` (4): context-pack, prompt-template,
+- [x] `checklists/ai-usage.org`: AI usage verification checklist.
+- [x] `templates/ai/` (4): context-pack, prompt-template,
   ai-review-response, README.
-- [x] `learning-paths*ai*README.org`: Three-tier learning path.
-- [x] `references*ai*README.org`: Quick-reference material.
-- [x] `prompts*ai-ai-workflows.org`: AI workflows for AI engineering.
+- [x] `learning-paths/ai/README.org`: Three-tier learning path.
+- [x] `references/ai/README.org`: Quick-reference material.
+- [x] `prompts/ai-ai-workflows.org`: AI workflows for AI engineering.
 
 ### [x] Engineering Quality — Complete (all 9 document types)
 
-- [x] `handbooks*quality*README.org`: Engineering Quality Handbook.
-- [x] `glossary*quality*README.org`: Quality terminology.
-- [x] `guides*quality*` (3): code-review-standards, quality-metrics,
+- [x] `handbooks/quality/README.org`: Engineering Quality Handbook.
+- [x] `glossary/quality/README.org`: Quality terminology.
+- [x] `guides/quality/` (3): code-review-standards, quality-metrics,
   technical-debt-management.
-- [x] `playbooks*quality*` (4): quality-review, tech-debt-remediation,
+- [x] `playbooks/quality/` (4): quality-review, tech-debt-remediation,
   release-quality-gate, README.
-- [x] `checklists*quality*` (4): quality-gate, release-readiness,
+- [x] `checklists/quality/` (4): quality-gate, release-readiness,
   tech-debt-triage, README.
-- [x] `templates*quality*` (4): quality-report, tech-debt-register,
+- [x] `templates/quality/` (4): quality-report, tech-debt-register,
   quality-dashboard, README.
-- [x] `learning-paths*quality*README.org`: Three-tier learning path.
-- [x] `references*quality*README.org`: Quick-reference material.
-- [x] `prompts*quality-ai-workflows.org`: AI workflows for quality.
+- [x] `learning-paths/quality/README.org`: Three-tier learning path.
+- [x] `references/quality/README.org`: Quick-reference material.
+- [x] `prompts/quality-ai-workflows.org`: AI workflows for quality.
 
 ### [x] Accessibility Engineering — Complete (all 9 document types)
 
-- [x] `handbooks*accessibility*README.org`: Accessibility Engineering Handbook.
-- [x] `glossary*accessibility*README.org`: Accessibility terminology.
-- [x] `guides*accessibility*` (6 + README): semantic-html,
+- [x] `handbooks/accessibility/README.org`: Accessibility Engineering Handbook.
+- [x] `glossary/accessibility/README.org`: Accessibility terminology.
+- [x] `guides/accessibility/` (6 + README): semantic-html,
   keyboard-accessibility, accessible-forms, aria-patterns,
   colour-and-contrast, screen-reader-testing.
-- [x] `playbooks*accessibility-review*README.org`: Accessibility review workflow.
-- [x] `checklists*accessibility*` (4): wcag-audit, pr-review,
+- [x] `playbooks/accessibility-review/README.org`: Accessibility review workflow.
+- [x] `checklists/accessibility/` (4): wcag-audit, pr-review,
   design-review, README.
-- [x] `templates*accessibility*` (3): accessibility-report,
+- [x] `templates/accessibility/` (3): accessibility-report,
   accessibility-statement, README.
-- [x] `learning-paths*accessibility*README.org`: Three-tier learning path.
-- [x] `references*accessibility*README.org`: Quick-reference material.
-- [x] `prompts*accessibility-ai-workflows.org`: AI workflows for accessibility.
+- [x] `learning-paths/accessibility/README.org`: Three-tier learning path.
+- [x] `references/accessibility/README.org`: Quick-reference material.
+- [x] `prompts/accessibility-ai-workflows.org`: AI workflows for accessibility.
 
 
 
@@ -366,37 +376,37 @@ the engineering lifecycle.
 
 ## Completed
 
-- [x] `handbooks/ai*README.org`: AI Engineering Handbook — principles, context engineering, workflow patterns, verification.
-- [x] `glossary*ai*README.org`: AI terminology.
-- [x] `guides*ai*prompt-engineering.org`: Prompt engineering principles and patterns.
-- [x] `guides*ai*context-engineering.org`: Context engineering with categories and templates.
-- [x] `guides*ai*ai-safety.org`: AI safety practices and human oversight.
-- [x] `checklists*ai-usage.org`: Verification checklist for AI-generated output.
-- [x] `learning-paths/ai*README.org`: Three-tier learning path.
-- [x] `references*ai*README.org`: Quick-reference material.
-- [x] `prompts*engineering-ai-workflows.org`: AI workflows for code review, design exploration, refactoring.
-- [x] `prompts*architecture-ai-workflows.org`: AI workflows for trade-off analysis, ADR drafting, pattern selection.
-- [x] `prompts*rails-ai-workflows.org`: AI workflows for Rails model generation, API development, testing.
-- [x] `prompts*security-ai-workflows.org`: AI workflows for vulnerability identification, threat modeling.
-- [x] `playbooks*ai*ai-assisted-code-review.org`: AI-assisted code review workflow.
-- [x] `playbooks*ai*ai-assisted-architecture-review.org`: AI-assisted architecture review workflow.
-- [x] `playbooks*ai*ai-pair-programming.org`: AI pair programming workflow.
-- [x] `templates*ai*context-pack.org`: Context pack template for AI assistants.
-- [x] `templates*ai*prompt-template.org`: Standard prompt structure template.
-- [x] `templates*ai*ai-review-response.org`: AI review findings documentation template.
-- [x] `prompts*ai-ai-workflows.org`: AI workflows for AI engineering.
-- [x] `prompts*quality-ai-workflows.org`: AI workflows for quality engineering.
-- [x] `prompts*accessibility-ai-workflows.org`: AI workflows for accessibility engineering.
-- [x] `prompts*README.org`: Index of all AI workflow documents.
+- [x] `handbooks/ai/README.org`: AI Engineering Handbook — principles, context engineering, workflow patterns, verification.
+- [x] `glossary/ai/README.org`: AI terminology.
+- [x] `guides/ai/prompt-engineering.org`: Prompt engineering principles and patterns.
+- [x] `guides/ai/context-engineering.org`: Context engineering with categories and templates.
+- [x] `guides/ai/ai-safety.org`: AI safety practices and human oversight.
+- [x] `checklists/ai-usage.org`: Verification checklist for AI-generated output.
+- [x] `learning-paths/ai/README.org`: Three-tier learning path.
+- [x] `references/ai/README.org`: Quick-reference material.
+- [x] `prompts/engineering-ai-workflows.org`: AI workflows for code review, design exploration, refactoring.
+- [x] `prompts/architecture-ai-workflows.org`: AI workflows for trade-off analysis, ADR drafting, pattern selection.
+- [x] `prompts/rails-ai-workflows.org`: AI workflows for Rails model generation, API development, testing.
+- [x] `prompts/security-ai-workflows.org`: AI workflows for vulnerability identification, threat modeling.
+- [x] `playbooks/ai/ai-assisted-code-review.org`: AI-assisted code review workflow.
+- [x] `playbooks/ai/ai-assisted-architecture-review.org`: AI-assisted architecture review workflow.
+- [x] `playbooks/ai/ai-pair-programming.org`: AI pair programming workflow.
+- [x] `templates/ai/context-pack.org`: Context pack template for AI assistants.
+- [x] `templates/ai/prompt-template.org`: Standard prompt structure template.
+- [x] `templates/ai/ai-review-response.org`: AI review findings documentation template.
+- [x] `prompts/ai-ai-workflows.org`: AI workflows for AI engineering.
+- [x] `prompts/quality-ai-workflows.org`: AI workflows for quality engineering.
+- [x] `prompts/accessibility-ai-workflows.org`: AI workflows for accessibility engineering.
+- [x] `prompts/README.org`: Index of all AI workflow documents.
 
 ## Completed (added)
 
-- [x] `guides*ai*agentic-workflows.org`: Patterns for multi-step AI-assisted engineering workflows.
-- [x] `guides*ai*collaboration-patterns.org`: How engineers and AI interact in different contexts.
-- [x] `guides*ai*human-review-strategies.org`: When and how to review AI output effectively.
-- [x] `guides*ai*evaluation-frameworks.org`: Frameworks for measuring AI output quality and reliability.
-- [x] `playbooks*ai*verification-workflows.org`: Systematic verification of AI-generated code, architecture and documentation.
-- [x] `guides*ai*knowledge-extraction.org`: Using AI to extract and structure engineering knowledge.
+- [x] `guides/ai/agentic-workflows.org`: Patterns for multi-step AI-assisted engineering workflows.
+- [x] `guides/ai/collaboration-patterns.org`: How engineers and AI interact in different contexts.
+- [x] `guides/ai/human-review-strategies.org`: When and how to review AI output effectively.
+- [x] `guides/ai/evaluation-frameworks.org`: Frameworks for measuring AI output quality and reliability.
+- [x] `playbooks/ai/verification-workflows.org`: Systematic verification of AI-generated code, architecture and documentation.
+- [x] `guides/ai/knowledge-extraction.org`: Using AI to extract and structure engineering knowledge.
 
 ## Long-term Goal
 
@@ -425,12 +435,12 @@ development.
 
 ## Completed
 
-- [x] `learning-paths*engineering*README.org`: Three-tier learning path for Engineering Fundamentals.
-- [x] `learning-paths*architecture*README.org`: Three-tier learning path for Software Architecture.
-- [x] `learning-paths*rails*README.org`: Three-tier learning path for Rails Engineering.
-- [x] `learning-paths*security*README.org`: Three-tier learning path for Security Engineering.
-- [x] `learning-paths*ai*README.org`: Three-tier learning path for AI Engineering.
-- [x] `learning-paths*quality*README.org`: Three-tier learning path for Engineering Quality.
+- [x] `learning-paths/engineering/README.org`: Three-tier learning path for Engineering Fundamentals.
+- [x] `learning-paths/architecture/README.org`: Three-tier learning path for Software Architecture.
+- [x] `learning-paths/rails/README.org`: Three-tier learning path for Rails Engineering.
+- [x] `learning-paths/security/README.org`: Three-tier learning path for Security Engineering.
+- [x] `learning-paths/ai/README.org`: Three-tier learning path for AI Engineering.
+- [x] `learning-paths/quality/README.org`: Three-tier learning path for Engineering Quality.
 
 ## Next Steps
 
@@ -476,12 +486,26 @@ Develop tooling that improves authoring, validation and discovery.
 Initial tooling focused on correctness and consistency:
 
 - [x] Link validation: Verify all markdown cross-references resolve to existing files.
-- [x] Style validation: Check documents against [Style Guide](./style-guide.md) rules (heading levels, metadata, front matter, filename conventions).
+- [x] Style validation: Check documents against [Style Guide](./style-guide.md) rules (heading levels, front matter, filename conventions).
 - [x] Glossary validation: Ensure all glossary entries have required fields, non-empty definitions, and no duplicate terms.
-- [x] Bullet syntax linting: Detect incorrect list formatting.
-- [x] Metadata validation: Verify required `title:` and `description:` front matter.
+- [x] Metadata validation: Verify required `title`, `description`, `type`, `capability`, `status` and `last_reviewed` front matter, with values drawn from the document taxonomy.
+- [x] Code fence validation: Every fence carries a language tag, is balanced, and is never nested at equal depth.
+- [x] Table validation: Separator rows use `|` rather than org-mode `+`, cells carry three or more dashes, column counts are consistent, and no extra separator appears mid-table.
+- [x] Migration residue validation: Detect org-mode keywords, `=verbatim=` markup, `[[target][text]]` links, URLs whose slashes became `*`, and untranslated non-English text.
 - [x] TOC validation: Ensure toc.md entries match actual file inventory.
 - [x] Validation runner: `make validate` runs all validators in sequence with summary output.
+- [x] Validator tests: `make test` runs the rule suite; `make validate` runs it first, so a validator that has stopped checking anything fails the build rather than reporting success.
+
+Correction, 2026-07-29: this phase was previously marked complete while
+`validate-style.py` checked only filenames. Its heading rule used
+org-mode syntax that could never match Markdown, and its metadata and
+bullet rules returned success unconditionally. The repository reported
+clean across 302 files while carrying 227 untagged code fences, 11
+nested fences that truncated documents when rendered, roughly 370
+instances of corrupted paths and URLs, and no front matter at all. The
+deliverables above reflect what the tooling now actually enforces, and
+every rule has a test. See
+[Slice Plan 0001](./docs/slice-plans/0001-ai-native-tooling.md).
 
 ### Phase 6b — Generator Tooling (Not Started)
 
@@ -499,8 +523,8 @@ Tooling for discovery and navigation:
 - [x] Cross-reference extraction: Parse all documents and extract markdown links.
 - [x] Knowledge graph generation: Produce machine-readable graph (JSON + Graphviz DOT) of document relationships.
 - [x] Capability completeness report: Per-capability report of which document types are present and missing.
-- [ ] AI context packaging: Generate condensed context packs for AI assistants from selected documents.
-- [ ] Search indexing: Build search index across all documents (handled by Zola for the site; standalone index pending).
+- [x] AI context packaging: Generate condensed context packs for AI assistants from selected documents. Delivered as both `tools/context-pack.py` and an MCP tool — see Phase 7c.
+- [ ] Search indexing: Build search index across all documents. Zola covers the site; a standalone index is pending. Search currently matches titles and paths only, so queries for terms discussed inside documents return nothing.
 
 ## Development Approach
 

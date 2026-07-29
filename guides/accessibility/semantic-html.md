@@ -1,3 +1,13 @@
+---
+title: "Semantic HTML"
+description: "Semantic HTML is the foundation of accessible web development."
+type: guide
+capability: accessibility
+status: published
+tags: [semantic, html]
+last_reviewed: 2026-07-28
+---
+
 # Purpose
 
 Semantic HTML is the foundation of accessible web development. Using
@@ -13,14 +23,14 @@ matches the meaning of your content.
 
 | Content      | Correct Element       | Common Mistake         |
 |--------------|-----------------------|------------------------|
-| Navigation   | `<nav>`               | `<div class`"nav">=    |
-| Main content | `<main>`              | `<div class`"main">=   |
+| Navigation   | `<nav>`               | `<div class="nav">`    |
+| Main content | `<main>`              | `<div class="main">`   |
 | Article      | `<article>`           | `<div>`                |
 | Section      | `<section>`           | `<div>`                |
-| Heading      | `<h1>-<h6>`           | `<div class`"title">=  |
+| Heading      | `<h1>-<h6>`           | `<div class="title">`  |
 | List         | `<ul>*<ol>`           | `<div>` with bullets   |
-| Button       | `<button>`            | `<div onclick`"...">=  |
-| Link         | `<a>`                 | `<span onclick`"...">= |
+| Button       | `<button>`            | `<div onclick="...">`  |
+| Link         | `<a>`                 | `<span onclick="...">` |
 | Form input   | `<input>`, `<select>` | =<div contenteditable> |
 
 ## Follow Heading Hierarchy
@@ -50,7 +60,7 @@ Provide landmark regions to enable quick navigation:
 
 ## Div Soup
 
-```
+```html
 <!-- Avoid -->
 <div class`"header">
   <div class`"nav">
@@ -59,7 +69,7 @@ Provide landmark regions to enable quick navigation:
 <*div>
 ```
 
-```
+```html
 <!-- Prefer -->
 <header>
   <nav>
@@ -70,7 +80,7 @@ Provide landmark regions to enable quick navigation:
 
 ## Button vs Div
 
-```
+```html
 <!-- Avoid — not keyboard accessible, no button semantics -->
 <div class`"btn" onclick`"submit()">Submit<*div>
 
@@ -80,7 +90,7 @@ Provide landmark regions to enable quick navigation:
 
 ## Styling Divs as Headings
 
-```
+```html
 <!-- Avoid — screen readers do not recognise this as a heading -->
 <div class="heading-large">Section Title<*div>
 

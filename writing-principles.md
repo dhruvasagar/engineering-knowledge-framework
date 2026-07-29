@@ -1,3 +1,13 @@
+---
+title: "Writing Principles"
+description: "This document defines the principles that guide how engineering knowledge should be written within the Engineering Knowledge Framework."
+type: governance
+capability: governance
+status: published
+tags: [writing, principles]
+last_reviewed: 2026-07-28
+---
+
 # Purpose
 
 This document defines the principles that guide how engineering
@@ -143,7 +153,7 @@ Avoid creating large monolithic documents.
 
 Instead:
 
-```
+```text
 Handbook
 ↓
 Guide
@@ -350,7 +360,7 @@ Knowledge should continuously evolve.
 
 The expected lifecycle is:
 
-```
+```text
 Experience
 ↓
 Reflection

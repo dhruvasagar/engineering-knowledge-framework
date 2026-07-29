@@ -1,3 +1,13 @@
+---
+title: "ADR 0004: AI-Native Knowledge Design"
+description: "Treat AI as a ***first-class consumer*** of the knowledge repository."
+type: adr
+capability: architecture
+status: published
+tags: [native, knowledge, design]
+last_reviewed: 2026-07-28
+---
+
 # Context
 
 Engineering knowledge is consumed by two distinct audiences:

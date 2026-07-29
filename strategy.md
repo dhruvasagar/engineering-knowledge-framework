@@ -1,3 +1,13 @@
+---
+title: "Strategy"
+description: "This document defines the long-term strategy for the Engineering Knowledge Framework."
+type: governance
+capability: governance
+status: published
+tags: [strategy]
+last_reviewed: 2026-07-28
+---
+
 # Purpose
 
 This document defines the long-term strategy for the Engineering
@@ -163,7 +173,7 @@ engineering collaborators while preserving human engineering judgement.
 
 Engineering knowledge should evolve continuously through:
 
-```
+```text
 Experience
 ↓
 Reflection

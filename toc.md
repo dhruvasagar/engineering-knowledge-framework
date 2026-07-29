@@ -1,3 +1,13 @@
+---
+title: "Table of Contents"
+description: "Complete inventory of framework documents, organized by capability and by cross-cutting topic."
+type: governance
+capability: governance
+status: published
+tags: [toc]
+last_reviewed: 2026-07-28
+---
+
 # How to Use This TOC
 
 This document provides two complementary views of the repository:
@@ -85,7 +95,7 @@ The foundational documents that define the framework itself.
 
 | Document                                                             | Description                            |
 |----------------------------------------------------------------------|----------------------------------------|
-| [Engineering Learning Paths](./learning-paths/engineering/README.md) | Beginner*intermediate*advanced tracks. |
+| [Engineering Learning Paths](./learning-paths/engineering/README.md) | Beginner/intermediate/advanced tracks. |
 
 ### References
 
@@ -146,7 +156,7 @@ The foundational documents that define the framework itself.
 
 | Document                                                               | Description                            |
 |------------------------------------------------------------------------|----------------------------------------|
-| [Architecture Learning Paths](./learning-paths/architecture/README.md) | Beginner*intermediate*advanced tracks. |
+| [Architecture Learning Paths](./learning-paths/architecture/README.md) | Beginner/intermediate/advanced tracks. |
 
 ### References
 
@@ -179,9 +189,9 @@ The foundational documents that define the framework itself.
 | Document                                                                           | Description                                                  |
 |------------------------------------------------------------------------------------|--------------------------------------------------------------|
 | [Service Objects](./guides/rails/service-objects.md)                               | When and how to use service objects, patterns, testing.      |
-| [Testing Rails Applications](./guides/rails/testing.md)                            | Test distribution, model*request*system specs.               |
+| [Testing Rails Applications](./guides/rails/testing.md)                            | Test distribution, model/request/system specs.               |
 | [Rails Audit Guide](./guides/rails/audit-guide.md)                                 | Systematic code quality, performance and security auditing.  |
-| [Rails Project Standards](./guides/rails/project-standards.md)                     | Mandatory tooling and CI*CD baseline for every project.      |
+| [Rails Project Standards](./guides/rails/project-standards.md)                     | Mandatory tooling and CI/CD baseline for every project.      |
 | [ActiveRecord Patterns](./guides/rails/active-record.md)                           | Scopes, query optimization, N+1 prevention, indexing.        |
 | [API Development with Rails](./guides/rails/api-development.md)                    | API-only setup, serialization, versioning, auth.             |
 | [Background Jobs](./guides/rails/background-jobs.md)                               | Framework selection, job design, error handling, monitoring. |
@@ -215,7 +225,7 @@ The foundational documents that define the framework itself.
 
 | Document                                                 | Description                            |
 |----------------------------------------------------------|----------------------------------------|
-| [Rails Learning Paths](./learning-paths/rails/README.md) | Beginner*intermediate*advanced tracks. |
+| [Rails Learning Paths](./learning-paths/rails/README.md) | Beginner/intermediate/advanced tracks. |
 
 ### References
 
@@ -268,7 +278,7 @@ The foundational documents that define the framework itself.
 
 | Document                                                       | Description                            |
 |----------------------------------------------------------------|----------------------------------------|
-| [Security Learning Paths](./learning-paths/security/README.md) | Beginner*intermediate*advanced tracks. |
+| [Security Learning Paths](./learning-paths/security/README.md) | Beginner/intermediate/advanced tracks. |
 
 ### References
 
@@ -339,7 +349,7 @@ The foundational documents that define the framework itself.
 
 | Document                                                                 | Description                            |
 |--------------------------------------------------------------------------|----------------------------------------|
-| [Engineering Quality Learning Paths](./learning-paths/quality/README.md) | Beginner*intermediate*advanced tracks. |
+| [Engineering Quality Learning Paths](./learning-paths/quality/README.md) | Beginner/intermediate/advanced tracks. |
 
 ### References
 
@@ -407,7 +417,7 @@ The foundational documents that define the framework itself.
 
 | Document                                                       | Description                            |
 |----------------------------------------------------------------|----------------------------------------|
-| [AI Engineering Learning Paths](./learning-paths/ai/README.md) | Beginner*intermediate*advanced tracks. |
+| [AI Engineering Learning Paths](./learning-paths/ai/README.md) | Beginner/intermediate/advanced tracks. |
 
 ### References
 
@@ -471,7 +481,7 @@ The foundational documents that define the framework itself.
 
 | Document                                                                 | Description                            |
 |--------------------------------------------------------------------------|----------------------------------------|
-| [Accessibility Learning Paths](./learning-paths/accessibility/README.md) | Beginner*intermediate*advanced tracks. |
+| [Accessibility Learning Paths](./learning-paths/accessibility/README.md) | Beginner/intermediate/advanced tracks. |
 
 ### References
 
@@ -494,7 +504,7 @@ The following indexes gather documents across capabilities by topic.
 | Capability   | Document                                                                  | Type      | Description                                   |
 |--------------|---------------------------------------------------------------------------|-----------|-----------------------------------------------|
 | Engineering  | [Testing Strategies](./guides/engineering/testing-strategies.md)          | Guide     | Test pyramid, what to test, test doubles.     |
-| Rails        | [Testing Rails Applications](./guides/rails/testing.md)                   | Guide     | Model*request*system specs, factory patterns. |
+| Rails        | [Testing Rails Applications](./guides/rails/testing.md)                   | Guide     | Model/request/system specs, factory patterns. |
 | Rails        | [Rails Pull Request Checklist](./checklists/rails/pull-request.md)        | Checklist | Testing verification for every PR.            |
 | Architecture | [Architecture Review Playbook](./playbooks/architecture-review/README.md) | Playbook  | Review criteria includes testability.         |
 
@@ -544,7 +554,7 @@ The following indexes gather documents across capabilities by topic.
 | Architecture | [ADR Writing Guide](./guides/architecture/adr-writing-guide.md) | Guide     | When and how to write ADRs.                |
 | Architecture | [ADR Template](./templates/adr/README.md)                       | Template  | Standard ADR format.                       |
 | Architecture | [RFC Template](./templates/rfc/README.md)                       | Template  | Major proposal format.                     |
-| Architecture | [Design Decision Checklist](./checklists/design-decision.md)    | Checklist | Before*during*after decision verification. |
+| Architecture | [Design Decision Checklist](./checklists/design-decision.md)    | Checklist | Before/during/after decision verification. |
 
 ## Architecture Decision Records
 
@@ -562,7 +572,7 @@ The following indexes gather documents across capabilities by topic.
 
 | Capability  | Document                                                       | Type      | Description                        |
 |-------------|----------------------------------------------------------------|-----------|------------------------------------|
-| Rails       | [Rails Project Standards](./guides/rails/project-standards.md) | Guide     | Mandatory tooling, CI*CD baseline. |
+| Rails       | [Rails Project Standards](./guides/rails/project-standards.md) | Guide     | Mandatory tooling, CI/CD baseline. |
 | Rails       | [Rails Deployment Playbook](./playbooks/rails/deployment.md)   | Playbook  | Safe deployment with migrations.   |
 | Rails       | [Rails Deployment Checklist](./checklists/rails/deployment.md) | Checklist | Pre/post-deploy verification.      |
 | Engineering | [Tech Debt Assessment](./checklists/tech-debt-assessment.md)   | Checklist | Debt identification and tracking.  |

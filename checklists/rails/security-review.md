@@ -1,3 +1,13 @@
+---
+title: "Rails Security Review Checklist"
+description: "Verify that a Rails application meets security standards before deployment."
+type: checklist
+capability: rails
+status: published
+tags: [security, review]
+last_reviewed: 2026-07-28
+---
+
 # Purpose
 
 Verify that a Rails application meets security standards before
@@ -15,14 +25,14 @@ deployment.
 
 - [ ] Pundit or CanCanCan policies cover all controllers.
 - [ ] `skip_before_action` is not used to bypass authorization.
-- [ ] Authorization is enforced at the service*model level, not only
+- [ ] Authorization is enforced at the service/model level, not only
       at the controller level.
 - [ ] API endpoints validate authentication tokens.
 
 # Data Protection
 
 - [ ] Sensitive data is encrypted at rest.
-- [ ] Secrets are stored in `config*credentials.yml.enc`.
+- [ ] Secrets are stored in `config/credentials.yml.enc`.
 - [ ] No secrets committed to git history.
 - [ ] Database credentials use environment variables, not defaults.
 - [ ] API keys are rotated regularly.

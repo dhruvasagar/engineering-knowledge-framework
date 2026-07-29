@@ -1,3 +1,13 @@
+---
+title: "System Modeling"
+description: "System modeling is the practice of creating abstract representations of a software system to communicate its structure, behaviour and constraints."
+type: guide
+capability: architecture
+status: published
+tags: [system, modeling]
+last_reviewed: 2026-07-28
+---
+
 # Purpose
 
 System modeling is the practice of creating abstract representations of
@@ -43,7 +53,7 @@ integrates with.
 Purpose: Provide a high-level overview for everyone from stakeholders
 to developers.
 
-```
+```text
 [Customer] ──→ [Order Management System] ←── [Payment Gateway]
                                     ↓
                               [Notification Service]
@@ -59,7 +69,7 @@ distributed across containers (applications, services, databases).
 
 A container is a separately runnable or deployable unit.
 
-```
+```text
 [Web App] ──→ [API Service] ──→ [Database]
                 ↓
            [Background Worker] ──→ [Queue]
@@ -76,7 +86,7 @@ interactions.
 Components are the building blocks within a container (modules,
 controllers, services, repositories).
 
-```
+```text
 [OrderController] ──→ [OrderService] ──→ [OrderRepository] ──→ [Database]
                          ↓
                    [PaymentService] ──→ [PaymentGateway]
@@ -104,7 +114,7 @@ All C4 diagrams should follow these conventions:
 - Use consistent colours for element types (person, system, container,
   component).
 - Include a legend for any non-standard notation.
-- Store diagrams in [assets*diagrams*](../../assets/diagrams/) as source files (PlantUML,
+- Store diagrams in [assets/diagrams/](../../assets/diagrams/) as source files (PlantUML,
   Mermaid, or draw.io).
 
 # Event Modeling

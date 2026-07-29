@@ -1,3 +1,13 @@
+---
+title: "Screen Reader Testing"
+description: "Screen reader testing is essential for verifying that content and interactions are accessible to users who rely on assistive technology."
+type: guide
+capability: accessibility
+status: published
+tags: [screen, reader, testing]
+last_reviewed: 2026-07-28
+---
+
 # Purpose
 
 Screen reader testing is essential for verifying that content and
@@ -56,7 +66,7 @@ the rest.
 ## Step 6: Dynamic Content
 
 1. Trigger dynamic content updates.
-2. Is new content announced (via `aria-live` or `role`"alert"=)?
+2. Is new content announced (via `aria-live` or `role="alert"`)?
 3. Does focus move correctly after dynamic updates?
 
 # Common Issues Found by Screen Reader Testing

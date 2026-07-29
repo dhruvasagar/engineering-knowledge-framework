@@ -1,3 +1,13 @@
+---
+title: "Code Review Standards"
+description: "Code review is the most effective quality practice in software engineering."
+type: guide
+capability: quality
+status: published
+tags: [code, review, standards]
+last_reviewed: 2026-07-28
+---
+
 # Purpose
 
 Code review is the most effective quality practice in software
@@ -72,7 +82,7 @@ defects, spread knowledge and improve design.
 
 Good:
 
-```
+```text
 This method handles both validation and persistence. Consider
 splitting it to follow single responsibility — the validation logic
 could go into a validator class.
@@ -80,7 +90,7 @@ could go into a validator class.
 
 Avoid:
 
-```
+```text
 This is wrong. Fix it.
 ```
 

@@ -1,3 +1,12 @@
+---
+title: "Security Guides Index"
+description: "This directory contains guides for security engineering topics."
+type: guide
+capability: security
+status: published
+last_reviewed: 2026-07-28
+---
+
 # Purpose
 
 This directory contains guides for security engineering topics.

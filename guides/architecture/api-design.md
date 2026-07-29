@@ -1,3 +1,13 @@
+---
+title: "API Design"
+description: "APIs define the contracts between components, services and systems."
+type: guide
+capability: architecture
+status: published
+tags: [api, design]
+last_reviewed: 2026-07-28
+---
+
 # Purpose
 
 APIs define the contracts between components, services and systems.
@@ -77,8 +87,8 @@ Use nouns, not verbs.
 |----------------------|---------------------|
 | `GET /orders`        | `GET /getOrders`    |
 | `POST /orders`       | `POST /createOrder` |
-| `GET *orders*123`    | `GET /order?id`123= |
-| `DELETE *orders*123` | `POST /deleteOrder` |
+| `GET /orders/123`    | `GET /order?id=123` |
+| `DELETE /orders/123` | `POST /deleteOrder` |
 
 Use plural nouns for collections. Use nested resources for
 relationships, but limit to one level of nesting.
@@ -116,8 +126,8 @@ Use standard HTTP status codes consistently.
 
 Use cursor-based pagination for lists.
 
-```
-GET /orders?cursor`abc123&limit`20
+```text
+GET /orders?cursor=abc123&limit=20
 
 Response:
 {
@@ -133,7 +143,7 @@ Response:
 
 Use a consistent error envelope:
 
-```
+```json
 {
   "error": {
     "code": "ORDER_NOT_FOUND",
@@ -152,9 +162,9 @@ Use a consistent error envelope:
 
 Include the version in the URL path:
 
-```
+```text
 GET /v1/orders
-GET /v2*orders
+GET /v2/orders
 ```
 
 Simple and explicit. Consumers can see the version in every request.
@@ -163,8 +173,8 @@ Simple and explicit. Consumers can see the version in every request.
 
 Use a custom header or content negotiation:
 
-```
-Accept: application*vnd.api+json;version=1
+```text
+Accept: application/vnd.api+json;version=1
 ```
 
 Keeps URLs clean but makes version less visible.

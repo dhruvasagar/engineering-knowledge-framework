@@ -1,3 +1,12 @@
+---
+title: "Architecture References"
+description: "Quick-reference material for software architecture."
+type: reference
+capability: architecture
+status: published
+last_reviewed: 2026-07-28
+---
+
 # Purpose
 
 Quick-reference material for software architecture.

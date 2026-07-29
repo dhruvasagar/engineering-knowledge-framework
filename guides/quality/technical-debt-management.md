@@ -1,3 +1,13 @@
+---
+title: "Technical Debt Management"
+description: "Technical debt is the gap between the current state of a codebase and the desired state."
+type: guide
+capability: quality
+status: published
+tags: [technical, debt, management]
+last_reviewed: 2026-07-28
+---
+
 # Purpose
 
 Technical debt is the gap between the current state of a codebase and
@@ -122,7 +132,7 @@ Record each debt item with:
 
 Maintain a simple log of known technical debt:
 
-```
+```text
 | ID | Area      | Description          | Severity | Effort | Status  |
 |----|-----------|----------------------|----------|--------|---------|
 | 1  | Auth      | Duplicate auth logic | High     | 2 days | Tracked |

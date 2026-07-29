@@ -1,3 +1,13 @@
+---
+title: "Context Pack Template"
+description: "Use this structure when assembling context for an AI assistant."
+type: template
+capability: ai
+status: published
+tags: [context, pack]
+last_reviewed: 2026-07-28
+---
+
 # Context Pack Template
 
 Use this structure when assembling context for an AI assistant. A well-
@@ -26,8 +36,8 @@ What the AI needs to know about the task:
 
 Relevant standards and conventions:
 
-- [Standard*Style Guide 1 — link]
-- [Standard*Style Guide 2 — link]
+- [Standard/Style Guide 1 — link]
+- [Standard/Style Guide 2 — link]
 
 ## Examples
 

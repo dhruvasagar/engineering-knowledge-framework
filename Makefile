@@ -1,10 +1,14 @@
-.PHONY: validate lint graph context-pack site serve clean all help
+.PHONY: validate lint test graph context-pack site serve clean all help
 
 validate:
 	@echo "🔍 Running all validators..."
 	@python3 tools/validate-all.py
 
 lint: validate
+
+test:
+	@echo "🧪 Running tooling tests..."
+	@cd tools && python3 test_validate_style.py
 
 graph:
 	@echo "🕸️  Building knowledge graph..."
@@ -37,7 +41,8 @@ help:
 	@echo "Engineering Knowledge Framework — Tooling"
 	@echo ""
 	@echo "Usage:"
-	@echo "  make validate          Run all validators"
+	@echo "  make validate          Run all validators (includes tooling tests)"
+	@echo "  make test              Run tooling tests only"
 	@echo "  make graph             Build knowledge graph (JSON + DOT)"
 	@echo "  make context-pack TERM Generate context pack for AI assistants"
 	@echo "  make mcp-server        Start MCP server (stdio)"

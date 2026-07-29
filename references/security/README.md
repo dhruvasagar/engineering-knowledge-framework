@@ -1,3 +1,12 @@
+---
+title: "Security References"
+description: "Quick-reference material for security engineering."
+type: reference
+capability: security
+status: published
+last_reviewed: 2026-07-28
+---
+
 # Purpose
 
 Quick-reference material for security engineering.
@@ -58,7 +67,7 @@ Quick-reference material for security engineering.
 |---------------------------|--------------------------------|----------------------|
 | Content-Security-Policy   | Controls resources the browser | `default-src 'self'` |
 |                           | is allowed to load.            |                      |
-| Strict-Transport-Security | Enforces HTTPS connections.    | `max-age`31536000=   |
+| Strict-Transport-Security | Enforces HTTPS connections.    | `max-age=31536000`   |
 | X-Frame-Options           | Prevents clickjacking.         | `DENY`               |
 | X-Content-Type-Options    | Prevents MIME type sniffing.   | `nosniff`            |
 

@@ -1,3 +1,13 @@
+---
+title: "AI Workflows for Architecture"
+description: "AI assistants can support architectural work by helping analyse trade-offs, document decisions, explore design alternatives and review architectural consistency."
+type: prompt
+capability: architecture
+status: published
+tags: [workflows]
+last_reviewed: 2026-07-28
+---
+
 # Purpose
 
 AI assistants can support architectural work by helping analyse
@@ -48,7 +58,7 @@ identifying impacts on quality attributes that might be overlooked.
 
 #### Prompt Pattern
 
-```
+```text
 I am evaluating architectural approaches for:
 
 [problem description]
@@ -88,7 +98,7 @@ reducing the friction of documenting decisions.
 
 #### Prompt Pattern
 
-```
+```text
 Draft an Architecture Decision Record for the following decision:
 
 ***Context***
@@ -135,7 +145,7 @@ context.
 
 #### Prompt Pattern
 
-```
+```text
 I need to choose an architectural pattern for:
 
 [system description]
@@ -181,7 +191,7 @@ identifying potential issues and suggesting review questions.
 
 #### Prompt Pattern
 
-```
+```text
 Help me prepare for an architecture review of the following proposal:
 
 [ADR or RFC content]
@@ -218,7 +228,7 @@ descriptions, and identify design considerations.
 
 #### Prompt Pattern
 
-```
+```text
 I am designing a system for:
 
 [purpose and scope]

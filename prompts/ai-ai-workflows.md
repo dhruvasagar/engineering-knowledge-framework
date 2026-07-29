@@ -1,3 +1,13 @@
+---
+title: "AI Workflows for AI Engineering"
+description: "This document provides prompt patterns for using AI to assist with AI Engineering tasks — designing prompts, building context packs, evaluating AI output and improving..."
+type: prompt
+capability: ai
+status: published
+tags: [workflows]
+last_reviewed: 2026-07-28
+---
+
 # Purpose
 
 This document provides prompt patterns for using AI to assist with
@@ -20,7 +30,7 @@ Use AI to help design better prompts for engineering tasks.
 
 Context:
 
-```
+```text
 I need to write a prompt for [task]. The audience is [engineers /
 architects / etc.]. The output should be [code / analysis / document].
 
@@ -38,7 +48,7 @@ Ask AI to review your context pack before using it.
 
 Context:
 
-```
+```text
 Review this context pack for [task]:
 
 [paste context pack]
@@ -59,7 +69,7 @@ Ask AI to evaluate its own output quality.
 
 Context:
 
-```
+```text
 Evaluate the following AI output for [task type]:
 
 [paste output]
@@ -79,7 +89,7 @@ Use AI to improve your AI-assisted workflows.
 
 Context:
 
-```
+```text
 I'm using AI for [workflow — e.g., code review, architecture review].
 My current process is:
 
@@ -99,7 +109,7 @@ Use AI to extract and structure engineering knowledge from experience.
 
 Context:
 
-```
+```text
 I need to capture engineering knowledge from [experience / incident /
 project] and structure it as a [guide / playbook / checklist].
 

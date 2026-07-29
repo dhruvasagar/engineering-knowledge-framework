@@ -1,3 +1,12 @@
+---
+title: "Accessibility Engineering Handbook"
+description: "Accessibility engineering ensures that digital products are usable by people with disabilities."
+type: handbook
+capability: accessibility
+status: published
+last_reviewed: 2026-07-28
+---
+
 # Purpose
 
 Accessibility engineering ensures that digital products are usable by

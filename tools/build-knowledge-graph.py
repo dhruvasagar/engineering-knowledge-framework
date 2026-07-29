@@ -21,15 +21,16 @@ import sys
 from collections import defaultdict
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+
+from validate_style_lib import parse_frontmatter, split_frontmatter  # noqa: E402
+
 REPO_ROOT = Path(__file__).resolve().parent.parent
 
 # Markdown link: [desc](path)
 LINK_PATTERN = re.compile(r'\]\(([^)]+)\)')
-# Front matter title and description
-FM_TITLE_PATTERN = re.compile(r'^title:\s*"?([^"\n]+)"?\s*$', re.MULTILINE)
-FM_DESC_PATTERN = re.compile(r'^description:\s*"?([^"\n]+)"?\s*$', re.MULTILINE)
 
-SKIP_DIRS = {'.git', 'site', 'tools', '__pycache__', '.org-backup', 'assets'}
+SKIP_DIRS = {'.git', 'site', 'tools', 'docs', '__pycache__', '.org-backup', 'assets'}
 
 # Document types by directory
 DOC_TYPE_MAP = {
@@ -103,16 +104,22 @@ def classify_file(filepath):
 
 
 def extract_metadata(filepath):
-    """Extract title and description from front matter."""
+    """Read the document's YAML front matter.
+
+    Uses the same parser the style validator enforces against, so the
+    graph can never drift from what validation accepts.
+    """
     content = filepath.read_text(encoding='utf-8', errors='ignore')
+    text, _, _ = split_frontmatter(content)
+    data = parse_frontmatter(text) if text else {}
 
-    title_match = FM_TITLE_PATTERN.search(content)
-    desc_match = FM_DESC_PATTERN.search(content)
-
-    title = title_match.group(1).strip() if title_match else filepath.stem
-    description = desc_match.group(1).strip() if desc_match else ''
-
-    return title, description
+    return {
+        'title': data.get('title') or filepath.stem,
+        'description': data.get('description', ''),
+        'tags': data.get('tags') or [],
+        'status': data.get('status', ''),
+        'last_reviewed': data.get('last_reviewed', ''),
+    }
 
 
 def extract_links(filepath):
@@ -217,16 +224,19 @@ def build_graph():
     # Create nodes
     for filepath in md_files:
         rel_path = str(filepath.relative_to(REPO_ROOT))
-        title, description = extract_metadata(filepath)
+        meta = extract_metadata(filepath)
         capability, doc_type = classify_file(filepath)
 
         nodes[rel_path] = {
             'id': rel_path,
-            'title': title,
-            'description': description,
+            'title': meta['title'],
+            'description': meta['description'],
             'capability': capability,
             'type': doc_type or 'unknown',
             'path': rel_path,
+            'tags': meta['tags'],
+            'status': meta['status'],
+            'last_reviewed': meta['last_reviewed'],
         }
 
         if capability and doc_type:

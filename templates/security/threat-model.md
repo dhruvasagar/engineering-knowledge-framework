@@ -1,3 +1,13 @@
+---
+title: "Threat Model Template"
+description: "Brief description of the system architecture and data flow."
+type: template
+capability: security
+status: published
+tags: [threat, model]
+last_reviewed: 2026-07-28
+---
+
 # THREAT-NNNN: [System/Feature Name]
 
 # Metadata

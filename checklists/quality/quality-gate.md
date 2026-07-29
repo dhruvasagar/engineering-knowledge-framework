@@ -1,3 +1,13 @@
+---
+title: "Quality Gate Checklist"
+description: "Verify that changes meet minimum quality standards before being merged or deployed."
+type: checklist
+capability: quality
+status: published
+tags: [gate]
+last_reviewed: 2026-07-28
+---
+
 # Purpose
 
 Verify that changes meet minimum quality standards before being merged

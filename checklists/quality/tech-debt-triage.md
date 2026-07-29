@@ -1,3 +1,13 @@
+---
+title: "Technical Debt Triage"
+description: "Quickly classify and prioritise technical debt items for remediation planning."
+type: checklist
+capability: quality
+status: published
+tags: [tech, debt, triage]
+last_reviewed: 2026-07-28
+---
+
 # Purpose
 
 Quickly classify and prioritise technical debt items for remediation

@@ -1,3 +1,13 @@
+---
+title: "Tech Debt Assessment"
+description: "Ensure technical debt is identified, classified, tracked and addressed systematically."
+type: checklist
+capability: quality
+status: published
+tags: [tech, debt, assessment]
+last_reviewed: 2026-07-28
+---
+
 # Purpose
 
 Ensure technical debt is identified, classified, tracked and addressed

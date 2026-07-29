@@ -1,3 +1,13 @@
+---
+title: "Technical Debt Remediation"
+description: "Systematically identify, classify and reduce technical debt."
+type: playbook
+capability: quality
+status: published
+tags: [tech, debt, remediation]
+last_reviewed: 2026-07-28
+---
+
 # Objective
 
 Systematically identify, classify and reduce technical debt. This

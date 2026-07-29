@@ -1,3 +1,13 @@
+---
+title: "AI Workflows for Rails"
+description: "AI assistants can accelerate Rails development when used effectively."
+type: prompt
+capability: rails
+status: published
+tags: [workflows]
+last_reviewed: 2026-07-28
+---
+
 # Purpose
 
 AI assistants can accelerate Rails development when used effectively.
@@ -16,7 +26,7 @@ Use AI to generate models and migrations from descriptions.
 
 #### Prompt Pattern
 
-```
+```text
 Generate a Rails model and migration for:
 
 Model: Product
@@ -48,7 +58,7 @@ Use AI to generate API endpoints with request specs.
 
 #### Prompt Pattern
 
-```
+```text
 Generate a Rails API controller and routes for:
 
 Resource: Products (API::V1::ProductsController)
@@ -73,7 +83,7 @@ Use AI to generate tests for existing code.
 
 #### Prompt Pattern
 
-```
+````text
 Write RSpec tests for this Rails service object:
 
 ```ruby
@@ -100,7 +110,7 @@ Include tests for:
 - Duplicate email handling.
 - Invalid team.
 - Mailer delivery.
-```
+````
 
 ## Debugging
 
@@ -110,7 +120,7 @@ Use AI to diagnose Rails errors.
 
 #### Prompt Pattern
 
-```
+````text
 I am getting this error in my Rails application:
 
 [error message and stack trace]
@@ -124,7 +134,7 @@ Rails version: [version]
 Ruby version: [version]
 
 What is the most likely cause and how should I fix it?
-```
+````
 
 ## Refactoring
 
@@ -134,7 +144,7 @@ Use AI to suggest Rails-specific refactorings.
 
 #### Prompt Pattern
 
-```
+````text
 Help me refactor this Rails controller:
 
 ```ruby
@@ -160,7 +170,7 @@ Goals:
 - Extract business logic into a service object.
 - Keep error handling consistent.
 - Improve testability.
-```
+````
 
 # Anti-patterns
 

@@ -1,3 +1,13 @@
+---
+title: "Style Guide"
+description: "This document defines the writing and formatting standards for the Engineering Knowledge Framework."
+type: governance
+capability: governance
+status: published
+tags: [style]
+last_reviewed: 2026-07-28
+---
+
 # Purpose
 
 This document defines the writing and formatting standards for the
@@ -55,6 +65,40 @@ Prefer clarity over cleverness.
 Prefer simplicity over completeness.
 
 Prefer principles over implementation details.
+
+# Front Matter
+
+Every document begins with a YAML front matter block.
+
+Front matter is what makes a document addressable by tooling. Without
+it, search can match only titles and file paths, the knowledge graph
+carries no summaries, and nothing can report which knowledge has gone
+stale.
+
+```yaml
+---
+title: "Service Objects"
+description: "Service objects encapsulate a single business operation into a dedicated class."
+type: guide
+capability: rails
+status: published
+tags: [patterns, refactoring]
+last_reviewed: 2026-07-28
+---
+```
+
+| Field           | Required | Rule                                                                    |
+|-----------------|----------|-------------------------------------------------------------------------|
+| `title`         | Yes      | The document's display name. Prefer the curated title over the filename |
+| `description`   | Yes      | One sentence. Summarize the document, do not introduce a list           |
+| `type`          | Yes      | One of the nine document types, plus `adr`, `rfc`, `prompt`, `governance` |
+| `capability`    | Yes      | The owning capability                                                    |
+| `status`        | Yes      | `draft`, `published` or `deprecated`                                     |
+| `tags`          | No       | Retrieval hints beyond the words already in the title                    |
+| `last_reviewed` | Yes      | `YYYY-MM-DD`. Update it when you genuinely review the content            |
+
+Do not set `last_reviewed` to today's date for a mechanical edit. The
+field exists so that staleness can be reported honestly.
 
 # File Naming
 
@@ -251,7 +295,7 @@ Every significant concept should be connected to related knowledge.
 
 Good:
 
-```
+```text
 [Code Review Playbook](./playbooks/code-review/README.md)
 ```
 
@@ -271,7 +315,7 @@ Documents should both:
 
 Example:
 
-```
+```text
 Rails Handbook → Service Objects Guide → Code Review Playbook
 ```
 
@@ -292,16 +336,28 @@ Avoid deeply nested lists.
 
 Use `-` for bullet list items, never `*`.
 
+Markdown accepts `-`, `*` and `+` interchangeably. The framework
+standardizes on `-` so that documents are diffable, greppable and
+consistent for both readers and tooling.
+
 Correct:
 
+```markdown
 - Item one.
 - Item two.
   - Nested sub-item.
+```
 
 Incorrect:
 
-- Item one.
-- Item two.
+```markdown
+* Item one.
++ Item two.
+```
+
+The examples are shown inside code fences deliberately. Written as live
+Markdown, every variant renders identically, which is what makes the
+inconsistency easy to introduce and hard to notice.
 
 ## Checklist Format
 
@@ -330,7 +386,7 @@ Avoid using tables for layout.
 
 Every table must follow this structure:
 
-```
+```text
 | Header 1 | Header 2 | Header 3 |
 |----------|----------|----------|
 | Cell 1   | Cell 2   | Cell 3   |
@@ -348,7 +404,7 @@ Rules:
 
 ## Correct Example
 
-```
+```text
 | Principle      | Description                        |
 |----------------|------------------------------------|
 | Keep it simple | Prefer simple over clever designs. |
@@ -370,7 +426,7 @@ This is the most common and destructive error. The separator row must
 use `|` between columns, never `+`. Using `+` creates invalid markdown
 and renders incorrectly.
 
-```
+```text
 # Wrong — do NOT use + in separators:
 | Pro | Con |
 |-------+-------|    ← WRONG: + between columns
@@ -387,7 +443,7 @@ and renders incorrectly.
 Only one separator row is needed (between header and data). Do not add
 extra `|---|---|` rows in the middle of the table.
 
-```
+```text
 # Wrong — extra separator in data:
 | Type | Description |
 |------|-------------|
@@ -406,7 +462,7 @@ extra `|---|---|` rows in the middle of the table.
 
 Every row must have the same number of `|`-separated cells.
 
-```
+```text
 # Wrong — first row has 2 columns, second has 3:
 | Name | Role |
 |------|------|
@@ -424,7 +480,7 @@ Standard markdown does not support multi-line cells natively. For
 content that needs multiple lines (common in glossaries), use
 continuation rows with an empty first cell:
 
-```
+```text
 | Property | Value                                                |
 |----------|------------------------------------------------------|
 | Definition | A short document that captures an architectural     |
@@ -556,21 +612,36 @@ Repository quality is more important than document count.
 
 # Validation Checklist
 
-Before committing a document, verify:
+Run `make validate` before committing. It enforces every item marked
+***automated*** below and fails the build on any violation.
+
+The remaining items require human judgement and are not enforceable by
+tooling.
+
+Automated:
+
+- [ ] Front matter is present and complete, with values from the taxonomy.
+- [ ] Heading levels do not skip (e.g., `##` to `####` without `###`).
+- [ ] Code blocks specify a language.
+- [ ] Code fences are balanced and never nested at equal depth.
+- [ ] Table separator rows use `|`, three or more dashes, and appear once.
+- [ ] Table rows all have the same number of columns.
+- [ ] Internal links resolve.
+- [ ] No org-mode residue survives from the pre-Markdown migration.
+- [ ] Filenames are lowercase-with-dashes.
+- [ ] `toc.md` matches the file inventory.
+
+Requires review:
 
 - [ ] Correct document type was used (handbook, guide, playbook, etc.).
 - [ ] The document has a single responsibility.
 - [ ] Headings are meaningful and descriptive.
-- [ ] Heading levels do not skip (e.g., `##` to `####` without `###`).
 - [ ] Terminology is consistent with the relevant glossary.
-- [ ] Internal links are valid and use lowercase paths.
 - [ ] Lists use `-` for bullets, not `*`.
 - [ ] Checklists use `- [ ]` format.
-- [ ] Table formatting is correct and consistent.
-- [ ] Code blocks specify a language.
 - [ ] Duplicate knowledge has been consolidated.
 - [ ] Examples are technically accurate.
-- [ ] `toc.md` is updated if this is a new or renamed document.
+- [ ] `last_reviewed` was updated only if the content was genuinely reviewed.
 - [ ] Handbook capability map is updated if this is a new or renamed
       document.
 - [ ] The document follows repository conventions.

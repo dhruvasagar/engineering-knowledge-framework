@@ -1,3 +1,12 @@
+---
+title: "Engineering References"
+description: "Quick-reference material for engineering fundamentals."
+type: reference
+capability: engineering
+status: published
+last_reviewed: 2026-07-28
+---
+
 # Purpose
 
 Quick-reference material for engineering fundamentals.

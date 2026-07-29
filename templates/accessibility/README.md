@@ -1,3 +1,12 @@
+---
+title: "Accessibility Templates Index"
+description: "This directory contains reusable templates for accessibility-related activities."
+type: template
+capability: accessibility
+status: published
+last_reviewed: 2026-07-28
+---
+
 # Purpose
 
 This directory contains reusable templates for accessibility-related

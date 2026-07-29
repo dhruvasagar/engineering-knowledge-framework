@@ -1,3 +1,12 @@
+---
+title: "Engineering Learning Paths"
+description: "These learning paths provide a structured progression through engineering fundamentals, from foundational concepts to advanced practice."
+type: learning-path
+capability: engineering
+status: published
+last_reviewed: 2026-07-28
+---
+
 # Purpose
 
 These learning paths provide a structured progression through

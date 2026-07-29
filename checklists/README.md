@@ -1,3 +1,13 @@
+---
+title: "Checklists Index"
+description: "This directory contains verification checklists for common engineering tasks."
+type: checklist
+capability: governance
+status: published
+tags: [checklists]
+last_reviewed: 2026-07-28
+---
+
 # Purpose
 
 This directory contains verification checklists for common engineering

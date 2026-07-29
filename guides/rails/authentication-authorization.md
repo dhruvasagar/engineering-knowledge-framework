@@ -1,3 +1,13 @@
+---
+title: "Authentication and Authorization"
+description: "Authentication verifies who a user is."
+type: guide
+capability: rails
+status: published
+tags: [authentication, authorization]
+last_reviewed: 2026-07-28
+---
+
 # Purpose
 
 Authentication verifies who a user is. Authorization determines what a
@@ -12,7 +22,7 @@ Devise is the most widely used authentication framework for Rails.
 
 ## Setup
 
-```
+```ruby
 gem "devise"
 
 rails generate devise:install
@@ -22,8 +32,8 @@ rails db:migrate
 
 ## Configuration
 
-```
-# config*initializers*devise.rb
+```ruby
+# config/initializers/devise.rb
 Devise.setup do |config|
   config.mailer_sender = "please-change-me@config.com"
   config.reset_password_within = 6.hours
@@ -37,7 +47,7 @@ end
 
 Permit additional fields in the application controller:
 
-```
+```ruby
 class ApplicationController < ActionController::Base
   before_action :configure_permitted_parameters, if: :devise_controller?
 
@@ -56,7 +66,7 @@ Pundit provides a simple, object-oriented authorization system.
 
 ## Setup
 
-```
+```ruby
 gem "pundit"
 
 include Pundit::Authorization in ApplicationController
@@ -66,13 +76,13 @@ include Pundit::Authorization in ApplicationController
 
 Generate policies for each resource:
 
-```
+```bash
 rails generate pundit:install
 rails generate pundit:policy post
 ```
 
-```
-# app*policies*post_policy.rb
+```ruby
+# app/policies/post_policy.rb
 class PostPolicy < ApplicationPolicy
   def index?
     true
@@ -98,7 +108,7 @@ end
 
 ## Usage
 
-```
+```ruby
 class PostsController < ApplicationController
   def show
     @post = Post.find(params[:id])
@@ -117,7 +127,7 @@ end
 
 Use policy scopes to scope queries:
 
-```
+```ruby
 class PostPolicy < ApplicationPolicy
   class Scope < Scope
     def resolve
@@ -140,7 +150,7 @@ end
 
 ## Current User
 
-```
+```ruby
 class ApplicationController < ActionController::Base
   private
 
@@ -158,7 +168,7 @@ end
 
 Use enums or a role model for role-based authorization:
 
-```
+```ruby
 class User < ApplicationRecord
   enum :role, { member: 0, admin: 1, super_admin: 2 }
 
@@ -174,7 +184,7 @@ end
 
 ## Authorization in Views
 
-```
+```erb
 <% if policy(@post).update? %>
   <%` link_to "Edit", edit_post_path(@post) %>
 <% end %>

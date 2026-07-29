@@ -1,3 +1,13 @@
+---
+title: "AI Safety and Verification"
+description: "AI systems are powerful tools, but they introduce risks: incorrect output, security vulnerabilities, biased suggestions and over-reliance."
+type: guide
+capability: ai
+status: published
+tags: [safety]
+last_reviewed: 2026-07-28
+---
+
 # Purpose
 
 AI systems are powerful tools, but they introduce risks: incorrect

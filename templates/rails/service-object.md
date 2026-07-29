@@ -1,3 +1,13 @@
+---
+title: "Service Object Template"
+description: "Service objects encapsulate a single business operation."
+type: template
+capability: rails
+status: published
+tags: [service, object]
+last_reviewed: 2026-07-28
+---
+
 # Purpose
 
 Service objects encapsulate a single business operation.
@@ -7,8 +17,8 @@ services or complex orchestration.
 
 # Template
 
-```
-# app*services*OPERATION_NAME.rb
+```ruby
+# app/services/OPERATION_NAME.rb
 class OPERATION_NAME
   Result = Struct.new(:success?, :data, :error, keyword_init: true)
 
@@ -44,7 +54,7 @@ end
 
 # Usage
 
-```
+```ruby
 result = OPERATION_NAME.new(param1: value1).call
 
 if result.success?

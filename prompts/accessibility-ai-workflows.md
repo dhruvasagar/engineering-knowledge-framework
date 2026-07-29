@@ -1,3 +1,13 @@
+---
+title: "AI Workflows for Accessibility"
+description: "This document provides prompt patterns for using AI to assist with accessibility engineering tasks — auditing, remediation, form review and alternative text generation."
+type: prompt
+capability: accessibility
+status: published
+tags: [workflows]
+last_reviewed: 2026-07-28
+---
+
 # Purpose
 
 This document provides prompt patterns for using AI to assist with
@@ -20,7 +30,7 @@ Use AI to perform a preliminary accessibility audit of HTML content.
 
 Context:
 
-```
+```text
 Audit the following HTML for accessibility issues:
 
 [paste HTML]
@@ -42,7 +52,7 @@ Use AI to generate alternative text for images.
 
 Context:
 
-```
+```text
 Generate concise, descriptive alt text for the following image:
 
 [image description or URL]
@@ -61,7 +71,7 @@ Use AI to review form implementations for accessibility.
 
 Context:
 
-```
+```text
 Review this form for accessibility issues:
 
 [paste HTML]
@@ -83,7 +93,7 @@ Use AI to analyse and suggest colour palette improvements.
 
 Context:
 
-```
+```text
 Analyse these colours for WCAG AA contrast compliance:
 
 Text colour: [colour value]
@@ -105,7 +115,7 @@ Use AI to review ARIA implementations for correctness.
 
 Context:
 
-```
+```text
 Review this ARIA implementation for correctness:
 
 [paste HTML]

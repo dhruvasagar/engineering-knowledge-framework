@@ -1,3 +1,12 @@
+---
+title: "Security Engineering Handbook"
+description: "Security engineering is the discipline of building systems that remain secure even when under attack."
+type: handbook
+capability: security
+status: published
+last_reviewed: 2026-07-28
+---
+
 # Purpose
 
 Security engineering is the discipline of building systems that remain

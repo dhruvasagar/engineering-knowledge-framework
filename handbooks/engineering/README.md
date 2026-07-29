@@ -1,3 +1,12 @@
+---
+title: "Engineering Fundamentals Handbook"
+description: "Engineering is the disciplined application of knowledge to build and maintain software systems."
+type: handbook
+capability: engineering
+status: published
+last_reviewed: 2026-07-28
+---
+
 # Purpose
 
 Engineering is the disciplined application of knowledge to build and

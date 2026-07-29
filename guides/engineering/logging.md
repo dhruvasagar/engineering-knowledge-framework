@@ -1,3 +1,13 @@
+---
+title: "Logging"
+description: "Logging is the practice of recording events, state changes and errors during software execution to support operations, debugging and analysis."
+type: guide
+capability: engineering
+status: published
+tags: [logging]
+last_reviewed: 2026-07-28
+---
+
 # Purpose
 
 Logging is the practice of recording events, state changes and errors
@@ -33,7 +43,7 @@ aggregation systems.
 
 ***Good (JSON):***
 
-```
+```json
 {"timestamp": "2026-07-27T10:00:00Z", "level": "ERROR",
  "service": "order-service", "request_id": "req-abc-123",
  "message": "Payment processing failed",
@@ -42,7 +52,7 @@ aggregation systems.
 
 ***Avoid (free-text):***
 
-```
+```text
 [2026-07-27 10:00:00] ERROR: Payment failed after 452ms
 ```
 
@@ -113,7 +123,7 @@ If sensitive data must be logged for debugging, ensure it is:
 
 Every log event should include these standard fields:
 
-```
+```json
 {
   "timestamp":   "2026-07-27T10:00:00.123Z",
   "level":       "INFO",

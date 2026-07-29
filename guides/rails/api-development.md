@@ -1,3 +1,13 @@
+---
+title: "API Development with Rails"
+description: "Rails is a popular choice for building JSON APIs."
+type: guide
+capability: rails
+status: published
+tags: [api, development]
+last_reviewed: 2026-07-28
+---
+
 # Purpose
 
 Rails is a popular choice for building JSON APIs.
@@ -13,8 +23,8 @@ API design principles in the
 
 Generate a new API-only application:
 
-```
-rails new my_api --api --database`postgresql
+```bash
+rails new my_api --api --database=postgresql
 ```
 
 This skips views, cookies, asset pipeline and other browser-focused
@@ -24,11 +34,11 @@ middleware.
 
 Organise API controllers under versioned namespaces:
 
-```
-app*controllers*api/v1/
+```text
+app/controllers/api/v1/
   users_controller.rb
   posts_controller.rb
-app*controllers*api/v2/
+app/controllers/api/v2/
   users_controller.rb
 ```
 
@@ -36,7 +46,7 @@ app*controllers*api/v2/
 
 ## Versioned Routes
 
-```
+```ruby
 Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
@@ -60,8 +70,8 @@ Use `only` and `except` to limit exposed actions.
 
 ## Base Controller
 
-```
-# app*controllers*api*base_controller.rb
+```ruby
+# app/controllers/api/base_controller.rb
 module Api
   class BaseController < ApplicationController
     rescue_from ActiveRecord::RecordNotFound, with: :not_found
@@ -88,8 +98,8 @@ end
 
 ## Resource Controller
 
-```
-# app*controllers*api*v1/users_controller.rb
+```ruby
+# app/controllers/api/v1/users_controller.rb
 module Api
   module V1
     class UsersController < BaseController
@@ -127,7 +137,7 @@ Use a dedicated serialization library to shape JSON responses.
 
 ## Using jsonapi-serializer (fast_jsonapi)
 
-```
+```ruby
 class UserSerializer
   include JSONAPI::Serializer
 
@@ -139,7 +149,7 @@ end
 
 ## Using Alba
 
-```
+```ruby
 class UserSerializer
   include Alba::Resource
 
@@ -153,7 +163,7 @@ end
 
 ## Using Blueprinter
 
-```
+```ruby
 class UserBlueprint < Blueprinter::Base
   identifier :id
 
@@ -169,7 +179,7 @@ end
 
 Use a consistent response envelope:
 
-```
+```text
 # Success
 {
   "data": { ... },
@@ -188,9 +198,9 @@ Use a consistent response envelope:
 
 Use cursor-based or page-based pagination consistently.
 
-```
+```text
 # Page-based
-GET *api*v1/users?page`1&per_page`20
+GET /api/v1/users?page=1&per_page=20
 
 Response:
 {
@@ -207,7 +217,7 @@ Response:
 
 ## Token-Based Auth
 
-```
+```ruby
 class ApplicationController < ActionController::API
   def authenticate_user!
     token = request.headers["Authorization"]&.split(" ")&.last
@@ -219,7 +229,7 @@ end
 
 ## Using Devise with JWT
 
-```
+```ruby
 gem "devise"
 gem "devise-jwt"
 
@@ -234,9 +244,9 @@ devise :database_authenticatable, :jwt_authenticatable,
 
 Include the version in the URL path:
 
-```
-GET *api*v1/users
-GET *api*v2/users
+```text
+GET /api/v1/users
+GET /api/v2/users
 ```
 
 ## When to Version
@@ -260,13 +270,13 @@ Communicate deprecations through:
 
 ## Request Specs for API Endpoints
 
-```
+```ruby
 RSpec.describe "Users API", type: :request do
-  describe "GET *api*v1*users" do
+  describe "GET /api/v1/users" do
     it "returns paginated users" do
       create_list(:user, 3)
 
-      get "*api/v1*users"
+      get "/api/v1/users"
 
       expect(response).to have_http_status(:ok)
       expect(json_response["data"].size).to eq(3)
@@ -274,7 +284,7 @@ RSpec.describe "Users API", type: :request do
     end
 
     it "returns 401 without authentication" do
-      get "*api/v1/users"
+      get "/api/v1/users"
       expect(response).to have_http_status(:unauthorized)
     end
   end

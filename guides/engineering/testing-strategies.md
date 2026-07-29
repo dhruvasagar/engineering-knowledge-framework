@@ -1,3 +1,13 @@
+---
+title: "Testing Strategies"
+description: "Automated testing is the practice of verifying that software behaves correctly through repeatable, machine-executable checks."
+type: guide
+capability: engineering
+status: published
+tags: [testing, strategies]
+last_reviewed: 2026-07-28
+---
+
 # Purpose
 
 Automated testing is the practice of verifying that software behaves
@@ -61,7 +71,7 @@ to debug when they fail, and more likely to mask regressions.
 
 Good:
 
-```
+```python
 def test_returns_error_when_email_is_missing():
     result = register_user(email=None)
     assert result.is_error()
@@ -86,7 +96,7 @@ Poorly maintained tests become a liability.
 
 The test pyramid describes the optimal distribution of test types:
 
-```
+```text
         /\
        /  \
       / E2E\    Few: full-stack, slow, expensive
@@ -152,7 +162,7 @@ Test names should describe the scenario and expected outcome.
 
 Good:
 
-```
+```text
 test_returns_400_when_email_is_missing
 test_sends_welcome_email_after_successful_registration
 test_does_not_send_welcome_email_when_registration_fails

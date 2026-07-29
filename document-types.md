@@ -1,3 +1,13 @@
+---
+title: "Document Types"
+description: "The Engineering Knowledge Framework is built from a small set of well-defined document types."
+type: governance
+capability: governance
+status: published
+tags: [document, types]
+last_reviewed: 2026-07-28
+---
+
 # Purpose
 
 The Engineering Knowledge Framework is built from a small set of
@@ -45,7 +55,7 @@ Examples include:
 
 Each capability owns a collection of knowledge artifacts.
 
-```
+```text
 Capability
 ├── Handbook
 ├── Guides
@@ -310,7 +320,7 @@ Examples should illustrate:
 
 Document types are designed to complement one another.
 
-```
+```text
              Handbook
                  │
   ┌──────────────┼──────────────┐
@@ -372,7 +382,7 @@ AI should consume many small documents rather than one large document.
 
 Engineering knowledge evolves through experience.
 
-```
+```text
 Experience
 ↓
 Lesson Learned

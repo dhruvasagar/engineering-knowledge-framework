@@ -1,3 +1,13 @@
+---
+title: "ADR 0003: Document Taxonomy"
+description: "Nine document types, each with a single distinct responsibility, form the framework taxonomy."
+type: adr
+capability: architecture
+status: published
+tags: [document, taxonomy]
+last_reviewed: 2026-07-28
+---
+
 # Context
 
 The framework needed a standardized set of document types that:
@@ -30,7 +40,7 @@ Define nine document types, each with a single, distinct responsibility:
 
 The taxonomy follows a clear progression:
 
-```
+```text
 Handbook → Guide → Playbook → Checklist → Template
 
 Glossary and References support all document types.

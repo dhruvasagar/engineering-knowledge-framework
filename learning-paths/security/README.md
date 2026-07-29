@@ -1,3 +1,12 @@
+---
+title: "Security Learning Paths"
+description: "These learning paths provide a structured progression through security engineering, from understanding basic threats to designing secure architectures."
+type: learning-path
+capability: security
+status: published
+last_reviewed: 2026-07-28
+---
+
 # Purpose
 
 These learning paths provide a structured progression through security

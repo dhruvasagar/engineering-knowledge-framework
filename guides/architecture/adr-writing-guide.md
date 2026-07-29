@@ -1,3 +1,13 @@
+---
+title: "ADR Writing Guide"
+description: "An Architecture Decision Record (ADR) is a short document that captures a significant architectural decision, its context, alternatives considered and consequences."
+type: guide
+capability: architecture
+status: published
+tags: [adr, writing]
+last_reviewed: 2026-07-28
+---
+
 # Purpose
 
 An Architecture Decision Record (ADR) is a short document that captures

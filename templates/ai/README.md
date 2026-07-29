@@ -1,3 +1,12 @@
+---
+title: "AI Templates Index"
+description: "This directory contains reusable templates for AI engineering activities."
+type: template
+capability: ai
+status: published
+last_reviewed: 2026-07-28
+---
+
 # Purpose
 
 This directory contains reusable templates for AI engineering activities.

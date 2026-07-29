@@ -1,3 +1,13 @@
+---
+title: "Glossary Index"
+description: "The Glossary provides the canonical vocabulary used throughout the Engineering Knowledge Base."
+type: glossary
+capability: governance
+status: published
+tags: [glossary]
+last_reviewed: 2026-07-28
+---
+
 # Purpose
 
 The Glossary provides the canonical vocabulary used throughout the
@@ -33,7 +43,7 @@ content.
 
 Glossaries are organized by engineering capability.
 
-```
+```text
 glossary/
 ├── engineering/
 ├── architecture/

@@ -1,3 +1,13 @@
+---
+title: "AI Usage Checklist"
+description: "Verify that AI-generated output is safe, correct and appropriate before acceptance."
+type: checklist
+capability: ai
+status: published
+tags: [usage]
+last_reviewed: 2026-07-28
+---
+
 # Purpose
 
 Verify that AI-generated output is safe, correct and appropriate before

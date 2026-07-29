@@ -16,6 +16,8 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Run tooling tests
+        run: make test
       - name: Run all validators
         run: make validate
 

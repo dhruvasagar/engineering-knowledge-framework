@@ -1,3 +1,12 @@
+---
+title: "AI Engineering Learning Paths"
+description: "These learning paths provide a structured progression through AI engineering, from using AI as an individual contributor to establishing AI practices across an organization."
+type: learning-path
+capability: ai
+status: published
+last_reviewed: 2026-07-28
+---
+
 # Purpose
 
 These learning paths provide a structured progression through AI

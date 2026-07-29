@@ -1,3 +1,13 @@
+---
+title: "Architectural Patterns"
+description: "Architectural patterns provide proven, reusable solutions to common structural problems in software systems."
+type: guide
+capability: architecture
+status: published
+tags: [architectural, patterns]
+last_reviewed: 2026-07-28
+---
+
 # Purpose
 
 Architectural patterns provide proven, reusable solutions to common
@@ -45,7 +55,7 @@ Organize the system into horizontal layers, each with a specific
 responsibility. Each layer depends only on the layer directly beneath
 it.
 
-```
+```text
   Presentation
        ↓
    Application
@@ -89,7 +99,7 @@ The core domain has no dependency on databases, APIs, UIs, or any other
 external system. All external communication flows through adapters that
 implement ports defined by the core.
 
-```
+```text
   [Web Adapter] → [Port] → [Core Domain] ← [Port] ← [Database Adapter]
   [CLI Adapter]  → [Port] →              ← [Port] ← [Message Queue Adapter]
 ```
@@ -125,7 +135,7 @@ Producers emit events without knowing which consumers will handle them.
 Consumers subscribe to events without knowing which producers emitted
 them. This creates loose coupling between components.
 
-```
+```text
   [Order Service] ──→ (OrderPlaced) ──→ [Inventory Service]
                          │
                          ├──→ [Notification Service]
@@ -149,7 +159,7 @@ them. This creates loose coupling between components.
 | Pro                                | Con                                       |
 |------------------------------------|-------------------------------------------|
 | Strong decoupling between services | Eventual consistency is complex           |
-| Highly scalable and extensible     | Debugging is harder than request*response |
+| Highly scalable and extensible     | Debugging is harder than request/response |
 | Real-time processing capability    | Event schema evolution is challenging     |
 | Good for heterogeneous systems     | Requires robust monitoring                |
 
@@ -161,7 +171,7 @@ Compose the system from independently deployable services, each owning
 its own data and domain. Services communicate through well-defined APIs
 (generally HTTP or messaging).
 
-```
+```text
   [API Gateway]
      ├── [Order Service] ─→ [Order DB]
      ├── [Inventory Service] ─→ [Inventory DB]
@@ -209,7 +219,7 @@ The separation allows each model to be optimized independently.
 
 #### When to Avoid
 
-- The system has simple CRUD operations with balanced read*write
+- The system has simple CRUD operations with balanced read/write
   patterns.
 - The added complexity of maintaining two models is not justified.
 
@@ -218,7 +228,7 @@ The separation allows each model to be optimized independently.
 | Pro                                  | Con                                 |
 |--------------------------------------|-------------------------------------|
 | Optimized read and write models      | Increased complexity                |
-| Independent scaling of reads*writes  | Eventual consistency between models |
+| Independent scaling of reads/writes  | Eventual consistency between models |
 | Better performance for each workload | More code to maintain               |
 
 # Pattern Composition
@@ -232,7 +242,7 @@ Common compositions include:
 - Event-Driven + Microservices: Microservices communicate through
   events to achieve loose coupling.
 - Layered + Hexagonal: Use layered architecture within each hexagon
-  (port*adapter boundary) to organize internal structure.
+  (port/adapter boundary) to organize internal structure.
 
 Compose patterns only when the combination clearly addresses a specific
 problem. Every added pattern increases complexity.

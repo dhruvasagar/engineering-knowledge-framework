@@ -1,3 +1,13 @@
+---
+title: "ADR 0001: Capability Model"
+description: "Organize engineering knowledge around ***Engineering Capabilities***."
+type: adr
+capability: architecture
+status: published
+tags: [capability, model]
+last_reviewed: 2026-07-28
+---
+
 # Context
 
 Engineering knowledge can be organized in many ways:
@@ -24,7 +34,7 @@ A capability represents an engineering discipline or area of expertise
 Each capability owns the complete collection of knowledge artifacts
 needed to master that discipline:
 
-```
+```text
 Capability
 ├── Handbook
 ├── Guides

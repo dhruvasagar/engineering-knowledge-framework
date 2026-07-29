@@ -1,3 +1,13 @@
+---
+title: "RFC Template"
+description: "A brief, one-paragraph summary of the proposal."
+type: template
+capability: architecture
+status: published
+tags: [rfc]
+last_reviewed: 2026-07-28
+---
+
 # RFC-NNNN: Title
 
 # Summary

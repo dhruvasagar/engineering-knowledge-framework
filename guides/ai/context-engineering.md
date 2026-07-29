@@ -1,3 +1,13 @@
+---
+title: "Context Engineering"
+description: "Context engineering is the practice of providing AI systems with structured, relevant information to improve the quality and accuracy of their output."
+type: guide
+capability: ai
+status: published
+tags: [context, engineering]
+last_reviewed: 2026-07-28
+---
+
 # Purpose
 
 Context engineering is the practice of providing AI systems with
@@ -62,7 +72,7 @@ What does good output look like?
 
 Provide:
 
-- Before*after examples for refactoring.
+- Before/after examples for refactoring.
 - Example inputs and expected outputs.
 - Reference implementations.
 
@@ -81,7 +91,7 @@ Link to:
 
 ## For Code Generation
 
-```
+````text
 I need to [task description].
 
 Language: [language]
@@ -101,11 +111,11 @@ Standards to follow:
 Desired output:
 - [description of expected output]
 - [format specification]
-```
+````
 
 ## For Code Review
 
-```
+````text
 Review this code for [purpose of the change].
 
 Focus on:
@@ -119,12 +129,12 @@ Code:
 ```[language]
 [paste code]
 ```
-```
+````
 
 ## For Design Exploration
 
-```
-I am designing [system*feature].
+```text
+I am designing [system/feature].
 
 Goals:
 - [goal 1]

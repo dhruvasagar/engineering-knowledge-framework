@@ -1,3 +1,13 @@
+---
+title: "Architecture Review Checklist"
+description: "Verify that an architectural decision or proposal is complete, well-documented and ready for review."
+type: checklist
+capability: architecture
+status: published
+tags: [review]
+last_reviewed: 2026-07-28
+---
+
 # Purpose
 
 Verify that an architectural decision or proposal is complete,

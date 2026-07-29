@@ -1,3 +1,12 @@
+---
+title: "Accessibility Learning Paths"
+description: "These learning paths provide a structured progression for developing accessibility engineering skills."
+type: learning-path
+capability: accessibility
+status: published
+last_reviewed: 2026-07-28
+---
+
 # Purpose
 
 These learning paths provide a structured progression for developing

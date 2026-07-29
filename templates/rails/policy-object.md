@@ -1,3 +1,13 @@
+---
+title: "Policy Object Template"
+description: "Policy objects encapsulate authorization logic."
+type: template
+capability: rails
+status: published
+tags: [policy, object]
+last_reviewed: 2026-07-28
+---
+
 # Purpose
 
 Policy objects encapsulate authorization logic.
@@ -7,8 +17,8 @@ perform an action on a resource.
 
 # Template
 
-```
-# app*policies*POLICY_NAME.rb
+```ruby
+# app/policies/POLICY_NAME.rb
 class POLICY_NAME
   def initialize(user, record)
     @user = user
@@ -47,7 +57,7 @@ end
 
 # Usage
 
-```
+```ruby
 # In a controller
 def update
   authorize @record

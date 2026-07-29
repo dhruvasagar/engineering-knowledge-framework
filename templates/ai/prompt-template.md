@@ -1,3 +1,13 @@
+---
+title: "Prompt Template"
+description: "Use this structure when writing prompts for engineering tasks."
+type: template
+capability: ai
+status: published
+tags: [prompt, template]
+last_reviewed: 2026-07-28
+---
+
 # Prompt Template
 
 Use this structure when writing prompts for engineering tasks. Adapt the
@@ -10,7 +20,7 @@ guidance on each pattern.
 
 Describe the role the AI should adopt:
 
-```
+```text
 You are a senior [Rails / security / architecture / etc.] engineer
 reviewing [code / design / documentation].
 ```
@@ -19,7 +29,7 @@ reviewing [code / design / documentation].
 
 Provide the minimum context needed:
 
-```
+```text
 Context:
 - Project: [project name]
 - Framework: [framework and version]
@@ -31,7 +41,7 @@ Context:
 
 State the task clearly and specifically:
 
-```
+```text
 Please [review / generate / analyse / explain] the following [code /
 design / document]:
 
@@ -42,7 +52,7 @@ design / document]:
 
 Specify boundaries and requirements:
 
-```
+```text
 Constraints:
 - Follow [specific standard or convention].
 - Consider [security / performance / maintainability].
@@ -53,7 +63,7 @@ Constraints:
 
 Ask the AI to verify its own output:
 
-```
+```text
 Before responding, verify that:
 1. [Specific check 1]
 2. [Specific check 2]
@@ -63,7 +73,7 @@ Before responding, verify that:
 
 ## Code Review
 
-```
+```text
 You are a senior Rails engineer reviewing a pull request.
 Focus on correctness, security and adherence to project conventions.
 
@@ -80,7 +90,7 @@ For each issue, indicate severity: critical / major / minor / suggestion.
 
 ## Design Exploration
 
-```
+```text
 You are a software architect. I need to choose between [Option A]
 and [Option B] for [use case].
 

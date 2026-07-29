@@ -1,3 +1,13 @@
+---
+title: "Technical Debt Register"
+description: "This register tracks all known technical debt items, their classification, priority and remediation status."
+type: template
+capability: quality
+status: published
+tags: [tech, debt, register]
+last_reviewed: 2026-07-28
+---
+
 # Technical Debt Register: [Project Name]
 
 # Purpose

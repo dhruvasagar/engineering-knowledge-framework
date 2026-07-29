@@ -1,3 +1,12 @@
+---
+title: "AI Engineering Glossary"
+description: "This glossary defines AI engineering terminology used throughout the Engineering Knowledge Framework."
+type: glossary
+capability: ai
+status: published
+last_reviewed: 2026-07-28
+---
+
 # Purpose
 
 This glossary defines AI engineering terminology used throughout the

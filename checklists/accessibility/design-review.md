@@ -1,3 +1,13 @@
+---
+title: "Design Review Checklist"
+description: "Verify accessibility requirements during the design phase."
+type: checklist
+capability: accessibility
+status: published
+tags: [design, review]
+last_reviewed: 2026-07-28
+---
+
 # Purpose
 
 Verify accessibility requirements during the design phase. Catching

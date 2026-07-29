@@ -1,3 +1,13 @@
+---
+title: "ADR 0006: Per-Capability Glossaries"
+description: "Organize glossaries by capability, with a shared root glossary for repository-wide terminology."
+type: adr
+capability: architecture
+status: published
+tags: [per, capability, glossaries]
+last_reviewed: 2026-07-28
+---
+
 # Context
 
 The framework needs a standardized approach to terminology management.
@@ -23,7 +33,7 @@ repository-wide terminology.
 
 Each capability owns its own glossary directory:
 
-```
+```text
 glossary/
 ├── README.org              (overview and writing guidelines)
 ├── engineering/            (repository-wide terminology)

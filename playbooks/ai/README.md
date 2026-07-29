@@ -1,3 +1,12 @@
+---
+title: "AI Playbooks Index"
+description: "This directory contains playbooks for AI-assisted engineering workflows."
+type: playbook
+capability: ai
+status: published
+last_reviewed: 2026-07-28
+---
+
 # Purpose
 
 This directory contains playbooks for AI-assisted engineering workflows.

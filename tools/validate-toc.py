@@ -24,6 +24,7 @@ IGNORE_FILES = {
     '.git',
     'site',
     'tools',
+    'docs',
     '.org-backup',
     '.venv',
     '__pycache__',

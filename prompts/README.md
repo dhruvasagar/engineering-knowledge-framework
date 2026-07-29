@@ -1,3 +1,13 @@
+---
+title: "AI Workflows Index"
+description: "This directory contains AI workflow documents providing prompt patterns for using AI assistants effectively in engineering tasks."
+type: prompt
+capability: ai
+status: published
+tags: [prompts]
+last_reviewed: 2026-07-28
+---
+
 # Purpose
 
 This directory contains AI workflow documents providing prompt patterns

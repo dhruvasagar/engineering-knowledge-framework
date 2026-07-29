@@ -1,3 +1,13 @@
+---
+title: "Security Review Playbook"
+description: "Ensure that systems, features and changes meet security standards before being deployed to production."
+type: playbook
+capability: security
+status: published
+tags: [review]
+last_reviewed: 2026-07-28
+---
+
 # Objective
 
 Ensure that systems, features and changes meet security standards

@@ -1,138 +1,100 @@
 #!/usr/bin/env python3
 """
-Style Validator — Check documents against STYLE_GUIDE.md rules.
+Style Validator — Check documents against style-guide.md rules.
 
 Validates:
-- All required metadata headers present (#+TITLE, #+AUTHOR, #+DATE, #+DESCRIPTION)
+- Required YAML frontmatter (title, description, type, capability,
+  status, last_reviewed) with values drawn from the document taxonomy
 - No skipped heading levels
-- No * used as bullet markers (should be -)
-- File naming conventions (.md extension, lowercase-with-dashes)
+- Every code fence carries a language tag, is balanced, and is not nested
+- No org-mode residue (#+KEYWORD, =verbatim=, [[target][text]])
+- No URLs mangled by the org-to-Markdown migration
+- File naming conventions (lowercase-with-dashes)
+
+The rules live in validate_style_lib.py and are unit tested by
+test_validate_style.py.
 
 Usage:
     python3 tools/validate-style.py
-    python3 tools/validate-style.py --fix
+    python3 tools/validate-style.py --rule code_fences   # run one rule
 """
 
 import os
-import re
 import sys
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+
+from validate_style_lib import CONTENT_RULES, check_filename  # noqa: E402
+
 REPO_ROOT = Path(__file__).resolve().parent.parent
 
-REQUIRED_METADATA = ['title:', 'description:']
-HEADING_PATTERN = re.compile(r'^(\*+)\s')
-BULLET_PATTERN = re.compile(r'^\s*\*\s+[A-Za-z]')
+# Directories that hold generated output, working documents or the
+# pre-migration archive — none of them are authored knowledge.
+SKIP_DIRS = {'.git', '.venv', '__pycache__', '.org-backup', 'node_modules',
+             'site', 'tools', 'docs'}
 
 
-def collect_org_files():
-    """Collect all .md files excluding .git and .venv."""
-    org_files = []
-    SKIP_DIRS = {'.git', '.venv', '__pycache__', '.org-backup', 'node_modules'}
+def collect_documents():
+    """Collect all authored .md documents."""
+    documents = []
     for root, dirs, files in os.walk(REPO_ROOT):
         rel = Path(root).relative_to(REPO_ROOT)
         if any(p in SKIP_DIRS or p.startswith('.') for p in rel.parts):
             continue
+        dirs[:] = [d for d in dirs if d not in SKIP_DIRS and not d.startswith('.')]
         for f in files:
             if f.endswith('.md'):
-                org_files.append(Path(root) / f)
-    return org_files
-
-
-def validate_metadata(filepath):
-    """Front matter is optional in source files.
-    Zola-compatible front matter is added by prepare-site-content.py
-    during the site build step.
-    """
-    return []
-
-
-def validate_headings(filepath):
-    """Check for skipped heading levels."""
-    content = filepath.read_text(encoding='utf-8')
-    lines = content.split('\n')
-    errors = []
-    prev_level = 0
-
-    for i, line in enumerate(lines):
-        match = HEADING_PATTERN.match(line)
-        if match:
-            level = len(match.group(1))
-            if prev_level > 0 and level > prev_level + 1:
-                errors.append(
-                    f"Line {i+1}: Skipped heading level ({prev_level} → {level}): {line.strip()}"
-                )
-            prev_level = level
-        elif line.strip() == '':
-            prev_level = 0  # Reset after blank line
-
-    return errors
-
-
-def validate_bullets(filepath):
-    """In markdown, both * and - are valid bullet characters.
-    No longer applicable since we migrated from org-mode."""
-    return []
-
-
-def validate_filename(filepath):
-    """Check file naming conventions."""
-    rel_path = filepath.relative_to(REPO_ROOT)
-    name = filepath.stem  # Without .md
-    errors = []
-
-    # Skip files with README or index in name (conventional)
-    if name in ('README', 'index'):
-        return errors
-
-    # Check for spaces
-    if ' ' in name:
-        errors.append(f"Filename contains spaces: {rel_path}")
-
-    # Check for uppercase letters (except README)
-    if name != name.lower() and name not in ('README', 'CHANGELOG', 'CLAUDE',
-                                              'TOC', 'STYLE_GUIDE', 'WRITING_PRINCIPLES',
-                                              'CONTRIBUTING', 'DOCUMENT_TYPES',
-                                              'ARCHITECTURE', 'STRATEGY', 'ROADMAP'):
-        errors.append(f"Filename should be lowercase: {rel_path}")
-
-    return errors
+                documents.append(Path(root) / f)
+    return sorted(documents)
 
 
 def main():
-    print("📝 Style Validator")
-    print(f"   Scanning {REPO_ROOT}...\n")
+    only = None
+    if '--rule' in sys.argv:
+        only = sys.argv[sys.argv.index('--rule') + 1]
 
-    org_files = collect_org_files()
+    rules = CONTENT_RULES
+    if only:
+        rules = tuple(r for r in CONTENT_RULES if r.__name__ == f'check_{only}')
+        if not rules:
+            names = ', '.join(r.__name__.removeprefix('check_') for r in CONTENT_RULES)
+            print(f'Unknown rule: {only}\nAvailable: {names}')
+            sys.exit(2)
+
+    print('📝 Style Validator')
+    print(f'   Scanning {REPO_ROOT}...\n')
+
+    documents = collect_documents()
     all_errors = []
-    file_count = 0
 
-    for filepath in sorted(org_files):
+    for filepath in documents:
         rel_path = filepath.relative_to(REPO_ROOT)
-        file_errors = []
+        content = filepath.read_text(encoding='utf-8')
 
-        file_errors.extend(validate_metadata(filepath))
-        file_errors.extend(validate_headings(filepath))
-        file_errors.extend(validate_bullets(filepath))
-        file_errors.extend(validate_filename(filepath))
+        errors = []
+        for rule in rules:
+            errors.extend(rule(content))
+        if not only:
+            errors.extend(check_filename(str(rel_path), filepath.stem))
 
-        if file_errors:
-            all_errors.append((rel_path, file_errors))
-        file_count += 1
+        if errors:
+            all_errors.append((rel_path, errors))
 
-    print(f"   Checked {file_count} files\n")
+    print(f'   Checked {len(documents)} files against {len(rules)} rule(s)\n')
 
     if all_errors:
-        print(f"❌ {sum(len(e) for _, e in all_errors)} style issue(s) found:\n")
+        total = sum(len(e) for _, e in all_errors)
+        print(f'❌ {total} style issue(s) in {len(all_errors)} file(s):\n')
         for rel_path, errors in all_errors:
-            print(f"   {rel_path}:")
+            print(f'   {rel_path}:')
             for err in errors:
-                print(f"     - {err}")
+                print(f'     - {err}')
             print()
         sys.exit(1)
-    else:
-        print("✅ All style checks pass!")
-        sys.exit(0)
+
+    print('✅ All style checks pass!')
+    sys.exit(0)
 
 
 if __name__ == '__main__':

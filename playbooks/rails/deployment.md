@@ -1,3 +1,13 @@
+---
+title: "Rails Deployment Playbook"
+description: "Deploy Rails application changes to production safely, with particular attention to database migrations that can cause downtime or data loss."
+type: playbook
+capability: rails
+status: published
+tags: [deployment]
+last_reviewed: 2026-07-28
+---
+
 # Objective
 
 Deploy Rails application changes to production safely, with particular
@@ -26,7 +36,7 @@ Review all pending migrations for safety concerns.
 
 Use `strong_migrations` to detect dangerous operations:
 
-```
+```bash
 bundle exec strong_migrations --check
 ```
 
@@ -44,7 +54,7 @@ bundle exec strong_migrations --check
 For zero-downtime deployments, run migrations before deploying new
 application code.
 
-```
+```bash
 # Deploy step 1: Run migrations
 bundle exec rails db:migrate
 
@@ -85,7 +95,7 @@ If issues are detected:
 
 ## Adding an Index Concurrently
 
-```
+```ruby
 class AddIndexToUsersOnEmail < ActiveRecord::Migration[7.1]
   disable_ddl_transaction!
 
@@ -99,15 +109,15 @@ end
 
 Backfill in a separate Rake task, not in the migration:
 
-```
-# db*migrate*20260101000000_add_status_to_users.rb
+```ruby
+# db/migrate/20260101000000_add_status_to_users.rb
 class AddStatusToUsers < ActiveRecord::Migration[7.1]
   def change
     add_column :users, :status, :string, default: "active", null: false
   end
 end
 
-# lib*tasks*backfill.rake
+# lib/tasks/backfill.rake
 namespace :backfill do
   desc "Backfill user status"
   task user_status: :environment do
@@ -125,7 +135,7 @@ end
 3. Remove the column in a subsequent migration.
 4. Deploy again.
 
-```
+```ruby
 class User < ApplicationRecord
   self.ignored_columns = %w[legacy_column]
 end

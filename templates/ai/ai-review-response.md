@@ -1,3 +1,13 @@
+---
+title: "AI Review Response Template"
+description: "Use this template to document and track AI-generated review findings."
+type: template
+capability: ai
+status: published
+tags: [review, response]
+last_reviewed: 2026-07-28
+---
+
 # AI Review Response Template
 
 Use this template to document and track AI-generated review findings.

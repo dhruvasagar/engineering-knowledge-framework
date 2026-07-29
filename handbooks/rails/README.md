@@ -1,3 +1,12 @@
+---
+title: "Rails Engineering Handbook"
+description: "Ruby on Rails is a web application framework that emphasizes convention over configuration, developer productivity and elegant code."
+type: handbook
+capability: rails
+status: published
+last_reviewed: 2026-07-28
+---
+
 # Purpose
 
 Ruby on Rails is a web application framework that emphasizes convention
@@ -44,7 +53,7 @@ representation within the system.
 
 Duplication increases maintenance cost and creates opportunities for
 inconsistency. When modifying behaviour, every duplicated location must
-be updated — a process that is error-prone and容易遗漏.
+be updated — a process that is error-prone and easy to overlook.
 
 ## MVC Architecture
 
@@ -118,10 +127,10 @@ incrementally.
 ## Application Structure
 
 Follow Rails defaults for the standard directories. Custom code
-belongs in `app*` with clear naming.
+belongs in `app/` with clear naming.
 
-```
-app*
+```text
+app/
   controllers/
   models/
   views/
@@ -209,7 +218,7 @@ For Rails specifically:
 
 Use service objects to encapsulate complex operations.
 
-```
+```ruby
 class RegisterUser
   def initialize(params)
     @params = params
@@ -308,7 +317,7 @@ When using AI for Rails development, provide:
 
 See the [AI Engineering Handbook](../../handbooks/ai/README.md) for general AI workflow guidance.
 
-### AI-Assisted Upgrades
+## AI-Assisted Upgrades
 
 The [Ruby Upgrade Toolkit](https://github.com/dhruvasagar/ruby-upgrade-toolkit)
 is a Claude Code plugin that fully automates Ruby and Rails version
@@ -341,7 +350,7 @@ The following documents form the complete capability:
 
 - [Service Objects](../../guides/rails/service-objects.md) — When and how to use service objects,
   structure, patterns and testing.
-- [Testing Rails Applications](../../guides/rails/testing.md) — Test distribution, model*request*
+- [Testing Rails Applications](../../guides/rails/testing.md) — Test distribution, model/request/
   system specs, factory patterns.
 - [Rails Audit Guide](../../guides/rails/audit-guide.md) — Systematic code quality, performance,
   database and security auditing.

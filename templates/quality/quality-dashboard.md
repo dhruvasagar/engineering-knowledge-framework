@@ -1,3 +1,13 @@
+---
+title: "Quality Dashboard Template"
+description: "Track key quality metrics over time to identify trends, measure improvement and spot regressions early."
+type: template
+capability: quality
+status: published
+tags: [dashboard]
+last_reviewed: 2026-07-28
+---
+
 # Quality Dashboard: [Project Name]
 
 # Purpose
@@ -12,7 +22,7 @@ improvement and spot regressions early.
 | Cyclomatic complexity  |         |            | < 15   |        |
 | Code duplication (%)   |         |            | < 5%   |        |
 | Linting violations     |         |            | 0      |        |
-| Code churn (LOC*month) |         |            |        |        |
+| Code churn (LOC/month) |         |            |        |        |
 | Comment ratio (%)      |         |            | 15-25% |        |
 
 # Test Quality Metrics

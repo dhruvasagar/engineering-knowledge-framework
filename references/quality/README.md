@@ -1,3 +1,12 @@
+---
+title: "Engineering Quality References"
+description: "Quick-reference material for engineering quality."
+type: reference
+capability: quality
+status: published
+last_reviewed: 2026-07-28
+---
+
 # Purpose
 
 Quick-reference material for engineering quality.

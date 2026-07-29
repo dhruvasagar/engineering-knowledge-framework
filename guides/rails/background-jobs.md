@@ -1,3 +1,13 @@
+---
+title: "Background Jobs"
+description: "Background jobs handle work that should not block a web request: sending emails, processing uploads, calling external APIs, generating reports."
+type: guide
+capability: rails
+status: published
+tags: [background, jobs]
+last_reviewed: 2026-07-28
+---
+
 # Purpose
 
 Background jobs handle work that should not block a web request:
@@ -30,7 +40,7 @@ dependency) or ***Sidekiq*** (most mature, extensive ecosystem).
 
 Each job should do one thing.
 
-```
+```ruby
 # Good
 class SendWelcomeEmailJob < ApplicationJob
   queue_as :default
@@ -57,7 +67,7 @@ end
 
 Design jobs so they can be safely retried without side effects.
 
-```
+```ruby
 class ChargeSubscriptionJob < ApplicationJob
   def perform(subscription_id)
     subscription = Subscription.find(subscription_id)
@@ -75,7 +85,7 @@ end
 Sidekiq and GoodJob retry failed jobs automatically with exponential
 backoff. Configure retry limits:
 
-```
+```ruby
 class ApiCallJob < ApplicationJob
   retry_on Timeout::Error, wait: :exponentially_longer, attempts: 5
   retry_on ThirdPartyService::TemporaryError, wait: 30.seconds, attempts: 3
@@ -121,7 +131,7 @@ Set alerts for:
 
 For processing large datasets, use batches:
 
-```
+```ruby
 class ProcessBatchJob < ApplicationJob
   def perform(batch_id)
     batch = Batch.find(batch_id)
@@ -137,7 +147,7 @@ end
 Use `sidekiq-cron`, `good_job` recurring intervals, or `whenever` for
 periodic jobs:
 
-```
+```yaml
 # config/recurring.yml (GoodJob)
 production:
   every_day:
@@ -150,7 +160,7 @@ production:
 
 Avoid overwhelming external APIs:
 
-```
+```ruby
 class ExternalApiJob < ApplicationJob
   sidekiq_options throttle: { threshold: 10, period: 1.second }
 

@@ -1,3 +1,13 @@
+---
+title: "Accessibility Statement"
+description: "We are committed to ensuring digital accessibility for all users, regardless of ability."
+type: template
+capability: accessibility
+status: published
+tags: [statement]
+last_reviewed: 2026-07-28
+---
+
 # Accessibility Statement: [Product/Organisation Name]
 
 # Status

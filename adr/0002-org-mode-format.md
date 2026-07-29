@@ -1,3 +1,13 @@
+---
+title: "ADR 0002: Org-Mode Format"
+description: "Use ***Markdown*** (plain text with `.md` extension) as the primary document format for all framework documents."
+type: adr
+capability: architecture
+status: published
+tags: [org, mode, format]
+last_reviewed: 2026-07-28
+---
+
 # Context
 
 The framework needed a document format with:

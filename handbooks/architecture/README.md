@@ -1,3 +1,12 @@
+---
+title: "Software Architecture Handbook"
+description: "Software architecture is the set of design decisions that shape a system and are costly to change."
+type: handbook
+capability: architecture
+status: published
+last_reviewed: 2026-07-28
+---
+
 # Purpose
 
 Software architecture is the set of design decisions that shape a system

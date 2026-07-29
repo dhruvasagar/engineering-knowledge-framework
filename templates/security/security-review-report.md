@@ -1,3 +1,13 @@
+---
+title: "Security Review Report"
+description: "Brief overview of the review, key findings and overall risk assessment."
+type: template
+capability: security
+status: published
+tags: [review, report]
+last_reviewed: 2026-07-28
+---
+
 # SECURITY-REVIEW-NNNN: [Project/System Name]
 
 # Metadata

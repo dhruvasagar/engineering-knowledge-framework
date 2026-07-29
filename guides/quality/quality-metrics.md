@@ -1,3 +1,13 @@
+---
+title: "Quality Metrics"
+description: "Quality metrics provide objective data for evaluating and improving engineering effectiveness."
+type: guide
+capability: quality
+status: published
+tags: [metrics]
+last_reviewed: 2026-07-28
+---
+
 # Purpose
 
 Quality metrics provide objective data for evaluating and improving
@@ -44,7 +54,7 @@ Measures the percentage of duplicated code blocks.
 - Target: < 5%.
 - Duplication increases maintenance cost and bug risk.
 
-Tools: Flay (Ruby), PMD Copy*Paste Detector (Java), ESLint (JS).
+Tools: Flay (Ruby), PMD Copy/Paste Detector (Java), ESLint (JS).
 
 ## Code Coverage
 
@@ -111,7 +121,7 @@ incentives.
 
 ## Step 3: Automate Collection
 
-- Use CI*CD to collect metrics automatically.
+- Use CI/CD to collect metrics automatically.
 - Display metrics on a dashboard visible to the team.
 - Alert on significant regressions.
 

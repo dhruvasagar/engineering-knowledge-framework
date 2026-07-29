@@ -1,3 +1,13 @@
+---
+title: "Service Objects"
+description: "Service objects encapsulate a single business operation into a dedicated class."
+type: guide
+capability: rails
+status: published
+tags: [service, objects]
+last_reviewed: 2026-07-28
+---
+
 # Purpose
 
 Service objects encapsulate a single business operation into a
@@ -48,7 +58,7 @@ Do not use a service object for:
 A service object is a plain Ruby class with a single public method,
 conventionally named `call`.
 
-```
+```ruby
 class InviteUser
   def initialize(team:, email:, inviter:)
     @team = team
@@ -68,7 +78,7 @@ Service objects should return a consistent result object.
 
 Use a simple result object with success and failure states:
 
-```
+```ruby
 class InviteUser
   Result = Struct.new(:success?, :user, :error)
 
@@ -83,7 +93,7 @@ end
 
 This enables callers to handle success and failure uniformly:
 
-```
+```ruby
 result = InviteUser.new(team:, email:, inviter:).call
 
 if result.success?
@@ -111,7 +121,7 @@ The name should describe what the object does, not what it is.
 
 A simple, single-purpose operation.
 
-```
+```ruby
 class ArchiveInactiveUsers
   def initialize(cutoff_date:)
     @cutoff_date = cutoff_date
@@ -130,7 +140,7 @@ end
 When the operation depends on an external service, inject the
 dependency.
 
-```
+```ruby
 class SendNotification
   def initialize(user:, message:, client: NotificationClient.new)
     @user = user
@@ -152,7 +162,7 @@ stubbed in tests.
 When an operation has multiple steps, keep each step as a private
 method and compose them in `call`.
 
-```
+```ruby
 class CreateOrder
   def initialize(cart:, customer:)
     @cart = cart
@@ -191,7 +201,7 @@ end
 
 Service objects are easy to test because they are plain Ruby classes.
 
-```
+```ruby
 RSpec.describe InviteUser do
   subject(:result) { described_class.new(team:, email:, inviter:).call }
 

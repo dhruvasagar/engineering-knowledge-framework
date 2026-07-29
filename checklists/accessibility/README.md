@@ -1,3 +1,12 @@
+---
+title: "Accessibility Checklists Index"
+description: "This directory contains checklists for verifying accessibility at different stages of development."
+type: checklist
+capability: accessibility
+status: published
+last_reviewed: 2026-07-28
+---
+
 # Purpose
 
 This directory contains checklists for verifying accessibility at

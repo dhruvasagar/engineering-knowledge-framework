@@ -1,3 +1,13 @@
+---
+title: "AI Workflows for Quality"
+description: "This document provides prompt patterns for using AI to assist with engineering quality tasks — quality review, technical debt analysis, test coverage assessment and quality..."
+type: prompt
+capability: quality
+status: published
+tags: [workflows]
+last_reviewed: 2026-07-28
+---
+
 # Purpose
 
 This document provides prompt patterns for using AI to assist with
@@ -18,7 +28,7 @@ Use AI to review code quality before human review.
 
 Context:
 
-```
+```text
 Review the following code for quality issues:
 
 [paste code]
@@ -38,7 +48,7 @@ Use AI to identify potential technical debt in code.
 
 Context:
 
-```
+```text
 Analyse this code for signs of technical debt:
 
 [paste code]
@@ -59,7 +69,7 @@ Use AI to assess test quality and coverage gaps.
 
 Context:
 
-```
+```text
 Review these test files for coverage quality:
 
 [paste test code]
@@ -80,7 +90,7 @@ Use AI to interpret quality metrics and suggest improvements.
 
 Context:
 
-```
+```text
 Here are the current quality metrics for [project]:
 
 [paste metrics]
@@ -100,7 +110,7 @@ Use AI to prepare for a code review by highlighting areas of concern.
 
 Context:
 
-```
+```text
 Prepare this code for review:
 
 [paste diff or code]

@@ -1,3 +1,13 @@
+---
+title: "Release Quality Gate"
+description: "Ensure every release meets defined quality standards before reaching production."
+type: playbook
+capability: quality
+status: published
+tags: [release, gate]
+last_reviewed: 2026-07-28
+---
+
 # Objective
 
 Ensure every release meets defined quality standards before reaching
@@ -7,14 +17,14 @@ protect users and infrastructure.
 # Inputs
 
 - Release candidate version.
-- CI*CD pipeline results.
+- CI/CD pipeline results.
 - Test coverage and health reports.
 - Security scan results.
 - Performance benchmark results.
 
 # Prerequisites
 
-- CI*CD pipeline configured with quality gates (see [Project Standards](../../guides/rails/project-standards.md)).
+- CI/CD pipeline configured with quality gates (see [Project Standards](../../guides/rails/project-standards.md)).
 - Quality metrics baselines established (see [Quality Metrics](../../guides/quality/quality-metrics.md)).
 - [Release Readiness Checklist](../../checklists/quality/release-readiness.md) available.
 
@@ -22,7 +32,7 @@ protect users and infrastructure.
 
 ## Step 1: Automated Gates
 
-Before human review, the CI*CD pipeline must pass these automated gates:
+Before human review, the CI/CD pipeline must pass these automated gates:
 
 | Gate              | Threshold                                  |
 |-------------------|--------------------------------------------|
@@ -43,7 +53,7 @@ Automated gates passed? Proceed to manual review:
 4. ***Database migration safety***: Migrations have rollback plans.
 5. ***Feature flags***: New features are behind flags if not fully ready.
 
-## Step 3: Go*No-Go Decision
+## Step 3: Go/No-Go Decision
 
 Based on gate results, decide:
 

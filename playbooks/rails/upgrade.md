@@ -1,3 +1,13 @@
+---
+title: "Rails Upgrade Playbook"
+description: "Upgrade a Rails application to a new version with minimal risk, minimal downtime and clear rollback capability."
+type: playbook
+capability: rails
+status: published
+tags: [upgrade]
+last_reviewed: 2026-07-28
+---
+
 # Objective
 
 Upgrade a Rails application to a new version with minimal risk, minimal
@@ -95,7 +105,7 @@ and verification.
 
 Add the marketplace and install the plugin in Claude Code:
 
-```
+```text
 /plugin marketplace add dhruvasagar/ruby-upgrade-toolkit
 /plugin install ruby-upgrade-toolkit@dhruvasagar
 /reload-plugins
@@ -108,7 +118,7 @@ different levels of control:
 
 ### Mode 1: Fully Automated
 
-```
+```text
 /ruby-upgrade-toolkit:upgrade ruby:X.Y.Z [rails:X.Y]
 ```
 
@@ -123,7 +133,7 @@ and execute the work.
 
 ### Mode 2: Review First, Then Automate
 
-```
+```text
 /ruby-upgrade-toolkit:audit ruby:X.Y.Z [rails:X.Y.Y]   # understand the scope
 /ruby-upgrade-toolkit:plan ruby:X.Y.Z [rails:X.Y.Y]    # review the phase sequence
 /ruby-upgrade-toolkit:upgrade ruby:X.Y.Z [rails:X.Y.Y] # execute the plan
@@ -140,7 +150,7 @@ understand scope before committing to execution.
 
 ### Mode 3: Fully Manual (Per-Phase Control)
 
-```
+```text
 /ruby-upgrade-toolkit:audit ruby:X.Y.Z [rails:X.Y.Y]   # read-only scan
 /ruby-upgrade-toolkit:plan  ruby:X.Y.Z [rails:X.Y.Y]   # roadmap + task list
 /ruby-upgrade-toolkit:fix   next                         # apply next phase

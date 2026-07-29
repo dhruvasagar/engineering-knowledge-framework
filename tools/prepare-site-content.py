@@ -18,12 +18,17 @@ Usage:
 import os
 import re
 import shutil
+import sys
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+
+from validate_style_lib import parse_frontmatter, split_frontmatter  # noqa: E402
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 SITE_CONTENT = REPO_ROOT / 'site' / 'content'
 
-SKIP_DIRS = {'.git', 'site', 'tools', 'assets', '__pycache__', '.org-backup', '.venv'}
+SKIP_DIRS = {'.git', 'site', 'tools', 'docs', 'assets', '__pycache__', '.org-backup', '.venv'}
 SKIP_FILES = {'CLAUDE.md', 'Makefile', '.gitignore', 'LICENSE'}
 
 LINK_PATTERN = re.compile(r'\]\(([^)]+)\)')
@@ -104,10 +109,38 @@ def path_to_title(filepath):
     return topic
 
 
-def add_front_matter(content, title):
-    """Wrap content with Zola front matter."""
-    title_escaped = title.replace('"', '\\"')
-    return f'+++\ntitle = "{title_escaped}"\n+++\n\n{content}'
+def toml_string(value):
+    return '"' + str(value).replace('\\', '\\\\').replace('"', '\\"') + '"'
+
+
+def add_front_matter(content, title, meta=None):
+    """Wrap content with Zola front matter.
+
+    Carries description, capability, document type, status and review date
+    through to the site so templates and the search index can use them.
+    """
+    meta = meta or {}
+    lines = ['+++', f'title = {toml_string(title)}']
+
+    if meta.get('description'):
+        lines.append(f'description = {toml_string(meta["description"])}')
+
+    extra = [(k, meta[k]) for k in ('capability', 'type', 'status', 'last_reviewed')
+             if meta.get(k)]
+    tags = meta.get('tags') or []
+
+    if extra or tags:
+        lines.append('')
+        lines.append('[extra]')
+        for key, value in extra:
+            name = 'doc_type' if key == 'type' else key
+            lines.append(f'{name} = {toml_string(value)}')
+        if tags:
+            rendered = ', '.join(toml_string(t) for t in tags)
+            lines.append(f'tags = [{rendered}]')
+
+    lines.append('+++')
+    return '\n'.join(lines) + f'\n\n{content}'
 
 
 def zolafy_link_target(target):
@@ -155,20 +188,22 @@ def zolafy_link_target(target):
 def copy_with_fixes(src, dst):
     """Copy a file from source to site content, applying Zola fixes."""
     content = src.read_text(encoding='utf-8')
-    
-    # Strip any existing front matter (in case some files have it)
-    content = re.sub(r'^---\n.*?\n---\n\n*', '', content, flags=re.DOTALL)
-    
+
+    # Authored documents carry YAML front matter. Translate it to Zola's
+    # TOML rather than discarding it and re-deriving a title from the path.
+    fm_text, body, _ = split_frontmatter(content)
+    meta = parse_frontmatter(fm_text) if fm_text else {}
+    content = body.lstrip('\n')
+
     # Fix links: .md → Zola directory-style URLs
     def replace_link(m):
         return f']({zolafy_link_target(m.group(1))})'
-    
+
     content = LINK_PATTERN.sub(replace_link, content)
-    
-    # Derive title from path and add Zola front matter
-    title = path_to_title(src)
-    content = add_front_matter(content, title)
-    
+
+    title = meta.get('title') or path_to_title(src)
+    content = add_front_matter(content, title, meta)
+
     dst.write_text(content, encoding='utf-8')
 
 

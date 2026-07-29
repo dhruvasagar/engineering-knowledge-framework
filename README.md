@@ -1,3 +1,12 @@
+---
+title: "Engineering Knowledge Framework"
+description: "Engineering Knowledge Framework is an open-source framework for building AI-native engineering knowledge systems."
+type: governance
+capability: governance
+status: published
+last_reviewed: 2026-07-28
+---
+
 # Engineering Knowledge Framework
 
 Engineering Knowledge Framework is an open-source framework for building
@@ -141,40 +150,28 @@ Examples include:
 - AI context generation
 - Search and indexing
 
-- Repository Organization
+# Repository Organization
 
 The repository is organized into several major areas.
 
-```
-governance/
-Repository philosophy, standards and guidance
+Governance documents live at the repository root.
 
-glossary/
-Canonical engineering terminology
-
-handbook/
-Engineering principles and standards
-
-guides/
-Focused explanations of engineering topics
-
-playbooks/
-Repeatable engineering workflows
-
-checklists/
-Verification and quality gates
-
-templates/
-Reusable engineering artifacts
-
-references/
-Quick reference material
-
-learning-paths/
-Structured learning journeys
-
-assets/
-Shared diagrams, images and supporting resources
+```text
+handbooks/        Engineering principles and standards, one per capability
+guides/           Focused explanations of engineering topics
+playbooks/        Repeatable engineering workflows
+checklists/       Verification and quality gates
+templates/        Reusable engineering artifacts
+references/       Quick reference material
+glossary/         Canonical engineering terminology
+learning-paths/   Structured learning journeys
+prompts/          AI workflow prompt patterns
+adr/              Architecture decision records for the framework itself
+rfc/              Proposals under discussion
+assets/           Shared diagrams, images and supporting resources
+tools/            Validators, knowledge graph, context packs, MCP server
+site/             Static site generator configuration and theme
+docs/             Working documents for the framework's own development
 ```
 
 Each document type has a clearly defined purpose.
@@ -189,7 +186,7 @@ for more information.
 
 Engineering knowledge evolves continuously.
 
-```
+```text
 Experience
 ↓
 Capture

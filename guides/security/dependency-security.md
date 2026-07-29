@@ -1,3 +1,13 @@
+---
+title: "Dependency Security"
+description: "Modern applications depend on hundreds of third-party packages."
+type: guide
+capability: security
+status: published
+tags: [dependency]
+last_reviewed: 2026-07-28
+---
+
 # Purpose
 
 Modern applications depend on hundreds of third-party packages.
@@ -18,7 +28,7 @@ Every project MUST scan dependencies for known vulnerabilities.
 | Ecosystem  | Tool                   | CI Integration                             |
 |------------|------------------------|--------------------------------------------|
 | Ruby       | bundler-audit          | `bundle exec bundler-audit check --update` |
-| JavaScript | npm audit / yarn audit | `npm audit --audit-level`high=             |
+| JavaScript | npm audit / yarn audit | `npm audit --audit-level=high`             |
 | Python     | pip-audit              | `pip-audit`                                |
 | Docker     | Trivy / Grype          | `trivy image myapp:latest`                 |
 

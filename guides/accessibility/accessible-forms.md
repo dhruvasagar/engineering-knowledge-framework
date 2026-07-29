@@ -1,3 +1,13 @@
+---
+title: "Accessible Forms"
+description: "Forms are one of the most common and critical interaction patterns on the web."
+type: guide
+capability: accessibility
+status: published
+tags: [accessible, forms]
+last_reviewed: 2026-07-28
+---
+
 # Purpose
 
 Forms are one of the most common and critical interaction patterns on
@@ -27,7 +37,7 @@ radio buttons, checkboxes and address fields.
 
 ## Labelling
 
-```
+```html
 <!-- Good: explicit label with for attribute -->
 <label for`"email">Email address<*label>
 <input type`"email" id`"email" name`"email">
@@ -45,7 +55,7 @@ radio buttons, checkboxes and address fields.
 
 ## Required Fields
 
-```
+```html
 <label for`"name">
   Name <span aria-hidden`"true">**<*span>
 <*label>
@@ -54,7 +64,7 @@ radio buttons, checkboxes and address fields.
 
 ## Error Handling
 
-```
+```html
 <label for`"email">Email address<*label>
 <input
   type`"email"
@@ -69,7 +79,7 @@ radio buttons, checkboxes and address fields.
 
 ## Grouped Controls
 
-```
+```html
 <fieldset>
   <legend>Shipping address<*legend>
   <label for`"street">Street<*label>
@@ -95,7 +105,7 @@ radio buttons, checkboxes and address fields.
 - [ ] Every form control has an associated label.
 - [ ] Required fields are indicated textually, not just by colour.
 - [ ] Error messages are associated with inputs via `aria-describedby`.
-- [ ] Invalid inputs have `aria-invalid`"true"=.
+- [ ] Invalid inputs have `aria-invalid="true"`.
 - [ ] Related controls are grouped with `<fieldset>` and `<legend>`.
 - [ ] Form can be submitted with keyboard alone.
 - [ ] Success and error states are announced to screen readers.

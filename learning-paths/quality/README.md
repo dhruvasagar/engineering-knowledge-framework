@@ -1,3 +1,12 @@
+---
+title: "Engineering Quality Learning Paths"
+description: "These learning paths provide a structured progression through engineering quality practices, from following quality standards to establishing quality processes across teams."
+type: learning-path
+capability: quality
+status: published
+last_reviewed: 2026-07-28
+---
+
 # Purpose
 
 These learning paths provide a structured progression through

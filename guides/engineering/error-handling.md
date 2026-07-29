@@ -1,3 +1,13 @@
+---
+title: "Error Handling"
+description: "Errors are an inevitable part of software operation."
+type: guide
+capability: engineering
+status: published
+tags: [error, handling]
+last_reviewed: 2026-07-28
+---
+
 # Purpose
 
 Errors are an inevitable part of software operation.
@@ -80,7 +90,7 @@ Good error messages include:
 
 ***Good:***
 
-```
+```text
 UserRegistrationFailed: Could not register user
   (email=john@example.com). Reason: Email already taken.
   Request ID: req-abc-123
@@ -88,7 +98,7 @@ UserRegistrationFailed: Could not register user
 
 ***Avoid:***
 
-```
+```text
 Error: Validation failed
 ```
 
@@ -113,7 +123,7 @@ Choose the error mechanism that matches the context:
 | Exceptions   | The error is unexpected or cannot be handled at the     |
 |              | call site (e.g., network failure, configuration error). |
 | Result types | You want type-safe error handling without exceptions    |
-|              | (e.g., `Result[T, E]`, `Either`, =Ok=).                 |
+|              | (e.g., `Result[T, E]`, `Either`, `Ok`).                 |
 
 Prefer return types or result types for expected errors. Reserve
 exceptions for exceptional conditions.
@@ -174,7 +184,7 @@ free-text messages.
 
 Good:
 
-```
+```json
 {"event": "user_registration_failed",
  "user_id": "abc-123",
  "reason": "email_taken",
@@ -188,7 +198,7 @@ Structured logs are searchable, filterable and machine-parseable.
 
 ## Catching and Ignoring
 
-```
+```text
 try:
     risky_operation()
 except Exception:

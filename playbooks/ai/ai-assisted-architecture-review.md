@@ -1,3 +1,13 @@
+---
+title: "AI-Assisted Architecture Review"
+description: "Leverage AI to accelerate architecture reviews by analysing trade-offs, checking consistency against principles and generating review materials."
+type: playbook
+capability: ai
+status: published
+tags: [assisted, architecture, review]
+last_reviewed: 2026-07-28
+---
+
 # Objective
 
 Leverage AI to accelerate architecture reviews by analysing trade-offs,

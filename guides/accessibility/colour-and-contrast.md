@@ -1,3 +1,13 @@
+---
+title: "Colour and Contrast"
+description: "Sufficient colour contrast is essential for readability."
+type: guide
+capability: accessibility
+status: published
+tags: [colour, contrast]
+last_reviewed: 2026-07-28
+---
+
 # Purpose
 
 Sufficient colour contrast is essential for readability. Low contrast
@@ -36,9 +46,9 @@ in bright environments.
 
 ## Tools
 
-- [[https:*/webaim.org*resources*contrastchecker*][WebAIM Contrast Checker]]
-- [[https:*/developer.chrome.com*docs*devtools*accessibility*reference*#contrast][Chrome DevTools Contrast]]
-- [[https:*/www.figma.com*community*plugin*748533339900865323][Figma A11y Contrast Checker]]
+- [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/)
+- [Chrome DevTools Contrast](https://developer.chrome.com/docs/devtools/accessibility/reference/#contrast)
+- [Figma A11y Contrast Checker](https://www.figma.com/community/plugin/748533339900865323)
 
 ## Don't Rely on Colour Alone
 
@@ -55,7 +65,7 @@ means:
 # Anti-patterns
 
 - ***Low contrast text***: Gray-on-light or light-on-dark without checking ratios.
-- ***Colour-only indicators***: Using red*green for pass*fail without text labels.
+- ***Colour-only indicators***: Using red/green for pass/fail without text labels.
 - ***Focus only on text***: UI components, borders and icons also need sufficient contrast.
 - ***Assuming WCAG AA is enough***: Some users benefit from AAA ratios for normal text.
 

@@ -1,3 +1,13 @@
+---
+title: "Rails Project Standards"
+description: "Every Rails project should start with a consistent baseline of code quality tools, testing standards and CI/CD configuration."
+type: guide
+capability: rails
+status: published
+tags: [project, standards]
+last_reviewed: 2026-07-28
+---
+
 # Purpose
 
 Every Rails project should start with a consistent baseline of code
@@ -34,7 +44,7 @@ Purpose: Enforce consistent Ruby style and catch common errors.
 
 Mandatory gems:
 
-```
+```ruby
 group :development, :test do
   gem "rubocop", require: false
   gem "rubocop-rails", require: false
@@ -48,7 +58,7 @@ Configuration requirements:
 - Inherit from rubocop-rails and rubocop-rspec defaults.
 - Enable `NewCops` to adopt new rules as they are released.
 - Keep configuration in version control at `.rubocop.yml`.
-- Run in CI with `--fail-level`convention=.
+- Run in CI with `--fail-level=convention`.
 
 ## Security — Brakeman
 
@@ -56,7 +66,7 @@ Purpose: Static analysis for security vulnerabilities.
 
 Mandatory gem:
 
-```
+```ruby
 group :development, :test do
   gem "brakeman", require: false
 end
@@ -73,7 +83,7 @@ Purpose: Scan Gemfile.lock for known vulnerabilities.
 
 Mandatory gem:
 
-```
+```ruby
 group :development, :test do
   gem "bundler-audit", require: false
 end
@@ -91,7 +101,7 @@ test.
 
 Mandatory gem:
 
-```
+```ruby
 group :development, :test do
   gem "bullet", require: false
 end
@@ -109,7 +119,7 @@ Purpose: In-browser performance profiling for development.
 
 Mandatory gem:
 
-```
+```ruby
 group :development do
   gem "rack-mini-profiler", require: false
 end
@@ -126,7 +136,7 @@ Purpose: Measure test coverage and enforce minimum thresholds.
 
 Mandatory gem:
 
-```
+```ruby
 group :test do
   gem "simplecov", require: false
 end
@@ -155,14 +165,14 @@ The following tools are strongly recommended but not mandatory:
 | Mutant               | Mutation testing                      | Critical domain logic that demands   |
 |                      |                                       | high test quality.                   |
 
-# CI*CD Baseline
+# CI/CD Baseline
 
 Every Rails project MUST have a CI pipeline that runs on every push.
 
 ## Minimum CI Pipeline
 
-```
-# .github*workflows*ci.yml
+```yaml
+# .github/workflows/ci.yml
 name: CI
 on: [push]
 
@@ -170,8 +180,8 @@ jobs:
   audit:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions*checkout@v4
-      - uses: ruby*setup-ruby@v1
+      - uses: actions/checkout@v4
+      - uses: ruby/setup-ruby@v1
         with:
           bundler-cache: true
       - run: bundle exec rubocop
@@ -191,8 +201,8 @@ jobs:
           --health-timeout 5s
           --health-retries 5
     steps:
-      - uses: actions*checkout@v4
-      - uses: ruby*setup-ruby@v1
+      - uses: actions/checkout@v4
+      - uses: ruby/setup-ruby@v1
         with:
           bundler-cache: true
       - run: bundle exec rails db:create db:migrate
@@ -224,12 +234,12 @@ from this document.
 
 ## Default Gemfile Template
 
-```
-source "https:/*rubygems.org"
+```ruby
+source "https://rubygems.org"
 
-ruby "`> 3.3"
+ruby "~> 3.3"
 
-gem "rails", "`> 7.1"
+gem "rails", "~> 7.1"
 gem "pg"
 gem "puma"
 
@@ -262,7 +272,7 @@ end
 
 When creating a new project, run:
 
-```
+```bash
 rails new my_app --database=postgresql --skip-test
 cd my_app
 
@@ -292,7 +302,7 @@ CI. Every project SHOULD configure them.
 
 ## Using Lefthook
 
-```
+```text
 # lefthook.yml
 pre-commit:
   parallel: true
@@ -305,7 +315,7 @@ pre-commit:
 
 ## Using Overcommit
 
-```
+```yaml
 # .overcommit.yml
 PreCommit:
   RuboCop:

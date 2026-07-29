@@ -1,3 +1,13 @@
+---
+title: "AI Evaluation Frameworks"
+description: "AI evaluation frameworks provide systematic methods for assessing the quality, correctness and reliability of AI-generated output."
+type: guide
+capability: ai
+status: published
+tags: [evaluation, frameworks]
+last_reviewed: 2026-07-28
+---
+
 # Purpose
 
 AI evaluation frameworks provide systematic methods for assessing the
@@ -48,7 +58,7 @@ assessment only when objective measures are unavailable.
 
 Run automated checks against AI-generated output.
 
-```
+```text
 Checklist:
 [x] Code compiles without errors.
 [x] All existing tests pass.
@@ -66,7 +76,7 @@ Checklist:
 
 A human reviewer evaluates AI output against defined criteria.
 
-```
+```text
 Criteria:
 [ ] Correctness: Is the logic correct?
 [ ] Completeness: Are all requirements addressed?
@@ -86,7 +96,7 @@ Rating per criterion: Pass / Minor Issue / Major Issue / Fail
 
 Compare AI output against a baseline or alternative.
 
-```
+```text
 Approach:
 1. Generate output from two different prompts or models.
 2. Compare both against requirements.
@@ -104,7 +114,7 @@ Approach:
 
 Track AI output quality over time to measure improvement.
 
-```
+```text
 Metrics to track per task type:
 - Pass rate on first attempt.
 - Number of issues found per review.

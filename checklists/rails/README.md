@@ -1,3 +1,12 @@
+---
+title: "Rails Checklists Index"
+description: "This directory contains checklists for verifying Rails work."
+type: checklist
+capability: rails
+status: published
+last_reviewed: 2026-07-28
+---
+
 # Purpose
 
 This directory contains checklists for verifying Rails work.

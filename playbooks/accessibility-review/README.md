@@ -1,3 +1,13 @@
+---
+title: "Accessibility Review Playbook"
+description: "Perform systematic accessibility reviews to identify and remediate accessibility barriers."
+type: playbook
+capability: accessibility
+status: published
+tags: [review]
+last_reviewed: 2026-07-28
+---
+
 # Objective
 
 Perform systematic accessibility reviews to identify and remediate

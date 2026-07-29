@@ -1,3 +1,12 @@
+---
+title: "Engineering Guides Index"
+description: "This directory contains guides for engineering fundamentals."
+type: guide
+capability: engineering
+status: published
+last_reviewed: 2026-07-28
+---
+
 # Purpose
 
 This directory contains guides for engineering fundamentals.

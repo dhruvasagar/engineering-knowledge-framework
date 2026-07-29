@@ -1,3 +1,13 @@
+---
+title: "AI Collaboration Patterns"
+description: "AI collaboration patterns define how engineers and AI interact during engineering tasks."
+type: guide
+capability: ai
+status: published
+tags: [collaboration, patterns]
+last_reviewed: 2026-07-28
+---
+
 # Purpose
 
 AI collaboration patterns define how engineers and AI interact during
@@ -45,7 +55,7 @@ decisions.
 | Risk level   | Low — output informs but does not execute. |
 | Verification | Quick plausibility check.                  |
 
-```
+```text
 Engineer: "What approaches exist for implementing background jobs?"
 AI: "Here are three approaches with their trade-offs..."
 Engineer: "Deep-dive on option 2 — it fits our constraints."
@@ -65,7 +75,7 @@ initial draft. The engineer then reviews and edits.
 | Risk level   | Low to medium — human reviews before use.      |
 | Verification | Human reads and approves before committing.    |
 
-```
+```text
 Engineer: "Write a service object for processing order payments..."
 AI: [produces draft]
 Engineer: [reviews, edits, commits]
@@ -85,7 +95,7 @@ engineer evaluates each finding and decides whether to act.
 |              | positives.                                        |
 | Verification | Human evaluates each finding before acting.       |
 
-```
+```text
 Engineer: "Review this pull request for security issues."
 AI: [lists findings with severity]
 Engineer: [confirms, dismisses, or investigates each]
@@ -104,7 +114,7 @@ aspects while the engineer focuses on design and complex logic.
 | Risk level   | Medium to high — code is used with human review. |
 | Verification | Tests must pass, human reviews all logic.        |
 
-```
+```text
 Engineer: "Let's implement the user authentication module..."
 AI: "I'll generate the model and controller..."
 Engineer: "I'll handle the custom OmniAuth strategy..."
@@ -124,7 +134,7 @@ provide guided practice. The engineer drives the learning process.
 | Risk level   | Low — AI output may contain inaccuracies.          |
 | Verification | Cross-reference with official documentation.       |
 
-```
+```text
 Engineer: "Explain the strategy pattern with a Rails example."
 AI: [provides explanation and code example]
 Engineer: "Now show me how it differs from the service object pattern."

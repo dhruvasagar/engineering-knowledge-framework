@@ -1,3 +1,13 @@
+---
+title: "WCAG Audit Checklist"
+description: "Complete WCAG 2.2 AA audit checklist."
+type: checklist
+capability: accessibility
+status: published
+tags: [wcag, audit]
+last_reviewed: 2026-07-28
+---
+
 # Purpose
 
 Complete WCAG 2.2 AA audit checklist. Use this for full accessibility

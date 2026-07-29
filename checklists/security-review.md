@@ -1,3 +1,13 @@
+---
+title: "Security Review Checklist"
+description: "Verify that a system meets security standards."
+type: checklist
+capability: security
+status: published
+tags: [review]
+last_reviewed: 2026-07-28
+---
+
 # Purpose
 
 Verify that a system meets security standards.

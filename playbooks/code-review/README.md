@@ -1,3 +1,13 @@
+---
+title: "Code Review Playbook"
+description: "Ensure every code change is reviewed for correctness, design quality, maintainability and consistency before being merged."
+type: playbook
+capability: quality
+status: published
+tags: [code, review]
+last_reviewed: 2026-07-28
+---
+
 # Objective
 
 Ensure every code change is reviewed for correctness, design quality,

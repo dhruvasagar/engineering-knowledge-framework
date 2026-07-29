@@ -1,3 +1,12 @@
+---
+title: "Security Glossary"
+description: "This glossary defines security terminology used throughout the Engineering Knowledge Framework."
+type: glossary
+capability: security
+status: published
+last_reviewed: 2026-07-28
+---
+
 # Purpose
 
 This glossary defines security terminology used throughout the

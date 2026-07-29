@@ -1,3 +1,13 @@
+---
+title: "Secure Coding Practices"
+description: "Secure coding is the practice of writing code that is resilient to attack."
+type: guide
+capability: security
+status: published
+tags: [secure, coding]
+last_reviewed: 2026-07-28
+---
+
 # Purpose
 
 Secure coding is the practice of writing code that is resilient to
@@ -27,7 +37,7 @@ Prefer whitelisting (accept known good values) over blacklisting
 
 Blacklists are always incomplete.
 
-```
+```text
 # Good: whitelist
 ALLOWED_ROLES = %w[admin editor viewer].freeze
 raise "Invalid role" unless ALLOWED_ROLES.include?(params[:role])
@@ -74,7 +84,7 @@ Require MFA for:
 Authorization should be checked on every request, not just on the
 login page.
 
-```
+```ruby
 def show
   record = Record.find(params[:id])
   authorize record  # Check permission
@@ -119,7 +129,7 @@ Error messages should not reveal:
 - Database structure.
 - File paths.
 
-```
+```text
 # Bad
 render json: { error: "SQL error: column 'ssn' not found" }
 

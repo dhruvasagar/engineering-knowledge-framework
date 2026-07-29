@@ -1,3 +1,12 @@
+---
+title: "Architecture Guides Index"
+description: "This directory contains guides for software architecture."
+type: guide
+capability: architecture
+status: published
+last_reviewed: 2026-07-28
+---
+
 # Purpose
 
 This directory contains guides for software architecture.

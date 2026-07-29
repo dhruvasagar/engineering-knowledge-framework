@@ -1,3 +1,12 @@
+---
+title: "Accessibility References"
+description: "Quick-reference material for accessibility engineering."
+type: reference
+capability: accessibility
+status: published
+last_reviewed: 2026-07-28
+---
+
 # Purpose
 
 Quick-reference material for accessibility engineering. Use this for
@@ -54,11 +63,11 @@ rapid lookup during development and review.
 | Button      | Enter / Space                             |
 | Link        | Enter                                     |
 | Checkbox    | Space to toggle                           |
-| Radio group | Arrow keys to change, Tab to enter*exit   |
+| Radio group | Arrow keys to change, Tab to enter/exit   |
 | Select      | Arrow keys, Enter to expand               |
 | Tab panel   | Tab to tablist, Arrow keys to switch tabs |
 | Dialog      | Tab within, Escape to close               |
-| Slider      | Arrow keys, Home*End                      |
+| Slider      | Arrow keys, Home/End                      |
 
 # Testing Tools
 
@@ -98,11 +107,11 @@ rapid lookup during development and review.
 
 # Recommended Reading
 
-- [[https:*/www.w3.org*TR*WCAG22*][WCAG 2.2 Specification]]
-- [[https:*/www.w3.org*WAI*ARIA*apg*][ARIA Authoring Practices Guide]]
-- [[https:/*developer.mozilla.org*en-US*docs*Web*Accessibility][MDN Accessibility Guide]]
-- [[https:*/webaim.org*resources*][WebAIM Resources]]
-- [[https:/*inclusive-components.design/][Inclusive Components]]
+- [WCAG 2.2 Specification](https://www.w3.org/TR/WCAG22/)
+- [ARIA Authoring Practices Guide](https://www.w3.org/WAI/ARIA/apg/)
+- [MDN Accessibility Guide](https://developer.mozilla.org/en-US/docs/Web/Accessibility)
+- [WebAIM Resources](https://webaim.org/resources/)
+- [Inclusive Components](https://inclusive-components.design/)
 
 # Related Documents
 

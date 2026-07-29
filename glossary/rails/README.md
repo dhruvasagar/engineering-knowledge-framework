@@ -1,3 +1,12 @@
+---
+title: "Rails Glossary"
+description: "This glossary defines Ruby on Rails terminology used throughout the Engineering Knowledge Framework."
+type: glossary
+capability: rails
+status: published
+last_reviewed: 2026-07-28
+---
+
 # Purpose
 
 This glossary defines Ruby on Rails terminology used throughout the
@@ -27,8 +36,8 @@ repository. Foundational engineering terms are defined in the
 | Property   | Value                                                         |
 |------------|---------------------------------------------------------------|
 | Definition | A module used to extract shared behaviour from models or      |
-|            | controllers, typically placed in `app*models*concerns*`       |
-|            | or `app*controllers*concerns*`.                               |
+|            | controllers, typically placed in `app/models/concerns/`       |
+|            | or `app/controllers/concerns/`.                               |
 | Context    | Concerns are Rails' mechanism for sharing behaviour via       |
 |            | modules. Use them for cross-cutting concerns, but prefer      |
 |            | service objects for complex business logic.                   |

@@ -1,3 +1,12 @@
+---
+title: "AI Engineering Handbook"
+description: "AI engineering is the practice of integrating AI assistants into the software development lifecycle to improve productivity, quality and decision-making."
+type: handbook
+capability: ai
+status: published
+last_reviewed: 2026-07-28
+---
+
 # Purpose
 
 AI engineering is the practice of integrating AI assistants into the

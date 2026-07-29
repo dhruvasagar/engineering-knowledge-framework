@@ -1,3 +1,13 @@
+---
+title: "Quality Report Template"
+description: "Brief overview of the quality assessment, key findings and overall quality rating (Green / Amber / Red)."
+type: template
+capability: quality
+status: published
+tags: [report]
+last_reviewed: 2026-07-28
+---
+
 # Quality Report: [Project Name]
 
 # Metadata
@@ -68,8 +78,8 @@ quality rating (Green / Amber / Red).
 
 ## Areas for Improvement
 
-- Finding 1 (Severity: [High*Medium*Low])
-- Finding 2 (Severity: [High*Medium*Low])
+- Finding 1 (Severity: [High/Medium/Low])
+- Finding 2 (Severity: [High/Medium/Low])
 
 # Action Items
 

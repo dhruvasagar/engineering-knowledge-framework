@@ -1,3 +1,13 @@
+---
+title: "ADR Template"
+description: "What is the issue or problem motivating this decision?"
+type: template
+capability: architecture
+status: published
+tags: [adr]
+last_reviewed: 2026-07-28
+---
+
 # ADR-NNNN: Title
 
 # Context

@@ -1,3 +1,12 @@
+---
+title: "Architecture Learning Paths"
+description: "These learning paths provide a structured progression through software architecture, from understanding architectural concepts to leading architectural decisions across an..."
+type: learning-path
+capability: architecture
+status: published
+last_reviewed: 2026-07-28
+---
+
 # Purpose
 
 These learning paths provide a structured progression through software

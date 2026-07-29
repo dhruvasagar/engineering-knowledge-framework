@@ -1,3 +1,12 @@
+---
+title: "Accessibility Guides Index"
+description: "This directory contains guides for accessibility engineering practices."
+type: guide
+capability: accessibility
+status: published
+last_reviewed: 2026-07-28
+---
+
 # Purpose
 
 This directory contains guides for accessibility engineering practices.

@@ -1,3 +1,13 @@
+---
+title: "Rails Audit Guide"
+description: "Rails applications accumulate technical debt, security vulnerabilities and performance regressions over time."
+type: guide
+capability: rails
+status: published
+tags: [audit]
+last_reviewed: 2026-07-28
+---
+
 # Purpose
 
 Rails applications accumulate technical debt, security vulnerabilities
@@ -28,7 +38,7 @@ What is the primary objective of this audit?
 ## Define Scope
 
 - Which areas are in scope: application code, data access, external
-  services, CI*CD, infrastructure?
+  services, CI/CD, infrastructure?
 - Which areas are explicitly out of scope.
 
 ## Set Up the Environment
@@ -52,7 +62,7 @@ Plugins:
 
 Run:
 
-```
+```bash
 bundle exec rubocop --auto-correct
 ```
 
@@ -63,7 +73,7 @@ Utility Functions and more.
 
 Configure via `.reek.yml` and run:
 
-```
+```bash
 bundle exec reek
 ```
 
@@ -74,7 +84,7 @@ missing specs and other Rails-specific anti-patterns.
 
 Run:
 
-```
+```bash
 bundle exec rails_best_practices .
 ```
 
@@ -82,7 +92,7 @@ bundle exec rails_best_practices .
 
 - ***Flog***: Scores method complexity. High scores indicate methods that
   are difficult to understand and test.
-  Run: `bundle exec flog app*`
+  Run: `bundle exec flog app/`
 
 - ***Flay***: Finds structurally similar code (duplication) across files.
   Run: `bundle exec flay app/`
@@ -172,7 +182,7 @@ traffic patterns.
 Enable verbose query logging in development to see the code-to-SQL
 mapping:
 
-```
+```text
 config.active_record.verbose_query_logs = true
 ```
 
@@ -213,7 +223,7 @@ CSRF gaps and other Rails-specific security issues.
 
 Run:
 
-```
+```bash
 bundle exec brakeman -q -o brakeman-report.html
 ```
 
@@ -223,7 +233,7 @@ Scans `Gemfile.lock` for gems with known vulnerabilities.
 
 Run:
 
-```
+```bash
 bundle exec bundler-audit check --update
 ```
 
@@ -243,7 +253,7 @@ Ensure no credentials are committed to git history:
 - `git-secrets`: Prevents committing secrets.
 - `truffleHog`: Scans git history for high-entropy strings.
 
-Credentials should use `config*credentials.yml.enc` for encrypted
+Credentials should use `config/credentials.yml.enc` for encrypted
 storage.
 
 ## Content Security Policy and Secure Headers
@@ -329,7 +339,7 @@ For operational visibility:
 
 Set SLAs and alert on latency spikes or error percentage thresholds.
 
-# CI*CD and Release Hygiene
+# CI/CD and Release Hygiene
 
 ## CI Pipeline
 
@@ -338,11 +348,11 @@ Every push should run the full audit suite:
 - Linters (RuboCop, Reek).
 - Security scans (Brakeman, bundler-audit).
 - Test suite with coverage thresholds.
-- rails_best_practices and Flog*Flay for trend tracking.
+- rails_best_practices and Flog/Flay for trend tracking.
 
 ## Deployment Safety
 
-- Use canary or blue*green deployments to roll out changes safely.
+- Use canary or blue/green deployments to roll out changes safely.
 - Use the `strong_migrations` gem to prevent dangerous schema changes
   (long-running locks, irreversible migrations).
 - Maintain a rollback plan for every deployment.

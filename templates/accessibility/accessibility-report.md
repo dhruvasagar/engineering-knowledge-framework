@@ -1,3 +1,13 @@
+---
+title: "Accessibility Report"
+description: "Brief overview of the audit results, overall compliance level and key recommendations."
+type: template
+capability: accessibility
+status: published
+tags: [report]
+last_reviewed: 2026-07-28
+---
+
 # Accessibility Report: [Project Name]
 
 # Metadata

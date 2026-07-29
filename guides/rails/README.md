@@ -1,3 +1,12 @@
+---
+title: "Rails Guides Index"
+description: "This directory contains guides for Rails development topics."
+type: guide
+capability: rails
+status: published
+last_reviewed: 2026-07-28
+---
+
 # Purpose
 
 This directory contains guides for Rails development topics.
@@ -10,7 +19,7 @@ principles in the [Rails Engineering Handbook](../../handbooks/rails/README.md).
 | Guide                                                         | Description                                |
 |---------------------------------------------------------------|--------------------------------------------|
 | [Service Objects](./service-objects.md)                       | When and how to use service objects.       |
-| [Testing Rails Applications](./testing.md)                    | Test distribution, model*request*system    |
+| [Testing Rails Applications](./testing.md)                    | Test distribution, model/request/system    |
 |                                                               | specs, factory patterns.                   |
 | [Rails Audit Guide](./audit-guide.md)                         | Systematic code quality, performance,      |
 |                                                               | database and security auditing.            |

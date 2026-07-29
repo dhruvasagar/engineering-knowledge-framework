@@ -1,3 +1,13 @@
+---
+title: "Knowledge Extraction"
+description: "Knowledge extraction is the process of capturing engineering knowledge from experience, code, discussions and incidents, and structuring it into reusable framework documents."
+type: guide
+capability: ai
+status: published
+tags: [knowledge, extraction]
+last_reviewed: 2026-07-28
+---
+
 # Purpose
 
 Knowledge extraction is the process of capturing engineering knowledge
@@ -64,7 +74,7 @@ Gather the raw material for extraction:
 
 Ask AI to analyse the source material:
 
-```
+```text
 Analyse these code review comments and identify:
 1. Recurring issues or patterns.
 2. Conventions that are frequently enforced.
@@ -78,7 +88,7 @@ Analyse these code review comments and identify:
 
 Ask AI to propose a document structure:
 
-```
+```text
 Based on the patterns identified, propose a structure for a
 [guide / playbook / checklist / reference] on [topic].
 
@@ -95,7 +105,7 @@ The document should follow the framework's conventions:
 
 Ask AI to generate a draft following the proposed structure:
 
-```
+```text
 Using the structure below, generate a draft [guide / playbook] for
 [topic]. Use real examples from the source material where possible.
 Mark any AI-suggested content that is not directly from the source
@@ -126,7 +136,7 @@ Source material:
 
 ## Guide Extraction
 
-```
+```text
 Extract a guide on [topic] from the following source material.
 
 Structure the guide as:
@@ -143,7 +153,7 @@ Source:
 
 ## Playbook Extraction
 
-```
+```text
 Extract a playbook for [workflow] from the following incident reports
 and retrospectives.
 
@@ -162,7 +172,7 @@ Source:
 
 ## Checklist Extraction
 
-```
+```text
 Extract a checklist for [activity] from the following code review
 comments and standards.
 

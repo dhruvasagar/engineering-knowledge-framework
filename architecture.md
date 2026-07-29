@@ -1,3 +1,13 @@
+---
+title: "Architecture"
+description: "This document describes the architecture of the Engineering Knowledge Framework."
+type: governance
+capability: governance
+status: published
+tags: [architecture]
+last_reviewed: 2026-07-28
+---
+
 # Purpose
 
 This document describes the architecture of the Engineering Knowledge
@@ -76,7 +86,7 @@ Knowledge should form a connected graph rather than isolated pages.
 
 The framework consists of several architectural layers.
 
-```
+```text
 Engineering Knowledge Framework
 ├── Governance
 ├── Knowledge Architecture
@@ -152,7 +162,7 @@ Each capability should be self-contained.
 Each capability is expected to contain a consistent collection of
 knowledge artifacts.
 
-```
+```text
 Capability
 ├── Handbook
 ├── Guides
@@ -172,7 +182,7 @@ the target architecture.
 
 Knowledge artifacts have distinct responsibilities.
 
-```
+```text
              Handbook
                  │
   ┌──────────────┼──────────────┐
@@ -215,7 +225,7 @@ The framework should be viewed as a graph rather than a hierarchy.
 
 Example:
 
-```
+```text
 Rails Handbook
 ↓
 Service Objects Guide
@@ -237,7 +247,7 @@ Navigation should emphasize concepts rather than directory structure.
 
 Knowledge continuously evolves.
 
-```
+```text
 Experience
 ↓
 Capture
@@ -312,7 +322,7 @@ The repository is organized into two broad categories.
 
 Defines the framework itself.
 
-```
+```text
 
 governance/
 
@@ -331,7 +341,7 @@ CONTRIBUTING
 
 Contains engineering capabilities.
 
-```
+```text
 glossary/
 handbook/
 guides/
@@ -378,7 +388,7 @@ The architecture is designed to evolve through incremental improvement.
 
 Expected evolution includes:
 
-```
+```text
 Phase 1: Foundation
 ↓
 Phase 2: Reference Capabilities

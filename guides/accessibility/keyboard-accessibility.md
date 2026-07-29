@@ -1,3 +1,13 @@
+---
+title: "Keyboard Accessibility"
+description: "Keyboard accessibility ensures that all functionality can be operated through a keyboard interface alone."
+type: guide
+capability: accessibility
+status: published
+tags: [keyboard]
+last_reviewed: 2026-07-28
+---
+
 # Purpose
 
 Keyboard accessibility ensures that all functionality can be operated
@@ -45,7 +55,7 @@ keyboard. This is especially important for menus, dialogs and modals.
 
 ## Focus Management
 
-```
+```javascript
 */ Moving focus to a newly opened dialog
 function openDialog(dialogElement) {
   dialogElement.show();
@@ -59,7 +69,7 @@ function openDialog(dialogElement) {
 
 Provide a skip link as the first focusable element on the page:
 
-```
+```html
 <a href`"#main-content" class`"skip-link">Skip to main content<*a>
 ```
 
@@ -69,9 +79,9 @@ Ensure the skip link is visible on focus (do not hide it permanently).
 
 For custom interactive widgets, implement ARIA keyboard patterns:
 
-- `role`"button"=: Enter*Space to activate.
-- `role`"tab"=: Arrow keys to switch, Enter*Space to activate panel.
-- `role`"slider"=: Arrow keys, Home*End, Page Up/Down.
+- `role="button"`: Enter/Space to activate.
+- `role="tab"`: Arrow keys to switch, Enter/Space to activate panel.
+- `role="slider"`: Arrow keys, Home/End, Page Up/Down.
 
 See [ARIA Patterns](./aria-patterns.md) for detailed guidance.
 
@@ -81,7 +91,7 @@ See [ARIA Patterns](./aria-patterns.md) for detailed guidance.
   an alternative focus indicator.
 - ***Mouse-only interactions***: Do not rely on `onclick`, `hover`, or `drag` for
   functionality without keyboard alternatives.
-- ***Positive tabindex***: Avoid `tabindex`"1"= or higher — it disrupts the
+- ***Positive tabindex***: Avoid `tabindex="1"` or higher — it disrupts the
   natural tab order.
 - ***Tabindex="-1" on interactive elements***: Do not remove elements from the
   tab order unless there is a clear reason.

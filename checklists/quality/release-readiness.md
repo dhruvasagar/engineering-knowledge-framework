@@ -1,3 +1,13 @@
+---
+title: "Release Readiness Checklist"
+description: "Verify that the system is ready for production release."
+type: checklist
+capability: quality
+status: published
+tags: [release, readiness]
+last_reviewed: 2026-07-28
+---
+
 # Purpose
 
 Verify that the system is ready for production release. This checklist

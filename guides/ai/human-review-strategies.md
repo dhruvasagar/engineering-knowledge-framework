@@ -1,3 +1,13 @@
+---
+title: "Human Review Strategies"
+description: "AI-generated output requires human review, but reviewing AI output is different from reviewing human output."
+type: guide
+capability: ai
+status: published
+tags: [human, review, strategies]
+last_reviewed: 2026-07-28
+---
+
 # Purpose
 
 AI-generated output requires human review, but reviewing AI output is

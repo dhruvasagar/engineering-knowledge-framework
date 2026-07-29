@@ -1,3 +1,13 @@
+---
+title: "Framework Philosophy and Working Agreement"
+description: "The Engineering Knowledge Framework is an open-source framework for capturing, organizing, evolving and applying engineering knowledge."
+type: governance
+capability: governance
+status: published
+tags: [claude]
+last_reviewed: 2026-07-28
+---
+
 # CLAUDE.md
 
 > **Engineering Knowledge Framework**
@@ -133,7 +143,7 @@ A capability combines all knowledge required to master a subject.
 
 Example:
 
-```
+```text
 Rails Engineering
 ├── Handbook
 ├── Guides
@@ -210,11 +220,19 @@ relevant handbook's Capability Map.**
 
 When writing or editing documents:
 
-- Use =-= for bullet lists and =*= [ ]= for checklists.
-  Never use =*= for bullets — in Markdown, =*= creates a headline,
-  not a list item.
-- Do not skip headline levels (e.g., =*= to =***= without =**=).
-- Follow the formatting rules in [STYLE_GUIDE.md](./style-guide.md).
+- Use `-` for bullet lists and `- [ ]` for checklists.
+  Both `-` and `*` are valid Markdown bullets; the framework
+  standardizes on `-` for consistency.
+- Use `#` characters for headings and do not skip levels
+  (e.g., `#` to `###` without `##`).
+- Tag every code fence with a language. Use a `text` tag when there is
+  no better fit — an untagged fence loses syntax highlighting and
+  prevents reliable example extraction.
+- Give every document YAML frontmatter: `title`, `description`, `type`,
+  `capability`, `status`, `last_reviewed`.
+- Follow the formatting rules in [Style Guide](./style-guide.md).
+
+Run `make validate` before committing. It enforces all of the above.
 
 ## Context Engineering
 
@@ -386,7 +404,7 @@ Examples:
 
 Engineering knowledge continuously evolves.
 
-```
+```text
 Experience
 ↓
 Capture

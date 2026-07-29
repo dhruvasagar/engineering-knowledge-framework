@@ -12,11 +12,17 @@ import sys
 from pathlib import Path
 
 TOOLS_DIR = Path(__file__).resolve().parent
+
+# The tooling's own tests run first. A validator that has silently
+# stopped checking anything makes every result below it meaningless —
+# which is exactly how the org-mode heading rule survived the migration
+# to Markdown while reporting success across the whole repository.
 VALIDATORS = [
-    ('🔗  Links',        'validate-links.py'),
-    ('📝  Style',        'validate-style.py'),
-    ('📖  Glossary',     'validate-glossary.py'),
-    ('📑  TOC',          'validate-toc.py'),
+    ('🧪  Tooling Tests', 'test_validate_style.py'),
+    ('🔗  Links',         'validate-links.py'),
+    ('📝  Style',         'validate-style.py'),
+    ('📖  Glossary',      'validate-glossary.py'),
+    ('📑  TOC',           'validate-toc.py'),
 ]
 
 
@@ -30,7 +36,7 @@ def run_validator(name, script, quiet=False):
 
     result = subprocess.run(
         [sys.executable, str(script_path)],
-        capture_output=True, text=True
+        capture_output=True, text=True, cwd=TOOLS_DIR
     )
 
     if quiet:

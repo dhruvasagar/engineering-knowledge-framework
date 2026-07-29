@@ -1,3 +1,13 @@
+---
+title: "AI Workflows for Engineering"
+description: "AI assistants can accelerate engineering work when used effectively."
+type: prompt
+capability: engineering
+status: published
+tags: [workflows]
+last_reviewed: 2026-07-28
+---
+
 # Purpose
 
 AI assistants can accelerate engineering work when used effectively.
@@ -50,7 +60,7 @@ might miss and generating constructive feedback.
 
 #### Prompt Pattern
 
-```
+````text
 Review this pull request for [LANGUAGE] code.
 
 Focus on:
@@ -68,7 +78,7 @@ Code:
 Reference standards:
 - [link to coding standards]
 - [link to testing guide]
-```
+````
 
 #### Output Review
 
@@ -92,7 +102,7 @@ discover considerations you might have missed.
 
 #### Prompt Pattern
 
-```
+```text
 I am designing a solution for:
 
 [problem description]
@@ -131,7 +141,7 @@ to code structure.
 
 #### Prompt Pattern
 
-```
+````text
 Help me refactor this [LANGUAGE] code.
 
 Goal: [improve readability / reduce duplication / improve testability]
@@ -149,7 +159,7 @@ Suggest:
 1. The most impactful improvement.
 2. The steps to achieve it.
 3. Potential risks or trade-offs.
-```
+````
 
 ## Documentation Generation
 
@@ -167,14 +177,14 @@ keeping documentation current.
 
 #### Prompt Pattern
 
-```
+````text
 Write a [document type] for this [LANGUAGE] module.
 
 Audience: [engineers familiar with the codebase / new team members /
           stakeholders]
 
 Conventions:
-- Use [format*style] for documentation.
+- Use [format/style] for documentation.
 - Include examples.
 - Explain why, not just what.
 
@@ -182,7 +192,7 @@ Module:
 ```[LANGUAGE]
 [paste code]
 ```
-```
+````
 
 ## Problem Diagnosis
 
@@ -200,7 +210,7 @@ messages, logs and code.
 
 #### Prompt Pattern
 
-```
+````text
 I am seeing this error:
 
 [error message or log output]
@@ -215,11 +225,11 @@ What I tried:
 - [attempt 2]
 
 Environment:
-- [language*framework version]
+- [language/framework version]
 - [OS/container details]
 
 What is the most likely cause? What should I try next?
-```
+````
 
 # Anti-patterns
 

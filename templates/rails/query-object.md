@@ -1,3 +1,13 @@
+---
+title: "Query Object Template"
+description: "Query objects encapsulate complex database queries that do not belong in a model scope."
+type: template
+capability: rails
+status: published
+tags: [query, object]
+last_reviewed: 2026-07-28
+---
+
 # Purpose
 
 Query objects encapsulate complex database queries that do not belong
@@ -8,8 +18,8 @@ join logic or aggregation that would overly bloat the model.
 
 # Template
 
-```
-# app*queries*QUERY_NAME.rb
+```ruby
+# app/queries/QUERY_NAME.rb
 class QUERY_NAME
   def initialize(relation = Model.all)
     @relation = relation
@@ -31,7 +41,7 @@ end
 
 # Usage
 
-```
+```ruby
 # In a controller or service
 query = QUERY_NAME.new
 results = query.call(active_only: true)

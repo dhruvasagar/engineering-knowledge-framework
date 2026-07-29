@@ -1,3 +1,12 @@
+---
+title: "Accessibility Glossary"
+description: "Canonical definitions for accessibility engineering terminology."
+type: glossary
+capability: accessibility
+status: published
+last_reviewed: 2026-07-28
+---
+
 # Purpose
 
 Canonical definitions for accessibility engineering terminology. Every

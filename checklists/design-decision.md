@@ -1,3 +1,13 @@
+---
+title: "Design Decision Checklist"
+description: "Ensure every significant design decision is properly evaluated, documented and communicated."
+type: checklist
+capability: architecture
+status: published
+tags: [design, decision]
+last_reviewed: 2026-07-28
+---
+
 # Purpose
 
 Ensure every significant design decision is properly evaluated,

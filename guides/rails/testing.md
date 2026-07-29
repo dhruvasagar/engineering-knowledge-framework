@@ -1,3 +1,13 @@
+---
+title: "Testing Rails Applications"
+description: "Testing is essential to maintaining a healthy Rails application."
+type: guide
+capability: rails
+status: published
+tags: [testing]
+last_reviewed: 2026-07-28
+---
+
 # Purpose
 
 Testing is essential to maintaining a healthy Rails application.
@@ -14,7 +24,7 @@ on the general testing principles in the
 
 Follow the test pyramid for Rails applications:
 
-```
+```text
         /\
        /  \
       /E2E \    Few: system specs, critical user journeys
@@ -41,7 +51,7 @@ Follow the test pyramid for Rails applications:
 
 Test validations, associations, scopes and custom methods.
 
-```
+```ruby
 RSpec.describe User, type: :model do
   describe "validations" do
     it { is_expected.to validate_presence_of(:email) }
@@ -72,18 +82,18 @@ Test controller behaviour at the HTTP level.
 Request specs replace controller specs in modern Rails. They test the
 entire request-response cycle without rendering views.
 
-```
+```ruby
 RSpec.describe "Users API", type: :request do
-  describe "POST *api*v1*users" do
+  describe "POST /api/v1/users" do
     let(:params) { { user: { email: "user@example.com", name: "Alice" } } }
 
     it "creates a user" do
-      expect { post "*api/v1*users", params: params }
+      expect { post "/api/v1/users", params: params }
         .to change(User, :count).by(1)
     end
 
     it "returns 201" do
-      post "*api/v1*users", params: params
+      post "/api/v1/users", params: params
       expect(response).to have_http_status(:created)
     end
 
@@ -91,7 +101,7 @@ RSpec.describe "Users API", type: :request do
       let(:params) { { user: { email: "" } } }
 
       it "returns 422" do
-        post "*api/v1/users", params: params
+        post "/api/v1/users", params: params
         expect(response).to have_http_status(:unprocessable_entity)
       end
     end
@@ -107,7 +117,7 @@ JavaScript.
 Use system specs sparingly. Cover only the most important business
 flows.
 
-```
+```ruby
 RSpec.describe "User Registration", type: :system do
   it "allows a new user to register" do
     visit root_path
@@ -126,7 +136,7 @@ end
 
 Use factories for test data. Keep factories simple and focused.
 
-```
+```ruby
 FactoryBot.define do
   factory :user do
     email { generate(:email) }

@@ -1,3 +1,12 @@
+---
+title: "Quality Templates Index"
+description: "This directory contains reusable templates for quality-related engineering activities."
+type: template
+capability: quality
+status: published
+last_reviewed: 2026-07-28
+---
+
 # Purpose
 
 This directory contains reusable templates for quality-related

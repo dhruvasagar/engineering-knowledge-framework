@@ -1,3 +1,13 @@
+---
+title: "PR Accessibility Checklist"
+description: "Quick accessibility verification for every pull request."
+type: checklist
+capability: accessibility
+status: published
+tags: [review]
+last_reviewed: 2026-07-28
+---
+
 # Purpose
 
 Quick accessibility verification for every pull request. Completing these

@@ -1,3 +1,12 @@
+---
+title: "Security Templates Index"
+description: "This directory contains reusable templates for security engineering activities."
+type: template
+capability: security
+status: published
+last_reviewed: 2026-07-28
+---
+
 # Purpose
 
 This directory contains reusable templates for security engineering

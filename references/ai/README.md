@@ -1,3 +1,12 @@
+---
+title: "AI Engineering References"
+description: "Quick-reference material for AI-assisted engineering."
+type: reference
+capability: ai
+status: published
+last_reviewed: 2026-07-28
+---
+
 # Purpose
 
 Quick-reference material for AI-assisted engineering.

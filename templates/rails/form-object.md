@@ -1,3 +1,13 @@
+---
+title: "Form Object Template"
+description: "Form objects encapsulate validation and data processing for forms that do not map directly to a single model."
+type: template
+capability: rails
+status: published
+tags: [form, object]
+last_reviewed: 2026-07-28
+---
+
 # Purpose
 
 Form objects encapsulate validation and data processing for forms that
@@ -8,8 +18,8 @@ validation logic that does not belong to any single model.
 
 # Template
 
-```
-# app*forms*FORM_NAME.rb
+```ruby
+# app/forms/FORM_NAME.rb
 class FORM_NAME
   include ActiveModel::Model
   include ActiveModel::Attributes
@@ -45,7 +55,7 @@ end
 
 # Usage
 
-```
+```ruby
 form = FORM_NAME.new(name: "Alice", email: "alice@example.com")
 if form.save
   # Handle success
